@@ -126,6 +126,55 @@ a:hover { color: var(--night-horizon); }
 .mobile-menu a:hover { color: var(--night-horizon); }
 .mobile-cta { text-align: center; margin-top: 16px; border-bottom: none !important; }
 
+/* PAGE HERO (inner pages) */
+.page-hero { padding: 64px 0 48px; background: linear-gradient(180deg, var(--white) 0%, var(--bg) 100%); text-align: center; }
+.page-hero h1 { font-size: 40px; font-weight: 300; color: var(--text); margin-bottom: 12px; }
+.page-hero h1 strong { font-weight: 600; color: var(--night-horizon); }
+.page-hero-sub { font-size: 18px; color: var(--text-light); max-width: 600px; margin: 0 auto; line-height: 1.7; }
+
+/* CONTENT NARROW */
+.content-narrow { max-width: 760px; margin: 0 auto; }
+.prose { color: var(--text-light); font-size: 16px; line-height: 1.8; margin-bottom: 16px; }
+.subsection-title { font-size: 20px; font-weight: 600; color: var(--night-horizon); margin-top: 36px; margin-bottom: 12px; }
+
+/* CARD LINKS */
+.card-link { text-decoration: none; display: block; cursor: pointer; }
+.card-link:hover { color: inherit; }
+.card-arrow { display: block; margin-top: 12px; font-size: 14px; font-weight: 600; color: var(--oasis); }
+.card-link:hover .card-arrow { color: var(--night-horizon); }
+
+/* CREDENTIALS GRID */
+.credentials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.credential-item { background: var(--white); border-radius: 16px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); border: 1px solid rgba(0,125,149,0.06); }
+.credential-item h3 { font-size: 16px; font-weight: 600; color: var(--night-horizon); margin-bottom: 8px; }
+.credential-item p { font-size: 14px; color: var(--text-light); line-height: 1.6; }
+
+/* VIDEO GRID VARIANTS */
+.video-grid-1 { grid-template-columns: 1fr; max-width: 640px; margin: 0 auto; }
+.video-grid-2 { grid-template-columns: repeat(2, 1fr); }
+.video-grid-education { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.video-card-text { padding: 14px 16px; }
+.video-desc { font-size: 13px; color: var(--text-light); line-height: 1.5; margin-top: 4px; }
+
+/* CONTACT PAGE */
+.contact-page-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+.contact-page-info h2 { font-size: 28px; font-weight: 300; margin-bottom: 32px; }
+.contact-page-info h2 strong { font-weight: 600; color: var(--night-horizon); }
+.contact-block { margin-bottom: 28px; }
+.contact-block h3 { font-size: 15px; font-weight: 600; color: var(--night-horizon); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.04em; }
+.contact-block p { font-size: 15px; color: var(--text-light); line-height: 1.7; }
+.contact-phone { font-size: 24px; font-weight: 600; color: var(--oasis); }
+.contact-phone:hover { color: var(--night-horizon); }
+.contact-note { font-size: 13px; color: var(--text-light); margin-top: 4px; opacity: 0.7; }
+.contact-list { list-style: none; padding: 0; }
+.contact-list li { font-size: 15px; color: var(--text-light); line-height: 1.7; padding-left: 20px; position: relative; }
+.contact-list li::before { content: '\2713'; position: absolute; left: 0; color: var(--oasis); font-weight: 600; }
+.map-wrapper { border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.08); }
+.map-directions { margin-top: 16px; text-align: center; }
+
+/* NAV BRAND LINK */
+.nav-brand { text-decoration: none; }
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .hero-inner { grid-template-columns: 1fr; text-align: center; }
@@ -133,6 +182,8 @@ a:hover { color: var(--night-horizon); }
   .hero-buttons { justify-content: center; }
   .card-grid { grid-template-columns: 1fr; }
   .video-grid { grid-template-columns: 1fr; }
+  .video-grid-2 { grid-template-columns: 1fr; }
+  .video-grid-education { grid-template-columns: 1fr; }
   .about-grid { grid-template-columns: 1fr; }
   .trust-bar { grid-template-columns: 1fr; gap: 32px; }
   .nav-links { display: none; }
@@ -141,4 +192,7 @@ a:hover { color: var(--night-horizon); }
   .footer-links { flex-direction: column; gap: 24px; }
   .contact-info { flex-direction: column; gap: 16px; align-items: center; }
   .contact-details { text-align: center; }
+  .credentials-grid { grid-template-columns: 1fr; }
+  .contact-page-grid { grid-template-columns: 1fr; }
+  .page-hero h1 { font-size: 32px; }
 }

@@ -1,4 +1,4 @@
-import MobileNav from './MobileNav';
+import Link from 'next/link';
 
 export default function Home() {
   const physicianSchema = {
@@ -114,20 +114,6 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      {/* NAV */}
-      <nav className="nav">
-        <div className="container nav-inner">
-          <div className="nav-brand">Dr. Keith Tokuhara</div>
-          <div className="nav-links">
-            <a href="#about">About</a>
-            <a href="#services">Cataract Care</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
-          </div>
-          <MobileNav />
-        </div>
-      </nav>
-
       {/* BANNER */}
       <section className="banner">
         <img src="/banner.jpg" alt="Desert Vision Center surgical suite in Rancho Mirage, California" className="banner-img" />
@@ -142,8 +128,8 @@ export default function Home() {
               I&rsquo;m Dr. Keith Tokuhara, a cataract surgeon in the Coachella Valley. I think you should understand your surgery before you agree to it. That&rsquo;s not a radical idea. That&rsquo;s how medicine should work.
             </p>
             <div className="hero-buttons">
-              <a href="#contact" className="btn-primary">Schedule a Consultation</a>
-              <a href="#education" className="btn-secondary">Learn About Cataracts</a>
+              <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+              <Link href="/cataract-surgery" className="btn-secondary">Learn About Cataracts</Link>
             </div>
           </div>
           <div className="hero-image">
@@ -160,18 +146,21 @@ export default function Home() {
             Advanced cataract surgery built on ethics, precision, and personalized care.
           </div>
           <div className="card-grid">
-            <div className="card">
+            <Link href="/cataract-surgery" className="card card-link">
               <h3>Advanced Cataract Surgery</h3>
               <p>Cataract surgery with fellowship trained precision. I use laser assisted techniques and choose your lens implant based on your eyes and your lifestyle, not a sales quota. Every surgery is planned specifically for you.</p>
-            </div>
-            <div className="card">
+              <span className="card-arrow">Learn more &rarr;</span>
+            </Link>
+            <Link href="/cataract-surgery#complex-cases" className="card card-link">
               <h3>Complex &amp; Corrective Cases</h3>
               <p>Patients travel from across the country for complicated cases, secondary lens implantations, and corrective procedures after disappointing results elsewhere. If another surgeon said your case is too difficult, I want to hear about it.</p>
-            </div>
-            <div className="card">
+              <span className="card-arrow">Learn more &rarr;</span>
+            </Link>
+            <Link href="/cataract-surgery#clear-in-a-day" className="card card-link">
               <h3>CLEAR in a Day&trade;</h3>
               <p>Same day bilateral cataract surgery. Both eyes, one surgeon, one day. I developed this protocol for patients who want convenience without cutting corners on safety. Not every patient is a candidate, and I&rsquo;ll tell you honestly if you&rsquo;re not.</p>
-            </div>
+              <span className="card-arrow">Learn more &rarr;</span>
+            </Link>
           </div>
         </div>
       </section>
@@ -193,7 +182,7 @@ export default function Home() {
             <p>
               I completed my fellowship at Loma Linda University under Dr. Howard Gimbel, one of the most respected cataract surgeons in the world. Palm Springs Life has named me a Top Doctor every year since 2019.
             </p>
-            <a href="https://desertvisioncenter.com/ophthalmologist-dr-tokuhara/" className="btn-primary" style={{marginTop: '16px'}}>Full Bio</a>
+            <Link href="/about" className="btn-primary" style={{marginTop: '16px', display: 'inline-block'}}>Read My Full Story</Link>
           </div>
         </div>
       </section>
@@ -224,18 +213,21 @@ export default function Home() {
             Everything you wanted to ask about cataracts, answered simply. No jargon. No scare tactics.
           </div>
           <div className="card-grid">
-            <div className="card">
+            <Link href="/education" className="card card-link">
               <h3>What Is a Cataract?</h3>
               <p>A cataract is a clouding of the natural lens inside your eye. Almost everyone develops cataracts eventually. It&rsquo;s the most common cause of vision loss that we can actually fix. If your vision feels hazy, washed out, or you&rsquo;re struggling with glare at night, cataracts might be the reason.</p>
-            </div>
-            <div className="card">
+              <span className="card-arrow">Watch videos &rarr;</span>
+            </Link>
+            <Link href="/education" className="card card-link">
               <h3>When Is Surgery the Right Call?</h3>
               <p>There&rsquo;s no magic number that tells you it&rsquo;s time. It depends on how your cataracts affect your daily life. Can you drive safely? Read comfortably? See the things that matter to you? If cataracts are getting in the way, it&rsquo;s worth a conversation. But there&rsquo;s no rush, and no one should be pressuring you.</p>
-            </div>
-            <div className="card">
+              <span className="card-arrow">Watch videos &rarr;</span>
+            </Link>
+            <Link href="/education" className="card card-link">
               <h3>Understanding Your Lens Options</h3>
               <p>There&rsquo;s no single &ldquo;best&rdquo; lens implant. The right one depends on your eyes, your health, your daily activities, and what you actually want from your vision after surgery. A good surgeon will walk you through the options honestly, not push the most expensive one.</p>
-            </div>
+              <span className="card-arrow">Watch videos &rarr;</span>
+            </Link>
           </div>
 
           {/* YOUTUBE VIDEO EMBEDS */}
@@ -279,6 +271,9 @@ export default function Home() {
                 <p className="video-label">Carol&rsquo;s Cataract Surgery Journey</p>
               </div>
             </div>
+            <div style={{textAlign: 'center', marginTop: '32px'}}>
+              <Link href="/education" className="btn-primary">Browse All Videos</Link>
+            </div>
           </div>
         </div>
       </section>
@@ -307,53 +302,16 @@ export default function Home() {
             </div>
             <div className="contact-details">
               <strong>Phone:</strong> <a href="tel:7603404700">760.340.4700</a><br />
-              <strong>Hours:</strong> Monday &ndash; Friday, 8:00 AM &ndash; 5:00 PM
+              <strong>Hours:</strong> Monday through Friday, 8:00 AM to 5:00 PM
             </div>
           </div>
 
           <div className="cta-buttons">
             <a href="tel:7603404700" className="btn-primary">Call 760.340.4700</a>
-            <a href="https://desertvisioncenter.com" className="btn-secondary">Visit Desert Vision Center</a>
+            <Link href="/contact" className="btn-secondary">Get Directions &amp; Details</Link>
           </div>
         </div>
       </section>
-
-      {/* FOOTER */}
-      <footer className="footer">
-        <div className="container">
-          <div className="footer-inner">
-            <div>
-              <div className="footer-brand">Dr. Keith Tokuhara, M.D.</div>
-              <p style={{fontSize: '13px'}}>Cataract Surgeon · Educator · Rancho Mirage, CA</p>
-            </div>
-            <div className="footer-links">
-              <div className="footer-col">
-                <h4>Quick Links</h4>
-                <a href="#about">About</a>
-                <a href="#services">Cataract Care</a>
-                <a href="#education">Education</a>
-                <a href="#contact">Contact</a>
-              </div>
-              <div className="footer-col">
-                <h4>Practice</h4>
-                <a href="https://desertvisioncenter.com">Desert Vision Center</a>
-                <a href="tel:7603404700">760.340.4700</a>
-              </div>
-              <div className="footer-col">
-                <h4>Social</h4>
-                <a href="https://x.com/DoctorTokuhara">X / Twitter</a>
-                <a href="https://youtube.com/@desertvisioncenter">YouTube</a>
-                <a href="https://instagram.com/desertvisioncenter">Instagram</a>
-                <a href="https://facebook.com/desertvisioncenter">Facebook</a>
-              </div>
-            </div>
-          </div>
-          <div className="footer-bottom">
-            <p style={{marginBottom: '8px'}}>This website is for educational purposes only and does not replace a medical consultation.</p>
-            © {new Date().getFullYear()} Dr. Keith Tokuhara. All rights reserved.
-          </div>
-        </div>
-      </footer>
     </>
   );
 }

@@ -1,11 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
 
-  // Close menu on route change / anchor click
   useEffect(() => {
     if (open) {
       document.body.style.overflow = 'hidden';
@@ -33,10 +33,10 @@ export default function MobileNav() {
       {open && (
         <div className="mobile-overlay" onClick={close}>
           <nav className="mobile-menu" onClick={(e) => e.stopPropagation()}>
-            <a href="#about" onClick={close}>About</a>
-            <a href="#services" onClick={close}>Cataract Care</a>
-            <a href="#education" onClick={close}>Education</a>
-            <a href="#contact" onClick={close}>Contact</a>
+            <Link href="/about" onClick={close}>About</Link>
+            <Link href="/cataract-surgery" onClick={close}>Cataract Surgery</Link>
+            <Link href="/education" onClick={close}>Education</Link>
+            <Link href="/contact" onClick={close}>Contact</Link>
             <a href="tel:7603404700" className="btn-primary mobile-cta" onClick={close}>
               Call 760.340.4700
             </a>
