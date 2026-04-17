@@ -19,7 +19,7 @@ export const metadata = {
     siteName: 'Dr. Keith Tokuhara',
     images: [
       {
-        url: '/dr-t-hero.jpg',
+        url: '/dr-tokuhara-hero.jpg',
         width: 1200,
         height: 630,
         alt: 'Dr. Keith Tokuhara, Cataract Surgeon at Desert Vision Center',
@@ -33,7 +33,7 @@ export const metadata = {
     title: 'Dr. Keith Tokuhara, MD | Cataract Surgeon',
     description: 'Fellowship trained cataract surgeon in the Coachella Valley. Patient first care at Desert Vision Center.',
     site: '@DoctorTokuhara',
-    images: ['/dr-t-hero.jpg'],
+    images: ['/dr-tokuhara-hero.jpg'],
   },
   robots: {
     index: true,
