@@ -15,7 +15,7 @@ const physicianSchema = {
   "telephone": "+17603404700",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "39000 Bob Hope Drive, Suite 101",
+    "streetAddress": "35900 Bob Hope Drive, Suite 175",
     "addressLocality": "Rancho Mirage",
     "addressRegion": "CA",
     "postalCode": "92270",
@@ -41,7 +41,7 @@ const medicalBusinessSchema = {
   "telephone": "+17603404700",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "39000 Bob Hope Drive, Suite 101",
+    "streetAddress": "35900 Bob Hope Drive, Suite 175",
     "addressLocality": "Rancho Mirage",
     "addressRegion": "CA",
     "postalCode": "92270",

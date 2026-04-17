@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Contact Desert Vision Center',
-  description: 'Schedule a consultation with Dr. Keith Tokuhara at Desert Vision Center. Located at 39000 Bob Hope Dr, Suite 101, Rancho Mirage, CA 92270. Call 760.340.4700.',
+  description: 'Schedule a consultation with Dr. Keith Tokuhara at Desert Vision Center. Located at 35900 Bob Hope Dr, Suite 175, Rancho Mirage, CA 92270. Call 760.340.4700.',
   alternates: {
     canonical: '/contact',
   },
@@ -33,7 +33,7 @@ export default function ContactPage() {
             <div className="contact-block">
               <h3>Address</h3>
               <p>
-                39000 Bob Hope Drive, Suite 101<br />
+                35900 Bob Hope Drive, Suite 175<br />
                 Rancho Mirage, CA 92270
               </p>
             </div>
