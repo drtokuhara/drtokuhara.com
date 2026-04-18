@@ -408,7 +408,7 @@ export default function Home() {
                 Thinking about<br />cataract surgery?
               </h1>
               <p className="home-hero-sub anim-item anim-delay-1">
-                I'm Dr. Tokuhara. Take your time here — no pressure,
+                I'm Dr. Tokuhara. Take your time here. no pressure,
                 just a thoughtful way to explore what matters to you.
               </p>
               <p className="home-hero-question anim-item anim-delay-2">
@@ -452,7 +452,7 @@ export default function Home() {
                 "I spend more time planning than most people expect.<br />
                 That's where the outcome is really decided."
               </blockquote>
-              <p className="home-trust-attribution">— Dr. Tokuhara</p>
+              <p className="home-trust-attribution">- Dr. Tokuhara</p>
             </div>
           </section>
 
@@ -464,19 +464,19 @@ export default function Home() {
                   <p className="home-proof-text">
                     "He made a complicated decision feel simple."
                   </p>
-                  <p className="home-proof-source">— Lens implant patient</p>
+                  <p className="home-proof-source">- Lens implant patient</p>
                 </div>
                 <div className="home-proof-card">
                   <p className="home-proof-text">
                     "I never felt rushed."
                   </p>
-                  <p className="home-proof-source">— Cataract surgery patient</p>
+                  <p className="home-proof-source">- Cataract surgery patient</p>
                 </div>
                 <div className="home-proof-card">
                   <p className="home-proof-text">
                     "I felt comfortable the whole time."
                   </p>
-                  <p className="home-proof-source">— Complex cataract patient</p>
+                  <p className="home-proof-source">- Complex cataract patient</p>
                 </div>
               </div>
             </div>
