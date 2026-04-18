@@ -408,7 +408,7 @@ export default function Home() {
                 Thinking about<br />cataract surgery?
               </h1>
               <p className="home-hero-sub anim-item anim-delay-1">
-                I'm Dr. Tokuhara. Take your time here. no pressure,
+                I'm Dr. Tokuhara. Take your time here. No pressure,
                 just a thoughtful way to explore what matters to you.
               </p>
               <p className="home-hero-question anim-item anim-delay-2">
@@ -513,12 +513,21 @@ export default function Home() {
                   <a href="https://desertvisioncenter.com" target="_blank" rel="noopener noreferrer">
                     desertvisioncenter.com
                   </a>
+                  <a href="https://x.com/doctortokuhara" target="_blank" rel="noopener noreferrer">
+                    X / Twitter
+                  </a>
+                  <a href="https://facebook.com/desertvisioncenter" target="_blank" rel="noopener noreferrer">
+                    Facebook
+                  </a>
+                  <a href="https://instagram.com/desertvisioncenter" target="_blank" rel="noopener noreferrer">
+                    Instagram
+                  </a>
                   <a
                     href="https://open.spotify.com/search/Desert%20Vision%20Center%20Dr%20Tokuhara"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Listen on Spotify
+                    Spotify
                   </a>
                 </div>
               </div>
