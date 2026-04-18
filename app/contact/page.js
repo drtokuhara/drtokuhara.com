@@ -77,7 +77,7 @@ export default function ContactPage() {
           <div className="contact-page-map">
             <div className="map-wrapper">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.8!2d-116.4134!3d33.7397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db1a9b23456789%3A0xabcdef1234567890!2s39000+Bob+Hope+Dr+%23101%2C+Rancho+Mirage%2C+CA+92270!5e0!3m2!1sen!2sus!4v1713200000000!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.8!2d-116.4134!3d33.7397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s!2s35900+Bob+Hope+Dr+Suite+175%2C+Rancho+Mirage%2C+CA+92270!5e0!3m2!1sen!2sus!4v1713200000000!5m2!1sen!2sus"
                 width="100%"
                 height="450"
                 style={{border: 0, borderRadius: '16px'}}
@@ -89,7 +89,7 @@ export default function ContactPage() {
             </div>
             <div className="map-directions">
               <a
-                href="https://www.google.com/maps/dir//39000+Bob+Hope+Dr+%23101,+Rancho+Mirage,+CA+92270"
+                href="https://www.google.com/maps/dir//35900+Bob+Hope+Dr+Suite+175,+Rancho+Mirage,+CA+92270"
                 className="btn-secondary"
                 target="_blank"
                 rel="noopener noreferrer"
