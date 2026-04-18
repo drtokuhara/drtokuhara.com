@@ -1,9 +1,9 @@
 'use client';
 
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 
 /* ───────────────────────────────────────────
-   SCHEMA MARKUP (preserved from previous build)
+   SCHEMA MARKUP
    ─────────────────────────────────────────── */
 const physicianSchema = {
   "@context": "https://schema.org",
@@ -91,12 +91,6 @@ const faqSchema = {
    CONVERSATION SCREENS
    ─────────────────────────────────────────── */
 const SCREENS = {
-  landing: {
-    type: 'landing',
-    step: 0,
-    totalSteps: 0,
-  },
-
   // ═══ PATH 1: NERVOUS ═══
   nervous_intro: {
     step: 1, totalSteps: 4,
@@ -318,14 +312,35 @@ const SCREENS = {
    MAIN COMPONENT
    ─────────────────────────────────────────── */
 export default function Home() {
-  const [currentScreen, setCurrentScreen] = useState('landing');
+  const [mode, setMode] = useState('homepage'); // 'homepage' or 'conversation'
+  const [currentScreen, setCurrentScreen] = useState(null);
   const [history, setHistory] = useState([]);
   const [animKey, setAnimKey] = useState(0);
+  const videoRef = useRef(null);
 
-  // Hide nav/footer when conversation is active
+  // Toggle nav/footer visibility based on mode
   useEffect(() => {
-    document.body.classList.add('conversation-active');
+    if (mode === 'conversation') {
+      document.body.classList.add('conversation-active');
+    } else {
+      document.body.classList.remove('conversation-active');
+    }
     return () => document.body.classList.remove('conversation-active');
+  }, [mode]);
+
+  // Try to play video on mount (some browsers need this)
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(() => {});
+    }
+  }, []);
+
+  const startConversation = useCallback((screenId) => {
+    setMode('conversation');
+    setCurrentScreen(screenId);
+    setHistory([]);
+    setAnimKey(k => k + 1);
+    window.scrollTo(0, 0);
   }, []);
 
   const goTo = useCallback((screenId) => {
@@ -336,7 +351,13 @@ export default function Home() {
   }, [currentScreen]);
 
   const goBack = useCallback(() => {
-    if (history.length === 0) return;
+    if (history.length === 0) {
+      // Go back to homepage
+      setMode('homepage');
+      setCurrentScreen(null);
+      setHistory([]);
+      return;
+    }
     const prev = history[history.length - 1];
     setHistory(h => h.slice(0, -1));
     setAnimKey(k => k + 1);
@@ -344,12 +365,13 @@ export default function Home() {
   }, [history]);
 
   const startOver = useCallback(() => {
+    setMode('homepage');
+    setCurrentScreen(null);
     setHistory([]);
-    setAnimKey(k => k + 1);
-    setCurrentScreen('landing');
+    window.scrollTo(0, 0);
   }, []);
 
-  const screen = SCREENS[currentScreen];
+  const screen = currentScreen ? SCREENS[currentScreen] : null;
 
   return (
     <>
@@ -358,90 +380,197 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <div className="conversation-container">
-        {/* Back button */}
-        {history.length > 0 && (
+      {mode === 'homepage' ? (
+        <div className="homepage">
+          {/* ═══ SECTION 1: HERO ═══ */}
+          <section className="home-hero">
+            <div className="home-hero-media">
+              <video
+                ref={videoRef}
+                className="home-hero-video"
+                autoPlay
+                muted
+                loop
+                playsInline
+                poster="/dr-tokuhara-hero.jpg"
+              >
+                <source src="/hero-video.mp4" type="video/mp4" />
+              </video>
+              <img
+                src="/dr-tokuhara-hero.jpg"
+                alt="Dr. Keith Tokuhara"
+                className="home-hero-fallback"
+              />
+            </div>
+            <div className="home-hero-overlay" />
+            <div className="home-hero-content">
+              <p className="home-hero-preamble anim-item anim-delay-0">
+                Take your time. This is something worth thinking through.
+              </p>
+              <h1 className="home-hero-headline anim-item anim-delay-1">
+                Thinking about cataract surgery?
+              </h1>
+              <p className="home-hero-sub anim-item anim-delay-2">
+                I'm Dr. Tokuhara, a cataract surgeon here in the Coachella Valley.
+                If you're here, you're probably trying to make a thoughtful decision.
+              </p>
+              <p className="home-hero-reassure anim-item anim-delay-3">
+                This isn't a typical medical website. There's no pressure here.
+                Just a way to understand how I think and to help you think things through.
+              </p>
+              <p className="home-hero-question anim-item anim-delay-4">
+                What's on your mind right now?
+              </p>
+              <div className="home-hero-buttons anim-item anim-delay-5">
+                <button className="home-hero-btn" onClick={() => startConversation('nervous_intro')}>
+                  I'm a little nervous about surgery
+                </button>
+                <button className="home-hero-btn" onClick={() => startConversation('surgeon_intro')}>
+                  I'm trying to choose the right surgeon
+                </button>
+                <button className="home-hero-btn home-hero-btn-disabled" disabled>
+                  I want to understand my options
+                  <span className="home-hero-btn-badge">Coming soon</span>
+                </button>
+                <button className="home-hero-btn home-hero-btn-disabled" disabled>
+                  I've decided. I just want to feel comfortable
+                  <span className="home-hero-btn-badge">Coming soon</span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          {/* ═══ SECTION 2: EXPLORE INSTEAD ═══ */}
+          <section className="home-explore">
+            <div className="container">
+              <p className="home-explore-label">
+                Or if you'd rather just explore, you can start here:
+              </p>
+              <div className="home-explore-links">
+                <a href="/cataract-surgery" className="home-explore-link">
+                  How I think about cataract surgery
+                </a>
+                <a href="/about" className="home-explore-link">
+                  What I'd want if I were a patient
+                </a>
+                <a href="/about" className="home-explore-link">
+                  My story
+                </a>
+              </div>
+            </div>
+          </section>
+
+          {/* ═══ SECTION 3: TRUST ANCHOR ═══ */}
+          <section className="home-trust">
+            <div className="container">
+              <blockquote className="home-trust-quote">
+                One thing about how I work: I tend to spend more time planning
+                than most people expect. That's where I think the outcome is really decided.
+              </blockquote>
+            </div>
+          </section>
+
+          {/* ═══ SECTION 4: LIGHT SOCIAL PROOF ═══ */}
+          <section className="home-proof">
+            <div className="container">
+              <div className="home-proof-grid">
+                <div className="home-proof-card">
+                  <p className="home-proof-text">
+                    "He made a complicated decision feel simple."
+                  </p>
+                </div>
+                <div className="home-proof-card">
+                  <p className="home-proof-text">
+                    "I never felt rushed."
+                  </p>
+                </div>
+                <div className="home-proof-card">
+                  <p className="home-proof-text">
+                    "I felt comfortable the whole time."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* ═══ SECTION 5: SUBTLE SEO BLOCK ═══ */}
+          <section className="home-seo">
+            <div className="container">
+              <p className="home-seo-text">
+                If you're looking for cataract surgery in the Coachella Valley,
+                there are a lot of options and a lot of online information. This page
+                is a little different. Instead of trying to cover everything at once,
+                it's designed to help you think through what matters most to you,
+                step by step.
+              </p>
+            </div>
+          </section>
+
+          {/* ═══ SECTION 6: FOOTER ═══ */}
+          <footer className="home-footer">
+            <div className="container">
+              <div className="home-footer-inner">
+                <div className="home-footer-identity">
+                  <p className="home-footer-name">Keith G. Tokuhara, M.D.</p>
+                  <p className="home-footer-role">Cataract Surgeon</p>
+                  <p className="home-footer-practice">Desert Vision Center</p>
+                </div>
+                <div className="home-footer-details">
+                  <p className="home-footer-address">
+                    35900 Bob Hope Drive, Suite 175<br />
+                    Rancho Mirage, CA 92270
+                  </p>
+                  <a href="tel:7603404700" className="home-footer-phone">760.340.4700</a>
+                </div>
+                <div className="home-footer-links">
+                  <a href="https://desertvisioncenter.com" target="_blank" rel="noopener noreferrer">
+                    desertvisioncenter.com
+                  </a>
+                  <a
+                    href="https://open.spotify.com/search/Desert%20Vision%20Center%20Dr%20Tokuhara"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Listen on Spotify
+                  </a>
+                </div>
+              </div>
+              <div className="home-footer-legal">
+                This website is for educational purposes only and does not replace a medical consultation.
+              </div>
+            </div>
+          </footer>
+        </div>
+      ) : (
+        /* ═══ CONVERSATION MODE ═══ */
+        <div className="conversation-container">
           <button className="conv-back" onClick={goBack} aria-label="Go back">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M19 12H5M12 19l-7-7 7-7" />
             </svg>
           </button>
-        )}
 
-        {/* Screen content */}
-        <div className="conv-screen" key={animKey}>
-          {screen.type === 'landing' ? (
-            <LandingScreen onChoose={goTo} />
-          ) : screen.type === 'close' ? (
-            <CloseScreen screen={screen} onStartOver={startOver} />
-          ) : (
-            <ConversationScreen screen={screen} onChoose={goTo} />
+          <div className="conv-screen" key={animKey}>
+            {screen?.type === 'close' ? (
+              <CloseScreen screen={screen} onStartOver={startOver} />
+            ) : screen ? (
+              <ConversationScreen screen={screen} onChoose={goTo} />
+            ) : null}
+          </div>
+
+          {screen && screen.totalSteps > 0 && (
+            <div className="conv-dots">
+              {Array.from({ length: screen.totalSteps }, (_, i) => (
+                <span
+                  key={i}
+                  className={`conv-dot ${i + 1 <= screen.step ? 'conv-dot-filled' : ''} ${i + 1 === screen.step ? 'conv-dot-active' : ''}`}
+                />
+              ))}
+            </div>
           )}
         </div>
-
-        {/* Progress dots */}
-        {screen.totalSteps > 0 && (
-          <div className="conv-dots">
-            {Array.from({ length: screen.totalSteps }, (_, i) => (
-              <span
-                key={i}
-                className={`conv-dot ${i + 1 <= screen.step ? 'conv-dot-filled' : ''} ${i + 1 === screen.step ? 'conv-dot-active' : ''}`}
-              />
-            ))}
-          </div>
-        )}
-      </div>
+      )}
     </>
-  );
-}
-
-/* ───────────────────────────────────────────
-   LANDING SCREEN
-   ─────────────────────────────────────────── */
-function LandingScreen({ onChoose }) {
-  return (
-    <div className="conv-landing">
-      <div className="conv-landing-photo">
-        <img
-          src="/dr-tokuhara-hero.jpg"
-          alt="Dr. Keith Tokuhara"
-          className="conv-hero-img"
-        />
-      </div>
-
-      <div className="conv-landing-content">
-        <h1 className="conv-headline anim-item">Thinking about cataract surgery?</h1>
-        <p className="conv-subtext anim-item anim-delay-1">
-          Most people have questions. Some have concerns.
-        </p>
-        <p className="conv-subtext anim-item anim-delay-2">
-          This isn't a typical medical website. It's a way to understand how I think, and to help you think through this decision.
-        </p>
-
-        <p className="conv-question anim-item anim-delay-3">What's on your mind right now?</p>
-
-        <div className="conv-buttons anim-item anim-delay-4">
-          <button className="conv-btn" onClick={() => onChoose('nervous_intro')}>
-            I'm nervous about surgery
-          </button>
-          <button className="conv-btn" onClick={() => onChoose('surgeon_intro')}>
-            I'm trying to choose the right surgeon
-          </button>
-          <button className="conv-btn conv-btn-disabled" disabled>
-            I want to understand my options
-            <span className="conv-btn-badge">Coming soon</span>
-          </button>
-          <button className="conv-btn conv-btn-disabled" disabled>
-            I've already decided, I just want to feel comfortable
-            <span className="conv-btn-badge">Coming soon</span>
-          </button>
-        </div>
-      </div>
-
-      <p className="conv-landing-credit anim-item anim-delay-5">
-        Dr. Keith Tokuhara, M.D. &middot; Desert Vision Center &middot; Rancho Mirage, CA
-      </p>
-    </div>
   );
 }
 
