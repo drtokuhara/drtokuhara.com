@@ -404,37 +404,22 @@ export default function Home() {
             </div>
             <div className="home-hero-overlay" />
             <div className="home-hero-content">
-              <p className="home-hero-preamble anim-item anim-delay-0">
-                Take your time. This is something worth thinking through.
-              </p>
-              <h1 className="home-hero-headline anim-item anim-delay-1">
-                Thinking about cataract surgery?
+              <h1 className="home-hero-headline anim-item anim-delay-0">
+                Thinking about<br />cataract surgery?
               </h1>
-              <p className="home-hero-sub anim-item anim-delay-2">
-                I'm Dr. Tokuhara, a cataract surgeon here in the Coachella Valley.
-                If you're here, you're probably trying to make a thoughtful decision.
+              <p className="home-hero-sub anim-item anim-delay-1">
+                I'm Dr. Tokuhara. Take your time here — no pressure,
+                just a thoughtful way to explore what matters to you.
               </p>
-              <p className="home-hero-reassure anim-item anim-delay-3">
-                This isn't a typical medical website. There's no pressure here.
-                Just a way to understand how I think and to help you think things through.
+              <p className="home-hero-question anim-item anim-delay-2">
+                What's on your mind?
               </p>
-              <p className="home-hero-question anim-item anim-delay-4">
-                What's on your mind right now?
-              </p>
-              <div className="home-hero-buttons anim-item anim-delay-5">
+              <div className="home-hero-buttons anim-item anim-delay-3">
                 <button className="home-hero-btn" onClick={() => startConversation('nervous_intro')}>
                   I'm a little nervous about surgery
                 </button>
                 <button className="home-hero-btn" onClick={() => startConversation('surgeon_intro')}>
                   I'm trying to choose the right surgeon
-                </button>
-                <button className="home-hero-btn home-hero-btn-disabled" disabled>
-                  I want to understand my options
-                  <span className="home-hero-btn-badge">Coming soon</span>
-                </button>
-                <button className="home-hero-btn home-hero-btn-disabled" disabled>
-                  I've decided. I just want to feel comfortable
-                  <span className="home-hero-btn-badge">Coming soon</span>
                 </button>
               </div>
             </div>
@@ -444,22 +429,19 @@ export default function Home() {
           <section className="home-explore">
             <div className="container">
               <p className="home-explore-label">
-                Or if you'd rather just explore, you can start here:
+                Or explore at your own pace
               </p>
               <div className="home-explore-links">
                 <a href="/cataract-surgery" className="home-explore-link">
-                  How I think about cataract surgery
+                  How I approach cataract surgery
                 </a>
                 <a href="/about" className="home-explore-link">
-                  What I'd want if I were a patient
+                  About Dr. Tokuhara
                 </a>
-                <a href="/about" className="home-explore-link">
-                  My story
+                <a href="/contact" className="home-explore-link">
+                  Schedule a conversation
                 </a>
               </div>
-              <p className="home-explore-subtle" style={{marginTop: '2rem', fontSize: '0.95rem', opacity: 0.7}}>
-                Or, if you'd rather just <a href="https://desertvisioncenter.com/ophthalmologist-dr-tokuhara/" style={{color: '#007d95', textDecoration: 'underline'}}>read about me</a>, you can do that here.
-              </p>
             </div>
           </section>
 
@@ -467,9 +449,10 @@ export default function Home() {
           <section className="home-trust">
             <div className="container">
               <blockquote className="home-trust-quote">
-                One thing about how I work: I tend to spend more time planning
-                than most people expect. That's where I think the outcome is really decided.
+                "I spend more time planning than most people expect.<br />
+                That's where the outcome is really decided."
               </blockquote>
+              <p className="home-trust-attribution">— Dr. Tokuhara</p>
             </div>
           </section>
 
@@ -481,16 +464,19 @@ export default function Home() {
                   <p className="home-proof-text">
                     "He made a complicated decision feel simple."
                   </p>
+                  <p className="home-proof-source">— Lens implant patient</p>
                 </div>
                 <div className="home-proof-card">
                   <p className="home-proof-text">
                     "I never felt rushed."
                   </p>
+                  <p className="home-proof-source">— Cataract surgery patient</p>
                 </div>
                 <div className="home-proof-card">
                   <p className="home-proof-text">
                     "I felt comfortable the whole time."
                   </p>
+                  <p className="home-proof-source">— Complex cataract patient</p>
                 </div>
               </div>
             </div>
@@ -500,11 +486,9 @@ export default function Home() {
           <section className="home-seo">
             <div className="container">
               <p className="home-seo-text">
-                If you're looking for cataract surgery in the Coachella Valley,
-                there are a lot of options and a lot of online information. This page
-                is a little different. Instead of trying to cover everything at once,
-                it's designed to help you think through what matters most to you,
-                step by step.
+                Cataract surgery in the Coachella Valley, guided by a fellowship-trained
+                surgeon who believes the best outcomes start with careful planning
+                and honest conversation.
               </p>
             </div>
           </section>
