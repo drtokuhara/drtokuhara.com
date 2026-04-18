@@ -457,6 +457,9 @@ export default function Home() {
                   My story
                 </a>
               </div>
+              <p className="home-explore-subtle" style={{marginTop: '2rem', fontSize: '0.95rem', opacity: 0.7}}>
+                Or, if you'd rather just <a href="https://desertvisioncenter.com/ophthalmologist-dr-tokuhara/" style={{color: '#007d95', textDecoration: 'underline'}}>read about me</a>, you can do that here.
+              </p>
             </div>
           </section>
 
