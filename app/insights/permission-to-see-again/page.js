@@ -1,0 +1,109 @@
+import Link from 'next/link';
+
+export const metadata = {
+  title: 'Permission to See Again',
+  description: 'A 78-year-old woman delayed eye care for six years while caring for her husband with dementia. When she finally came in, she didn\'t need a surgical plan. She needed permission.',
+  alternates: { canonical: '/insights/permission-to-see-again' },
+  openGraph: {
+    title: 'Permission to See Again | Dr. Keith Tokuhara',
+    description: 'A reflection on caregiving, delayed self-care, and the invisible weight patients carry into a cataract evaluation.',
+    url: 'https://drtokuhara.com/insights/permission-to-see-again',
+  },
+};
+
+export default function InsightPermission() {
+  return (
+    <>
+      <section className="page-hero">
+        <div className="container">
+          <span className="insight-hero-cluster">Decision Making</span>
+          <h1>Permission to <strong>See Again</strong></h1>
+          <p className="page-hero-sub">Some patients don't need a diagnosis. They need someone to tell them it's okay to take care of themselves.</p>
+        </div>
+      </section>
+
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <p className="body-lead">
+            She hadn't seen an eye doctor in six years.
+          </p>
+          <p>
+            She was 78. Her husband had dementia. For six years, she was his full-time caregiver — every appointment, every meal, every middle-of-the-night moment. Her own health became an afterthought. Not because she didn't care about it, but because there was always someone who needed her more.
+          </p>
+          <p>
+            He passed two months before she walked into my office.
+          </p>
+          <p>
+            Her vision was 20/60. The cataracts were moderate — enough to blur things, but not enough to qualify as an emergency. What struck me wasn't the clinical picture. It was the first thing she said after I finished examining her:
+          </p>
+          <p>
+            <em>"I feel terrible for letting this go so long."</em>
+          </p>
+        </div>
+      </section>
+
+      <section className="section section-warm">
+        <div className="container content-narrow">
+          <h2 className="section-title">What She <strong>Needed to Hear</strong></h2>
+          <p>
+            She didn't need a surgical plan. Not yet. She needed permission.
+          </p>
+          <p>
+            Permission to understand that delaying her own care was not a failure — it was a commitment to someone she loved. Permission to shift her focus without feeling like she was abandoning something. Permission to sit in a doctor's office and not feel guilty about it.
+          </p>
+          <p>
+            So that's what I told her.
+          </p>
+          <p>
+            <strong>"There is no urgency here. Cataracts don't punish people for waiting. You didn't fail. You took care of your husband. Now let's think about how you want to live in this next chapter."</strong>
+          </p>
+          <p>
+            She cried. Then she laughed a little. Then she asked me to explain her options — not because she was ready to schedule surgery, but because for the first time in years, she was allowed to think about herself.
+          </p>
+        </div>
+      </section>
+
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <h2 className="section-title">Why I'm Sharing <strong>This</strong></h2>
+          <p>
+            I've been practicing long enough to know that cataract surgery is rarely just about visual acuity. By the time patients reach my office, many of them have lived through years of competing priorities — caregiving, illness, grief, financial stress, fear, inertia. Those things don't show up on an eye chart. They don't appear in a diagnostic workup.
+          </p>
+          <p>
+            But they shape every decision a patient makes. If I reduce the conversation to measurements and timelines, I miss the whole person. If I pay attention — if I ask what brought them in <em>now</em>, after all this time — I can help them make a choice they feel good about. Not just medically sound. <em>Personally</em> sound.
+          </p>
+          <p>
+            That's what good care looks like. Not just knowing when to operate. Knowing when to listen.
+          </p>
+        </div>
+      </section>
+
+      <section className="section section-warm">
+        <div className="container content-narrow">
+          <div className="clinic-thought">
+            <h3>The takeaway</h3>
+            <p>
+              <em>If you've been putting off your own eye care — because of caregiving, because of grief, because life just got in the way — you haven't failed. You've been handling something that mattered. And whenever you're ready, the door is open. No judgment. No urgency. Just a conversation about what comes next.</em>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <h2 className="section-title">Related <strong>Reading</strong></h2>
+          <div className="related-grid">
+            <Link href="/understanding-cataracts" className="related-card">
+              <h3>Understanding Cataracts</h3>
+              <p>What cataracts are, how they progress, and why there's almost never a reason to rush.</p>
+            </Link>
+            <Link href="/insights/the-reader-who-almost-gave-up-her-books" className="related-card">
+              <h3>The Reader Who Almost Gave Up Her Books</h3>
+              <p>Another story about a patient who delayed care — and the conversation that changed her mind.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
