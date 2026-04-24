@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import DynamicLightPortrait from '../DynamicLightPortrait';
 
 export const metadata = {
   title: 'About Dr. Keith Tokuhara',
@@ -28,7 +29,13 @@ export default function AboutPage() {
       <section className="section section-white">
         <div className="container about-grid">
           <div className="about-image">
-            <img src="/dr-t-hero.jpg" alt="Dr. Keith Tokuhara, cataract surgeon at Desert Vision Center in Rancho Mirage" />
+            <DynamicLightPortrait
+              src="/media/821A6722.JPG"
+              normalSrc="/media/821A6722-normal.jpg"
+              alt="Dr. Keith Tokuhara, cataract surgeon at Desert Vision Center in Rancho Mirage"
+              width={1080}
+              height={1620}
+            />
           </div>
           <div className="about-text">
             <h2>The <strong>short version</strong></h2>
