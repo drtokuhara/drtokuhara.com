@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Understanding Cataracts: What Your Eye Doctor May Not Have Time to Explain',
@@ -65,6 +66,19 @@ export default function UnderstandingCataracts() {
             <div className="insight-item">
               <strong>"Night driving got scary."</strong>
               <p>Headlights scatter and bloom. Street signs are harder to read. You start avoiding driving after dark, sometimes without even realizing you're doing it.</p>
+            </div>
+
+            <div className="content-image">
+              <Image
+                src="/media/cataract-night-driving-palm-springs.jpg"
+                alt="Simulated view of night driving with early cataracts in Palm Springs — headlight glare and halos"
+                width={680}
+                height={453}
+                style={{ width: '100%', height: 'auto' }}
+              />
+              <div className="content-image-caption">
+                A simulation of what night driving looks like through early cataracts — the glare, the halos, the washed-out contrast. This is what many patients describe but struggle to put into words.
+              </div>
             </div>
             <div className="insight-item">
               <strong>"Colors just aren't the same."</strong>
