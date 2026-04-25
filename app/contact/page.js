@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Contact Desert Vision Center',
@@ -21,6 +22,21 @@ export default function ContactPage() {
         <div className="container">
           <h1>Get in <strong>Touch</strong></h1>
           <p className="page-hero-sub">You don&rsquo;t need a referral to come see me. If you have a question about your eyes, just call.</p>
+        </div>
+      </section>
+
+      {/* CLINIC EXTERIOR */}
+      <section className="section section-white" style={{paddingBottom: 0}}>
+        <div className="container" style={{maxWidth: '800px', margin: '0 auto'}}>
+          <div className="content-image">
+            <Image
+              src="/media/IMG-0661.jpg"
+              alt="Desert Vision Center exterior in Rancho Mirage, California"
+              width={800}
+              height={455}
+              style={{ width: '100%', height: 'auto' }}
+            />
+          </div>
         </div>
       </section>
 

@@ -157,6 +157,22 @@ export default function UnderstandingCataracts() {
         </div>
       </section>
 
+      {/* EXAM EQUIPMENT IMAGE */}
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/20210109_095405.jpg"
+              alt="Advanced diagnostic equipment at Desert Vision Center for comprehensive eye exams"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto' }}
+            />
+            <div className="content-image-caption">The equipment we use to evaluate your cataracts and plan your care.</div>
+          </div>
+        </div>
+      </section>
+
       {/* WHEN TO ACT */}
       <section className="section section-warm">
         <div className="container content-narrow">

@@ -111,6 +111,22 @@ export default function ChoosingYourSurgeon() {
         </div>
       </section>
 
+      {/* REAL CLINIC IMAGE */}
+      <section className="section section-white" style={{paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/IMG_1756.jpeg"
+              alt="Dr. Tokuhara in a one-on-one consultation with a patient at Desert Vision Center"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto' }}
+            />
+            <div className="content-image-caption">A real consultation at Desert Vision Center — where the conversation matters as much as the surgery.</div>
+          </div>
+        </div>
+      </section>
+
       {/* SECOND OPINIONS */}
       <section className="section section-white">
         <div className="container content-narrow">

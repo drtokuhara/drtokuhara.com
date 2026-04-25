@@ -24,6 +24,16 @@ export default function LensImplantsExplained() {
 
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/IMG_5162.jpeg"
+              alt="Dr. Tokuhara with advanced diagnostic equipment at Desert Vision Center"
+              width={680}
+              height={510}
+              style={{ width: '100%', height: 'auto' }}
+            />
+            <div className="content-image-caption">Lens selection starts with precise measurements — the right data leads to the right choice.</div>
+          </div>
           <p className="body-lead">
             During cataract surgery, your clouded natural lens is removed and replaced with an artificial lens implant — called an intraocular lens, or IOL. This lens is permanent. It's the one decision in cataract surgery that stays with you for the rest of your life.
           </p>

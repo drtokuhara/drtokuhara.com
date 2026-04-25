@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Insights from the Clinic',
@@ -42,6 +43,20 @@ export default function InsightsPage() {
         <div className="container">
           <h1>Insights from the <strong>Clinic</strong></h1>
           <p className="page-hero-sub">These aren't medical articles. They're reflections — on the patients I see, the decisions we navigate together, and what I've learned about the space between a diagnosis and a choice.</p>
+        </div>
+      </section>
+
+      <section className="section section-white" style={{paddingBottom: 0}}>
+        <div className="container" style={{maxWidth: '800px', margin: '0 auto'}}>
+          <div className="content-image">
+            <Image
+              src="/media/20210109_095037.jpg"
+              alt="Inside Desert Vision Center — where these conversations happen"
+              width={800}
+              height={380}
+              style={{ width: '100%', height: 'auto' }}
+            />
+          </div>
         </div>
       </section>
 
