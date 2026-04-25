@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "about": "Acerca de",
+    "cataractSurgery": "Cirugía de Cataratas",
+    "clearInADay": "CLEAR en un Día",
+    "yourJourney": "Su Camino",
+    "lensGuide": "Guía de Lentes",
+    "insights": "Perspectivas",
+    "education": "Educación",
+    "contact": "Contacto"
+  },
+  "common": {
+    "scheduleConsultation": "Programe una Consulta",
+    "learnAboutCataractSurgery": "Conozca la Cirugía de Cataratas",
+    "callPhone": "Llame al 760.340.4700",
+    "getDirections": "Cómo Llegar"
+  },
+  "home": {
+    "heroEyebrow": "Desert Vision Center · Rancho Mirage",
+    "heroHeadline": "Vea su mundo\ncon claridad",
+    "heroSub": "Cirugía avanzada de cataratas por el Dr. Keith Tokuhara. Precisión. Integridad. Su visión, reimaginada.",
+    "lifestyleLabel": "La vida en el Valle de Coachella",
+    "lifestyleHeadline": "Su visión impulsa\ntodo lo que ama",
+    "philosophyQuote": "Dedico más tiempo a planificar su cirugía que lo que la mayoría de los cirujanos dedican a realizarla. Es ahí donde realmente se decide el resultado.",
+    "philosophyName": "Dr. Keith Tokuhara",
+    "philosophyTitle": "Cirujano de Cataratas · Desert Vision Center",
+    "diffEyebrow": "Por qué Desert Vision Center",
+    "diffHeadline": "Un estándar diferente\nde atención",
+    "diffIndependent": "Sin propietarios corporativos. Sin capital privado. Cada recomendación se basa únicamente en lo que es mejor para sus ojos.",
+    "diffIndependentTitle": "Médico Independiente",
+    "diffUnhurried": "Su consulta no es una línea de producción. Nos tomamos el tiempo para explicar, escuchar y planificar con precisión.",
+    "diffUnhurriedTitle": "Sin Prisas por Diseño",
+    "diffComplex": "Los pacientes vienen a nosotros cuando otras cirugías no salieron como se esperaba. Nos especializamos en los casos que otros refieren.",
+    "diffComplexTitle": "Experiencia en Casos Complejos",
+    "diffClear": "Ambos ojos, un día. Nuestro protocolo bilateral del mismo día significa menos interrupciones y una recuperación visual más rápida.",
+    "diffClearTitle": "CLEAR en un Día",
+    "editorialEyebrow": "Conozca a Su Cirujano",
+    "editorialName": "Keith G. Tokuhara, M.D.",
+    "editorialBio1": "Subespecializado en la Universidad de Loma Linda bajo la dirección del legendario Dr. Howard Gimbel. Nombrado Mejor Médico por Palm Springs Life cada año desde 2019. Reconocido por NBC como el mejor cirujano de cataratas del Valle de Coachella.",
+    "editorialBio2": "Pero lo que realmente importa sucede en la sala de consulta. La forma en que escucho sus preocupaciones. La forma en que explico sus opciones sin jerga ni presión de ventas. La forma en que planifico su cirugía como si fuera para mi propia familia.",
+    "editorialAccent": "Primer cirujano en el Valle de Coachella en realizar fijación secundaria de lente Yamane, implantación de lente Vivity e implantación de lente trifocal PanOptix Pro.",
+    "editorialLink": "La historia completa",
+    "conversationEyebrow": "¿Tiene una pregunta?",
+    "conversationHeadline": "Empecemos con\nlo que le preocupa",
+    "conversationSub": "Elija un punto de partida y le guiaré de la misma manera que lo haría en mi consultorio.",
+    "voicesEyebrow": "Voces de Pacientes",
+    "exploreEyebrow": "Explorar",
+    "exploreHeadline": "Profundice más",
+    "finalHeadline": "Su visión merece\nuna conversación real",
+    "finalSub": "Sin presión. Sin obligación. Solo una conversación honesta sobre sus ojos y lo que es posible.",
+    "footerDisclaimer": "Este sitio web es solo para fines educativos y no reemplaza una consulta médica.",
+    "footerRights": "Todos los derechos reservados."
+  },
+  "patientJourney": {
+    "title": "Su <strong>Camino como Paciente</strong>",
+    "subtitle": "Desde la primera visita hasta una visión clara. Sin sorpresas. Sin presión. Solo un camino claro.",
+    "intro": "Sé que la cirugía de cataratas parece algo importante. Lo es. Pero no tiene que sentirse abrumador. Esto es exactamente lo que sucede desde el momento en que cruza nuestra puerta hasta el momento en que regresa a vivir su vida con una visión clara. Paso a paso, para que no haya sorpresas.",
+    "step1": {
+      "title": "La <strong>Evaluación</strong>",
+      "subtitle": "Su primera visita. Sin compromiso.",
+      "p1": "Su primera visita es un examen ocular completo. Medimos su visión, mapeamos la superficie de sus ojos y tomamos imágenes detalladas de su lente. Estoy mirando el panorama completo, no solo la catarata, sino su córnea, su retina, su presión ocular, todo lo que importa.",
+      "p2": "Luego nos sentamos y hablamos. Le mostraré lo que veo, le explicaré lo que significa en un lenguaje claro y responderé cada pregunta que tenga. Si la cirugía tiene sentido, le diré por qué. Si no lo tiene, también se lo diré. Nadie en mi consultorio le presionará para hacer nada.",
+      "p3": "Esta visita se trata de información y confianza. Usted me está evaluando a mí tanto como yo estoy evaluando sus ojos."
+    },
+    "step2": {
+      "title": "La <strong>Decisión</strong>",
+      "subtitle": "Entendiendo sus opciones. A su ritmo.",
+      "p1": "Si la cirugía es el paso correcto, lo siguiente es elegir su lente intraocular. Aquí es donde las cosas se vuelven personales. La elección del lente depende de sus ojos, su estilo de vida y lo que más le importa.",
+      "p2": "¿Quiere prescindir de lentes para ver de lejos? ¿Lee durante horas todos los días? ¿Juega golf y necesita visión nítida a distancia media? No existe un solo lente \"mejor\", existe el mejor lente para usted. Le explicaré cada opción con honestidad, incluyendo las ventajas y desventajas, y le daré mi recomendación. Pero la decisión final siempre es suya.",
+      "p3": "Tómese el tiempo que necesite. Algunos pacientes deciden en una visita. Otros quieren pensarlo, hablar con su familia o volver con más preguntas. Eso no solo está bien, es inteligente."
+    },
+    "step3": {
+      "title": "Día de <strong>Cirugía</strong>",
+      "subtitle": "Más fácil de lo que piensa. La mayoría de los pacientes lo confirman.",
+      "p1": "Llegará al centro quirúrgico y le pondremos cómodo. Las gotas oculares adormecen su ojo completamente, no sentirá dolor. El procedimiento en sí toma aproximadamente 10 a 15 minutos. Está despierto todo el tiempo, pero la mayoría de los pacientes se sorprenden de lo tranquila y rápida que es la experiencia.",
+      "p2": "Utilizo técnicas asistidas por láser para mayor precisión, y le explico lo que está sucediendo para que nunca esté en la incertidumbre. El lente opaco sale, el nuevo lente entra, y eso es todo. Sin suturas. Sin agujas en el ojo.",
+      "p3": "Traiga a alguien que lo lleve a casa. Traiga gafas de sol. Y traiga sus preguntas, las responderé justo hasta el momento en que empecemos.",
+      "whatToBring": "Qué traer",
+      "bring1": "Un conductor (no puede manejar de regreso a casa)",
+      "bring2": "Gafas de sol para el viaje de regreso",
+      "bring3": "Ropa cómoda y holgada",
+      "bring4": "Sus gotas oculares (le recordaremos cuáles)"
+    },
+    "step4": {
+      "title": "La <strong>Recuperación</strong>",
+      "subtitle": "Más rápida de lo que espera. Estamos con usted en cada paso.",
+      "first24": "Primeras 24 Horas",
+      "first24text": "La mayoría de los pacientes notan una diferencia inmediatamente. Los colores se ven más brillantes. Las cosas se ven más nítidas. Su ojo puede sentirse un poco áspero o lloroso, eso es normal. Descanse, use sus gotas según las indicaciones y resista la tentación de frotarse el ojo.",
+      "firstWeek": "Primera Semana",
+      "firstWeekText": "Regresará al día siguiente para un chequeo rápido. La mayoría de las personas retoman su rutina normal en pocos días: leer, ver televisión, caminar. Evite levantar cosas pesadas, ambientes con polvo y que le entre agua directamente al ojo. Su visión seguirá mejorando a medida que su ojo sane.",
+      "followUp": "Visitas de Seguimiento",
+      "followUpText": "Lo veré al día siguiente, a la semana y al mes después de la cirugía. Estas visitas son rápidas pero importantes. Estoy revisando la posición del lente, la cicatrización y su visión. Si algo se siente mal entre visitas, llámenos. No espere preocupándose."
+    },
+    "step5": {
+      "title": "La Vida <strong>Después</strong>",
+      "subtitle": "Esta es la parte de la que a los pacientes les encanta hablar.",
+      "p1": "Su visión generalmente se estabiliza en unas pocas semanas. Una vez que lo hace, podemos finalizar su receta de lentes si necesita una. Algunos pacientes con lentes premium descubren que casi no necesitan gafas.",
+      "p2": "Pero esto es lo que más escucho de los pacientes: no es solo la agudeza visual. Son los colores. La nitidez. La confianza para conducir de noche otra vez, para leer un menú sin sacar la linterna del teléfono, para ver claramente las caras de sus nietos al otro lado de la habitación. De eso se trata realmente.",
+      "p3": "La cirugía de cataratas no solo restaura su visión. Restaura su independencia. Sus pasatiempos. Su vida en el Valle de Coachella: el golf, el tenis, las caminatas, los atardeceres. Todo, con un enfoque más nítido."
+    },
+    "nervous": {
+      "title": "Si Está <strong>Nervioso</strong>",
+      "text": "Eso es normal. Me preocuparía si no lo estuviera. La cirugía ocular suena aterradora, y ninguna cantidad de lectura en internet lo prepara completamente para lo real. Para eso es la conversación. Venga, haga sus preguntas, y vea si se siente cómodo. Si es así, excelente. Si necesita más tiempo, también está bien. No hay respuesta incorrecta aquí excepto apresurarse en algo para lo que no está listo."
+    },
+    "cta": {
+      "title": "¿Listo para dar el <strong>primer paso?</strong>",
+      "subtitle": "No necesita estar listo para la cirugía. Solo necesita estar listo para una conversación."
+    }
+  },
+  "contact": {
+    "title": "Póngase en <strong>Contacto</strong>",
+    "subtitle": "No necesita una referencia para venir a verme. Si tiene una pregunta sobre sus ojos, simplemente llame.",
+    "clinicTitle": "Desert Vision <strong>Center</strong>",
+    "address": "Dirección",
+    "phone": "Teléfono",
+    "officeHours": "Horario de Oficina",
+    "officeHoursText": "Lunes a Viernes",
+    "officeHoursTime": "8:00 AM a 5:00 PM",
+    "closedWeekend": "Cerrado Sábado y Domingo",
+    "scheduleOnline": "Programar en Línea",
+    "scheduleOnlineText": "También puede solicitar una cita a través del sitio web de Desert Vision Center.",
+    "visitSite": "Visite desertvisioncenter.com",
+    "whatToBring": "Qué Traer",
+    "bring1": "Identificación con foto",
+    "bring2": "Tarjeta de seguro (si aplica)",
+    "bring3": "Lista de medicamentos actuales",
+    "bring4": "Registros oculares previos o imágenes, si los tiene",
+    "bring5": "Sus preguntas. Escríbalas para que no se le olviden.",
+    "firstVisitTitle": "Qué Esperar en Su <strong>Primera Visita</strong>",
+    "firstVisitP1": "Su primera cita es un examen ocular completo. Revisaremos su visión, examinaremos la salud de sus ojos y tomaremos medidas si la cirugía pudiera estar en consideración. Planifique aproximadamente una hora y media. Dilatamos sus pupilas, lo que significa que su visión estará borrosa por unas horas después, así que traiga gafas de sol y organice transporte si puede.",
+    "firstVisitP2": "Me sentaré con usted y repasaremos todo lo que encontremos. Si es candidato para cirugía, hablaremos sobre las opciones. Si no lo es, también se lo diré. Sin presión de ninguna manera. Esta visita se trata de darle información, no de ponerlo en un calendario quirúrgico.",
+    "firstVisitP3": "Los pacientes nuevos a menudo me dicen que esperaban sentirse apresurados y no fue así. Eso es por diseño. No programo mi agenda como una línea de producción.",
+    "ctaTitle": "¿Listo para <strong>programar?</strong>",
+    "ctaText": "Llame directamente a la oficina o visite Desert Vision Center en línea. Mi equipo lo atenderá desde la primera llamada."
+  }
+}

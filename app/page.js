@@ -11,7 +11,7 @@ const physicianSchema = {
   "@context": "https://schema.org",
   "@type": "Physician",
   "name": "Dr. Keith Tokuhara",
-  "description": "Board-certified cataract surgeon specializing in advanced cataract surgery, complex cases, and premium lens implants in Rancho Mirage, California.",
+  "description": "Fellowship trained cataract surgeon, educator, and patient advocate. Specializing in complex cataract cases and honest, pressure-free patient care in the Coachella Valley.",
   "url": "https://drtokuhara.com",
   "image": "https://drtokuhara.com/dr-tokuhara-hero.jpg",
   "telephone": "+17603404700",

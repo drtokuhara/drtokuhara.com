@@ -2,8 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Cataract Surgery in Rancho Mirage',
-  description: 'Advanced cataract surgery with Dr. Keith Tokuhara at Desert Vision Center. Learn about the procedure, lens options, CLEAR in a Day bilateral surgery, recovery, and what to expect.',
+  title: 'Cataract Surgery - What to Know Before You Decide',
+  description: 'Dr. Tokuhara explains cataract surgery in plain language. What it is, when it makes sense, lens options, recovery, and what to expect. No jargon, no pressure.',
   alternates: {
     canonical: '/cataract-surgery',
   },

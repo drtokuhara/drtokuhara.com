@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import LanguageToggle from './LanguageToggle';
 
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -36,11 +37,16 @@ export default function MobileNav() {
             <Link href="/about" onClick={close}>About</Link>
             <Link href="/cataract-surgery" onClick={close}>Cataract Surgery</Link>
             <Link href="/clear-in-a-day" onClick={close}>CLEAR in a Day</Link>
+            <Link href="/complex-cases" onClick={close}>Complex Cases</Link>
             <Link href="/patient-journey" onClick={close}>Your Journey</Link>
             <Link href="/lens-implants-explained" onClick={close}>Lens Guide</Link>
             <Link href="/insights" onClick={close}>Insights</Link>
             <Link href="/education" onClick={close}>Education</Link>
+            <Link href="/faq" onClick={close}>FAQ</Link>
             <Link href="/contact" onClick={close}>Contact</Link>
+            <div className="mobile-lang-toggle">
+              <LanguageToggle />
+            </div>
             <a href="tel:7603404700" className="btn-primary mobile-cta" onClick={close}>
               Call 760.340.4700
             </a>

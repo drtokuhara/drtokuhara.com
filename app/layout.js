@@ -1,20 +1,22 @@
 import Link from 'next/link';
 import MobileNav from './MobileNav';
+import { LanguageProvider } from './LanguageContext';
+import LanguageToggle from './LanguageToggle';
 import './styles.css';
 
 export const metadata = {
   title: {
-    default: 'Dr. Keith Tokuhara, MD | Cataract Surgeon in Rancho Mirage, Coachella Valley',
+    default: 'Dr. Keith Tokuhara, MD | Cataract Expert & Patient Educator',
     template: '%s | Dr. Keith Tokuhara, MD',
   },
-  description: 'Board-certified cataract surgeon in Rancho Mirage, CA. Fellowship trained, patient first approach. Advanced cataract surgery, premium lens implants, and complex case expertise at Desert Vision Center.',
+  description: 'Dr. Keith Tokuhara - fellowship trained cataract surgeon, educator, and patient advocate. Honest answers about cataracts, lens implants, and what to expect from surgery. Desert Vision Center, Coachella Valley.',
   metadataBase: new URL('https://drtokuhara.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Dr. Keith Tokuhara, MD | Cataract Surgeon',
-    description: 'Fellowship trained cataract surgeon in the Coachella Valley. Advanced surgery, premium lenses, and honest patient care at Desert Vision Center.',
+    title: 'Dr. Keith Tokuhara, MD | Cataract Expert & Educator',
+    description: 'Fellowship trained cataract surgeon and patient educator. Honest answers about cataracts, lens implants, and your surgical options. Desert Vision Center, Coachella Valley.',
     url: 'https://drtokuhara.com',
     siteName: 'Dr. Keith Tokuhara',
     images: [
@@ -53,6 +55,7 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body>
+        <LanguageProvider>
         {/* NAV */}
         <nav className="nav">
           <div className="container nav-inner">
@@ -61,11 +64,14 @@ export default function RootLayout({ children }) {
               <Link href="/about">About</Link>
               <Link href="/cataract-surgery">Cataract Surgery</Link>
               <Link href="/clear-in-a-day">CLEAR in a Day</Link>
+              <Link href="/complex-cases">Complex Cases</Link>
               <Link href="/patient-journey">Your Journey</Link>
               <Link href="/lens-implants-explained">Lens Guide</Link>
               <Link href="/insights">Insights</Link>
               <Link href="/education">Education</Link>
+              <Link href="/faq">FAQ</Link>
               <Link href="/contact">Contact</Link>
+              <LanguageToggle />
             </div>
             <MobileNav />
           </div>
@@ -87,10 +93,12 @@ export default function RootLayout({ children }) {
                   <Link href="/about">About</Link>
                   <Link href="/cataract-surgery">Cataract Surgery</Link>
                   <Link href="/clear-in-a-day">CLEAR in a Day</Link>
+                  <Link href="/complex-cases">Complex Cases</Link>
                   <Link href="/patient-journey">Your Journey</Link>
                   <Link href="/lens-implants-explained">Lens Guide</Link>
                   <Link href="/insights">Insights</Link>
                   <Link href="/education">Education</Link>
+                  <Link href="/faq">FAQ</Link>
                   <Link href="/contact">Contact</Link>
                 </div>
                 <div className="footer-col">
@@ -113,6 +121,7 @@ export default function RootLayout({ children }) {
             </div>
           </div>
         </footer>
+        </LanguageProvider>
       </body>
     </html>
   );

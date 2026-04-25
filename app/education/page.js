@@ -2,8 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Patient Education Videos',
-  description: 'Watch Dr. Tokuhara explain cataracts, surgery options, lens implants, recovery, and more. Free educational videos from Desert Vision Center in Rancho Mirage.',
+  title: 'Patient Education Videos by Dr. Tokuhara',
+  description: 'Dr. Tokuhara explains cataracts, surgery, lens implants, and recovery in plain language. Free educational videos. No jargon, no sales pitch.',
   alternates: {
     canonical: '/education',
   },

@@ -3,8 +3,8 @@ import Image from 'next/image';
 import DynamicLightPortrait from '../DynamicLightPortrait';
 
 export const metadata = {
-  title: 'About Dr. Keith Tokuhara',
-  description: 'Meet Dr. Keith Tokuhara, fellowship trained cataract surgeon at Desert Vision Center in Rancho Mirage. Learn about his training, philosophy, and commitment to ethical patient care.',
+  title: 'About Dr. Keith Tokuhara - The Surgeon Behind the Scrub Cap',
+  description: 'The full story. Training under Dr. Howard Gimbel, international surgical missions, complex case expertise, and why physician independence matters. Meet the person, not just the credentials.',
   alternates: {
     canonical: '/about',
   },
