@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import DynamicLightPortrait from '../DynamicLightPortrait';
 
 export const metadata = {
@@ -141,6 +142,16 @@ export default function AboutPage() {
           <p className="prose">
             Those experiences stay with you. They shape how you treat every patient, whether they&rsquo;re in Guam or Rancho Mirage.
           </p>
+
+          <div className="content-image" style={{marginTop: '32px'}}>
+            <Image
+              src="/media/lifestyle-joshua-tree.jpg"
+              alt="Joshua Tree landscape in the Coachella Valley - the desert community Dr. Tokuhara calls home"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
 
           <h3 style={{color: 'var(--night-horizon)', marginTop: '40px', marginBottom: '12px'}}>Family</h3>
           <p className="prose">

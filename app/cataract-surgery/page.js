@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Cataract Surgery in Rancho Mirage',
@@ -110,6 +111,16 @@ export default function CataractSurgeryPage() {
           <p className="prose">
             Most people notice improved vision within a day or two. You&rsquo;ll use eye drops for a few weeks and come back for follow up visits so I can make sure everything is healing well. There are some temporary restrictions, like avoiding heavy lifting and keeping water out of your eyes, but most patients are back to their normal routine pretty quickly.
           </p>
+
+          <div className="content-image" style={{marginTop: '24px', marginBottom: '24px'}}>
+            <Image
+              src="/media/lifestyle-tennis-woman.jpg"
+              alt="Woman playing tennis in the Coachella Valley with clear vision after cataract surgery"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
 
           <div className="video-section" style={{marginTop: '32px'}}>
             <div className="video-grid video-grid-2">

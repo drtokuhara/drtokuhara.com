@@ -60,6 +60,7 @@ export default function RootLayout({ children }) {
             <div className="nav-links">
               <Link href="/about">About</Link>
               <Link href="/cataract-surgery">Cataract Surgery</Link>
+              <Link href="/clear-in-a-day">CLEAR in a Day</Link>
               <Link href="/patient-journey">Your Journey</Link>
               <Link href="/lens-implants-explained">Lens Guide</Link>
               <Link href="/insights">Insights</Link>
@@ -85,6 +86,7 @@ export default function RootLayout({ children }) {
                   <h4>Quick Links</h4>
                   <Link href="/about">About</Link>
                   <Link href="/cataract-surgery">Cataract Surgery</Link>
+                  <Link href="/clear-in-a-day">CLEAR in a Day</Link>
                   <Link href="/patient-journey">Your Journey</Link>
                   <Link href="/lens-implants-explained">Lens Guide</Link>
                   <Link href="/insights">Insights</Link>

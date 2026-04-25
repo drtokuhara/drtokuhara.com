@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Patient Education Videos',
@@ -133,6 +134,21 @@ export default function EducationPage() {
           </div>
         </section>
       ))}
+
+      {/* LIFESTYLE */}
+      <section className="section section-warm" style={{paddingTop: '24px', paddingBottom: '24px'}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/lifestyle-poolside-reading.jpg"
+              alt="Relaxing poolside with a book in the Coachella Valley sun"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+        </div>
+      </section>
 
       {/* CTA */}
       <section className="cta">

@@ -127,6 +127,21 @@ export default function ChoosingYourSurgeon() {
         </div>
       </section>
 
+      {/* LIFESTYLE IMAGE */}
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/lifestyle-elpaseo-shopping.jpg"
+              alt="Shopping on El Paseo in Palm Desert - the Coachella Valley lifestyle"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* SECOND OPINIONS */}
       <section className="section section-white">
         <div className="container content-narrow">

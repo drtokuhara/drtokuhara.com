@@ -173,6 +173,21 @@ export default function UnderstandingCataracts() {
         </div>
       </section>
 
+      {/* LIFESTYLE IMAGE */}
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: '24px'}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/lifestyle-convertible.jpg"
+              alt="Driving a convertible through the Coachella Valley with clear, confident vision"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* WHEN TO ACT */}
       <section className="section section-warm">
         <div className="container content-narrow">

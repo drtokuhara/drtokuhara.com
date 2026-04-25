@@ -117,6 +117,21 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* LIFESTYLE IMAGE */}
+      <section className="section section-warm" style={{paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/lifestyle-sunset-dining.jpg"
+              alt="Sunset dining in the Coachella Valley - the lifestyle our patients enjoy"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* WHAT TO EXPECT */}
       <section className="section section-warm">
         <div className="container content-narrow">

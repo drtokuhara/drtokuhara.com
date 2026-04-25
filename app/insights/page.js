@@ -34,6 +34,20 @@ const insights = [
     description: 'A woman spent six years caring for her husband. When she finally came in for her own eyes, she didn\'t need a surgical plan. She needed permission.',
     cluster: 'Decision Making',
   },
+  {
+    slug: 'the-number-that-wasnt-the-problem',
+    title: 'The Number That Wasn\'t the Problem',
+    date: 'April 2026',
+    description: 'A man with keratoconus saw residual astigmatism after cataract surgery and wanted a lens exchange. The real answer was understanding why that number wasn\'t what it seemed.',
+    cluster: 'Surgical Restraint',
+  },
+  {
+    slug: 'when-more-isnt-better',
+    title: 'When More Isn\'t Better',
+    date: 'April 2026',
+    description: 'A 32-year-old had a multifocal lens, then a YAG, then LASIK. A year later she still wasn\'t seeing right. Sometimes each fix creates the need for the next one.',
+    cluster: 'Expectations & Reality',
+  },
 ];
 
 export default function InsightsPage() {
