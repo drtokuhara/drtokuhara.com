@@ -35,6 +35,9 @@ export default function MobileNav() {
           <nav className="mobile-menu" onClick={(e) => e.stopPropagation()}>
             <Link href="/about" onClick={close}>About</Link>
             <Link href="/cataract-surgery" onClick={close}>Cataract Surgery</Link>
+            <Link href="/patient-journey" onClick={close}>Your Journey</Link>
+            <Link href="/lens-implants-explained" onClick={close}>Lens Guide</Link>
+            <Link href="/insights" onClick={close}>Insights</Link>
             <Link href="/education" onClick={close}>Education</Link>
             <Link href="/contact" onClick={close}>Contact</Link>
             <a href="tel:7603404700" className="btn-primary mobile-cta" onClick={close}>
