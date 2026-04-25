@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Permission to See Again',
@@ -65,6 +66,15 @@ export default function InsightPermission() {
 
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-joyful-clear-vision.jpg"
+              alt="Patient seeing clearly again for the first time in years"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto' }}
+            />
+          </div>
           <h2 className="section-title">Why I'm Sharing <strong>This</strong></h2>
           <p>
             I've been practicing long enough to know that cataract surgery is rarely just about visual acuity. By the time patients reach my office, many of them have lived through years of competing priorities — caregiving, illness, grief, financial stress, fear, inertia. Those things don't show up on an eye chart. They don't appear in a diagnostic workup.

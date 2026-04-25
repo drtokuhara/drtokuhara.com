@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Choosing a Cataract Surgeon: The Questions Nobody Tells You to Ask',
@@ -23,6 +24,15 @@ export default function ChoosingYourSurgeon() {
 
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-couple-consultation.jpg"
+              alt="Couple meeting with their eye surgeon during a cataract consultation"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto' }}
+            />
+          </div>
           <p className="body-lead">
             Most patients choose a cataract surgeon the same way they choose a restaurant — someone recommended it, the reviews looked fine, and the office was nearby. That works often enough. But cataract surgery is one of the most personal medical decisions you'll make, and how you choose matters more than most people realize.
           </p>

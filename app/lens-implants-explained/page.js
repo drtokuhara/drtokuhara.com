@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Lens Implants Explained: Monofocal, Toric, EDOF, and Multifocal',
@@ -110,6 +111,21 @@ export default function LensImplantsExplained() {
             <p><strong>What you get:</strong> The best chance at functional vision at all distances without glasses. Freedom for reading, driving, and everything in between.</p>
             <p><strong>What you accept:</strong> Possible halos and glare, especially at night. Slight contrast reduction in dim light. Premium cost. Not ideal for patients with other eye conditions (macular degeneration, advanced glaucoma).</p>
             <p><strong>Best for:</strong> Patients who strongly dislike wearing glasses, have healthy eyes beyond cataracts, and are comfortable with the adaptation period.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* PATIENT IMAGE */}
+      <section className="section section-warm" style={{paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/patient-elderly-man-calm.jpg"
+              alt="Patient feeling reassured about his lens implant options"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto' }}
+            />
           </div>
         </div>
       </section>

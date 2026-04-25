@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'The Reader Who Almost Gave Up Her Books',
@@ -24,6 +25,15 @@ export default function InsightReader() {
 
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-reader-woman-books.jpg"
+              alt="Elderly woman reading peacefully at home"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto' }}
+            />
+          </div>
           <p className="body-lead">
             She was 81 years old. She read for several hours every day — books at breakfast, books in the afternoon, books before bed. Reading wasn't a hobby. It was who she was.
           </p>

@@ -23,6 +23,21 @@ export default function UnderstandingCataracts() {
         </div>
       </section>
 
+      {/* HERO IMAGE */}
+      <section className="section section-white" style={{paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/patient-elderly-woman-smiling.jpg"
+              alt="Patient smiling after learning about her cataract options"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto' }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* INTRO */}
       <section className="section section-white">
         <div className="container content-narrow">
@@ -124,6 +139,21 @@ export default function UnderstandingCataracts() {
           <p>
             When you're ready — truly ready — we'll figure out the right plan together. And it will be based on how you want to live, not just what the eye chart says.
           </p>
+        </div>
+      </section>
+
+      {/* DRIVING IMAGE */}
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/patient-driving-concern.jpg"
+              alt="Woman considering whether night driving is still safe with cataracts"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto' }}
+            />
+          </div>
         </div>
       </section>
 

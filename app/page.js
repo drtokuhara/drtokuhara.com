@@ -432,14 +432,23 @@ export default function Home() {
                 Or explore at your own pace
               </p>
               <div className="home-explore-links">
+                <a href="/understanding-cataracts" className="home-explore-link">
+                  Understanding cataracts
+                </a>
+                <a href="/lens-implants-explained" className="home-explore-link">
+                  Lens implant options
+                </a>
+                <a href="/choosing-your-surgeon" className="home-explore-link">
+                  Choosing your surgeon
+                </a>
+                <a href="/insights" className="home-explore-link">
+                  Insights from the clinic
+                </a>
                 <a href="/cataract-surgery" className="home-explore-link">
-                  How I approach cataract surgery
+                  How I approach surgery
                 </a>
                 <a href="/about" className="home-explore-link">
                   About Dr. Tokuhara
-                </a>
-                <a href="/contact" className="home-explore-link">
-                  Schedule a conversation
                 </a>
               </div>
             </div>
