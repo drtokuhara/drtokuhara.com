@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const metadata = {
   title: 'Understanding Cataracts: What Your Eye Doctor May Not Have Time to Explain',
-  description: 'A deeper look at cataracts — beyond the basics. Real-world progression, when to worry vs. wait, and the emotional side of gradual vision loss that no one talks about.',
+  description: 'A deeper look at cataracts - beyond the basics. Real-world progression, when to worry vs. wait, and the emotional side of gradual vision loss that no one talks about.',
   alternates: { canonical: '/understanding-cataracts' },
   openGraph: {
     title: 'Understanding Cataracts | Dr. Keith Tokuhara',
@@ -19,7 +19,7 @@ export default function UnderstandingCataracts() {
       <section className="page-hero">
         <div className="container">
           <h1>Understanding <strong>Cataracts</strong></h1>
-          <p className="page-hero-sub">What your eye doctor may not have time to explain — and what you actually need to know before making any decisions.</p>
+          <p className="page-hero-sub">What your eye doctor may not have time to explain - and what you actually need to know before making any decisions.</p>
         </div>
       </section>
 
@@ -45,7 +45,7 @@ export default function UnderstandingCataracts() {
             If you've been told you have cataracts, you're probably somewhere between mildly confused and quietly worried. That's normal. Most people leave their eye appointment with a diagnosis but not much of an explanation.
           </p>
           <p>
-            Here's what I wish every patient understood before they started searching the internet: cataracts are not an emergency. They are not a disease that spreads or gets worse overnight. And the decision about what to do — and when — is more personal than most doctors make it sound.
+            Here's what I wish every patient understood before they started searching the internet: cataracts are not an emergency. They are not a disease that spreads or gets worse overnight. And the decision about what to do - and when - is more personal than most doctors make it sound.
           </p>
         </div>
       </section>
@@ -55,7 +55,7 @@ export default function UnderstandingCataracts() {
         <div className="container content-narrow">
           <h2 className="section-title">What Cataracts <strong>Actually Are</strong></h2>
           <p>
-            A cataract is a clouding of the natural lens inside your eye. That lens sits behind your iris — the colored part — and its job is to focus light onto the retina so you can see clearly.
+            A cataract is a clouding of the natural lens inside your eye. That lens sits behind your iris - the colored part - and its job is to focus light onto the retina so you can see clearly.
           </p>
           <p>
             Over time, proteins in the lens break down and clump together. The lens goes from clear to hazy. Think of it like a window that slowly fogs over. You can still see through it for a long time, but eventually the fog gets thick enough that things start to feel dim, blurry, or washed out.
@@ -76,7 +76,7 @@ export default function UnderstandingCataracts() {
           <div className="insight-list">
             <div className="insight-item">
               <strong>"Everything looks like it needs cleaning."</strong>
-              <p>You keep wiping your glasses, but it doesn't help. The blur isn't on the lens — it's behind it.</p>
+              <p>You keep wiping your glasses, but it doesn't help. The blur isn't on the lens - it's behind it.</p>
             </div>
             <div className="insight-item">
               <strong>"Night driving got scary."</strong>
@@ -86,18 +86,18 @@ export default function UnderstandingCataracts() {
             <div className="content-image">
               <Image
                 src="/media/cataract-night-driving-palm-springs.jpg"
-                alt="Simulated view of night driving with early cataracts in Palm Springs — headlight glare and halos"
+                alt="Simulated view of night driving with early cataracts in Palm Springs - headlight glare and halos"
                 width={680}
                 height={453}
                 style={{ width: '100%', height: 'auto' }}
               />
               <div className="content-image-caption">
-                A simulation of what night driving looks like through early cataracts — the glare, the halos, the washed-out contrast. This is what many patients describe but struggle to put into words.
+                A simulation of what night driving looks like through early cataracts - the glare, the halos, the washed-out contrast. This is what many patients describe but struggle to put into words.
               </div>
             </div>
             <div className="insight-item">
               <strong>"Colors just aren't the same."</strong>
-              <p>Whites look yellowish. Blues look muted. After surgery, many patients say the world looks "brighter" — because it literally is.</p>
+              <p>Whites look yellowish. Blues look muted. After surgery, many patients say the world looks "brighter" - because it literally is.</p>
             </div>
             <div className="insight-item">
               <strong>"I can still see, but nothing feels right."</strong>
@@ -115,7 +115,7 @@ export default function UnderstandingCataracts() {
             Not all cataracts are the same. Some develop over years and barely change. Others progress noticeably within months. There is no universal timeline, and that uncertainty is part of what makes the decision feel difficult.
           </p>
           <p>
-            What I tell patients: <strong>cataracts don't punish you for waiting.</strong> There is no penalty for taking time to think. In most cases, the cataract will be there whenever you're ready. The rare exception is when a cataract becomes very dense — what we call a "hard" cataract — which can make surgery more technically demanding. But that takes a long time to happen, and your doctor should be monitoring for it.
+            What I tell patients: <strong>cataracts don't punish you for waiting.</strong> There is no penalty for taking time to think. In most cases, the cataract will be there whenever you're ready. The rare exception is when a cataract becomes very dense - what we call a "hard" cataract - which can make surgery more technically demanding. But that takes a long time to happen, and your doctor should be monitoring for it.
           </p>
           <p>
             The more important question isn't "how fast is it getting worse?" It's <em>"how much is this affecting my life right now?"</em>
@@ -128,7 +128,7 @@ export default function UnderstandingCataracts() {
         <div className="container content-narrow">
           <h2 className="section-title">The Part No One <strong>Talks About</strong></h2>
           <p>
-            Cataracts don't exist in a vacuum. They show up during a stage of life where people are already navigating other changes — retirement, caregiving, losing a spouse, adjusting to a different body.
+            Cataracts don't exist in a vacuum. They show up during a stage of life where people are already navigating other changes - retirement, caregiving, losing a spouse, adjusting to a different body.
           </p>
           <p>
             I've had patients delay surgery for years because they were taking care of someone else. I've had patients feel guilty for being in my office, as if paying attention to their own eyes meant they were neglecting something more important.
@@ -137,7 +137,7 @@ export default function UnderstandingCataracts() {
             Here's what I want you to know: <strong>delaying care because life got in the way is not a failure.</strong> It's a sign you were committed to something that mattered. Cataracts are patient. They'll wait for you.
           </p>
           <p>
-            When you're ready — truly ready — we'll figure out the right plan together. And it will be based on how you want to live, not just what the eye chart says.
+            When you're ready - truly ready - we'll figure out the right plan together. And it will be based on how you want to live, not just what the eye chart says.
           </p>
         </div>
       </section>
@@ -185,10 +185,10 @@ export default function UnderstandingCataracts() {
             <li>Night driving has become genuinely uncomfortable or unsafe</li>
             <li>You're changing glasses prescriptions frequently and nothing quite works</li>
             <li>Reading, watching TV, or recognizing faces feels harder than it should</li>
-            <li>You're frustrated — and the frustration is about vision, not just aging</li>
+            <li>You're frustrated - and the frustration is about vision, not just aging</li>
           </ul>
           <p>
-            If any of those resonate, it's worth having a conversation. Not a commitment — just a conversation about what your options look like and what fits your life.
+            If any of those resonate, it's worth having a conversation. Not a commitment - just a conversation about what your options look like and what fits your life.
           </p>
         </div>
       </section>
@@ -199,7 +199,7 @@ export default function UnderstandingCataracts() {
           <div className="clinic-thought">
             <h3>A thought from the clinic</h3>
             <p>
-              <em>Cataract surgery is rarely just about visual acuity. By the time patients reach my office, many have lived through competing priorities — caregiving, loss, tradeoffs that don't show up in a chart. If I ignore that, I'm reducing a deeply personal decision to a set of measurements. If I pay attention, I can help someone choose without guilt.</em>
+              <em>Cataract surgery is rarely just about visual acuity. By the time patients reach my office, many have lived through competing priorities - caregiving, loss, tradeoffs that don't show up in a chart. If I ignore that, I'm reducing a deeply personal decision to a set of measurements. If I pay attention, I can help someone choose without guilt.</em>
             </p>
           </div>
         </div>
@@ -216,7 +216,7 @@ export default function UnderstandingCataracts() {
             </Link>
             <Link href="/choosing-your-surgeon" className="related-card">
               <h3>Choosing Your Surgeon</h3>
-              <p>The questions nobody tells you to ask — and the red flags to watch for.</p>
+              <p>The questions nobody tells you to ask - and the red flags to watch for.</p>
             </Link>
             <Link href="/insights/permission-to-see-again" className="related-card">
               <h3>Permission to See Again</h3>

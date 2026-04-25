@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Your Patient Journey — From First Visit to Clear Vision',
+  title: 'Your Patient Journey - From First Visit to Clear Vision',
   description: 'Step-by-step guide to cataract surgery with Dr. Keith Tokuhara. From your first evaluation through recovery and life after surgery. No surprises, no pressure.',
   alternates: {
     canonical: '/patient-journey',
@@ -48,7 +48,7 @@ export default function PatientJourneyPage() {
             <div className="journey-content-grid">
               <div className="journey-text">
                 <p className="prose">
-                  Your first visit is a comprehensive eye exam. We measure your vision, map the surface of your eyes, and take detailed images of your lens. I&rsquo;m looking at the full picture — not just the cataract, but your cornea, your retina, your eye pressure, everything that matters.
+                  Your first visit is a comprehensive eye exam. We measure your vision, map the surface of your eyes, and take detailed images of your lens. I&rsquo;m looking at the full picture - not just the cataract, but your cornea, your retina, your eye pressure, everything that matters.
                 </p>
                 <p className="prose">
                   Then we sit down and talk. I&rsquo;ll show you what I see, explain what it means in plain language, and answer every question you have. If surgery makes sense, I&rsquo;ll tell you why. If it doesn&rsquo;t, I&rsquo;ll tell you that too. No one in my office will ever pressure you into anything.
@@ -88,10 +88,10 @@ export default function PatientJourneyPage() {
                   If surgery is the right move, the next step is choosing your lens implant. This is where things get personal. Your lens choice depends on your eyes, your lifestyle, and what matters most to you.
                 </p>
                 <p className="prose">
-                  Do you want to be glasses-free for distance? Do you read for hours every day? Do you play golf and need sharp vision at arm&rsquo;s length? There&rsquo;s no single &ldquo;best&rdquo; lens — there&rsquo;s the best lens <em>for you</em>. I&rsquo;ll explain every option honestly, including the tradeoffs, and give you my recommendation. But the final decision is always yours.
+                  Do you want to be glasses-free for distance? Do you read for hours every day? Do you play golf and need sharp vision at arm&rsquo;s length? There&rsquo;s no single &ldquo;best&rdquo; lens - there&rsquo;s the best lens <em>for you</em>. I&rsquo;ll explain every option honestly, including the tradeoffs, and give you my recommendation. But the final decision is always yours.
                 </p>
                 <p className="prose">
-                  Take the time you need. Some patients decide in one visit. Others want to think about it, talk to their family, or come back with more questions. That&rsquo;s not just okay — it&rsquo;s smart.
+                  Take the time you need. Some patients decide in one visit. Others want to think about it, talk to their family, or come back with more questions. That&rsquo;s not just okay - it&rsquo;s smart.
                 </p>
               </div>
               <div className="journey-image-wrap">
@@ -122,13 +122,13 @@ export default function PatientJourneyPage() {
             <div className="journey-content-grid">
               <div className="journey-text">
                 <p className="prose">
-                  You&rsquo;ll arrive at the surgery center and we&rsquo;ll get you comfortable. Eye drops numb your eye completely — you won&rsquo;t feel pain. The procedure itself takes about 10 to 15 minutes. You&rsquo;re awake the entire time, but most patients are surprised by how calm and quick the experience is.
+                  You&rsquo;ll arrive at the surgery center and we&rsquo;ll get you comfortable. Eye drops numb your eye completely - you won&rsquo;t feel pain. The procedure itself takes about 10 to 15 minutes. You&rsquo;re awake the entire time, but most patients are surprised by how calm and quick the experience is.
                 </p>
                 <p className="prose">
                   I use laser-assisted techniques for precision, and I talk you through what&rsquo;s happening so you&rsquo;re never in the dark. The cloudy lens comes out, the new lens goes in, and that&rsquo;s it. No stitches. No needles in the eye.
                 </p>
                 <p className="prose">
-                  Bring someone to drive you home. Bring sunglasses. And bring your questions — I&rsquo;ll answer them right up until the moment we start.
+                  Bring someone to drive you home. Bring sunglasses. And bring your questions - I&rsquo;ll answer them right up until the moment we start.
                 </p>
                 <div className="journey-detail-box">
                   <h4>What to bring</h4>
@@ -169,11 +169,11 @@ export default function PatientJourneyPage() {
               <div className="journey-text">
                 <h3 className="subsection-title">First 24 Hours</h3>
                 <p className="prose">
-                  Most patients notice a difference immediately. Colors look brighter. Things look sharper. Your eye may feel slightly scratchy or watery — that&rsquo;s normal. Rest, use your drops as directed, and resist the urge to rub your eye.
+                  Most patients notice a difference immediately. Colors look brighter. Things look sharper. Your eye may feel slightly scratchy or watery - that&rsquo;s normal. Rest, use your drops as directed, and resist the urge to rub your eye.
                 </p>
                 <h3 className="subsection-title">First Week</h3>
                 <p className="prose">
-                  You&rsquo;ll come back the next day for a quick check. Most people are back to their normal routine within a few days — reading, watching TV, light walking. Avoid heavy lifting, dusty environments, and getting water directly in your eye. Your vision will continue to sharpen as your eye heals.
+                  You&rsquo;ll come back the next day for a quick check. Most people are back to their normal routine within a few days - reading, watching TV, light walking. Avoid heavy lifting, dusty environments, and getting water directly in your eye. Your vision will continue to sharpen as your eye heals.
                 </p>
                 <h3 className="subsection-title">Follow-Up Visits</h3>
                 <p className="prose">
@@ -214,7 +214,7 @@ export default function PatientJourneyPage() {
                   But here&rsquo;s what I hear most from patients: it&rsquo;s not just the acuity. It&rsquo;s the colors. The crispness. The confidence to drive at night again, to read a menu without pulling out your phone flashlight, to see your grandchildren&rsquo;s faces clearly across the room. That&rsquo;s what this is really about.
                 </p>
                 <p className="prose">
-                  Cataract surgery doesn&rsquo;t just restore your vision. It restores your independence. Your hobbies. Your life in the Coachella Valley — the golf, the tennis, the hikes, the sunsets. All of it, in sharper focus.
+                  Cataract surgery doesn&rsquo;t just restore your vision. It restores your independence. Your hobbies. Your life in the Coachella Valley - the golf, the tennis, the hikes, the sunsets. All of it, in sharper focus.
                 </p>
               </div>
               <div className="journey-lifestyle-images">

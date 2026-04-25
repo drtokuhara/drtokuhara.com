@@ -3,7 +3,7 @@
 import { useRef, useCallback, useState, useEffect } from 'react';
 
 /**
- * DynamicLightPortrait — Mouse-tracked lighting effect using a normal map.
+ * DynamicLightPortrait - Mouse-tracked lighting effect using a normal map.
  * The user's cursor acts as a light source, creating real-time shadows
  * and highlights on the portrait image.
  */

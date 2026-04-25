@@ -35,13 +35,13 @@ export default function InsightReader() {
             />
           </div>
           <p className="body-lead">
-            She was 81 years old. She read for several hours every day — books at breakfast, books in the afternoon, books before bed. Reading wasn't a hobby. It was who she was.
+            She was 81 years old. She read for several hours every day - books at breakfast, books in the afternoon, books before bed. Reading wasn't a hobby. It was who she was.
           </p>
           <p>
             And she had been avoiding cataract surgery for years.
           </p>
           <p>
-            Not because she was afraid of the procedure. Not because she didn't trust doctors. She had been told — by prior physicians, by friends, by word of mouth — that after cataract surgery, you <em>need</em> reading glasses. That's just how it works. Your near vision goes away, and you get glasses.
+            Not because she was afraid of the procedure. Not because she didn't trust doctors. She had been told - by prior physicians, by friends, by word of mouth - that after cataract surgery, you <em>need</em> reading glasses. That's just how it works. Your near vision goes away, and you get glasses.
           </p>
           <p>
             For a woman whose entire daily life revolved around near vision, that was a dealbreaker. So she waited. And the cataracts got worse. And she started struggling with her books anyway.
@@ -53,7 +53,7 @@ export default function InsightReader() {
         <div className="container content-narrow">
           <h2 className="section-title">The Conversation That <strong>Changed Things</strong></h2>
           <p>
-            When she came to see me, her vision was 20/50. She could still get by, but the clarity she needed for small print was fading. She was already making tradeoffs — using a magnifying glass, reading in brighter light, putting books down sooner than she wanted to.
+            When she came to see me, her vision was 20/50. She could still get by, but the clarity she needed for small print was fading. She was already making tradeoffs - using a magnifying glass, reading in brighter light, putting books down sooner than she wanted to.
           </p>
           <p>
             I asked her the question I always ask: "What matters most to you about your vision?"
@@ -62,7 +62,7 @@ export default function InsightReader() {
             She didn't hesitate. "My books."
           </p>
           <p>
-            So I explained something no one had told her before: we could aim the lens implant for near vision. A basic monofocal lens — fully covered by insurance — targeted at her reading distance. She would keep her books. The tradeoff? She'd need glasses for driving and television.
+            So I explained something no one had told her before: we could aim the lens implant for near vision. A basic monofocal lens - fully covered by insurance - targeted at her reading distance. She would keep her books. The tradeoff? She'd need glasses for driving and television.
           </p>
           <p>
             She didn't just feel relieved. She was <em>excited</em>. Not because of premium technology. Not because of an expensive upgrade. Because someone finally told her that her visual outcome could match her life.
@@ -93,7 +93,7 @@ export default function InsightReader() {
           <div className="clinic-thought">
             <h3>The takeaway</h3>
             <p>
-              <em>If you're considering cataract surgery and you have a strong preference about how you use your eyes — reading, crafts, cooking, computers — tell your surgeon. The lens can be aimed at what matters to you. It's not always about getting the fanciest technology. Sometimes the simplest choice is the right one, and nobody bothered to mention it.</em>
+              <em>If you're considering cataract surgery and you have a strong preference about how you use your eyes - reading, crafts, cooking, computers - tell your surgeon. The lens can be aimed at what matters to you. It's not always about getting the fanciest technology. Sometimes the simplest choice is the right one, and nobody bothered to mention it.</em>
             </p>
           </div>
         </div>
@@ -105,7 +105,7 @@ export default function InsightReader() {
           <div className="related-grid">
             <Link href="/lens-implants-explained" className="related-card">
               <h3>Lens Implants Explained</h3>
-              <p>A full guide to monofocal, toric, EDOF, and multifocal lenses — and how to decide.</p>
+              <p>A full guide to monofocal, toric, EDOF, and multifocal lenses - and how to decide.</p>
             </Link>
             <Link href="/insights/permission-to-see-again" className="related-card">
               <h3>Permission to See Again</h3>

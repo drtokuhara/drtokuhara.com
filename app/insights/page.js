@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const metadata = {
   title: 'Insights from the Clinic',
-  description: 'Clinical reflections from Dr. Keith Tokuhara — real stories, real decisions, and the things about eye care that don\'t fit in a brochure.',
+  description: 'Clinical reflections from Dr. Keith Tokuhara - real stories, real decisions, and the things about eye care that don\'t fit in a brochure.',
   alternates: { canonical: '/insights' },
   openGraph: {
     title: 'Insights from the Clinic | Dr. Keith Tokuhara',
@@ -42,7 +42,7 @@ export default function InsightsPage() {
       <section className="page-hero">
         <div className="container">
           <h1>Insights from the <strong>Clinic</strong></h1>
-          <p className="page-hero-sub">These aren't medical articles. They're reflections — on the patients I see, the decisions we navigate together, and what I've learned about the space between a diagnosis and a choice.</p>
+          <p className="page-hero-sub">These aren't medical articles. They're reflections - on the patients I see, the decisions we navigate together, and what I've learned about the space between a diagnosis and a choice.</p>
         </div>
       </section>
 
@@ -51,7 +51,7 @@ export default function InsightsPage() {
           <div className="content-image">
             <Image
               src="/media/20210109_095037.jpg"
-              alt="Inside Desert Vision Center — where these conversations happen"
+              alt="Inside Desert Vision Center - where these conversations happen"
               width={800}
               height={380}
               style={{ width: '100%', height: 'auto' }}
