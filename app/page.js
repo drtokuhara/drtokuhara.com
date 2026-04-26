@@ -266,6 +266,187 @@ const SCREENS = {
       "If that sounds like what you're looking for, let's talk.",
     ],
   },
+
+  // PATH 3: LENS OPTIONS
+  lens_intro: {
+    step: 1, totalSteps: 5,
+    paragraphs: [
+      "Good. This is the right thing to be thinking about before surgery.",
+      "There's no single 'best' lens. The right one depends on your eyes, your lifestyle, and what matters most to you. Let me help you think through it.",
+    ],
+    question: "What's most important to you after surgery?",
+    buttons: [
+      { label: "I don't want to wear glasses", next: "lens_noglasses" },
+      { label: "I just want reliable, clear vision", next: "lens_reliable" },
+      { label: "I read a lot and want to keep that", next: "lens_reading" },
+      { label: "I'm not sure yet", next: "lens_unsure" },
+    ],
+  },
+  lens_noglasses: {
+    step: 2, totalSteps: 5,
+    paragraphs: [
+      "That's the most common goal I hear. And it's achievable for many patients, but not all.",
+      "Multifocal and extended depth of focus lenses can give you a range of vision: distance, intermediate, and sometimes near. Many patients rarely reach for glasses afterward.",
+      "But here's what the marketing doesn't always mention: these lenses split light to create multiple focal points. That means each one gets a little less light. Some patients notice halos or rings around headlights at night, or a slight drop in contrast.",
+      "For most people, the brain adapts and it stops being noticeable within weeks. For a small percentage, it stays bothersome.",
+    ],
+    question: "Does that tradeoff sound manageable to you?",
+    buttons: [
+      { label: "Yes, I'd accept that for glasses freedom", next: "lens_multifocal" },
+      { label: "That concerns me", next: "lens_edof" },
+    ],
+  },
+  lens_multifocal: {
+    step: 3, totalSteps: 5,
+    paragraphs: [
+      "Then a multifocal lens like PanOptix or PanOptix Pro might be a great fit.",
+      "These lenses give you distance, intermediate, and near vision. Most patients are thrilled. I recommend them often.",
+      "What I always do is evaluate your cornea, your retina, and your overall eye health first. Not every eye is a good candidate, and I'd rather tell you that upfront than have you disappointed later.",
+      "If your eyes check out, the results can genuinely change your daily life.",
+    ],
+    buttons: [{ label: "That sounds promising", next: "lens_close" }],
+  },
+  lens_edof: {
+    step: 3, totalSteps: 5,
+    paragraphs: [
+      "That's a reasonable concern. There's a middle ground.",
+      "Extended depth of focus lenses, like Vivity, stretch your range of vision from distance through arm's length. You get clear vision for driving, cooking, using your phone, and working on a computer, usually without glasses.",
+      "The tradeoff is gentler. Less halo and glare than a multifocal, better contrast in dim lighting. You might still want light readers for prolonged fine print, but most patients find the balance works well.",
+      "I was the first surgeon in the Coachella Valley to implant the Vivity lens. I've seen a lot of eyes do very well with it.",
+    ],
+    buttons: [{ label: "That sounds like a better fit for me", next: "lens_close" }],
+  },
+  lens_reliable: {
+    step: 2, totalSteps: 4,
+    paragraphs: [
+      "That's a perfectly smart approach. And honestly, for a lot of patients, it's the right one.",
+      "A standard monofocal lens is the most proven implant in all of ophthalmology. It gives you sharp, reliable vision at one distance, usually far away. You'd wear reading glasses for close work.",
+      "There are no halos, no glare tradeoffs, no adaptation period. It just works. It's fully covered by insurance. And some of my most satisfied patients chose this lens, because it matched what they actually wanted.",
+      "The fanciest lens isn't always the best lens. The best lens is the one that fits your life.",
+    ],
+    buttons: [{ label: "That's reassuring to hear", next: "lens_close" }],
+  },
+  lens_reading: {
+    step: 2, totalSteps: 4,
+    paragraphs: [
+      "I love when patients tell me this, because it completely changes the conversation.",
+      "Most surgeons default to setting your lens for distance vision. That means you see far away clearly but need reading glasses for books, menus, and your phone.",
+      "But here's something nobody tells most patients: I can aim a standard monofocal lens at near vision instead. Your reading stays sharp. The tradeoff is you'd need glasses for driving and television.",
+      "I had a patient, 81 years old, who almost gave up surgery entirely because she thought losing her reading vision was inevitable. Nobody had mentioned this option. She chose it, and she's back to reading for hours every day.",
+    ],
+    buttons: [{ label: "I had no idea that was possible", next: "lens_close" }],
+  },
+  lens_unsure: {
+    step: 2, totalSteps: 4,
+    paragraphs: [
+      "That's completely fine. You don't need to walk in with a decision made.",
+      "Here's what I'd suggest: think about how you actually use your eyes day to day. Do you drive a lot? Work on a computer? Read for hours? Play golf? Watch TV from across the room?",
+      "When we meet, I'll ask you these questions. Then I'll look at your eye measurements, your corneal health, and any complicating factors. By the time I make a recommendation, it's specific to you.",
+      "Most patients leave the consultation feeling much clearer about their options than when they walked in. That's the whole point.",
+    ],
+    buttons: [{ label: "That makes sense", next: "lens_close" }],
+  },
+  lens_close: {
+    type: 'close', step: 5, totalSteps: 5,
+    paragraphs: [
+      "Choosing a lens can feel overwhelming when you read about it online. In person, it's a much simpler conversation.",
+      "I'll show you the options, explain the tradeoffs honestly, and tell you what I'd choose for my own family member with your eyes.",
+      "No pressure, no upsell. Just a plan that makes sense for how you live.",
+    ],
+  },
+
+  // PATH 4: SOMETHING WENT WRONG
+  wrong_intro: {
+    step: 1, totalSteps: 5,
+    paragraphs: [
+      "I'm sorry you're dealing with this. You're not alone, and you're not wrong for looking for answers.",
+      "I see patients in your situation regularly. Something happened during or after cataract surgery, and now you're not seeing the way you expected.",
+    ],
+    question: "Can you tell me a little more about what happened?",
+    buttons: [
+      { label: "My vision isn't what I was promised", next: "wrong_vision" },
+      { label: "I had a complication during surgery", next: "wrong_complication" },
+      { label: "My lens implant shifted or isn't right", next: "wrong_lens" },
+      { label: "I was blamed for my own complication", next: "wrong_blamed" },
+    ],
+  },
+  wrong_vision: {
+    step: 2, totalSteps: 5,
+    paragraphs: [
+      "This is one of the most common reasons patients seek a second opinion. And it's valid.",
+      "Sometimes the issue is the lens choice. A multifocal that's causing glare. A toric that's slightly rotated. A monofocal that was aimed at a distance you didn't actually want.",
+      "Sometimes the issue isn't the lens at all. It's dry eye, corneal irregularity, or something else affecting how light reaches your retina.",
+      "The first step is figuring out exactly what's going on. Not guessing. Not telling you to give it more time. Actually looking.",
+    ],
+    buttons: [
+      { label: "Can it be fixed?", next: "wrong_fixable" },
+      { label: "My doctor says I just need to adjust", next: "wrong_adjust" },
+    ],
+  },
+  wrong_complication: {
+    step: 2, totalSteps: 5,
+    paragraphs: [
+      "Complications during cataract surgery are uncommon, but they do happen. Even to experienced surgeons.",
+      "What matters most is how the complication was handled in the moment and what the plan is going forward. A torn capsule, a retained fragment, damage to the iris. These things can usually be addressed, but they require a surgeon who handles complex situations regularly.",
+      "If you feel like you haven't gotten a clear explanation of what happened or what comes next, that's a problem. You deserve answers.",
+    ],
+    buttons: [{ label: "I want a second opinion", next: "wrong_secondopinion" }],
+  },
+  wrong_lens: {
+    step: 2, totalSteps: 5,
+    paragraphs: [
+      "Lens problems after surgery fall into a few categories.",
+      "The lens can physically shift out of position, sometimes months or years later. It can be the wrong power, leaving you more nearsighted or farsighted than planned. Or it can be a lens type that isn't right for your particular eye.",
+      "In many cases, the lens can be repositioned, exchanged, or supplemented with a secondary implant. I use the Yamane technique for cases where the original support structure is compromised. It's one of the things I do most.",
+    ],
+    buttons: [{ label: "What would you do in my case?", next: "wrong_fixable" }],
+  },
+  wrong_blamed: {
+    step: 2, totalSteps: 5,
+    paragraphs: [
+      "I hear this more often than I'd like.",
+      "A patient has a complication, and instead of an honest explanation, they're told it was their fault. They chose the wrong lens option. They didn't follow instructions. They should have gone with laser instead of standard.",
+      "Let me be direct: complications are never the patient's fault. They're a known risk of surgery. The ethical response is honesty, compassion, and a plan to fix it. Not blame. Not deflection. Not a recommendation to just move on to the other eye.",
+      "If that's what you experienced, I'm sorry. And I'd like to help.",
+    ],
+    buttons: [{ label: "What can be done now?", next: "wrong_fixable" }],
+  },
+  wrong_adjust: {
+    step: 3, totalSteps: 5,
+    paragraphs: [
+      "Sometimes that's true. The brain does adapt to new lenses, and it can take weeks.",
+      "But there's a difference between genuine adaptation and being told to accept a result that isn't right. If it's been more than a few months and you're still struggling, 'give it time' is no longer a plan.",
+      "A proper evaluation can determine whether adaptation is still happening or whether there's something that should be addressed. Measurements, imaging, a thorough exam. Not just a quick look and a reassurance.",
+    ],
+    buttons: [{ label: "I'd like someone to really look", next: "wrong_secondopinion" }],
+  },
+  wrong_fixable: {
+    step: 3, totalSteps: 5,
+    paragraphs: [
+      "In most cases, yes, something can be done.",
+      "It might be a lens exchange, a lens repositioning, a secondary implant, or a different approach entirely. It depends on what's actually going on in your eye.",
+      "I won't promise a specific outcome before I've examined you. But I will promise an honest conversation about what's realistic and what the options are.",
+      "I specialize in exactly these situations. Patients come to me from across the country when they've been told nothing more can be done. Often, something can.",
+    ],
+    buttons: [{ label: "How do I get started?", next: "wrong_close" }],
+  },
+  wrong_secondopinion: {
+    step: 4, totalSteps: 5,
+    paragraphs: [
+      "Getting a second opinion is not disrespectful to your original surgeon. It's your right, and it's the smart thing to do.",
+      "When you come see me, I'll do a full evaluation. I'll review what happened, examine your eye, and tell you honestly what I see. If there's something I can improve, I'll explain how. If the current situation is actually the best achievable result, I'll tell you that too.",
+      "No agenda. No pressure to have more surgery. Just clarity.",
+    ],
+    buttons: [{ label: "That's what I need", next: "wrong_close" }],
+  },
+  wrong_close: {
+    type: 'close', step: 5, totalSteps: 5,
+    paragraphs: [
+      "You've been through a difficult experience. The fact that you're still looking for answers shows strength, not weakness.",
+      "I handle complex and corrective cases every week. Not once a year. Every week. This is a significant part of what I do.",
+      "If you're ready, let's have a conversation. No commitment beyond that.",
+    ],
+  },
 };
 
 /* ───────────────────────────────────────────
@@ -571,6 +752,20 @@ export default function Home() {
                     </span>
                     <h3>I&rsquo;m choosing a surgeon</h3>
                     <p>The right fit matters more than the biggest name. Let&rsquo;s talk about what to look for.</p>
+                  </button>
+                  <button className="lux-conv-card" onClick={() => startConversation('lens_intro')}>
+                    <span className="lux-conv-card-icon">
+                      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
+                    </span>
+                    <h3>I want to understand my lens options</h3>
+                    <p>Monofocal, multifocal, toric. Which one fits your life, not just your eye chart.</p>
+                  </button>
+                  <button className="lux-conv-card" onClick={() => startConversation('wrong_intro')}>
+                    <span className="lux-conv-card-icon">
+                      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+                    </span>
+                    <h3>Something went wrong with my surgery</h3>
+                    <p>If you&rsquo;ve had a complication or your vision isn&rsquo;t what you were promised, let&rsquo;s talk about what&rsquo;s possible.</p>
                   </button>
                 </div>
               </Reveal>
