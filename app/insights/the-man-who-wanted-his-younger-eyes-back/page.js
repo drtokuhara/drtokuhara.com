@@ -1,0 +1,112 @@
+import Link from 'next/link';
+
+export const metadata = {
+  title: 'The Man Who Wanted His Younger Eyes Back | Dr. Keith Tokuhara, MD',
+  description: 'He didn\'t just want better vision. He wanted to feel the way he did before glasses became part of his identity. Sometimes the most important surgical decision is choosing to wait.',
+  alternates: { canonical: '/insights/the-man-who-wanted-his-younger-eyes-back' },
+  openGraph: {
+    title: 'The Man Who Wanted His Younger Eyes Back | Dr. Keith Tokuhara',
+    description: 'A reflection on expectations, aging, and why the strategic pause is sometimes the most sophisticated surgical decision.',
+    url: 'https://drtokuhara.com/insights/the-man-who-wanted-his-younger-eyes-back',
+  },
+};
+
+export default function InsightYoungerEyes() {
+  return (
+    <>
+      <section className="page-hero">
+        <div className="container">
+          <span className="insight-hero-cluster">Decisions &amp; Timing</span>
+          <h1>The Man Who Wanted His <strong>Younger Eyes</strong> Back</h1>
+          <p className="page-hero-sub">He didn't just want better vision. He wanted to feel the way he did before glasses became part of his identity. Sometimes the most important surgical decision is choosing to wait.</p>
+        </div>
+      </section>
+
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <p className="body-lead">
+            He was 66 and came in for a second opinion. But within the first few minutes, it was clear this visit was not really about cataracts.
+          </p>
+          <p>
+            He talked about losing his glasses constantly. Bending them. Breaking them. The inconvenience was real, but the frustration ran deeper than a pair of frames. What he described, without quite saying it, was a feeling of being diminished. Glasses had become a daily reminder that something about him had changed. He wanted them gone, not because they were impractical, but because they represented a version of himself he was trying to leave behind.
+          </p>
+          <p>
+            He wanted to see the way he used to see. Before the readers. Before the progressive lenses. Before the slow, quiet accumulation of dependence.
+          </p>
+        </div>
+      </section>
+
+      <section className="section section-warm">
+        <div className="container content-narrow">
+          <h2 className="section-title">The Expectation <strong>Gap</strong></h2>
+          <p>
+            His expectations were specific: complete freedom from glasses, perfect night driving, and zero side effects. When I hear all three in the same sentence, I pay attention. Not because they are unreasonable individually, but because together, they describe an outcome that no current technology can guarantee.
+          </p>
+          <p>
+            This is a pattern I encounter often. Patients who are highly motivated, who have done their research, and who arrive with a mental image of what success looks like. The image is usually built from marketing language and best-case stories. It is almost never built from the tradeoffs that every surgical decision involves.
+          </p>
+          <p>
+            His exam told a more complicated story. An early cataract, yes, but also prior corneal refractive surgery, mild maculopathy from a previous retinal condition, and ocular surface disease. Each of those factors narrows the range of what premium lens technology can do. Together, they made a multifocal implant a poor fit. Not because the lens is flawed, but because his eye was not the right environment for it.
+          </p>
+        </div>
+      </section>
+
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <h2 className="section-title">What He Was Really <strong>Asking</strong></h2>
+          <p>
+            The longer we talked, the clearer it became that his frustration with glasses was not just about optics. It was about aging. About the slow erosion of things he used to take for granted. Vision was the most tangible example, but it stood in for something larger.
+          </p>
+          <p>
+            This is not unusual. Many patients arrive at the decision point for cataract surgery carrying more than a visual complaint. They carry a sense that something can be restored. That if the right technology exists, they should be able to get back what time has taken.
+          </p>
+          <p>
+            I understand that instinct. But surgery works best when expectations align with what the procedure can actually deliver. When the gap between hope and reality is too wide, even a technically successful surgery can feel like a failure.
+          </p>
+        </div>
+      </section>
+
+      <section className="section section-warm">
+        <div className="container content-narrow">
+          <h2 className="section-title">The Strategic <strong>Pause</strong></h2>
+          <p>
+            When I explained that proceeding now, with 20/30 vision and expectations that exceeded what any lens could reliably deliver, carried a high risk of disappointment, he listened. That matters. A patient who can hear nuance, who does not need a guarantee to feel respected, is a patient you can work with over time.
+          </p>
+          <p>
+            Together, we reframed the decision. Not as a denial of treatment, but as a strategic pause. His cataract was early. His functional vision was intact. The right time for surgery would come, but it was not today. And when it arrived, we would have already aligned on what "better" realistically looks like.
+          </p>
+          <p>
+            He left without a surgical date. But he also left without the quiet worry that he had missed his window or been dismissed. That is what a good second opinion should feel like.
+          </p>
+        </div>
+      </section>
+
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <div className="clinic-thought">
+            <h3>The takeaway</h3>
+            <p>
+              <em>Choosing to wait is not the same as choosing to do nothing. In cataract surgery, timing matters as much as technique. If your vision is still functional and your expectations go beyond what current technology can promise, a thoughtful pause may protect you from an outcome that looks successful on paper but does not feel right in practice. The goal is not just better vision. It is vision that matches the life you are actually living.</em>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-warm">
+        <div className="container content-narrow">
+          <h2 className="section-title">Related <strong>Reading</strong></h2>
+          <div className="related-grid">
+            <Link href="/lens-implants-explained" className="related-card">
+              <h3>Lens Implants Explained</h3>
+              <p>A clear overview of the different lens options, what they do, and the tradeoffs involved in each.</p>
+            </Link>
+            <Link href="/insights/when-more-isnt-better" className="related-card">
+              <h3>When More Isn't Better</h3>
+              <p>When each procedure was supposed to be the fix, and the real answer was stepping back.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

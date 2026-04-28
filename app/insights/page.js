@@ -14,6 +14,13 @@ export const metadata = {
 
 const insights = [
   {
+    slug: 'the-man-who-wanted-his-younger-eyes-back',
+    title: 'The Man Who Wanted His Younger Eyes Back',
+    date: 'April 2026',
+    description: 'He didn\'t just want better vision. He wanted to feel the way he did before glasses became part of his identity. Sometimes the most important surgical decision is choosing to wait.',
+    cluster: 'Decisions & Timing',
+  },
+  {
     slug: 'when-guilt-replaces-explanation',
     title: 'When Guilt Replaces Explanation',
     date: 'April 2026',
