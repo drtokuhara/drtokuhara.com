@@ -14,6 +14,20 @@ export const metadata = {
 
 const insights = [
   {
+    slug: 'when-is-the-right-time',
+    title: 'When Is the Right Time for Cataract Surgery?',
+    date: 'April 2026',
+    description: 'The question I hear more than any other. There is no magic number. The right time depends on your life, not a chart.',
+    cluster: 'Decisions & Timing',
+  },
+  {
+    slug: 'when-patients-wait',
+    title: 'When Patients Wait',
+    date: 'April 2026',
+    description: 'Her outcome was excellent. Her biggest regret was that she didn\'t do it sooner. The psychology of timing, outcome bias, and why readiness is not the same as candidacy.',
+    cluster: 'Decisions & Timing',
+  },
+  {
     slug: 'the-man-who-wanted-his-younger-eyes-back',
     title: 'The Man Who Wanted His Younger Eyes Back',
     date: 'April 2026',
@@ -54,6 +68,13 @@ const insights = [
     date: 'April 2026',
     description: 'A 32-year-old had a multifocal lens, then a YAG, then LASIK. A year later she still wasn\'t seeing right. Sometimes each fix creates the need for the next one.',
     cluster: 'Expectations & Reality',
+  },
+  {
+    slug: 'twenty-years-forward',
+    title: 'Twenty Years Forward',
+    date: 'April 2026',
+    description: 'She chose a multifocal lens at 68. Now at 88 with macular degeneration, that decision looks different. What this teaches about lens choices, tradeoffs, and making decisions for a future you cannot predict.',
+    cluster: 'Lens Selection',
   },
 ];
 

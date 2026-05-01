@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { articleSchema, breadcrumbSchema } from '../../schema';
+import AuthorByline from '../../components/AuthorByline';
 
 export const metadata = {
   title: 'The Reader Who Almost Gave Up Her Books',
@@ -12,9 +14,26 @@ export const metadata = {
   },
 };
 
+
+const jsonLd = [
+  articleSchema({
+    title: 'The Reader Who Almost Gave Up Her Books',
+    description: 'An 81-year-old avid reader delayed cataract surgery because she believed reading glasses were mandatory afterward.',
+    slug: '/insights/the-reader-who-almost-gave-up-her-books',
+  }),
+  breadcrumbSchema([
+    { name: 'Home', href: '/' },
+    { name: 'Insights', href: '/insights' },
+    { name: 'The Reader Who Almost Gave Up Her Books', href: '/insights/the-reader-who-almost-gave-up-her-books' },
+  ]),
+];
+
 export default function InsightReader() {
   return (
     <>
+      {jsonLd.map((schema, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      ))}
       <section className="page-hero">
         <div className="container">
           <span className="insight-hero-cluster">Lens Selection</span>
@@ -25,6 +44,7 @@ export default function InsightReader() {
 
       <section className="section section-white">
         <div className="container content-narrow">
+          <AuthorByline />
           <div className="content-image" style={{marginBottom: '32px'}}>
             <Image
               src="/media/patient-reader-woman-books.jpg"

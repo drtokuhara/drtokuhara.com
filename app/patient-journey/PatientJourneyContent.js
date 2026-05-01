@@ -17,6 +17,41 @@ export default function PatientJourneyContent() {
         </div>
       </section>
 
+      {/* PERSONAL MESSAGE VIDEO */}
+      <section className="section section-white" style={{ paddingTop: '48px', paddingBottom: '48px' }}>
+        <div className="container" style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
+          <p style={{
+            fontFamily: 'Montserrat, sans-serif',
+            fontSize: '0.85rem',
+            fontWeight: 500,
+            letterSpacing: '0.08em',
+            textTransform: 'uppercase',
+            color: '#007d95',
+            marginBottom: '20px'
+          }}>A personal message from Dr. Tokuhara</p>
+          <div style={{
+            position: 'relative',
+            borderRadius: '8px',
+            overflow: 'hidden',
+            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.12)',
+          }}>
+            <video
+              controls
+              poster="/media/dr-t-research-message-poster.jpg"
+              preload="metadata"
+              playsInline
+              style={{
+                width: '100%',
+                display: 'block',
+              }}
+            >
+              <source src="/media/dr-t-research-message.mp4" type="video/mp4" />
+              Your browser does not support the video element.
+            </video>
+          </div>
+        </div>
+      </section>
+
       {/* INTRO */}
       <section className="section section-white">
         <div className="container content-narrow">

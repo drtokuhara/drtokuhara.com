@@ -11,7 +11,8 @@ const physicianSchema = {
   "@context": "https://schema.org",
   "@type": "Physician",
   "name": "Dr. Keith Tokuhara",
-  "description": "Fellowship trained cataract surgeon, educator, and patient advocate. Specializing in complex cataract cases and honest, pressure-free patient care in the Coachella Valley.",
+  "alternateName": "Keith Tokuhara, MD",
+  "description": "Fellowship-trained cataract surgeon specializing in complex and revision cataract surgery, advanced lens implants, and personalized patient care at Desert Vision Center in the Coachella Valley.",
   "url": "https://drtokuhara.com",
   "image": "https://drtokuhara.com/dr-tokuhara-hero.jpg",
   "telephone": "+17603404700",
@@ -23,10 +24,36 @@ const physicianSchema = {
     "postalCode": "92270",
     "addressCountry": "US"
   },
+  "geo": { "@type": "GeoCoordinates", "latitude": 33.7397, "longitude": -116.4132 },
   "medicalSpecialty": "Ophthalmology",
   "hospitalAffiliation": { "@type": "Hospital", "name": "Desert Vision Center" },
-  "alumniOf": [{ "@type": "EducationalOrganization", "name": "Loma Linda University" }],
-  "award": "Palm Springs Life Top Doctor (2019-2026)",
+  "alumniOf": [
+    { "@type": "EducationalOrganization", "name": "Loma Linda University" },
+    { "@type": "EducationalOrganization", "name": "University of Hawaii, John A. Burns School of Medicine" },
+    { "@type": "EducationalOrganization", "name": "University of California, Riverside" }
+  ],
+  "award": [
+    "Palm Springs Life Top Doctor (2019-2026)",
+    "NBC Best Cataract Surgeon in the Coachella Valley"
+  ],
+  "knowsAbout": [
+    "Cataract Surgery",
+    "Complex Cataract Surgery",
+    "Lens Implant Surgery",
+    "Yamane Secondary Lens Fixation",
+    "Anterior Segment Surgery",
+    "Toric Lens Implants",
+    "Multifocal Lens Implants",
+    "EDOF Lens Implants",
+    "Iris Reconstruction"
+  ],
+  "availableService": [
+    { "@type": "MedicalProcedure", "name": "Cataract Surgery", "description": "Advanced cataract surgery with premium lens implant options including monofocal, EDOF, toric, and multifocal lenses." },
+    { "@type": "MedicalProcedure", "name": "CLEAR in a Day (Same-Day Bilateral Cataract Surgery)", "description": "Both eyes treated in a single visit for eligible patients, reducing recovery time and office visits." },
+    { "@type": "MedicalProcedure", "name": "Complex and Revision Cataract Surgery", "description": "Specialized surgery for complications, dislocated lens implants, retained fragments, and cases referred by other surgeons." },
+    { "@type": "MedicalProcedure", "name": "Yamane Secondary Lens Fixation", "description": "Sutureless technique for securing lens implants in eyes without adequate capsular support." },
+    { "@type": "MedicalProcedure", "name": "Iris Reconstruction", "description": "Surgical repair of iris damage from trauma or surgical complications to restore function and reduce light sensitivity." }
+  ],
   "sameAs": [
     "https://x.com/DoctorTokuhara",
     "https://youtube.com/@desertvisioncenter",
@@ -38,8 +65,8 @@ const medicalBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
   "name": "Desert Vision Center",
-  "description": "Advanced cataract surgery and comprehensive eye care in Rancho Mirage, California. Led by fellowship-trained cataract surgeon Dr. Keith Tokuhara.",
-  "url": "https://desertvisioncenter.com",
+  "description": "Physician-owned, independent eye care practice specializing in advanced cataract surgery and complex revision cases. Led by fellowship-trained cataract surgeon Dr. Keith Tokuhara in Rancho Mirage, California.",
+  "url": "https://drtokuhara.com",
   "telephone": "+17603404700",
   "address": {
     "@type": "PostalAddress",
@@ -49,13 +76,15 @@ const medicalBusinessSchema = {
     "postalCode": "92270",
     "addressCountry": "US"
   },
-  "geo": { "@type": "GeoCoordinates", "latitude": "33.7397", "longitude": "-116.4112" },
+  "geo": { "@type": "GeoCoordinates", "latitude": 33.7397, "longitude": -116.4132 },
   "openingHoursSpecification": [{
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
     "opens": "08:00", "closes": "17:00"
   }],
-  "priceRange": "$$"
+  "priceRange": "$$",
+  "medicalSpecialty": "Ophthalmology",
+  "isAcceptingNewPatients": true
 };
 
 const faqSchema = {
@@ -83,7 +112,23 @@ const faqSchema = {
       "name": "What are my lens implant options for cataract surgery?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "There is no single best lens. Options include monofocal lenses, toric lenses for astigmatism, and multifocal or extended depth of focus lenses like PanOptix and Vivity. The right choice depends on your eyes, lifestyle, and vision goals."
+        "text": "There is no single best lens. Options include monofocal lenses, toric lenses that reduce astigmatism, extended depth of focus (EDOF) lenses like Vivity, and multifocal lenses like PanOptix. The right choice depends on your eyes, lifestyle, and vision goals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes Desert Vision Center different from other eye care practices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Desert Vision Center is physician-owned and fully independent. There is no corporate ownership or private equity influence. Dr. Tokuhara makes every recommendation based solely on what is right for each patient. He specializes in complex and revision cataract cases that other surgeons refer out, and takes an unhurried, personalized approach to every consultation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a cataract surgery complication be fixed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In many cases, yes. Dr. Tokuhara specializes in corrective and revision cataract surgery, including dislocated lens implants, retained lens fragments, iris damage, and failed premium lens outcomes. A thorough evaluation is the first step to understanding what is possible."
       }
     }
   ]
@@ -651,6 +696,7 @@ export default function Home() {
               <Reveal>
                 <p className="lux-section-eyebrow">Why Desert Vision Center</p>
                 <h2 className="lux-section-headline">A different standard<br />of care</h2>
+                <p className="lux-diff-intro">Most eye care practices look the same from the outside. The difference is in who owns the practice, who makes the decisions, and what happens when your case isn&rsquo;t straightforward.</p>
               </Reveal>
               <div className="lux-diff-grid">
                 <Reveal delay={0}>
@@ -658,35 +704,62 @@ export default function Home() {
                     <div className="lux-diff-icon">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
-                    <h3>Physician Independent</h3>
-                    <p>No corporate ownership. No private equity. Every recommendation is based solely on what&rsquo;s right for your eyes.</p>
+                    <h3>Physician-Owned, Fully Independent</h3>
+                    <p>No corporate parent. No private equity investors. No one telling Dr. Tokuhara which lenses to use or how many patients to see. Every recommendation is based solely on what is right for your eyes. That independence is increasingly rare in medicine, and it changes everything about how decisions get made.</p>
                   </div>
                 </Reveal>
-                <Reveal delay={100}>
+                <Reveal delay={80}>
                   <div className="lux-diff-card">
                     <div className="lux-diff-icon">
-                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
                     </div>
-                    <h3>Unhurried by Design</h3>
-                    <p>Your consultation isn&rsquo;t a conveyor belt. We take the time to explain, listen, and plan with precision.</p>
+                    <h3>Fellowship-Trained Subspecialist</h3>
+                    <p>Dr. Tokuhara completed both an anterior segment fellowship under the legendary Dr. Howard Gimbel and a retina fellowship at Loma Linda University. That dual training gives him a perspective most cataract surgeons simply do not have, seeing the entire eye as a connected system rather than isolated parts.</p>
                   </div>
                 </Reveal>
-                <Reveal delay={200}>
+                <Reveal delay={160}>
                   <div className="lux-diff-card">
                     <div className="lux-diff-icon">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
                     </div>
-                    <h3>Complex Case Expertise</h3>
-                    <p>Patients come to us after other surgeries didn&rsquo;t go as planned. We specialize in the cases others refer out.</p>
+                    <h3>The Surgeon Other Surgeons Call</h3>
+                    <p>When cataract surgery goes wrong elsewhere, patients are referred to Dr. Tokuhara. Dislocated lens implants, retained fragments, iris damage, failed premium lenses. He handles these complex and revision cases every week, not once a year. That experience shapes how he approaches every surgery, even the routine ones.</p>
                   </div>
                 </Reveal>
-                <Reveal delay={300}>
+                <Reveal delay={240}>
                   <div className="lux-diff-card">
                     <div className="lux-diff-icon">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                     </div>
+                    <h3>Ethics Over Revenue</h3>
+                    <p>No referral kickbacks. No assembly-line surgery. No upselling premium lenses when a standard lens is the right choice. Dr. Tokuhara built his practice on the belief that transparency and honesty are not optional in medicine. If a procedure is not right for you, he will tell you, even when it means less revenue.</p>
+                  </div>
+                </Reveal>
+                <Reveal delay={320}>
+                  <div className="lux-diff-card">
+                    <div className="lux-diff-icon">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9H4.5a2.5 2.5 0 010-5C7 4 9 7 12 7s5-3 7.5-3a2.5 2.5 0 010 5H18"/><path d="M18 9a9 9 0 11-12 0"/></svg>
+                    </div>
+                    <h3>Recognized Excellence</h3>
+                    <p>Named a Top Doctor by Palm Springs Life every year since 2019. Recognized by NBC as the best cataract surgeon in the Coachella Valley. First in the valley to perform Yamane secondary lens fixation, Vivity lens implantation, and PanOptix Pro trifocal implantation.</p>
+                  </div>
+                </Reveal>
+                <Reveal delay={400}>
+                  <div className="lux-diff-card">
+                    <div className="lux-diff-icon">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>Concierge-Level, Unhurried Care</h3>
+                    <p>Your consultation is not a 10-minute conveyor belt. Dr. Tokuhara takes the time to listen, explain your options in plain language, and answer every question until you feel genuinely confident in your decision. No rush. No pressure. Just a plan built around your life.</p>
+                  </div>
+                </Reveal>
+                <Reveal delay={480}>
+                  <div className="lux-diff-card">
+                    <div className="lux-diff-icon">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+                    </div>
                     <h3>CLEAR in a Day</h3>
-                    <p>Both eyes, one day. Our same-day bilateral protocol means less disruption and faster visual recovery.</p>
+                    <p>Both eyes, one day. Our same-day bilateral cataract surgery protocol means less disruption, fewer office visits, and faster visual recovery. Not every patient is a candidate, but for those who are, it transforms the experience.</p>
                   </div>
                 </Reveal>
               </div>

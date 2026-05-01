@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import { articleSchema, breadcrumbSchema } from '../../schema';
+import AuthorByline from '../../components/AuthorByline';
 
 export const metadata = {
   title: 'The Man Who Wanted His Younger Eyes Back | Dr. Keith Tokuhara, MD',
@@ -11,9 +14,26 @@ export const metadata = {
   },
 };
 
+
+const jsonLd = [
+  articleSchema({
+    title: 'The Man Who Wanted His Younger Eyes Back',
+    description: 'Sometimes the most important surgical decision is choosing to wait. A reflection on identity, expectations, and cataract surgery.',
+    slug: '/insights/the-man-who-wanted-his-younger-eyes-back',
+  }),
+  breadcrumbSchema([
+    { name: 'Home', href: '/' },
+    { name: 'Insights', href: '/insights' },
+    { name: 'The Man Who Wanted His Younger Eyes Back', href: '/insights/the-man-who-wanted-his-younger-eyes-back' },
+  ]),
+];
+
 export default function InsightYoungerEyes() {
   return (
     <>
+      {jsonLd.map((schema, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      ))}
       <section className="page-hero">
         <div className="container">
           <span className="insight-hero-cluster">Decisions &amp; Timing</span>
@@ -24,6 +44,7 @@ export default function InsightYoungerEyes() {
 
       <section className="section section-white">
         <div className="container content-narrow">
+          <AuthorByline />
           <p className="body-lead">
             He was 66 and came in for a second opinion. But within the first few minutes, it was clear this visit was not really about cataracts.
           </p>
@@ -38,6 +59,15 @@ export default function InsightYoungerEyes() {
 
       <section className="section section-warm">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-elderly-man-calm.jpg"
+              alt="Older man reflecting thoughtfully about his vision and future"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <h2 className="section-title">The Expectation <strong>Gap</strong></h2>
           <p>
             His expectations were specific: complete freedom from glasses, perfect night driving, and zero side effects. When I hear all three in the same sentence, I pay attention. Not because they are unreasonable individually, but because together, they describe an outcome that no current technology can guarantee.

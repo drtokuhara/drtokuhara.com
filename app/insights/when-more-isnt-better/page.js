@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import { articleSchema, breadcrumbSchema } from '../../schema';
+import AuthorByline from '../../components/AuthorByline';
 
 export const metadata = {
   title: 'When More Isn\'t Better',
@@ -11,9 +14,26 @@ export const metadata = {
   },
 };
 
+
+const jsonLd = [
+  articleSchema({
+    title: 'When More Isn\'t Better',
+    description: 'Sometimes the answer is not another procedure. A reflection on over-treatment in cataract surgery.',
+    slug: '/insights/when-more-isnt-better',
+  }),
+  breadcrumbSchema([
+    { name: 'Home', href: '/' },
+    { name: 'Insights', href: '/insights' },
+    { name: 'When More Isn\'t Better', href: '/insights/when-more-isnt-better' },
+  ]),
+];
+
 export default function InsightWhenMore() {
   return (
     <>
+      {jsonLd.map((schema, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      ))}
       <section className="page-hero">
         <div className="container">
           <span className="insight-hero-cluster">Expectations & Reality</span>
@@ -24,6 +44,7 @@ export default function InsightWhenMore() {
 
       <section className="section section-white">
         <div className="container content-narrow">
+          <AuthorByline />
           <p className="body-lead">
             She was 32 and had already been through three procedures on one eye.
           </p>
@@ -41,6 +62,15 @@ export default function InsightWhenMore() {
 
       <section className="section section-warm">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/x-confident-man-outside-clinic.jpg"
+              alt="Man standing confidently outside a medical clinic"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <h2 className="section-title">The Gap Between the Chart and <strong>Real Life</strong></h2>
           <p>
             This is something I see more often than most people realize. A patient reads 20/25 on the eye chart, and from a clinical standpoint, that's a good number. But numbers don't capture glare. They don't capture halos around headlights at night. They don't capture the feeling that something is off every time you open your eyes.

@@ -39,6 +39,8 @@ export default function MobileNav() {
             <Link href="/clear-in-a-day" onClick={close}>CLEAR in a Day</Link>
             <Link href="/complex-cases" onClick={close}>Complex Cases</Link>
             <Link href="/patient-journey" onClick={close}>Your Journey</Link>
+            <Link href="/understand-your-options" onClick={close}>Your Options</Link>
+            <Link href="/ready-for-surgery" onClick={close}>Ready for Surgery</Link>
             <Link href="/lens-implants-explained" onClick={close}>Lens Guide</Link>
             <Link href="/insights" onClick={close}>Insights</Link>
             <Link href="/education" onClick={close}>Education</Link>

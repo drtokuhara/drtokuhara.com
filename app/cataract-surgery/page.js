@@ -1,5 +1,19 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { articleSchema, breadcrumbSchema, physicianSchema } from '../schema';
+
+const jsonLd = [
+  physicianSchema,
+  articleSchema({
+    title: 'Cataract Surgery - What to Know Before You Decide',
+    description: 'Dr. Tokuhara explains cataract surgery in plain language. What it is, when it makes sense, lens options, recovery, and what to expect.',
+    slug: '/cataract-surgery',
+  }),
+  breadcrumbSchema([
+    { name: 'Home', href: '/' },
+    { name: 'Cataract Surgery', href: '/cataract-surgery' },
+  ]),
+];
 
 export const metadata = {
   title: 'Cataract Surgery - What to Know Before You Decide',
@@ -17,6 +31,13 @@ export const metadata = {
 export default function CataractSurgeryPage() {
   return (
     <>
+      {jsonLd.map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
       {/* PAGE HERO */}
       <section className="page-hero">
         <div className="container">
@@ -198,7 +219,7 @@ export default function CataractSurgeryPage() {
             </div>
             <div className="card">
               <h3>Toric Lenses</h3>
-              <p>Designed for patients with astigmatism. A toric lens corrects the irregular shape of your cornea at the same time as cataract removal. Without it, astigmatism will still blur your vision even after surgery. I use precise alignment techniques to get the best result.</p>
+              <p>Designed for patients with astigmatism. A toric lens reduces the irregular curvature of your cornea at the same time as cataract removal. Without it, astigmatism will still blur your vision even after surgery. I use precise alignment techniques to get the best result.</p>
             </div>
             <div className="card">
               <h3>Multifocal &amp; Extended Depth Lenses</h3>
@@ -301,6 +322,22 @@ export default function CataractSurgeryPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* WHY DR. TOKUHARA */}
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <h2 className="section-title">Why Patients Choose <strong>Dr. Tokuhara</strong></h2>
+          <p className="prose">
+            Desert Vision Center is physician-owned and fully independent. There is no corporate parent company, no private equity investors, and no one influencing which lenses I recommend or how I practice. Every surgical plan is built around your eyes, your lifestyle, and your goals.
+          </p>
+          <p className="prose">
+            I completed my fellowship training under Dr. Howard Gimbel at Loma Linda University, one of the most respected names in cataract surgery worldwide. That training, combined with years of specializing in complex and revision cases, shapes how I approach every patient. Even routine cataracts benefit from the kind of planning and judgment that comes from handling the hardest cases regularly.
+          </p>
+          <p className="prose">
+            Named a Top Doctor by Palm Springs Life every year since 2019. Recognized by NBC as the best cataract surgeon in the Coachella Valley. First in the valley to perform Yamane secondary lens fixation, Vivity lens implantation, and PanOptix Pro trifocal implantation.
+          </p>
         </div>
       </section>
 

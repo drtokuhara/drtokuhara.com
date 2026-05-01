@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Frequently Asked Questions About Cataract Surgery',
@@ -84,7 +85,7 @@ const faqData = [
       },
       {
         q: 'What is a toric lens?',
-        a: 'A toric lens is designed to correct astigmatism at the same time as your cataract. Astigmatism means your cornea is shaped more like a football than a basketball, which causes blurry or distorted vision. If you have significant astigmatism and we do not address it during surgery, your vision will still be blurry even after the cataract is gone. A toric lens fixes both problems at once. I use precise alignment techniques to position it exactly where it needs to be.',
+        a: 'A toric lens is designed to reduce astigmatism at the same time as your cataract removal. Astigmatism means your cornea is shaped more like a football than a basketball, which causes blurry or distorted vision. If you have significant astigmatism and we do not address it during surgery, your vision will still be blurry even after the cataract is gone. A toric lens addresses both problems at once. I use precise alignment techniques to position it exactly where it needs to be.',
       },
       {
         q: 'Can I change my lens implant later?',
@@ -168,8 +169,15 @@ export default function FAQPage() {
       />
 
       {/* PAGE HERO */}
-      <section className="page-hero">
-        <div className="container">
+      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
+        <Image
+          src="/media/faq-hero-consultation.png"
+          alt="Patient consultation at Desert Vision Center"
+          fill
+          style={{objectFit: 'cover', objectPosition: 'center'}}
+          priority
+        />
+        <div style={{position: 'relative', zIndex: 1}} className="container">
           <h1>Frequently Asked <strong>Questions</strong></h1>
           <p className="page-hero-sub">Real questions from real patients. Honest answers in plain language.</p>
         </div>

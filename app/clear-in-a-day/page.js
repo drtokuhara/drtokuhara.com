@@ -1,5 +1,18 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { articleSchema, breadcrumbSchema } from '../schema';
+
+const jsonLd = [
+  articleSchema({
+    title: 'CLEAR in a Day - Same Day Bilateral Cataract Surgery',
+    description: 'Both eyes in a single visit. CLEAR in a Day is same-day bilateral cataract surgery for eligible patients at Desert Vision Center.',
+    slug: '/clear-in-a-day',
+  }),
+  breadcrumbSchema([
+    { name: 'Home', href: '/' },
+    { name: 'CLEAR in a Day', href: '/clear-in-a-day' },
+  ]),
+];
 
 export const metadata = {
   title: 'CLEAR in a Day - Same Day Bilateral Cataract Surgery',
@@ -17,6 +30,9 @@ export const metadata = {
 export default function ClearInADayPage() {
   return (
     <>
+      {jsonLd.map((schema, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      ))}
       {/* PAGE HERO */}
       <section className="page-hero">
         <div className="container">
@@ -189,6 +205,17 @@ export default function ClearInADayPage() {
             With CLEAR in a Day, both eyes heal together. By day one, most patients already notice improved vision in both eyes. By the end of the first week, the majority of healing has occurred. You&rsquo;ll use eye drops in both eyes for a few weeks, and I&rsquo;ll see you for follow-up visits to monitor your progress.
           </p>
 
+          <div className="content-image" style={{margin: '32px 0'}}>
+            <Image
+              src="/media/lifestyle-couple-cycling-palm-desert.jpg"
+              alt="Couple cycling together in Palm Desert after cataract surgery recovery"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+            <div className="content-image-caption">Most patients are back to active living within days, not weeks.</div>
+          </div>
+
           <h3 className="subsection-title">The practical difference</h3>
           <p className="prose">
             Instead of spending a month in visual limbo, most CLEAR in a Day patients are back to their normal activities within days. Driving, reading, watching television, enjoying the desert. Your brain doesn&rsquo;t have to compensate for mismatched vision between your eyes, which means the adjustment feels more natural and more immediate.
@@ -196,6 +223,17 @@ export default function ClearInADayPage() {
           <p className="prose">
             The restrictions are the same as any cataract surgery: avoid rubbing your eyes, skip swimming and hot tubs for a couple of weeks, don&rsquo;t do heavy lifting for the first few days, and use your drops as prescribed. The only difference is that you&rsquo;re doing it once instead of twice.
           </p>
+
+          <div className="content-image" style={{margin: '32px 0'}}>
+            <Image
+              src="/media/lifestyle-couple-walking-dog-morning.jpg"
+              alt="Couple walking their dog on a bright morning - back to routine after CLEAR in a Day"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+            <div className="content-image-caption">Back to your morning routine. One recovery, not two.</div>
+          </div>
         </div>
       </section>
 

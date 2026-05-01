@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { articleSchema, breadcrumbSchema } from '../../schema';
+import AuthorByline from '../../components/AuthorByline';
 
 export const metadata = {
   title: 'The Number That Wasn\'t the Problem',
@@ -12,9 +14,26 @@ export const metadata = {
   },
 };
 
+
+const jsonLd = [
+  articleSchema({
+    title: 'The Number That Wasn\'t the Problem',
+    description: 'A 79-year-old man with keratoconus questioned his cataract surgery. The real issue was understanding where the number came from.',
+    slug: '/insights/the-number-that-wasnt-the-problem',
+  }),
+  breadcrumbSchema([
+    { name: 'Home', href: '/' },
+    { name: 'Insights', href: '/insights' },
+    { name: 'The Number That Wasn\'t the Problem', href: '/insights/the-number-that-wasnt-the-problem' },
+  ]),
+];
+
 export default function InsightTheNumber() {
   return (
     <>
+      {jsonLd.map((schema, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      ))}
       <section className="page-hero">
         <div className="container">
           <span className="insight-hero-cluster">Surgical Restraint</span>
@@ -25,6 +44,7 @@ export default function InsightTheNumber() {
 
       <section className="section section-white">
         <div className="container content-narrow">
+          <AuthorByline />
           <p className="body-lead">
             His surgery went exactly as planned.
           </p>

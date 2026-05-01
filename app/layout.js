@@ -66,6 +66,8 @@ export default function RootLayout({ children }) {
               <Link href="/clear-in-a-day">CLEAR in a Day</Link>
               <Link href="/complex-cases">Complex Cases</Link>
               <Link href="/patient-journey">Your Journey</Link>
+              <Link href="/understand-your-options">Your Options</Link>
+              <Link href="/ready-for-surgery">Ready for Surgery</Link>
               <Link href="/lens-implants-explained">Lens Guide</Link>
               <Link href="/insights">Insights</Link>
               <Link href="/education">Education</Link>

@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { articleSchema, breadcrumbSchema } from '../../schema';
+import AuthorByline from '../../components/AuthorByline';
 
 export const metadata = {
   title: 'Permission to See Again',
@@ -12,9 +14,26 @@ export const metadata = {
   },
 };
 
+
+const jsonLd = [
+  articleSchema({
+    title: 'Permission to See Again',
+    description: 'A 78-year-old woman delayed eye care for six years while caring for her husband with dementia. She needed permission to take care of herself.',
+    slug: '/insights/permission-to-see-again',
+  }),
+  breadcrumbSchema([
+    { name: 'Home', href: '/' },
+    { name: 'Insights', href: '/insights' },
+    { name: 'Permission to See Again', href: '/insights/permission-to-see-again' },
+  ]),
+];
+
 export default function InsightPermission() {
   return (
     <>
+      {jsonLd.map((schema, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      ))}
       <section className="page-hero">
         <div className="container">
           <span className="insight-hero-cluster">Decision Making</span>
@@ -25,6 +44,7 @@ export default function InsightPermission() {
 
       <section className="section section-white">
         <div className="container content-narrow">
+          <AuthorByline />
           <p className="body-lead">
             She hadn't seen an eye doctor in six years.
           </p>

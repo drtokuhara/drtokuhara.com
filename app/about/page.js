@@ -1,6 +1,15 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import DynamicLightPortrait from '../DynamicLightPortrait';
+import { physicianSchema, breadcrumbSchema } from '../schema';
+
+const jsonLd = [
+  physicianSchema,
+  breadcrumbSchema([
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+  ]),
+];
 
 export const metadata = {
   title: 'About Dr. Keith Tokuhara - The Surgeon Behind the Scrub Cap',
@@ -18,6 +27,9 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
+      {jsonLd.map((schema, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      ))}
       {/* PAGE HERO */}
       <section className="page-hero">
         <div className="container">
@@ -187,6 +199,41 @@ export default function AboutPage() {
                 </div>
                 <p className="video-label">Recognized on NBC as Best Cataract Surgeon</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* COACHELLA VALLEY */}
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/about-coachella-valley-golden-hour.jpg"
+              alt="Coachella Valley desert landscape at golden hour with palm trees and mountains"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+          <p className="prose" style={{marginTop: '24px', textAlign: 'center', color: 'var(--text-secondary)', fontStyle: 'italic'}}>
+            The Coachella Valley. Where I chose to build a practice, raise a family, and take care of people.
+          </p>
+        </div>
+      </section>
+
+      {/* AWARDS & RECOGNITION */}
+      <section className="section section-warm">
+        <div className="container content-narrow">
+          <h2 className="section-title">Awards &amp; <strong>Recognition</strong></h2>
+          <div className="credentials-grid">
+            <div className="credential-item">
+              <h3>NBC Recognition</h3>
+              <p>Recognized by NBC as the best cataract surgeon in the Coachella Valley. The segment highlighted Dr. Tokuhara's expertise in complex cases and his commitment to patient-first care.</p>
+            </div>
+            <div className="credential-item">
+              <h3>Palm Springs Life Top Doctor</h3>
+              <p>Named a Top Doctor by Palm Springs Life magazine every year since 2019. Selected through a peer-nominated process that recognizes clinical excellence in the desert community.</p>
             </div>
           </div>
         </div>

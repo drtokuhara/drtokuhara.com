@@ -40,7 +40,7 @@ const videoCategories = [
     title: 'Lens Options',
     description: 'Different lens implants explained. What they do, who they work best for, and honest pros and cons.',
     videos: [
-      { id: 'uCbLzD-KXe4', title: 'Toric Lens Implants for Astigmatism', desc: 'How toric lenses correct astigmatism during cataract surgery.' },
+      { id: 'uCbLzD-KXe4', title: 'Toric Lens Implants for Astigmatism', desc: 'How toric lenses reduce astigmatism during cataract surgery.' },
       { id: 'Yomf55PktXU', title: 'PanOptix vs PanOptix Pro: Real Patient Experience', desc: 'The differences between PanOptix and PanOptix Pro, with a real patient sharing their experience.' },
       { id: '4EEq6cg9zyY', title: 'Vivity Lens: Behind the Scenes', desc: 'A look at the Vivity extended depth of focus lens and how it works in practice.' },
       { id: '85V5DGG6Rw0', title: 'Clareon Lens: Cataract Surgery with Dr. Tokuhara', desc: 'The Clareon monofocal lens and what makes it different from older monofocal options.' },

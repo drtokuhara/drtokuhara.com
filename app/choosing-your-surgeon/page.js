@@ -1,5 +1,19 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { articleSchema, breadcrumbSchema } from '../schema';
+import AuthorByline from '../components/AuthorByline';
+
+const jsonLd = [
+  articleSchema({
+    title: 'Choosing a Cataract Surgeon: The Questions Nobody Tells You to Ask',
+    description: 'A framework for evaluating cataract surgeons. What surgical volume means, how to evaluate complication experience, and the red flags most patients miss.',
+    slug: '/choosing-your-surgeon',
+  }),
+  breadcrumbSchema([
+    { name: 'Home', href: '/' },
+    { name: 'Choosing Your Surgeon', href: '/choosing-your-surgeon' },
+  ]),
+];
 
 export const metadata = {
   title: 'Choosing a Cataract Surgeon: The Questions Nobody Tells You to Ask',
@@ -15,6 +29,13 @@ export const metadata = {
 export default function ChoosingYourSurgeon() {
   return (
     <>
+      {jsonLd.map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
       <section className="page-hero">
         <div className="container">
           <h1>Choosing a Cataract <strong>Surgeon</strong></h1>
@@ -24,6 +45,7 @@ export default function ChoosingYourSurgeon() {
 
       <section className="section section-white">
         <div className="container content-narrow">
+          <AuthorByline />
           <div className="content-image" style={{marginBottom: '32px'}}>
             <Image
               src="/media/patient-couple-consultation.jpg"

@@ -1,4 +1,19 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import { articleSchema, breadcrumbSchema } from '../schema';
+import AuthorByline from '../components/AuthorByline';
+
+const jsonLd = [
+  articleSchema({
+    title: 'Complex Cataract Surgery and Corrective Cases',
+    description: 'Dr. Tokuhara specializes in complex and revision cataract surgery. Second opinions, complications, secondary lens implantation, and cases other surgeons refer out.',
+    slug: '/complex-cases',
+  }),
+  breadcrumbSchema([
+    { name: 'Home', href: '/' },
+    { name: 'Complex Cases', href: '/complex-cases' },
+  ]),
+];
 
 export const metadata = {
   title: 'Complex Cataract Surgery & Corrective Cases - Second Opinion Specialist',
@@ -16,9 +31,19 @@ export const metadata = {
 export default function ComplexCasesPage() {
   return (
     <>
+      {jsonLd.map((schema, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      ))}
       {/* PAGE HERO */}
-      <section className="page-hero">
-        <div className="container">
+      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
+        <Image
+          src="/media/complex-cases-surgical-precision.jpg"
+          alt="Surgeon's hands performing precision cataract surgery under a microscope"
+          fill
+          style={{objectFit: 'cover', objectPosition: 'center'}}
+          priority
+        />
+        <div style={{position: 'relative', zIndex: 1}} className="container">
           <h1>When Other Surgeons Say <strong>Nothing Can Be Done</strong></h1>
           <p className="page-hero-sub">Complex cataract surgery, corrective procedures, and honest second opinions for patients who&rsquo;ve been told there are no options left.</p>
         </div>
@@ -27,6 +52,7 @@ export default function ComplexCasesPage() {
       {/* WHAT MAKES A CASE COMPLEX */}
       <section className="section section-white">
         <div className="container content-narrow">
+          <AuthorByline />
           <h2 className="section-title">What Makes a Case <strong>Complex</strong></h2>
           <p className="prose">
             A cataract case becomes complex when something increases risk, reduces predictability, or requires additional surgical skill, tools, or planning. Not every cataract is routine. Most are, and that&rsquo;s good news. But some eyes come with challenges that change the entire approach. Those challenges fall into a few distinct categories.
@@ -58,19 +84,34 @@ export default function ComplexCasesPage() {
         </div>
       </section>
 
-      {/* CASES I SPECIALIZE IN */}
+      {/* MID-PAGE VISUAL BREAK */}
       <section className="section section-warm">
+        <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '0'}}>
+            <Image
+              src="/media/complex-cases-patient-hope.jpg"
+              alt="Patient looking hopeful after learning his complex case has options"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* CASES I SPECIALIZE IN */}
+      <section className="section section-white">
         <div className="container">
           <h2 className="section-title">Cases I <strong>Specialize In</strong></h2>
           <div className="section-subtitle">These are the problems I solve every week. Not once a year. Every week.</div>
           <div className="card-grid">
             <div className="card">
               <h3>Dislocated or Subluxated Lens Implants</h3>
-              <p>A lens implant that has shifted, tilted, or fallen out of position. This can happen months or years after surgery. The lens needs to be repositioned or replaced, and the technique matters enormously. I use the Yamane flanged haptic technique to secure lenses without sutures, giving patients a stable, long-term result.</p>
+              <p>A lens implant that has shifted, tilted, or fallen out of position. This can happen months or years after surgery due to progressive zonular weakness, pseudoexfoliation syndrome, or trauma. The lens may sublux partially or dislocate completely into the vitreous cavity. I use the Yamane flanged intrascleral fixation technique, a sutureless approach that creates stable, long-term lens centration even without capsular support. I was the first surgeon in the Coachella Valley to perform this technique.</p>
             </div>
             <div className="card">
               <h3>Retained Lens Fragments</h3>
-              <p>Pieces of the cataract left behind during surgery. Sometimes small fragments are managed conservatively, but larger pieces can cause inflammation, elevated eye pressure, and corneal damage. I&rsquo;ve seen patients told to &ldquo;just wait it out&rdquo; when they needed the fragment removed urgently. If you&rsquo;re still having problems weeks after cataract surgery, this is one of the things I look for.</p>
+              <p>Pieces of the cataract left behind during surgery. Small cortical fragments may resorb on their own, but larger nuclear fragments can trigger severe inflammation (lens-induced uveitis), sustained intraocular pressure elevation, and corneal edema. Timing matters: prolonged retention increases the risk of cystoid macular edema and permanent endothelial cell loss. I&rsquo;ve seen patients told to &ldquo;just wait it out&rdquo; when they needed the fragment removed promptly. If you&rsquo;re still having problems weeks after cataract surgery, this is one of the things I evaluate carefully.</p>
             </div>
             <div className="card">
               <h3>Posterior Capsule Rupture Complications</h3>
@@ -82,7 +123,7 @@ export default function ComplexCasesPage() {
             </div>
             <div className="card">
               <h3>Failed or Unsatisfactory Premium Lens Outcomes</h3>
-              <p>Multifocal and extended depth lenses can deliver incredible results, but they&rsquo;re not right for every eye. When a premium lens causes persistent glare, halos, or blurred vision that doesn&rsquo;t improve, the conversation shifts to whether the lens should be exchanged or a different approach taken. I help patients navigate that decision honestly, without pressure to just &ldquo;give it more time.&rdquo;</p>
+              <p>Multifocal and extended depth of focus lenses can deliver incredible results, but they&rsquo;re not right for every eye. Persistent dysphotopsia (unwanted visual phenomena like halos, starbursts, or waxy vision) can result from residual refractive error, posterior capsule opacification, dry eye, corneal irregularity, or simply a mismatch between the lens optics and the patient&rsquo;s visual system. When symptoms persist beyond the expected neuroadaptation period, the conversation shifts to whether the lens should be exchanged for a monofocal or EDOF alternative. I help patients navigate that decision honestly, based on objective testing and careful examination, without pressure to just &ldquo;give it more time.&rdquo;</p>
             </div>
             <div className="card">
               <h3>Secondary Lens Implantation</h3>

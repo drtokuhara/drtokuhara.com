@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import { articleSchema, breadcrumbSchema } from '../../schema';
+import AuthorByline from '../../components/AuthorByline';
 
 export const metadata = {
   title: 'When Guilt Replaces Explanation',
@@ -11,9 +14,26 @@ export const metadata = {
   },
 };
 
+
+const jsonLd = [
+  articleSchema({
+    title: 'When Guilt Replaces Explanation',
+    description: 'A patient believed his cataract complication was his fault. It was not. A reflection on ethics and trust in ophthalmology.',
+    slug: '/insights/when-guilt-replaces-explanation',
+  }),
+  breadcrumbSchema([
+    { name: 'Home', href: '/' },
+    { name: 'Insights', href: '/insights' },
+    { name: 'When Guilt Replaces Explanation', href: '/insights/when-guilt-replaces-explanation' },
+  ]),
+];
+
 export default function InsightGuilt() {
   return (
     <>
+      {jsonLd.map((schema, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      ))}
       <section className="page-hero">
         <div className="container">
           <span className="insight-hero-cluster">Ethics & Trust</span>
@@ -24,6 +44,7 @@ export default function InsightGuilt() {
 
       <section className="section section-white">
         <div className="container content-narrow">
+          <AuthorByline />
           <p className="body-lead">
             He sat across from me and said, "I know it was my fault."
           </p>
@@ -41,6 +62,15 @@ export default function InsightGuilt() {
 
       <section className="section section-warm">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/dr-t-slit-lamp-patient-view.jpg"
+              alt="Dr. Tokuhara examining a patient at the slit lamp"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <h2 className="section-title">What Actually <strong>Happened</strong></h2>
           <p>
             When I examined him, I found a large piece of his natural lens - a nuclear fragment - sitting in the front of his eye. The original cataract surgery had been complicated by a rupture during the procedure, and the fragment hadn't been fully removed. The cornea had started to swell from the retained material pressing against it. The surgical wound had partially come apart.
