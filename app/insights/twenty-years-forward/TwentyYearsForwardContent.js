@@ -11,8 +11,16 @@ export default function TwentyYearsForwardContent() {
   return (
     <>
       {/* HERO */}
-      <section className="page-hero">
-        <div className="container">
+      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
+        <Image
+          src="/media/stock-seniors-resort-promenade-night.jpg"
+          alt="Seniors strolling along a resort promenade at night"
+          fill
+          style={{objectFit: 'cover', objectPosition: 'center'}}
+          priority
+        />
+        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.4) 0%, rgba(0,20,30,0.7) 100%)', zIndex: 1}} />
+        <div style={{position: 'relative', zIndex: 2}} className="container">
           <h1 dangerouslySetInnerHTML={{ __html: t('insights.twentyYears.title') || 'Twenty Years <strong>Forward</strong>' }} />
           <p className="page-hero-sub">{t('insights.twentyYears.subtitle') || 'A cataract decision across time.'}</p>
         </div>
@@ -145,6 +153,21 @@ export default function TwentyYearsForwardContent() {
           <p>
             There is no perfect answer. Only different balances.
           </p>
+        </div>
+      </section>
+
+      {/* LIFESTYLE IMAGE */}
+      <section className="section" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/stock-seniors-evening-stroll.jpg"
+              alt="Seniors enjoying an evening stroll together"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 

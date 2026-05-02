@@ -10,8 +10,16 @@ export default function ContactContent() {
   return (
     <>
       {/* PAGE HERO */}
-      <section className="page-hero">
-        <div className="container">
+      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
+        <Image
+          src="/media/about-coachella-valley-golden-hour.jpg"
+          alt="Coachella Valley at golden hour"
+          fill
+          style={{objectFit: 'cover', objectPosition: 'center'}}
+          priority
+        />
+        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.4) 0%, rgba(0,20,30,0.7) 100%)', zIndex: 1}} />
+        <div style={{position: 'relative', zIndex: 2}} className="container">
           <h1 dangerouslySetInnerHTML={{ __html: t('contact.title') || 'Get in <strong>Touch</strong>' }} />
           <p className="page-hero-sub">{t('contact.subtitle') || "You don\u2019t need a referral to come see me. If you have a question about your eyes, just call."}</p>
         </div>

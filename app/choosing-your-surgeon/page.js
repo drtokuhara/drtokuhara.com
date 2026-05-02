@@ -119,6 +119,21 @@ export default function ChoosingYourSurgeon() {
         </div>
       </section>
 
+      {/* LIFESTYLE IMAGE BREAK */}
+      <section className="section" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/stock-friends-indoor-portrait.jpg"
+              alt="Friends gathered together indoors"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* RED FLAGS */}
       <section className="section section-warm">
         <div className="container content-narrow">

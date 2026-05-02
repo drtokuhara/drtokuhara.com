@@ -99,8 +99,16 @@ export default function EducationPage() {
   return (
     <>
       {/* PAGE HERO */}
-      <section className="page-hero">
-        <div className="container">
+      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
+        <Image
+          src="/media/stock-seniors-outdoor-dining.jpg"
+          alt="Seniors enjoying outdoor dining in the desert"
+          fill
+          style={{objectFit: 'cover', objectPosition: 'center'}}
+          priority
+        />
+        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.4) 0%, rgba(0,20,30,0.7) 100%)', zIndex: 1}} />
+        <div style={{position: 'relative', zIndex: 2}} className="container">
           <h1>Patient <strong>Education</strong></h1>
           <p className="page-hero-sub">I make these videos because I think patients deserve real answers, not marketing brochures. Watch whatever interests you.</p>
         </div>

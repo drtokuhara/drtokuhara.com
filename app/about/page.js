@@ -128,6 +128,21 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* LIFESTYLE IMAGE BREAK */}
+      <section className="section" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/stock-couple-golf-cart.png"
+              alt="Couple enjoying a ride in a golf cart"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* PHILOSOPHY */}
       <section className="section section-white">
         <div className="container content-narrow">

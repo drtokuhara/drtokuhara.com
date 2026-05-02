@@ -107,6 +107,21 @@ export default function CataractSurgeryPage() {
         </div>
       </section>
 
+      {/* LIFESTYLE IMAGE BREAK */}
+      <section className="section" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/stock-seniors-bocce-desert.jpg"
+              alt="Seniors playing bocce in the desert sun"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* WHAT TO EXPECT */}
       <section className="section section-white">
         <div className="container content-narrow">

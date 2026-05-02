@@ -10,8 +10,16 @@ export default function PatientJourneyContent() {
   return (
     <>
       {/* PAGE HERO */}
-      <section className="page-hero">
-        <div className="container">
+      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
+        <Image
+          src="/media/stock-couple-outdoor-sunshine.jpg"
+          alt="Couple enjoying outdoor sunshine in the Coachella Valley"
+          fill
+          style={{objectFit: 'cover', objectPosition: 'center'}}
+          priority
+        />
+        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.4) 0%, rgba(0,20,30,0.7) 100%)', zIndex: 1}} />
+        <div style={{position: 'relative', zIndex: 2}} className="container">
           <h1 dangerouslySetInnerHTML={{ __html: t('patientJourney.title') || 'Your <strong>Patient Journey</strong>' }} />
           <p className="page-hero-sub">{t('patientJourney.subtitle') || 'From first visit to clear vision. No surprises. No pressure. Just a clear path.'}</p>
         </div>

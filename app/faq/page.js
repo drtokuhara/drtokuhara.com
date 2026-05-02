@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -177,7 +178,8 @@ export default function FAQPage() {
           style={{objectFit: 'cover', objectPosition: 'center'}}
           priority
         />
-        <div style={{position: 'relative', zIndex: 1}} className="container">
+        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.4) 0%, rgba(0,20,30,0.7) 100%)', zIndex: 1}} />
+        <div style={{position: 'relative', zIndex: 2}} className="container">
           <h1>Frequently Asked <strong>Questions</strong></h1>
           <p className="page-hero-sub">Real questions from real patients. Honest answers in plain language.</p>
         </div>
@@ -185,39 +187,70 @@ export default function FAQPage() {
 
       {/* FAQ CATEGORIES */}
       {faqData.map((category, catIndex) => (
-        <section
-          key={category.id}
-          id={category.id}
-          className={`section ${sectionStyles[catIndex % 2]}`}
-        >
-          <div className="container content-narrow">
-            <h2 className="section-title">{category.category}</h2>
-            <div className="faq-list">
-              {category.questions.map((item, qIndex) => (
-                <div key={qIndex} className="faq-item">
-                  <h3 className="faq-question">{item.q}</h3>
-                  <p className="faq-answer prose">{item.a}</p>
-                </div>
-              ))}
+        <React.Fragment key={category.id}>
+          <section
+            id={category.id}
+            className={`section ${sectionStyles[catIndex % 2]}`}
+          >
+            <div className="container content-narrow">
+              <h2 className="section-title">{category.category}</h2>
+              <div className="faq-list">
+                {category.questions.map((item, qIndex) => (
+                  <div key={qIndex} className="faq-item">
+                    <h3 className="faq-question">{item.q}</h3>
+                    <p className="faq-answer prose">{item.a}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+          {catIndex === 1 && (
+            <section className="section" style={{paddingTop: 0, paddingBottom: 0}}>
+              <div className="container content-narrow">
+                <div className="content-image">
+                  <Image
+                    src="/media/stock-couple-outdoor-sunshine.jpg"
+                    alt="Couple enjoying outdoor sunshine in the desert"
+                    width={680}
+                    height={453}
+                    style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+                  />
+                </div>
+              </div>
+            </section>
+          )}
+          {catIndex === 2 && (
+            <section className="section" style={{paddingTop: 0, paddingBottom: 0}}>
+              <div className="container content-narrow">
+                <div className="content-image">
+                  <Image
+                    src="/media/stock-seniors-outdoor-dining.jpg"
+                    alt="Seniors enjoying an outdoor meal together"
+                    width={680}
+                    height={453}
+                    style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+                  />
+                </div>
+              </div>
+            </section>
+          )}
+          {catIndex === 3 && (
+            <section className="section" style={{paddingTop: 0, paddingBottom: 0}}>
+              <div className="container content-narrow">
+                <div className="content-image">
+                  <Image
+                    src="/media/stock-woman-outdoor-cafe.jpg"
+                    alt="Woman relaxing at an outdoor cafe with clear vision"
+                    width={680}
+                    height={453}
+                    style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+                  />
+                </div>
+              </div>
+            </section>
+          )}
+        </React.Fragment>
       ))}
-
-      {/* LIFESTYLE IMAGES */}
-      <section className="section section-warm" style={{paddingTop: '24px', paddingBottom: '24px'}}>
-        <div className="container content-narrow">
-          <div className="content-image">
-            <Image
-              src="/media/stock-couple-outdoor-sunshine.jpg"
-              alt="Couple enjoying the outdoor sunshine in the desert - the lifestyle our patients love"
-              width={680}
-              height={453}
-              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
-            />
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="cta">
