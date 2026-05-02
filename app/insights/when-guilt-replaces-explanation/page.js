@@ -52,19 +52,35 @@ export default function InsightGuilt() {
 
       <section className="section section-white">
         <div className="container content-narrow">
-          <AuthorByline />
-          <p className="body-lead">
+          <AuthorByline date="April 2026" />
+          <div className="section-divider" style={{margin: '32px auto'}} />
+          <p className="body-lead body-lead-dropcap">
             He sat across from me and said, "I know it was my fault."
           </p>
           <p>
             He was 69 years old. He'd had cataract surgery at another practice a few months earlier, and it hadn't gone well. His vision in that eye never came back. When he asked why, the surgeon's partner told him it was because he had chosen standard surgery instead of laser.
           </p>
-          <p>
-            He believed it. For months, he carried that. The guilt of having made the "wrong" choice. The belief that if he had just spent more money, his eye would be fine.
-          </p>
+
+          <div className="pull-quote">
+            <p>He believed it. For months, he carried that. The guilt of having made the "wrong" choice. The belief that if he had just spent more money, his eye would be fine.</p>
+          </div>
+
           <p>
             He was wrong - not about wanting answers, but about the answer he was given.
           </p>
+        </div>
+      </section>
+
+      {/* Full-bleed visual break */}
+      <section style={{padding: 0}}>
+        <div className="editorial-image-break">
+          <Image
+            src="/media/stock-seniors-outdoor-dining.jpg"
+            alt="Seniors enjoying life with clear vision"
+            width={1920}
+            height={400}
+            style={{width: '100%', height: '400px', objectFit: 'cover'}}
+          />
         </div>
       </section>
 
@@ -86,9 +102,10 @@ export default function InsightGuilt() {
           <p>
             None of this had anything to do with whether he chose laser or standard surgery. Complications during cataract surgery happen - rarely, but they happen - regardless of technique. What matters is how they're handled.
           </p>
-          <p>
-            In this case, the complication wasn't addressed. And instead of an honest explanation, the patient received blame.
-          </p>
+
+          <div className="insight-highlight">
+            <p><strong>The complication wasn't addressed. And instead of an honest explanation, the patient received blame.</strong></p>
+          </div>
         </div>
       </section>
 
@@ -119,9 +136,10 @@ export default function InsightGuilt() {
           <p>
             Patients are vulnerable after a complication. They're scared. They want someone to explain what happened and tell them it's going to be okay. If the first thing they hear is that it was their fault, they internalize it. They stop asking questions. They stop seeking help. And the problem gets worse.
           </p>
-          <p>
-            Complications are never the patient's fault. And the ethical response - the only acceptable response - is honesty, compassion, and action.
-          </p>
+
+          <div className="pull-quote">
+            <p>Complications are never the patient's fault. And the ethical response - the only acceptable response - is honesty, compassion, and action.</p>
+          </div>
         </div>
       </section>
 
