@@ -60,7 +60,7 @@ export default function ReadyForSurgeryContent() {
             <div className="timeline-step">
               <div className="timeline-marker">4</div>
               <h3>{t('readyForSurgery.timeline.step4.title') || 'Recovery'}</h3>
-              <p>{t('readyForSurgery.timeline.step4.text') || "Most patients see clearly the next day. Full stabilization over a few weeks. Follow-up visits at day one, one week, and one month."}</p>
+              <p>{t('readyForSurgery.timeline.step4.text') || "Vision improvement varies by patient. Many notice improvement within the first few days, with full stabilization over several weeks. Follow-up visits at day one, one week, and one month."}</p>
             </div>
           </div>
         </div>

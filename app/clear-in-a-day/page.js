@@ -179,7 +179,7 @@ export default function ClearInADayPage() {
 
           <h3 className="subsection-title">Going home</h3>
           <p className="prose">
-            You&rsquo;ll go home with protective shields over both eyes. Your vision will be blurry at first, which is normal. Most patients notice a significant improvement by the next morning. You&rsquo;ll come back to see me the day after surgery so I can check both eyes and make sure everything looks excellent.
+            You&rsquo;ll go home with protective shields over both eyes. Your vision will be blurry at first, which is normal. Recovery varies from patient to patient. Some notice improvement within the first day or two, while others may take longer. You&rsquo;ll come back to see me the day after surgery so I can check both eyes and make sure everything is healing well.
           </p>
 
           <div className="content-image" style={{marginTop: '32px'}}>
@@ -252,9 +252,9 @@ export default function ClearInADayPage() {
             If anything during the first eye gives me any reason for concern, I will not proceed with the second eye. Period. That is a non-negotiable part of the protocol. The second eye only happens if the first eye went perfectly. Your safety always comes first, even if it means rescheduling.
           </p>
 
-          <h3 className="subsection-title">Will my insurance cover both eyes the same day?</h3>
+          <h3 className="subsection-title">Is CLEAR in a Day covered by insurance?</h3>
           <p className="prose">
-            In most cases, yes. Medicare and most private insurers cover bilateral cataract surgery performed on the same day. My team will verify your coverage before scheduling and let you know if there are any considerations specific to your plan.
+            Insurance companies consider same-day bilateral cataract surgery a patient convenience rather than a medical necessity. Because of this, CLEAR in a Day is not covered by insurance. Each eye's cataract surgery is covered individually by Medicare and most private insurers, but the decision to do both on the same day involves an additional cost. My team will walk you through the specifics and help you understand the investment before scheduling.
           </p>
 
           <h3 className="subsection-title">What about infection risk?</h3>
