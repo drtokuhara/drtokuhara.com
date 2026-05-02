@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useLanguage } from '../../LanguageContext';
 import AuthorByline from '../../components/AuthorByline';
 
@@ -64,6 +65,21 @@ export default function TwentyYearsForwardContent() {
           <p>
             The honest answer is that we do not know for certain. But it is reasonable to say that a simpler lens may have provided more stable visual quality as her retina changed over time.
           </p>
+        </div>
+      </section>
+
+      {/* LIFESTYLE IMAGE */}
+      <section className="section section-warm" style={{paddingTop: '24px', paddingBottom: '24px'}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/stock-seniors-bocce-group.jpg"
+              alt="Group of senior friends enjoying bocce ball in the desert - aging actively with good vision"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 

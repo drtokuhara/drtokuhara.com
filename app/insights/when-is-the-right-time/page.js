@@ -145,6 +145,15 @@ export default function InsightWhenIsTheRightTime() {
 
       <section className="section section-warm">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '48px'}}>
+            <Image
+              src="/media/stock-couple-night-walk-dog.jpg"
+              alt="Couple walking their dog at night - seeing clearly when it matters"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <h2 className="section-title">Related <strong>Reading</strong></h2>
           <div className="related-grid">
             <Link href="/insights/when-patients-wait" className="related-card">

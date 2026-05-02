@@ -204,6 +204,21 @@ export default function FAQPage() {
         </section>
       ))}
 
+      {/* LIFESTYLE IMAGES */}
+      <section className="section section-warm" style={{paddingTop: '24px', paddingBottom: '24px'}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/stock-couple-outdoor-sunshine.jpg"
+              alt="Couple enjoying the outdoor sunshine in the desert - the lifestyle our patients love"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="cta">
         <div className="container">

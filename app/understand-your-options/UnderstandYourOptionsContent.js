@@ -112,6 +112,21 @@ export default function UnderstandYourOptionsContent() {
         </div>
       </section>
 
+      {/* LIFESTYLE IMAGE */}
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/stock-woman-outdoor-cafe.jpg"
+              alt={lang === 'es' ? 'Mujer disfrutando de un cafe al aire libre con vision clara' : 'Woman enjoying an outdoor cafe with clear vision after cataract surgery'}
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* WHAT MAKES DR. T DIFFERENT */}
       <section className="section section-white">
         <div className="container content-narrow">
@@ -142,6 +157,21 @@ export default function UnderstandYourOptionsContent() {
                 className="journey-image"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* LIFESTYLE IMAGE 2 */}
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: '24px'}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/stock-group-tennis-portrait.jpg"
+              alt={lang === 'es' ? 'Grupo de amigos jugando tenis en el Valle de Coachella' : 'Group of friends with tennis gear in the Coachella Valley - the active lifestyle clear vision supports'}
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
           </div>
         </div>
       </section>

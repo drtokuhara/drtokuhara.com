@@ -2278,3 +2278,185 @@ body.conversation-active .footer {
   max-width: 680px;
   margin: 0 auto 48px;
 }
+
+/* ══════════════════════════════════════════
+   PREMIUM FEEL IMPROVEMENTS
+   ══════════════════════════════════════════ */
+
+/* Subtle gradient transitions between sections */
+.section-white + .section-warm {
+  position: relative;
+}
+.section-white + .section-warm::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, var(--white), var(--bg-warm));
+  pointer-events: none;
+  z-index: 0;
+}
+.section-warm + .section-white {
+  position: relative;
+}
+.section-warm + .section-white::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, var(--bg-warm), var(--white));
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Enhanced card hover effects */
+.card {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 125, 149, 0.10);
+  border-color: rgba(0, 125, 149, 0.15);
+}
+
+/* Content image enhancements */
+.content-image {
+  transition: box-shadow 0.3s ease;
+}
+.content-image:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Credential and options card enhancements */
+.credential-item,
+.options-card,
+.checklist-card,
+.recovery-block {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+.credential-item:hover,
+.options-card:hover,
+.checklist-card:hover,
+.recovery-block:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.07);
+}
+
+/* Insight card enhancements */
+.insight-card {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.insight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0, 125, 149, 0.10);
+}
+
+/* FAQ item subtle left border on hover */
+.faq-item {
+  padding-left: 16px;
+  border-left: 3px solid transparent;
+  transition: border-color 0.3s ease, background 0.3s ease;
+  border-radius: 0 8px 8px 0;
+}
+.faq-item:hover {
+  border-left-color: var(--oasis);
+  background: rgba(0, 125, 149, 0.02);
+}
+
+/* Video card shadow enhancement */
+.video-card {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+.video-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.10);
+}
+
+/* Enhanced button interactions */
+.btn-primary,
+.lux-btn-primary {
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary::after,
+.lux-btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+}
+.btn-primary:hover::after,
+.lux-btn-primary:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+/* Subtle texture on warm sections */
+.section-warm {
+  background-image: radial-gradient(ellipse at 20% 80%, rgba(0, 125, 149, 0.02) 0%, transparent 50%),
+                    radial-gradient(ellipse at 80% 20%, rgba(220, 185, 165, 0.06) 0%, transparent 50%);
+}
+
+/* Related reading cards */
+.related-card {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+.related-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0, 125, 149, 0.10);
+}
+
+/* Complex cases condition cards as links */
+.card-grid a.card {
+  cursor: pointer;
+}
+.card-grid a.card:hover h3 {
+  color: var(--oasis);
+  transition: color 0.2s ease;
+}
+
+/* Smooth page transitions */
+.page-hero {
+  position: relative;
+  overflow: hidden;
+}
+.page-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, var(--white));
+  pointer-events: none;
+}
+.page-hero-image::after {
+  display: none;
+}
+
+/* CTA section premium gradient */
+.cta {
+  background: linear-gradient(135deg, #006577 0%, var(--night-horizon) 50%, #005566 100%);
+}
+
+/* Prose link underline on hover */
+.prose a,
+.content-narrow a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.prose a:hover,
+.content-narrow a:hover {
+  border-bottom-color: var(--oasis);
+}

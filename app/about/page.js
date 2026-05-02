@@ -65,6 +65,36 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* RESEARCH VIDEO */}
+      <section className="section section-warm">
+        <div className="container" style={{maxWidth: '900px', margin: '0 auto', textAlign: 'center'}}>
+          <h2 className="section-title">A Message About <strong>Research &amp; Innovation</strong></h2>
+          <p style={{color: 'var(--text-light)', marginBottom: '24px', fontSize: '1.05rem'}}>What drives my approach to cataract surgery, and why staying at the frontier of research matters for every patient I see.</p>
+          <div style={{
+            position: 'relative',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.12)',
+          }}>
+            <video
+              controls
+              muted
+              autoPlay
+              playsInline
+              poster="/media/dr-t-research-message-poster.jpg"
+              preload="metadata"
+              style={{
+                width: '100%',
+                display: 'block',
+              }}
+            >
+              <source src="/media/dr-t-research-message.mp4" type="video/mp4" />
+              Your browser does not support the video element.
+            </video>
+          </div>
+        </div>
+      </section>
+
       {/* TRAINING & CREDENTIALS */}
       <section className="section section-warm">
         <div className="container">

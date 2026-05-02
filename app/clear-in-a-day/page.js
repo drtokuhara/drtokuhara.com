@@ -49,7 +49,7 @@ export default function ClearInADayPage() {
             CLEAR in a Day is my protocol for same-day bilateral cataract surgery. Instead of the traditional approach of operating on one eye, waiting two to four weeks, and then doing the second eye, both eyes are treated in a single surgical session.
           </p>
           <p className="prose">
-            The name stands for what it delivers: clear vision, in a day. You walk in with cataracts in both eyes. By the next morning, you&rsquo;re seeing the world differently.
+            CLEAR stands for Clear Lens Extraction for Accelerated Recovery. The goal is not a promise of perfect vision the same day, but a streamlined approach that reduces the overall recovery timeline by treating both eyes together rather than weeks apart.
           </p>
           <p className="prose">
             This isn&rsquo;t a shortcut or a compromise. It&rsquo;s a carefully designed protocol that combines advanced surgical technique with rigorous safety standards. I developed it because I saw too many patients struggling through weeks of imbalanced vision between their first and second surgery, rearranging their lives twice, and spending more time away from the things they love than necessary.
@@ -202,7 +202,7 @@ export default function ClearInADayPage() {
             With the traditional sequential approach, your recovery looks something like this: surgery on the first eye, a few weeks of healing with one clear eye and one foggy eye, then surgery on the second eye, then another few weeks of recovery. The whole process takes about a month or more.
           </p>
           <p className="prose">
-            With CLEAR in a Day, both eyes heal together. By day one, most patients already notice improved vision in both eyes. By the end of the first week, the majority of healing has occurred. You&rsquo;ll use eye drops in both eyes for a few weeks, and I&rsquo;ll see you for follow-up visits to monitor your progress.
+            With CLEAR in a Day, both eyes heal together. Many patients notice improvement within the first few days, though full visual recovery varies and can take one to several weeks depending on the individual. You&rsquo;ll use eye drops in both eyes for about a month, and I&rsquo;ll see you for follow-up visits to monitor your progress.
           </p>
 
           <div className="content-image" style={{margin: '32px 0'}}>
@@ -218,7 +218,7 @@ export default function ClearInADayPage() {
 
           <h3 className="subsection-title">The practical difference</h3>
           <p className="prose">
-            Instead of spending a month in visual limbo, most CLEAR in a Day patients are back to their normal activities within days. Driving, reading, watching television, enjoying the desert. Your brain doesn&rsquo;t have to compensate for mismatched vision between your eyes, which means the adjustment feels more natural and more immediate.
+            Instead of spending a month with mismatched vision between your two eyes, the bilateral approach allows both eyes to recover on the same timeline. Your brain doesn&rsquo;t have to compensate for the difference, which can make the adjustment feel more natural. Most patients return to their normal activities sooner than with the traditional staged approach, though the exact timeline depends on how each eye heals.
           </p>
           <p className="prose">
             The restrictions are the same as any cataract surgery: avoid rubbing your eyes, skip swimming and hot tubs for a couple of weeks, don&rsquo;t do heavy lifting for the first few days, and use your drops as prescribed. The only difference is that you&rsquo;re doing it once instead of twice.

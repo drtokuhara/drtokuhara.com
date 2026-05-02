@@ -121,6 +121,15 @@ export default function InsightReader() {
 
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '48px'}}>
+            <Image
+              src="/media/stock-woman-outdoor-cafe.jpg"
+              alt="Woman enjoying reading at an outdoor cafe with clear vision"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <h2 className="section-title">Related <strong>Reading</strong></h2>
           <div className="related-grid">
             <Link href="/lens-implants-explained" className="related-card">

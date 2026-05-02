@@ -121,6 +121,15 @@ export default function InsightPermission() {
 
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '48px'}}>
+            <Image
+              src="/media/stock-couple-sunset-cooking.jpg"
+              alt="Couple cooking together at sunset - the everyday moments that clear vision restores"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <h2 className="section-title">Related <strong>Reading</strong></h2>
           <div className="related-grid">
             <Link href="/understanding-cataracts" className="related-card">

@@ -104,6 +104,15 @@ export default function InsightsPage() {
 
       <section className="section section-white">
         <div className="container">
+          <div className="content-image" style={{maxWidth: '800px', margin: '0 auto 48px'}}>
+            <Image
+              src="/media/stock-seniors-outdoor-toast.jpg"
+              alt="Seniors toasting at an outdoor dinner - the moments that matter after cataract surgery"
+              width={800}
+              height={533}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <div className="insights-grid">
             {insights.map((insight) => (
               <Link key={insight.slug} href={`/insights/${insight.slug}`} className="insight-card">

@@ -63,7 +63,7 @@ export default function ReadyForSurgeryContent() {
         <div className="container content-narrow">
           <h2 className="section-title" dangerouslySetInnerHTML={{ __html: t('readyForSurgery.clear.title') || 'Same-Day Bilateral Surgery: <strong>CLEAR in a Day</strong>' }} />
           <p>
-            {t('readyForSurgery.clear.p1') || "If you have cataracts in both eyes, you may not need two separate surgeries weeks apart. CLEAR in a Day (Cataract Lens Exchange And Restoration) is our same-day bilateral approach: both eyes treated in a single visit."}
+            {t('readyForSurgery.clear.p1') || "If you have cataracts in both eyes, you may not need two separate surgeries weeks apart. CLEAR in a Day (Clear Lens Extraction for Accelerated Recovery) is our same-day bilateral approach: both eyes treated in a single visit."}
           </p>
           <p>
             {t('readyForSurgery.clear.p2') || "This means one preparation day instead of two, one recovery period instead of two, and your vision comes together faster because both eyes heal in sync. It's not right for every patient, and I'll tell you honestly if your situation calls for a staged approach instead. But for the right candidate, it simplifies everything."}
@@ -73,6 +73,21 @@ export default function ReadyForSurgeryContent() {
               {t('readyForSurgery.clear.link') || "Learn more about CLEAR in a Day"}
             </Link>
           </p>
+        </div>
+      </section>
+
+      {/* LIFESTYLE IMAGE */}
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: '24px'}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/stock-group-poolside-relaxing.jpg"
+              alt={lang === 'es' ? 'Grupo relajandose junto a la piscina en el Valle de Coachella' : 'Group relaxing poolside in the Coachella Valley - the lifestyle waiting after clear vision'}
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -148,6 +163,21 @@ export default function ReadyForSurgeryContent() {
                 <p>{t('readyForSurgery.surgeryDay.after.text') || "You'll rest briefly in recovery, then go home with your driver. We'll place a clear shield over your eye to protect it while you sleep. Most patients are surprised how straightforward the whole experience was."}</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* LIFESTYLE IMAGE 2 */}
+      <section className="section section-white" style={{paddingTop: '24px', paddingBottom: '24px'}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/stock-group-tennis-sunny.jpg"
+              alt={lang === 'es' ? 'Grupo jugando tenis en un dia soleado' : 'Group playing tennis on a sunny day - getting back to activities you love after cataract surgery'}
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
           </div>
         </div>
       </section>

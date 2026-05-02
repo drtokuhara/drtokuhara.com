@@ -130,6 +130,15 @@ export default function InsightGuilt() {
 
       <section className="section section-warm">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '48px'}}>
+            <Image
+              src="/media/stock-family-golden-hour-walk.jpg"
+              alt="Family walking together at golden hour - the trust that comes from honest care"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <h2 className="section-title">Related <strong>Reading</strong></h2>
           <div className="related-grid">
             <Link href="/choosing-your-surgeon" className="related-card">

@@ -138,6 +138,15 @@ export default function InsightTheNumber() {
 
       <section className="section section-warm">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '48px'}}>
+            <Image
+              src="/media/stock-group-cafe-outdoor.jpg"
+              alt="Group of friends at an outdoor cafe in the Coachella Valley"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <h2 className="section-title">Related <strong>Reading</strong></h2>
           <div className="related-grid">
             <Link href="/lens-implants-explained" className="related-card">

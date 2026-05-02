@@ -135,13 +135,22 @@ export default function EducationPage() {
         </section>
       ))}
 
-      {/* LIFESTYLE */}
+      {/* LIFESTYLE IMAGES */}
       <section className="section section-warm" style={{paddingTop: '24px', paddingBottom: '24px'}}>
         <div className="container content-narrow">
           <div className="content-image">
             <Image
               src="/media/lifestyle-poolside-reading.jpg"
               alt="Relaxing poolside with a book in the Coachella Valley sun"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+          <div className="content-image" style={{marginTop: '24px'}}>
+            <Image
+              src="/media/stock-group-tennis-bench.jpg"
+              alt="Friends resting on a tennis bench after a match - staying active with clear vision"
               width={680}
               height={453}
               style={{ width: '100%', height: 'auto', borderRadius: '12px' }}

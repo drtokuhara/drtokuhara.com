@@ -141,6 +141,72 @@ export default function ComplexCasesPage() {
         </div>
       </section>
 
+      {/* CONDITION-SPECIFIC PAGES */}
+      <section className="section section-warm">
+        <div className="container">
+          <h2 className="section-title">Explore Specific <strong>Conditions</strong></h2>
+          <div className="section-subtitle">Each condition brings unique challenges. Learn how I approach the cases that require specialized expertise.</div>
+          <div className="card-grid">
+            <Link href="/complex-cases/macular-degeneration" className="card" style={{textDecoration: 'none', color: 'inherit'}}>
+              <h3>Macular Degeneration</h3>
+              <p>The only cataract surgeon in the valley who is board certified and fellowship trained in retina. Both conditions, one doctor.</p>
+            </Link>
+            <Link href="/complex-cases/diabetes" className="card" style={{textDecoration: 'none', color: 'inherit'}}>
+              <h3>Diabetes &amp; Diabetic Retinopathy</h3>
+              <p>Retinopathy screening, DME management, and surgical timing for diabetic patients.</p>
+            </Link>
+            <Link href="/complex-cases/glaucoma-and-cataract" className="card" style={{textDecoration: 'none', color: 'inherit'}}>
+              <h3>Glaucoma &amp; Cataract</h3>
+              <p>Combined MIGS procedures including iStent and KDB Goniotomy to address both conditions in one surgery.</p>
+            </Link>
+            <Link href="/complex-cases/fuchs-dystrophy" className="card" style={{textDecoration: 'none', color: 'inherit'}}>
+              <h3>Fuchs Dystrophy</h3>
+              <p>Endothelial cell considerations, combined DMEK/DSAEK approaches, and protecting your cornea during cataract surgery.</p>
+            </Link>
+            <Link href="/complex-cases/previous-retina-surgery" className="card" style={{textDecoration: 'none', color: 'inherit'}}>
+              <h3>After Retina Surgery</h3>
+              <p>Post-vitrectomy cataracts, zonular changes, and navigating eyes with a history of gas or silicone oil.</p>
+            </Link>
+            <Link href="/complex-cases/retained-silicone-oil" className="card" style={{textDecoration: 'none', color: 'inherit'}}>
+              <h3>Retained Silicone Oil</h3>
+              <p>Post-retina surgery complications including emulsification, elevated pressure, and combined removal approaches.</p>
+            </Link>
+            <Link href="/complex-cases/aphakia-after-retina" className="card" style={{textDecoration: 'none', color: 'inherit'}}>
+              <h3>Aphakia After Retina Surgery</h3>
+              <p>Secondary lens implantation using the Yamane technique for patients left without a lens after complex retina procedures.</p>
+            </Link>
+            <Link href="/complex-cases/previous-lasik" className="card" style={{textDecoration: 'none', color: 'inherit'}}>
+              <h3>After LASIK</h3>
+              <p>Modified IOL calculations, managing refractive surprises, and setting realistic expectations for post-LASIK eyes.</p>
+            </Link>
+            <Link href="/complex-cases/previous-rk" className="card" style={{textDecoration: 'none', color: 'inherit'}}>
+              <h3>After Radial Keratotomy</h3>
+              <p>RK creates some of the most unpredictable corneas in ophthalmology. Specialized calculation and staged approaches.</p>
+            </Link>
+            <Link href="/complex-cases/floppy-iris" className="card" style={{textDecoration: 'none', color: 'inherit'}}>
+              <h3>Floppy Iris Syndrome (IFIS)</h3>
+              <p>Tamsulosin, Flomax, and alpha-blocker associations. Surgical management with iris expansion and adapted technique.</p>
+            </Link>
+            <Link href="/complex-cases/pseudoexfoliation" className="card" style={{textDecoration: 'none', color: 'inherit'}}>
+              <h3>Pseudoexfoliation</h3>
+              <p>Weak zonules, capsular tension rings, and staged approaches for eyes with compromised lens support.</p>
+            </Link>
+            <Link href="/complex-cases/parkinsons-disease" className="card" style={{textDecoration: 'none', color: 'inherit'}}>
+              <h3>Parkinson&rsquo;s Disease</h3>
+              <p>Tremor management, medication timing, head positioning, and surgical adaptations for Parkinson&rsquo;s patients.</p>
+            </Link>
+            <Link href="/complex-cases/down-syndrome" className="card" style={{textDecoration: 'none', color: 'inherit'}}>
+              <h3>Down Syndrome</h3>
+              <p>Earlier cataracts, anatomical considerations, cooperation challenges, and compassionate anesthesia planning.</p>
+            </Link>
+            <Link href="/complex-cases/alzheimers-dementia" className="card" style={{textDecoration: 'none', color: 'inherit'}}>
+              <h3>Alzheimer&rsquo;s &amp; Dementia</h3>
+              <p>Informed consent, caregiver coordination, and honest benefit assessment for patients with cognitive decline.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* THE SECOND OPINION */}
       <section className="section section-white">
         <div className="container content-narrow">

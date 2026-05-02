@@ -124,6 +124,15 @@ export default function InsightWhenMore() {
 
       <section className="section section-warm">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '48px'}}>
+            <Image
+              src="/media/stock-couple-produce-market.jpg"
+              alt="Couple at a produce market - returning to daily life with clear vision"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <h2 className="section-title">Related <strong>Reading</strong></h2>
           <div className="related-grid">
             <Link href="/lens-implants-explained" className="related-card">
