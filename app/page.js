@@ -802,6 +802,39 @@ export default function Home() {
             </div>
           </section>
 
+          {/* ═══ DR. T VIDEO MESSAGE ═══ */}
+          <section className="lux-video-message">
+            <div className="container" style={{maxWidth: '900px', margin: '0 auto', textAlign: 'center'}}>
+              <Reveal>
+                <p className="lux-section-eyebrow">In His Own Words</p>
+                <h2 className="lux-section-headline">A message from<br />Dr. Tokuhara</h2>
+                <p style={{color: 'var(--text-light)', marginBottom: '32px', fontSize: '1.05rem', maxWidth: '600px', margin: '0 auto 32px'}}>What drives my approach to cataract surgery, and why staying at the frontier of research matters for every patient I see.</p>
+              </Reveal>
+              <Reveal delay={100}>
+                <div style={{
+                  position: 'relative',
+                  borderRadius: '16px',
+                  overflow: 'hidden',
+                  boxShadow: '0 12px 48px rgba(0, 0, 0, 0.15)',
+                }}>
+                  <video
+                    controls
+                    playsInline
+                    poster="/media/dr-t-research-message-poster.jpg"
+                    preload="metadata"
+                    style={{
+                      width: '100%',
+                      display: 'block',
+                    }}
+                  >
+                    <source src="/media/dr-t-research-message.mp4" type="video/mp4" />
+                    Your browser does not support the video element.
+                  </video>
+                </div>
+              </Reveal>
+            </div>
+          </section>
+
           {/* ═══ SECTION 6: INTERACTIVE CONVERSATION ═══ */}
           <section className="lux-conversation-section">
             <div className="container">

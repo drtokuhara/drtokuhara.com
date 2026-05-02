@@ -2442,3 +2442,85 @@ body.conversation-active .footer {
 .content-narrow a:hover {
   border-bottom-color: var(--oasis);
 }
+
+/* ── Video Message Section ──────────────────────── */
+.lux-video-message {
+  padding: 100px 0;
+  background: linear-gradient(180deg, var(--bg) 0%, #f0f4f5 50%, var(--bg) 100%);
+}
+
+/* ── Premium Polish ─────────────────────────────── */
+
+/* Subtle section transitions */
+.lux-differentiators {
+  background: linear-gradient(180deg, var(--bg) 0%, #f7fafb 100%);
+}
+
+/* Card hover elevations */
+.lux-diff-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.lux-diff-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 125, 149, 0.12);
+}
+
+/* Refined link hover effects */
+.lux-text-link {
+  transition: color 0.2s ease, letter-spacing 0.3s ease;
+}
+.lux-text-link:hover {
+  letter-spacing: 0.5px;
+}
+
+/* Premium image treatment */
+.content-image img,
+.content-image Image {
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+.content-image:hover img {
+  transform: scale(1.01);
+}
+
+/* Elevated testimonial cards */
+.lux-testimonial-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.lux-testimonial-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Explore card hover */
+.lux-explore-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.lux-explore-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);
+}
+
+/* Premium button hover */
+.lux-btn-primary {
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+.lux-btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 125, 149, 0.3);
+}
+
+/* Author byline refinement */
+.author-byline {
+  border-left: 3px solid var(--oasis);
+  padding-left: 16px;
+  margin: 24px 0;
+}
+
+/* FAQ section images */
+.faq-visual-break {
+  margin: 48px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
