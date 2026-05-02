@@ -34,8 +34,16 @@ export default function InsightWhenMore() {
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
-      <section className="page-hero">
-        <div className="container">
+      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
+        <Image
+          src="/media/stock-couple-night-walk-dog.jpg"
+          alt=""
+          fill
+          style={{objectFit: 'cover', objectPosition: 'center'}}
+          priority
+        />
+        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.35) 0%, rgba(0,20,30,0.75) 100%)', zIndex: 1}} />
+        <div style={{position: 'relative', zIndex: 2}} className="container">
           <span className="insight-hero-cluster">Expectations & Reality</span>
           <h1>When More Isn't <strong>Better</strong></h1>
           <p className="page-hero-sub">She had the surgery. Then the laser. Then the LASIK. A year later, she still wasn't seeing the way she expected. Sometimes the hardest step is stopping.</p>

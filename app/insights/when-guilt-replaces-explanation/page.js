@@ -34,8 +34,16 @@ export default function InsightGuilt() {
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
-      <section className="page-hero">
-        <div className="container">
+      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
+        <Image
+          src="/media/x-patient-contemplation-waiting-room.jpg"
+          alt=""
+          fill
+          style={{objectFit: 'cover', objectPosition: 'center'}}
+          priority
+        />
+        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.35) 0%, rgba(0,20,30,0.75) 100%)', zIndex: 1}} />
+        <div style={{position: 'relative', zIndex: 2}} className="container">
           <span className="insight-hero-cluster">Ethics & Trust</span>
           <h1>When Guilt Replaces <strong>Explanation</strong></h1>
           <p className="page-hero-sub">A clinical reflection on what patients deserve when surgery doesn't go as planned.</p>
