@@ -19,6 +19,7 @@ const insights = [
     date: 'April 2026',
     description: 'The question I hear more than any other. There is no magic number. The right time depends on your life, not a chart.',
     cluster: 'Decisions & Timing',
+    image: '/media/stock-couple-outdoor-sunshine.jpg',
   },
   {
     slug: 'when-patients-wait',
@@ -26,6 +27,7 @@ const insights = [
     date: 'April 2026',
     description: 'Her outcome was excellent. Her biggest regret was that she didn\'t do it sooner. The psychology of timing, outcome bias, and why readiness is not the same as candidacy.',
     cluster: 'Decisions & Timing',
+    image: '/media/stock-woman-outdoor-cafe.jpg',
   },
   {
     slug: 'the-man-who-wanted-his-younger-eyes-back',
@@ -33,6 +35,7 @@ const insights = [
     date: 'April 2026',
     description: 'He didn\'t just want better vision. He wanted to feel the way he did before glasses became part of his identity. Sometimes the most important surgical decision is choosing to wait.',
     cluster: 'Decisions & Timing',
+    image: '/media/stock-men-car-show.jpg',
   },
   {
     slug: 'when-guilt-replaces-explanation',
@@ -40,6 +43,7 @@ const insights = [
     date: 'April 2026',
     description: 'A patient was told his cataract complication was his fault. It wasn\'t. What happens when blame replaces compassion in medicine.',
     cluster: 'Ethics & Trust',
+    image: '/media/x-patient-contemplation-waiting-room.jpg',
   },
   {
     slug: 'the-reader-who-almost-gave-up-her-books',
@@ -47,6 +51,7 @@ const insights = [
     date: 'April 2026',
     description: 'An 81-year-old avid reader delayed surgery for years because nobody told her she had a choice about how she would see afterward.',
     cluster: 'Lens Selection',
+    image: '/media/stock-woman-dog-livingroom.png',
   },
   {
     slug: 'permission-to-see-again',
@@ -54,6 +59,7 @@ const insights = [
     date: 'April 2026',
     description: 'A woman spent six years caring for her husband. When she finally came in for her own eyes, she didn\'t need a surgical plan. She needed permission.',
     cluster: 'Decision Making',
+    image: '/media/stock-family-golden-hour-walk.jpg',
   },
   {
     slug: 'the-number-that-wasnt-the-problem',
@@ -61,6 +67,7 @@ const insights = [
     date: 'April 2026',
     description: 'A man with keratoconus saw residual astigmatism after cataract surgery and wanted a lens exchange. The real answer was understanding why that number wasn\'t what it seemed.',
     cluster: 'Surgical Restraint',
+    image: '/media/stock-friends-indoor-portrait.jpg',
   },
   {
     slug: 'when-more-isnt-better',
@@ -68,6 +75,7 @@ const insights = [
     date: 'April 2026',
     description: 'A 32-year-old had a multifocal lens, then a YAG, then LASIK. A year later she still wasn\'t seeing right. Sometimes each fix creates the need for the next one.',
     cluster: 'Expectations & Reality',
+    image: '/media/stock-couple-night-walk-dog.jpg',
   },
   {
     slug: 'twenty-years-forward',
@@ -75,6 +83,7 @@ const insights = [
     date: 'April 2026',
     description: 'She chose a multifocal lens at 68. Now at 88 with macular degeneration, that decision looks different. What this teaches about lens choices, tradeoffs, and making decisions for a future you cannot predict.',
     cluster: 'Lens Selection',
+    image: '/media/stock-seniors-resort-promenade-night.jpg',
   },
 ];
 
@@ -123,11 +132,22 @@ export default function InsightsPage() {
           </div>
           <div className="insights-grid">
             {insights.map((insight) => (
-              <Link key={insight.slug} href={`/insights/${insight.slug}`} className="insight-card">
-                <span className="insight-cluster">{insight.cluster}</span>
-                <h2 className="insight-card-title">{insight.title}</h2>
-                <p className="insight-card-desc">{insight.description}</p>
-                <span className="insight-date">{insight.date}</span>
+              <Link key={insight.slug} href={`/insights/${insight.slug}`} className="insight-card insight-card-visual">
+                <div className="insight-card-image">
+                  <Image
+                    src={insight.image}
+                    alt={insight.title}
+                    width={600}
+                    height={340}
+                    style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '12px 12px 0 0' }}
+                  />
+                </div>
+                <div className="insight-card-body">
+                  <span className="insight-cluster">{insight.cluster}</span>
+                  <h2 className="insight-card-title">{insight.title}</h2>
+                  <p className="insight-card-desc">{insight.description}</p>
+                  <span className="insight-date">{insight.date}</span>
+                </div>
               </Link>
             ))}
           </div>
