@@ -53,7 +53,8 @@ export default function InsightTheNumber() {
       <section className="section section-white">
         <div className="container content-narrow">
           <AuthorByline />
-          <p className="body-lead">
+          <div className="section-divider" style={{margin: '32px auto'}} />
+          <p className="body-lead body-lead-dropcap">
             His surgery went exactly as planned.
           </p>
           <p>
@@ -74,9 +75,9 @@ export default function InsightTheNumber() {
           <p>
             At his one-week follow-up, his left eye measured 20/30. That's a good result, especially for an eye with keratoconus. But the report also showed about 2 diopters of residual astigmatism. And that number changed the way he felt about everything.
           </p>
-          <p>
-            <em>"Should I have gotten the toric lens? Could we swap it out?"</em>
-          </p>
+          <div className="pull-quote">
+            <p>"Should I have gotten the toric lens? Could we swap it out?"</p>
+          </div>
           <p>
             I could hear the second-guessing in his voice. He wasn't asking because something went wrong. He was asking because the number on the page made it look like something could be better. And when you see a number that seems fixable, it's hard not to wonder.
           </p>
@@ -118,6 +119,19 @@ export default function InsightTheNumber() {
         </div>
       </section>
 
+      {/* Full-bleed visual break */}
+      <section style={{padding: 0}}>
+        <div className="editorial-image-break">
+          <Image
+            src="/media/stock-couple-live-music.jpg"
+            alt="Couple enjoying live music outdoors"
+            width={1920}
+            height={400}
+            style={{width: '100%', height: '400px', objectFit: 'cover'}}
+          />
+        </div>
+      </section>
+
       <section className="section section-warm">
         <div className="container content-narrow">
           <h2 className="section-title">Why Restraint <strong>Matters</strong></h2>
@@ -127,9 +141,9 @@ export default function InsightTheNumber() {
           <p>
             But experience teaches the opposite. Sometimes the most sophisticated decision is the one where you hold back. Where you recognize that pursuing a perfect number would actually make things worse. Where you choose the approach that respects the anatomy rather than fights it.
           </p>
-          <p>
-            Not every deviation from a target number represents a failure. And not every imperfection is best addressed with more surgery.
-          </p>
+          <div className="insight-highlight">
+            <p><strong>Not every deviation from a target number represents a failure.</strong> And not every imperfection is best addressed with more surgery.</p>
+          </div>
         </div>
       </section>
 

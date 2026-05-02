@@ -53,7 +53,8 @@ export default function InsightWhenPatientsWait() {
       <section className="section section-white">
         <div className="container content-narrow">
           <AuthorByline />
-          <p className="body-lead">
+          <div className="section-divider" style={{margin: '32px auto'}} />
+          <p className="body-lead body-lead-dropcap">
             A 76-year-old woman returned to clinic this week for her routine follow-up. I first met her four years ago.
           </p>
           <p>
@@ -68,9 +69,9 @@ export default function InsightWhenPatientsWait() {
           <p>
             But at her visit this week, two years after surgery, she brought up something unexpected. Not dissatisfaction. Not a complication. Guilt.
           </p>
-          <p>
-            She told me her biggest regret was that she waited.
-          </p>
+          <div className="pull-quote">
+            <p>She told me her biggest regret was that she waited.</p>
+          </div>
         </div>
       </section>
 
@@ -113,6 +114,19 @@ export default function InsightWhenPatientsWait() {
         </div>
       </section>
 
+      {/* Full-bleed visual break */}
+      <section style={{padding: 0}}>
+        <div className="editorial-image-break">
+          <Image
+            src="/media/stock-group-tennis-sunny.jpg"
+            alt="Group playing tennis on a sunny day"
+            width={1920}
+            height={400}
+            style={{width: '100%', height: '400px', objectFit: 'cover'}}
+          />
+        </div>
+      </section>
+
       <section className="section section-white">
         <div className="container content-narrow">
           <h2 className="section-title">A Philosophical Lens: Timing, Agency, and <strong>Readiness</strong></h2>
@@ -149,9 +163,9 @@ export default function InsightWhenPatientsWait() {
           <p>
             But patients are really asking something else: "Am I ready?"
           </p>
-          <p>
-            Those are not the same question.
-          </p>
+          <div className="insight-highlight">
+            <p><strong>Those are not the same question.</strong></p>
+          </div>
           <p>
             And sometimes, when patients ask that question, they're not ready yet. Not because their cataract isn't advanced enough, but because they haven't crossed the psychological threshold.
           </p>

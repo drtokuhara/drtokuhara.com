@@ -30,7 +30,8 @@ export default function TwentyYearsForwardContent() {
       <section className="section section-white">
         <div className="container content-narrow">
           <AuthorByline date="April 30, 2026" />
-          <p className="body-lead">
+          <div className="section-divider" style={{margin: '32px auto'}} />
+          <p className="body-lead body-lead-dropcap">
             A patient sat in my chair today who made me pause in a way that charts and imaging never do.
           </p>
           <p>
@@ -42,9 +43,9 @@ export default function TwentyYearsForwardContent() {
           <p>
             She has developed age-related macular degeneration. Her best corrected vision is around 20/80. She no longer drives. And as I examined her, I found myself thinking not just about her eyes today, but about the moment, twenty years ago, when she made that decision.
           </p>
-          <p>
-            Because the truth is, that version of her was not thinking about this version of her.
-          </p>
+          <div className="pull-quote">
+            <p>Because the truth is, that version of her was not thinking about this version of her.</p>
+          </div>
         </div>
       </section>
 
@@ -76,18 +77,16 @@ export default function TwentyYearsForwardContent() {
         </div>
       </section>
 
-      {/* LIFESTYLE IMAGE */}
-      <section className="section section-warm" style={{paddingTop: '24px', paddingBottom: '24px'}}>
-        <div className="container content-narrow">
-          <div className="content-image">
-            <Image
-              src="/media/stock-seniors-bocce-group.jpg"
-              alt="Group of senior friends enjoying bocce ball in the desert - aging actively with good vision"
-              width={680}
-              height={453}
-              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
-            />
-          </div>
+      {/* Full-bleed visual break */}
+      <section style={{padding: 0}}>
+        <div className="editorial-image-break">
+          <Image
+            src="/media/stock-seniors-outdoor-toast.jpg"
+            alt="Seniors toasting outdoors in the desert"
+            width={1920}
+            height={400}
+            style={{width: '100%', height: '400px', objectFit: 'cover'}}
+          />
         </div>
       </section>
 
@@ -129,9 +128,9 @@ export default function TwentyYearsForwardContent() {
           <p>
             This case highlights a deeper question that extends beyond ophthalmology:
           </p>
-          <p style={{ fontSize: '1.15rem', fontWeight: 500, color: 'var(--night-horizon)', margin: '24px 0' }}>
-            When we make decisions, should we prioritize the present version of ourselves, or the person we will become?
-          </p>
+          <div className="insight-highlight">
+            <p><strong>When we make decisions, should we prioritize the present version of ourselves, or the person we will become?</strong></p>
+          </div>
           <p>
             As surgeons, we face a version of this question every day.
           </p>

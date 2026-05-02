@@ -639,6 +639,8 @@ export default function Home() {
             </div>
           </section>
 
+          <div className="section-divider" style={{margin: '0 auto', paddingTop: '60px'}} />
+
           {/* ═══ SECTION 2: LIFESTYLE PANORAMA ═══ */}
           <section className="lux-lifestyle">
             <Reveal>
@@ -906,6 +908,8 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+          <div className="section-divider" style={{margin: '0 auto'}} />
 
           {/* ═══ SECTION 8: EXPLORE ═══ */}
           <section className="lux-explore">

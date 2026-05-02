@@ -53,7 +53,8 @@ export default function InsightWhenIsTheRightTime() {
       <section className="section section-white">
         <div className="container content-narrow">
           <AuthorByline />
-          <p className="body-lead">
+          <div className="section-divider" style={{margin: '32px auto'}} />
+          <p className="body-lead body-lead-dropcap">
             "Do I need surgery yet? Am I ready?"
           </p>
           <p>
@@ -89,9 +90,9 @@ export default function InsightWhenIsTheRightTime() {
           <p>
             No one experiences a cataract as a number on a chart. You experience it as a disruption. Headlights that didn't used to bother you. A book that takes more effort than it should. Colors that look washed out compared to how you remember them. A slow, quiet erosion of things you used to do without thinking.
           </p>
-          <p>
-            The real question isn't whether your cataract has reached some clinical threshold. It's whether your daily life has crossed a personal one.
-          </p>
+          <div className="pull-quote">
+            <p>The real question isn't whether your cataract has reached some clinical threshold. It's whether your daily life has crossed a personal one.</p>
+          </div>
         </div>
       </section>
 
@@ -116,6 +117,19 @@ export default function InsightWhenIsTheRightTime() {
         </div>
       </section>
 
+      {/* Full-bleed visual break */}
+      <section style={{padding: 0}}>
+        <div className="editorial-image-break">
+          <Image
+            src="/media/stock-couple-golf-cart.png"
+            alt="Couple enjoying a golf cart ride through the desert"
+            width={1920}
+            height={400}
+            style={{width: '100%', height: '400px', objectFit: 'cover'}}
+          />
+        </div>
+      </section>
+
       <section className="section section-warm">
         <div className="container content-narrow">
           <h2 className="section-title">When the Equation <strong>Flips</strong></h2>
@@ -134,9 +148,10 @@ export default function InsightWhenIsTheRightTime() {
           <p>
             <strong>What would improvement realistically look like for you?</strong> Not perfection. Not 20-year-old eyes. But meaningful, noticeable improvement in the things that matter to you.
           </p>
-          <p>
-            When those three things become clear, the decision usually resolves itself. No pressure needed.
-          </p>
+
+          <div className="insight-highlight">
+            <p><strong>When those three things become clear, the decision usually resolves itself.</strong> No pressure needed.</p>
+          </div>
         </div>
       </section>
 

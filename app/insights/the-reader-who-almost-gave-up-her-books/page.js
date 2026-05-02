@@ -53,6 +53,7 @@ export default function InsightReader() {
       <section className="section section-white">
         <div className="container content-narrow">
           <AuthorByline />
+          <div className="section-divider" style={{margin: '32px auto'}} />
           <div className="content-image" style={{marginBottom: '32px'}}>
             <Image
               src="/media/patient-reader-woman-books.jpg"
@@ -62,7 +63,7 @@ export default function InsightReader() {
               style={{ width: '100%', height: 'auto' }}
             />
           </div>
-          <p className="body-lead">
+          <p className="body-lead body-lead-dropcap">
             She was 81 years old. She read for several hours every day - books at breakfast, books in the afternoon, books before bed. Reading wasn't a hobby. It was who she was.
           </p>
           <p>
@@ -71,9 +72,22 @@ export default function InsightReader() {
           <p>
             Not because she was afraid of the procedure. Not because she didn't trust doctors. She had been told - by prior physicians, by friends, by word of mouth - that after cataract surgery, you <em>need</em> reading glasses. That's just how it works. Your near vision goes away, and you get glasses.
           </p>
-          <p>
-            For a woman whose entire daily life revolved around near vision, that was a dealbreaker. So she waited. And the cataracts got worse. And she started struggling with her books anyway.
-          </p>
+          <div className="pull-quote">
+            <p>For a woman whose entire daily life revolved around near vision, that was a dealbreaker. So she waited. And the cataracts got worse. And she started struggling with her books anyway.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Full-bleed visual break */}
+      <section style={{padding: 0}}>
+        <div className="editorial-image-break">
+          <Image
+            src="/media/stock-group-cycling-sunny.jpg"
+            alt="Group cycling on a sunny day"
+            width={1920}
+            height={400}
+            style={{width: '100%', height: '400px', objectFit: 'cover'}}
+          />
         </div>
       </section>
 
@@ -110,9 +124,9 @@ export default function InsightReader() {
           <p>
             But here's the part that stays with me: she had the information she needed to make this decision years ago. It just wasn't presented in a way that included her. Nobody asked what her life looked like. They told her what the standard outcome was, and she assumed it was the only one.
           </p>
-          <p>
-            <strong>Education isn't just about explaining options. It's about giving permission to choose the one that fits.</strong>
-          </p>
+          <div className="insight-highlight">
+            <p><strong>Education isn't just about explaining options. It's about giving permission to choose the one that fits.</strong></p>
+          </div>
         </div>
       </section>
 

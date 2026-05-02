@@ -53,7 +53,8 @@ export default function InsightPermission() {
       <section className="section section-white">
         <div className="container content-narrow">
           <AuthorByline />
-          <p className="body-lead">
+          <div className="section-divider" style={{margin: '32px auto'}} />
+          <p className="body-lead body-lead-dropcap">
             She hadn't seen an eye doctor in six years.
           </p>
           <p>
@@ -65,9 +66,10 @@ export default function InsightPermission() {
           <p>
             Her vision was 20/60. The cataracts were moderate - enough to blur things, but not enough to qualify as an emergency. What struck me wasn't the clinical picture. It was the first thing she said after I finished examining her:
           </p>
-          <p>
-            <em>"I feel terrible for letting this go so long."</em>
-          </p>
+
+          <div className="pull-quote">
+            <p>"I feel terrible for letting this go so long."</p>
+          </div>
         </div>
       </section>
 
@@ -83,12 +85,27 @@ export default function InsightPermission() {
           <p>
             So that's what I told her.
           </p>
-          <p>
-            <strong>"There is no urgency here. Cataracts don't punish people for waiting. You didn't fail. You took care of your husband. Now let's think about how you want to live in this next chapter."</strong>
-          </p>
+
+          <div className="insight-highlight">
+            <p><strong>"There is no urgency here. Cataracts don't punish people for waiting. You didn't fail. You took care of your husband. Now let's think about how you want to live in this next chapter."</strong></p>
+          </div>
+
           <p>
             She cried. Then she laughed a little. Then she asked me to explain her options - not because she was ready to schedule surgery, but because for the first time in years, she was allowed to think about herself.
           </p>
+        </div>
+      </section>
+
+      {/* Full-bleed visual break */}
+      <section style={{padding: 0}}>
+        <div className="editorial-image-break">
+          <Image
+            src="/media/stock-seniors-bocce-desert.jpg"
+            alt="Seniors enjoying bocce in the desert sunshine"
+            width={1920}
+            height={400}
+            style={{width: '100%', height: '400px', objectFit: 'cover'}}
+          />
         </div>
       </section>
 

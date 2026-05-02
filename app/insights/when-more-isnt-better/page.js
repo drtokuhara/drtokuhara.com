@@ -53,7 +53,8 @@ export default function InsightWhenMore() {
       <section className="section section-white">
         <div className="container content-narrow">
           <AuthorByline />
-          <p className="body-lead">
+          <div className="section-divider" style={{margin: '32px auto'}} />
+          <p className="body-lead body-lead-dropcap">
             She was 32 and had already been through three procedures on one eye.
           </p>
           <p>
@@ -62,9 +63,9 @@ export default function InsightWhenMore() {
           <p>
             At three months, she had a YAG capsulotomy, a laser procedure to clear haziness behind the lens. When that didn't resolve her symptoms, she underwent LASIK to correct residual refractive error. Now, a full year after the original surgery, she was sitting in my office for a second opinion.
           </p>
-          <p>
-            Her chart said 20/25. Her experience said something very different.
-          </p>
+          <div className="pull-quote">
+            <p>Her chart said 20/25. Her experience said something very different.</p>
+          </div>
         </div>
       </section>
 
@@ -92,6 +93,19 @@ export default function InsightWhenMore() {
         </div>
       </section>
 
+      {/* Full-bleed visual break */}
+      <section style={{padding: 0}}>
+        <div className="editorial-image-break">
+          <Image
+            src="/media/stock-man-walking-dog-sunset.png"
+            alt="Man walking his dog at sunset"
+            width={1920}
+            height={400}
+            style={{width: '100%', height: '400px', objectFit: 'cover'}}
+          />
+        </div>
+      </section>
+
       <section className="section section-white">
         <div className="container content-narrow">
           <h2 className="section-title">The Cascade <strong>Problem</strong></h2>
@@ -113,9 +127,9 @@ export default function InsightWhenMore() {
           <p>
             I didn't tell her that her previous surgeon did something wrong. I don't know the full context of those decisions. What I told her was this: her experience is real. The gap between what the chart says and what she feels is not imagined. There are identifiable reasons for her symptoms, and understanding those reasons is the first step toward figuring out what, if anything, comes next.
           </p>
-          <p>
-            Sometimes the most important thing a second opinion offers isn't a new plan. It's validation that what you're experiencing makes sense. That you're not being difficult. That your discomfort deserves an explanation, not dismissal.
-          </p>
+          <div className="insight-highlight">
+            <p><strong>Sometimes the most important thing a second opinion offers isn't a new plan. It's validation that what you're experiencing makes sense.</strong> That you're not being difficult. That your discomfort deserves an explanation, not dismissal.</p>
+          </div>
         </div>
       </section>
 

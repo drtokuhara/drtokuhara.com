@@ -53,15 +53,16 @@ export default function InsightYoungerEyes() {
       <section className="section section-white">
         <div className="container content-narrow">
           <AuthorByline />
-          <p className="body-lead">
+          <div className="section-divider" style={{margin: '32px auto'}} />
+          <p className="body-lead body-lead-dropcap">
             He was 66 and came in for a second opinion. But within the first few minutes, it was clear this visit was not really about cataracts.
           </p>
           <p>
             He talked about losing his glasses constantly. Bending them. Breaking them. The inconvenience was real, but the frustration ran deeper than a pair of frames. What he described, without quite saying it, was a feeling of being diminished. Glasses had become a daily reminder that something about him had changed. He wanted them gone, not because they were impractical, but because they represented a version of himself he was trying to leave behind.
           </p>
-          <p>
-            He wanted to see the way he used to see. Before the readers. Before the progressive lenses. Before the slow, quiet accumulation of dependence.
-          </p>
+          <div className="pull-quote">
+            <p>He wanted to see the way he used to see. Before the readers. Before the progressive lenses. Before the slow, quiet accumulation of dependence.</p>
+          </div>
         </div>
       </section>
 
@@ -89,6 +90,19 @@ export default function InsightYoungerEyes() {
         </div>
       </section>
 
+      {/* Full-bleed visual break */}
+      <section style={{padding: 0}}>
+        <div className="editorial-image-break">
+          <Image
+            src="/media/stock-group-poolside-relaxing.jpg"
+            alt="Friends relaxing poolside in the desert"
+            width={1920}
+            height={400}
+            style={{width: '100%', height: '400px', objectFit: 'cover'}}
+          />
+        </div>
+      </section>
+
       <section className="section section-white">
         <div className="container content-narrow">
           <h2 className="section-title">What He Was Really <strong>Asking</strong></h2>
@@ -98,9 +112,9 @@ export default function InsightYoungerEyes() {
           <p>
             This is not unusual. Many patients arrive at the decision point for cataract surgery carrying more than a visual complaint. They carry a sense that something can be restored. That if the right technology exists, they should be able to get back what time has taken.
           </p>
-          <p>
-            I understand that instinct. But surgery works best when expectations align with what the procedure can actually deliver. When the gap between hope and reality is too wide, even a technically successful surgery can feel like a failure.
-          </p>
+          <div className="insight-highlight">
+            <p><strong>Surgery works best when expectations align with what the procedure can actually deliver.</strong> When the gap between hope and reality is too wide, even a technically successful surgery can feel like a failure.</p>
+          </div>
         </div>
       </section>
 
