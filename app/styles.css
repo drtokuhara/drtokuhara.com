@@ -152,25 +152,19 @@ body:has(.homepage) .footer {
 /* --- HERO --- */
 .lux-hero {
   position: relative;
-  min-height: 100vh;
-  max-height: 100vh;
+  min-height: 80vh;
+  max-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
 
-/* Prevent face cropping on wide/large monitors */
-@media (min-aspect-ratio: 16/10) {
+/* Taller on mobile where vertical space is cheap */
+@media (max-width: 768px) {
   .lux-hero {
-    min-height: 90vh;
-    max-height: 90vh;
-  }
-}
-@media (min-aspect-ratio: 2/1) {
-  .lux-hero {
-    min-height: 80vh;
-    max-height: 80vh;
+    min-height: 100vh;
+    max-height: 100vh;
   }
 }
 
@@ -181,14 +175,14 @@ body:has(.homepage) .footer {
 }
 
 .lux-hero-video {
-  object-position: center top;
+  object-position: center 30%;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .lux-hero-fallback {
-  object-position: center top;
+  object-position: center 20%;
   position: absolute;
   inset: 0;
   width: 100%;
