@@ -18,7 +18,7 @@ export default function TwentyYearsForwardContent() {
       {/* HERO */}
       <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
         <Image
-          src="/media/stock-seniors-resort-promenade-night.jpg"
+          src="/media/elderly-woman-walker-courtyard.jpg"
           alt="Seniors strolling along a resort promenade at night"
           fill
           style={{objectFit: 'cover', objectPosition: 'center 30%'}}
