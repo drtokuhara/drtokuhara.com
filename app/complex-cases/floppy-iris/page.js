@@ -89,17 +89,20 @@ export default function FloppyIrisPage() {
 
           <h2 className="section-title">How I Manage <strong>IFIS</strong></h2>
           <p className="prose">
-            My approach starts well before surgery day. When I know IFIS is a possibility, I have several strategies ready:
+            I remember in 2005 when the fax came through our office about the FDA warning label for Flomax. It was sent to every cataract surgeon in the country. That was the moment we finally understood what we had been experiencing in our surgeries but could not pinpoint the cause. In the 20 years since, ophthalmologists have dramatically improved our approaches for IFIS. And in my practice, I have perfected a surgical style that optimizes outcomes for these patients.
+          </p>
+          <p className="prose">
+            My approach depends on what I see. Not every IFIS case is the same:
           </p>
           <ul className="content-list">
-            <li><strong>Preoperative pharmacologic dilation:</strong> I use a specific combination and timing of dilating drops designed to achieve the widest possible pupil before we start.</li>
-            <li><strong>Intracameral epinephrine:</strong> Injected directly into the eye at the start of surgery, this helps maintain pupil dilation throughout the case.</li>
-            <li><strong>Iris expansion devices:</strong> In moderate to severe cases, I use mechanical pupil expanders - small devices that gently hold the iris back and maintain a stable working space. These are placed at the beginning of the case and removed at the end.</li>
-            <li><strong>Low-flow fluidics:</strong> I adjust the phacoemulsification settings to use lower flow rates, which reduces the turbulence inside the eye that makes a floppy iris worse.</li>
-            <li><strong>Careful wound construction:</strong> The incisions are built to resist iris prolapse, and I monitor them throughout the case.</li>
+            <li><strong>Small pupil technique:</strong> Sometimes I can perform the entire surgery through a small pupil without needing any expansion device. This requires a refined surgical technique and the confidence to work in a tighter space, but it avoids the manipulation of placing and removing a device.</li>
+            <li><strong>Iris expansion devices:</strong> When I see clear evidence of IFIS behavior early in surgery, the safer approach is to go ahead and place an expansion device. Over the years, I have used iris hooks, the Malyugin ring, and Visitec iRings depending on the scenario. Each has strengths, and I choose based on the specific anatomy and behavior of the iris.</li>
+            <li><strong>Intracameral epinephrine:</strong> Injected directly into the eye at the start of surgery to help maintain pupil dilation throughout the case.</li>
+            <li><strong>Low-flow fluidics:</strong> I adjust the phacoemulsification settings to reduce turbulence inside the eye that makes a floppy iris worse.</li>
+            <li><strong>Prophylactic corneal suture:</strong> If there is any theoretical risk to wound integrity, I will sometimes place a corneal suture at the incision site. This is extremely rare, but having it in my toolbox means I can secure the wound immediately if the iris puts pressure on it.</li>
           </ul>
           <p className="prose">
-            The key is anticipation. When I know what I am walking into, I can prevent problems instead of reacting to them. The surgeons who get into trouble with IFIS are usually the ones who did not ask about medication history or did not plan for the possibility.
+            The key is anticipation and adaptability. I have been managing IFIS for two decades. The surgeons who get into trouble are usually the ones who did not ask about medication history, did not plan for the possibility, or only have one approach in their toolkit.
           </p>
 
           <div className="content-image" style={{margin: '32px 0'}}>
