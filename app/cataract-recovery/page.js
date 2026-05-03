@@ -151,6 +151,14 @@ export default function CataractRecoveryPage() {
         </div>
       </section>
 
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image src="/media/stock-seniors-outdoor-dining.jpg" alt="Seniors enjoying a meal outdoors - the simple pleasures patients can return to soon after cataract surgery" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+          </div>
+        </div>
+      </section>
+
       {/* LIGHTER THAN GENERAL ANESTHESIA */}
       <section className="section section-white">
         <div className="container content-narrow">
@@ -210,6 +218,12 @@ export default function CataractRecoveryPage() {
           <p>
             Most calls I receive are reassurance calls - a patient who noticed something unexpected and wanted to confirm it was normal. I welcome those calls. Catching a true complication early is always better than waiting. But the majority of the time, I am able to say: what you are experiencing is completely normal, and you are going to be fine.
           </p>
+        </div>
+      </section>
+
+      <section style={{padding: 0}}>
+        <div className="editorial-image-break">
+          <Image src="/media/stock-couple-garden-blooming.jpg" alt="Couple in a blooming garden enjoying a bright, clear day" width={1920} height={400} style={{width: '100%', height: '400px', objectFit: 'cover'}} />
         </div>
       </section>
 

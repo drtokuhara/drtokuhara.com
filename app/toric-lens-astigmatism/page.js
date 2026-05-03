@@ -167,6 +167,14 @@ export default function ToricLensAstigmatismPage() {
         </div>
       </section>
 
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image src="/media/stock-group-tennis-sunny.jpg" alt="Group playing tennis on a sunny day - the active lifestyle that clear, astigmatism-free vision supports" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+          </div>
+        </div>
+      </section>
+
       {/* WHO BENEFITS */}
       <section className="section section-warm">
         <div className="container content-narrow">

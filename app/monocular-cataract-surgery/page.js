@@ -257,6 +257,12 @@ export default function MonocularCataractSurgeryPage() {
         </div>
       </section>
 
+      <section style={{padding: 0}}>
+        <div className="editorial-image-break">
+          <Image src="/media/stock-couple-outdoor-sunshine.jpg" alt="Couple enjoying a sunny day outdoors - the confident, independent life that careful monocular surgery can restore" width={1920} height={400} style={{width: '100%', height: '400px', objectFit: 'cover'}} />
+        </div>
+      </section>
+
       <LineDraw style={{ margin: '0 auto', maxWidth: '200px' }} color="var(--oasis)" />
 
       <section className="section section-warm">

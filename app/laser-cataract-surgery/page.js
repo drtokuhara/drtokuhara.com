@@ -135,6 +135,14 @@ export default function LaserCataractSurgery() {
         </div>
       </section>
 
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image src="/media/stock-group-cycling-sunny.jpg" alt="Group cycling on a sunny day - the active life that cataract surgery with laser precision enables" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+          </div>
+        </div>
+      </section>
+
       {/* PATIENT EXPERIENCE */}
       <section className="section section-warm">
         <div className="container content-narrow">
@@ -174,6 +182,14 @@ export default function LaserCataractSurgery() {
             <li>Total procedure time is still well under 30 minutes</li>
             <li>Recovery is the same as traditional cataract surgery</li>
           </ul>
+        </div>
+      </section>
+
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image src="/media/stock-couple-patio-scenic-view.jpg" alt="Couple taking in a scenic view from their patio - the clear distances that precise cataract surgery delivers" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+          </div>
         </div>
       </section>
 

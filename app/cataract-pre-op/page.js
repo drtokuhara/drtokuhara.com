@@ -141,6 +141,14 @@ export default function CataractPreOp() {
         </div>
       </section>
 
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image src="/media/stock-seniors-resort-promenade-night.jpg" alt="Seniors enjoying an evening walk at a resort - the life patients are eager to return to after surgery" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+          </div>
+        </div>
+      </section>
+
       {/* WHAT PATIENTS SAY */}
       <section className="section section-warm">
         <div className="container content-narrow">

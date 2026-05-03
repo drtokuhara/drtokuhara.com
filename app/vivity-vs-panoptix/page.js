@@ -170,6 +170,14 @@ export default function VivityVsPanoptix() {
         </div>
       </section>
 
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image src="/media/stock-seniors-pickleball-desert.jpg" alt="Active seniors playing pickleball in the desert - the active lifestyle premium lenses support" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+          </div>
+        </div>
+      </section>
+
       {/* REAL PATIENT EXPERIENCE */}
       <section className="section section-white">
         <div className="container content-narrow">
@@ -219,6 +227,12 @@ export default function VivityVsPanoptix() {
           <p>
             I evaluate each of these factors carefully before making a recommendation. Putting the right lens in the wrong eye is worse than not offering it at all. Sometimes the best lens for your life is a well-aimed monofocal, and there is nothing second-rate about that.
           </p>
+        </div>
+      </section>
+
+      <section style={{padding: 0}}>
+        <div className="editorial-image-break">
+          <Image src="/media/stock-seniors-outdoor-toast.jpg" alt="Seniors toasting outdoors in the Coachella Valley" width={1920} height={400} style={{width: '100%', height: '400px', objectFit: 'cover'}} />
         </div>
       </section>
 

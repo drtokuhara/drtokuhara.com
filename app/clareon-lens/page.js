@@ -177,6 +177,14 @@ export default function ClareonLens() {
         </div>
       </section>
 
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image src="/media/stock-seniors-outdoor-toast.jpg" alt="Seniors raising a toast outdoors - celebrating clear, comfortable vision for years to come" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+          </div>
+        </div>
+      </section>
+
       {/* WHY IT MATTERS */}
       <section className="section section-white">
         <div className="container content-narrow">
@@ -209,6 +217,12 @@ export default function ClareonLens() {
           <div className="pull-quote">
             <p>Moving to the Clareon was not a marketing decision. It was a clinical one. The evidence supported it, the delivery was better, and the results have confirmed it was the right move.</p>
           </div>
+        </div>
+      </section>
+
+      <section style={{padding: 0}}>
+        <div className="editorial-image-break">
+          <Image src="/media/stock-couple-patio-scenic-view.jpg" alt="Couple enjoying a scenic view from their patio - the vivid, clear world a quality lens implant reveals" width={1920} height={400} style={{width: '100%', height: '400px', objectFit: 'cover'}} />
         </div>
       </section>
 

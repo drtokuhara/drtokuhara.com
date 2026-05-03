@@ -196,6 +196,14 @@ export default function YamaneTechniquePage() {
         </div>
       </section>
 
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image src="/media/stock-couple-garden-blooming.jpg" alt="Couple in a blooming garden - the vibrant, stable world that restored vision reveals" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+          </div>
+        </div>
+      </section>
+
       {/* CLINIC THOUGHT */}
       <section className="section section-warm">
         <div className="container content-narrow">
