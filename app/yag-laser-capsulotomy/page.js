@@ -211,6 +211,11 @@ export default function YagLaserCapsulotomy() {
               <em>Patients sometimes feel embarrassed when they come in thinking their cataract has returned. They worry they waited too long or that something went wrong. Neither is true. Posterior capsule opacification is one of the most predictable events in ophthalmology, and the treatment is one of the most satisfying, for both doctor and patient. Five minutes, and the world is clear again.</em>
             </p>
           </div>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

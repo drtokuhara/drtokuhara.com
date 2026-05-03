@@ -215,6 +215,11 @@ export default function LaserCataractSurgery() {
               <em>Technology is a wonderful thing when it serves the patient. The femtosecond laser genuinely enhances precision in ways that matter. But I never want a patient to feel that traditional surgery is somehow inferior. A skilled surgeon with steady hands and decades of experience can deliver outstanding results with or without a laser. The laser makes certain things more reproducible. It does not replace the judgment, adaptability, and care that define good surgery.</em>
             </p>
           </div>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

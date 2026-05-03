@@ -208,6 +208,11 @@ export default function ToricLensAstigmatismPage() {
               <em>Patients often come to me for a second opinion after cataract surgery elsewhere, frustrated that they are still wearing glasses. When I ask about their astigmatism, they sometimes say, "nobody told me I had astigmatism." I look at their topography and the propeller shape is right there, obvious. It was measurable before surgery. The toric option was available. It just was not offered, or was not explained clearly. This is exactly the kind of gap I am trying to close with pages like this one. If you know you have astigmatism, ask about toric lenses. It is a reasonable question, and it deserves a complete answer.</em>
             </p>
           </div>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

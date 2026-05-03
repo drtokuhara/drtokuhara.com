@@ -200,6 +200,11 @@ export default function CataractPreOp() {
               <em>Surgery is a team effort. From the pre-op nurses who calm your nerves, to the surgical tech who double-checks every instrument, to the anesthesiologist who keeps you comfortable, to the recovery team who watches over you afterward, every person has an important role. I am grateful to work with a team that takes the human side of surgery as seriously as the technical side. That is what makes a quick escape out of here possible.</em>
             </p>
           </div>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

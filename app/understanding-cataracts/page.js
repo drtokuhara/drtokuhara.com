@@ -234,6 +234,11 @@ export default function UnderstandingCataracts() {
               <em>Cataract surgery is rarely just about visual acuity. By the time patients reach my office, many have lived through competing priorities - caregiving, loss, tradeoffs that don't show up in a chart. If I ignore that, I'm reducing a deeply personal decision to a set of measurements. If I pay attention, I can help someone choose without guilt.</em>
             </p>
           </div>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

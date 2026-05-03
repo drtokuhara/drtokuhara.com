@@ -128,6 +128,7 @@ export default function PreviousLasikPage() {
           <p>I use advanced calculation methods designed specifically for post-LASIK eyes. Let&rsquo;s plan your surgery with precision.</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
             <Link href="/complex-cases" className="btn-secondary">Back to Complex Cases</Link>
           </div>
         </div>

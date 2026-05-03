@@ -257,6 +257,7 @@ export default function TwentyYearsForwardContent() {
           <p>The best lens decision starts with an honest conversation about your eyes, your life, and your priorities.</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
             <Link href="/patient-journey" className="btn-secondary">See Your Patient Journey</Link>
           </div>
         </div>

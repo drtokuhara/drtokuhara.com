@@ -108,6 +108,7 @@ export default function ParkinsonsDiseasePage() {
           <p>I&rsquo;ll work with you and your neurologist to plan a safe, effective approach to cataract surgery.</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
             <Link href="/complex-cases" className="btn-secondary">Back to Complex Cases</Link>
           </div>
         </div>

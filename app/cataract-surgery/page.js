@@ -425,6 +425,7 @@ export default function CataractSurgeryPage() {
           <p>You don&rsquo;t need a referral to schedule a consultation. If you&rsquo;re thinking about cataract surgery, or you&rsquo;ve had a bad experience and want a second opinion, let&rsquo;s talk.</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
             <Link href="/education" className="btn-secondary">Browse All Educational Videos</Link>
           </div>
         </div>

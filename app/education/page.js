@@ -186,6 +186,7 @@ export default function EducationPage() {
           <p>Videos can only go so far. If you want to talk about your specific situation, reach out. I&rsquo;d rather answer your questions now than have you guessing.</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
             <Link href="/cataract-surgery" className="btn-secondary">Learn About Cataract Surgery</Link>
           </div>
         </div>

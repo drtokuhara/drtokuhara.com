@@ -212,6 +212,11 @@ export default function InsightWhenPatientsWait() {
               <em>For patients, the lesson is simple: There is no perfect time for cataract surgery. There is only your time. For surgeons, the lesson is just as important: A good outcome is not just visual acuity. It's helping patients arrive at the decision without carrying unnecessary regret afterward. Because sometimes, the hardest part of cataract surgery isn't the operation. It's getting to the point where the patient is ready to say yes.</em>
             </p>
           </div></BlurReveal>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

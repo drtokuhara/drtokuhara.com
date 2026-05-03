@@ -39,7 +39,7 @@ const faqSchema = {
   mainEntity: [
 
     { '@type': 'Question', name: "Can I have cataract surgery after radial keratotomy (RK)?", acceptedAnswer: { '@type': 'Answer', text: "Yes, but RK presents unique challenges. The corneal incisions from RK cause fluctuating vision and change corneal measurements. Lens power calculations must account for these alterations. Dr. Tokuhara uses specialized formulas and may stage the surgery to optimize results." } },
-    { '@type': 'Question', name: "Why is cataract surgery more complex after RK?", acceptedAnswer: { '@type': 'Answer', text: "Radial keratotomy incisions permanently alter the corneal shape and can cause measurements to shift throughout the day. This makes lens power prediction more difficult. Advanced measurement protocols and intraoperative adjustments help achieve the best possible outcome." } }
+    { '@type': 'Question', name: "Why is cataract surgery more complex after RK?", acceptedAnswer: { '@type': 'Answer', text: "Radial keratotomy incisions permanently alter the corneal shape and weaken corneal structure. This makes lens power prediction more difficult. Multiple measurements with different devices, advanced formulas, and intraoperative verification help achieve the best possible outcome. In rare cases, the cornea can rupture along old RK incision lines during surgery, requiring intraoperative sutures." } }
   ],
 };
 
@@ -87,7 +87,8 @@ export default function PreviousRKPage() {
             <li><strong>Progressive hyperopic shift:</strong> Over time, many RK patients continue to become more farsighted as the corneal incisions gradually flatten the cornea further. This means the eye that was corrected to good distance vision 30 years ago may now be significantly farsighted.</li>
             <li><strong>Diurnal fluctuation:</strong> RK corneas often change shape throughout the day. Patients notice their vision is different in the morning versus the evening. This makes it extremely difficult to get a single, reliable corneal measurement for IOL calculations.</li>
             <li><strong>Irregular astigmatism:</strong> The radial incisions create an irregular corneal surface that does not conform to the smooth curves that standard IOL formulas assume. This irregularity makes standard toric IOL planning unreliable.</li>
-            <li><strong>Unpredictable corneal response:</strong> RK incisions weaken the structural integrity of the cornea. The changes in intraocular pressure during cataract surgery can cause the cornea to behave unpredictably, and the incisions can even open during or after surgery.</li>
+            <li><strong>Unpredictable corneal response:</strong> RK incisions weaken the structural integrity of the cornea. The changes in intraocular pressure during cataract surgery can cause the cornea to behave unpredictably.</li>
+            <li><strong>RK corneal rupture:</strong> In rare cases, the cornea can split along the old RK incision lines during surgery. These areas were permanently weakened decades ago, and the mechanical forces of cataract surgery can reopen them. When this occurs, corneal sutures are placed intraoperatively to close the wound. The surgery can still be completed successfully, but the sutures may extend the total recovery time compared to a routine case. This is rare, but patients with RK incisions should know it is possible.</li>
             <li><strong>IOL calculation difficulty:</strong> Post-RK eyes have the same keratometry measurement problems as post-LASIK eyes, plus the additional challenges of irregular astigmatism and progressive hyperopic shift.</li>
           </ul>
 
@@ -99,7 +100,7 @@ export default function PreviousRKPage() {
             Here is how I maximize accuracy:
           </p>
           <ul className="content-list">
-            <li>Multiple measurements taken at different times of day to account for diurnal fluctuation</li>
+            <li>Multiple measurements using different machines to account for variability across devices and capture the most accurate corneal data</li>
             <li>Topography-guided IOL calculations using both the central and paracentral cornea</li>
             <li>Multiple IOL formulas cross-referenced against each other</li>
             <li>Intraoperative aberrometry for real-time verification</li>
@@ -133,6 +134,7 @@ export default function PreviousRKPage() {
           <p>I understand the unique challenges of post-RK eyes. Let&rsquo;s evaluate your cornea and build a realistic, honest plan.</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
             <Link href="/complex-cases" className="btn-secondary">Back to Complex Cases</Link>
           </div>
         </div>

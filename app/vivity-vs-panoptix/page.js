@@ -291,6 +291,11 @@ export default function VivityVsPanoptix() {
               <p style={{fontSize: '14px', color: 'var(--text-light)', marginTop: '8px'}}>First PanOptix Pro in the Coachella Valley</p>
             </div>
           </div>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

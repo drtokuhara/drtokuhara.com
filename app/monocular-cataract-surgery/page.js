@@ -297,6 +297,7 @@ export default function MonocularCataractSurgeryPage() {
           <p>I understand the stakes. I&rsquo;ll take the time this deserves - thorough evaluation, complete answers, and a plan you can trust.</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
             <Link href="/choosing-your-surgeon" className="btn-secondary">How to Choose Your Surgeon</Link>
           </div>
         </div>

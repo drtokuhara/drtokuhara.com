@@ -216,6 +216,11 @@ export default function ChoosingYourSurgeon() {
               <em>I recently saw a patient who had been told by his original surgeon that his cataract complication happened because he chose standard surgery over laser. He believed it was his fault. It wasn't. The complication had nothing to do with that choice. But the guilt kept him from seeking help for months. When he finally came in, we were able to fix the problem and restore his vision. The lesson: complications are never the patient's fault. And the first thing any surgeon should offer when something goes wrong is compassion and a plan - not blame.</em>
             </p>
           </div>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

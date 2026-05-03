@@ -119,6 +119,7 @@ export default function AlzheimersDementiaPage() {
           <p>I&rsquo;ll help you weigh the benefits honestly and build a plan that puts your loved one&rsquo;s quality of life first.</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
             <Link href="/complex-cases" className="btn-secondary">Back to Complex Cases</Link>
           </div>
         </div>

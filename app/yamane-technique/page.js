@@ -213,6 +213,11 @@ export default function YamaneTechniquePage() {
               <em>Patients who come to me with a dislocated lens are often frightened. They thought cataract surgery was behind them. They feel like something has gone wrong in a way they cannot explain, and they do not know whether it can be fixed. I find that one of the most important things I can do in that first consultation is simply describe what I see, and describe what I can do about it. The Yamane technique is a remarkable piece of surgical engineering. Explaining it clearly - and watching the fear in someone's face be replaced by understanding - is one of the parts of this work I love most.</em>
             </p>
           </div>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

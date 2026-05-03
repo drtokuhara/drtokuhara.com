@@ -235,6 +235,7 @@ export default function ClareonLens() {
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
             <Link href="/lens-implants-explained" className="btn-secondary">All Lens Options</Link>
           </div>
         </div>

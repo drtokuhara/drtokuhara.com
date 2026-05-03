@@ -233,6 +233,11 @@ export default function EthicalCataractCare() {
               <em>In my practice, most patients come by word of mouth or direct referral from friends and family. I do not participate in kickback arrangements. I never have. I believe the doctor-patient relationship is sacred, and financial incentives that distort referrals erode the very foundation of trust that medicine depends on. That is why I speak publicly about this. Not to point fingers, but to give patients the information they need to make truly independent choices about their care.</em>
             </p>
           </div>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

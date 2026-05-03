@@ -142,6 +142,11 @@ export default function HalosAfterSurgery() {
               <em>I do not discourage multifocal lenses. I recommend them often, and most patients are thrilled. But I want every patient to understand that the trade for glasses freedom is a slight change in visual quality, particularly at night. If that sounds acceptable, it probably is. If it sounds concerning, we should talk about it before surgery, not after. An informed patient is a happy patient.</em>
             </p>
           </div>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

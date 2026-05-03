@@ -309,6 +309,7 @@ export default function ComplexCasesPage() {
           <p>You don&rsquo;t need a referral. You don&rsquo;t need to feel guilty about asking for a second opinion. You just need someone who will look at your situation with fresh eyes and give you an honest answer.</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
             <Link href="/cataract-surgery" className="btn-secondary">Back to Cataract Surgery</Link>
           </div>
         </div>

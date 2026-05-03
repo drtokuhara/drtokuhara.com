@@ -236,6 +236,11 @@ export default function CataractRecoveryPage() {
               <em>The recovery room is one of my favorite places in the surgical center. Surgery is over, everything went well, and the patient is usually starting to realize that the thing they were dreading for months was actually manageable. There is a lightness in the room. Our nurses have been doing this long enough that they genuinely love this moment - the moment a patient opens their operated eye for the first time and says, "wait, I can already see the clock." That reaction, every single time, never gets old.</em>
             </p>
           </div>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

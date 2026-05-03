@@ -141,6 +141,11 @@ export default function BlurryVisionAfterSurgery() {
               <em>The most important thing I can tell patients about blur after surgery is this: do not suffer in silence. If your vision is not meeting your expectations, tell me. Sometimes the answer is "give it another two weeks." Sometimes it is a treatable condition we can fix today. Either way, you deserve an answer, not just reassurance.</em>
             </p>
           </div>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

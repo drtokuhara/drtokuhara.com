@@ -126,6 +126,7 @@ export default function PreviousRetinaSurgeryPage() {
           <p>I understand both sides of the equation. Let&rsquo;s evaluate your eye and build a plan that protects your retina while restoring your vision.</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
             <Link href="/complex-cases" className="btn-secondary">Back to Complex Cases</Link>
           </div>
         </div>

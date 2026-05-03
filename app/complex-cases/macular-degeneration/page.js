@@ -133,6 +133,7 @@ export default function MacularDegenerationPage() {
           <p>I&rsquo;m the only cataract surgeon in the valley with retina fellowship training. I understand both conditions and can give you a complete picture.</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
             <Link href="/complex-cases" className="btn-secondary">Back to Complex Cases</Link>
           </div>
         </div>

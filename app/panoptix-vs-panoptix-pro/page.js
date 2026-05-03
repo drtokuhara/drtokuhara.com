@@ -275,6 +275,11 @@ export default function PanOptixVsPanOptixPro() {
               <em>The question patients often ask is "Pro or original?" But the more important question is "Is a trifocal lens right for this eye?" Get that right and the generation question takes care of itself. If a trifocal is the correct choice, the Pro is what I use. If a trifocal is not the correct choice, no version of it will perform the way we both want it to.</em>
             </p>
           </div>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 
