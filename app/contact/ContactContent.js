@@ -5,8 +5,13 @@ import Image from 'next/image';
 import { useLanguage } from '../LanguageContext';
 import {
   ScrollReveal,
+  KineticText,
   GradientShift,
   MagneticElement,
+  VideoBackground,
+  BlurReveal,
+  StaggerChildren,
+  StaggerItem,
 } from '../components/ScrollAnimations';
 
 export default function ContactContent() {
@@ -14,19 +19,52 @@ export default function ContactContent() {
 
   return (
     <>
-      {/* PAGE HERO */}
-      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
-        <Image
-          src="/media/about-coachella-valley-golden-hour.jpg"
-          alt="Coachella Valley at golden hour"
-          fill
-          style={{objectFit: 'cover', objectPosition: 'center'}}
-          priority
-        />
-        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.4) 0%, rgba(0,20,30,0.7) 100%)', zIndex: 1}} />
-        <div style={{position: 'relative', zIndex: 2}} className="container">
-          <h1 dangerouslySetInnerHTML={{ __html: t('contact.title') || 'Get in <strong>Touch</strong>' }} />
-          <p className="page-hero-sub">{t('contact.subtitle') || "You don\u2019t need a referral to come see me. If you have a question about your eyes, just call."}</p>
+      {/* CINEMATIC HERO */}
+      <VideoBackground
+        src="/media/ambient-desert-twilight.mp4"
+        poster="/media/IMG-0661.jpg"
+        overlayOpacity={0.5}
+        overlayColor="0, 20, 30"
+        className="page-hero page-hero-image"
+        style={{minHeight: '55vh', display: 'flex', alignItems: 'center'}}
+      >
+        <div className="container" style={{textAlign: 'center'}}>
+          <ScrollReveal direction="up" once={true}>
+            <p style={{fontSize: '12px', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--oasis)', marginBottom: '16px', fontWeight: 600}}>Desert Vision Center &middot; Rancho Mirage</p>
+          </ScrollReveal>
+          <KineticText text={t('contact.title')?.replace(/<[^>]*>/g, '') || 'Get in Touch'} Tag="h1" mode="word" staggerDelay={0.06} />
+          <ScrollReveal direction="up" delay={0.3} once={true}>
+            <p className="page-hero-sub" style={{maxWidth: '600px', margin: '16px auto 0'}}>{t('contact.subtitle') || "You don't need a referral to come see me. If you have a question about your eyes, just call."}</p>
+            <div style={{display: 'flex', gap: '16px', justifyContent: 'center', marginTop: '28px', flexWrap: 'wrap'}}>
+              <a href="tel:7603404700" className="btn-primary" style={{fontSize: '18px', padding: '16px 36px'}}>Call 760.340.4700</a>
+            </div>
+          </ScrollReveal>
+        </div>
+      </VideoBackground>
+
+      {/* QUICK INFO BAR */}
+      <section style={{background: 'var(--dark-rich)', padding: '40px 0'}}>
+        <div className="container">
+          <StaggerChildren style={{display: 'flex', justifyContent: 'center', gap: '48px', flexWrap: 'wrap', textAlign: 'center'}} staggerDelay={0.1}>
+            <StaggerItem>
+              <div>
+                <p style={{fontSize: '14px', fontWeight: 600, color: 'var(--oasis)', marginBottom: '4px'}}>Address</p>
+                <p style={{fontSize: '14px', color: 'rgba(255,255,255,0.8)', lineHeight: 1.5}}>35900 Bob Hope Drive, Suite 175<br />Rancho Mirage, CA 92270</p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div>
+                <p style={{fontSize: '14px', fontWeight: 600, color: 'var(--oasis)', marginBottom: '4px'}}>Hours</p>
+                <p style={{fontSize: '14px', color: 'rgba(255,255,255,0.8)', lineHeight: 1.5}}>Monday through Friday<br />8:00 AM to 5:00 PM</p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div>
+                <p style={{fontSize: '14px', fontWeight: 600, color: 'var(--oasis)', marginBottom: '4px'}}>Phone</p>
+                <a href="tel:7603404700" style={{fontSize: '20px', color: '#fff', fontWeight: 600, textDecoration: 'none'}}>760.340.4700</a>
+              </div>
+            </StaggerItem>
+          </StaggerChildren>
         </div>
       </section>
 
@@ -36,11 +74,12 @@ export default function ContactContent() {
           <div className="content-image">
             <Image
               src="/media/IMG-0661.jpg"
-              alt={lang === 'es' ? 'Exterior de Desert Vision Center en Rancho Mirage, California' : 'Desert Vision Center exterior in Rancho Mirage, California'}
+              alt={lang === 'es' ? 'Exterior de Desert Vision Center en Rancho Mirage, California' : 'Desert Vision Center exterior at sunset in Rancho Mirage, California'}
               width={800}
               height={455}
-              style={{ width: '100%', height: 'auto' }}
+              style={{ width: '100%', height: 'auto', borderRadius: '16px' }}
             />
+            <div className="content-image-caption" style={{textAlign: 'center'}}>Desert Vision Center. 35900 Bob Hope Drive, Suite 175, Rancho Mirage.</div>
           </div>
         </div>
       </section>
