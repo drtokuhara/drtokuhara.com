@@ -55,7 +55,7 @@ const faqSchema = {
       name: 'How do I know if I have the right surgeon for cataract surgery?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Look for a surgeon who performs high surgical volume, has fellowship training in anterior segment surgery, is transparent about risks and complication rates, and takes time to understand your eyes and goals. Volume builds instinct. Training builds judgment. Transparency builds trust.',
+        text: 'Look for a surgeon who performs high surgical volume, has fellowship training in medical retina, is transparent about risks and complication rates, and takes time to understand your eyes and goals. Volume builds instinct. Training builds judgment. Transparency builds trust.',
       },
     },
   ],
@@ -142,7 +142,7 @@ export default function IsCataractSurgerySafePage() {
             </div>
             <div className="insight-item">
               <strong>Outpatient procedure.</strong>
-              <p>Surgery takes less than 20 minutes for most straightforward cases. Patients go home within an hour. Shorter exposure time and minimal facility stay reduce hospital-associated risks.</p>
+              <p>The surgery itself takes 10 to 15 minutes for most straightforward cases. Including check-in, preparation, and a brief recovery observation, most patients are at the surgery center for about two hours total. You go home the same day.</p>
             </div>
             <div className="insight-item">
               <strong>Quick recovery.</strong>
@@ -169,7 +169,7 @@ export default function IsCataractSurgerySafePage() {
           </p>
           <BlurReveal>
             <div className="insight-highlight">
-              <p><strong>For a complete look at what can go wrong and how I manage it,</strong> see the <Link href="/cataract-surgery-complications">Cataract Surgery Complications guide</Link>.</p>
+              <p><strong>For a complete look at what can go wrong and how I manage it,</strong> see the <Link href="/cataract-surgery-complications" style={{color: '#fff', textDecoration: 'underline'}}>Cataract Surgery Complications guide</Link>.</p>
             </div>
           </BlurReveal>
         </div>
@@ -191,16 +191,16 @@ export default function IsCataractSurgerySafePage() {
             />
           </div>
           <p>
-            Surgical volume is not vanity. A surgeon who has performed 10,000 procedures has seen a range of complications, unusual anatomy, and unexpected intraoperative findings that a surgeon with 500 cases has not. This experience builds the instinct to recognize a problem early and respond before it escalates.
+            Surgical volume is not vanity. A surgeon who has performed thousands of procedures has seen a range of complications, unusual anatomy, and unexpected intraoperative findings that a surgeon with 500 cases has not. This experience builds the instinct to recognize a problem early and respond before it escalates.
           </p>
           <p>
-            Fellowship training in anterior segment surgery provides specialized preparation that residency alone does not. It teaches not just technique, but the judgment to know when to pause, when to adapt, and when to convert to a different approach.
+            Fellowship training in medical retina provides specialized preparation that residency alone does not. Understanding the full eye, from the front to the back, teaches not just cataract technique but the judgment to recognize retinal issues, manage post-operative complications, and make integrated treatment decisions.
           </p>
           <p>
             Complication management is as important as complication avoidance. The best surgeons are not the ones who never have complications. They are the ones who recognize complications quickly, handle them skillfully, and communicate honestly with patients throughout.
           </p>
           <p>
-            I have performed more than 10,000 cataract procedures. My dual fellowship training covers both anterior segment surgery and medical retina, which gives me a perspective on the full visual system that most cataract surgeons do not have. I also take on complex and revision cases referred by other surgeons. For more on what that training means in practice, see the <Link href="/choosing-your-surgeon">Choosing Your Surgeon</Link> guide.
+            I have performed more than 20,000 eye procedures. My fellowship training in medical retina, which gives me a perspective on the full visual system that most cataract surgeons do not have. I also take on complex and revision cases referred by other surgeons. For more on what that training means in practice, see the <Link href="/choosing-your-surgeon">Choosing Your Surgeon</Link> guide.
           </p>
         </div>
       </section>
@@ -216,19 +216,19 @@ export default function IsCataractSurgerySafePage() {
           </p>
           <div className="insight-list">
             <div className="insight-item">
-              <strong>Pseudoexfoliation syndrome.</strong>
+              <strong><Link href="/complex-cases/pseudoexfoliation" style={{color: 'var(--night-horizon)'}}>Pseudoexfoliation syndrome.</Link></strong>
               <p>Weakened zonular fibers can lead to complications during surgery. Specialized tools and technique adjustments are needed.</p>
             </div>
             <div className="insight-item">
-              <strong>Prior corneal refractive surgery (LASIK, RK).</strong>
+              <strong>Prior corneal refractive surgery (<Link href="/complex-cases/previous-lasik" style={{color: 'var(--night-horizon)'}}>LASIK</Link>, <Link href="/complex-cases/previous-rk" style={{color: 'var(--night-horizon)'}}>RK</Link>).</strong>
               <p>Previous corneal procedures alter the measurements used to select lens power. Standard formulas can produce inaccurate results. Specialized calculations are required.</p>
             </div>
             <div className="insight-item">
-              <strong>Fuchs endothelial dystrophy.</strong>
+              <strong><Link href="/complex-cases/fuchs-dystrophy" style={{color: 'var(--night-horizon)'}}>Fuchs endothelial dystrophy.</Link></strong>
               <p>Corneal swelling is more likely after surgery. Surgical technique and lens selection must account for corneal health before and after the procedure.</p>
             </div>
             <div className="insight-item">
-              <strong>Dense cataracts, diabetes, prior retinal surgery.</strong>
+              <strong><Link href="/complex-cases/diabetes" style={{color: 'var(--night-horizon)'}}>Diabetes</Link>, <Link href="/complex-cases/glaucoma-and-cataract" style={{color: 'var(--night-horizon)'}}>glaucoma</Link>, <Link href="/complex-cases/previous-retina-surgery" style={{color: 'var(--night-horizon)'}}>prior retinal surgery</Link>.</strong>
               <p>Each presents distinct surgical challenges that require evaluation during the pre-operative workup. An experienced surgeon plans for these during preparation, not during surgery.</p>
             </div>
           </div>
@@ -239,13 +239,36 @@ export default function IsCataractSurgerySafePage() {
           <div className="clinic-thought" style={{marginTop: '32px'}}>
             <h3>A thought from the clinic</h3>
             <p>
-              <em>Patients often ask me if cataract surgery is safe, and I tell them yes. But then I tell them the rest: that the statistics are population-level, that their individual risk profile depends on their eyes and their surgeon, and that being in the right hands changes the equation significantly. I have performed more than 10,000 of these procedures. What I offer is not just technique. It is the experience to recognize when something unusual is happening and the judgment to respond. That combination is what safety actually looks like in practice.</em>
+              <em>Patients often ask me if cataract surgery is safe, and I tell them yes. But then I tell them the rest: that the statistics are population-level, that their individual risk profile depends on their eyes and their surgeon, and that being in the right hands changes the equation significantly. I have performed more than 20,000 eye procedures. What I offer is not just technique. It is the experience to recognize when something unusual is happening and the judgment to respond. That combination is what safety actually looks like in practice.</em>
             </p>
           </div>
 
           <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
             <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
+        </div>
+      </section>
+
+      {/* LIFESTYLE IMAGE BREAK */}
+      <section style={{padding: 0}}>
+        <div className="editorial-image-break">
+          <Image src="/media/stock-couple-garden-blooming.jpg" alt="Couple enjoying a bright garden with blooming flowers and clear vision" width={1920} height={500} style={{width: '100%', height: 'auto'}} />
+        </div>
+      </section>
+
+      {/* DR T IMAGE */}
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image
+              src="/media/Dr-Tokuhara.jpg"
+              alt="Dr. Keith Tokuhara, fellowship-trained cataract surgeon at Desert Vision Center"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+            <div className="content-image-caption">Dr. Keith Tokuhara. Fellowship-trained in medical retina. More than 20,000 eye procedures. The surgeon other surgeons call when things get complicated.</div>
           </div>
         </div>
       </section>
