@@ -123,7 +123,7 @@ export default function ArePremiumLensesWorthIt() {
             alt="Couple walking through a blooming garden - the details that matter when vision is clear"
             width={1920}
             height={400}
-            style={{width: '100%', height: '400px', objectFit: 'cover', objectPosition: 'center 30%'}}
+            style={{width: '100%', objectFit: 'cover'}}
           />
         </div>
       </section>

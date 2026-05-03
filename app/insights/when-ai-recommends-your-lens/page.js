@@ -135,7 +135,7 @@ export default function InsightAILens() {
             alt="Friends gathered at an outdoor cafe in the sunshine"
             width={1920}
             height={400}
-            style={{width: '100%', height: '400px', objectFit: 'cover', objectPosition: 'center 30%'}}
+            style={{width: '100%', objectFit: 'cover'}}
           />
         </div>
       </section>

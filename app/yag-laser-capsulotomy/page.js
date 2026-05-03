@@ -198,7 +198,7 @@ export default function YagLaserCapsulotomy() {
 
       <section style={{padding: 0}}>
         <div className="editorial-image-break">
-          <Image src="/media/stock-seniors-resort-string-lights.jpg" alt="Seniors enjoying an evening gathering at a resort" width={1920} height={400} style={{width: '100%', height: '400px', objectFit: 'cover', objectPosition: 'center 30%'}} />
+          <Image src="/media/stock-seniors-resort-string-lights.jpg" alt="Seniors enjoying an evening gathering at a resort" width={1920} height={400} style={{width: '100%', objectFit: 'cover'}} />
         </div>
       </section>
 

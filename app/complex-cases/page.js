@@ -204,15 +204,15 @@ export default function ComplexCasesPage() {
               <div className="insight-card-body"><span className="insight-cluster">Structural</span><h2 className="insight-card-title">Pseudoexfoliation</h2><p className="insight-card-desc">Weak zonules, capsular tension rings, and staged approaches for eyes with compromised lens support.</p></div>
             </Link></TiltCard>
             <TiltCard style={{position: 'relative', borderRadius: '16px'}}><Link href="/complex-cases/parkinsons-disease" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
-              <div className="insight-card-image"><Image src="/media/stock-friends-night-canal-walk.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
+              <div className="insight-card-image"><Image src="/media/elderly-man-walker-desert-path.jpg" alt="Elderly Parkinson's patient with walker" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',objectPosition:'center 30%',borderRadius:'16px 16px 0 0'}} /></div>
               <div className="insight-card-body"><span className="insight-cluster">Neurological</span><h2 className="insight-card-title">Parkinson&rsquo;s Disease</h2><p className="insight-card-desc">Tremor management, medication timing, head positioning, and surgical adaptations for Parkinson&rsquo;s patients.</p></div>
             </Link></TiltCard>
             <TiltCard style={{position: 'relative', borderRadius: '16px'}}><Link href="/complex-cases/down-syndrome" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
-              <div className="insight-card-image"><Image src="/media/stock-couple-garden-blooming.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
+              <div className="insight-card-image"><Image src="/media/down-syndrome-patient-1.jpg" alt="Woman with Down syndrome smiling outdoors" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',objectPosition:'center 30%',borderRadius:'16px 16px 0 0'}} /></div>
               <div className="insight-card-body"><span className="insight-cluster">Special Populations</span><h2 className="insight-card-title">Down Syndrome</h2><p className="insight-card-desc">Earlier cataracts, anatomical considerations, cooperation challenges, and compassionate anesthesia planning.</p></div>
             </Link></TiltCard>
             <TiltCard style={{position: 'relative', borderRadius: '16px'}}><Link href="/complex-cases/alzheimers-dementia" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
-              <div className="insight-card-image"><Image src="/media/stock-couple-sunny-pathway-luxury.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
+              <div className="insight-card-image"><Image src="/media/elderly-woman-poolside-desert.jpg" alt="Elderly woman in desert setting" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',objectPosition:'center 30%',borderRadius:'16px 16px 0 0'}} /></div>
               <div className="insight-card-body"><span className="insight-cluster">Special Populations</span><h2 className="insight-card-title">Alzheimer&rsquo;s &amp; Dementia</h2><p className="insight-card-desc">Informed consent, caregiver coordination, and honest benefit assessment for patients with cognitive decline.</p></div>
             </Link></TiltCard>
           </StaggerChildren>

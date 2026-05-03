@@ -2420,10 +2420,14 @@ body.conversation-active .footer {
   pointer-events: none;
 }
 .page-hero-image {
-  min-height: 340px;
+  min-height: 50vh;
+  max-height: 65vh;
   display: flex;
   align-items: center;
   color: #fff;
+}
+@media (max-width: 768px) {
+  .page-hero-image { min-height: 340px; max-height: none; }
 }
 .page-hero-image h1,
 .page-hero-image h1 strong,
@@ -2618,14 +2622,18 @@ body.conversation-active .footer {
   margin-right: -50vw;
   margin-top: 48px;
   margin-bottom: 48px;
-  max-height: 400px;
+  max-height: 50vh;
   overflow: hidden;
 }
 .editorial-image-break img {
   width: 100%;
-  height: 400px;
+  height: clamp(300px, 30vw, 500px);
   object-fit: cover;
-  object-position: center;
+  object-position: center 30%;
+}
+@media (max-width: 768px) {
+  .editorial-image-break { max-height: 400px; }
+  .editorial-image-break img { height: 300px; }
 }
 
 /* Highlighted stat / emphasis block */
