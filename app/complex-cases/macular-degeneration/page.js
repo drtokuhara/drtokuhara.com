@@ -82,6 +82,16 @@ export default function MacularDegenerationPage() {
             />
           </div>
 
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/macular-degeneration-vision-sim.png"
+              alt="Simulation of vision with age-related macular degeneration showing central vision loss with clear peripheral vision in a Coachella Valley landscape"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+            <div className="content-image-caption">How macular degeneration affects vision: the center of your view becomes blurred or dark while peripheral vision remains clear. Cataract surgery can improve the surrounding vision and make monitoring the retina easier.</div>
+          </div>
           <h2 className="section-title">How Macular Degeneration Affects <strong>Cataract Decisions</strong></h2>
           <p className="prose">
             Macular degeneration limits the eye's central vision. Even with a perfect cataract surgery and a perfect lens implant, a patient with significant macular disease will not achieve 20/20 vision. The cataract surgery removes one obstacle (the cloudy lens), but the macular problem remains. This means the visual improvement from surgery may be less dramatic than it would be in an eye with a healthy macula.

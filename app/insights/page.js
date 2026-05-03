@@ -23,6 +23,14 @@ export const metadata = {
 
 const insights = [
   {
+    slug: 'the-consultation-that-changed-everything',
+    title: 'The Consultation That Changed Everything',
+    date: 'May 2026',
+    description: 'Harold Baird had been to three ophthalmologists in ten-minute appointments before he came to see me. His first visit with me lasted 70 minutes. This is what a consultation should feel like.',
+    cluster: 'Philosophy of Care',
+    image: '/media/stock-couple-brunch-patio.jpg',
+  },
+  {
     slug: 'do-i-really-need-surgery',
     title: '"Do I Really Need Cataract Surgery Yet?"',
     date: 'May 2026',

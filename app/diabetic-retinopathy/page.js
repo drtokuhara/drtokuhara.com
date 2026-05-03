@@ -164,6 +164,16 @@ export default function DiabeticRetinopathyPage() {
 
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/diabetic-retinopathy-vision-sim.png"
+              alt="Simulation comparing normal vision to vision affected by diabetic retinopathy, showing dark spots and blurred areas in a desert landscape"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+            <div className="content-image-caption">A simulation of how diabetic retinopathy can affect your view of the Coachella Valley. Dark spots, blurred patches, and distorted areas in your central vision.</div>
+          </div>
           <h2 className="section-title">How Diabetic Retinopathy <strong>Affects Vision</strong></h2>
           <p className="prose">
             Retinopathy threatens vision in several distinct ways depending on which structures are affected:
