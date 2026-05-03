@@ -42,7 +42,7 @@ export default function InsightGuilt() {
       ))}
       <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
         <Image
-          src="/media/x-patient-contemplation-waiting-room.jpg"
+          src="/media/patient-distress-concern.png"
           alt=""
           fill
           style={{objectFit: 'cover', objectPosition: 'center 30%'}}
