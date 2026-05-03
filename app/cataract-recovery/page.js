@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   ScrollReveal,
   KineticText,
@@ -83,6 +84,14 @@ export default function CataractRecoveryPage() {
           <p>
             I want to walk you through exactly what recovery looks like, from the moment surgery ends to the moment you leave the surgical center. Knowing what to expect reduces anxiety. And less anxiety makes for a better experience overall.
           </p>
+        </div>
+      </section>
+
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image src="/media/stock-couple-romantic-warm-interior.jpg" alt="Couple relaxing comfortably at home - the easy, familiar recovery that follows cataract surgery" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+          </div>
         </div>
       </section>
 

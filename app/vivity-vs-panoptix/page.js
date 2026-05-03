@@ -84,6 +84,12 @@ export default function VivityVsPanoptix() {
         </div>
       </section>
 
+      <section style={{padding: 0}}>
+        <div className="editorial-image-break">
+          <Image src="/media/stock-couple-golf-cart.png" alt="Active couple enjoying the Coachella Valley lifestyle with clear vision" width={1920} height={400} style={{width: '100%', height: '400px', objectFit: 'cover'}} />
+        </div>
+      </section>
+
       {/* THE CORE DIFFERENCE */}
       <section className="section section-warm">
         <div className="container content-narrow">

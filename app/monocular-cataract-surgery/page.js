@@ -223,6 +223,14 @@ export default function MonocularCataractSurgeryPage() {
         </div>
       </section>
 
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image src="/media/stock-seniors-evening-stroll.jpg" alt="Seniors enjoying an evening walk - the confident, independent life that good surgical outcomes make possible" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+          </div>
+        </div>
+      </section>
+
       <section className="section section-white">
         <div className="container content-narrow">
           <h2 className="section-title">Why Dual Fellowship <strong>Training Matters</strong></h2>

@@ -82,6 +82,14 @@ export default function LaserCataractSurgery() {
         </div>
       </section>
 
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image src="/media/stock-seniors-bocce-desert.jpg" alt="Active seniors in the desert enjoying activities - the active life laser precision makes possible" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+          </div>
+        </div>
+      </section>
+
       {/* WHAT THE LASER DOES */}
       <section className="section section-warm">
         <div className="container content-narrow">

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../schema';
 import AuthorByline from '../components/AuthorByline';
 import {
@@ -95,6 +96,14 @@ export default function ClareonLens() {
           <p>
             I was the first surgeon in the Coachella Valley to use the Clareon lens with the Autonomy delivery system. Being early to new technology is not something I do for novelty. I do it because I evaluate the clinical evidence first, and when the evidence supports a change, I make it. In this case, the change is meaningful in two distinct ways: the material itself, and the way it is delivered.
           </p>
+        </div>
+      </section>
+
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image src="/media/stock-couple-outdoor-sunshine.jpg" alt="Couple enjoying the outdoors - the clear, artifact-free vision the Clareon lens is designed to deliver" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+          </div>
         </div>
       </section>
 

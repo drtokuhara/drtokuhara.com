@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   ScrollReveal,
   KineticText,
@@ -80,6 +81,14 @@ export default function ToricLensAstigmatismPage() {
           <p>
             Cataract surgery gives us a remarkable opportunity. We are already removing the natural lens and placing an implant. That implant can be a standard lens - or it can be a toric lens, specifically designed to reduce the astigmatism that was causing blur before surgery. The decision to use a toric lens takes only a few additional measurements. The difference in outcomes, for the right patient, can be significant.
           </p>
+        </div>
+      </section>
+
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image src="/media/stock-couple-sunny-pathway-luxury.jpg" alt="Couple walking a sunny path together - the clear, confident vision a toric lens can restore" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+          </div>
         </div>
       </section>
 
