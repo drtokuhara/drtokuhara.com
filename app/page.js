@@ -695,8 +695,6 @@ export default function Home() {
             </HorizontalScroll>
           </section>
 
-          <LineDraw style={{margin: '60px auto', maxWidth: '200px'}} color="var(--oasis)" />
-
           {/* ═══ SECTION 3: PHILOSOPHY STATEMENT ═══ */}
           <section className="lux-philosophy">
             <div className="lux-philosophy-inner">

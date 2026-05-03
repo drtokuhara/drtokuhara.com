@@ -12,7 +12,7 @@ export default function FiveQuestionsContent() {
           src="/media/stock-couple-patio-scenic-view.jpg"
           alt=""
           fill
-          style={{objectFit: 'cover', objectPosition: 'center'}}
+          style={{objectFit: 'cover', objectPosition: 'center 30%'}}
           priority
         />
         <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.35) 0%, rgba(0,20,30,0.75) 100%)', zIndex: 1}} />

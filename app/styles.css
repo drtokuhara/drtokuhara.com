@@ -241,7 +241,7 @@ body:has(.homepage) .footer {
 
 /* --- LIFESTYLE PANORAMA --- */
 .lux-lifestyle {
-  padding: 120px 0 100px;
+  padding: 120px 0 0;
   overflow: hidden;
   background: linear-gradient(180deg, var(--bg) 0%, #f8f7f5 50%, var(--bg) 100%);
   text-align: center;
@@ -304,7 +304,7 @@ body:has(.homepage) .footer {
 
 /* --- PHILOSOPHY --- */
 .lux-philosophy {
-  padding: 120px 24px;
+  padding: 60px 24px;
   background: var(--dark-rich);
 }
 

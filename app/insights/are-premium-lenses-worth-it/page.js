@@ -45,7 +45,7 @@ export default function ArePremiumLensesWorthIt() {
           src="/media/stock-couple-balcony-golf-resort.jpg"
           alt=""
           fill
-          style={{objectFit: 'cover', objectPosition: 'center'}}
+          style={{objectFit: 'cover', objectPosition: 'center 30%'}}
           priority
         />
         <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.35) 0%, rgba(0,20,30,0.75) 100%)', zIndex: 1}} />
@@ -123,7 +123,7 @@ export default function ArePremiumLensesWorthIt() {
             alt="Couple walking through a blooming garden - the details that matter when vision is clear"
             width={1920}
             height={400}
-            style={{width: '100%', height: '400px', objectFit: 'cover'}}
+            style={{width: '100%', height: '400px', objectFit: 'cover', objectPosition: 'center 30%'}}
           />
         </div>
       </section>

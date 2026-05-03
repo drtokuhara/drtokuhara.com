@@ -222,7 +222,7 @@ export default function ClareonLens() {
 
       <section style={{padding: 0}}>
         <div className="editorial-image-break">
-          <Image src="/media/stock-couple-patio-scenic-view.jpg" alt="Couple enjoying a scenic view from their patio - the vivid, clear world a quality lens implant reveals" width={1920} height={400} style={{width: '100%', height: '400px', objectFit: 'cover'}} />
+          <Image src="/media/stock-couple-patio-scenic-view.jpg" alt="Couple enjoying a scenic view from their patio - the vivid, clear world a quality lens implant reveals" width={1920} height={400} style={{width: '100%', height: '400px', objectFit: 'cover', objectPosition: 'center 30%'}} />
         </div>
       </section>
 

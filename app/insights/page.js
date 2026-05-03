@@ -184,7 +184,7 @@ export default function InsightsPage() {
                           alt={insight.title}
                           width={600}
                           height={340}
-                          style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '12px 12px 0 0' }}
+                          style={{ width: '100%', height: '200px', objectFit: 'cover', objectPosition: 'center 30%', borderRadius: '12px 12px 0 0' }}
                         />
                       </div>
                       <div className="insight-card-body">

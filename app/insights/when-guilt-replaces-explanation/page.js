@@ -45,7 +45,7 @@ export default function InsightGuilt() {
           src="/media/x-patient-contemplation-waiting-room.jpg"
           alt=""
           fill
-          style={{objectFit: 'cover', objectPosition: 'center'}}
+          style={{objectFit: 'cover', objectPosition: 'center 30%'}}
           priority
         />
         <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.35) 0%, rgba(0,20,30,0.75) 100%)', zIndex: 1}} />
@@ -87,7 +87,7 @@ export default function InsightGuilt() {
             alt="Seniors enjoying life with clear vision"
             width={1920}
             height={400}
-            style={{width: '100%', height: '400px', objectFit: 'cover'}}
+            style={{width: '100%', height: '400px', objectFit: 'cover', objectPosition: 'center 30%'}}
           />
         </div>
       </section>

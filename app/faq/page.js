@@ -181,7 +181,7 @@ export default function FAQPage() {
           src="/media/faq-hero-consultation.png"
           alt="Patient consultation at Desert Vision Center"
           fill
-          style={{objectFit: 'cover', objectPosition: 'center'}}
+          style={{objectFit: 'cover', objectPosition: 'center 25%'}}
           priority
         />
         <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.4) 0%, rgba(0,20,30,0.7) 100%)', zIndex: 1}} />

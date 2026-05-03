@@ -21,7 +21,7 @@ export default function TwentyYearsForwardContent() {
           src="/media/stock-seniors-resort-promenade-night.jpg"
           alt="Seniors strolling along a resort promenade at night"
           fill
-          style={{objectFit: 'cover', objectPosition: 'center'}}
+          style={{objectFit: 'cover', objectPosition: 'center 30%'}}
           priority
         />
         <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.4) 0%, rgba(0,20,30,0.7) 100%)', zIndex: 1}} />
@@ -90,7 +90,7 @@ export default function TwentyYearsForwardContent() {
             alt="Seniors toasting outdoors in the desert"
             width={1920}
             height={400}
-            style={{width: '100%', height: '400px', objectFit: 'cover'}}
+            style={{width: '100%', height: '400px', objectFit: 'cover', objectPosition: 'center 30%'}}
           />
         </div>
       </section>

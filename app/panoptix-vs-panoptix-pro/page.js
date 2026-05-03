@@ -93,7 +93,7 @@ export default function PanOptixVsPanOptixPro() {
 
       <section style={{padding: 0}}>
         <div className="editorial-image-break">
-          <Image src="/media/stock-couple-sunny-pathway-luxury.jpg" alt="Couple walking together outdoors at a resort - clear vision for an active lifestyle" width={1920} height={400} style={{width: '100%', height: '400px', objectFit: 'cover'}} />
+          <Image src="/media/stock-couple-sunny-pathway-luxury.jpg" alt="Couple walking together outdoors at a resort - clear vision for an active lifestyle" width={1920} height={400} style={{width: '100%', height: '400px', objectFit: 'cover', objectPosition: 'center 30%'}} />
         </div>
       </section>
 
@@ -240,7 +240,7 @@ export default function PanOptixVsPanOptixPro() {
 
       <section style={{padding: 0}}>
         <div className="editorial-image-break">
-          <Image src="/media/stock-seniors-formal-resort-dusk.jpg" alt="Seniors enjoying an evening out at a resort - the social moments that depend on clear vision" width={1920} height={400} style={{width: '100%', height: '400px', objectFit: 'cover'}} />
+          <Image src="/media/stock-seniors-formal-resort-dusk.jpg" alt="Seniors enjoying an evening out at a resort - the social moments that depend on clear vision" width={1920} height={400} style={{width: '100%', height: '400px', objectFit: 'cover', objectPosition: 'center 30%'}} />
         </div>
       </section>
 
