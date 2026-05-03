@@ -31,6 +31,14 @@ const insights = [
     image: '/media/stock-couple-brunch-patio.jpg',
   },
   {
+    slug: 'the-needle-that-wasnt-there',
+    title: 'The Needle That Wasn\'t There',
+    date: 'May 2026',
+    description: 'An 86-year-old woman avoided surgery for years because of a needle that is no longer used. Her late husband was an ophthalmologist. A story about outdated fears and how medicine evolves.',
+    cluster: 'Decisions & Timing',
+    image: '/media/elderly-woman-poolside-desert.jpg',
+  },
+  {
     slug: 'do-i-really-need-surgery',
     title: '"Do I Really Need Cataract Surgery Yet?"',
     date: 'May 2026',
