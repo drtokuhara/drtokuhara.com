@@ -330,7 +330,7 @@ export default function PatientJourneyContent() {
           <p>{t('patientJourney.cta.subtitle') || "You don\u2019t need to be ready for surgery. You just need to be ready for a conversation."}</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">{t('common.scheduleConsultation') || 'Schedule a Consultation'}</Link>
-            <Link href="/cataract-surgery" className="btn-secondary">{t('common.learnAboutCataractSurgery') || 'Learn About Cataract Surgery'}</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
           </div>
         </div>
       </section>

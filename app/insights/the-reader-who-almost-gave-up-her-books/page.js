@@ -146,6 +146,11 @@ export default function InsightReader() {
               <em>If you're considering cataract surgery and you have a strong preference about how you use your eyes - reading, crafts, cooking, computers - tell your surgeon. The lens can be aimed at what matters to you. It's not always about getting the fanciest technology. Sometimes the simplest choice is the right one, and nobody bothered to mention it.</em>
             </p>
           </div></BlurReveal>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

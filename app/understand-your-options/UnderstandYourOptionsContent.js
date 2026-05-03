@@ -240,7 +240,7 @@ export default function UnderstandYourOptionsContent() {
           <p>{t('understandOptions.cta.subtitle') || "You don't need to be ready for surgery. You just need to be curious enough to ask."}</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">{t('common.scheduleConsultation') || 'Schedule a Consultation'}</Link>
-            <Link href="/patient-journey" className="btn-secondary">{t('common.seeYourJourney') || 'See Your Patient Journey'}</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
           </div>
         </div>
       </section>

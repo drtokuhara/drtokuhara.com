@@ -149,6 +149,11 @@ export default function InsightWhenMore() {
               <em>If you're considering a premium or multifocal lens implant, the conversation should start with your tolerance for tradeoffs, not with the technology's capabilities. Every lens design involves compromise. The question isn't which lens is the best. It's which lens is the best fit for your eyes, your lifestyle, and your expectations. And if you've had a result that doesn't feel right, you deserve a thorough explanation, not just reassurance that the numbers look fine.</em>
             </p>
           </div></BlurReveal>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

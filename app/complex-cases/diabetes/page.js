@@ -85,7 +85,7 @@ export default function DiabetesPage() {
           </p>
           <ul className="content-list">
             <li><strong>No retinopathy or mild NPDR:</strong> Cataract surgery can typically proceed with standard timing. I still monitor the retina carefully after surgery, as the surgical inflammation can occasionally accelerate retinopathy progression.</li>
-            <li><strong>Moderate to severe NPDR:</strong> The retina needs attention before or alongside cataract surgery. I may coordinate with a retina specialist for pan-retinal photocoagulation or anti-VEGF injections to stabilize the retina before proceeding with cataract removal.</li>
+            <li><strong>Moderate to severe NPDR:</strong> The retina needs attention before or alongside cataract surgery. Because I am retina-trained, I perform pan-retinal photocoagulation and anti-VEGF injections myself, in-house, to stabilize the retina before proceeding with cataract removal. This is the true advantage of choosing a cataract surgeon with retina fellowship training: I manage both the diabetic retinopathy and the cataract surgery as a single, cohesive treatment plan rather than splitting your care between two separate doctors.</li>
             <li><strong>Proliferative diabetic retinopathy (PDR):</strong> Active PDR significantly increases the risk of surgical complications including vitreous hemorrhage and neovascular glaucoma. The retinopathy must be treated and stabilized before cataract surgery, except in cases where the cataract is so dense that it prevents adequate retinal treatment.</li>
           </ul>
 
@@ -120,7 +120,7 @@ export default function DiabetesPage() {
 
           <h2 className="section-title">My Retina Training <strong>Makes the Difference</strong></h2>
           <p className="prose">
-            Because I am fellowship-trained in retina, I can evaluate diabetic retinopathy, read OCT scans, perform retinal imaging, and make treatment decisions about the retina - not just the cataract. Most cataract surgeons refer diabetic retinopathy management entirely to a retina specialist. I can assess both conditions in one visit, coordinate timing, and make integrated decisions. That means fewer appointments, less coordination confusion, and a surgeon who understands your entire eye at every step.
+            Because I am fellowship-trained in retina, I can evaluate diabetic retinopathy, read OCT scans, perform retinal imaging, and make treatment decisions about the retina - not just the cataract. Most cataract surgeons refer diabetic retinopathy management entirely to a retina specialist. I do it all in-house. I perform the anti-VEGF injections, the laser photocoagulation, and the cataract surgery. One surgeon, one cohesive plan, one set of eyes watching everything. That means fewer appointments, no coordination gaps between separate doctors, and a surgeon who understands your entire eye at every step.
           </p>
         </div>
       </section>
@@ -133,7 +133,7 @@ export default function DiabetesPage() {
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
             <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
-            <Link href="/complex-cases" className="btn-secondary">Back to Complex Cases</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
           </div>
         </div>
       </section>

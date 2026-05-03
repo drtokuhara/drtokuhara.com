@@ -206,6 +206,11 @@ export default function InsightAILens() {
               <em>Come prepared. Do your research. Ask AI anything you want. But then sit down with a surgeon who will actually look at your eyes, tell you what they find, and help you make a decision that accounts for the things no algorithm can see. That is where the best outcomes live: at the intersection of your questions and your doctor's experience.</em>
             </p>
           </div></BlurReveal>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

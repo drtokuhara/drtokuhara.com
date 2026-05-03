@@ -77,8 +77,8 @@ export default function DownSyndromePage() {
 
           <div className="content-image" style={{margin: '32px 0'}}>
             <Image
-              src="/media/stock-family-outdoor-portrait.jpg"
-              alt="Family portrait outdoors in natural light - families caring for loved ones with special needs"
+              src="/media/down-syndrome-patient-1.jpg"
+              alt="Woman with Down syndrome smiling outdoors with palm trees and blue sky"
               width={680}
               height={453}
               style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
@@ -103,6 +103,28 @@ export default function DownSyndromePage() {
           <p className="prose">
             Restoring clear vision for a patient with Down syndrome can be transformative. It improves their ability to engage with the world, participate in activities, and maintain the independence they have. These are among the most rewarding cases I perform.
           </p>
+
+          <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginTop: '32px'}} className="compare-grid">
+            <div className="content-image">
+              <Image
+                src="/media/down-syndrome-portrait-1.png"
+                alt="Woman with Down syndrome reading on a tablet by the pool"
+                width={680}
+                height={453}
+                style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+              />
+            </div>
+            <div className="content-image">
+              <Image
+                src="/media/down-syndrome-portrait-2.png"
+                alt="Man with Down syndrome painting a landscape at an easel by the pool"
+                width={680}
+                height={453}
+                style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+              />
+            </div>
+          </div>
+          <div className="content-image-caption" style={{textAlign: 'center', marginTop: '8px'}}>Clear vision supports independence, creativity, and engagement with the world.</div>
         </div>
       </section>
 
@@ -114,7 +136,7 @@ export default function DownSyndromePage() {
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
             <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
-            <Link href="/complex-cases" className="btn-secondary">Back to Complex Cases</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
           </div>
         </div>
       </section>

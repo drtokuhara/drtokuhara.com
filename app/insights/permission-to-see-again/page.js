@@ -149,6 +149,11 @@ export default function InsightPermission() {
               <em>If you've been putting off your own eye care - because of caregiving, because of grief, because life just got in the way - you haven't failed. You've been handling something that mattered. And whenever you're ready, the door is open. No judgment. No urgency. Just a conversation about what comes next.</em>
             </p>
           </div></BlurReveal>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

@@ -171,6 +171,11 @@ export default function InsightWhenIsTheRightTime() {
               <em>You don't have to wait until it's unbearable. You don't need anyone's permission. The right time is when the cost of staying the same has started to exceed the cost of change, and only you can feel where that line is. My job is to make sure you have the information to draw it clearly.</em>
             </p>
           </div></BlurReveal>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

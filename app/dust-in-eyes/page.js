@@ -297,7 +297,7 @@ export default function DustInEyesPage() {
           <p>Desert Vision Center treats the full range of eye surface conditions common in the Coachella Valley. Let&rsquo;s take a look.</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule an Appointment</Link>
-            <Link href="/faq" className="btn-secondary">See Common Questions</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
           </div>
         </div>
       </section>

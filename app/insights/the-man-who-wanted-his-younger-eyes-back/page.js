@@ -149,6 +149,11 @@ export default function InsightYoungerEyes() {
               <em>Choosing to wait is not the same as choosing to do nothing. In cataract surgery, timing matters as much as technique. If your vision is still functional and your expectations go beyond what current technology can promise, a thoughtful pause may protect you from an outcome that looks successful on paper but does not feel right in practice. The goal is not just better vision. It is vision that matches the life you are actually living.</em>
             </p>
           </div></BlurReveal>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

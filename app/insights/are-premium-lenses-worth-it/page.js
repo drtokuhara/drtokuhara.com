@@ -190,6 +190,11 @@ export default function ArePremiumLensesWorthIt() {
               <em>Premium lenses are worth it for the right patient with the right eyes and the right expectations. They are not worth it for a patient who was never given an honest picture of the tradeoffs. My job is to make sure every patient I see has enough information to answer the question for themselves, and to tell them clearly when their eye is not the right eye for a premium lens.</em>
             </p>
           </div></BlurReveal>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

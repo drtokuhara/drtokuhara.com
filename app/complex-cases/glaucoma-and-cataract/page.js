@@ -11,7 +11,7 @@ import AuthorByline from '../../components/AuthorByline';
 const jsonLd = [
   articleSchema({
     title: 'Glaucoma and Cataract Surgery - Combined MIGS Procedures',
-    description: 'When glaucoma and cataracts coexist, combined surgery with MIGS can address both conditions. Dr. Tokuhara explains iStent, KDB Goniotomy, and pressure management.',
+    description: 'When glaucoma and cataracts coexist, combined surgery with MIGS can address both conditions. Dr. Tokuhara explains iStent, KDB, Hydrus, canaloplasty (Omni), and pressure management.',
     slug: '/complex-cases/glaucoma-and-cataract',
     datePublished: '2026-05-01',
   }),
@@ -28,7 +28,7 @@ export const metadata = {
   alternates: { canonical: '/complex-cases/glaucoma-and-cataract' },
   openGraph: {
     title: 'Glaucoma & Cataract Surgery | Dr. Keith Tokuhara',
-    description: 'Combined cataract and glaucoma surgery with MIGS at Desert Vision Center. iStent, KDB Goniotomy, and expert pressure management.',
+    description: 'Combined cataract and glaucoma surgery with MIGS at Desert Vision Center. iStent, KDB, Hydrus, Omni, and expert pressure management.',
     url: 'https://drtokuhara.com/complex-cases/glaucoma-and-cataract',
   },
 };
@@ -86,6 +86,8 @@ export default function GlaucomaAndCataractPage() {
           <ul className="content-list">
             <li><strong>iStent / iStent inject:</strong> The smallest medical device ever implanted in the human body. These tiny titanium stents are placed in the trabecular meshwork to create a permanent bypass for aqueous fluid drainage. They are ideal for mild to moderate open-angle glaucoma and can reduce pressure enough to eliminate one or more glaucoma medications.</li>
             <li><strong>KDB Goniotomy (Kahook Dual Blade):</strong> A technique where I use a specialized blade to remove a strip of the trabecular meshwork, the tissue that is blocking fluid drainage in most open-angle glaucoma. I was the first surgeon in the Coachella Valley to perform KDB Goniotomy. It is a more aggressive approach than iStent and can produce a greater pressure reduction.</li>
+            <li><strong>Canaloplasty (Omni Surgical System):</strong> Uses a microcatheter to open and expand Schlemm's canal, the eye's natural drainage system, around its full 360 degrees. This restores the outflow pathway that glaucoma has compromised. It can be combined with trabecular meshwork removal for a comprehensive approach to the entire drainage angle.</li>
+            <li><strong>Hydrus Microstent:</strong> A crescent-shaped scaffold placed inside Schlemm's canal to keep it expanded across approximately 90 degrees. It spans three clock hours of the drainage system, providing a larger outflow area than point-access devices. Well suited for mild to moderate open-angle glaucoma.</li>
             <li><strong>Goniosynechialysis:</strong> In some eyes, the drainage angle has become partially closed by adhesions (peripheral anterior synechiae). I can break these adhesions open during cataract surgery to restore drainage.</li>
           </ul>
 
@@ -128,7 +130,7 @@ export default function GlaucomaAndCataractPage() {
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
             <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
-            <Link href="/complex-cases" className="btn-secondary">Back to Complex Cases</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
           </div>
         </div>
       </section>

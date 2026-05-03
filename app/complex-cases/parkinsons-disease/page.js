@@ -71,8 +71,8 @@ export default function ParkinsonsDiseasePage() {
 
           <div className="content-image" style={{margin: '32px 0'}}>
             <Image
-              src="/media/stock-man-walking-dog-sunset.png"
-              alt="Man walking his dog at sunset - maintaining independence and quality of life"
+              src="/media/elderly-man-walker-desert-path.jpg"
+              alt="Elderly man with a walker on a desert pathway, representing Parkinson's patients navigating daily life with determination"
               width={680}
               height={453}
               style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
@@ -101,6 +101,16 @@ export default function ParkinsonsDiseasePage() {
         </div>
       </section>
 
+      
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div className="content-image">
+            <Image src="/media/elderly-man-walker-courtyard-mountains.jpg" alt="Elderly man with a walker in a landscaped courtyard with mountain views" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+          </div>
+          <div className="content-image-caption" style={{textAlign: 'center', marginTop: '8px'}}>Clear vision reduces fall risk and supports the independence that matters most to Parkinson's patients.</div>
+        </div>
+      </section>
+
       <LineDraw style={{margin: "0 auto", maxWidth: "200px"}} color="var(--oasis)" />
       <section className="cta">
         <div className="container">
@@ -109,7 +119,7 @@ export default function ParkinsonsDiseasePage() {
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
             <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
-            <Link href="/complex-cases" className="btn-secondary">Back to Complex Cases</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
           </div>
         </div>
       </section>

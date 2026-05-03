@@ -272,7 +272,7 @@ export default function ReadyForSurgeryContent() {
           <p>{t('readyForSurgery.cta.subtitle') || "Schedule your surgical consultation. We'll take it from here."}</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">{t('common.scheduleConsultation') || 'Schedule a Consultation'}</Link>
-            <Link href="/clear-in-a-day" className="btn-secondary">{t('common.learnAboutClearInADay') || 'Learn About CLEAR in a Day'}</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
           </div>
         </div>
       </section>

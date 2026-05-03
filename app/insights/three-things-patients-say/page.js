@@ -141,6 +141,11 @@ export default function InsightThreeThingsPatientsSay() {
             If you are approaching cataract surgery and wondering which lens is right for you, start by thinking about how you spend your day. Not which lens has the best brochure. The answer is usually already in the way you describe your life.
           </p>
 
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
+
           <div className="section-divider" style={{margin: '40px auto'}} />
 
           <p style={{textAlign: 'center', marginTop: '24px'}}>

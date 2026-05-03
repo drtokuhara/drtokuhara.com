@@ -23,6 +23,14 @@ export const metadata = {
 
 const insights = [
   {
+    slug: 'when-the-surgeon-says-wait',
+    title: 'When the Surgeon Says Wait',
+    date: 'May 2026',
+    description: 'Many surgeons default to yes because surgery generates revenue. A reflection on the courage it takes to tell a patient they are not ready, and why that honesty builds lasting trust.',
+    cluster: 'Surgical Restraint',
+    image: '/media/stock-couple-desert-overlook.jpg',
+  },
+  {
     slug: 'when-ai-recommends-your-lens',
     title: 'When AI Recommends Your Lens... But Your Eye Tells a Different Story',
     date: 'May 2026',

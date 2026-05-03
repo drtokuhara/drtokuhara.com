@@ -168,6 +168,11 @@ export default function FiveQuestionsContent() {
             </p>
           </ScrollReveal>
 
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
+
           <LineDraw style={{margin: '40px auto', maxWidth: '200px'}} />
 
           <ScrollReveal delay={0.2}>

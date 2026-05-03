@@ -1,143 +1,247 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { ScrollReveal, BlurReveal, LineDraw } from '../components/ScrollAnimations';
+import {
+  ScrollReveal,
+  BlurReveal,
+  LineDraw,
+} from '../components/ScrollAnimations';
 
 const faqSchema = {
-  '@context': 'https://schema.org', '@type': 'FAQPage',
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
   mainEntity: [
-    { '@type': 'Question', name: 'Is cataract surgery safe?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Cataract surgery is one of the safest and most commonly performed surgeries in the world, with over 4 million procedures performed annually in the United States alone. The success rate exceeds 99%. While no surgery is completely risk-free, serious complications are rare and most are treatable.' } },
-    { '@type': 'Question', name: 'What are the risks of cataract surgery?', acceptedAnswer: { '@type': 'Answer', text: 'Risks include infection (endophthalmitis, approximately 1 in 1,000-3,000), posterior capsule rupture (1-3%), cystoid macular edema, retinal detachment, and iris damage. An experienced surgeon minimizes these risks through technique, preparation, and the ability to manage complications if they occur.' } },
-    { '@type': 'Question', name: 'How many cataract surgeries are performed each year?', acceptedAnswer: { '@type': 'Answer', text: 'Over 4 million cataract surgeries are performed annually in the United States, making it the most commonly performed surgery in the country. Worldwide, the number exceeds 20 million annually.' } },
-    { '@type': 'Question', name: 'What makes cataract surgery so safe?', acceptedAnswer: { '@type': 'Answer', text: 'Modern cataract surgery uses small incisions (often less than 3mm), topical anesthesia (numbing drops instead of needles), advanced phacoemulsification technology, and precise intraocular lens calculations. The procedure typically takes less than 15-20 minutes, and most patients go home the same day.' } },
+    {
+      '@type': 'Question',
+      name: 'Is cataract surgery safe?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Cataract surgery is one of the safest elective surgical procedures in medicine. More than 4 million procedures are performed in the United States every year, with an overall success rate exceeding 99 percent. Serious complications are rare, and the vast majority of patients see meaningful improvement in vision.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the success rate of cataract surgery?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The success rate for cataract surgery exceeds 99 percent when measured by the absence of serious complications. Most patients experience significant improvement in visual clarity, contrast sensitivity, and quality of life.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What are the risks of cataract surgery?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Possible risks include infection, inflammation, elevated eye pressure, and posterior capsule opacification, which is a common, easily treated cloudiness that can develop months after surgery. Rare but serious complications include retinal detachment and severe infection. An experienced surgeon will discuss your individual risk profile before surgery.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What makes cataract surgery safer?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Modern cataract surgery uses phacoemulsification through a very small incision. The small incision reduces astigmatism, heals quickly, and requires no sutures in most cases. Topical anesthesia eliminates injection-based risks. Outpatient surgery minimizes hospital-associated risks. High surgeon volume and fellowship training further reduce complication rates.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Who should be extra careful about cataract surgery?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Patients with pseudoexfoliation syndrome, Fuchs dystrophy, prior retinal surgery, prior LASIK or radial keratotomy, glaucoma, or diabetes require more careful evaluation and planning. These are not automatically higher-risk situations, but they require a surgeon with specific experience managing them.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do I know if I have the right surgeon for cataract surgery?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Look for a surgeon who performs high surgical volume, has fellowship training in anterior segment surgery, is transparent about risks and complication rates, and takes time to understand your eyes and goals. Volume builds instinct. Training builds judgment. Transparency builds trust.',
+      },
+    },
   ],
 };
 
 export const metadata = {
-  title: 'Is Cataract Surgery Safe? An Honest Answer from a Surgeon Who Has Performed 10,000+',
-  description: 'An honest, evidence-based answer about cataract surgery safety. Dr. Tokuhara covers success rates, real risks, what makes it safe, and what makes it safer with the right surgeon.',
+  title: 'Is Cataract Surgery Safe? An Honest Answer',
+  description: 'Cataract surgery has a success rate exceeding 99 percent and over 4 million procedures are performed annually in the US. An honest look at the safety record, the real risks, and what makes outcomes better.',
   alternates: { canonical: '/is-cataract-surgery-safe' },
   openGraph: {
-    title: 'Is Cataract Surgery Safe? | Dr. Keith Tokuhara',
-    description: 'Over 4 million performed annually in the US with a 99%+ success rate. Here is what that means and what it does not.',
+    title: 'Is Cataract Surgery Safe? An Honest Answer | Dr. Keith Tokuhara',
+    description: 'One of the safest surgeries in medicine - but safety depends on more than statistics. Dr. Tokuhara explains what makes cataract surgery safe, what risks exist, and why the right surgeon matters.',
     url: 'https://drtokuhara.com/is-cataract-surgery-safe',
   },
 };
 
-export default function IsCataractSurgerySafe() {
+export default function IsCataractSurgerySafePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <section className="page-hero">
-        <div className="container">
-          <ScrollReveal direction="up" once={true}><h1>Is Cataract Surgery <strong>Safe?</strong></h1></ScrollReveal>
-          <p className="page-hero-sub">The short answer is yes. The honest answer takes a few more paragraphs.</p>
+      {/* HERO */}
+      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
+        <Image
+          src="/media/dr-t-slit-lamp-patient-view.jpg"
+          fill
+          style={{objectFit: 'cover', objectPosition: 'center 30%'}}
+          priority
+          alt="Dr. Tokuhara examining a patient at the slit lamp"
+        />
+        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.35) 0%, rgba(0,20,30,0.75) 100%)', zIndex: 1}} />
+        <div style={{position: 'relative', zIndex: 2}} className="container">
+          <ScrollReveal direction="up" once={true}>
+            <h1>Is Cataract Surgery <strong>Safe?</strong></h1>
+            <p className="page-hero-sub">An honest answer: yes, with important context about what that means for your eyes specifically.</p>
+          </ScrollReveal>
         </div>
       </section>
 
+      {/* THE SHORT ANSWER */}
       <section className="section section-white">
         <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">The Short <strong>Answer</strong></h2>
+          </ScrollReveal>
           <p className="body-lead">
-            Cataract surgery is the most commonly performed surgery in the United States. Over four million procedures are done every year. The success rate exceeds 99%.
+            Yes. Cataract surgery is one of the safest elective surgical procedures in all of medicine. More than 4 million procedures are performed in the United States every year, with an overall success rate exceeding 99 percent.
           </p>
           <p>
-            Those numbers are remarkable. But if you are the patient sitting in the exam chair, statistics only go so far. You want to know: is it safe for <em>me</em>? What could go wrong? And what happens if it does?
+            That is not marketing. That is the published literature, confirmed by decades of outcomes data from practices around the world.
           </p>
           <p>
-            I have performed over 10,000 cataract surgeries. Here is what I tell every patient who asks.
+            But that is also the population-level answer. Your individual situation may involve factors that shift the risk profile. And surgery performed by a high-volume, fellowship-trained surgeon is meaningfully different from surgery performed by someone with limited experience in complex cases. The statistics are reassuring. The specific details of your eyes and your surgeon matter too.
           </p>
+          <div className="content-image" style={{marginTop: '32px'}}>
+            <Image
+              src="/media/patient-couple-consultation.jpg"
+              alt="Patient consultation at Desert Vision Center"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
+      {/* WHAT MAKES IT SAFE */}
       <section className="section section-warm">
         <div className="container content-narrow">
-          <h2 className="section-title">What Makes It <strong>So Safe</strong></h2>
-          <p>Modern cataract surgery bears almost no resemblance to what it was even 20 years ago:</p>
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">What Makes It <strong>Safe</strong></h2>
+          </ScrollReveal>
+          <p>
+            Modern cataract surgery bears little resemblance to the procedure of even 20 years ago. Several advances have made it both more effective and safer:
+          </p>
           <div className="insight-list">
             <div className="insight-item">
-              <strong>Tiny incisions</strong>
-              <p>Typically less than 3mm. Many are self-sealing, meaning no stitches are needed. Smaller wounds heal faster and carry less risk of infection.</p>
+              <strong>Small-incision phacoemulsification.</strong>
+              <p>The cloudy lens is removed through an incision typically less than 3mm. This reduces astigmatism compared to older large-incision techniques, heals without sutures in most cases, and significantly lowers infection risk.</p>
             </div>
             <div className="insight-item">
-              <strong>Topical anesthesia</strong>
-              <p>Numbing eye drops instead of injections around the eye. This eliminates needle-related risks entirely and allows patients to recover faster.</p>
+              <strong>Topical anesthesia.</strong>
+              <p>Eye drops numb the eye for surgery. There is no needle near the eye, no injection behind the eye, and no general anesthesia required. This removes an entire category of risk that older approaches carried.</p>
             </div>
             <div className="insight-item">
-              <strong>Advanced phacoemulsification</strong>
-              <p>Ultrasound technology breaks the cataract into tiny fragments that are gently suctioned out. Less energy, less tissue disruption, faster healing.</p>
+              <strong>Outpatient procedure.</strong>
+              <p>Surgery takes less than 20 minutes for most straightforward cases. Patients go home within an hour. Shorter exposure time and minimal facility stay reduce hospital-associated risks.</p>
             </div>
             <div className="insight-item">
-              <strong>Femtosecond laser option</strong>
-              <p>Computer-guided <Link href="/laser-cataract-surgery" style={{color: 'var(--night-horizon)'}}>laser precision</Link> for the most critical steps of surgery. Not required for every patient, but available when it adds value.</p>
-            </div>
-            <div className="insight-item">
-              <strong>Quick procedure</strong>
-              <p>Typically 15-20 minutes. You go home the same day. Most patients are back to normal activities within days.</p>
+              <strong>Quick recovery.</strong>
+              <p>Most patients notice improved vision within 24 hours. Full visual stabilization typically occurs by 4 to 6 weeks. There are no stitches to remove and no prolonged activity restrictions for most patients.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section style={{padding: 0}}>
-        <div className="editorial-image-break">
-          <Image src="/media/stock-couple-sunny-pathway-luxury.jpg" alt="Couple walking confidently through a sunny pathway" width={1920} height={400} style={{width: '100%', height: '400px', objectFit: 'cover', objectPosition: 'center 30%'}} />
-        </div>
-      </section>
-
+      {/* THE RISKS THAT DO EXIST */}
       <section className="section section-white">
         <div className="container content-narrow">
-          <h2 className="section-title">The Risks <strong>Honestly</strong></h2>
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">The Risks That <strong>Do Exist</strong></h2>
+          </ScrollReveal>
           <p>
-            "Safe" does not mean "zero risk." No surgery does. Here is a transparent look at the real numbers:
+            Being honest about safety means acknowledging that cataract surgery, like all surgery, carries real risks. Most are uncommon. Most are manageable when recognized and addressed appropriately.
           </p>
-          <div style={{display: 'grid', gap: '12px', marginTop: '20px'}}>
-            <div style={{background: 'var(--bg-warm)', padding: '20px 24px', borderRadius: '8px', display: 'flex', gap: '16px'}}>
-              <strong style={{color: 'var(--night-horizon)', fontSize: '14px', whiteSpace: 'nowrap'}}>1-3%</strong>
-              <div><strong>Posterior capsule rupture.</strong> The membrane behind the cataract breaks during surgery. Manageable by an experienced surgeon during the same procedure. <Link href="/cataract-surgery-complications#capsule-rupture" style={{color: 'var(--night-horizon)'}}>Learn more</Link></div>
-            </div>
-            <div style={{background: 'var(--bg-warm)', padding: '20px 24px', borderRadius: '8px', display: 'flex', gap: '16px'}}>
-              <strong style={{color: 'var(--night-horizon)', fontSize: '14px', whiteSpace: 'nowrap'}}>1-2%</strong>
-              <div><strong>Cystoid macular edema.</strong> Swelling at the retina center, usually appearing weeks after surgery. Most cases respond to anti-inflammatory drops. <Link href="/cataract-surgery-complications#cme" style={{color: 'var(--night-horizon)'}}>Learn more</Link></div>
-            </div>
-            <div style={{background: 'var(--bg-warm)', padding: '20px 24px', borderRadius: '8px', display: 'flex', gap: '16px'}}>
-              <strong style={{color: 'var(--night-horizon)', fontSize: '14px', whiteSpace: 'nowrap'}}>0.5-1%</strong>
-              <div><strong>Retinal detachment.</strong> Rare but serious. Higher risk in very nearsighted eyes. Requires prompt surgical repair. <Link href="/cataract-surgery-complications#retinal-detachment" style={{color: 'var(--night-horizon)'}}>Learn more</Link></div>
-            </div>
-            <div style={{background: 'var(--bg-warm)', padding: '20px 24px', borderRadius: '8px', display: 'flex', gap: '16px'}}>
-              <strong style={{color: 'var(--night-horizon)', fontSize: '14px', whiteSpace: 'nowrap'}}>~0.05%</strong>
-              <div><strong>Endophthalmitis.</strong> Internal eye infection. Extremely rare with modern antisepsis protocols. The most feared complication, and the one we take the most precautions to prevent. <Link href="/cataract-surgery-complications#endophthalmitis" style={{color: 'var(--night-horizon)'}}>Learn more</Link></div>
-            </div>
-          </div>
-          <p style={{marginTop: '24px'}}>
-            For a comprehensive guide to every complication, how I manage each one, and the research behind the numbers, visit my <Link href="/cataract-surgery-complications" style={{color: 'var(--night-horizon)', textDecoration: 'underline'}}>Cataract Surgery Complications</Link> page. It is the most thorough resource of its kind on any surgeon's website.
+          <p>
+            Common and expected: mild inflammation, light sensitivity, and fluctuating vision in the first days after surgery are normal. Posterior capsule opacification, a cloudiness that develops months to years later, occurs in up to 30 percent of patients and is treated quickly with a brief laser procedure.
           </p>
+          <p>
+            Less common but important: elevated eye pressure, persistent corneal swelling, and retinal detachment are more serious. Dropped nuclear fragments require additional surgery to remove. These happen in a small fraction of cases, but they happen. A surgeon who tells you complications never occur is not being honest with you.
+          </p>
+          <BlurReveal>
+            <div className="insight-highlight">
+              <p><strong>For a complete look at what can go wrong and how I manage it,</strong> see the <Link href="/cataract-surgery-complications">Cataract Surgery Complications guide</Link>.</p>
+            </div>
+          </BlurReveal>
         </div>
       </section>
 
+      {/* SAFER WITH THE RIGHT SURGEON */}
       <section className="section section-warm">
         <div className="container content-narrow">
-          <h2 className="section-title">What Makes It <strong>Safer</strong></h2>
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">Safer With the <strong>Right Surgeon</strong></h2>
+          </ScrollReveal>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/complex-cases-surgical-precision.jpg"
+              alt="Precision in cataract surgery - experience and volume make a measurable difference"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
-            The procedure is safe. But the right surgeon makes it safer. Here is what to look for:
+            Surgical volume is not vanity. A surgeon who has performed 10,000 procedures has seen a range of complications, unusual anatomy, and unexpected intraoperative findings that a surgeon with 500 cases has not. This experience builds the instinct to recognize a problem early and respond before it escalates.
           </p>
-          <ul className="content-list">
-            <li><strong>Surgical volume.</strong> A surgeon who performs hundreds of cases per year has seen more variations and managed more unexpected situations than one who does a few dozen.</li>
-            <li><strong>Complication management experience.</strong> Every surgeon encounters complications. The question is whether they have the training to handle them in real time.</li>
-            <li><strong>Fellowship training.</strong> Sub-specialty training in areas like medical retina means the surgeon understands the full eye, not just the cataract.</li>
-            <li><strong>Honesty.</strong> A surgeon who talks openly about risks, sets realistic expectations, and counsels you against surgery when it is not in your interest. <Link href="/ethical-cataract-care" style={{color: 'var(--night-horizon)'}}>Ethics matter</Link>.</li>
-            <li><strong>Complex case experience.</strong> If you have <Link href="/complex-cases" style={{color: 'var(--night-horizon)'}}>additional eye conditions</Link>, you need a surgeon who has managed eyes like yours before.</li>
-          </ul>
+          <p>
+            Fellowship training in anterior segment surgery provides specialized preparation that residency alone does not. It teaches not just technique, but the judgment to know when to pause, when to adapt, and when to convert to a different approach.
+          </p>
+          <p>
+            Complication management is as important as complication avoidance. The best surgeons are not the ones who never have complications. They are the ones who recognize complications quickly, handle them skillfully, and communicate honestly with patients throughout.
+          </p>
+          <p>
+            I have performed more than 10,000 cataract procedures. My dual fellowship training covers both anterior segment surgery and medical retina, which gives me a perspective on the full visual system that most cataract surgeons do not have. I also take on complex and revision cases referred by other surgeons. For more on what that training means in practice, see the <Link href="/choosing-your-surgeon">Choosing Your Surgeon</Link> guide.
+          </p>
         </div>
       </section>
 
+      {/* RISK FACTORS */}
       <section className="section section-white">
         <div className="container content-narrow">
-          <BlurReveal><div className="clinic-thought">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">Conditions That Need <strong>Extra Planning</strong></h2>
+          </ScrollReveal>
+          <p>
+            Certain pre-existing conditions increase the complexity of cataract surgery. They do not make surgery impossible or necessarily more dangerous. But they require a surgeon with the experience and preparation to manage them:
+          </p>
+          <div className="insight-list">
+            <div className="insight-item">
+              <strong>Pseudoexfoliation syndrome.</strong>
+              <p>Weakened zonular fibers can lead to complications during surgery. Specialized tools and technique adjustments are needed.</p>
+            </div>
+            <div className="insight-item">
+              <strong>Prior corneal refractive surgery (LASIK, RK).</strong>
+              <p>Previous corneal procedures alter the measurements used to select lens power. Standard formulas can produce inaccurate results. Specialized calculations are required.</p>
+            </div>
+            <div className="insight-item">
+              <strong>Fuchs endothelial dystrophy.</strong>
+              <p>Corneal swelling is more likely after surgery. Surgical technique and lens selection must account for corneal health before and after the procedure.</p>
+            </div>
+            <div className="insight-item">
+              <strong>Dense cataracts, diabetes, prior retinal surgery.</strong>
+              <p>Each presents distinct surgical challenges that require evaluation during the pre-operative workup. An experienced surgeon plans for these during preparation, not during surgery.</p>
+            </div>
+          </div>
+          <p>
+            If any of these apply to you, it is not a reason to avoid surgery. It is a reason to seek a surgeon with specific experience. See <Link href="/complex-cases">complex cataract cases</Link> for more detail on each condition.
+          </p>
+
+          <div className="clinic-thought" style={{marginTop: '32px'}}>
             <h3>A thought from the clinic</h3>
             <p>
-              <em>The question patients are really asking when they say "is it safe?" is not about statistics. It is about trust. They want to know: will I be okay? And the honest answer is: with the right preparation, the right surgeon, and the right expectations, the overwhelming majority of patients do beautifully. I cannot promise zero risk. No one can. But I can promise that I prepare for every surgery as if it were the most important one I will ever do. Because for you, it is.</em>
+              <em>Patients often ask me if cataract surgery is safe, and I tell them yes. But then I tell them the rest: that the statistics are population-level, that their individual risk profile depends on their eyes and their surgeon, and that being in the right hands changes the equation significantly. I have performed more than 10,000 of these procedures. What I offer is not just technique. It is the experience to recognize when something unusual is happening and the judgment to respond. That combination is what safety actually looks like in practice.</em>
             </p>
-          </div></BlurReveal>
+          </div>
 
           <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
@@ -146,25 +250,26 @@ export default function IsCataractSurgerySafe() {
         </div>
       </section>
 
+      {/* RELATED */}
       <section className="section section-warm">
         <div className="container content-narrow">
           <h2 className="section-title">Learn <strong>More</strong></h2>
           <div className="related-grid">
             <Link href="/cataract-surgery-complications" className="related-card">
               <h3>Complications Guide</h3>
-              <p>The most comprehensive complication resource on any surgeon's site.</p>
+              <p>A complete, honest look at what can go wrong during and after cataract surgery, and how complications are managed.</p>
             </Link>
             <Link href="/choosing-your-surgeon" className="related-card">
               <h3>Choosing Your Surgeon</h3>
-              <p>What actually matters when selecting who operates on your eyes.</p>
+              <p>Volume, training, communication, and the questions that reveal whether a surgeon is right for your eyes.</p>
+            </Link>
+            <Link href="/complex-cases" className="related-card">
+              <h3>Complex Cases</h3>
+              <p>Surgery when other conditions are involved. How prior history and other eye diseases affect planning.</p>
             </Link>
             <Link href="/cataract-surgery" className="related-card">
-              <h3>Cataract Surgery</h3>
-              <p>What the procedure involves from start to finish.</p>
-            </Link>
-            <Link href="/cataract-pre-op" className="related-card">
-              <h3>Pre-Op Guide</h3>
-              <p>Exactly what happens before you go into the operating room.</p>
+              <h3>About Cataract Surgery</h3>
+              <p>What the procedure involves from start to finish, in plain language.</p>
             </Link>
           </div>
         </div>

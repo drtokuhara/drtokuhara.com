@@ -74,7 +74,7 @@ export default function AlzheimersDementiaPage() {
 
           <div className="content-image" style={{margin: '32px 0'}}>
             <Image
-              src="/media/stock-woman-dog-livingroom.png"
+              src="/media/elderly-woman-poolside-desert.jpg"
               alt="Woman relaxing at home with her dog - maintaining comfort and quality of life"
               width={680}
               height={453}
@@ -112,6 +112,21 @@ export default function AlzheimersDementiaPage() {
         </div>
       </section>
 
+      
+      <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container content-narrow">
+          <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px'}} className="compare-grid">
+            <div className="content-image">
+              <Image src="/media/elderly-man-courtyard-desert.jpg" alt="Elderly man standing in a sunny desert courtyard" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+            </div>
+            <div className="content-image">
+              <Image src="/media/elderly-woman-walker-desert-garden.jpg" alt="Elderly woman with a walker smiling in a desert garden with mountains" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+            </div>
+          </div>
+          <div className="content-image-caption" style={{textAlign: 'center', marginTop: '8px'}}>Better vision means more confidence, more safety, and more connection with the world around them.</div>
+        </div>
+      </section>
+
       <LineDraw style={{margin: "0 auto", maxWidth: "200px"}} color="var(--oasis)" />
       <section className="cta">
         <div className="container">
@@ -120,7 +135,7 @@ export default function AlzheimersDementiaPage() {
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
             <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
-            <Link href="/complex-cases" className="btn-secondary">Back to Complex Cases</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
           </div>
         </div>
       </section>

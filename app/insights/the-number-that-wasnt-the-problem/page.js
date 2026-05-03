@@ -163,6 +163,11 @@ export default function InsightTheNumber() {
               <em>If you have an eye condition like keratoconus, or irregular astigmatism from any cause, the premium lens option may not be the best lens option. A good outcome is defined by alignment between your anatomy, your expectations, and your strategy. Not by chasing a number on a report. Sometimes the right call is the one that sounds less impressive but fits you better.</em>
             </p>
           </div></BlurReveal>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 

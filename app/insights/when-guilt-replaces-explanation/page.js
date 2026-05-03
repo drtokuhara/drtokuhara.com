@@ -159,6 +159,11 @@ export default function InsightGuilt() {
               <em>If you've had a cataract surgery complication and you're not sure what happened, you're allowed to ask. You're allowed to get a second opinion. And if anyone tells you it was your fault - question that. Complications are a part of surgery. Blame is not a part of care.</em>
             </p>
           </div></BlurReveal>
+
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
         </div>
       </section>
 
