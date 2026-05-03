@@ -2864,3 +2864,12 @@ html {
 @media (max-width: 768px) {
   .compare-grid, .video-side-by-side { grid-template-columns: 1fr; }
 }
+
+/* Conversation screen images */
+.conv-image {
+  animation: convImageFadeIn 0.6s ease-out;
+}
+@keyframes convImageFadeIn {
+  from { opacity: 0; transform: scale(1.05); }
+  to { opacity: 1; transform: scale(1); }
+}

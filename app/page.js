@@ -173,6 +173,7 @@ const faqSchema = {
    ─────────────────────────────────────────── */
 const SCREENS = {
   nervous_intro: {
+    image: "/media/stock-couple-patio-scenic-view.jpg",
     step: 1, totalSteps: 4,
     paragraphs: [
       "That's completely normal.",
@@ -187,6 +188,7 @@ const SCREENS = {
     ],
   },
   nervous_surgery: {
+    image: "/media/dr-t-slit-lamp-patient-view.jpg",
     step: 2, totalSteps: 4,
     paragraphs: [
       "Yeah, that's usually the first thing people think about.",
@@ -199,6 +201,7 @@ const SCREENS = {
     ],
   },
   nervous_day: {
+    image: "/media/stock-couple-brunch-patio.jpg",
     step: 3, totalSteps: 4,
     paragraphs: [
       "Here's what a typical surgery day looks like from your side.",
@@ -209,6 +212,7 @@ const SCREENS = {
     buttons: [{ label: "That's helpful, thank you", next: "nervous_close" }],
   },
   nervous_safe: {
+    image: "/media/complex-cases-surgical-precision.jpg",
     step: 3, totalSteps: 4,
     paragraphs: [
       "For me, safety isn't about what happens during surgery. It's everything leading up to it.",
@@ -218,6 +222,7 @@ const SCREENS = {
     buttons: [{ label: "That makes sense", next: "nervous_close" }],
   },
   nervous_decision: {
+    image: "/media/stock-couple-art-interior.jpg",
     step: 2, totalSteps: 3,
     paragraphs: [
       "That one comes up a lot. And honestly, it's a smart concern.",
@@ -228,6 +233,7 @@ const SCREENS = {
     buttons: [{ label: "That's reassuring", next: "nervous_close" }],
   },
   nervous_wrong: {
+    image: "/media/stock-couple-desert-overlook.jpg",
     step: 2, totalSteps: 3,
     paragraphs: [
       "I respect that. Complications exist in any surgery. Pretending otherwise wouldn't be honest.",
@@ -238,6 +244,7 @@ const SCREENS = {
     buttons: [{ label: "I appreciate the honesty", next: "nervous_close" }],
   },
   nervous_recovery: {
+    image: "/media/stock-couple-sunny-pathway-luxury.jpg",
     step: 2, totalSteps: 3,
     paragraphs: [
       "Most people want a clear picture of what comes next. That's smart.",
@@ -248,6 +255,7 @@ const SCREENS = {
     buttons: [{ label: "Good to know", next: "nervous_close" }],
   },
   nervous_close: {
+    image: "/media/stock-couple-lawn-sunset-coachella.jpg",
     type: 'close', step: 4, totalSteps: 4,
     paragraphs: [
       "If you were sitting with me in clinic, this is usually the point where people start to feel a little more at ease.",
@@ -256,6 +264,7 @@ const SCREENS = {
     ],
   },
   surgeon_intro: {
+    image: "/media/stock-man-portrait-outdoor-dining.jpg",
     step: 1, totalSteps: 5,
     paragraphs: [
       "This is the right question to be asking.",
@@ -270,6 +279,7 @@ const SCREENS = {
     ],
   },
   surgeon_experience: {
+    image: "/media/stock-couple-outdoor-sunshine.jpg",
     step: 2, totalSteps: 5,
     paragraphs: [
       "Experience matters. But not in the way most people think.",
@@ -279,6 +289,7 @@ const SCREENS = {
     buttons: [{ label: "Tell me more about how you work", next: "surgeon_diff" }],
   },
   surgeon_technology: {
+    image: "/media/stock-couple-convertible-desert.jpg",
     step: 2, totalSteps: 5,
     paragraphs: [
       "Technology matters, but it doesn't make decisions for you.",
@@ -288,6 +299,7 @@ const SCREENS = {
     buttons: [{ label: "Tell me more about how you work", next: "surgeon_diff" }],
   },
   surgeon_recommendations: {
+    image: "/media/stock-group-lounge-country-club.jpg",
     step: 2, totalSteps: 5,
     paragraphs: [
       "Recommendations are a starting point. A good one, usually.",
@@ -297,6 +309,7 @@ const SCREENS = {
     buttons: [{ label: "What makes you different?", next: "surgeon_diff" }],
   },
   surgeon_notsure: {
+    image: "/media/stock-woman-portrait-sunlit-resort.jpg",
     step: 2, totalSteps: 5,
     paragraphs: [
       "That's fine. Most people start without a clear framework.",
@@ -307,6 +320,7 @@ const SCREENS = {
     buttons: [{ label: "What makes you different?", next: "surgeon_diff" }],
   },
   surgeon_diff: {
+    image: "/media/Dr-Tokuhara.jpg",
     step: 3, totalSteps: 5,
     paragraphs: [
       "Here's what's different about how I work.",
@@ -319,6 +333,7 @@ const SCREENS = {
     ],
   },
   surgeon_decisions: {
+    image: "/media/stock-couple-balcony-golf-resort.jpg",
     step: 4, totalSteps: 5,
     paragraphs: [
       "It starts with your eyes, obviously. But I'm also thinking about your lifestyle. What you do for work. Whether you drive at night. What bothers you most about your vision right now.",
@@ -328,6 +343,7 @@ const SCREENS = {
     buttons: [{ label: "I like that approach", next: "surgeon_close" }],
   },
   surgeon_ifyou: {
+    image: "/media/stock-couple-garden-blooming.jpg",
     step: 4, totalSteps: 5,
     paragraphs: [
       "If I needed cataract surgery tomorrow, here's what I'd want.",
@@ -338,6 +354,7 @@ const SCREENS = {
     buttons: [{ label: "That resonates with me", next: "surgeon_close" }],
   },
   surgeon_close: {
+    image: "/media/stock-couple-pool-mountain-view.jpg",
     type: 'close', step: 5, totalSteps: 5,
     paragraphs: [
       "You don't need the 'best surgeon.' You need the right fit.",
@@ -348,6 +365,7 @@ const SCREENS = {
 
   // PATH 3: LENS OPTIONS
   lens_intro: {
+    image: "/media/stock-couple-bar-golf-view.jpg",
     step: 1, totalSteps: 5,
     paragraphs: [
       "Good. This is the right thing to be thinking about before surgery.",
@@ -362,6 +380,7 @@ const SCREENS = {
     ],
   },
   lens_noglasses: {
+    image: "/media/stock-seniors-pickleball-desert.jpg",
     step: 2, totalSteps: 5,
     paragraphs: [
       "That's the most common goal I hear. And it's achievable for many patients, but not all.",
@@ -376,6 +395,7 @@ const SCREENS = {
     ],
   },
   lens_multifocal: {
+    image: "/media/stock-couple-outdoor-dining-view.jpg",
     step: 3, totalSteps: 5,
     paragraphs: [
       "Then a multifocal lens like PanOptix or PanOptix Pro might be a great fit.",
@@ -386,6 +406,7 @@ const SCREENS = {
     buttons: [{ label: "That sounds promising", next: "lens_close" }],
   },
   lens_edof: {
+    image: "/media/stock-couple-stargazing-desert.jpg",
     step: 3, totalSteps: 5,
     paragraphs: [
       "That's a reasonable concern. There's a middle ground.",
@@ -396,6 +417,7 @@ const SCREENS = {
     buttons: [{ label: "That sounds like a better fit for me", next: "lens_close" }],
   },
   lens_reliable: {
+    image: "/media/stock-men-classic-car-show.jpg",
     step: 2, totalSteps: 4,
     paragraphs: [
       "That's a perfectly smart approach. And honestly, for a lot of patients, it's the right one.",
@@ -406,6 +428,7 @@ const SCREENS = {
     buttons: [{ label: "That's reassuring to hear", next: "lens_close" }],
   },
   lens_reading: {
+    image: "/media/stock-woman-portrait-evening-glamour.jpg",
     step: 2, totalSteps: 4,
     paragraphs: [
       "I love when patients tell me this, because it completely changes the conversation.",
@@ -416,6 +439,7 @@ const SCREENS = {
     buttons: [{ label: "I had no idea that was possible", next: "lens_close" }],
   },
   lens_unsure: {
+    image: "/media/stock-couple-farmers-market.jpg",
     step: 2, totalSteps: 4,
     paragraphs: [
       "That's completely fine. You don't need to walk in with a decision made.",
@@ -426,6 +450,7 @@ const SCREENS = {
     buttons: [{ label: "That makes sense", next: "lens_close" }],
   },
   lens_close: {
+    image: "/media/stock-seniors-formal-resort-dusk.jpg",
     type: 'close', step: 5, totalSteps: 5,
     paragraphs: [
       "Choosing a lens can feel overwhelming when you read about it online. In person, it's a much simpler conversation.",
@@ -436,6 +461,7 @@ const SCREENS = {
 
   // PATH 4: SOMETHING WENT WRONG
   wrong_intro: {
+    image: "/media/stock-couple-romantic-warm-interior.jpg",
     step: 1, totalSteps: 5,
     paragraphs: [
       "I'm sorry you're dealing with this. You're not alone, and you're not wrong for looking for answers.",
@@ -450,6 +476,7 @@ const SCREENS = {
     ],
   },
   wrong_vision: {
+    image: "/media/stock-couple-tent-desert-sunset.jpg",
     step: 2, totalSteps: 5,
     paragraphs: [
       "This is one of the most common reasons patients seek a second opinion. And it's valid.",
@@ -463,6 +490,7 @@ const SCREENS = {
     ],
   },
   wrong_complication: {
+    image: "/media/complex-cases-surgical-precision.jpg",
     step: 2, totalSteps: 5,
     paragraphs: [
       "Complications during cataract surgery are uncommon, but they do happen. Even to experienced surgeons.",
@@ -472,6 +500,7 @@ const SCREENS = {
     buttons: [{ label: "I want a second opinion", next: "wrong_secondopinion" }],
   },
   wrong_lens: {
+    image: "/media/stock-couple-art-interior.jpg",
     step: 2, totalSteps: 5,
     paragraphs: [
       "Lens problems after surgery fall into a few categories.",
@@ -481,6 +510,7 @@ const SCREENS = {
     buttons: [{ label: "What would you do in my case?", next: "wrong_fixable" }],
   },
   wrong_blamed: {
+    image: "/media/stock-men-dinner-laughing.jpg",
     step: 2, totalSteps: 5,
     paragraphs: [
       "I hear this more often than I'd like.",
@@ -491,6 +521,7 @@ const SCREENS = {
     buttons: [{ label: "What can be done now?", next: "wrong_fixable" }],
   },
   wrong_adjust: {
+    image: "/media/stock-woman-portrait-sunlit-resort.jpg",
     step: 3, totalSteps: 5,
     paragraphs: [
       "Sometimes that's true. The brain does adapt to new lenses, and it can take weeks.",
@@ -500,6 +531,7 @@ const SCREENS = {
     buttons: [{ label: "I'd like someone to really look", next: "wrong_secondopinion" }],
   },
   wrong_fixable: {
+    image: "/media/Dr-Tokuhara.jpg",
     step: 3, totalSteps: 5,
     paragraphs: [
       "In most cases, yes, something can be done.",
@@ -510,6 +542,7 @@ const SCREENS = {
     buttons: [{ label: "How do I get started?", next: "wrong_close" }],
   },
   wrong_secondopinion: {
+    image: "/media/dr-t-slit-lamp-patient-view.jpg",
     step: 4, totalSteps: 5,
     paragraphs: [
       "Getting a second opinion is not disrespectful to your original surgeon. It's your right, and it's the smart thing to do.",
@@ -519,6 +552,7 @@ const SCREENS = {
     buttons: [{ label: "That's what I need", next: "wrong_close" }],
   },
   wrong_close: {
+    image: "/media/stock-couple-wildflower-field.jpg",
     type: 'close', step: 5, totalSteps: 5,
     paragraphs: [
       "You've been through a difficult experience. The fact that you're still looking for answers shows strength, not weakness.",
@@ -1091,6 +1125,11 @@ export default function Home() {
 function ConversationScreen({ screen, onChoose }) {
   return (
     <div className="conv-body">
+      {screen.image && (
+        <div className="conv-image">
+          <Image src={screen.image} alt="" width={800} height={400} style={{width: '100%', height: '280px', objectFit: 'cover', objectPosition: 'center 30%', borderRadius: '16px', marginBottom: '32px'}} />
+        </div>
+      )}
       <div className="conv-text-block">
         {screen.paragraphs.map((p, i) => (
           i === 0 ? (
@@ -1125,6 +1164,11 @@ function ConversationScreen({ screen, onChoose }) {
 function CloseScreen({ screen, onStartOver }) {
   return (
     <div className="conv-body">
+      {screen.image && (
+        <div className="conv-image">
+          <Image src={screen.image} alt="" width={800} height={400} style={{width: '100%', height: '280px', objectFit: 'cover', objectPosition: 'center 30%', borderRadius: '16px', marginBottom: '32px'}} />
+        </div>
+      )}
       <div className="conv-text-block">
         {screen.paragraphs.map((p, i) => (
           <p key={i} className={`conv-paragraph anim-item anim-delay-${i}`}>{p}</p>
