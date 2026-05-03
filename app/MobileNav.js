@@ -64,9 +64,15 @@ export default function MobileNav() {
             <Link href="/my-cataract-drops" onClick={close}>My Cataract Drops App</Link>
             <Link href="/choosing-your-surgeon" onClick={close}>Choosing a Surgeon</Link>
 
+            <p className="mobile-nav-label">Insights by Topic</p>
+            <Link href="/insights" onClick={close}>All Insights</Link>
+            <Link href="/insights/do-i-really-need-surgery" onClick={close}>Do I Need Surgery Yet?</Link>
+            <Link href="/insights/when-ai-recommends-your-lens" onClick={close}>When AI Recommends Your Lens</Link>
+            <Link href="/insights/are-premium-lenses-worth-it" onClick={close}>Are Premium Lenses Worth It?</Link>
+            <Link href="/insights/permission-to-see-again" onClick={close}>Permission to See Again</Link>
+
             <p className="mobile-nav-label">Learn</p>
             <Link href="/about" onClick={close}>About Dr. Tokuhara</Link>
-            <Link href="/insights" onClick={close}>Insights</Link>
             <Link href="/education" onClick={close}>Education</Link>
             <Link href="/patient-stories" onClick={close}>Patient Stories</Link>
             <Link href="/faq" onClick={close}>FAQ</Link>

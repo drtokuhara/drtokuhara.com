@@ -134,7 +134,36 @@ export default function RootLayout({ children }) {
                   <Link href="/my-cataract-drops">My Cataract Drops App</Link>
                 </div>
               </div>
-              <Link href="/insights">Insights</Link>
+              <div className="nav-dropdown nav-dropdown-wide">
+                <span className="nav-dropdown-trigger">Insights</span>
+                <div className="nav-dropdown-menu nav-dropdown-mega">
+                  <div className="nav-mega-col">
+                    <span className="nav-mega-label">Decisions & Timing</span>
+                    <Link href="/insights/do-i-really-need-surgery">Do I Need Surgery Yet?</Link>
+                    <Link href="/insights/when-is-the-right-time">When Is the Right Time?</Link>
+                    <Link href="/insights/when-patients-wait">When Patients Wait</Link>
+                    <Link href="/insights/five-questions-before-surgery">5 Questions to Ask</Link>
+                    <Link href="/insights/when-the-surgeon-says-wait">When the Surgeon Says Wait</Link>
+                  </div>
+                  <div className="nav-mega-col">
+                    <span className="nav-mega-label">Lens Selection</span>
+                    <Link href="/insights/when-ai-recommends-your-lens">When AI Recommends Your Lens</Link>
+                    <Link href="/insights/three-things-patients-say">Three Things Patients Say</Link>
+                    <Link href="/insights/the-reader-who-almost-gave-up-her-books">The Reader Who Almost Gave Up</Link>
+                    <Link href="/insights/are-premium-lenses-worth-it">Are Premium Lenses Worth It?</Link>
+                    <Link href="/insights/the-number-that-wasnt-the-problem">The Number That Wasn't the Problem</Link>
+                  </div>
+                  <div className="nav-mega-col">
+                    <span className="nav-mega-label">Patient Stories</span>
+                    <Link href="/insights/permission-to-see-again">Permission to See Again</Link>
+                    <Link href="/insights/the-man-who-wanted-his-younger-eyes-back">Younger Eyes Back</Link>
+                    <Link href="/insights/when-guilt-replaces-explanation">When Guilt Replaces Explanation</Link>
+                    <Link href="/insights/when-more-isnt-better">When More Isn't Better</Link>
+                    <Link href="/insights/the-consultation-that-changed-everything">The Consultation That Changed Everything</Link>
+                    <Link href="/insights" style={{color: 'var(--oasis)', fontWeight: 600, marginTop: '8px'}}>View All Insights</Link>
+                  </div>
+                </div>
+              </div>
               <Link href="/education">Education</Link>
               <Link href="/faq">FAQ</Link>
               <Link href="/contact">Contact</Link>

@@ -135,27 +135,32 @@ export default function ContactContent() {
           </div>
 
           <div className="contact-page-map">
-            <div className="map-wrapper">
+            <div style={{position: 'relative', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 12px 40px rgba(0,0,0,0.12)'}}>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.8!2d-116.4134!3d33.7397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s!2s35900+Bob+Hope+Dr+Suite+175%2C+Rancho+Mirage%2C+CA+92270!5e0!3m2!1sen!2sus!4v1713200000000!5m2!1sen!2sus"
                 width="100%"
                 height="450"
-                style={{border: 0, borderRadius: '16px'}}
+                style={{border: 0}}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title={lang === 'es' ? 'Ubicación de Desert Vision Center en Google Maps' : 'Desert Vision Center location on Google Maps'}
               />
-            </div>
-            <div className="map-directions">
-              <a
-                href="https://www.google.com/maps/dir//35900+Bob+Hope+Dr+Suite+175,+Rancho+Mirage,+CA+92270"
-                className="btn-secondary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t('common.getDirections') || 'Get Directions'}
-              </a>
+              <div style={{position: 'absolute', bottom: 0, left: 0, right: 0, background: 'linear-gradient(to top, rgba(0,20,30,0.85) 0%, transparent 100%)', padding: '40px 24px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end'}}>
+                <div>
+                  <p style={{color: '#fff', fontWeight: 600, fontSize: '15px', margin: 0}}>Desert Vision Center</p>
+                  <p style={{color: 'rgba(255,255,255,0.7)', fontSize: '13px', margin: '4px 0 0'}}>35900 Bob Hope Drive, Suite 175</p>
+                </div>
+                <a
+                  href="https://www.google.com/maps/dir//35900+Bob+Hope+Dr+Suite+175,+Rancho+Mirage,+CA+92270"
+                  className="btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{fontSize: '13px', padding: '10px 20px'}}
+                >
+                  {t('common.getDirections') || 'Get Directions'}
+                </a>
+              </div>
             </div>
           </div>
         </div>
