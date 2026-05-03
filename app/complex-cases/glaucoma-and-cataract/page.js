@@ -79,6 +79,16 @@ export default function GlaucomaAndCataractPage() {
             />
           </div>
 
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/glaucoma-eye-anatomy.png"
+              alt="Medical illustration of eye anatomy relevant to glaucoma showing aqueous humor flow and drainage pathways"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+            <div className="content-image-caption">The eye's drainage system. MIGS procedures target the trabecular meshwork and Schlemm's canal to improve fluid outflow and reduce pressure.</div>
+          </div>
           <h2 className="section-title">MIGS Options I <strong>Offer</strong></h2>
           <p className="prose">
             Not all MIGS devices and techniques are the same. I select the approach based on your specific glaucoma type, severity, and anatomy:
