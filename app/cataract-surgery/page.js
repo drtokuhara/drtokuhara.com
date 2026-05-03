@@ -1,9 +1,51 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema, physicianSchema } from '../schema';
+import {
+  ScrollReveal,
+  StaggerChildren,
+  StaggerItem,
+  VideoBackground,
+  KineticText,
+  BlurReveal,
+  LineDraw,
+} from '../components/ScrollAnimations';
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How long does cataract surgery take?',
+      acceptedAnswer: { '@type': 'Answer', text: 'The actual cataract surgery procedure typically takes less than 15-20 minutes per eye. Including pre-op preparation and recovery observation, plan for about 2-3 hours at the surgical center.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is cataract surgery painful?',
+      acceptedAnswer: { '@type': 'Answer', text: 'No. Cataract surgery uses numbing eye drops and mild IV sedation. Most patients feel pressure but no pain during the procedure. Many patients say the experience was much easier than they expected.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How soon can I see after cataract surgery?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Most patients notice improved vision within 24-48 hours. Vision continues to sharpen over the first week as the eye heals. Full visual stability typically occurs within 4-6 weeks.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can I drive after cataract surgery?',
+      acceptedAnswer: { '@type': 'Answer', text: 'You cannot drive yourself home from surgery. Most patients can resume driving within a few days once their vision meets the legal requirement, which Dr. Tokuhara confirms at the post-operative visit.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does insurance cover cataract surgery?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes, standard cataract surgery is covered by Medicare and most insurance plans when medically necessary. Premium lens implants and laser-assisted technology may involve additional out-of-pocket costs, which are discussed transparently during consultation.' },
+    },
+  ],
+};
 
 const jsonLd = [
   physicianSchema,
+  faqSchema,
   articleSchema({
     title: 'Cataract Surgery - What to Know Before You Decide',
     description: 'Dr. Tokuhara explains cataract surgery in plain language. What it is, when it makes sense, lens options, recovery, and what to expect.',
@@ -39,17 +81,27 @@ export default function CataractSurgeryPage() {
         />
       ))}
       {/* PAGE HERO */}
-      <section className="page-hero">
+      <VideoBackground
+        src="/media/ambient-lens-refraction.mp4"
+        overlayOpacity={0.6}
+        overlayColor="0, 20, 30"
+        className="page-hero page-hero-image"
+        style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+      >
         <div className="container">
-          <h1>Cataract <strong>Surgery</strong></h1>
-          <p className="page-hero-sub">What it is, when it makes sense, and what to expect from start to finish.</p>
+          <KineticText text="Cataract Surgery" Tag="h1" mode="word" staggerDelay={0.06} />
+          <ScrollReveal direction="up" delay={0.3} once={true}>
+            <p className="page-hero-sub">What it is, when it makes sense, and what to expect from start to finish.</p>
+          </ScrollReveal>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* WHAT ARE CATARACTS */}
       <section className="section section-white">
         <div className="container content-narrow">
-          <h2 className="section-title">What Is a <strong>Cataract?</strong></h2>
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">What Is a <strong>Cataract?</strong></h2>
+          </ScrollReveal>
           <p className="prose">
             A cataract is a clouding of the natural lens inside your eye. That lens sits behind your iris and pupil, and it&rsquo;s normally clear. Over time, proteins in the lens break down and clump together, making it cloudy. Your vision gets hazy. Colors look washed out. Night driving becomes a nightmare because of glare and halos.
           </p>
@@ -74,6 +126,8 @@ export default function CataractSurgeryPage() {
           </div>
         </div>
       </section>
+
+      <LineDraw style={{margin: '0 auto', maxWidth: '200px'}} color="var(--oasis)" />
 
       {/* WHEN IS SURGERY RIGHT */}
       <section className="section section-warm">
@@ -225,22 +279,30 @@ export default function CataractSurgeryPage() {
       {/* LENS OPTIONS */}
       <section className="section section-white">
         <div className="container">
-          <h2 className="section-title">Lens <strong>Options</strong></h2>
-          <div className="section-subtitle">There&rsquo;s no single &ldquo;best&rdquo; lens. The right one depends on your eyes, your lifestyle, and your goals.</div>
-          <div className="card-grid">
-            <div className="card">
-              <h3>Monofocal Lenses</h3>
-              <p>The standard lens implant. Sets your focus at one distance, usually far away. Most patients still need reading glasses afterward. It&rsquo;s reliable, proven, and covered by insurance. For a lot of patients, this is the right choice.</p>
-            </div>
-            <div className="card">
-              <h3>Toric Lenses</h3>
-              <p>Designed for patients with astigmatism. A toric lens reduces the irregular curvature of your cornea at the same time as cataract removal. Without it, astigmatism will still blur your vision even after surgery. I use precise alignment techniques to get the best result.</p>
-            </div>
-            <div className="card">
-              <h3>Multifocal &amp; Extended Depth Lenses</h3>
-              <p>Lenses like PanOptix, PanOptix Pro, and Vivity give you a range of vision. Distance, intermediate, and sometimes near. The goal is reducing or eliminating dependence on glasses. These lenses aren&rsquo;t for everyone, and I&rsquo;ll explain why some eyes do better with them than others.</p>
-            </div>
-          </div>
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">Lens <strong>Options</strong></h2>
+            <div className="section-subtitle">There&rsquo;s no single &ldquo;best&rdquo; lens. The right one depends on your eyes, your lifestyle, and your goals.</div>
+          </ScrollReveal>
+          <StaggerChildren className="card-grid" staggerDelay={0.12}>
+            <StaggerItem>
+              <div className="card">
+                <h3>Monofocal Lenses</h3>
+                <p>The standard lens implant. Sets your focus at one distance, usually far away. Most patients still need reading glasses afterward. It&rsquo;s reliable, proven, and covered by insurance. For a lot of patients, this is the right choice.</p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="card">
+                <h3>Toric Lenses</h3>
+                <p>Designed for patients with astigmatism. A toric lens reduces the irregular curvature of your cornea at the same time as cataract removal. Without it, astigmatism will still blur your vision even after surgery. I use precise alignment techniques to get the best result.</p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="card">
+                <h3>Multifocal &amp; Extended Depth Lenses</h3>
+                <p>Lenses like PanOptix, PanOptix Pro, and Vivity give you a range of vision. Distance, intermediate, and sometimes near. The goal is reducing or eliminating dependence on glasses. These lenses aren&rsquo;t for everyone, and I&rsquo;ll explain why some eyes do better with them than others.</p>
+              </div>
+            </StaggerItem>
+          </StaggerChildren>
           <div className="video-section" style={{marginTop: '40px'}}>
             <div className="video-grid">
               <div className="video-card">

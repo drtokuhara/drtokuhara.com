@@ -2,10 +2,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
+import {
+  ScrollReveal,
+  ParallaxImage,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 
 export const metadata = {
   title: 'The Man Who Wanted His Younger Eyes Back | Dr. Keith Tokuhara, MD',
-  description: 'He didn\'t just want better vision. He wanted to feel the way he did before glasses became part of his identity. Sometimes the most important surgical decision is choosing to wait.',
+  description: 'A cataract surgery patient who wanted more than clear vision. He wanted to feel young again. A reflection on lens implant expectations, IOL selection, and why sometimes the most important decision is choosing to wait.',
   alternates: { canonical: '/insights/the-man-who-wanted-his-younger-eyes-back' },
   openGraph: {
     title: 'The Man Who Wanted His Younger Eyes Back | Dr. Keith Tokuhara',
@@ -44,9 +50,11 @@ export default function InsightYoungerEyes() {
         />
         <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.35) 0%, rgba(0,20,30,0.75) 100%)', zIndex: 1}} />
         <div style={{position: 'relative', zIndex: 2}} className="container">
+          <ScrollReveal direction="up" once={true}>
           <span className="insight-hero-cluster">Decisions &amp; Timing</span>
           <h1>The Man Who Wanted His <strong>Younger Eyes</strong> Back</h1>
           <p className="page-hero-sub">He didn't just want better vision. He wanted to feel the way he did before glasses became part of his identity. Sometimes the most important surgical decision is choosing to wait.</p>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -60,9 +68,9 @@ export default function InsightYoungerEyes() {
           <p>
             He talked about losing his glasses constantly. Bending them. Breaking them. The inconvenience was real, but the frustration ran deeper than a pair of frames. What he described, without quite saying it, was a feeling of being diminished. Glasses had become a daily reminder that something about him had changed. He wanted them gone, not because they were impractical, but because they represented a version of himself he was trying to leave behind.
           </p>
-          <div className="pull-quote">
+          <BlurReveal><div className="pull-quote">
             <p>He wanted to see the way he used to see. Before the readers. Before the progressive lenses. Before the slow, quiet accumulation of dependence.</p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
@@ -112,9 +120,9 @@ export default function InsightYoungerEyes() {
           <p>
             This is not unusual. Many patients arrive at the decision point for cataract surgery carrying more than a visual complaint. They carry a sense that something can be restored. That if the right technology exists, they should be able to get back what time has taken.
           </p>
-          <div className="insight-highlight">
+          <BlurReveal><div className="insight-highlight">
             <p><strong>Surgery works best when expectations align with what the procedure can actually deliver.</strong> When the gap between hope and reality is too wide, even a technically successful surgery can feel like a failure.</p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
@@ -135,12 +143,12 @@ export default function InsightYoungerEyes() {
 
       <section className="section section-white">
         <div className="container content-narrow">
-          <div className="clinic-thought">
+          <BlurReveal><div className="clinic-thought">
             <h3>The takeaway</h3>
             <p>
               <em>Choosing to wait is not the same as choosing to do nothing. In cataract surgery, timing matters as much as technique. If your vision is still functional and your expectations go beyond what current technology can promise, a thoughtful pause may protect you from an outcome that looks successful on paper but does not feel right in practice. The goal is not just better vision. It is vision that matches the life you are actually living.</em>
             </p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
@@ -155,7 +163,7 @@ export default function InsightYoungerEyes() {
               style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
             />
           </div>
-          <h2 className="section-title">Related <strong>Reading</strong></h2>
+          <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
             <Link href="/lens-implants-explained" className="related-card">
               <h3>Lens Implants Explained</h3>

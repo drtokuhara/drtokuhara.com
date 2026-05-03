@@ -1,5 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import {
+  ScrollReveal,
+  StaggerChildren,
+  StaggerItem,
+  LineDraw,
+} from '../components/ScrollAnimations';
 
 export const metadata = {
   title: 'Patient Education Videos by Dr. Tokuhara',
@@ -109,8 +115,10 @@ export default function EducationPage() {
         />
         <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.4) 0%, rgba(0,20,30,0.7) 100%)', zIndex: 1}} />
         <div style={{position: 'relative', zIndex: 2}} className="container">
-          <h1>Patient <strong>Education</strong></h1>
-          <p className="page-hero-sub">I make these videos because I think patients deserve real answers, not marketing brochures. Watch whatever interests you.</p>
+          <ScrollReveal direction="up" once={true}>
+            <h1>Patient <strong>Education</strong></h1>
+            <p className="page-hero-sub">I make these videos because I think patients deserve real answers, not marketing brochures. Watch whatever interests you.</p>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -118,11 +126,14 @@ export default function EducationPage() {
       {videoCategories.map((category, catIndex) => (
         <section key={catIndex} className={`section ${catIndex % 2 === 0 ? 'section-white' : 'section-warm'}`}>
           <div className="container">
-            <h2 className="section-title">{category.title.split(' ').slice(0, -1).join(' ')} <strong>{category.title.split(' ').slice(-1)[0]}</strong></h2>
-            <div className="section-subtitle">{category.description}</div>
-            <div className="video-grid video-grid-education">
+            <ScrollReveal direction="up" once={true}>
+              <h2 className="section-title">{category.title.split(' ').slice(0, -1).join(' ')} <strong>{category.title.split(' ').slice(-1)[0]}</strong></h2>
+              <div className="section-subtitle">{category.description}</div>
+            </ScrollReveal>
+            <StaggerChildren className="video-grid video-grid-education" staggerDelay={0.1}>
               {category.videos.map((video) => (
-                <div key={video.id} className="video-card">
+                <StaggerItem key={video.id}>
+                  <div className="video-card">
                   <div className="video-wrapper">
                     <iframe
                       src={`https://www.youtube.com/embed/${video.id}`}
@@ -136,9 +147,10 @@ export default function EducationPage() {
                     <p className="video-label">{video.title}</p>
                     <p className="video-desc">{video.desc}</p>
                   </div>
-                </div>
+                  </div>
+                </StaggerItem>
               ))}
-            </div>
+            </StaggerChildren>
           </div>
         </section>
       ))}

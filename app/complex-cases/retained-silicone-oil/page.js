@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
+import {
+  ScrollReveal,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 import AuthorByline from '../../components/AuthorByline';
 
 const jsonLd = [
@@ -28,9 +33,20 @@ export const metadata = {
   },
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+
+    { '@type': 'Question', name: "What happens when silicone oil remains after retina surgery?", acceptedAnswer: { '@type': 'Answer', text: "Silicone oil is sometimes left in the eye long-term after complex retinal detachment repair. It can accelerate cataract formation and affect lens implant calculations. Cataract surgery in these eyes requires specialized techniques and careful management of the oil-eye interface." } },
+    { '@type': 'Question', name: "Can cataract surgery be performed with silicone oil in the eye?", acceptedAnswer: { '@type': 'Answer', text: "Yes. Dr. Tokuhara has experience performing cataract surgery in eyes with retained silicone oil. The procedure requires modified techniques and specialized lens calculations to account for the oil's optical properties. His dual fellowship in cataract and retina surgery provides the expertise needed for these complex cases." } }
+  ],
+};
+
 export default function RetainedSiliconeOilPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
@@ -90,6 +106,7 @@ export default function RetainedSiliconeOilPage() {
         </div>
       </section>
 
+      <LineDraw style={{margin: "0 auto", maxWidth: "200px"}} color="var(--oasis)" />
       <section className="cta">
         <div className="container">
           <h2>Have silicone oil in your eye and experiencing <strong>complications?</strong></h2>

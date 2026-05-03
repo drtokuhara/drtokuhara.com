@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
+import {
+  ScrollReveal,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 import AuthorByline from '../../components/AuthorByline';
 
 const jsonLd = [
@@ -28,9 +33,20 @@ export const metadata = {
   },
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+
+    { '@type': 'Question', name: "Can I have cataract surgery after radial keratotomy (RK)?", acceptedAnswer: { '@type': 'Answer', text: "Yes, but RK presents unique challenges. The corneal incisions from RK cause fluctuating vision and change corneal measurements. Lens power calculations must account for these alterations. Dr. Tokuhara uses specialized formulas and may stage the surgery to optimize results." } },
+    { '@type': 'Question', name: "Why is cataract surgery more complex after RK?", acceptedAnswer: { '@type': 'Answer', text: "Radial keratotomy incisions permanently alter the corneal shape and can cause measurements to shift throughout the day. This makes lens power prediction more difficult. Advanced measurement protocols and intraoperative adjustments help achieve the best possible outcome." } }
+  ],
+};
+
 export default function PreviousRKPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
@@ -95,7 +111,7 @@ export default function PreviousRKPage() {
 
           <div className="content-image" style={{margin: '32px 0'}}>
             <Image
-              src="/media/stock-seniors-evening-stroll.jpg"
+              src="/media/stock-couple-romantic-warm-interior.jpg"
               alt="Seniors enjoying an evening stroll under string lights"
               width={680}
               height={453}
@@ -110,6 +126,7 @@ export default function PreviousRKPage() {
         </div>
       </section>
 
+      <LineDraw style={{margin: "0 auto", maxWidth: "200px"}} color="var(--oasis)" />
       <section className="cta">
         <div className="container">
           <h2>Had RK years ago and now need <strong>cataract surgery?</strong></h2>

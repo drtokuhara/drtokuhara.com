@@ -1,6 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../schema';
+import {
+  ScrollReveal,
+  KineticText,
+  BlurReveal,
+  LineDraw,
+} from '../components/ScrollAnimations';
 
 const jsonLd = [
   articleSchema({
@@ -12,6 +18,15 @@ const jsonLd = [
     { name: 'Home', href: '/' },
     { name: 'CLEAR in a Day', href: '/clear-in-a-day' },
   ]),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'Is same-day bilateral cataract surgery safe?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Same-day bilateral cataract surgery (CLEAR in a Day) is performed with strict safety protocols including separate sterile setups for each eye. Large clinical studies show comparable safety and outcomes to traditional sequential surgery, with the added benefit of faster visual recovery and fewer total visits.' } },
+      { '@type': 'Question', name: 'Can both eyes be done on the same day?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, for eligible patients. CLEAR in a Day performs cataract surgery on both eyes in a single surgical visit. Each eye is treated as a completely separate procedure with independent sterilization. Not all patients are candidates, and Dr. Tokuhara evaluates eligibility based on individual eye health and risk factors.' } },
+      { '@type': 'Question', name: 'What are the benefits of same-day bilateral cataract surgery?', acceptedAnswer: { '@type': 'Answer', text: 'Benefits include faster overall recovery, fewer surgical visits, reduced time off work, quicker visual balance between both eyes, and less total disruption to your daily life. Many patients appreciate completing the process in a single day rather than scheduling two separate surgeries weeks apart.' } },
+    ],
+  },
 ];
 
 export const metadata = {
@@ -36,7 +51,7 @@ export default function ClearInADayPage() {
       {/* PAGE HERO */}
       <section className="page-hero">
         <div className="container">
-          <h1>CLEAR in a Day<sup>&trade;</sup></h1>
+          <ScrollReveal direction="up" once={true}><h1>CLEAR in a Day<sup>&trade;</sup></h1></ScrollReveal>
           <p className="page-hero-sub">Both eyes. One surgeon. One day. A smarter path to clear vision.</p>
         </div>
       </section>

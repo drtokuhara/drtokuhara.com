@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
+import {
+  ScrollReveal,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 import AuthorByline from '../../components/AuthorByline';
 
 const jsonLd = [
@@ -28,9 +33,20 @@ export const metadata = {
   },
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+
+    { '@type': 'Question', name: "Is cataract surgery safe for Parkinson's patients?", acceptedAnswer: { '@type': 'Answer', text: "Yes. Cataract surgery is generally safe for patients with Parkinson's disease. Better vision can improve balance, reduce fall risk, and enhance quality of life. The surgical team accommodates any movement or tremor concerns during the procedure through appropriate sedation and positioning." } },
+    { '@type': 'Question', name: "How does Parkinson's affect cataract surgery?", acceptedAnswer: { '@type': 'Answer', text: "Parkinson's disease can affect eye movement control and may cause dry eye. Tremors during surgery are managed with appropriate sedation. Dr. Tokuhara plans for these factors and coordinates with the patient's neurologist when needed to optimize timing and medication management around surgery." } }
+  ],
+};
+
 export default function ParkinsonsDiseasePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
@@ -85,6 +101,7 @@ export default function ParkinsonsDiseasePage() {
         </div>
       </section>
 
+      <LineDraw style={{margin: "0 auto", maxWidth: "200px"}} color="var(--oasis)" />
       <section className="cta">
         <div className="container">
           <h2>Have Parkinson&rsquo;s and struggling with your <strong>vision?</strong></h2>

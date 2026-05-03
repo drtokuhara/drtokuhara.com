@@ -2,6 +2,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../schema';
 import AuthorByline from '../components/AuthorByline';
+import {
+  ScrollReveal,
+  VideoBackground,
+  KineticText,
+  BlurReveal,
+  MagneticElement,
+  LineDraw,
+} from '../components/ScrollAnimations';
 
 const jsonLd = [
   articleSchema({
@@ -13,6 +21,16 @@ const jsonLd = [
     { name: 'Home', href: '/' },
     { name: 'Lens Implants Explained', href: '/lens-implants-explained' },
   ]),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is the best lens implant for cataract surgery?', acceptedAnswer: { '@type': 'Answer', text: 'There is no single best lens. The right choice depends on your lifestyle, visual priorities, and eye health. Monofocal lenses are reliable for distance vision with reading glasses. Toric lenses reduce astigmatism. EDOF lenses like Vivity extend focus from distance through intermediate. Multifocal lenses like PanOptix provide vision at all distances.' } },
+      { '@type': 'Question', name: 'Are premium lens implants worth it?', acceptedAnswer: { '@type': 'Answer', text: 'For many patients, yes. Premium lenses can significantly reduce or eliminate dependence on glasses after cataract surgery. However, they require healthy eyes to perform optimally and involve tradeoffs like potential halos or glare. A thorough consultation helps determine if the benefits outweigh the tradeoffs for your specific situation.' } },
+      { '@type': 'Question', name: 'What is the difference between monofocal and multifocal lens implants?', acceptedAnswer: { '@type': 'Answer', text: 'Monofocal lenses focus at one distance (usually far), requiring reading glasses for near tasks. Multifocal lenses split light into multiple focal points to provide vision at distance, intermediate, and near, reducing glasses dependence. The tradeoff is that multifocal lenses may produce halos around lights at night.' } },
+      { '@type': 'Question', name: 'Can a lens implant be replaced after cataract surgery?', acceptedAnswer: { '@type': 'Answer', text: 'Lens exchange is possible but is a more complex procedure than the original surgery. It is typically reserved for cases where the lens is causing significant visual problems. This is why careful lens selection during the initial consultation is so important.' } },
+    ],
+  },
 ];
 
 export const metadata = {
@@ -32,12 +50,20 @@ export default function LensImplantsExplained() {
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
-      <section className="page-hero">
+      <VideoBackground
+        src="/media/ambient-lens-refraction.mp4"
+        overlayOpacity={0.6}
+        overlayColor="0, 20, 30"
+        className="page-hero page-hero-image"
+        style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+      >
         <div className="container">
-          <h1>Lens Implants <strong>Explained</strong></h1>
-          <p className="page-hero-sub">There is no "best" lens. There's only the best lens for how you live. Here's how to think about it.</p>
+          <KineticText text="Lens Implants Explained" Tag="h1" mode="word" staggerDelay={0.06} />
+          <ScrollReveal direction="up" delay={0.3} once={true}>
+            <p className="page-hero-sub">There is no "best" lens. There's only the best lens for how you live. Here's how to think about it.</p>
+          </ScrollReveal>
         </div>
-      </section>
+      </VideoBackground>
 
       <section className="section section-white">
         <div className="container content-narrow">
@@ -61,10 +87,52 @@ export default function LensImplantsExplained() {
         </div>
       </section>
 
+      {/* HOW WE DECIDE TOGETHER */}
+      <section className="section section-warm">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">How We <strong>Decide Together</strong></h2>
+          </ScrollReveal>
+          <p>
+            Before we talk about lenses, I listen. Three things patients say in my office tell me almost everything I need to know:
+          </p>
+          <div style={{marginTop: '24px', marginBottom: '24px'}}>
+            <BlurReveal duration={1}>
+            <p style={{marginBottom: '16px'}}>
+              <strong>"I read for three hours every night before bed."</strong><br />
+              That tells me near vision is identity, not convenience. We plan around that.
+            </p>
+            </BlurReveal>
+            <BlurReveal duration={1}>
+            <p style={{marginBottom: '16px'}}>
+              <strong>"I still work. I am on screens all day."</strong><br />
+              That tells me intermediate range matters most. Not distance. Not near. The middle.
+            </p>
+            </BlurReveal>
+            <BlurReveal duration={1}>
+            <p style={{marginBottom: '0'}}>
+              <strong>"I just want to not think about my eyes."</strong><br />
+              That tells me simplicity wins. One focus, good glasses, no surprises. Sometimes the best plan is the most predictable one.
+            </p>
+            </BlurReveal>
+          </div>
+          <p>
+            The measurements tell me what is possible. Your words tell me what matters. The best outcomes happen when those two things align.
+          </p>
+          <p style={{marginTop: '16px'}}>
+            <Link href="/insights/three-things-patients-say" className="cta-link">
+              Read the full reflection &rarr;
+            </Link>
+          </p>
+        </div>
+      </section>
+
       {/* MONOFOCAL */}
       <section className="section section-warm">
         <div className="container content-narrow">
-          <h2 className="section-title">Monofocal <strong>Lens</strong></h2>
+          <ScrollReveal direction="left" once={true}>
+            <h2 className="section-title">Monofocal <strong>Lens</strong></h2>
+          </ScrollReveal>
           <p className="lens-tagline">The reliable foundation. Covered by insurance.</p>
           <p>
             A monofocal lens gives you clear vision at one distance. Most patients choose distance - sharp for driving, television, walking around. You'd wear reading glasses for close work. The standard monofocal IOL is the most extensively studied implant in ophthalmology, with decades of clinical data supporting its reliability and optical quality.
@@ -86,7 +154,9 @@ export default function LensImplantsExplained() {
       {/* TORIC */}
       <section className="section section-white">
         <div className="container content-narrow">
-          <h2 className="section-title">Toric <strong>Lens</strong></h2>
+          <ScrollReveal direction="right" once={true}>
+            <h2 className="section-title">Toric <strong>Lens</strong></h2>
+          </ScrollReveal>
           <p className="lens-tagline">For patients with astigmatism. Sharper uncorrected vision.</p>
           <p>
             If you have astigmatism - an irregular curvature of the cornea - a standard lens won't fully address it. A toric lens is designed to compensate for that shape, giving you sharper uncorrected vision at your chosen distance. Common toric platforms include the AcrySof IQ Toric, Tecnis Toric, and enVista Toric, each with specific toricity ranges and optical characteristics.
@@ -121,7 +191,9 @@ export default function LensImplantsExplained() {
       {/* EDOF */}
       <section className="section section-warm">
         <div className="container content-narrow">
-          <h2 className="section-title">Extended Depth of Focus <strong>(EDOF)</strong></h2>
+          <ScrollReveal direction="left" once={true}>
+            <h2 className="section-title">Extended Depth of Focus <strong>(EDOF)</strong></h2>
+          </ScrollReveal>
           <p className="lens-tagline">A wider range of clear vision. A modern middle ground.</p>
           <p>
             EDOF lenses stretch your focus from distance through intermediate - roughly arm's length. That means driving, cooking, using a computer, and reading your phone are all clearer without glasses. Fine print and prolonged close reading may still benefit from light readers.
@@ -143,7 +215,9 @@ export default function LensImplantsExplained() {
       {/* MULTIFOCAL */}
       <section className="section section-white">
         <div className="container content-narrow">
-          <h2 className="section-title">Multifocal <strong>Lens</strong></h2>
+          <ScrollReveal direction="right" once={true}>
+            <h2 className="section-title">Multifocal <strong>Lens</strong></h2>
+          </ScrollReveal>
           <p className="lens-tagline">The closest to glasses-free at all distances. With tradeoffs.</p>
           <p>
             Multifocal lenses split incoming light to create multiple focal points - distance, intermediate, and near - simultaneously. The result: many patients rarely or never need glasses for any task.
@@ -171,11 +245,13 @@ export default function LensImplantsExplained() {
           <p>
             I don't discourage multifocal lenses. I recommend them often, and most patients are thrilled. But I want every patient to understand that the trade for glasses-freedom is a slight change in visual quality - particularly at night. If that sounds acceptable, it probably is. If it sounds concerning, we should talk about it.
           </p>
+          <BlurReveal>
           <div className="lens-tradeoff">
             <p><strong>What you get:</strong> The best chance at functional vision at all distances without glasses. Freedom for reading, driving, and everything in between.</p>
             <p><strong>What you accept:</strong> Possible halos and glare, especially at night. Slight contrast reduction in dim light. Premium cost. Not ideal for patients with other eye conditions (macular degeneration, advanced glaucoma).</p>
             <p><strong>Best for:</strong> Patients who strongly dislike wearing glasses, have healthy eyes beyond cataracts, and are comfortable with the adaptation period.</p>
           </div>
+          </BlurReveal>
         </div>
       </section>
 
@@ -221,6 +297,24 @@ export default function LensImplantsExplained() {
           </div>
         </div>
       </section>
+
+      {/* FINAL CTA WITH VIDEO */}
+      <VideoBackground
+        src="/media/ambient-desert-twilight.mp4"
+        poster="/media/desert-landscape-hero-2.png"
+        overlayOpacity={0.5}
+        overlayColor="0, 20, 30"
+        style={{padding: '100px 0'}}
+      >
+        <div className="container" style={{textAlign: 'center', position: 'relative', zIndex: 2}}>
+          <h2 style={{fontFamily: 'var(--font-display)', fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: '#fff', marginBottom: '16px'}}>The right lens changes everything</h2>
+          <p style={{color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto 32px'}}>No pressure, no upsell. Just an honest conversation about which option fits your life.</p>
+          <div style={{display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary" style={{borderColor: 'rgba(255,255,255,0.3)', color: '#fff'}}>Call 760.340.4700</a>
+          </div>
+        </div>
+      </VideoBackground>
 
       {/* RELATED */}
       <section className="section section-warm">

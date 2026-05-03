@@ -2,10 +2,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
+import {
+  ScrollReveal,
+  ParallaxImage,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 
 export const metadata = {
   title: 'When Guilt Replaces Explanation',
-  description: 'A patient believed his cataract complication was his fault because he chose standard surgery over laser. It wasn\'t. A reflection on ethics, blame, and what patients deserve when things go wrong.',
+  description: 'A cataract surgery complication was blamed on the patient for not choosing laser. It was not his fault. A reflection on surgical ethics, posterior capsule rupture, and what patients deserve when complications occur.',
   alternates: { canonical: '/insights/when-guilt-replaces-explanation' },
   openGraph: {
     title: 'When Guilt Replaces Explanation | Dr. Keith Tokuhara',
@@ -44,9 +50,11 @@ export default function InsightGuilt() {
         />
         <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.35) 0%, rgba(0,20,30,0.75) 100%)', zIndex: 1}} />
         <div style={{position: 'relative', zIndex: 2}} className="container">
+          <ScrollReveal direction="up" once={true}>
           <span className="insight-hero-cluster">Ethics & Trust</span>
           <h1>When Guilt Replaces <strong>Explanation</strong></h1>
           <p className="page-hero-sub">A clinical reflection on what patients deserve when surgery doesn't go as planned.</p>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -61,9 +69,9 @@ export default function InsightGuilt() {
             He was 69 years old. He'd had cataract surgery at another practice a few months earlier, and it hadn't gone well. His vision in that eye never came back. When he asked why, the surgeon's partner told him it was because he had chosen standard surgery instead of laser.
           </p>
 
-          <div className="pull-quote">
+          <BlurReveal><div className="pull-quote">
             <p>He believed it. For months, he carried that. The guilt of having made the "wrong" choice. The belief that if he had just spent more money, his eye would be fine.</p>
-          </div>
+          </div></BlurReveal>
 
           <p>
             He was wrong - not about wanting answers, but about the answer he was given.
@@ -75,7 +83,7 @@ export default function InsightGuilt() {
       <section style={{padding: 0}}>
         <div className="editorial-image-break">
           <Image
-            src="/media/stock-seniors-outdoor-dining.jpg"
+            src="/media/stock-men-dinner-laughing.jpg"
             alt="Seniors enjoying life with clear vision"
             width={1920}
             height={400}
@@ -103,9 +111,9 @@ export default function InsightGuilt() {
             None of this had anything to do with whether he chose laser or standard surgery. Complications during cataract surgery happen - rarely, but they happen - regardless of technique. What matters is how they're handled.
           </p>
 
-          <div className="insight-highlight">
+          <BlurReveal><div className="insight-highlight">
             <p><strong>The complication wasn't addressed. And instead of an honest explanation, the patient received blame.</strong></p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
@@ -137,20 +145,20 @@ export default function InsightGuilt() {
             Patients are vulnerable after a complication. They're scared. They want someone to explain what happened and tell them it's going to be okay. If the first thing they hear is that it was their fault, they internalize it. They stop asking questions. They stop seeking help. And the problem gets worse.
           </p>
 
-          <div className="pull-quote">
+          <BlurReveal><div className="pull-quote">
             <p>Complications are never the patient's fault. And the ethical response - the only acceptable response - is honesty, compassion, and action.</p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
       <section className="section section-white">
         <div className="container content-narrow">
-          <div className="clinic-thought">
+          <BlurReveal><div className="clinic-thought">
             <h3>The takeaway</h3>
             <p>
               <em>If you've had a cataract surgery complication and you're not sure what happened, you're allowed to ask. You're allowed to get a second opinion. And if anyone tells you it was your fault - question that. Complications are a part of surgery. Blame is not a part of care.</em>
             </p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
@@ -158,14 +166,14 @@ export default function InsightGuilt() {
         <div className="container content-narrow">
           <div className="content-image" style={{marginBottom: '48px'}}>
             <Image
-              src="/media/stock-family-golden-hour-walk.jpg"
+              src="/media/stock-seniors-poolside-resort.jpg"
               alt="Family walking together at golden hour - the trust that comes from honest care"
               width={680}
               height={453}
               style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
             />
           </div>
-          <h2 className="section-title">Related <strong>Reading</strong></h2>
+          <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
             <Link href="/choosing-your-surgeon" className="related-card">
               <h3>Choosing Your Surgeon</h3>

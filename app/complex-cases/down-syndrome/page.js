@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
+import {
+  ScrollReveal,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 import AuthorByline from '../../components/AuthorByline';
 
 const jsonLd = [
@@ -28,9 +33,20 @@ export const metadata = {
   },
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+
+    { '@type': 'Question', name: "Can patients with Down syndrome have cataract surgery?", acceptedAnswer: { '@type': 'Answer', text: "Yes. Patients with Down syndrome can develop cataracts at a younger age than the general population. Surgery is safe and effective with appropriate accommodations for the patient's comfort and cooperation during the procedure. Improved vision can significantly enhance quality of life and independence." } },
+    { '@type': 'Question', name: "Why do people with Down syndrome get cataracts earlier?", acceptedAnswer: { '@type': 'Answer', text: "People with Down syndrome have a higher prevalence of early-onset cataracts due to genetic factors affecting lens protein structure. Regular eye exams are important for early detection, and surgery is recommended when vision loss affects daily function." } }
+  ],
+};
+
 export default function DownSyndromePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
@@ -90,6 +106,7 @@ export default function DownSyndromePage() {
         </div>
       </section>
 
+      <LineDraw style={{margin: "0 auto", maxWidth: "200px"}} color="var(--oasis)" />
       <section className="cta">
         <div className="container">
           <h2>Caring for someone with Down syndrome who needs <strong>cataract surgery?</strong></h2>

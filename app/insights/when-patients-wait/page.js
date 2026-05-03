@@ -2,10 +2,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
+import {
+  ScrollReveal,
+  ParallaxImage,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 
 export const metadata = {
   title: 'When Patients Wait: The Psychology of Timing in Cataract Surgery',
-  description: 'A 76-year-old woman had a perfect outcome but regretted waiting. A reflection on outcome bias, anxiety avoidance, and the psychology of surgical timing.',
+  description: 'A cataract surgery patient had a perfect outcome but regretted waiting two years. A reflection on cataract surgery timing, outcome bias, anxiety avoidance, and the psychology of when to have eye surgery.',
   alternates: { canonical: '/insights/when-patients-wait' },
   openGraph: {
     title: 'When Patients Wait | Dr. Keith Tokuhara',
@@ -44,9 +50,11 @@ export default function InsightWhenPatientsWait() {
         />
         <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.35) 0%, rgba(0,20,30,0.75) 100%)', zIndex: 1}} />
         <div style={{position: 'relative', zIndex: 2}} className="container">
+          <ScrollReveal direction="up" once={true}>
           <span className="insight-hero-cluster">Decisions & Timing</span>
           <h1>When Patients <strong>Wait</strong></h1>
           <p className="page-hero-sub">Her outcome was excellent. Her biggest regret was that she didn't do it sooner. The psychology of timing in cataract surgery.</p>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -69,9 +77,9 @@ export default function InsightWhenPatientsWait() {
           <p>
             But at her visit this week, two years after surgery, she brought up something unexpected. Not dissatisfaction. Not a complication. Guilt.
           </p>
-          <div className="pull-quote">
+          <BlurReveal><div className="pull-quote">
             <p>She told me her biggest regret was that she waited.</p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
@@ -163,9 +171,9 @@ export default function InsightWhenPatientsWait() {
           <p>
             But patients are really asking something else: "Am I ready?"
           </p>
-          <div className="insight-highlight">
+          <BlurReveal><div className="insight-highlight">
             <p><strong>Those are not the same question.</strong></p>
-          </div>
+          </div></BlurReveal>
           <p>
             And sometimes, when patients ask that question, they're not ready yet. Not because their cataract isn't advanced enough, but because they haven't crossed the psychological threshold.
           </p>
@@ -198,12 +206,12 @@ export default function InsightWhenPatientsWait() {
 
       <section className="section section-warm">
         <div className="container content-narrow">
-          <div className="clinic-thought">
+          <BlurReveal><div className="clinic-thought">
             <h3>The takeaway</h3>
             <p>
               <em>For patients, the lesson is simple: There is no perfect time for cataract surgery. There is only your time. For surgeons, the lesson is just as important: A good outcome is not just visual acuity. It's helping patients arrive at the decision without carrying unnecessary regret afterward. Because sometimes, the hardest part of cataract surgery isn't the operation. It's getting to the point where the patient is ready to say yes.</em>
             </p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
@@ -218,7 +226,7 @@ export default function InsightWhenPatientsWait() {
               style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
             />
           </div>
-          <h2 className="section-title">Related <strong>Reading</strong></h2>
+          <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
             <Link href="/insights/when-is-the-right-time" className="related-card">
               <h3>When Is the Right Time?</h3>

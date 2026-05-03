@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
+import {
+  ScrollReveal,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 import AuthorByline from '../../components/AuthorByline';
 
 const jsonLd = [
@@ -28,9 +33,20 @@ export const metadata = {
   },
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+
+    { '@type': 'Question', name: "Can someone with Alzheimer's or dementia have cataract surgery?", acceptedAnswer: { '@type': 'Answer', text: "Yes. Cataract surgery can improve quality of life for patients with cognitive decline. Better vision often reduces confusion, improves safety, and helps patients engage more with their surroundings. The decision involves careful evaluation of the patient's overall health and support system." } },
+    { '@type': 'Question', name: "Is cataract surgery safe for dementia patients?", acceptedAnswer: { '@type': 'Answer', text: "Cataract surgery is generally safe for patients with dementia when appropriate precautions are taken. The procedure is quick, uses light sedation, and has a short recovery. Dr. Tokuhara evaluates each patient individually to determine if the visual benefit outweighs the procedural considerations." } }
+  ],
+};
+
 export default function AlzheimersDementiaPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
@@ -96,6 +112,7 @@ export default function AlzheimersDementiaPage() {
         </div>
       </section>
 
+      <LineDraw style={{margin: "0 auto", maxWidth: "200px"}} color="var(--oasis)" />
       <section className="cta">
         <div className="container">
           <h2>Caring for a loved one with dementia who has <strong>cataracts?</strong></h2>

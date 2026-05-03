@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
+import {
+  ScrollReveal,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 import AuthorByline from '../../components/AuthorByline';
 
 const jsonLd = [
@@ -28,9 +33,20 @@ export const metadata = {
   },
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+
+    { '@type': 'Question', name: "What is floppy iris syndrome during cataract surgery?", acceptedAnswer: { '@type': 'Answer', text: "Intraoperative Floppy Iris Syndrome (IFIS) causes the iris to billow, prolapse, and constrict during cataract surgery. It is most commonly associated with alpha-blocker medications like tamsulosin (Flomax) used for prostate conditions. An experienced surgeon anticipates and manages this with specialized techniques." } },
+    { '@type': 'Question', name: "Should I stop Flomax before cataract surgery?", acceptedAnswer: { '@type': 'Answer', text: "Do not stop or change any medications without consulting your doctors. Stopping alpha-blockers before surgery does not reliably prevent IFIS. What matters most is that your surgeon knows your medication history and is experienced in managing floppy iris. Dr. Tokuhara uses pupil expansion devices and modified techniques for these cases." } }
+  ],
+};
+
 export default function FloppyIrisPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
@@ -106,6 +122,7 @@ export default function FloppyIrisPage() {
         </div>
       </section>
 
+      <LineDraw style={{margin: "0 auto", maxWidth: "200px"}} color="var(--oasis)" />
       <section className="cta">
         <div className="container">
           <h2>Taking Flomax or a similar medication and need <strong>cataract surgery?</strong></h2>

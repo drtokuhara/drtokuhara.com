@@ -3,6 +3,24 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import {
+  ScrollReveal,
+  StaggerChildren,
+  StaggerItem,
+  ParallaxImage,
+  KineticText,
+  CountUp,
+  MagneticElement,
+  ScrollProgressBar,
+  GradientShift,
+  VideoBackground,
+  HorizontalScroll,
+  BlurReveal,
+  ScaleOnScroll,
+  LineDraw,
+} from './components/ScrollAnimations';
+import TiltCard from './components/TiltCard';
+import TypewriterText from './components/TypewriterText';
 
 /* ───────────────────────────────────────────
    SCHEMA MARKUP
@@ -129,6 +147,22 @@ const faqSchema = {
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "In many cases, yes. Dr. Tokuhara specializes in corrective and revision cataract surgery, including dislocated lens implants, retained lens fragments, iris damage, and failed premium lens outcomes. A thorough evaluation is the first step to understanding what is possible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does cataract surgery take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The procedure itself typically takes about 10 to 15 minutes per eye. Most patients are at the surgery center for about 1 to 2 hours total, including preparation and brief recovery time before going home."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is same-day bilateral cataract surgery (CLEAR in a Day)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CLEAR in a Day is Dr. Tokuhara's protocol for performing cataract surgery on both eyes in a single session with independent sterile setups. It reduces disruption, recovery time, and office visits for eligible patients."
       }
     }
   ]
@@ -495,42 +529,6 @@ const SCREENS = {
 };
 
 /* ───────────────────────────────────────────
-   SCROLL REVEAL HOOK
-   ─────────────────────────────────────────── */
-function useReveal() {
-  const ref = useRef(null);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          el.classList.add('revealed');
-          observer.unobserve(el);
-        }
-      },
-      { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-  return ref;
-}
-
-function Reveal({ children, className = '', delay = 0 }) {
-  const ref = useReveal();
-  return (
-    <div
-      ref={ref}
-      className={`reveal ${className}`}
-      style={delay ? { transitionDelay: `${delay}ms` } : undefined}
-    >
-      {children}
-    </div>
-  );
-}
-
-/* ───────────────────────────────────────────
    MAIN COMPONENT
    ─────────────────────────────────────────── */
 export default function Home() {
@@ -538,7 +536,6 @@ export default function Home() {
   const [currentScreen, setCurrentScreen] = useState(null);
   const [history, setHistory] = useState([]);
   const [animKey, setAnimKey] = useState(0);
-  const videoRef = useRef(null);
 
   useEffect(() => {
     if (mode === 'conversation') {
@@ -548,10 +545,6 @@ export default function Home() {
     }
     return () => document.body.classList.remove('conversation-active');
   }, [mode]);
-
-  useEffect(() => {
-    if (videoRef.current) videoRef.current.play().catch(() => {});
-  }, []);
 
   const startConversation = useCallback((screenId) => {
     setMode('conversation');
@@ -598,82 +591,116 @@ export default function Home() {
 
       {mode === 'homepage' ? (
         <div className="homepage">
+          <ScrollProgressBar color="var(--oasis)" height={3} />
 
           {/* ═══ SECTION 1: CINEMATIC HERO ═══ */}
-          <section className="lux-hero">
-            <div className="lux-hero-media">
-              <video
-                ref={videoRef}
-                className="lux-hero-video"
-                autoPlay
-                muted
-                loop
-                playsInline
-                poster="/dr-tokuhara-hero.jpg"
-              >
-                <source src="/hero-video.mp4" type="video/mp4" />
-              </video>
-              <img
-                src="/dr-tokuhara-hero.jpg"
-                alt="Dr. Keith Tokuhara"
-                className="lux-hero-fallback"
-              />
-            </div>
-            <div className="lux-hero-gradient" />
+          <VideoBackground
+            src="/media/ambient-desert-golden-hour.mp4"
+            poster="/dr-tokuhara-hero.jpg"
+            overlayOpacity={0.55}
+            overlayColor="0, 20, 30"
+            className="lux-hero"
+            style={{ minHeight: '100vh', display: 'flex', alignItems: 'center' }}
+          >
             <div className="lux-hero-content">
-              <p className="lux-hero-eyebrow anim-item anim-delay-0">Desert Vision Center &middot; Rancho Mirage</p>
-              <h1 className="lux-hero-headline anim-item anim-delay-1">
-                See your world<br />with clarity
-              </h1>
-              <p className="lux-hero-sub anim-item anim-delay-2">
-                Advanced cataract surgery by Dr. Keith Tokuhara.
-                Precision. Integrity. Your vision, reimagined.
-              </p>
-              <div className="lux-hero-cta anim-item anim-delay-3">
-                <Link href="/contact" className="lux-btn-primary">Schedule a Consultation</Link>
-                <Link href="/patient-journey" className="lux-btn-ghost">Your Journey</Link>
-              </div>
-              <div className="lux-hero-scroll-hint anim-item anim-delay-4">
+              <ScrollReveal direction="none" delay={0.2} once={true}>
+                <p className="lux-hero-eyebrow">Desert Vision Center &middot; Rancho Mirage</p>
+              </ScrollReveal>
+              <KineticText
+                text="See your world with clarity"
+                Tag="h1"
+                className="lux-hero-headline"
+                mode="word"
+                staggerDelay={0.06}
+                threshold={0.1}
+              />
+              <ScrollReveal direction="up" delay={0.6} once={true}>
+                <p className="lux-hero-sub">
+                  Advanced cataract surgery by Dr. Keith Tokuhara.
+                  Precision. Integrity. Your vision, reimagined.
+                </p>
+              </ScrollReveal>
+              <ScrollReveal direction="up" delay={0.8} once={true}>
+                <div className="lux-hero-cta">
+                  <MagneticElement strength={0.2}>
+                    <Link href="/contact" className="lux-btn-primary">Schedule a Consultation</Link>
+                  </MagneticElement>
+                  <Link href="/patient-journey" className="lux-btn-ghost">Your Journey</Link>
+                </div>
+              </ScrollReveal>
+              <div className="lux-hero-scroll-hint" style={{marginTop: '48px'}}>
                 <span className="lux-scroll-line" />
               </div>
             </div>
+          </VideoBackground>
+
+          <LineDraw style={{margin: '60px auto', maxWidth: '200px'}} color="var(--oasis)" />
+
+          {/* ═══ STATS BAR ═══ */}
+          <section className="lux-stats-bar">
+            <div className="container">
+              <StaggerChildren className="lux-stats-grid" staggerDelay={0.15}>
+                <StaggerItem className="lux-stat-item">
+                  <span className="lux-stat-number">
+                    <CountUp end={25} suffix="+" duration={2.5} />
+                  </span>
+                  <span className="lux-stat-label">Years Experience</span>
+                </StaggerItem>
+                <StaggerItem className="lux-stat-item">
+                  <span className="lux-stat-number">
+                    <CountUp end={8} suffix="" duration={2} />
+                  </span>
+                  <span className="lux-stat-label">Top Doctor Awards</span>
+                </StaggerItem>
+                <StaggerItem className="lux-stat-item">
+                  <span className="lux-stat-number">
+                    <CountUp end={5} suffix="" duration={2} />
+                  </span>
+                  <span className="lux-stat-label">Valley Firsts</span>
+                </StaggerItem>
+                <StaggerItem className="lux-stat-item">
+                  <span className="lux-stat-number">100%</span>
+                  <span className="lux-stat-label">Physician Owned</span>
+                </StaggerItem>
+              </StaggerChildren>
+            </div>
           </section>
 
-          <div className="section-divider" style={{margin: '0 auto', paddingTop: '60px'}} />
+          <LineDraw style={{margin: '60px auto', maxWidth: '200px'}} color="var(--dune)" />
 
           {/* ═══ SECTION 2: LIFESTYLE PANORAMA ═══ */}
           <section className="lux-lifestyle">
-            <Reveal>
+            <ScrollReveal direction="up" once={true}>
               <p className="lux-lifestyle-label">Life in the Coachella Valley</p>
               <h2 className="lux-lifestyle-headline">Your vision powers<br />everything you love</h2>
-            </Reveal>
-            <div className="lux-lifestyle-scroll">
-              <div className="lux-lifestyle-track">
-                {[
-                  { src: '/media/lifestyle-golf-man.jpg', alt: 'Golf in the Coachella Valley' },
-                  { src: '/media/lifestyle-tennis-woman.jpg', alt: 'Tennis at a desert country club' },
-                  { src: '/media/lifestyle-elpaseo-shopping.jpg', alt: 'Shopping on El Paseo' },
-                  { src: '/media/lifestyle-couple-resort.jpg', alt: 'Couple at a luxury desert resort' },
-                  { src: '/media/lifestyle-poolside-reading.jpg', alt: 'Reading by the pool in Palm Desert' },
-                  { src: '/media/lifestyle-joshua-tree.jpg', alt: 'Hiking in Joshua Tree' },
-                  { src: '/media/lifestyle-sunset-dining.jpg', alt: 'Sunset dining in the desert' },
-                  { src: '/media/lifestyle-art-gallery.jpg', alt: 'Art galleries on El Paseo' },
-                  { src: '/media/lifestyle-pickleball.jpg', alt: 'Pickleball in Indian Wells' },
-                  { src: '/media/lifestyle-convertible.jpg', alt: 'Driving through Palm Springs' },
-                  { src: '/media/lifestyle-morning-walk.jpg', alt: 'Morning walk in Rancho Mirage' },
-                ].map((img, i) => (
-                  <div key={i} className="lux-lifestyle-item">
-                    <Image src={img.src} alt={img.alt} width={420} height={560} className="lux-lifestyle-img" />
-                  </div>
-                ))}
-              </div>
-            </div>
+            </ScrollReveal>
+            <HorizontalScroll style={{marginTop: '40px'}}>
+              {[
+                { src: '/media/lifestyle-golf-man.jpg', alt: 'Golf in the Coachella Valley' },
+                { src: '/media/lifestyle-tennis-woman.jpg', alt: 'Tennis at a desert country club' },
+                { src: '/media/lifestyle-elpaseo-shopping.jpg', alt: 'Shopping on El Paseo' },
+                { src: '/media/lifestyle-couple-resort.jpg', alt: 'Couple at a luxury desert resort' },
+                { src: '/media/lifestyle-poolside-reading.jpg', alt: 'Reading by the pool in Palm Desert' },
+                { src: '/media/lifestyle-joshua-tree.jpg', alt: 'Hiking in Joshua Tree' },
+                { src: '/media/lifestyle-sunset-dining.jpg', alt: 'Sunset dining in the desert' },
+                { src: '/media/lifestyle-art-gallery.jpg', alt: 'Art galleries on El Paseo' },
+                { src: '/media/lifestyle-pickleball.jpg', alt: 'Pickleball in Indian Wells' },
+                { src: '/media/lifestyle-convertible.jpg', alt: 'Driving through Palm Springs' },
+                { src: '/media/lifestyle-morning-walk.jpg', alt: 'Morning walk in Rancho Mirage' },
+              ].map((img, i) => (
+                <div key={i} className="lux-lifestyle-item" style={{minWidth: '420px', flexShrink: 0}}>
+                  <Image src={img.src} alt={img.alt} width={420} height={560} className="lux-lifestyle-img" />
+                </div>
+              ))}
+            </HorizontalScroll>
           </section>
+
+          <LineDraw style={{margin: '60px auto', maxWidth: '200px'}} color="var(--oasis)" />
 
           {/* ═══ SECTION 3: PHILOSOPHY STATEMENT ═══ */}
           <section className="lux-philosophy">
             <div className="lux-philosophy-inner">
-              <Reveal>
+              <BlurReveal duration={1.4}>
                 <div className="lux-philosophy-content">
                   <span className="lux-philosophy-mark">&ldquo;</span>
                   <p className="lux-philosophy-text">
@@ -688,102 +715,104 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </Reveal>
+              </BlurReveal>
             </div>
           </section>
+
+          <LineDraw style={{margin: '60px auto', maxWidth: '200px'}} color="var(--dune)" />
 
           {/* ═══ SECTION 4: WHAT SETS US APART ═══ */}
           <section className="lux-differentiators">
             <div className="container">
-              <Reveal>
+              <ScrollReveal direction="up" once={true}>
                 <p className="lux-section-eyebrow">Why Desert Vision Center</p>
                 <h2 className="lux-section-headline">A different standard<br />of care</h2>
                 <p className="lux-diff-intro">Most eye care practices look the same from the outside. The difference is in who owns the practice, who makes the decisions, and what happens when your case isn&rsquo;t straightforward.</p>
-              </Reveal>
-              <div className="lux-diff-grid">
-                <Reveal delay={0}>
-                  <div className="lux-diff-card">
+              </ScrollReveal>
+              <StaggerChildren className="lux-diff-grid" staggerDelay={0.1}>
+                <StaggerItem>
+                  <TiltCard className="lux-diff-card" style={{position: 'relative'}}>
                     <div className="lux-diff-icon">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
                     <h3>Physician-Owned, Fully Independent</h3>
                     <p>No corporate parent. No private equity investors. No one telling Dr. Tokuhara which lenses to use or how many patients to see. Every recommendation is based solely on what is right for your eyes. That independence is increasingly rare in medicine, and it changes everything about how decisions get made.</p>
-                  </div>
-                </Reveal>
-                <Reveal delay={80}>
-                  <div className="lux-diff-card">
+                  </TiltCard>
+                </StaggerItem>
+                <StaggerItem>
+                  <TiltCard className="lux-diff-card" style={{position: 'relative'}}>
                     <div className="lux-diff-icon">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
                     </div>
                     <h3>Fellowship-Trained Subspecialist</h3>
                     <p>Dr. Tokuhara completed both an anterior segment fellowship under the legendary Dr. Howard Gimbel and a retina fellowship at Loma Linda University. That dual training gives him a perspective most cataract surgeons simply do not have, seeing the entire eye as a connected system rather than isolated parts.</p>
-                  </div>
-                </Reveal>
-                <Reveal delay={160}>
-                  <div className="lux-diff-card">
+                  </TiltCard>
+                </StaggerItem>
+                <StaggerItem>
+                  <TiltCard className="lux-diff-card" style={{position: 'relative'}}>
                     <div className="lux-diff-icon">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
                     </div>
                     <h3>The Surgeon Other Surgeons Call</h3>
                     <p>When cataract surgery goes wrong elsewhere, patients are referred to Dr. Tokuhara. Dislocated lens implants, retained fragments, iris damage, failed premium lenses. He handles these complex and revision cases every week, not once a year. That experience shapes how he approaches every surgery, even the routine ones.</p>
-                  </div>
-                </Reveal>
-                <Reveal delay={240}>
-                  <div className="lux-diff-card">
+                  </TiltCard>
+                </StaggerItem>
+                <StaggerItem>
+                  <TiltCard className="lux-diff-card" style={{position: 'relative'}}>
                     <div className="lux-diff-icon">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                     </div>
                     <h3>Ethics Over Revenue</h3>
                     <p>No referral kickbacks. No assembly-line surgery. No upselling premium lenses when a standard lens is the right choice. Dr. Tokuhara built his practice on the belief that transparency and honesty are not optional in medicine. If a procedure is not right for you, he will tell you, even when it means less revenue.</p>
-                  </div>
-                </Reveal>
-                <Reveal delay={320}>
-                  <div className="lux-diff-card">
+                  </TiltCard>
+                </StaggerItem>
+                <StaggerItem>
+                  <TiltCard className="lux-diff-card" style={{position: 'relative'}}>
                     <div className="lux-diff-icon">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9H4.5a2.5 2.5 0 010-5C7 4 9 7 12 7s5-3 7.5-3a2.5 2.5 0 010 5H18"/><path d="M18 9a9 9 0 11-12 0"/></svg>
                     </div>
                     <h3>Recognized Excellence</h3>
                     <p>Named a Top Doctor by Palm Springs Life every year since 2019. Recognized by NBC as the best cataract surgeon in the Coachella Valley. First in the valley to perform Yamane secondary lens fixation, Vivity lens implantation, and PanOptix Pro trifocal implantation.</p>
-                  </div>
-                </Reveal>
-                <Reveal delay={400}>
-                  <div className="lux-diff-card">
+                  </TiltCard>
+                </StaggerItem>
+                <StaggerItem>
+                  <TiltCard className="lux-diff-card" style={{position: 'relative'}}>
                     <div className="lux-diff-icon">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
                     </div>
                     <h3>Concierge-Level, Unhurried Care</h3>
                     <p>Your consultation is not a 10-minute conveyor belt. Dr. Tokuhara takes the time to listen, explain your options in plain language, and answer every question until you feel genuinely confident in your decision. No rush. No pressure. Just a plan built around your life.</p>
-                  </div>
-                </Reveal>
-                <Reveal delay={480}>
-                  <div className="lux-diff-card">
+                  </TiltCard>
+                </StaggerItem>
+                <StaggerItem>
+                  <TiltCard className="lux-diff-card" style={{position: 'relative'}}>
                     <div className="lux-diff-icon">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
                     </div>
                     <h3>CLEAR in a Day</h3>
                     <p>Both eyes, one day. Our same-day bilateral cataract surgery protocol means less disruption, fewer office visits, and faster visual recovery. Not every patient is a candidate, but for those who are, it transforms the experience.</p>
-                  </div>
-                </Reveal>
-              </div>
+                  </TiltCard>
+                </StaggerItem>
+              </StaggerChildren>
             </div>
           </section>
+
+          <LineDraw style={{margin: '60px auto', maxWidth: '200px'}} color="var(--oasis)" />
 
           {/* ═══ SECTION 5: EDITORIAL PORTRAIT ═══ */}
           <section className="lux-editorial">
             <div className="lux-editorial-inner">
-              <Reveal>
+              <ScrollReveal direction="left" once={true}>
                 <div className="lux-editorial-image">
-                  <Image
+                  <ParallaxImage
                     src="/media/Dr-Tokuhara.jpg"
                     alt="Dr. Keith Tokuhara"
-                    width={700}
-                    height={900}
-                    className="lux-editorial-photo"
-                    priority
+                    speed={0.15}
+                    containerStyle={{borderRadius: '16px', height: '100%', minHeight: '500px'}}
                   />
                 </div>
-              </Reveal>
-              <Reveal delay={150}>
+              </ScrollReveal>
+              <ScrollReveal direction="right" delay={0.15} once={true}>
                 <div className="lux-editorial-text">
                   <p className="lux-section-eyebrow">Meet Your Surgeon</p>
                   <h2 className="lux-editorial-headline">Keith G. Tokuhara, M.D.</h2>
@@ -800,19 +829,21 @@ export default function Home() {
                     The full story <span className="lux-arrow">&rarr;</span>
                   </Link>
                 </div>
-              </Reveal>
+              </ScrollReveal>
             </div>
           </section>
+
+          <LineDraw style={{margin: '60px auto', maxWidth: '200px'}} color="var(--dune)" />
 
           {/* ═══ DR. T VIDEO MESSAGE ═══ */}
           <section className="lux-video-message">
             <div className="container" style={{maxWidth: '900px', margin: '0 auto', textAlign: 'center'}}>
-              <Reveal>
+              <ScrollReveal direction="up" once={true}>
                 <p className="lux-section-eyebrow">In His Own Words</p>
                 <h2 className="lux-section-headline">A message from<br />Dr. Tokuhara</h2>
                 <p style={{color: 'var(--text-light)', marginBottom: '32px', fontSize: '1.05rem', maxWidth: '600px', margin: '0 auto 32px'}}>What drives my approach to cataract surgery, and why staying at the frontier of research matters for every patient I see.</p>
-              </Reveal>
-              <Reveal delay={100}>
+              </ScrollReveal>
+              <ScrollReveal direction="up" delay={0.1} once={true} scale={0.95}>
                 <div style={{
                   position: 'relative',
                   borderRadius: '16px',
@@ -833,125 +864,158 @@ export default function Home() {
                     Your browser does not support the video element.
                   </video>
                 </div>
-              </Reveal>
+              </ScrollReveal>
             </div>
           </section>
+
+          <LineDraw style={{margin: '60px auto', maxWidth: '200px'}} color="var(--oasis)" />
 
           {/* ═══ SECTION 6: INTERACTIVE CONVERSATION ═══ */}
           <section className="lux-conversation-section">
             <div className="container">
-              <Reveal>
+              <ScrollReveal direction="up" once={true}>
                 <p className="lux-section-eyebrow">Have a question?</p>
                 <h2 className="lux-section-headline">Let&rsquo;s start with<br />what&rsquo;s on your mind</h2>
                 <p className="lux-conversation-sub">Choose a starting point, and I&rsquo;ll walk you through it the same way I would in my office.</p>
-              </Reveal>
-              <Reveal delay={200}>
-                <div className="lux-conversation-cards">
-                  <button className="lux-conv-card" onClick={() => startConversation('nervous_intro')}>
-                    <span className="lux-conv-card-icon">
-                      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-                    </span>
-                    <h3>I&rsquo;m nervous about surgery</h3>
-                    <p>Let me walk you through what to expect. Most patients say the anticipation was the hardest part.</p>
-                  </button>
-                  <button className="lux-conv-card" onClick={() => startConversation('surgeon_intro')}>
-                    <span className="lux-conv-card-icon">
-                      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-                    </span>
-                    <h3>I&rsquo;m choosing a surgeon</h3>
-                    <p>The right fit matters more than the biggest name. Let&rsquo;s talk about what to look for.</p>
-                  </button>
-                  <button className="lux-conv-card" onClick={() => startConversation('lens_intro')}>
-                    <span className="lux-conv-card-icon">
-                      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
-                    </span>
-                    <h3>I want to understand my lens options</h3>
-                    <p>Monofocal, multifocal, toric. Which one fits your life, not just your eye chart.</p>
-                  </button>
-                  <button className="lux-conv-card" onClick={() => startConversation('wrong_intro')}>
-                    <span className="lux-conv-card-icon">
-                      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
-                    </span>
-                    <h3>Something went wrong with my surgery</h3>
-                    <p>If you&rsquo;ve had a complication or your vision isn&rsquo;t what you were promised, let&rsquo;s talk about what&rsquo;s possible.</p>
-                  </button>
-                </div>
-              </Reveal>
-            </div>
-          </section>
-
-          {/* ═══ SECTION 7: PATIENT VOICES ═══ */}
-          <section className="lux-testimonials">
-            <div className="container">
-              <Reveal>
-                <p className="lux-section-eyebrow">Patient Voices</p>
-              </Reveal>
-              <div className="lux-testimonial-grid">
-                <Reveal delay={0}>
-                  <div className="lux-testimonial-card">
-                    <p className="lux-testimonial-text">&ldquo;He made a complicated decision feel simple. I never once felt like a number.&rdquo;</p>
-                    <p className="lux-testimonial-source">Lens implant patient</p>
-                  </div>
-                </Reveal>
-                <Reveal delay={100}>
-                  <div className="lux-testimonial-card lux-testimonial-featured">
-                    <p className="lux-testimonial-text">&ldquo;I was terrified. He sat with me and explained everything until I wasn&rsquo;t anymore.&rdquo;</p>
-                    <p className="lux-testimonial-source">Cataract surgery patient</p>
-                  </div>
-                </Reveal>
-                <Reveal delay={200}>
-                  <div className="lux-testimonial-card">
-                    <p className="lux-testimonial-text">&ldquo;Another surgeon said nothing could be done. Dr. Tokuhara fixed it.&rdquo;</p>
-                    <p className="lux-testimonial-source">Complex cataract patient</p>
-                  </div>
-                </Reveal>
-              </div>
-            </div>
-          </section>
-
-          <div className="section-divider" style={{margin: '0 auto'}} />
-
-          {/* ═══ SECTION 8: EXPLORE ═══ */}
-          <section className="lux-explore">
-            <div className="container">
-              <Reveal>
-                <p className="lux-section-eyebrow">Explore</p>
-                <h2 className="lux-section-headline">Dive deeper</h2>
-              </Reveal>
-              <div className="lux-explore-grid">
+              </ScrollReveal>
+              <div className="lux-conversation-cards">
                 {[
-                  { href: '/cataract-surgery', title: 'Cataract Surgery', desc: 'What it is, when it makes sense, and how we do it differently.' },
-                  { href: '/patient-journey', title: 'Your Journey', desc: 'Step by step, from first visit to clear vision.' },
-                  { href: '/lens-implants-explained', title: 'Lens Guide', desc: 'Monofocal, toric, multifocal. Which one fits your life.' },
-                  { href: '/insights', title: 'Insights', desc: 'Real stories from the clinic. How patients think, decide, and see again.' },
-                  { href: '/education', title: 'Education', desc: 'Video library. Dr. Tokuhara explains, no jargon.' },
-                  { href: '/about', title: 'About', desc: 'Training, philosophy, the human side.' },
-                ].map((item, i) => (
-                  <Reveal key={i} delay={i * 80}>
-                    <Link href={item.href} className="lux-explore-card">
-                      <h3>{item.title}</h3>
-                      <p>{item.desc}</p>
-                      <span className="lux-explore-arrow">&rarr;</span>
-                    </Link>
-                  </Reveal>
+                  {
+                    id: 'nervous_intro',
+                    icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>,
+                    title: "I\u2019m nervous about surgery",
+                    desc: "Let me walk you through what to expect. Most patients say the anticipation was the hardest part.",
+                  },
+                  {
+                    id: 'surgeon_intro',
+                    icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>,
+                    title: "I\u2019m choosing a surgeon",
+                    desc: "The right fit matters more than the biggest name. Let\u2019s talk about what to look for.",
+                  },
+                  {
+                    id: 'lens_intro',
+                    icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>,
+                    title: "I want to understand my lens options",
+                    desc: "Monofocal, multifocal, toric. Which one fits your life, not just your eye chart.",
+                  },
+                  {
+                    id: 'wrong_intro',
+                    icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>,
+                    title: "Something went wrong with my surgery",
+                    desc: "If you\u2019ve had a complication or your vision isn\u2019t what you were promised, let\u2019s talk about what\u2019s possible.",
+                  },
+                ].map((card, i) => (
+                  <ScaleOnScroll key={card.id} scaleRange={[0.9, 1]} opacityRange={[0.7, 1]}>
+                    <TiltCard
+                      className="lux-conv-card"
+                      onClick={() => startConversation(card.id)}
+                      style={{position: 'relative'}}
+                    >
+                      <span className="lux-conv-card-icon">{card.icon}</span>
+                      <h3>{card.title}</h3>
+                      <p>{card.desc}</p>
+                    </TiltCard>
+                  </ScaleOnScroll>
                 ))}
               </div>
             </div>
           </section>
 
-          {/* ═══ SECTION 9: FINAL CTA ═══ */}
-          <section className="lux-final-cta">
+          <LineDraw style={{margin: '60px auto', maxWidth: '200px'}} color="var(--dune)" />
+
+          {/* ═══ SECTION 7: PATIENT VOICES ═══ */}
+          <section className="lux-testimonials">
             <div className="container">
-              <Reveal>
-                <h2 className="lux-final-headline">Your vision is worth<br />a real conversation</h2>
-                <p className="lux-final-sub">No pressure. No obligation. Just an honest discussion about your eyes and what&rsquo;s possible.</p>
-                <div className="lux-final-buttons">
-                  <Link href="/contact" className="lux-btn-primary">Schedule a Consultation</Link>
-                  <a href="tel:7603404700" className="lux-btn-ghost">Call 760.340.4700</a>
-                </div>
-              </Reveal>
+              <ScrollReveal direction="up" once={true}>
+                <p className="lux-section-eyebrow">Patient Voices</p>
+              </ScrollReveal>
+              <StaggerChildren className="lux-testimonial-grid" staggerDelay={0.15}>
+                <StaggerItem>
+                  <BlurReveal duration={1}>
+                    <div className="lux-testimonial-card">
+                      <p className="lux-testimonial-text">&ldquo;He made a complicated decision feel simple. I never once felt like a number.&rdquo;</p>
+                      <p className="lux-testimonial-source">Lens implant patient</p>
+                    </div>
+                  </BlurReveal>
+                </StaggerItem>
+                <StaggerItem>
+                  <BlurReveal duration={1}>
+                    <div className="lux-testimonial-card lux-testimonial-featured">
+                      <p className="lux-testimonial-text">&ldquo;I was terrified. He sat with me and explained everything until I wasn&rsquo;t anymore.&rdquo;</p>
+                      <p className="lux-testimonial-source">Cataract surgery patient</p>
+                    </div>
+                  </BlurReveal>
+                </StaggerItem>
+                <StaggerItem>
+                  <BlurReveal duration={1}>
+                    <div className="lux-testimonial-card">
+                      <p className="lux-testimonial-text">&ldquo;Another surgeon said nothing could be done. Dr. Tokuhara fixed it.&rdquo;</p>
+                      <p className="lux-testimonial-source">Complex cataract patient</p>
+                    </div>
+                  </BlurReveal>
+                </StaggerItem>
+              </StaggerChildren>
             </div>
           </section>
+
+          <LineDraw style={{margin: '60px auto', maxWidth: '200px'}} color="var(--oasis)" />
+
+          {/* ═══ SECTION 8: EXPLORE ═══ */}
+          <section className="lux-explore">
+            <div className="container">
+              <ScrollReveal direction="up" once={true}>
+                <p className="lux-section-eyebrow">Explore</p>
+                <h2 className="lux-section-headline">Dive deeper</h2>
+              </ScrollReveal>
+              <StaggerChildren className="lux-explore-grid" staggerDelay={0.08}>
+                {[
+                  { href: '/cataract-surgery', title: 'Cataract Surgery', desc: 'What it is, when it makes sense, and how we do it differently.', dir: 'left' },
+                  { href: '/patient-journey', title: 'Your Journey', desc: 'Step by step, from first visit to clear vision.', dir: 'right' },
+                  { href: '/lens-implants-explained', title: 'Lens Guide', desc: 'Monofocal, toric, multifocal. Which one fits your life.', dir: 'left' },
+                  { href: '/insights', title: 'Insights', desc: 'Real stories from the clinic. How patients think, decide, and see again.', dir: 'right' },
+                  { href: '/education', title: 'Education', desc: 'Video library. Dr. Tokuhara explains, no jargon.', dir: 'left' },
+                  { href: '/about', title: 'About', desc: 'Training, philosophy, the human side.', dir: 'right' },
+                ].map((item, i) => (
+                  <StaggerItem key={i} direction={item.dir}>
+                    <TiltCard style={{position: 'relative'}}>
+                      <Link href={item.href} className="lux-explore-card" style={{display: 'block'}}>
+                        <h3>{item.title}</h3>
+                        <p>{item.desc}</p>
+                        <span className="lux-explore-arrow">&rarr;</span>
+                      </Link>
+                    </TiltCard>
+                  </StaggerItem>
+                ))}
+              </StaggerChildren>
+            </div>
+          </section>
+
+          {/* ═══ SECTION 9: FINAL CTA ═══ */}
+          <GradientShift
+            colors={['var(--night-horizon)', 'var(--oasis)', 'var(--mirage)', 'var(--night-horizon)']}
+            duration={14}
+            className="lux-final-cta"
+            style={{padding: '100px 0'}}
+          >
+            <div className="container" style={{textAlign: 'center'}}>
+              <KineticText
+                text="Your vision is worth a real conversation"
+                Tag="h2"
+                className="lux-final-headline"
+                mode="word"
+                staggerDelay={0.05}
+              />
+              <ScrollReveal direction="up" delay={0.4} once={true}>
+                <p className="lux-final-sub">No pressure. No obligation. Just an honest discussion about your eyes and what&rsquo;s possible.</p>
+                <div className="lux-final-buttons">
+                  <MagneticElement strength={0.2}>
+                    <Link href="/contact" className="lux-btn-primary">Schedule a Consultation</Link>
+                  </MagneticElement>
+                  <a href="tel:7603404700" className="lux-btn-ghost">Call 760.340.4700</a>
+                </div>
+              </ScrollReveal>
+            </div>
+          </GradientShift>
 
           {/* ═══ SECTION 10: PREMIUM FOOTER ═══ */}
           <footer className="lux-footer">
@@ -1031,10 +1095,24 @@ function ConversationScreen({ screen, onChoose }) {
     <div className="conv-body">
       <div className="conv-text-block">
         {screen.paragraphs.map((p, i) => (
-          <p key={i} className={`conv-paragraph anim-item anim-delay-${i}`}>{p}</p>
+          i === 0 ? (
+            <TypewriterText
+              key={i}
+              text={p}
+              speed={25}
+              className={`conv-paragraph anim-item anim-delay-${i}`}
+              Tag="p"
+            />
+          ) : (
+            <ScrollReveal key={i} direction="up" delay={0.3 + i * 0.15} once={true}>
+              <p className={`conv-paragraph`}>{p}</p>
+            </ScrollReveal>
+          )
         ))}
         {screen.question && (
-          <p className={`conv-question anim-item anim-delay-${screen.paragraphs.length}`}>{screen.question}</p>
+          <ScrollReveal direction="up" delay={0.3 + screen.paragraphs.length * 0.15} once={true}>
+            <p className={`conv-question`}>{screen.question}</p>
+          </ScrollReveal>
         )}
       </div>
       <div className={`conv-buttons anim-item anim-delay-${screen.paragraphs.length + (screen.question ? 1 : 0)}`}>

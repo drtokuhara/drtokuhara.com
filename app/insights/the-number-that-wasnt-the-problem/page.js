@@ -2,10 +2,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
+import {
+  ScrollReveal,
+  ParallaxImage,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 
 export const metadata = {
   title: 'The Number That Wasn\'t the Problem',
-  description: 'A 79-year-old man with keratoconus questioned his cataract surgery decision when he saw residual astigmatism on paper. But the real issue wasn\'t the number. It was understanding where it came from.',
+  description: 'A keratoconus patient questioned his cataract surgery outcome when he saw residual astigmatism. A reflection on toric lens implants, IOL power calculations with irregular corneas, and surgical restraint.',
   alternates: { canonical: '/insights/the-number-that-wasnt-the-problem' },
   openGraph: {
     title: 'The Number That Wasn\'t the Problem | Dr. Keith Tokuhara',
@@ -44,9 +50,11 @@ export default function InsightTheNumber() {
         />
         <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.35) 0%, rgba(0,20,30,0.75) 100%)', zIndex: 1}} />
         <div style={{position: 'relative', zIndex: 2}} className="container">
+          <ScrollReveal direction="up" once={true}>
           <span className="insight-hero-cluster">Surgical Restraint</span>
           <h1>The Number That Wasn't the <strong>Problem</strong></h1>
           <p className="page-hero-sub">Sometimes a patient sees a number on a report and assumes there must be a fix. The harder conversation is explaining why that number isn't what it seems.</p>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -75,9 +83,9 @@ export default function InsightTheNumber() {
           <p>
             At his one-week follow-up, his left eye measured 20/30. That's a good result, especially for an eye with keratoconus. But the report also showed about 2 diopters of residual astigmatism. And that number changed the way he felt about everything.
           </p>
-          <div className="pull-quote">
+          <BlurReveal><div className="pull-quote">
             <p>"Should I have gotten the toric lens? Could we swap it out?"</p>
-          </div>
+          </div></BlurReveal>
           <p>
             I could hear the second-guessing in his voice. He wasn't asking because something went wrong. He was asking because the number on the page made it look like something could be better. And when you see a number that seems fixable, it's hard not to wonder.
           </p>
@@ -141,20 +149,20 @@ export default function InsightTheNumber() {
           <p>
             But experience teaches the opposite. Sometimes the most sophisticated decision is the one where you hold back. Where you recognize that pursuing a perfect number would actually make things worse. Where you choose the approach that respects the anatomy rather than fights it.
           </p>
-          <div className="insight-highlight">
+          <BlurReveal><div className="insight-highlight">
             <p><strong>Not every deviation from a target number represents a failure.</strong> And not every imperfection is best addressed with more surgery.</p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
       <section className="section section-white">
         <div className="container content-narrow">
-          <div className="clinic-thought">
+          <BlurReveal><div className="clinic-thought">
             <h3>The takeaway</h3>
             <p>
               <em>If you have an eye condition like keratoconus, or irregular astigmatism from any cause, the premium lens option may not be the best lens option. A good outcome is defined by alignment between your anatomy, your expectations, and your strategy. Not by chasing a number on a report. Sometimes the right call is the one that sounds less impressive but fits you better.</em>
             </p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
@@ -169,7 +177,7 @@ export default function InsightTheNumber() {
               style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
             />
           </div>
-          <h2 className="section-title">Related <strong>Reading</strong></h2>
+          <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
             <Link href="/lens-implants-explained" className="related-card">
               <h3>Lens Implants Explained</h3>

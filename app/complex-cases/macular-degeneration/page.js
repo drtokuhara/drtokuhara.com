@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
+import {
+  ScrollReveal,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 import AuthorByline from '../../components/AuthorByline';
 
 const jsonLd = [
@@ -28,9 +33,20 @@ export const metadata = {
   },
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+
+    { '@type': 'Question', name: "Can I have cataract surgery with macular degeneration?", acceptedAnswer: { '@type': 'Answer', text: "Yes. Cataract surgery is safe and beneficial for most patients with macular degeneration. Removing the cataract allows better monitoring of the retina and often improves functional vision even when macular degeneration limits central acuity. Premium multifocal lenses are generally not recommended in these cases." } },
+    { '@type': 'Question', name: "Will cataract surgery improve vision if I have macular degeneration?", acceptedAnswer: { '@type': 'Answer', text: "Cataract surgery removes the cloudy lens, which is a separate problem from macular degeneration. Patients typically experience brighter, clearer peripheral vision and improved contrast. The degree of central vision improvement depends on the severity of the macular disease." } }
+  ],
+};
+
 export default function MacularDegenerationPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
@@ -58,7 +74,7 @@ export default function MacularDegenerationPage() {
 
           <div className="content-image" style={{margin: '32px 0'}}>
             <Image
-              src="/media/stock-seniors-resort-promenade-night.jpg"
+              src="/media/stock-seniors-formal-resort-dusk.jpg"
               alt="Seniors walking along a resort promenade at night - enjoying life with well-managed eye conditions"
               width={680}
               height={453}
@@ -87,7 +103,7 @@ export default function MacularDegenerationPage() {
 
           <div className="content-image" style={{margin: '32px 0'}}>
             <Image
-              src="/media/stock-couple-golf-cart.png"
+              src="/media/stock-couple-convertible-desert.jpg"
               alt="Couple riding in a golf cart - maintaining an active desert lifestyle"
               width={680}
               height={453}
@@ -110,6 +126,7 @@ export default function MacularDegenerationPage() {
         </div>
       </section>
 
+      <LineDraw style={{margin: "0 auto", maxWidth: "200px"}} color="var(--oasis)" />
       <section className="cta">
         <div className="container">
           <h2>Have macular degeneration and cataracts? <strong>Let&rsquo;s talk.</strong></h2>

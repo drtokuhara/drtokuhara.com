@@ -1,9 +1,18 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import {
+  ScrollReveal,
+  StaggerChildren,
+  StaggerItem,
+  VideoBackground,
+  ScaleOnScroll,
+  LineDraw,
+} from '../components/ScrollAnimations';
+import TiltCard from '../components/TiltCard';
 
 export const metadata = {
   title: 'Insights from the Clinic',
-  description: 'Clinical reflections from Dr. Keith Tokuhara - real stories, real decisions, and the things about eye care that don\'t fit in a brochure.',
+  description: 'Clinical reflections from Dr. Keith Tokuhara on cataract surgery, lens implant decisions, IOL selection, and the things about eye care that don\'t fit in a brochure.',
   alternates: { canonical: '/insights' },
   openGraph: {
     title: 'Insights from the Clinic | Dr. Keith Tokuhara',
@@ -14,12 +23,36 @@ export const metadata = {
 
 const insights = [
   {
+    slug: 'when-ai-recommends-your-lens',
+    title: 'When AI Recommends Your Lens... But Your Eye Tells a Different Story',
+    date: 'May 2026',
+    description: 'A patient used AI to choose his cataract lens. Every tool agreed. But his eyes told a different story. A reflection on the limits of AI in medicine.',
+    cluster: 'Clinical Judgment',
+    image: '/media/stock-couple-market-sunlight.jpg',
+  },
+  {
+    slug: 'five-questions-before-surgery',
+    title: '5 Questions to Ask Before Cataract Surgery',
+    date: 'May 2026',
+    description: 'Your surgeon should welcome every one of them. The five most important questions to ask before cataract surgery, and what the answers reveal.',
+    cluster: 'Decisions & Timing',
+    image: '/media/stock-couple-patio-scenic-view.jpg',
+  },
+  {
+    slug: 'three-things-patients-say',
+    title: 'Three Things Patients Say That Tell Me Which Lens to Recommend',
+    date: 'May 2026',
+    description: 'Your words tell me more than any chart. How three common statements in the exam room reveal which lens implant fits your life.',
+    cluster: 'Lens Selection',
+    image: '/media/stock-couple-art-interior.jpg',
+  },
+  {
     slug: 'when-is-the-right-time',
     title: 'When Is the Right Time for Cataract Surgery?',
     date: 'April 2026',
     description: 'The question I hear more than any other. There is no magic number. The right time depends on your life, not a chart.',
     cluster: 'Decisions & Timing',
-    image: '/media/stock-couple-outdoor-sunshine.jpg',
+    image: '/media/stock-couple-lawn-sunset-coachella.jpg',
   },
   {
     slug: 'when-patients-wait',
@@ -90,20 +123,21 @@ const insights = [
 export default function InsightsPage() {
   return (
     <>
-      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
-        <Image
-          src="/media/stock-couple-market-sunlight.jpg"
-          alt="Couple browsing a sunlit market together"
-          fill
-          style={{objectFit: 'cover', objectPosition: 'center'}}
-          priority
-        />
-        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.4) 0%, rgba(0,20,30,0.7) 100%)', zIndex: 1}} />
-        <div style={{position: 'relative', zIndex: 2}} className="container">
-          <h1>Insights from the <strong>Clinic</strong></h1>
-          <p className="page-hero-sub">These aren't medical articles. They're reflections - on the patients I see, the decisions we navigate together, and what I've learned about the space between a diagnosis and a choice.</p>
+      <VideoBackground
+        src="/media/ambient-desert-sunrise.mp4"
+        poster="/media/stock-couple-market-sunlight.jpg"
+        overlayOpacity={0.55}
+        overlayColor="0, 20, 30"
+        className="page-hero page-hero-image"
+        style={{position: 'relative', overflow: 'hidden'}}
+      >
+        <div className="container">
+          <ScrollReveal direction="up" once={true}>
+            <h1>Insights from the <strong>Clinic</strong></h1>
+            <p className="page-hero-sub">These aren't medical articles. They're reflections - on the patients I see, the decisions we navigate together, and what I've learned about the space between a diagnosis and a choice.</p>
+          </ScrollReveal>
         </div>
-      </section>
+      </VideoBackground>
 
       <section className="section section-white" style={{paddingBottom: 0}}>
         <div className="container" style={{maxWidth: '800px', margin: '0 auto'}}>
@@ -130,27 +164,33 @@ export default function InsightsPage() {
               style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
             />
           </div>
-          <div className="insights-grid">
-            {insights.map((insight) => (
-              <Link key={insight.slug} href={`/insights/${insight.slug}`} className="insight-card insight-card-visual">
-                <div className="insight-card-image">
-                  <Image
-                    src={insight.image}
-                    alt={insight.title}
-                    width={600}
-                    height={340}
-                    style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '12px 12px 0 0' }}
-                  />
-                </div>
-                <div className="insight-card-body">
-                  <span className="insight-cluster">{insight.cluster}</span>
-                  <h2 className="insight-card-title">{insight.title}</h2>
-                  <p className="insight-card-desc">{insight.description}</p>
-                  <span className="insight-date">{insight.date}</span>
-                </div>
-              </Link>
+          <StaggerChildren className="insights-grid" staggerDelay={0.08}>
+            {insights.map((insight, i) => (
+              <StaggerItem key={insight.slug} direction={i % 2 === 0 ? 'left' : 'right'}>
+                <ScaleOnScroll scaleRange={[0.95, 1]} opacityRange={[0.8, 1]}>
+                  <TiltCard style={{position: 'relative', borderRadius: '12px'}}>
+                    <Link href={`/insights/${insight.slug}`} className="insight-card insight-card-visual">
+                      <div className="insight-card-image">
+                        <Image
+                          src={insight.image}
+                          alt={insight.title}
+                          width={600}
+                          height={340}
+                          style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '12px 12px 0 0' }}
+                        />
+                      </div>
+                      <div className="insight-card-body">
+                        <span className="insight-cluster">{insight.cluster}</span>
+                        <h2 className="insight-card-title">{insight.title}</h2>
+                        <p className="insight-card-desc">{insight.description}</p>
+                        <span className="insight-date">{insight.date}</span>
+                      </div>
+                    </Link>
+                  </TiltCard>
+                </ScaleOnScroll>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerChildren>
         </div>
       </section>
     </>

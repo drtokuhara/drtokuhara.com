@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
+import {
+  ScrollReveal,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 import AuthorByline from '../../components/AuthorByline';
 
 const jsonLd = [
@@ -28,9 +33,20 @@ export const metadata = {
   },
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+
+    { '@type': 'Question', name: "Can diabetics have cataract surgery?", acceptedAnswer: { '@type': 'Answer', text: "Yes. Diabetic patients can and often should have cataract surgery, as cataracts can worsen faster with diabetes. However, the timing and approach require careful coordination with diabetic retinal health. Uncontrolled blood sugar and active diabetic retinopathy may need to be addressed before or alongside cataract surgery." } },
+    { '@type': 'Question', name: "Does diabetes affect cataract surgery outcomes?", acceptedAnswer: { '@type': 'Answer', text: "Diabetes can influence healing, increase the risk of macular swelling after surgery, and affect premium lens implant performance. Dr. Tokuhara evaluates diabetic eye health thoroughly before surgery and monitors closely afterward to optimize outcomes." } }
+  ],
+};
+
 export default function DiabetesPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
@@ -109,6 +125,7 @@ export default function DiabetesPage() {
         </div>
       </section>
 
+      <LineDraw style={{margin: "0 auto", maxWidth: "200px"}} color="var(--oasis)" />
       <section className="cta">
         <div className="container">
           <h2>Have diabetes and developing <strong>cataracts?</strong></h2>

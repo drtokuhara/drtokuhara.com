@@ -3,6 +3,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useLanguage } from '../../LanguageContext';
+import {
+  ScrollReveal,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 import AuthorByline from '../../components/AuthorByline';
 
 export default function TwentyYearsForwardContent() {

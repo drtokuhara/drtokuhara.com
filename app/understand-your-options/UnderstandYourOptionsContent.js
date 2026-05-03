@@ -3,6 +3,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useLanguage } from '../LanguageContext';
+import {
+  ScrollReveal,
+  KineticText,
+  LineDraw,
+} from '../components/ScrollAnimations';
 
 export default function UnderstandYourOptionsContent() {
   const { t, lang } = useLanguage();
@@ -12,7 +17,7 @@ export default function UnderstandYourOptionsContent() {
       {/* PAGE HERO */}
       <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
         <Image
-          src="/media/stock-woman-outdoor-cafe.jpg"
+          src="/media/stock-woman-portrait-pool-dusk.jpg"
           alt="Woman relaxing at an outdoor cafe"
           fill
           style={{objectFit: 'cover', objectPosition: 'center'}}
@@ -125,7 +130,7 @@ export default function UnderstandYourOptionsContent() {
         <div className="container content-narrow">
           <div className="content-image">
             <Image
-              src="/media/stock-woman-outdoor-cafe.jpg"
+              src="/media/stock-woman-portrait-pool-dusk.jpg"
               alt={lang === 'es' ? 'Mujer disfrutando de un cafe al aire libre con vision clara' : 'Woman enjoying an outdoor cafe with clear vision after cataract surgery'}
               width={680}
               height={453}

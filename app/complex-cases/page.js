@@ -2,6 +2,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../schema';
 import AuthorByline from '../components/AuthorByline';
+import {
+  ScrollReveal,
+  StaggerChildren,
+  StaggerItem,
+  BlurReveal,
+  LineDraw,
+} from '../components/ScrollAnimations';
+import TiltCard from '../components/TiltCard';
 
 const jsonLd = [
   articleSchema({
@@ -102,9 +110,11 @@ export default function ComplexCasesPage() {
       {/* CASES I SPECIALIZE IN */}
       <section className="section section-white">
         <div className="container">
-          <h2 className="section-title">Cases I <strong>Specialize In</strong></h2>
-          <div className="section-subtitle">These are the problems I solve every week. Not once a year. Every week.</div>
-          <div className="card-grid">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">Cases I <strong>Specialize In</strong></h2>
+            <div className="section-subtitle">These are the problems I solve every week. Not once a year. Every week.</div>
+          </ScrollReveal>
+          <StaggerChildren className="card-grid" staggerDelay={0.08}>
             <div className="card">
               <h3>Dislocated or Subluxated Lens Implants</h3>
               <p>A lens implant that has shifted, tilted, or fallen out of position. This can happen months or years after surgery due to progressive zonular weakness, pseudoexfoliation syndrome, or trauma. The lens may sublux partially or dislocate completely into the vitreous cavity. I use the Yamane flanged intrascleral fixation technique, a sutureless approach that creates stable, long-term lens centration even without capsular support. I was the first surgeon in the Coachella Valley to perform this technique.</p>
@@ -137,73 +147,75 @@ export default function ComplexCasesPage() {
               <h3>Reoperation After Another Surgeon&rsquo;s Complication</h3>
               <p>This is the hardest conversation in ophthalmology. Something went wrong, and now you need someone else to fix it. I approach these cases without judgment toward the original surgeon. Complications can happen to anyone. My focus is entirely on what we can do now to give you the best possible outcome.</p>
             </div>
-          </div>
+          </StaggerChildren>
         </div>
       </section>
 
       {/* CONDITION-SPECIFIC PAGES */}
       <section className="section section-warm">
         <div className="container">
-          <h2 className="section-title">Explore Specific <strong>Conditions</strong></h2>
-          <div className="section-subtitle">Each condition brings unique challenges. Learn how I approach the cases that require specialized expertise.</div>
-          <div className="insights-grid">
-            <Link href="/complex-cases/macular-degeneration" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
-              <div className="insight-card-image"><Image src="/media/stock-seniors-outdoor-toast.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">Explore Specific <strong>Conditions</strong></h2>
+            <div className="section-subtitle">Each condition brings unique challenges. Learn how I approach the cases that require specialized expertise.</div>
+          </ScrollReveal>
+          <StaggerChildren className="insights-grid" staggerDelay={0.06}>
+            <TiltCard style={{position: 'relative', borderRadius: '16px'}}><Link href="/complex-cases/macular-degeneration" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
+              <div className="insight-card-image"><Image src="/media/stock-group-lounge-toast.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
               <div className="insight-card-body"><span className="insight-cluster">Retina + Cataract</span><h2 className="insight-card-title">Macular Degeneration</h2><p className="insight-card-desc">The only cataract surgeon in the valley who is board certified and fellowship trained in retina. Both conditions, one doctor.</p></div>
-            </Link>
-            <Link href="/complex-cases/diabetes" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
+            </Link></TiltCard>
+            <TiltCard style={{position: 'relative', borderRadius: '16px'}}><Link href="/complex-cases/diabetes" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
               <div className="insight-card-image"><Image src="/media/stock-couple-produce-market.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
               <div className="insight-card-body"><span className="insight-cluster">Systemic Disease</span><h2 className="insight-card-title">Diabetes &amp; Diabetic Retinopathy</h2><p className="insight-card-desc">Retinopathy screening, DME management, and surgical timing for diabetic patients.</p></div>
-            </Link>
-            <Link href="/complex-cases/glaucoma-and-cataract" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
+            </Link></TiltCard>
+            <TiltCard style={{position: 'relative', borderRadius: '16px'}}><Link href="/complex-cases/glaucoma-and-cataract" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
               <div className="insight-card-image"><Image src="/media/stock-group-tennis-sunny.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
               <div className="insight-card-body"><span className="insight-cluster">Combined Procedure</span><h2 className="insight-card-title">Glaucoma &amp; Cataract</h2><p className="insight-card-desc">Combined MIGS procedures including iStent and KDB Goniotomy to address both conditions in one surgery.</p></div>
-            </Link>
-            <Link href="/complex-cases/fuchs-dystrophy" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
-              <div className="insight-card-image"><Image src="/media/stock-woman-outdoor-cafe.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
+            </Link></TiltCard>
+            <TiltCard style={{position: 'relative', borderRadius: '16px'}}><Link href="/complex-cases/fuchs-dystrophy" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
+              <div className="insight-card-image"><Image src="/media/stock-woman-portrait-sunlit-resort.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
               <div className="insight-card-body"><span className="insight-cluster">Corneal</span><h2 className="insight-card-title">Fuchs Dystrophy</h2><p className="insight-card-desc">Endothelial cell considerations, combined DMEK/DSAEK approaches, and protecting your cornea during cataract surgery.</p></div>
-            </Link>
-            <Link href="/complex-cases/previous-retina-surgery" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
-              <div className="insight-card-image"><Image src="/media/stock-seniors-bocce-desert.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
+            </Link></TiltCard>
+            <TiltCard style={{position: 'relative', borderRadius: '16px'}}><Link href="/complex-cases/previous-retina-surgery" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
+              <div className="insight-card-image"><Image src="/media/stock-group-pickleball-palms.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
               <div className="insight-card-body"><span className="insight-cluster">Post-Surgical</span><h2 className="insight-card-title">After Retina Surgery</h2><p className="insight-card-desc">Post-vitrectomy cataracts, zonular changes, and navigating eyes with a history of gas or silicone oil.</p></div>
-            </Link>
-            <Link href="/complex-cases/retained-silicone-oil" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
+            </Link></TiltCard>
+            <TiltCard style={{position: 'relative', borderRadius: '16px'}}><Link href="/complex-cases/retained-silicone-oil" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
               <div className="insight-card-image"><Image src="/media/stock-couple-sunset-cooking.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
               <div className="insight-card-body"><span className="insight-cluster">Post-Surgical</span><h2 className="insight-card-title">Retained Silicone Oil</h2><p className="insight-card-desc">Post-retina surgery complications including emulsification, elevated pressure, and combined removal approaches.</p></div>
-            </Link>
-            <Link href="/complex-cases/aphakia-after-retina" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
-              <div className="insight-card-image"><Image src="/media/stock-seniors-evening-stroll.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
+            </Link></TiltCard>
+            <TiltCard style={{position: 'relative', borderRadius: '16px'}}><Link href="/complex-cases/aphakia-after-retina" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
+              <div className="insight-card-image"><Image src="/media/stock-seniors-resort-string-lights.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
               <div className="insight-card-body"><span className="insight-cluster">Lens Fixation</span><h2 className="insight-card-title">Aphakia After Retina Surgery</h2><p className="insight-card-desc">Secondary lens implantation using the Yamane technique for patients left without a lens after complex retina procedures.</p></div>
-            </Link>
-            <Link href="/complex-cases/previous-lasik" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
-              <div className="insight-card-image"><Image src="/media/stock-couple-golf-cart.png" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
+            </Link></TiltCard>
+            <TiltCard style={{position: 'relative', borderRadius: '16px'}}><Link href="/complex-cases/previous-lasik" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
+              <div className="insight-card-image"><Image src="/media/stock-couple-farmers-market.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
               <div className="insight-card-body"><span className="insight-cluster">Refractive</span><h2 className="insight-card-title">After LASIK</h2><p className="insight-card-desc">Modified IOL calculations, managing refractive surprises, and setting realistic expectations for post-LASIK eyes.</p></div>
-            </Link>
-            <Link href="/complex-cases/previous-rk" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
+            </Link></TiltCard>
+            <TiltCard style={{position: 'relative', borderRadius: '16px'}}><Link href="/complex-cases/previous-rk" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
               <div className="insight-card-image"><Image src="/media/stock-men-car-show.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
               <div className="insight-card-body"><span className="insight-cluster">Refractive</span><h2 className="insight-card-title">After Radial Keratotomy</h2><p className="insight-card-desc">RK creates some of the most unpredictable corneas in ophthalmology. Specialized calculation and staged approaches.</p></div>
-            </Link>
-            <Link href="/complex-cases/floppy-iris" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
+            </Link></TiltCard>
+            <TiltCard style={{position: 'relative', borderRadius: '16px'}}><Link href="/complex-cases/floppy-iris" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
               <div className="insight-card-image"><Image src="/media/stock-family-outdoor-portrait.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
               <div className="insight-card-body"><span className="insight-cluster">Medication</span><h2 className="insight-card-title">Floppy Iris Syndrome (IFIS)</h2><p className="insight-card-desc">Tamsulosin, Flomax, and alpha-blocker associations. Surgical management with iris expansion and adapted technique.</p></div>
-            </Link>
-            <Link href="/complex-cases/pseudoexfoliation" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
+            </Link></TiltCard>
+            <TiltCard style={{position: 'relative', borderRadius: '16px'}}><Link href="/complex-cases/pseudoexfoliation" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
               <div className="insight-card-image"><Image src="/media/stock-couple-market-sunlight.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
               <div className="insight-card-body"><span className="insight-cluster">Structural</span><h2 className="insight-card-title">Pseudoexfoliation</h2><p className="insight-card-desc">Weak zonules, capsular tension rings, and staged approaches for eyes with compromised lens support.</p></div>
-            </Link>
-            <Link href="/complex-cases/parkinsons-disease" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
-              <div className="insight-card-image"><Image src="/media/stock-seniors-resort-promenade-night.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
+            </Link></TiltCard>
+            <TiltCard style={{position: 'relative', borderRadius: '16px'}}><Link href="/complex-cases/parkinsons-disease" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
+              <div className="insight-card-image"><Image src="/media/stock-friends-night-canal-walk.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
               <div className="insight-card-body"><span className="insight-cluster">Neurological</span><h2 className="insight-card-title">Parkinson&rsquo;s Disease</h2><p className="insight-card-desc">Tremor management, medication timing, head positioning, and surgical adaptations for Parkinson&rsquo;s patients.</p></div>
-            </Link>
-            <Link href="/complex-cases/down-syndrome" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
-              <div className="insight-card-image"><Image src="/media/stock-family-golden-hour-walk.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
+            </Link></TiltCard>
+            <TiltCard style={{position: 'relative', borderRadius: '16px'}}><Link href="/complex-cases/down-syndrome" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
+              <div className="insight-card-image"><Image src="/media/stock-couple-garden-blooming.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
               <div className="insight-card-body"><span className="insight-cluster">Special Populations</span><h2 className="insight-card-title">Down Syndrome</h2><p className="insight-card-desc">Earlier cataracts, anatomical considerations, cooperation challenges, and compassionate anesthesia planning.</p></div>
-            </Link>
-            <Link href="/complex-cases/alzheimers-dementia" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
-              <div className="insight-card-image"><Image src="/media/stock-couple-outdoor-sunshine.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
+            </Link></TiltCard>
+            <TiltCard style={{position: 'relative', borderRadius: '16px'}}><Link href="/complex-cases/alzheimers-dementia" className="insight-card insight-card-visual" style={{textDecoration: 'none', color: 'inherit'}}>
+              <div className="insight-card-image"><Image src="/media/stock-couple-sunny-pathway-luxury.jpg" alt="" width={600} height={340} style={{width:'100%',height:'180px',objectFit:'cover',borderRadius:'16px 16px 0 0'}} /></div>
               <div className="insight-card-body"><span className="insight-cluster">Special Populations</span><h2 className="insight-card-title">Alzheimer&rsquo;s &amp; Dementia</h2><p className="insight-card-desc">Informed consent, caregiver coordination, and honest benefit assessment for patients with cognitive decline.</p></div>
-            </Link>
-          </div>
+            </Link></TiltCard>
+          </StaggerChildren>
         </div>
       </section>
 

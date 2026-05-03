@@ -2,6 +2,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../schema';
 import AuthorByline from '../components/AuthorByline';
+import {
+  ScrollReveal,
+  KineticText,
+  BlurReveal,
+  LineDraw,
+} from '../components/ScrollAnimations';
 
 const jsonLd = [
   articleSchema({
@@ -13,6 +19,15 @@ const jsonLd = [
     { name: 'Home', href: '/' },
     { name: 'Choosing Your Surgeon', href: '/choosing-your-surgeon' },
   ]),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I choose the best cataract surgeon?', acceptedAnswer: { '@type': 'Answer', text: 'Look beyond credentials alone. Ask about surgical volume, complication management experience, whether they handle complex cases, and how they approach lens selection. A surgeon who listens to your goals and explains tradeoffs honestly is more valuable than one who simply offers the newest technology.' } },
+      { '@type': 'Question', name: 'What questions should I ask my cataract surgeon?', acceptedAnswer: { '@type': 'Answer', text: 'Ask how many cataract surgeries they perform annually, how they handle complications, what lens options they offer, whether they have experience with your specific eye conditions, and what their approach is to managing unexpected findings during surgery.' } },
+      { '@type': 'Question', name: 'Does it matter how many cataract surgeries a surgeon has performed?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, surgical volume correlates with outcomes and complication management skill. A high-volume surgeon has seen more variations, managed more unexpected situations, and developed the judgment that only comes from extensive experience.' } },
+    ],
+  },
 ];
 
 export const metadata = {
@@ -38,7 +53,7 @@ export default function ChoosingYourSurgeon() {
       ))}
       <section className="page-hero">
         <div className="container">
-          <h1>Choosing a Cataract <strong>Surgeon</strong></h1>
+          <ScrollReveal direction="up" once={true}><h1>Choosing a Cataract <strong>Surgeon</strong></h1></ScrollReveal>
           <p className="page-hero-sub">The questions nobody tells you to ask - and why the answer isn't always the biggest name or the closest office.</p>
         </div>
       </section>

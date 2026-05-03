@@ -3,6 +3,14 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useLanguage } from '../LanguageContext';
+import {
+  ScrollReveal,
+  StaggerChildren,
+  StaggerItem,
+  ParallaxImage,
+  VideoBackground,
+  LineDraw,
+} from '../components/ScrollAnimations';
 
 export default function PatientJourneyContent() {
   const { t, lang } = useLanguage();
@@ -10,20 +18,19 @@ export default function PatientJourneyContent() {
   return (
     <>
       {/* PAGE HERO */}
-      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
-        <Image
-          src="/media/stock-couple-outdoor-sunshine.jpg"
-          alt="Couple enjoying outdoor sunshine in the Coachella Valley"
-          fill
-          style={{objectFit: 'cover', objectPosition: 'center'}}
-          priority
-        />
-        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.4) 0%, rgba(0,20,30,0.7) 100%)', zIndex: 1}} />
-        <div style={{position: 'relative', zIndex: 2}} className="container">
+      <VideoBackground
+        src="/media/ambient-resort-pool.mp4"
+        poster="/media/stock-couple-desert-overlook.jpg"
+        overlayOpacity={0.5}
+        overlayColor="0, 20, 30"
+        className="page-hero page-hero-image"
+        style={{position: 'relative', overflow: 'hidden'}}
+      >
+        <div className="container">
           <h1 dangerouslySetInnerHTML={{ __html: t('patientJourney.title') || 'Your <strong>Patient Journey</strong>' }} />
           <p className="page-hero-sub">{t('patientJourney.subtitle') || 'From first visit to clear vision. No surprises. No pressure. Just a clear path.'}</p>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* PERSONAL MESSAGE VIDEO */}
       <section className="section section-white" style={{ paddingTop: '48px', paddingBottom: '48px' }}>
@@ -69,9 +76,12 @@ export default function PatientJourneyContent() {
         </div>
       </section>
 
+      <LineDraw style={{margin: '0 auto', maxWidth: '200px'}} color="var(--oasis)" />
+
       {/* STEP 1: THE EVALUATION */}
       <section className="section section-warm">
         <div className="container">
+          <ScrollReveal direction="up" once={true}>
           <div className="journey-step">
             <div className="journey-step-header">
               <span className="journey-step-number">1</span>
@@ -103,12 +113,16 @@ export default function PatientJourneyContent() {
               </div>
             </div>
           </div>
+          </ScrollReveal>
         </div>
       </section>
+
+      <LineDraw style={{margin: '0 auto', maxWidth: '200px'}} color="var(--dune)" />
 
       {/* STEP 2: THE DECISION */}
       <section className="section section-white">
         <div className="container">
+          <ScrollReveal direction="up" once={true}>
           <div className="journey-step">
             <div className="journey-step-header">
               <span className="journey-step-number">2</span>
@@ -140,12 +154,16 @@ export default function PatientJourneyContent() {
               </div>
             </div>
           </div>
+          </ScrollReveal>
         </div>
       </section>
+
+      <LineDraw style={{margin: '0 auto', maxWidth: '200px'}} color="var(--oasis)" />
 
       {/* STEP 3: SURGERY DAY */}
       <section className="section section-warm">
         <div className="container">
+          <ScrollReveal direction="up" once={true}>
           <div className="journey-step">
             <div className="journey-step-header">
               <span className="journey-step-number">3</span>
@@ -186,12 +204,16 @@ export default function PatientJourneyContent() {
               </div>
             </div>
           </div>
+          </ScrollReveal>
         </div>
       </section>
+
+      <LineDraw style={{margin: '0 auto', maxWidth: '200px'}} color="var(--dune)" />
 
       {/* STEP 4: RECOVERY */}
       <section className="section section-white">
         <div className="container">
+          <ScrollReveal direction="up" once={true}>
           <div className="journey-step">
             <div className="journey-step-header">
               <span className="journey-step-number">4</span>
@@ -226,12 +248,16 @@ export default function PatientJourneyContent() {
               </div>
             </div>
           </div>
+          </ScrollReveal>
         </div>
       </section>
+
+      <LineDraw style={{margin: '0 auto', maxWidth: '200px'}} color="var(--oasis)" />
 
       {/* STEP 5: LIFE AFTER */}
       <section className="section section-warm">
         <div className="container">
+          <ScrollReveal direction="up" once={true}>
           <div className="journey-step">
             <div className="journey-step-header">
               <span className="journey-step-number">5</span>
@@ -283,6 +309,7 @@ export default function PatientJourneyContent() {
               </div>
             </div>
           </div>
+          </ScrollReveal>
         </div>
       </section>
 

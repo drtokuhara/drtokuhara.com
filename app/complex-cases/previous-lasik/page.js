@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
+import {
+  ScrollReveal,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 import AuthorByline from '../../components/AuthorByline';
 
 const jsonLd = [
@@ -28,9 +33,20 @@ export const metadata = {
   },
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+
+    { '@type': 'Question', name: "Can I have cataract surgery after LASIK?", acceptedAnswer: { '@type': 'Answer', text: "Yes. Millions of LASIK patients eventually develop cataracts. The main challenge is that LASIK changes the corneal measurements used to calculate lens implant power. Dr. Tokuhara uses advanced formulas and measurement techniques specifically designed for post-LASIK eyes to achieve accurate results." } },
+    { '@type': 'Question', name: "Is cataract surgery harder after LASIK?", acceptedAnswer: { '@type': 'Answer', text: "The surgery itself is not significantly harder, but the lens power calculations are more complex. Standard formulas can produce significant errors in post-LASIK eyes. Specialized measurements, multiple calculation methods, and intraoperative verification help ensure the best possible outcome." } }
+  ],
+};
+
 export default function PreviousLasikPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
@@ -90,7 +106,7 @@ export default function PreviousLasikPage() {
 
           <div className="content-image" style={{margin: '32px 0'}}>
             <Image
-              src="/media/stock-family-golden-hour-walk.jpg"
+              src="/media/stock-couple-wildflower-field.jpg"
               alt="Family enjoying a golden hour walk with their dog - the clear vision lifestyle"
               width={680}
               height={453}
@@ -105,6 +121,7 @@ export default function PreviousLasikPage() {
         </div>
       </section>
 
+      <LineDraw style={{margin: "0 auto", maxWidth: "200px"}} color="var(--oasis)" />
       <section className="cta">
         <div className="container">
           <h2>Had LASIK and now need <strong>cataract surgery?</strong></h2>

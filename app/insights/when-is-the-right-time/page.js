@@ -2,10 +2,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
+import {
+  ScrollReveal,
+  ParallaxImage,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 
 export const metadata = {
   title: 'When Is the Right Time for Cataract Surgery?',
-  description: 'The question Dr. Tokuhara hears more than any other. There is no magic number. The right time depends on your life, not a chart.',
+  description: 'When is the right time for cataract surgery? There is no magic number or visual acuity threshold. The timing depends on how cataracts affect your daily life, not a chart.',
   alternates: { canonical: '/insights/when-is-the-right-time' },
   openGraph: {
     title: 'When Is the Right Time for Cataract Surgery? | Dr. Keith Tokuhara',
@@ -36,7 +42,7 @@ export default function InsightWhenIsTheRightTime() {
       ))}
       <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
         <Image
-          src="/media/stock-couple-outdoor-sunshine.jpg"
+          src="/media/stock-couple-lawn-sunset-coachella.jpg"
           alt=""
           fill
           style={{objectFit: 'cover', objectPosition: 'center'}}
@@ -44,9 +50,11 @@ export default function InsightWhenIsTheRightTime() {
         />
         <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.35) 0%, rgba(0,20,30,0.75) 100%)', zIndex: 1}} />
         <div style={{position: 'relative', zIndex: 2}} className="container">
+          <ScrollReveal direction="up" once={true}>
           <span className="insight-hero-cluster">Decisions & Timing</span>
           <h1>When Is the <strong>Right Time?</strong></h1>
           <p className="page-hero-sub">The question I hear more than any other. There is no magic number. The right time depends on your life, not a chart.</p>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -90,9 +98,9 @@ export default function InsightWhenIsTheRightTime() {
           <p>
             No one experiences a cataract as a number on a chart. You experience it as a disruption. Headlights that didn't used to bother you. A book that takes more effort than it should. Colors that look washed out compared to how you remember them. A slow, quiet erosion of things you used to do without thinking.
           </p>
-          <div className="pull-quote">
+          <BlurReveal><div className="pull-quote">
             <p>The real question isn't whether your cataract has reached some clinical threshold. It's whether your daily life has crossed a personal one.</p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
@@ -121,7 +129,7 @@ export default function InsightWhenIsTheRightTime() {
       <section style={{padding: 0}}>
         <div className="editorial-image-break">
           <Image
-            src="/media/stock-couple-golf-cart.png"
+            src="/media/stock-couple-tent-desert-sunset.jpg"
             alt="Couple enjoying a golf cart ride through the desert"
             width={1920}
             height={400}
@@ -149,20 +157,20 @@ export default function InsightWhenIsTheRightTime() {
             <strong>What would improvement realistically look like for you?</strong> Not perfection. Not 20-year-old eyes. But meaningful, noticeable improvement in the things that matter to you.
           </p>
 
-          <div className="insight-highlight">
+          <BlurReveal><div className="insight-highlight">
             <p><strong>When those three things become clear, the decision usually resolves itself.</strong> No pressure needed.</p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
       <section className="section section-white">
         <div className="container content-narrow">
-          <div className="clinic-thought">
+          <BlurReveal><div className="clinic-thought">
             <h3>The takeaway</h3>
             <p>
               <em>You don't have to wait until it's unbearable. You don't need anyone's permission. The right time is when the cost of staying the same has started to exceed the cost of change, and only you can feel where that line is. My job is to make sure you have the information to draw it clearly.</em>
             </p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
@@ -177,7 +185,7 @@ export default function InsightWhenIsTheRightTime() {
               style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
             />
           </div>
-          <h2 className="section-title">Related <strong>Reading</strong></h2>
+          <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
             <Link href="/insights/when-patients-wait" className="related-card">
               <h3>When Patients Wait</h3>

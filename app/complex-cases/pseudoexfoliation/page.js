@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
+import {
+  ScrollReveal,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 import AuthorByline from '../../components/AuthorByline';
 
 const jsonLd = [
@@ -28,9 +33,20 @@ export const metadata = {
   },
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+
+    { '@type': 'Question', name: "What is pseudoexfoliation and how does it affect cataract surgery?", acceptedAnswer: { '@type': 'Answer', text: "Pseudoexfoliation syndrome produces flaky protein deposits that accumulate on the lens capsule and weaken the zonular fibers that hold the lens in place. This increases the risk of lens instability during and after cataract surgery. An experienced surgeon uses specialized techniques to manage this safely." } },
+    { '@type': 'Question', name: "Is cataract surgery riskier with pseudoexfoliation?", acceptedAnswer: { '@type': 'Answer', text: "Pseudoexfoliation does increase surgical complexity because the lens support structures may be weakened. However, an experienced surgeon who recognizes and plans for this can achieve excellent outcomes. Dr. Tokuhara evaluates zonular integrity before surgery and uses capsular support devices when needed." } }
+  ],
+};
+
 export default function PseudoexfoliationPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
@@ -55,7 +71,7 @@ export default function PseudoexfoliationPage() {
 
           <div className="content-image" style={{margin: '32px 0'}}>
             <Image
-              src="/media/stock-seniors-outdoor-dining.jpg"
+              src="/media/stock-group-dinner-party-outdoor.jpg"
               alt="Active seniors enjoying an outdoor dinner in the desert - living well with age-related eye conditions"
               width={680}
               height={453}
@@ -87,7 +103,7 @@ export default function PseudoexfoliationPage() {
 
           <div className="content-image" style={{margin: '32px 0'}}>
             <Image
-              src="/media/stock-seniors-outdoor-toast.jpg"
+              src="/media/stock-couple-brunch-patio.jpg"
               alt="Seniors toasting at an outdoor dinner gathering in the Coachella Valley"
               width={680}
               height={453}
@@ -105,6 +121,7 @@ export default function PseudoexfoliationPage() {
         </div>
       </section>
 
+      <LineDraw style={{margin: "0 auto", maxWidth: "200px"}} color="var(--oasis)" />
       <section className="cta">
         <div className="container">
           <h2>Diagnosed with pseudoexfoliation and considering <strong>cataract surgery?</strong></h2>

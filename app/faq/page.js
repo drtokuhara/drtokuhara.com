@@ -1,6 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import {
+  ScrollReveal,
+  StaggerChildren,
+  StaggerItem,
+  LineDraw,
+} from '../components/ScrollAnimations';
 
 export const metadata = {
   title: 'Frequently Asked Questions About Cataract Surgery',
@@ -180,8 +186,10 @@ export default function FAQPage() {
         />
         <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.4) 0%, rgba(0,20,30,0.7) 100%)', zIndex: 1}} />
         <div style={{position: 'relative', zIndex: 2}} className="container">
-          <h1>Frequently Asked <strong>Questions</strong></h1>
-          <p className="page-hero-sub">Real questions from real patients. Honest answers in plain language.</p>
+          <ScrollReveal direction="up" once={true}>
+            <h1>Frequently Asked <strong>Questions</strong></h1>
+            <p className="page-hero-sub">Real questions from real patients. Honest answers in plain language.</p>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -193,15 +201,19 @@ export default function FAQPage() {
             className={`section ${sectionStyles[catIndex % 2]}`}
           >
             <div className="container content-narrow">
-              <h2 className="section-title">{category.category}</h2>
-              <div className="faq-list">
+              <ScrollReveal direction="up" once={true}>
+                <h2 className="section-title">{category.category}</h2>
+              </ScrollReveal>
+              <StaggerChildren className="faq-list" staggerDelay={0.08}>
                 {category.questions.map((item, qIndex) => (
-                  <div key={qIndex} className="faq-item">
-                    <h3 className="faq-question">{item.q}</h3>
-                    <p className="faq-answer prose">{item.a}</p>
-                  </div>
+                  <StaggerItem key={qIndex}>
+                    <div className="faq-item">
+                      <h3 className="faq-question">{item.q}</h3>
+                      <p className="faq-answer prose">{item.a}</p>
+                    </div>
+                  </StaggerItem>
                 ))}
-              </div>
+              </StaggerChildren>
             </div>
           </section>
           {catIndex === 1 && (
@@ -209,7 +221,7 @@ export default function FAQPage() {
               <div className="container content-narrow">
                 <div className="content-image">
                   <Image
-                    src="/media/stock-couple-outdoor-sunshine.jpg"
+                    src="/media/stock-couple-brunch-patio.jpg"
                     alt="Couple enjoying outdoor sunshine in the desert"
                     width={680}
                     height={453}
@@ -224,7 +236,7 @@ export default function FAQPage() {
               <div className="container content-narrow">
                 <div className="content-image">
                   <Image
-                    src="/media/stock-seniors-outdoor-dining.jpg"
+                    src="/media/stock-couple-outdoor-dining-view.jpg"
                     alt="Seniors enjoying an outdoor meal together"
                     width={680}
                     height={453}
@@ -239,7 +251,7 @@ export default function FAQPage() {
               <div className="container content-narrow">
                 <div className="content-image">
                   <Image
-                    src="/media/stock-woman-outdoor-cafe.jpg"
+                    src="/media/stock-couple-balcony-golf-resort.jpg"
                     alt="Woman relaxing at an outdoor cafe with clear vision"
                     width={680}
                     height={453}

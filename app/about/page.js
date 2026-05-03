@@ -2,6 +2,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 import DynamicLightPortrait from '../DynamicLightPortrait';
 import { physicianSchema, breadcrumbSchema } from '../schema';
+import {
+  ScrollReveal,
+  StaggerChildren,
+  StaggerItem,
+  ParallaxImage,
+  KineticText,
+  BlurReveal,
+  LineDraw,
+} from '../components/ScrollAnimations';
 
 const jsonLd = [
   physicianSchema,
@@ -31,10 +40,20 @@ export default function AboutPage() {
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
       {/* PAGE HERO */}
-      <section className="page-hero">
-        <div className="container">
-          <h1>About <strong>Dr. Tokuhara</strong></h1>
-          <p className="page-hero-sub">The surgeon, the educator, the person.</p>
+      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
+        <Image
+          src="/media/desert-landscape-hero-1.png"
+          alt="Desert landscape at golden hour in the Coachella Valley"
+          fill
+          style={{objectFit: 'cover', objectPosition: 'center'}}
+          priority
+        />
+        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.45) 0%, rgba(0,20,30,0.7) 100%)', zIndex: 1}} />
+        <div style={{position: 'relative', zIndex: 2}} className="container">
+          <KineticText text="About Dr. Tokuhara" Tag="h1" mode="word" staggerDelay={0.06} />
+          <ScrollReveal direction="up" delay={0.3} once={true}>
+            <p className="page-hero-sub">The surgeon, the educator, the person.</p>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -98,33 +117,35 @@ export default function AboutPage() {
       {/* TRAINING & CREDENTIALS */}
       <section className="section section-warm">
         <div className="container">
-          <h2 className="section-title">Training &amp; <strong>Credentials</strong></h2>
-          <div className="credentials-grid">
-            <div className="credential-item">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">Training &amp; <strong>Credentials</strong></h2>
+          </ScrollReveal>
+          <StaggerChildren className="credentials-grid" staggerDelay={0.1}>
+            <StaggerItem className="credential-item">
               <h3>Education</h3>
               <p>University of California, Riverside. Biology major, Philosophy minor. Valedictorian. UC Regents Scholar. Advanced Placement National Scholar.</p>
-            </div>
-            <div className="credential-item">
+            </StaggerItem>
+            <StaggerItem className="credential-item">
               <h3>Medical School</h3>
               <p>University of Hawaii, John A. Burns School of Medicine. Recognized for research and academic achievement.</p>
-            </div>
-            <div className="credential-item">
+            </StaggerItem>
+            <StaggerItem className="credential-item">
               <h3>Residency</h3>
               <p>Ophthalmology residency at Loma Linda University, trained under the legendary Dr. Howard Gimbel in cataract and refractive surgery.</p>
-            </div>
-            <div className="credential-item">
+            </StaggerItem>
+            <StaggerItem className="credential-item">
               <h3>Fellowship</h3>
               <p>Retina fellowship at Loma Linda University, focused on complex diseases of the posterior segment. This dual training gives me a perspective most cataract surgeons simply don&rsquo;t have.</p>
-            </div>
-            <div className="credential-item">
+            </StaggerItem>
+            <StaggerItem className="credential-item">
               <h3>Firsts in the Valley</h3>
               <p>First surgeon in the Coachella Valley to perform KDB Goniotomy, Yamane secondary lens fixation, Vivity lens implantation, and PanOptix Pro trifocal lens implantation.</p>
-            </div>
-            <div className="credential-item">
+            </StaggerItem>
+            <StaggerItem className="credential-item">
               <h3>Teaching &amp; Research</h3>
               <p>Co-founded an ophthalmology residency program. Clinical instructor and board examiner. Published researcher with presentations at ASCRS national conferences.</p>
-            </div>
-          </div>
+            </StaggerItem>
+          </StaggerChildren>
         </div>
       </section>
 
@@ -146,7 +167,10 @@ export default function AboutPage() {
       {/* PHILOSOPHY */}
       <section className="section section-white">
         <div className="container content-narrow">
-          <h2 className="section-title">Why I Practice <strong>This Way</strong></h2>
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">Why I Practice <strong>This Way</strong></h2>
+          </ScrollReveal>
+          <BlurReveal>
           <p className="prose">
             There&rsquo;s a problem in eye care that nobody wants to talk about. Referral kickbacks. Corporate chains that tell surgeons which lenses to use. Private equity firms buying up practices and squeezing out the doctors who built them. Patients end up as line items on a spreadsheet.
           </p>
@@ -156,7 +180,9 @@ export default function AboutPage() {
           <p className="prose">
             I also think you should know what&rsquo;s happening during your surgery. Not the glossy marketing version. The real version. That&rsquo;s why I make educational videos, explain things in plain language, and take the time to answer your questions. Even the uncomfortable ones.
           </p>
+          </BlurReveal>
 
+          <ScrollReveal direction="up" delay={0.1} once={true}>
           <div className="video-section" style={{marginTop: '40px'}}>
             <div className="video-grid video-grid-2">
               <div className="video-card">
@@ -185,6 +211,7 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
+          </ScrollReveal>
         </div>
       </section>
 

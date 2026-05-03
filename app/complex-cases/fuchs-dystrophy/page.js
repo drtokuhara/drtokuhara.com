@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
+import {
+  ScrollReveal,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 import AuthorByline from '../../components/AuthorByline';
 
 const jsonLd = [
@@ -28,9 +33,20 @@ export const metadata = {
   },
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+
+    { '@type': 'Question', name: "Can I have cataract surgery with Fuchs dystrophy?", acceptedAnswer: { '@type': 'Answer', text: "Yes, but Fuchs dystrophy requires special consideration. The corneal endothelial cells are already compromised, and cataract surgery can further stress them. In mild cases, surgery can proceed with gentle techniques. In moderate to severe cases, a combined cataract and corneal transplant procedure may be recommended." } },
+    { '@type': 'Question', name: "What is Fuchs dystrophy and how does it affect cataract surgery?", acceptedAnswer: { '@type': 'Answer', text: "Fuchs dystrophy is a condition where the inner layer of the cornea gradually loses cells, causing corneal swelling and blurred vision. During cataract surgery, the remaining cells can be further damaged. Dr. Tokuhara uses low-energy techniques and careful planning to protect the cornea during surgery." } }
+  ],
+};
+
 export default function FuchsDystrophyPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
@@ -95,6 +111,7 @@ export default function FuchsDystrophyPage() {
         </div>
       </section>
 
+      <LineDraw style={{margin: "0 auto", maxWidth: "200px"}} color="var(--oasis)" />
       <section className="cta">
         <div className="container">
           <h2>Have Fuchs dystrophy and developing <strong>cataracts?</strong></h2>

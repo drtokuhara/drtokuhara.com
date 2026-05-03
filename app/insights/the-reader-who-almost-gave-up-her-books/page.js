@@ -2,10 +2,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
+import {
+  ScrollReveal,
+  ParallaxImage,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 
 export const metadata = {
   title: 'The Reader Who Almost Gave Up Her Books',
-  description: 'An 81-year-old avid reader delayed cataract surgery for years because she believed reading glasses were mandatory afterward. Nobody told her she had a choice.',
+  description: 'An 81-year-old reader delayed cataract surgery because she thought losing near vision was inevitable. Nobody told her a monofocal IOL could be aimed for reading. A story about lens implant choices and informed consent.',
   alternates: { canonical: '/insights/the-reader-who-almost-gave-up-her-books' },
   openGraph: {
     title: 'The Reader Who Almost Gave Up Her Books | Dr. Keith Tokuhara',
@@ -44,9 +50,11 @@ export default function InsightReader() {
         />
         <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.35) 0%, rgba(0,20,30,0.75) 100%)', zIndex: 1}} />
         <div style={{position: 'relative', zIndex: 2}} className="container">
+          <ScrollReveal direction="up" once={true}>
           <span className="insight-hero-cluster">Lens Selection</span>
           <h1>The Reader Who Almost Gave Up <strong>Her Books</strong></h1>
           <p className="page-hero-sub">Sometimes the most important part of a cataract consultation isn't medical. It's giving someone permission to choose.</p>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -72,9 +80,9 @@ export default function InsightReader() {
           <p>
             Not because she was afraid of the procedure. Not because she didn't trust doctors. She had been told - by prior physicians, by friends, by word of mouth - that after cataract surgery, you <em>need</em> reading glasses. That's just how it works. Your near vision goes away, and you get glasses.
           </p>
-          <div className="pull-quote">
+          <BlurReveal><div className="pull-quote">
             <p>For a woman whose entire daily life revolved around near vision, that was a dealbreaker. So she waited. And the cataracts got worse. And she started struggling with her books anyway.</p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
@@ -124,20 +132,20 @@ export default function InsightReader() {
           <p>
             But here's the part that stays with me: she had the information she needed to make this decision years ago. It just wasn't presented in a way that included her. Nobody asked what her life looked like. They told her what the standard outcome was, and she assumed it was the only one.
           </p>
-          <div className="insight-highlight">
+          <BlurReveal><div className="insight-highlight">
             <p><strong>Education isn't just about explaining options. It's about giving permission to choose the one that fits.</strong></p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
       <section className="section section-warm">
         <div className="container content-narrow">
-          <div className="clinic-thought">
+          <BlurReveal><div className="clinic-thought">
             <h3>The takeaway</h3>
             <p>
               <em>If you're considering cataract surgery and you have a strong preference about how you use your eyes - reading, crafts, cooking, computers - tell your surgeon. The lens can be aimed at what matters to you. It's not always about getting the fanciest technology. Sometimes the simplest choice is the right one, and nobody bothered to mention it.</em>
             </p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
@@ -152,7 +160,7 @@ export default function InsightReader() {
               style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
             />
           </div>
-          <h2 className="section-title">Related <strong>Reading</strong></h2>
+          <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
             <Link href="/lens-implants-explained" className="related-card">
               <h3>Lens Implants Explained</h3>

@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
+import {
+  ScrollReveal,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 import AuthorByline from '../../components/AuthorByline';
 
 const jsonLd = [
@@ -28,9 +33,20 @@ export const metadata = {
   },
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+
+    { '@type': 'Question', name: "Can glaucoma and cataract surgery be done at the same time?", acceptedAnswer: { '@type': 'Answer', text: "Yes. Combined cataract and glaucoma surgery is common and can be advantageous. Cataract removal alone can lower eye pressure modestly. When combined with minimally invasive glaucoma surgery (MIGS), patients may achieve both better vision and better pressure control in a single procedure." } },
+    { '@type': 'Question', name: "Does cataract surgery help with glaucoma?", acceptedAnswer: { '@type': 'Answer', text: "Cataract surgery can lower intraocular pressure by 1-3 mmHg on average. For some patients, this reduction combined with MIGS procedures may reduce or eliminate the need for glaucoma eye drops. Dr. Tokuhara evaluates each case to determine the optimal combined approach." } }
+  ],
+};
+
 export default function GlaucomaAndCataractPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
@@ -55,7 +71,7 @@ export default function GlaucomaAndCataractPage() {
 
           <div className="content-image" style={{margin: '32px 0'}}>
             <Image
-              src="/media/stock-seniors-bocce-desert.jpg"
+              src="/media/stock-seniors-pickleball-desert.jpg"
               alt="Seniors playing bocce ball on a desert lawn with palm trees - active living with managed eye conditions"
               width={680}
               height={453}
@@ -104,6 +120,7 @@ export default function GlaucomaAndCataractPage() {
         </div>
       </section>
 
+      <LineDraw style={{margin: "0 auto", maxWidth: "200px"}} color="var(--oasis)" />
       <section className="cta">
         <div className="container">
           <h2>Have glaucoma and need <strong>cataract surgery?</strong></h2>

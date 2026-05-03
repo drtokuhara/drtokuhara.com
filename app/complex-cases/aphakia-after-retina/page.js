@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
+import {
+  ScrollReveal,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 import AuthorByline from '../../components/AuthorByline';
 
 const jsonLd = [
@@ -28,9 +33,20 @@ export const metadata = {
   },
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+
+    { '@type': 'Question', name: "What is aphakia after retina surgery?", acceptedAnswer: { '@type': 'Answer', text: "Aphakia means the eye has no lens implant. This can occur when a lens implant cannot be placed during the original surgery, when the lens dislocates after retina surgery, or when the lens must be removed to treat a retinal problem. Secondary lens implantation can restore focused vision." } },
+    { '@type': 'Question', name: "Can a lens implant be placed after retina surgery?", acceptedAnswer: { '@type': 'Answer', text: "Yes. Secondary intraocular lens implantation is possible even in complex eyes that have had retina surgery. Techniques like the Yamane intrascleral fixation method allow lens placement without relying on capsule support. Dr. Tokuhara's dual training in cataract and retina surgery is particularly valuable for these cases." } }
+  ],
+};
+
 export default function AphakiaAfterRetinaPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
@@ -108,6 +124,7 @@ export default function AphakiaAfterRetinaPage() {
         </div>
       </section>
 
+      <LineDraw style={{margin: "0 auto", maxWidth: "200px"}} color="var(--oasis)" />
       <section className="cta">
         <div className="container">
           <h2>Left without a lens after retina surgery? <strong>There are options.</strong></h2>

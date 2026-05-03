@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
+import {
+  ScrollReveal,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 import AuthorByline from '../../components/AuthorByline';
 
 const jsonLd = [
@@ -28,9 +33,20 @@ export const metadata = {
   },
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+
+    { '@type': 'Question', name: "Can I have cataract surgery after retina surgery?", acceptedAnswer: { '@type': 'Answer', text: "Yes. Cataracts frequently develop after vitrectomy and other retina procedures. These surgeries require special considerations including modified lens calculations, careful surgical technique to protect previous retinal repairs, and close post-operative monitoring. Dr. Tokuhara's fellowship training in both cataract and retina surgery is especially relevant here." } },
+    { '@type': 'Question', name: "Why do cataracts develop after retina surgery?", acceptedAnswer: { '@type': 'Answer', text: "Vitrectomy surgery, gas bubbles, and silicone oil used in retina procedures can accelerate cataract formation. This is expected and does not mean anything went wrong. The timing of cataract surgery depends on the stability of the retinal condition." } }
+  ],
+};
+
 export default function PreviousRetinaSurgeryPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
@@ -85,7 +101,7 @@ export default function PreviousRetinaSurgeryPage() {
 
           <div className="content-image" style={{margin: '32px 0'}}>
             <Image
-              src="/media/stock-couple-outdoor-sunshine.jpg"
+              src="/media/stock-couple-outdoor-dining-view.jpg"
               alt="Couple enjoying the outdoor sunshine after successful eye surgery"
               width={680}
               height={453}
@@ -103,6 +119,7 @@ export default function PreviousRetinaSurgeryPage() {
         </div>
       </section>
 
+      <LineDraw style={{margin: "0 auto", maxWidth: "200px"}} color="var(--oasis)" />
       <section className="cta">
         <div className="container">
           <h2>Had retina surgery and now developing a <strong>cataract?</strong></h2>

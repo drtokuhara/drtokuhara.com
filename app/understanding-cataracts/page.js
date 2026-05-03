@@ -1,5 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import {
+  ScrollReveal,
+  KineticText,
+  LineDraw,
+} from '../components/ScrollAnimations';
 
 export const metadata = {
   title: 'Understanding Cataracts: What Your Eye Doctor May Not Have Time to Explain',
@@ -12,13 +17,25 @@ export const metadata = {
   },
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'What causes cataracts?', acceptedAnswer: { '@type': 'Answer', text: 'Cataracts are caused by the natural breakdown of proteins in the lens of the eye over time. The lens gradually goes from clear to cloudy. Age is the primary factor, though UV exposure, diabetes, certain medications, and genetics can accelerate the process.' } },
+    { '@type': 'Question', name: 'What do cataracts look like to the patient?', acceptedAnswer: { '@type': 'Answer', text: 'Patients describe cataracts as looking through a foggy window. Colors appear duller, night driving becomes difficult with glare and halos, and everything seems to need cleaning. The change is so gradual that many patients do not realize how much vision they have lost until after surgery.' } },
+    { '@type': 'Question', name: 'Can cataracts be treated without surgery?', acceptedAnswer: { '@type': 'Answer', text: 'Currently, surgery is the only proven treatment for cataracts. There are no eye drops, medications, or exercises that can reverse a cataract. However, cataracts do not require immediate treatment. Surgery is recommended when vision loss affects your daily life and activities.' } },
+    { '@type': 'Question', name: 'How fast do cataracts progress?', acceptedAnswer: { '@type': 'Answer', text: 'Cataract progression varies widely. Some develop over years and barely change, while others progress noticeably within months. There is no universal timeline, and cataracts do not punish you for waiting. Your doctor should monitor them regularly.' } },
+  ],
+};
+
 export default function UnderstandingCataracts() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* HERO */}
       <section className="page-hero">
         <div className="container">
-          <h1>Understanding <strong>Cataracts</strong></h1>
+          <ScrollReveal direction="up" once={true}><h1>Understanding <strong>Cataracts</strong></h1></ScrollReveal>
           <p className="page-hero-sub">What your eye doctor may not have time to explain - and what you actually need to know before making any decisions.</p>
         </div>
       </section>

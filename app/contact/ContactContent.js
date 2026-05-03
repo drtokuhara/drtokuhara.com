@@ -3,6 +3,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useLanguage } from '../LanguageContext';
+import {
+  ScrollReveal,
+  GradientShift,
+  MagneticElement,
+} from '../components/ScrollAnimations';
 
 export default function ContactContent() {
   const { t, lang } = useLanguage();
@@ -149,16 +154,24 @@ export default function ContactContent() {
       </section>
 
       {/* SECONDARY CTA */}
-      <section className="cta">
+      <GradientShift
+        colors={['var(--night-horizon)', 'var(--oasis)', 'var(--mirage)', 'var(--night-horizon)']}
+        duration={14}
+        className="cta"
+      >
         <div className="container">
-          <h2 dangerouslySetInnerHTML={{ __html: t('contact.ctaTitle') || 'Ready to <strong>schedule?</strong>' }} />
-          <p>{t('contact.ctaText') || "Call the office directly or visit Desert Vision Center online. My team will take care of you from the first phone call."}</p>
-          <div className="cta-buttons">
-            <a href="tel:7603404700" className="btn-primary">{t('common.callPhone') || 'Call 760.340.4700'}</a>
-            <Link href="/cataract-surgery" className="btn-secondary">{t('common.learnAboutCataractSurgery') || 'Learn About Cataract Surgery'}</Link>
-          </div>
+          <ScrollReveal direction="up" once={true}>
+            <h2 dangerouslySetInnerHTML={{ __html: t('contact.ctaTitle') || 'Ready to <strong>schedule?</strong>' }} />
+            <p>{t('contact.ctaText') || "Call the office directly or visit Desert Vision Center online. My team will take care of you from the first phone call."}</p>
+            <div className="cta-buttons">
+              <MagneticElement strength={0.2}>
+                <a href="tel:7603404700" className="btn-primary">{t('common.callPhone') || 'Call 760.340.4700'}</a>
+              </MagneticElement>
+              <Link href="/cataract-surgery" className="btn-secondary">{t('common.learnAboutCataractSurgery') || 'Learn About Cataract Surgery'}</Link>
+            </div>
+          </ScrollReveal>
         </div>
-      </section>
+      </GradientShift>
     </>
   );
 }

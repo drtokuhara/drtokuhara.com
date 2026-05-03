@@ -3,16 +3,32 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useLanguage } from '../LanguageContext';
+import {
+  ScrollReveal,
+  StaggerChildren,
+  StaggerItem,
+  LineDraw,
+} from '../components/ScrollAnimations';
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: "What should I expect after cataract surgery?", acceptedAnswer: { '@type': 'Answer', text: "Most patients notice improved vision within 24-48 hours. You will use prescription eye drops for several weeks, avoid rubbing your eyes, and attend follow-up appointments. Most normal activities can resume within a few days, though heavy lifting and swimming should wait 2-4 weeks." } },
+    { '@type': 'Question', name: "How long is recovery from cataract surgery?", acceptedAnswer: { '@type': 'Answer', text: "Initial healing takes about a week. Most patients return to driving and daily activities within a few days. Full visual stability typically occurs within 4-6 weeks as the eye completes its healing process. Your doctor will guide you on activity restrictions at each follow-up visit." } }
+  ],
+};
 
 export default function ReadyForSurgeryContent() {
   const { t, lang } = useLanguage();
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* PAGE HERO */}
       <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
         <Image
-          src="/media/stock-family-golden-hour-walk.jpg"
+          src="/media/stock-couple-pool-mountain-view.jpg"
           alt="Family walking together during golden hour"
           fill
           style={{objectFit: 'cover', objectPosition: 'center'}}

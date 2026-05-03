@@ -2,10 +2,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
+import {
+  ScrollReveal,
+  ParallaxImage,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 
 export const metadata = {
   title: 'Permission to See Again',
-  description: 'A 78-year-old woman delayed eye care for six years while caring for her husband with dementia. When she finally came in, she didn\'t need a surgical plan. She needed permission.',
+  description: 'A 78-year-old woman delayed cataract surgery for six years while caregiving. When she finally came in for a cataract evaluation, she didn\'t need a surgical plan. She needed permission to prioritize her own vision.',
   alternates: { canonical: '/insights/permission-to-see-again' },
   openGraph: {
     title: 'Permission to See Again | Dr. Keith Tokuhara',
@@ -44,9 +50,11 @@ export default function InsightPermission() {
         />
         <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.35) 0%, rgba(0,20,30,0.75) 100%)', zIndex: 1}} />
         <div style={{position: 'relative', zIndex: 2}} className="container">
+          <ScrollReveal direction="up" once={true}>
           <span className="insight-hero-cluster">Decision Making</span>
           <h1>Permission to <strong>See Again</strong></h1>
           <p className="page-hero-sub">Some patients don't need a diagnosis. They need someone to tell them it's okay to take care of themselves.</p>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -67,9 +75,9 @@ export default function InsightPermission() {
             Her vision was 20/60. The cataracts were moderate - enough to blur things, but not enough to qualify as an emergency. What struck me wasn't the clinical picture. It was the first thing she said after I finished examining her:
           </p>
 
-          <div className="pull-quote">
+          <BlurReveal><div className="pull-quote">
             <p>"I feel terrible for letting this go so long."</p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
@@ -86,9 +94,9 @@ export default function InsightPermission() {
             So that's what I told her.
           </p>
 
-          <div className="insight-highlight">
+          <BlurReveal><div className="insight-highlight">
             <p><strong>"There is no urgency here. Cataracts don't punish people for waiting. You didn't fail. You took care of your husband. Now let's think about how you want to live in this next chapter."</strong></p>
-          </div>
+          </div></BlurReveal>
 
           <p>
             She cried. Then she laughed a little. Then she asked me to explain her options - not because she was ready to schedule surgery, but because for the first time in years, she was allowed to think about herself.
@@ -135,12 +143,12 @@ export default function InsightPermission() {
 
       <section className="section section-warm">
         <div className="container content-narrow">
-          <div className="clinic-thought">
+          <BlurReveal><div className="clinic-thought">
             <h3>The takeaway</h3>
             <p>
               <em>If you've been putting off your own eye care - because of caregiving, because of grief, because life just got in the way - you haven't failed. You've been handling something that mattered. And whenever you're ready, the door is open. No judgment. No urgency. Just a conversation about what comes next.</em>
             </p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
@@ -155,7 +163,7 @@ export default function InsightPermission() {
               style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
             />
           </div>
-          <h2 className="section-title">Related <strong>Reading</strong></h2>
+          <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
             <Link href="/understanding-cataracts" className="related-card">
               <h3>Understanding Cataracts</h3>

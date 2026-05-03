@@ -2,6 +2,7 @@ import Link from 'next/link';
 import MobileNav from './MobileNav';
 import { LanguageProvider } from './LanguageContext';
 import LanguageToggle from './LanguageToggle';
+import CursorSpotlight from './components/CursorSpotlight';
 import './styles.css';
 
 export const metadata = {
@@ -56,6 +57,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <LanguageProvider>
+        <CursorSpotlight />
         {/* NAV */}
         <nav className="nav">
           <div className="container nav-inner">
@@ -98,6 +100,12 @@ export default function RootLayout({ children }) {
                   <Link href="/complex-cases">Complex Cases</Link>
                   <Link href="/patient-journey">Your Journey</Link>
                   <Link href="/lens-implants-explained">Lens Guide</Link>
+                  <Link href="/vivity-vs-panoptix">Vivity vs PanOptix</Link>
+                  <Link href="/yag-laser-capsulotomy">YAG Laser</Link>
+                  <Link href="/laser-cataract-surgery">Laser Surgery</Link>
+                  <Link href="/cataract-pre-op">Pre-Op Guide</Link>
+                  <Link href="/ethical-cataract-care">Ethical Care</Link>
+                  <Link href="/cataract-surgery-complications">Complications</Link>
                   <Link href="/insights">Insights</Link>
                   <Link href="/education">Education</Link>
                   <Link href="/faq">FAQ</Link>

@@ -2,10 +2,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
+import {
+  ScrollReveal,
+  ParallaxImage,
+  BlurReveal,
+  LineDraw,
+} from '../../components/ScrollAnimations';
 
 export const metadata = {
   title: 'When More Isn\'t Better',
-  description: 'A 32-year-old woman had cataract surgery with a multifocal lens, then a YAG procedure, then LASIK. A year later, she still wasn\'t seeing the way she expected. Sometimes the answer isn\'t another procedure.',
+  description: 'A patient had cataract surgery with a multifocal IOL, then YAG capsulotomy, then LASIK enhancement. A year later, vision was still unsatisfactory. A reflection on multifocal lens complications and the cascade of interventions.',
   alternates: { canonical: '/insights/when-more-isnt-better' },
   openGraph: {
     title: 'When More Isn\'t Better | Dr. Keith Tokuhara',
@@ -44,9 +50,11 @@ export default function InsightWhenMore() {
         />
         <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.35) 0%, rgba(0,20,30,0.75) 100%)', zIndex: 1}} />
         <div style={{position: 'relative', zIndex: 2}} className="container">
+          <ScrollReveal direction="up" once={true}>
           <span className="insight-hero-cluster">Expectations & Reality</span>
           <h1>When More Isn't <strong>Better</strong></h1>
           <p className="page-hero-sub">She had the surgery. Then the laser. Then the LASIK. A year later, she still wasn't seeing the way she expected. Sometimes the hardest step is stopping.</p>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -63,9 +71,9 @@ export default function InsightWhenMore() {
           <p>
             At three months, she had a YAG capsulotomy, a laser procedure to clear haziness behind the lens. When that didn't resolve her symptoms, she underwent LASIK to correct residual refractive error. Now, a full year after the original surgery, she was sitting in my office for a second opinion.
           </p>
-          <div className="pull-quote">
+          <BlurReveal><div className="pull-quote">
             <p>Her chart said 20/25. Her experience said something very different.</p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
@@ -127,20 +135,20 @@ export default function InsightWhenMore() {
           <p>
             I didn't tell her that her previous surgeon did something wrong. I don't know the full context of those decisions. What I told her was this: her experience is real. The gap between what the chart says and what she feels is not imagined. There are identifiable reasons for her symptoms, and understanding those reasons is the first step toward figuring out what, if anything, comes next.
           </p>
-          <div className="insight-highlight">
+          <BlurReveal><div className="insight-highlight">
             <p><strong>Sometimes the most important thing a second opinion offers isn't a new plan. It's validation that what you're experiencing makes sense.</strong> That you're not being difficult. That your discomfort deserves an explanation, not dismissal.</p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
       <section className="section section-white">
         <div className="container content-narrow">
-          <div className="clinic-thought">
+          <BlurReveal><div className="clinic-thought">
             <h3>The takeaway</h3>
             <p>
               <em>If you're considering a premium or multifocal lens implant, the conversation should start with your tolerance for tradeoffs, not with the technology's capabilities. Every lens design involves compromise. The question isn't which lens is the best. It's which lens is the best fit for your eyes, your lifestyle, and your expectations. And if you've had a result that doesn't feel right, you deserve a thorough explanation, not just reassurance that the numbers look fine.</em>
             </p>
-          </div>
+          </div></BlurReveal>
         </div>
       </section>
 
@@ -155,7 +163,7 @@ export default function InsightWhenMore() {
               style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
             />
           </div>
-          <h2 className="section-title">Related <strong>Reading</strong></h2>
+          <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
             <Link href="/lens-implants-explained" className="related-card">
               <h3>Lens Implants Explained</h3>
