@@ -17,7 +17,7 @@ export const metadata = {
   alternates: { canonical: '/my-cataract-drops' },
   openGraph: {
     title: 'My Cataract Drops App | Desert Vision Center',
-    description: 'A free app that sends push notifications for every eye drop after cataract surgery. Built by Dr. Tokuhara for his patients.',
+    description: 'A free app that sends push notifications for every eye drop after cataract surgery. Personally built by Dr. Tokuhara for his patients.',
     url: 'https://drtokuhara.com/my-cataract-drops',
   },
 };
@@ -59,15 +59,15 @@ export default function MyCataractDrops() {
             <StaggerItem>
               <div>
                 <p style={{fontSize: '42px', fontWeight: 300, color: 'var(--oasis)', marginBottom: '4px', fontFamily: 'var(--serif)'}}>
-                  <CountUp end={4} suffix="" duration={1.5} />
+                  <CountUp end={2} suffix="" duration={1.5} />
                 </p>
-                <p style={{fontSize: '13px', color: 'rgba(255,255,255,0.6)', letterSpacing: '0.05em'}}>different eye drop<br />bottles to track</p>
+                <p style={{fontSize: '13px', color: 'rgba(255,255,255,0.6)', letterSpacing: '0.05em'}}>eye drop bottles<br />tracked for you</p>
               </div>
             </StaggerItem>
             <StaggerItem>
               <div>
                 <p style={{fontSize: '42px', fontWeight: 300, color: 'var(--oasis)', marginBottom: '4px', fontFamily: 'var(--serif)'}}>
-                  <CountUp end={6} suffix="+" duration={1.5} />
+                  <CountUp end={4} suffix="+" duration={1.5} />
                 </p>
                 <p style={{fontSize: '13px', color: 'rgba(255,255,255,0.6)', letterSpacing: '0.05em'}}>weeks of<br />drop schedules</p>
               </div>
@@ -94,7 +94,7 @@ export default function MyCataractDrops() {
       <section className="section section-white">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}>
-            <h2 className="section-title">Why We <strong>Built This</strong></h2>
+            <h2 className="section-title">Why I <strong>Built This</strong></h2>
           </ScrollReveal>
           <p className="body-lead">
             "I cannot keep track of all these drops."
@@ -103,7 +103,7 @@ export default function MyCataractDrops() {
             I hear this from patients every single week. After cataract surgery, you go home with multiple eye drop bottles, each on a different schedule. Some are three times a day, some are four. Some taper over weeks. It is genuinely confusing, and the stakes are real, because consistent drop use is one of the most important factors in your recovery.
           </p>
           <p>
-            So my team and I built an app to solve it. Not a generic medication tracker. A tool designed specifically for cataract surgery patients, by a cataract surgeon who knows exactly what the post-operative drop schedule looks like.
+            So I built an app to solve it. Not a generic medication tracker. A tool designed specifically for cataract surgery patients, by a cataract surgeon who knows exactly what the post-operative drop schedule looks like.
           </p>
         </div>
       </section>
@@ -161,27 +161,7 @@ export default function MyCataractDrops() {
         </div>
       </section>
 
-      {/* WHAT'S NORMAL SECTION */}
-      <section className="section section-white">
-        <div className="container content-narrow">
-          <div style={{display: 'flex', gap: '48px', alignItems: 'center', flexWrap: 'wrap'}}>
-            <div style={{flex: '1 1 300px', textAlign: 'center'}}>
-              <Image src="/media/app-whats-normal.png" alt="My Cataract Drops recovery education - what is normal after surgery" width={300} height={600} style={{width: '250px', height: 'auto', borderRadius: '24px', boxShadow: '0 20px 60px rgba(0,0,0,0.15)'}} />
-            </div>
-            <div style={{flex: '1 1 400px'}}>
-              <ScrollReveal direction="up" once={true}>
-                <h2 className="section-title">Answers at <strong>3 AM</strong></h2>
-              </ScrollReveal>
-              <p>
-                "Is this redness normal?" "Should my eye feel scratchy?" "When can I shower?"
-              </p>
-              <p>
-                Recovery questions do not wait for office hours. The app includes a "What's Normal" guide written specifically for the first days and weeks after surgery, so you have reliable answers when you need them.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* CLINIC THOUGHT */}
       <section className="section section-warm">
@@ -189,7 +169,7 @@ export default function MyCataractDrops() {
           <BlurReveal><div className="clinic-thought">
             <h3>Why this matters</h3>
             <p>
-              <em>Every surgeon says "use your drops." Not every surgeon builds you a tool to actually do it. Compliance with post-operative eye drops is one of the biggest variables in recovery outcomes. If I can make it easier for my patients to stay on schedule, their eyes heal better. It is that simple.</em>
+              <em>Every surgeon says "use your drops." Not every surgeon personally builds you a tool to actually do it. Compliance with post-operative eye drops is one of the biggest variables in recovery outcomes. If I can make it easier for my patients to stay on schedule, their eyes heal better. It is that simple.</em>
             </p>
           </div></BlurReveal>
         </div>
@@ -206,7 +186,7 @@ export default function MyCataractDrops() {
             <StaggerItem><div className="insight-item"><strong>Color-coded bottles</strong><p>Match the notification to the physical bottle. No confusion about which drop is which.</p></div></StaggerItem>
             <StaggerItem><div className="insight-item"><strong>Personalized schedule</strong><p>Based on your surgery date and Dr. Tokuhara's post-op protocol. Not a generic template.</p></div></StaggerItem>
             <StaggerItem><div className="insight-item"><strong>Dose tracking</strong><p>Mark each dose as complete. See what you have done and what is still ahead.</p></div></StaggerItem>
-            <StaggerItem><div className="insight-item"><strong>Recovery education</strong><p>What is normal, what to watch for, how to apply drops correctly.</p></div></StaggerItem>
+
             <StaggerItem><div className="insight-item"><strong>Week-by-week timeline</strong><p>Know where you are in the recovery process at all times.</p></div></StaggerItem>
           </StaggerChildren>
         </div>

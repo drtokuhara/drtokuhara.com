@@ -65,13 +65,52 @@ export default function RootLayout({ children }) {
             <Link href="/" className="nav-brand">Dr. Keith Tokuhara</Link>
             <div className="nav-links">
               <Link href="/about">About</Link>
-              <Link href="/cataract-surgery">Cataract Surgery</Link>
-              <Link href="/clear-in-a-day">CLEAR in a Day</Link>
-              <Link href="/complex-cases">Complex Cases</Link>
-              <Link href="/patient-journey">Your Journey</Link>
-              <Link href="/understand-your-options">Your Options</Link>
-              <Link href="/ready-for-surgery">Ready for Surgery</Link>
-              <Link href="/lens-implants-explained">Lens Guide</Link>
+              <div className="nav-dropdown">
+                <span className="nav-dropdown-trigger">Surgery</span>
+                <div className="nav-dropdown-menu">
+                  <Link href="/cataract-surgery">Cataract Surgery</Link>
+                  <Link href="/laser-cataract-surgery">Laser Surgery</Link>
+                  <Link href="/clear-in-a-day">CLEAR in a Day</Link>
+                  <Link href="/cataract-pre-op">Pre-Op Guide</Link>
+                  <Link href="/cataract-recovery">Recovery</Link>
+                  <Link href="/is-cataract-surgery-safe">Is It Safe?</Link>
+                  <Link href="/cataract-surgery-complications">Complications</Link>
+                </div>
+              </div>
+              <div className="nav-dropdown">
+                <span className="nav-dropdown-trigger">Lenses</span>
+                <div className="nav-dropdown-menu">
+                  <Link href="/lens-implants-explained">Lens Guide</Link>
+                  <Link href="/vivity-vs-panoptix">Vivity vs PanOptix</Link>
+                  <Link href="/panoptix-vs-panoptix-pro">PanOptix vs Pro</Link>
+                  <Link href="/toric-lens-astigmatism">Toric / Astigmatism</Link>
+                  <Link href="/clareon-lens">Clareon Lens</Link>
+                  <Link href="/halos-after-cataract-surgery">Halos After Surgery</Link>
+                </div>
+              </div>
+              <div className="nav-dropdown">
+                <span className="nav-dropdown-trigger">Conditions</span>
+                <div className="nav-dropdown-menu">
+                  <Link href="/complex-cases">Complex Cases</Link>
+                  <Link href="/understanding-cataracts">Understanding Cataracts</Link>
+                  <Link href="/yag-laser-capsulotomy">YAG Laser</Link>
+                  <Link href="/blurry-vision-after-cataract-surgery">Blurry Vision After Surgery</Link>
+                  <Link href="/dust-in-eyes">Dust in Eyes</Link>
+                  <Link href="/yamane-technique">Yamane Technique</Link>
+                </div>
+              </div>
+              <div className="nav-dropdown">
+                <span className="nav-dropdown-trigger">Patients</span>
+                <div className="nav-dropdown-menu">
+                  <Link href="/patient-journey">Your Journey</Link>
+                  <Link href="/understand-your-options">Your Options</Link>
+                  <Link href="/ready-for-surgery">Ready for Surgery</Link>
+                  <Link href="/choosing-your-surgeon">Choosing a Surgeon</Link>
+                  <Link href="/ethical-cataract-care">Ethical Care</Link>
+                  <Link href="/patient-stories">Patient Stories</Link>
+                  <Link href="/my-cataract-drops">My Cataract Drops App</Link>
+                </div>
+              </div>
               <Link href="/insights">Insights</Link>
               <Link href="/education">Education</Link>
               <Link href="/faq">FAQ</Link>
@@ -94,23 +133,31 @@ export default function RootLayout({ children }) {
               </div>
               <div className="footer-links">
                 <div className="footer-col">
-                  <h4>Quick Links</h4>
-                  <Link href="/about">About</Link>
+                  <h4>Surgery</h4>
                   <Link href="/cataract-surgery">Cataract Surgery</Link>
-                  <Link href="/clear-in-a-day">CLEAR in a Day</Link>
-                  <Link href="/complex-cases">Complex Cases</Link>
-                  <Link href="/patient-journey">Your Journey</Link>
-                  <Link href="/lens-implants-explained">Lens Guide</Link>
-                  <Link href="/vivity-vs-panoptix">Vivity vs PanOptix</Link>
-                  <Link href="/yag-laser-capsulotomy">YAG Laser</Link>
                   <Link href="/laser-cataract-surgery">Laser Surgery</Link>
-                  <Link href="/cataract-pre-op">Pre-Op Guide</Link>
-                  <Link href="/ethical-cataract-care">Ethical Care</Link>
+                  <Link href="/clear-in-a-day">CLEAR in a Day</Link>
+                  <Link href="/lens-implants-explained">Lens Guide</Link>
                   <Link href="/cataract-surgery-complications">Complications</Link>
-                  <Link href="/insights">Insights</Link>
-                  <Link href="/education">Education</Link>
+                  <Link href="/complex-cases">Complex Cases</Link>
+                </div>
+                <div className="footer-col">
+                  <h4>For Patients</h4>
+                  <Link href="/patient-journey">Your Journey</Link>
+                  <Link href="/cataract-pre-op">Pre-Op Guide</Link>
+                  <Link href="/cataract-recovery">Recovery</Link>
+                  <Link href="/my-cataract-drops">My Cataract Drops App</Link>
+                  <Link href="/choosing-your-surgeon">Choosing a Surgeon</Link>
                   <Link href="/faq">FAQ</Link>
                   <Link href="/contact">Contact</Link>
+                </div>
+                <div className="footer-col">
+                  <h4>Learn</h4>
+                  <Link href="/insights">Insights</Link>
+                  <Link href="/education">Education</Link>
+                  <Link href="/patient-stories">Patient Stories</Link>
+                  <Link href="/about">About Dr. Tokuhara</Link>
+                  <Link href="/ethical-cataract-care">Ethical Care</Link>
                 </div>
                 <div className="footer-col">
                   <h4>Practice</h4>
