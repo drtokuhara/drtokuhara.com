@@ -1220,7 +1220,7 @@ body.conversation-active .footer {
 .hamburger-open .hamburger-line:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 .mobile-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 150; backdrop-filter: blur(2px); }
-.mobile-menu { position: fixed; top: 0; right: 0; width: 280px; height: 100%; background: var(--white); padding: 80px 32px 32px; display: flex; flex-direction: column; gap: 8px; box-shadow: -4px 0 20px rgba(0,0,0,0.1); z-index: 160; }
+.mobile-menu { position: fixed; top: 0; right: 0; width: 300px; height: 100vh; background: #ffffff; padding: 80px 32px 120px; display: flex; flex-direction: column; gap: 6px; box-shadow: -8px 0 30px rgba(0,0,0,0.2); z-index: 160; overflow-y: auto; -webkit-overflow-scrolling: touch; }
 .mobile-menu a { font-size: 18px; font-weight: 500; color: var(--text); padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,0.06); transition: color 0.2s; }
 .mobile-menu a:hover { color: var(--night-horizon); }
 .mobile-cta { text-align: center; margin-top: 16px; border-bottom: none !important; }
@@ -2944,12 +2944,14 @@ html {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--oasis);
-  margin: 20px 0 8px;
-  padding: 0;
+  color: var(--night-horizon);
+  margin: 24px 0 8px;
+  padding: 8px 0 4px;
+  border-top: 1px solid rgba(0,0,0,0.08);
 }
 .mobile-nav-label:first-child {
   margin-top: 0;
+  border-top: none;
 }
 
 /* Mega dropdown for Conditions */
