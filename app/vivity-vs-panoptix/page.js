@@ -169,10 +169,10 @@ export default function VivityVsPanoptix() {
         <div className="container content-narrow">
           <h2 className="section-title">A Patient Who Has <strong>Both</strong></h2>
           <p>
-            One of my patients had a first-generation PanOptix lens implanted in his right eye by another surgeon. He was happy with the lens but not with the experience at that office. When it came time for his left eye, he chose to come to Desert Vision Center.
+            One of my patients had a first-generation PanOptix lens implanted in her right eye by another surgeon. She was happy with the lens but not with the experience at that office. When it came time for her left eye, she chose to come to Desert Vision Center.
           </p>
           <p>
-            By that point, the PanOptix Pro had just been released. We discussed the differences, and he chose to upgrade to the Pro in his left eye. Within 24 hours, he noticed the difference.
+            By that point, the PanOptix Pro had just been released. We discussed the differences, and she chose to upgrade to the Pro in her left eye. Within 24 hours, she noticed the difference.
           </p>
           <div className="clinic-thought" style={{marginTop: '24px'}}>
             <p>
