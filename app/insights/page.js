@@ -31,6 +31,14 @@ const insights = [
     image: '/media/stock-couple-market-sunlight.jpg',
   },
   {
+    slug: 'are-premium-lenses-worth-it',
+    title: 'Are Premium Lens Implants Worth It?',
+    date: 'May 2026',
+    description: 'An honest reflection on premium versus standard lens implants. The answer depends on your life, your eyes, and the quality of your pre-surgical conversation.',
+    cluster: 'Lens Selection',
+    image: '/media/stock-couple-bar-golf-view.jpg',
+  },
+  {
     slug: 'five-questions-before-surgery',
     title: '5 Questions to Ask Before Cataract Surgery',
     date: 'May 2026',
