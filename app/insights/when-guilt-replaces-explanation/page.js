@@ -87,7 +87,7 @@ export default function InsightGuilt() {
             alt="Seniors enjoying life with clear vision"
             width={1920}
             height={400}
-            style={{width: '100%', objectFit: 'cover'}}
+            style={{width: "100%", height: "auto"}}
           />
         </div>
       </section>

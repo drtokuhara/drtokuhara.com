@@ -510,7 +510,7 @@ const SCREENS = {
     buttons: [{ label: "What would you do in my case?", next: "wrong_fixable" }],
   },
   wrong_blamed: {
-    image: "/media/stock-men-dinner-laughing.jpg",
+    image: "/media/patient-distress-concern.png",
     step: 2, totalSteps: 5,
     paragraphs: [
       "I hear this more often than I'd like.",
@@ -1127,7 +1127,7 @@ function ConversationScreen({ screen, onChoose }) {
     <div className="conv-body">
       {screen.image && (
         <div className="conv-image">
-          <Image src={screen.image} alt="" width={800} height={400} style={{width: '100%', height: '280px', objectFit: 'cover', objectPosition: 'center 30%', borderRadius: '16px', marginBottom: '32px'}} />
+          <Image src={screen.image} alt="" width={800} height={400} style={{width: '100%', height: 'auto', maxHeight: '280px', objectFit: 'contain', borderRadius: '16px', marginBottom: '32px'}} />
         </div>
       )}
       <div className="conv-text-block">
@@ -1166,7 +1166,7 @@ function CloseScreen({ screen, onStartOver }) {
     <div className="conv-body">
       {screen.image && (
         <div className="conv-image">
-          <Image src={screen.image} alt="" width={800} height={400} style={{width: '100%', height: '280px', objectFit: 'cover', objectPosition: 'center 30%', borderRadius: '16px', marginBottom: '32px'}} />
+          <Image src={screen.image} alt="" width={800} height={400} style={{width: '100%', height: 'auto', maxHeight: '280px', objectFit: 'contain', borderRadius: '16px', marginBottom: '32px'}} />
         </div>
       )}
       <div className="conv-text-block">

@@ -23,6 +23,14 @@ export const metadata = {
 
 const insights = [
   {
+    slug: 'do-i-really-need-surgery',
+    title: '"Do I Really Need Cataract Surgery Yet?"',
+    date: 'May 2026',
+    description: 'A 70-year-old man was told surgery could eliminate his glasses. His vision was 20/25+. After an honest exam, we decided together to wait.',
+    cluster: 'Surgical Restraint',
+    image: '/media/stock-couple-balcony-golf-resort.jpg',
+  },
+  {
     slug: 'when-the-surgeon-says-wait',
     title: 'When the Surgeon Says Wait',
     date: 'May 2026',

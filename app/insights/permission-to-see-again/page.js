@@ -112,7 +112,7 @@ export default function InsightPermission() {
             alt="Seniors enjoying bocce in the desert sunshine"
             width={1920}
             height={400}
-            style={{width: '100%', objectFit: 'cover'}}
+            style={{width: "100%", height: "auto"}}
           />
         </div>
       </section>

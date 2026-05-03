@@ -135,7 +135,7 @@ export default function InsightTheNumber() {
             alt="Couple enjoying live music outdoors"
             width={1920}
             height={400}
-            style={{width: '100%', objectFit: 'cover'}}
+            style={{width: "100%", height: "auto"}}
           />
         </div>
       </section>

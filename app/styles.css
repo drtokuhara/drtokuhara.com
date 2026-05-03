@@ -2622,18 +2622,13 @@ body.conversation-active .footer {
   margin-right: -50vw;
   margin-top: 48px;
   margin-bottom: 48px;
-  max-height: 50vh;
   overflow: hidden;
 }
 .editorial-image-break img {
   width: 100%;
-  height: clamp(300px, 30vw, 500px);
-  object-fit: cover;
-  object-position: center 30%;
-}
-@media (max-width: 768px) {
-  .editorial-image-break { max-height: 400px; }
-  .editorial-image-break img { height: 300px; }
+  height: auto;
+  max-height: 50vh;
+  object-fit: contain;
 }
 
 /* Highlighted stat / emphasis block */
@@ -2955,4 +2950,37 @@ html {
 }
 .mobile-nav-label:first-child {
   margin-top: 0;
+}
+
+/* Mega dropdown for Conditions */
+.nav-dropdown-wide .nav-dropdown-menu.nav-dropdown-mega {
+  min-width: 580px;
+  display: flex;
+  gap: 0;
+  padding: 20px 0;
+}
+.nav-mega-col {
+  flex: 1;
+  padding: 0 20px;
+  border-right: 1px solid var(--bg);
+}
+.nav-mega-col:last-child {
+  border-right: none;
+}
+.nav-mega-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--oasis);
+  padding: 0 24px 8px;
+  margin-bottom: 4px;
+}
+.nav-dropdown-mega a {
+  padding: 7px 24px;
+  font-size: 13px;
+}
+@media (max-width: 768px) {
+  .nav-dropdown-mega { display: none !important; }
 }

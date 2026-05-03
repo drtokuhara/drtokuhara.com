@@ -86,7 +86,7 @@ export default function VivityVsPanoptix() {
 
       <section style={{padding: 0}}>
         <div className="editorial-image-break">
-          <Image src="/media/stock-couple-golf-cart.png" alt="Active couple enjoying the Coachella Valley lifestyle with clear vision" width={1920} height={400} style={{width: '100%', objectFit: 'cover'}} />
+          <Image src="/media/stock-couple-golf-cart.png" alt="Active couple enjoying the Coachella Valley lifestyle with clear vision" width={1920} height={400} style={{width: "100%", height: "auto"}} />
         </div>
       </section>
 
@@ -232,7 +232,7 @@ export default function VivityVsPanoptix() {
 
       <section style={{padding: 0}}>
         <div className="editorial-image-break">
-          <Image src="/media/stock-seniors-outdoor-toast.jpg" alt="Seniors toasting outdoors in the Coachella Valley" width={1920} height={400} style={{width: '100%', objectFit: 'cover'}} />
+          <Image src="/media/stock-seniors-outdoor-toast.jpg" alt="Seniors toasting outdoors in the Coachella Valley" width={1920} height={400} style={{width: "100%", height: "auto"}} />
         </div>
       </section>
 

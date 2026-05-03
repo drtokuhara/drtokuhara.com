@@ -88,15 +88,38 @@ export default function RootLayout({ children }) {
                   <Link href="/halos-after-cataract-surgery">Halos After Surgery</Link>
                 </div>
               </div>
-              <div className="nav-dropdown">
+              <div className="nav-dropdown nav-dropdown-wide">
                 <span className="nav-dropdown-trigger">Conditions</span>
-                <div className="nav-dropdown-menu">
-                  <Link href="/complex-cases">Complex Cases</Link>
-                  <Link href="/understanding-cataracts">Understanding Cataracts</Link>
-                  <Link href="/yag-laser-capsulotomy">YAG Laser</Link>
-                  <Link href="/blurry-vision-after-cataract-surgery">Blurry Vision After Surgery</Link>
-                  <Link href="/dust-in-eyes">Dust in Eyes</Link>
-                  <Link href="/yamane-technique">Yamane Technique</Link>
+                <div className="nav-dropdown-menu nav-dropdown-mega">
+                  <div className="nav-mega-col">
+                    <span className="nav-mega-label">Eye Conditions</span>
+                    <Link href="/understanding-cataracts">Understanding Cataracts</Link>
+                    <Link href="/yag-laser-capsulotomy">YAG Laser / PCO</Link>
+                    <Link href="/blurry-vision-after-cataract-surgery">Blurry Vision After Surgery</Link>
+                    <Link href="/halos-after-cataract-surgery">Halos After Surgery</Link>
+                    <Link href="/dust-in-eyes">Dust in Eyes</Link>
+                    <Link href="/yamane-technique">Dislocated Lens / Yamane</Link>
+                  </div>
+                  <div className="nav-mega-col">
+                    <span className="nav-mega-label">Cataract + Condition</span>
+                    <Link href="/complex-cases/diabetes">Diabetes</Link>
+                    <Link href="/complex-cases/glaucoma-and-cataract">Glaucoma</Link>
+                    <Link href="/complex-cases/macular-degeneration">Macular Degeneration</Link>
+                    <Link href="/complex-cases/previous-retina-surgery">Previous Retina Surgery</Link>
+                    <Link href="/complex-cases/previous-lasik">Previous LASIK</Link>
+                    <Link href="/complex-cases/previous-rk">Previous RK</Link>
+                    <Link href="/complex-cases/fuchs-dystrophy">Fuchs Dystrophy</Link>
+                  </div>
+                  <div className="nav-mega-col">
+                    <span className="nav-mega-label">Special Populations</span>
+                    <Link href="/complex-cases/parkinsons-disease">Parkinson's</Link>
+                    <Link href="/complex-cases/alzheimers-dementia">Alzheimer's / Dementia</Link>
+                    <Link href="/complex-cases/down-syndrome">Down Syndrome</Link>
+                    <Link href="/complex-cases/floppy-iris">Floppy Iris (Flomax)</Link>
+                    <Link href="/complex-cases/pseudoexfoliation">Pseudoexfoliation</Link>
+                    <Link href="/complex-cases/retained-silicone-oil">Retained Silicone Oil</Link>
+                    <Link href="/complex-cases/aphakia-after-retina">Aphakia After Retina</Link>
+                  </div>
                 </div>
               </div>
               <div className="nav-dropdown">

@@ -173,7 +173,7 @@ export default function YagLaserCapsulotomy() {
       {/* FULL-WIDTH LIFESTYLE BREAK */}
       <section style={{padding: 0}}>
         <div className="editorial-image-break">
-          <Image src="/media/stock-couple-outdoor-sunshine.jpg" alt="Couple enjoying clear vision outdoors in the Coachella Valley sunshine" width={1920} height={500} style={{width: '100%', objectFit: 'cover'}} />
+          <Image src="/media/stock-couple-outdoor-sunshine.jpg" alt="Couple enjoying clear vision outdoors in the Coachella Valley sunshine" width={1920} height={500} style={{width: "100%", height: "auto"}} />
         </div>
       </section>
 

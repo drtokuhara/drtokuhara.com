@@ -73,6 +73,16 @@ export default function EthicalCataractCare() {
       {/* INTRO */}
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/honest-consultation-trust.png"
+              alt="Doctor and patient having an honest, face-to-face conversation in a clinic"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+            <div className="content-image-caption">Trust starts with an honest conversation, not a financial arrangement.</div>
+          </div>
           <p className="body-lead">
             I am going to talk about something that most surgeons avoid. Not because it is complicated, but because it is uncomfortable.
           </p>
@@ -119,11 +129,11 @@ export default function EthicalCataractCare() {
         </div>
       </section>
 
-      <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
-        <div className="container content-narrow">
-          <div className="content-image">
-            <Image src="/media/stock-seniors-outdoor-dining.jpg" alt="Seniors enjoying a meal together - the community trust that ethical care supports" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
-          </div>
+
+
+      <section style={{padding: 0}}>
+        <div className="editorial-image-break">
+          <Image src="/media/stock-couple-desert-overlook.jpg" alt="Couple overlooking the Coachella Valley desert landscape" width={1920} height={500} style={{width: "100%", height: "auto"}} />
         </div>
       </section>
 
@@ -158,6 +168,16 @@ export default function EthicalCataractCare() {
       <section className="section section-white">
         <div className="container content-narrow">
           <h2 className="section-title">Taking a <strong>Stand</strong></h2>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/ethics-seminar-speaker.png"
+              alt="Physician speaking at an ethics in eyecare seminar"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             In 2025, I hosted the <strong>Stand for Ethical Eye Care</strong> seminar at Hotel Paseo in the Coachella Valley. The event brought together physicians and community members to discuss the reality of hidden kickback practices in eye care.
           </p>
@@ -221,6 +241,12 @@ export default function EthicalCataractCare() {
             />
           </div>
           <p style={{fontSize: '14px', color: 'var(--text-light)', marginTop: '8px'}}>My full explanation of cataract referral kickbacks, the Stark Law, and what patients should know.</p>
+        </div>
+      </section>
+
+      <section style={{padding: 0}}>
+        <div className="editorial-image-break">
+          <Image src="/media/stock-couple-lawn-sunset-coachella.jpg" alt="Couple enjoying a Coachella Valley sunset on the lawn" width={1920} height={500} style={{width: "100%", height: "auto"}} />
         </div>
       </section>
 

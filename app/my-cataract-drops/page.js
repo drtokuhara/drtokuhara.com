@@ -39,7 +39,7 @@ export default function MyCataractDrops() {
           </ScrollReveal>
           <KineticText text="My Cataract Drops" Tag="h1" mode="word" staggerDelay={0.06} />
           <ScrollReveal direction="up" delay={0.3} once={true}>
-            <p className="page-hero-sub" style={{maxWidth: '600px', margin: '16px auto 0'}}>The app that makes sure you never miss an eye drop. Push notifications. Color-coded bottles. Simple tracking.</p>
+            <p className="page-hero-sub" style={{maxWidth: '600px', margin: '16px auto 0'}}>The app that makes sure you never miss an eye drop. Push notifications. Visual bottle tracking. Simple.</p>
           </ScrollReveal>
           <ScrollReveal direction="up" delay={0.5} once={true}>
             <div style={{display: 'flex', gap: '16px', justifyContent: 'center', marginTop: '32px', flexWrap: 'wrap'}}>
@@ -100,10 +100,10 @@ export default function MyCataractDrops() {
             "I cannot keep track of all these drops."
           </p>
           <p>
-            I hear this from patients every single week. After cataract surgery, you go home with multiple eye drop bottles, each on a different schedule. Some are three times a day, some are four. Some taper over weeks. It is genuinely confusing, and the stakes are real, because consistent drop use is one of the most important factors in your recovery.
+            I used to hear this from patients every single week. Even though we simplify recovery by combining drops into a compounded bottle whenever possible, it is still surprisingly easy to lose track. You are living an active retirement, juggling a first eye and second eye schedule throughout the day, and life does not stop because you had surgery.
           </p>
           <p>
-            So I built an app to solve it. Not a generic medication tracker. A tool designed specifically for cataract surgery patients, by a cataract surgeon who knows exactly what the post-operative drop schedule looks like.
+            So I built an app to solve it. Not a generic medication tracker. A tool designed specifically for cataract surgery patients, by a cataract surgeon who knows exactly what the post-operative schedule looks like.
           </p>
         </div>
       </section>
@@ -183,7 +183,7 @@ export default function MyCataractDrops() {
           </ScrollReveal>
           <StaggerChildren className="insight-list" staggerDelay={0.08}>
             <StaggerItem><div className="insight-item"><strong>Push notifications</strong><p>Alerts when each drop is due. Works even when the app is closed.</p></div></StaggerItem>
-            <StaggerItem><div className="insight-item"><strong>Color-coded bottles</strong><p>Match the notification to the physical bottle. No confusion about which drop is which.</p></div></StaggerItem>
+            <StaggerItem><div className="insight-item"><strong>Visual bottle tracking</strong><p>The app shows your bottle's relative fluid level as you progress through recovery. If the app shows half full but your real bottle is nearly empty, it is a gentle reminder that some doses may have missed their mark. Not a problem, just a signal that we can get you a refill before you run out.</p></div></StaggerItem>
             <StaggerItem><div className="insight-item"><strong>Personalized schedule</strong><p>Based on your surgery date and Dr. Tokuhara's post-op protocol. Not a generic template.</p></div></StaggerItem>
             <StaggerItem><div className="insight-item"><strong>Dose tracking</strong><p>Mark each dose as complete. See what you have done and what is still ahead.</p></div></StaggerItem>
 

@@ -1,9 +1,14 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../schema';
 import {
   ScrollReveal,
+  KineticText,
   StaggerChildren,
   StaggerItem,
+  BlurReveal,
+  VideoBackground,
+  LineDraw,
 } from '../components/ScrollAnimations';
 
 const jsonLd = [
@@ -17,106 +22,25 @@ const jsonLd = [
     { name: 'Patient Stories', href: '/patient-stories' },
   ]),
   {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
+    '@context': 'https://schema.org', '@type': 'FAQPage',
     mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'What do patients say about cataract surgery at Desert Vision Center?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Patients consistently describe feeling heard before surgery, calm during the procedure, and surprised by how quickly they recovered. Many report seeing clearly the morning after surgery. Real patient video testimonials are available on this page.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Are there patient testimonial videos for Dr. Tokuhara?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes. Desert Vision Center has recorded multiple patient testimonials. These are real patients sharing their own experiences, not actors or paid endorsements. Videos include patients with monocular eyes, complex cases, and standard cataract surgery.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'How do I know if cataract surgery at Desert Vision Center is right for me?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'The best way to know is a consultation. But hearing from patients who have been through it is a good starting point. Watch the videos on this page to hear directly from patients about what the experience was like.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Does Dr. Tokuhara do cataract surgery on patients with only one eye?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes. Dr. Tokuhara has performed cataract surgery on monocular patients, where one eye is the only functioning eye. Harold Baird shares his experience with this on this page. These cases require a surgeon with the experience and judgment to manage the additional risk.',
-        },
-      },
+      { '@type': 'Question', name: 'What do patients say about cataract surgery at Desert Vision Center?', acceptedAnswer: { '@type': 'Answer', text: 'Patients consistently describe feeling heard before surgery, calm during the procedure, and surprised by how quickly they recovered. Many report seeing clearly the morning after surgery.' } },
+      { '@type': 'Question', name: 'Are there patient testimonial videos for Dr. Tokuhara?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Desert Vision Center has recorded multiple patient testimonials. These are real patients sharing their own experiences, not actors or paid endorsements.' } },
+      { '@type': 'Question', name: 'Does Dr. Tokuhara do cataract surgery on patients with only one eye?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Dr. Tokuhara has performed cataract surgery on monocular patients. Harold Baird shares his experience on this page. These cases require a surgeon with the experience and judgment to manage the additional risk.' } },
     ],
   },
 ];
 
 export const metadata = {
   title: 'Patient Stories: Real Experiences at Desert Vision Center',
-  description: 'Real patients. No actors, no scripts. Watch testimonial videos and read patient stories from Desert Vision Center. Desert vision center reviews from the people who have been there.',
+  description: 'Real patients. No actors, no scripts. Watch testimonial videos and read patient stories from Desert Vision Center.',
   alternates: { canonical: '/patient-stories' },
   openGraph: {
-    title: 'Patient Stories | Desert Vision Center Reviews',
-    description: 'Watch real patients share their cataract surgery experiences with Dr. Tokuhara at Desert Vision Center in Rancho Mirage.',
+    title: 'Patient Stories | Desert Vision Center',
+    description: 'Watch real patients share their cataract surgery experiences with Dr. Tokuhara.',
     url: 'https://drtokuhara.com/patient-stories',
   },
 };
-
-const videos = [
-  {
-    id: 'vdD3lBubt58',
-    title: 'Harold Baird: Cataract Surgery in a Monocular Eye',
-    desc: 'Harold had only one functioning eye. His surgery was one of the highest-stakes cases we do. He shares what that experience was like.',
-  },
-  {
-    id: 'Yomf55PktXU',
-    title: 'Real Patient: PanOptix Trifocal Experience',
-    desc: 'A patient shares what it is actually like living with a PanOptix trifocal lens, including nighttime vision and glasses freedom.',
-  },
-  {
-    id: '3vEQKShP_Tg',
-    title: 'Christina: Laser Cataract Surgery',
-    desc: 'Christina walks through her experience with laser cataract surgery at Desert Vision Center, from first consultation to recovery.',
-  },
-  {
-    id: 'uLY48kY8Opo',
-    title: "Carol's Cataract Surgery Journey: 20/20 Vision",
-    desc: "Carol shares her journey from cloudy vision to 20/20 and why she chose Desert Vision Center for her cataract surgery.",
-  },
-  {
-    id: 'pm6T4CUmLrE',
-    title: "Philip Ferranti: Getting His Vision Back",
-    desc: 'Philip, a Coachella Valley hiking enthusiast, talks about what cataract surgery meant for getting back to the activities he loves.',
-  },
-  {
-    id: 'm3xHlebhPUQ',
-    title: 'Eric Redd: Why He Chose Desert Vision Center',
-    desc: 'Eric shares what cataract surgery was like and the reasons he chose Dr. Tokuhara for his care.',
-  },
-];
-
-const insightStories = [
-  {
-    href: '/insights/permission-to-see-again',
-    title: 'Permission to See Again',
-    desc: 'A patient who had been told she was not ready for surgery. She was. This is her story.',
-  },
-  {
-    href: '/insights/the-reader-who-almost-gave-up-her-books',
-    title: 'The Reader Who Almost Gave Up Her Books',
-    desc: 'She had been postponing surgery for fear of losing the reading she loved. Nobody had told her there was an option built for readers.',
-  },
-  {
-    href: '/insights/when-ai-recommends-your-lens',
-    title: 'When AI Recommends Your Lens',
-    desc: 'A reflection on what happens when the algorithm says one thing and the patient says another.',
-  },
-];
 
 export default function PatientStories() {
   return (
@@ -125,123 +49,213 @@ export default function PatientStories() {
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
 
-      {/* HERO */}
-      <section className="page-hero page-hero-image" style={{ background: 'linear-gradient(135deg, #07424e 0%, #0a1a24 100%)', minHeight: '45vh', display: 'flex', alignItems: 'center' }}>
-        <div className="container">
+      {/* CINEMATIC HERO */}
+      <VideoBackground
+        src="/media/ambient-desert-golden-hour.mp4"
+        overlayOpacity={0.55}
+        overlayColor="0, 20, 30"
+        className="page-hero page-hero-image"
+        style={{minHeight: '55vh', display: 'flex', alignItems: 'center'}}
+      >
+        <div className="container" style={{textAlign: 'center'}}>
           <ScrollReveal direction="up" once={true}>
-            <h1>Patient <strong>Stories</strong></h1>
-            <p className="page-hero-sub">Real patients. No actors, no scripts. These are the conversations that matter most to me.</p>
+            <p style={{fontSize: '12px', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--oasis)', marginBottom: '16px', fontWeight: 600}}>Real Patients, Real Stories</p>
+          </ScrollReveal>
+          <KineticText text="Patient Stories" Tag="h1" mode="word" staggerDelay={0.06} />
+          <ScrollReveal direction="up" delay={0.3} once={true}>
+            <p className="page-hero-sub" style={{maxWidth: '600px', margin: '16px auto 0'}}>No actors. No scripts. Just honest conversations from the people who have been through it.</p>
           </ScrollReveal>
         </div>
-      </section>
+      </VideoBackground>
 
-      {/* INTRO */}
+      {/* INTRO WITH IMAGE */}
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/honest-consultation-trust.png"
+              alt="Doctor having an honest conversation with a patient in the clinic"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p className="body-lead">
             I could describe what cataract surgery is like at Desert Vision Center. But the people who have been through it can tell you something I cannot: what it actually feels like.
           </p>
           <p>
             Every patient on this page is a real person. Not an actor. Not a script. Just someone who agreed to share their experience because they thought it might help someone else make a decision they had been sitting with for too long.
           </p>
-          <p>
-            Some of these stories are straightforward. A cloudy lens, a clear result, relief. Others are more complicated: a monocular eye, a delayed surgery, a patient who almost did not come in at all. All of them are honest.
-          </p>
         </div>
       </section>
 
-      {/* VIDEO TESTIMONIALS */}
+      {/* FEATURED STORY: Harold */}
       <section className="section section-warm">
-        <div className="container">
-          <ScrollReveal direction="up" once={true}>
-            <h2 className="section-title">Video <strong>Testimonials</strong></h2>
-            <div className="section-subtitle">Hear directly from patients about their experience at Desert Vision Center.</div>
-          </ScrollReveal>
-          <StaggerChildren className="video-grid video-grid-education" staggerDelay={0.1}>
-            {videos.map((video) => (
-              <StaggerItem key={video.id}>
-                <div className="video-card">
-                  <div className="video-wrapper">
-                    <iframe
-                      src={`https://www.youtube.com/embed/${video.id}`}
-                      title={video.title}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="video-card-text">
-                    <p className="video-label">{video.title}</p>
-                    <p className="video-desc">{video.desc}</p>
-                  </div>
-                </div>
-              </StaggerItem>
-            ))}
-          </StaggerChildren>
-        </div>
-      </section>
-
-      {/* PULL QUOTE */}
-      <section className="section section-white">
         <div className="container content-narrow">
-          <div className="pull-quote">
-            <p>Every patient who shares their story does it for the person who has not yet called. That is the kind of practice we try to be.</p>
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">Featured: <strong>Harold Baird</strong></h2>
+            <p style={{color: 'var(--text-light)', marginBottom: '8px', fontSize: '14px', letterSpacing: '0.05em', textTransform: 'uppercase'}}>Monocular Eye - The Highest-Stakes Surgery</p>
+          </ScrollReveal>
+          <p>
+            Harold had been blind in one eye since age five. His remaining eye developed a cataract and a retinal detachment. He saw three surgeons before choosing Dr. Tokuhara, who spent 70 minutes in the first consultation. The result: 20/20+ vision, no astigmatism, no glasses for the first time in his life.
+          </p>
+          <BlurReveal><div className="pull-quote">
+            <p>"He has magic in his hands. You walk in there and you think you are a rock star."</p>
+          </div></BlurReveal>
+          <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px', marginTop: '32px', boxShadow: '0 12px 40px rgba(0,0,0,0.12)'}}>
+            <iframe src="https://www.youtube.com/embed/vdD3lBubt58" title="Harold Baird: Monocular Eye Surgery" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none'}} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+          </div>
+          <div style={{textAlign: 'center', marginTop: '16px'}}>
+            <Link href="/monocular-cataract-surgery" style={{color: 'var(--night-horizon)', fontSize: '14px'}}>Read more about monocular cataract surgery →</Link>
           </div>
         </div>
       </section>
 
-      {/* INSIGHT STORIES */}
+      {/* LIFESTYLE BREAK */}
+      <section style={{padding: 0}}>
+        <div className="editorial-image-break">
+          <Image src="/media/stock-couple-sunny-pathway-luxury.jpg" alt="Couple walking confidently along a sunny pathway" width={1920} height={500} style={{width: "100%", height: "auto"}} />
+        </div>
+      </section>
+
+      {/* MORE VIDEO TESTIMONIALS */}
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">More <strong>Patient Videos</strong></h2>
+          </ScrollReveal>
+
+          {/* Christina */}
+          <div style={{marginBottom: '48px'}}>
+            <h3 style={{fontFamily: 'var(--font-display)', fontSize: '20px', marginBottom: '8px'}}>Christina: Laser Cataract Surgery</h3>
+            <p style={{color: 'var(--text-light)', marginBottom: '16px'}}>Christina came from a technology background and valued the precision of laser-assisted surgery. She describes the procedure as "amazingly quick and absolutely painless."</p>
+            <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px', boxShadow: '0 8px 32px rgba(0,0,0,0.08)'}}>
+              <iframe src="https://www.youtube.com/embed/3vEQKShP_Tg" title="Christina: Laser Cataract Surgery" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none'}} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading="lazy" />
+            </div>
+          </div>
+
+          <LineDraw />
+
+          {/* PanOptix Patient */}
+          <div style={{marginTop: '48px', marginBottom: '48px'}}>
+            <h3 style={{fontFamily: 'var(--font-display)', fontSize: '20px', marginBottom: '8px'}}>PanOptix Trifocal: Two Generations, One Patient</h3>
+            <p style={{color: 'var(--text-light)', marginBottom: '16px'}}>This patient had the original PanOptix in one eye and upgraded to the PanOptix Pro in the other with Dr. Tokuhara. Within 24 hours, she noticed the difference: brighter, clearer, sharper.</p>
+            <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px', boxShadow: '0 8px 32px rgba(0,0,0,0.08)'}}>
+              <iframe src="https://www.youtube.com/embed/Yomf55PktXU" title="PanOptix Real Patient Experience" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none'}} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading="lazy" />
+            </div>
+          </div>
+
+          <LineDraw />
+
+          {/* Carol */}
+          <div style={{marginTop: '48px', marginBottom: '48px'}}>
+            <h3 style={{fontFamily: 'var(--font-display)', fontSize: '20px', marginBottom: '8px'}}>Carol: The Journey to 20/20</h3>
+            <p style={{color: 'var(--text-light)', marginBottom: '16px'}}>Carol shares her complete journey from cloudy vision to perfect clarity, and why she chose Desert Vision Center.</p>
+            <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px', boxShadow: '0 8px 32px rgba(0,0,0,0.08)'}}>
+              <iframe src="https://www.youtube.com/embed/uLY48kY8Opo" title="Carol's Cataract Surgery Journey" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none'}} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading="lazy" />
+            </div>
+          </div>
+
+          <LineDraw />
+
+          {/* Philip and Eric - side by side */}
+          <div style={{marginTop: '48px'}} className="compare-grid">
+            <div>
+              <h3 style={{fontFamily: 'var(--font-display)', fontSize: '18px', marginBottom: '8px'}}>Philip Ferranti</h3>
+              <p style={{color: 'var(--text-light)', fontSize: '14px', marginBottom: '12px'}}>A Coachella Valley hiking enthusiast on getting back to the trails with clear vision.</p>
+              <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px', boxShadow: '0 8px 32px rgba(0,0,0,0.08)'}}>
+                <iframe src="https://www.youtube.com/embed/pm6T4CUmLrE" title="Philip Ferranti Testimonial" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none'}} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading="lazy" />
+              </div>
+            </div>
+            <div>
+              <h3 style={{fontFamily: 'var(--font-display)', fontSize: '18px', marginBottom: '8px'}}>Eric Redd</h3>
+              <p style={{color: 'var(--text-light)', fontSize: '14px', marginBottom: '12px'}}>Why he chose Desert Vision Center and what the experience was like from start to finish.</p>
+              <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px', boxShadow: '0 8px 32px rgba(0,0,0,0.08)'}}>
+                <iframe src="https://www.youtube.com/embed/m3xHlebhPUQ" title="Eric Redd Testimonial" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none'}} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* LIFESTYLE BREAK */}
+      <section style={{padding: 0}}>
+        <div className="editorial-image-break">
+          <Image src="/media/stock-seniors-poolside-resort.jpg" alt="Seniors relaxing poolside at a luxury desert resort" width={1920} height={500} style={{width: "100%", height: "auto"}} />
+        </div>
+      </section>
+
+      {/* WRITTEN STORIES */}
       <section className="section section-warm">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}>
             <h2 className="section-title">Patient Stories <strong>in Writing</strong></h2>
+            <p>Some experiences are better told in full. These reflections explore the decision, the surgery, and the moment things changed.</p>
           </ScrollReveal>
-          <p>Some experiences are better told in full. These patient stories explore the decision, the surgery, and the moment things changed.</p>
-          <div className="related-grid" style={{ marginTop: '32px' }}>
-            {insightStories.map((story) => (
-              <Link key={story.href} href={story.href} className="related-card">
-                <h3>{story.title}</h3>
-                <p>{story.desc}</p>
+          <StaggerChildren className="related-grid" style={{marginTop: '32px'}} staggerDelay={0.1}>
+            <StaggerItem>
+              <Link href="/insights/permission-to-see-again" className="related-card">
+                <h3>Permission to See Again</h3>
+                <p>A woman spent six years caring for her husband. When she finally came in for her own eyes, she needed permission to take care of herself.</p>
               </Link>
-            ))}
-          </div>
+            </StaggerItem>
+            <StaggerItem>
+              <Link href="/insights/the-reader-who-almost-gave-up-her-books" className="related-card">
+                <h3>The Reader Who Almost Gave Up Her Books</h3>
+                <p>An 81-year-old reader delayed surgery because nobody told her she had a choice about how she would see afterward.</p>
+              </Link>
+            </StaggerItem>
+            <StaggerItem>
+              <Link href="/insights/when-ai-recommends-your-lens" className="related-card">
+                <h3>When AI Recommends Your Lens</h3>
+                <p>A patient used AI to choose his lens. Every tool agreed. But his eyes told a different story.</p>
+              </Link>
+            </StaggerItem>
+            <StaggerItem>
+              <Link href="/insights/the-man-who-wanted-his-younger-eyes-back" className="related-card">
+                <h3>The Man Who Wanted His Younger Eyes Back</h3>
+                <p>He did not just want better vision. He wanted to feel the way he did before glasses became part of his identity.</p>
+              </Link>
+            </StaggerItem>
+            <StaggerItem>
+              <Link href="/insights/when-guilt-replaces-explanation" className="related-card">
+                <h3>When Guilt Replaces Explanation</h3>
+                <p>A patient was told his complication was his fault. It was not.</p>
+              </Link>
+            </StaggerItem>
+          </StaggerChildren>
         </div>
       </section>
 
-      {/* MORE EDUCATION */}
+      {/* CLINIC THOUGHT */}
       <section className="section section-white">
         <div className="container content-narrow">
-          <ScrollReveal direction="up" once={true}>
-            <h2 className="section-title">Want to <strong>Learn More?</strong></h2>
-          </ScrollReveal>
-          <p>If the patient stories raised questions about the procedure, lens options, or what to expect, these pages go deeper.</p>
-          <div className="related-grid" style={{ marginTop: '32px' }}>
-            <Link href="/cataract-surgery" className="related-card">
-              <h3>Cataract Surgery</h3>
-              <p>What actually happens before, during, and after the procedure.</p>
-            </Link>
-            <Link href="/lens-implants-explained" className="related-card">
-              <h3>Lens Implants Explained</h3>
-              <p>Monofocal, toric, Extended Depth of Focus, and multifocal lenses with honest tradeoffs.</p>
-            </Link>
-            <Link href="/choosing-your-surgeon" className="related-card">
-              <h3>Choosing Your Surgeon</h3>
-              <p>What to look for in a cataract surgeon, and what questions to ask before you commit.</p>
-            </Link>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/Dr-Tokuhara.jpg"
+              alt="Dr. Keith Tokuhara"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
           </div>
+          <BlurReveal><div className="clinic-thought">
+            <h3>A thought from the clinic</h3>
+            <p>
+              <em>Every patient who shares their story does it for the person who has not yet called. That generosity, that willingness to be vulnerable so a stranger feels less alone, is what makes this practice worth building. I am grateful to every person on this page.</em>
+            </p>
+          </div></BlurReveal>
         </div>
       </section>
 
-      {/* YOUR STORY CTA */}
+      {/* CTA */}
       <section className="section section-warm">
-        <div className="container content-narrow" style={{ textAlign: 'center' }}>
+        <div className="container content-narrow" style={{textAlign: 'center'}}>
           <ScrollReveal direction="up" once={true}>
             <h2 className="section-title">Your Story <strong>Could Be Next</strong></h2>
+            <p style={{maxWidth: '550px', margin: '0 auto 32px', color: 'var(--text-light)'}}>If you have been putting off cataract surgery, I hope these stories helped. The next step is a conversation, not a commitment.</p>
           </ScrollReveal>
-          <p style={{ maxWidth: '600px', margin: '0 auto 32px' }}>
-            If you have been putting off cataract surgery, I hope these stories helped. The next step is a conversation, not a commitment. We will figure out together whether surgery is right for you, and when.
-          </p>
-          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div style={{display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap'}}>
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
             <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
           </div>

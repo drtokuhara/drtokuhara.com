@@ -41,6 +41,17 @@ export default function MobileNav() {
             <Link href="/cataract-surgery-complications" onClick={close}>Complications</Link>
             <Link href="/complex-cases" onClick={close}>Complex Cases</Link>
 
+            <p className="mobile-nav-label">Cataract + Condition</p>
+            <Link href="/complex-cases" onClick={close}>All Complex Cases</Link>
+            <Link href="/complex-cases/diabetes" onClick={close}>Diabetes</Link>
+            <Link href="/complex-cases/glaucoma-and-cataract" onClick={close}>Glaucoma</Link>
+            <Link href="/complex-cases/macular-degeneration" onClick={close}>Macular Degeneration</Link>
+            <Link href="/complex-cases/previous-retina-surgery" onClick={close}>Previous Retina Surgery</Link>
+            <Link href="/complex-cases/previous-lasik" onClick={close}>Previous LASIK</Link>
+            <Link href="/complex-cases/parkinsons-disease" onClick={close}>Parkinson's</Link>
+            <Link href="/complex-cases/alzheimers-dementia" onClick={close}>Alzheimer's / Dementia</Link>
+            <Link href="/complex-cases/down-syndrome" onClick={close}>Down Syndrome</Link>
+
             <p className="mobile-nav-label">Lenses</p>
             <Link href="/lens-implants-explained" onClick={close}>Lens Guide</Link>
             <Link href="/vivity-vs-panoptix" onClick={close}>Vivity vs PanOptix</Link>

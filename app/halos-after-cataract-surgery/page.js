@@ -42,6 +42,16 @@ export default function HalosAfterSurgery() {
 
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/halo-simulation-night-driving.png"
+              alt="Simulation of halos around headlights at night, showing concentric rings of light as seen by some patients after cataract surgery with multifocal lens implants"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+            <div className="content-image-caption">A simulation of what halos look like when driving at night. Concentric rings of light around headlights are the most common visual phenomenon reported after multifocal lens implantation.</div>
+          </div>
           <p className="body-lead">
             "Doctor, I am seeing halos around lights at night. Is that normal?"
           </p>
@@ -95,7 +105,18 @@ export default function HalosAfterSurgery() {
               <p style={{margin: '8px 0 0', fontSize: '15px'}}>Lowest risk of halos. Single focal point means no light splitting. Some transient halos possible from corneal healing or PCO.</p>
             </div>
           </div>
-          <p style={{marginTop: '24px'}}>
+        </div>
+      </section>
+
+      <section style={{padding: 0}}>
+        <div className="editorial-image-break">
+          <Image src="/media/stock-couple-evening-walk-dog.jpg" alt="Couple walking in the evening with their dog, enjoying clear nighttime vision" width={1920} height={500} style={{width: "100%", height: "auto"}} />
+        </div>
+      </section>
+
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <p>
             This is exactly why I spend so much time during the consultation discussing lens selection. Understanding this tradeoff before surgery, not after, is critical. For a detailed comparison, see <Link href="/vivity-vs-panoptix" style={{color: 'var(--night-horizon)'}}>Vivity vs PanOptix</Link>.
           </p>
         </div>
@@ -122,6 +143,15 @@ export default function HalosAfterSurgery() {
 
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/stock-couple-pool-mountain-view.jpg"
+              alt="Couple enjoying a clear view by the pool with mountain backdrop"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <h2 className="section-title">When to Be <strong>Concerned</strong></h2>
           <p>Contact your surgeon if:</p>
           <ul className="content-list">

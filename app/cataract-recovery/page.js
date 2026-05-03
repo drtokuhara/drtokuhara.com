@@ -223,7 +223,7 @@ export default function CataractRecoveryPage() {
 
       <section style={{padding: 0}}>
         <div className="editorial-image-break">
-          <Image src="/media/stock-couple-garden-blooming.jpg" alt="Couple in a blooming garden enjoying a bright, clear day" width={1920} height={400} style={{width: '100%', objectFit: 'cover'}} />
+          <Image src="/media/stock-couple-garden-blooming.jpg" alt="Couple in a blooming garden enjoying a bright, clear day" width={1920} height={400} style={{width: "100%", height: "auto"}} />
         </div>
       </section>
 

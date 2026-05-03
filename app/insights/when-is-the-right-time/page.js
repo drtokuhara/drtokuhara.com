@@ -133,7 +133,7 @@ export default function InsightWhenIsTheRightTime() {
             alt="Couple enjoying a golf cart ride through the desert"
             width={1920}
             height={400}
-            style={{width: '100%', objectFit: 'cover'}}
+            style={{width: "100%", height: "auto"}}
           />
         </div>
       </section>
