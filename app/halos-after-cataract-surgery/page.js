@@ -4,6 +4,7 @@ import {
   ScrollReveal,
   BlurReveal,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 const faqSchema = {
@@ -33,12 +34,12 @@ export default function HalosAfterSurgery() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <section className="page-hero">
+      <VideoBackground src="/media/ambient-bokeh-particles.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <ScrollReveal direction="up" once={true}><h1>Halos After <strong>Cataract Surgery</strong></h1></ScrollReveal>
           <p className="page-hero-sub">If you are seeing rings of light around headlights or streetlights after surgery, you are not alone. Here is what is happening and what to expect.</p>
         </div>
-      </section>
+      </VideoBackground>
 
       <section className="section section-white">
         <div className="container content-narrow">

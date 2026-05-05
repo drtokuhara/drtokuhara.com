@@ -5,6 +5,7 @@ import {
   KineticText,
   BlurReveal,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 const faqSchema = {
@@ -61,12 +62,12 @@ export default function CataractSurgeryComplications() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* HERO */}
-      <section className="page-hero">
+      <VideoBackground src="/media/ambient-crystal-alignment.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <ScrollReveal direction="up" once={true}><h1>Cataract Surgery <strong>Complications</strong></h1></ScrollReveal>
           <p className="page-hero-sub">What can go wrong, how I handle it, and why this page exists at all.</p>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* INTRO */}
       <section className="section section-white">

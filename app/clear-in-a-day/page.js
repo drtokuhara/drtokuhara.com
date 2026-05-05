@@ -6,6 +6,7 @@ import {
   KineticText,
   BlurReveal,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 const jsonLd = [
@@ -49,12 +50,12 @@ export default function ClearInADayPage() {
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
       {/* PAGE HERO */}
-      <section className="page-hero">
+      <VideoBackground src="/media/ambient-precision-instrument.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <ScrollReveal direction="up" once={true}><h1>CLEAR in a Day<sup>&trade;</sup></h1></ScrollReveal>
           <p className="page-hero-sub">Both eyes. One surgeon. One day. A smarter path to clear vision.</p>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* WHAT IS CLEAR IN A DAY */}
       <section className="section section-white">

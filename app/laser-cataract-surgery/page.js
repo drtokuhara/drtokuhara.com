@@ -5,6 +5,7 @@ import {
   KineticText,
   BlurReveal,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 const faqSchema = {
@@ -63,12 +64,12 @@ export default function LaserCataractSurgery() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* HERO */}
-      <section className="page-hero">
+      <VideoBackground src="/media/ambient-architectural-precision.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <ScrollReveal direction="up" once={true}><h1>Laser Cataract <strong>Surgery</strong></h1></ScrollReveal>
           <p className="page-hero-sub">There is nothing more precise than a computer-guided laser. When it comes to cataract surgery, precision is key.</p>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* INTRO */}
       <section className="section section-white">

@@ -4,6 +4,7 @@ import {
   ScrollReveal,
   BlurReveal,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 const faqSchema = {
@@ -33,12 +34,12 @@ export default function BlurryVisionAfterSurgery() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <section className="page-hero">
+      <VideoBackground src="/media/ambient-light-tunnel.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <ScrollReveal direction="up" once={true}><h1>Blurry Vision After <strong>Cataract Surgery</strong></h1></ScrollReveal>
           <p className="page-hero-sub">If your vision is not as clear as you expected after surgery, here is what might be happening and what to do about it.</p>
         </div>
-      </section>
+      </VideoBackground>
 
       <section className="section section-white">
         <div className="container content-narrow">

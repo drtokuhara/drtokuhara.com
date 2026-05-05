@@ -11,6 +11,18 @@ import {
   LineDraw,
 } from '../components/ScrollAnimations';
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'What is the My Cataract Drops app?', acceptedAnswer: { '@type': 'Answer', text: 'My Cataract Drops is a free app built by Dr. Tokuhara for his cataract surgery patients. It sends push notifications when each eye drop is due, tracks multiple bottles across your recovery schedule, and provides technique guidance to help you use your drops correctly.' } },
+    { '@type': 'Question', name: 'Is the My Cataract Drops app free?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. The app is completely free for all Desert Vision Center patients. There are no subscriptions, no ads, and no in-app purchases. It was built specifically to help patients stay on track with their post-operative drop schedule.' } },
+    { '@type': 'Question', name: 'How does the eye drop reminder app work?', acceptedAnswer: { '@type': 'Answer', text: 'You enter your surgery date and the app automatically sets up your complete drop schedule. It sends push notifications when each drop is due, shows you which bottle to use, and tracks your progress week by week as the schedule tapers down.' } },
+    { '@type': 'Question', name: 'Why is it important to follow my eye drop schedule after cataract surgery?', acceptedAnswer: { '@type': 'Answer', text: 'Post-operative eye drops prevent infection and control inflammation during healing. Missing doses or stopping early can increase the risk of complications. The drops typically follow a tapering schedule over four to six weeks, with different bottles used at different times.' } },
+    { '@type': 'Question', name: 'Can I use the app if I had surgery with a different doctor?', acceptedAnswer: { '@type': 'Answer', text: 'The app is designed for Desert Vision Center patients and follows Dr. Tokuhara\'s specific post-operative drop protocols. If you had surgery elsewhere, your drop schedule may differ. Always follow your own surgeon\'s instructions.' } },
+  ],
+};
+
 export const metadata = {
   title: 'My Cataract Drops: Free Eye Drop Reminder App from Desert Vision Center',
   description: 'Never miss an eye drop again. My Cataract Drops sends push notifications when each drop is due, tracks your progress, and guides you through recovery. Free for all patients.',
@@ -25,6 +37,8 @@ export const metadata = {
 export default function MyCataractDrops() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+
       {/* HERO */}
       <VideoBackground
         src="/media/ambient-desert-sunrise.mp4"
@@ -43,10 +57,7 @@ export default function MyCataractDrops() {
           </ScrollReveal>
           <ScrollReveal direction="up" delay={0.5} once={true}>
             <div style={{display: 'flex', gap: '16px', justifyContent: 'center', marginTop: '32px', flexWrap: 'wrap'}}>
-              {/* App Store badges - uncomment when live */}
-              {/* <a href="https://apps.apple.com/app/my-cataract-drops/id..." className="btn-primary">Download for iPhone</a> */}
-              {/* <a href="https://play.google.com/store/apps/details?id=..." className="btn-secondary" style={{borderColor: 'rgba(255,255,255,0.3)', color: '#fff'}}>Download for Android</a> */}
-              <span className="btn-primary" style={{opacity: 0.8}}>Coming Soon to the App Store</span>
+              <a href="https://apps.apple.com/app/my-cataract-drops/id6764231277" className="btn-primary" target="_blank" rel="noopener noreferrer">Download for iPhone</a>
             </div>
           </ScrollReveal>
         </div>
@@ -163,6 +174,24 @@ export default function MyCataractDrops() {
 
 
 
+      {/* VIDEO */}
+      <section className="section section-white">
+        <div className="container content-narrow" style={{textAlign: 'center'}}>
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">See It <strong>In Action</strong></h2>
+          </ScrollReveal>
+          <div style={{position: 'relative', width: '100%', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px', boxShadow: '0 20px 60px rgba(0,0,0,0.1)', marginTop: '32px'}}>
+            <iframe
+              src="https://www.youtube.com/embed/im9_7hi4Dqg"
+              title="My Cataract Drops app walkthrough"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none'}}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* CLINIC THOUGHT */}
       <section className="section section-warm">
         <div className="container content-narrow">
@@ -200,11 +229,13 @@ export default function MyCataractDrops() {
             <h2 className="section-title">Download <strong>My Cataract Drops</strong></h2>
             <p style={{maxWidth: '500px', margin: '0 auto 32px', color: 'var(--text-light)'}}>Free for all Desert Vision Center patients. Available on iPhone. Your recovery starts here.</p>
           </ScrollReveal>
-          <div style={{display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
-            {/* Uncomment when live on App Store */}
-            {/* <a href="https://apps.apple.com/app/my-cataract-drops/id..." className="btn-primary">Download for iPhone</a> */}
-            <span className="btn-primary" style={{opacity: 0.8}}>Coming Soon to the App Store</span>
+          <div style={{display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center'}}>
+            <a href="https://apps.apple.com/app/my-cataract-drops/id6764231277" className="btn-primary" target="_blank" rel="noopener noreferrer">Download for iPhone</a>
             <Link href="/contact" className="btn-secondary">Schedule a Consultation</Link>
+          </div>
+          <div style={{marginTop: '32px'}}>
+            <Image src="/media/qr-code-app-store.png" alt="Scan to download My Cataract Drops from the App Store" width={160} height={160} style={{width: '160px', height: 'auto', margin: '0 auto'}} />
+            <p style={{fontSize: '13px', color: 'var(--text-light)', marginTop: '12px'}}>Scan with your iPhone camera to download</p>
           </div>
           <p style={{fontSize: '13px', color: 'var(--text-light)', marginTop: '24px'}}>Having surgery soon? Download the app before your procedure so it is ready when you need it.</p>
         </div>

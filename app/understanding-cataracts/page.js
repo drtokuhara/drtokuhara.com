@@ -4,6 +4,7 @@ import {
   ScrollReveal,
   KineticText,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 export const metadata = {
@@ -33,12 +34,12 @@ export default function UnderstandingCataracts() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* HERO */}
-      <section className="page-hero">
+      <VideoBackground src="/media/ambient-iris-closeup-v2.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <ScrollReveal direction="up" once={true}><h1>Understanding <strong>Cataracts</strong></h1></ScrollReveal>
           <p className="page-hero-sub">What your eye doctor may not have time to explain - and what you actually need to know before making any decisions.</p>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* HERO IMAGE */}
       <section className="section section-white" style={{paddingBottom: 0}}>

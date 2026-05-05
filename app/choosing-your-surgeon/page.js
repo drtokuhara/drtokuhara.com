@@ -7,6 +7,7 @@ import {
   KineticText,
   BlurReveal,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 const jsonLd = [
@@ -51,12 +52,12 @@ export default function ChoosingYourSurgeon() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       ))}
-      <section className="page-hero">
+      <VideoBackground src="/media/ambient-decision-moment.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <ScrollReveal direction="up" once={true}><h1>Choosing a Cataract <strong>Surgeon</strong></h1></ScrollReveal>
           <p className="page-hero-sub">The questions nobody tells you to ask - and why the answer isn't always the biggest name or the closest office.</p>
         </div>
-      </section>
+      </VideoBackground>
 
       <section className="section section-white">
         <div className="container content-narrow">

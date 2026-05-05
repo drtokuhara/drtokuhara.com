@@ -7,6 +7,7 @@ import {
   ScrollReveal,
   KineticText,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 export default function UnderstandYourOptionsContent() {
@@ -15,20 +16,12 @@ export default function UnderstandYourOptionsContent() {
   return (
     <>
       {/* PAGE HERO */}
-      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
-        <Image
-          src="/media/stock-woman-portrait-pool-dusk.jpg"
-          alt="Woman relaxing at an outdoor cafe"
-          fill
-          style={{objectFit: 'cover', objectPosition: 'center'}}
-          priority
-        />
-        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.4) 0%, rgba(0,20,30,0.7) 100%)', zIndex: 1}} />
-        <div style={{position: 'relative', zIndex: 2}} className="container">
+      <VideoBackground src="/media/ambient-ink-clarity.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+        <div className="container">
           <h1 dangerouslySetInnerHTML={{ __html: t('understandOptions.title') || 'Understanding Your <strong>Options</strong>' }} />
           <p className="page-hero-sub">{t('understandOptions.subtitle') || "You don't need to decide anything right now. Start by understanding what you're dealing with."}</p>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* INTRO */}
       <section className="section section-white">

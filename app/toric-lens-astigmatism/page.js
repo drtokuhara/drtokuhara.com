@@ -5,6 +5,7 @@ import {
   KineticText,
   BlurReveal,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 const faqSchema = {
@@ -63,14 +64,14 @@ export default function ToricLensAstigmatismPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* HERO */}
-      <section className="page-hero">
+      <VideoBackground src="/media/ambient-polished-surface.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <ScrollReveal direction="up" once={true}>
             <h1>Toric Lens Implants <strong>and Astigmatism</strong></h1>
           </ScrollReveal>
           <p className="page-hero-sub">If you have been told you have astigmatism, this page is written for you.</p>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* INTRO */}
       <section className="section section-white">

@@ -5,6 +5,7 @@ import {
   KineticText,
   BlurReveal,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 const faqSchema = {
@@ -63,14 +64,14 @@ export default function YamaneTechniquePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* HERO */}
-      <section className="page-hero">
+      <VideoBackground src="/media/ambient-timepiece-mechanism.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <ScrollReveal direction="up" once={true}>
             <h1>The Yamane <strong>Technique</strong></h1>
           </ScrollReveal>
           <p className="page-hero-sub">Fixing a dislocated lens implant - without a single stitch.</p>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* INTRO */}
       <section className="section section-white">

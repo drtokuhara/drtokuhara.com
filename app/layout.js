@@ -98,6 +98,7 @@ export default function RootLayout({ children }) {
                     <Link href="/blurry-vision-after-cataract-surgery">Blurry Vision After Surgery</Link>
                     <Link href="/halos-after-cataract-surgery">Halos After Surgery</Link>
                     <Link href="/dust-in-eyes">Dust in Eyes</Link>
+                    <Link href="/monocular-cataract-surgery">Monocular Eye Surgery</Link>
                     <Link href="/yamane-technique">Dislocated Lens / Yamane</Link>
                   </div>
                   <div className="nav-mega-col">
@@ -191,7 +192,10 @@ export default function RootLayout({ children }) {
                   <Link href="/clear-in-a-day">CLEAR in a Day</Link>
                   <Link href="/lens-implants-explained">Lens Guide</Link>
                   <Link href="/cataract-surgery-complications">Complications</Link>
+                  <Link href="/dysphotopsia-after-cataract-surgery">Dysphotopsia</Link>
+                  <Link href="/dropped-lens-after-cataract-surgery">Dropped Lens</Link>
                   <Link href="/complex-cases">Complex Cases</Link>
+                  <Link href="/monocular-cataract-surgery">Monocular Eye Surgery</Link>
                 </div>
                 <div className="footer-col">
                   <h4>For Patients</h4>

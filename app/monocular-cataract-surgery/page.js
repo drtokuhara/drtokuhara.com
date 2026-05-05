@@ -7,6 +7,7 @@ import {
   KineticText,
   BlurReveal,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 const faqSchema = {
@@ -94,7 +95,7 @@ export default function MonocularCataractSurgeryPage() {
         />
       ))}
 
-      <section className="page-hero">
+      <VideoBackground src="/media/ambient-precision-instrument.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <KineticText
             text="Cataract Surgery in a Monocular Eye"
@@ -108,7 +109,7 @@ export default function MonocularCataractSurgeryPage() {
             </p>
           </ScrollReveal>
         </div>
-      </section>
+      </VideoBackground>
 
       <section className="section section-white">
         <div className="container content-narrow">

@@ -5,6 +5,7 @@ import AuthorByline from '../components/AuthorByline';
 import {
   ScrollReveal,
   BlurReveal,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 const jsonLd = [
@@ -77,14 +78,14 @@ export default function ClareonLens() {
       ))}
 
       {/* HERO */}
-      <section className="page-hero page-hero-image" style={{ background: 'linear-gradient(135deg, #0a1a24 0%, #07424e 100%)', minHeight: '45vh', display: 'flex', alignItems: 'center' }}>
+      <VideoBackground src="/media/ambient-glass-horizon.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <ScrollReveal direction="up" once={true}>
             <h1>The <strong>Clareon Lens</strong></h1>
             <p className="page-hero-sub">A next-generation biomaterial with engineered edge design. I was the first surgeon in the Coachella Valley to use it, and I have not looked back.</p>
           </ScrollReveal>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* INTRO */}
       <section className="section section-white">

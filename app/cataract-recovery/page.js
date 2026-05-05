@@ -5,6 +5,7 @@ import {
   KineticText,
   BlurReveal,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 const faqSchema = {
@@ -63,14 +64,14 @@ export default function CataractRecoveryPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* HERO */}
-      <section className="page-hero">
+      <VideoBackground src="/media/ambient-desert-sunrise-v2.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <ScrollReveal direction="up" once={true}>
             <h1>Cataract <strong>Recovery</strong></h1>
           </ScrollReveal>
           <p className="page-hero-sub">What actually happens after surgery - in the recovery room and when you get home.</p>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* INTRO */}
       <section className="section section-white">

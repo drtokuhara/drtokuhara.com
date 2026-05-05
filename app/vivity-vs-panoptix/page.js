@@ -4,6 +4,7 @@ import {
   ScrollReveal,
   KineticText,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 const faqSchema = {
@@ -62,12 +63,12 @@ export default function VivityVsPanoptix() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* HERO */}
-      <section className="page-hero">
+      <VideoBackground src="/media/ambient-lens-refraction-v2.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <ScrollReveal direction="up" once={true}><h1>Vivity vs <strong>PanOptix</strong></h1></ScrollReveal>
           <p className="page-hero-sub">Two excellent lenses. Different approaches. The right choice depends entirely on how you want to see the world.</p>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* INTRO */}
       <section className="section section-white">

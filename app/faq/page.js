@@ -6,6 +6,7 @@ import {
   StaggerChildren,
   StaggerItem,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 export const metadata = {
@@ -176,22 +177,14 @@ export default function FAQPage() {
       />
 
       {/* PAGE HERO */}
-      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
-        <Image
-          src="/media/faq-hero-consultation.png"
-          alt="Patient consultation at Desert Vision Center"
-          fill
-          style={{objectFit: 'cover', objectPosition: 'center 25%'}}
-          priority
-        />
-        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.4) 0%, rgba(0,20,30,0.7) 100%)', zIndex: 1}} />
-        <div style={{position: 'relative', zIndex: 2}} className="container">
+      <VideoBackground src="/media/ambient-crystal-alignment.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+        <div className="container">
           <ScrollReveal direction="up" once={true}>
             <h1>Frequently Asked <strong>Questions</strong></h1>
             <p className="page-hero-sub">Real questions from real patients. Honest answers in plain language.</p>
           </ScrollReveal>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* FAQ CATEGORIES */}
       {faqData.map((category, catIndex) => (

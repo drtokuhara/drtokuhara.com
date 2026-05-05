@@ -4,6 +4,7 @@ import {
   ScrollReveal,
   BlurReveal,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 const faqSchema = {
@@ -78,22 +79,14 @@ export default function IsCataractSurgerySafePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* HERO */}
-      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
-        <Image
-          src="/media/dr-t-slit-lamp-patient-view.jpg"
-          fill
-          style={{objectFit: 'cover', objectPosition: 'center 30%'}}
-          priority
-          alt="Dr. Tokuhara examining a patient at the slit lamp"
-        />
-        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.35) 0%, rgba(0,20,30,0.75) 100%)', zIndex: 1}} />
-        <div style={{position: 'relative', zIndex: 2}} className="container">
+      <VideoBackground src="/media/ambient-architectural-precision.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+        <div className="container">
           <ScrollReveal direction="up" once={true}>
             <h1>Is Cataract Surgery <strong>Safe?</strong></h1>
             <p className="page-hero-sub">An honest answer: yes, with important context about what that means for your eyes specifically.</p>
           </ScrollReveal>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* THE SHORT ANSWER */}
       <section className="section section-white">

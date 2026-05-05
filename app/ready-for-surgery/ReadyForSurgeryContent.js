@@ -8,6 +8,7 @@ import {
   StaggerChildren,
   StaggerItem,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 const faqSchema = {
@@ -26,20 +27,12 @@ export default function ReadyForSurgeryContent() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* PAGE HERO */}
-      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
-        <Image
-          src="/media/stock-couple-pool-mountain-view.jpg"
-          alt="Family walking together during golden hour"
-          fill
-          style={{objectFit: 'cover', objectPosition: 'center'}}
-          priority
-        />
-        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.4) 0%, rgba(0,20,30,0.7) 100%)', zIndex: 1}} />
-        <div style={{position: 'relative', zIndex: 2}} className="container">
+      <VideoBackground src="/media/ambient-decision-moment.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+        <div className="container">
           <h1 dangerouslySetInnerHTML={{ __html: t('readyForSurgery.title') || 'Ready to See <strong>Clearly Again</strong>' }} />
           <p className="page-hero-sub">{t('readyForSurgery.subtitle') || "You've made the decision. Here's everything you need to feel prepared, confident, and calm."}</p>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* INTRO */}
       <section className="section section-white">

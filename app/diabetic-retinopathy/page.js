@@ -6,6 +6,7 @@ import {
   ScrollReveal,
   BlurReveal,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 const faqSchema = {
@@ -93,14 +94,14 @@ export default function DiabeticRetinopathyPage() {
         />
       ))}
 
-      <section className="page-hero">
+      <VideoBackground src="/media/ambient-light-as-information.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <h1>Diabetic Retinopathy: <strong>What Every Diabetic Patient Should Know</strong></h1>
           <p className="page-hero-sub">
             Diabetes is the leading cause of preventable blindness in working-age adults. Understanding what is happening in your eyes, and how to protect your vision, matters more than most patients realize.
           </p>
         </div>
-      </section>
+      </VideoBackground>
 
       <section className="section section-white">
         <div className="container content-narrow">

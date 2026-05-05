@@ -5,7 +5,19 @@ import {
   StaggerChildren,
   StaggerItem,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'Does Dr. Tokuhara have patient education videos?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Dr. Tokuhara has created a library of free educational videos covering cataracts, cataract surgery, lens implant options, recovery expectations, and patient stories. All videos are available on this page and on the Desert Vision Center YouTube channel.' } },
+    { '@type': 'Question', name: 'Where can I learn about cataract surgery before my appointment?', acceptedAnswer: { '@type': 'Answer', text: 'Dr. Tokuhara provides free video education organized by topic: understanding cataracts, surgery options, lens implants, recovery, and real patient experiences. Watching these before your consultation helps you ask better questions and feel more confident about the process.' } },
+    { '@type': 'Question', name: 'Are the education videos free?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. All patient education videos are completely free. There is no login, no paywall, and no sales pitch. They are created by Dr. Tokuhara to help patients make informed decisions about their eye care.' } },
+    { '@type': 'Question', name: 'What topics do the education videos cover?', acceptedAnswer: { '@type': 'Answer', text: 'The video library covers five main areas: understanding cataracts and how they affect vision, cataract surgery and what to expect, lens implant options including premium lenses, recovery and post-operative care, and real patient stories from Desert Vision Center.' } },
+  ],
+};
 
 export const metadata = {
   title: 'Patient Education Videos by Dr. Tokuhara',
@@ -104,23 +116,17 @@ const videoCategories = [
 export default function EducationPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+
       {/* PAGE HERO */}
-      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
-        <Image
-          src="/media/stock-seniors-outdoor-dining.jpg"
-          alt="Seniors enjoying outdoor dining in the desert"
-          fill
-          style={{objectFit: 'cover', objectPosition: 'center'}}
-          priority
-        />
-        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.4) 0%, rgba(0,20,30,0.7) 100%)', zIndex: 1}} />
-        <div style={{position: 'relative', zIndex: 2}} className="container">
+      <VideoBackground src="/media/ambient-desert-sunrise-v2.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+        <div className="container">
           <ScrollReveal direction="up" once={true}>
             <h1>Patient <strong>Education</strong></h1>
             <p className="page-hero-sub">I make these videos because I think patients deserve real answers, not marketing brochures. Watch whatever interests you.</p>
           </ScrollReveal>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* CATEGORY SECTIONS */}
       {videoCategories.map((category, catIndex) => (

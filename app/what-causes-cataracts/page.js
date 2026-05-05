@@ -6,6 +6,7 @@ import {
   ScrollReveal,
   BlurReveal,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 const faqSchema = {
@@ -93,14 +94,14 @@ export default function WhatCausesCataractsPage() {
         />
       ))}
 
-      <section className="page-hero">
+      <VideoBackground src="/media/ambient-lens-refraction-v2.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <h1>What Causes Cataracts? <strong>A Complete Guide</strong></h1>
           <p className="page-hero-sub">
             Cataracts are the leading cause of correctable vision loss worldwide. Understanding what drives them, who is most at risk, and what can slow their progression is the first step toward protecting your sight.
           </p>
         </div>
-      </section>
+      </VideoBackground>
 
       <section className="section section-white">
         <div className="container content-narrow">

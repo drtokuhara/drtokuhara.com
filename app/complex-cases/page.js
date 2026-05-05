@@ -8,8 +8,21 @@ import {
   StaggerItem,
   BlurReveal,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 import TiltCard from '../components/TiltCard';
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'What is complex cataract surgery?', acceptedAnswer: { '@type': 'Answer', text: 'Complex cataract surgery refers to cases that go beyond routine cataract removal. This includes patients with weak or missing zonules, prior eye surgery, trauma, small pupils, dense cataracts, or complications from a previous cataract procedure. These cases require specialized techniques and experience that not every surgeon offers.' } },
+    { '@type': 'Question', name: 'Can a dislocated lens implant be fixed?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. A dislocated or subluxated lens implant can often be repositioned or exchanged. Dr. Tokuhara specializes in these procedures, including scleral-fixated lenses using the Yamane technique. Many patients are told nothing can be done, but surgical correction is usually possible.' } },
+    { '@type': 'Question', name: 'What should I do if I had a complication during cataract surgery?', acceptedAnswer: { '@type': 'Answer', text: 'Seek a second opinion from a surgeon who specializes in complex and revision cataract cases. Complications like retained lens fragments, posterior capsule rupture, or iris damage are manageable with the right expertise. Dr. Tokuhara regularly receives referrals from other surgeons for these situations.' } },
+    { '@type': 'Question', name: 'What is secondary lens implantation?', acceptedAnswer: { '@type': 'Answer', text: 'Secondary lens implantation is the placement of an artificial lens in an eye that either never received one during cataract surgery or had a lens implant that dislocated and needed removal. This can be done using techniques like the Yamane method, which sutures a lens to the wall of the eye for stable, long-term positioning.' } },
+    { '@type': 'Question', name: 'Does Dr. Tokuhara accept referrals for complex cases?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Dr. Tokuhara is a second-opinion specialist and regularly accepts referrals from other ophthalmologists for complex cataract surgery, revision procedures, and corrective cases. He sees these cases weekly, not occasionally.' } },
+  ],
+};
 
 const jsonLd = [
   articleSchema({
@@ -21,6 +34,7 @@ const jsonLd = [
     { name: 'Home', href: '/' },
     { name: 'Complex Cases', href: '/complex-cases' },
   ]),
+  faqSchema,
 ];
 
 export const metadata = {
@@ -43,19 +57,12 @@ export default function ComplexCasesPage() {
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
       {/* PAGE HERO */}
-      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
-        <Image
-          src="/media/complex-cases-surgical-precision.jpg"
-          alt="Surgeon's hands performing precision cataract surgery under a microscope"
-          fill
-          style={{objectFit: 'cover', objectPosition: 'center'}}
-          priority
-        />
-        <div style={{position: 'relative', zIndex: 1}} className="container">
+      <VideoBackground src="/media/ambient-timepiece-mechanism.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+        <div className="container">
           <h1>When Other Surgeons Say <strong>Nothing Can Be Done</strong></h1>
           <p className="page-hero-sub">Complex cataract surgery, corrective procedures, and honest second opinions for patients who&rsquo;ve been told there are no options left.</p>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* WHAT MAKES A CASE COMPLEX */}
       <section className="section section-white">

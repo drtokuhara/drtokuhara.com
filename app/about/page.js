@@ -10,7 +10,20 @@ import {
   KineticText,
   BlurReveal,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'What is Dr. Tokuhara\'s training and background?', acceptedAnswer: { '@type': 'Answer', text: 'Dr. Keith Tokuhara is a fellowship-trained cataract and anterior segment surgeon. He completed his fellowship under Dr. Howard Gimbel, a pioneer in cataract surgery. He is also board certified in retina, making him uniquely qualified to manage complex cases involving both the front and back of the eye.' } },
+    { '@type': 'Question', name: 'Is Desert Vision Center a private or corporate practice?', acceptedAnswer: { '@type': 'Answer', text: 'Desert Vision Center is a fully independent, physician-owned practice. Dr. Tokuhara is not affiliated with any corporate or private-equity group. This independence means treatment decisions are based solely on what is best for the patient, not corporate quotas or profit targets.' } },
+    { '@type': 'Question', name: 'Where is Desert Vision Center located?', acceptedAnswer: { '@type': 'Answer', text: 'Desert Vision Center is located in Rancho Mirage, California, serving the Coachella Valley and surrounding areas including Palm Springs, Palm Desert, Indian Wells, and La Quinta.' } },
+    { '@type': 'Question', name: 'Does Dr. Tokuhara do international surgical missions?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Dr. Tokuhara participates in international surgical missions, bringing advanced eye care to underserved communities. These experiences reinforce his commitment to ethical, patient-centered care.' } },
+    { '@type': 'Question', name: 'What makes Dr. Tokuhara different from other cataract surgeons?', acceptedAnswer: { '@type': 'Answer', text: 'Dr. Tokuhara combines fellowship training in both cataract/anterior segment surgery and retina, physician independence from corporate influence, expertise in complex and revision cases, and a commitment to ethical care. He is a surgeon other doctors refer their most challenging cases to.' } },
+  ],
+};
 
 const jsonLd = [
   physicianSchema,
@@ -18,6 +31,7 @@ const jsonLd = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
   ]),
+  faqSchema,
 ];
 
 export const metadata = {
@@ -40,22 +54,14 @@ export default function AboutPage() {
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
       {/* PAGE HERO */}
-      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
-        <Image
-          src="/media/desert-landscape-hero-1.png"
-          alt="Desert landscape at golden hour in the Coachella Valley"
-          fill
-          style={{objectFit: 'cover', objectPosition: 'center'}}
-          priority
-        />
-        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.45) 0%, rgba(0,20,30,0.7) 100%)', zIndex: 1}} />
-        <div style={{position: 'relative', zIndex: 2}} className="container">
+      <VideoBackground src="/media/ambient-desert-twilight-v2.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+        <div className="container">
           <KineticText text="About Dr. Tokuhara" Tag="h1" mode="word" staggerDelay={0.06} />
           <ScrollReveal direction="up" delay={0.3} once={true}>
             <p className="page-hero-sub">The surgeon, the educator, the person.</p>
           </ScrollReveal>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* BIO SECTION */}
       <section className="section section-white">

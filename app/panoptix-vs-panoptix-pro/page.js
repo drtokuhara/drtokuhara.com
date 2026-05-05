@@ -3,6 +3,7 @@ import Image from 'next/image';
 import {
   ScrollReveal,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 const faqSchema = {
@@ -69,12 +70,12 @@ export default function PanOptixVsPanOptixPro() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* HERO */}
-      <section className="page-hero">
+      <VideoBackground src="/media/ambient-glass-horizon.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <ScrollReveal direction="up" once={true}><h1>PanOptix vs <strong>PanOptix Pro</strong></h1></ScrollReveal>
           <p className="page-hero-sub">Same trifocal architecture. A meaningful optical refinement. Here is what actually changed, and whether it matters for your surgery.</p>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* INTRO */}
       <section className="section section-white">
