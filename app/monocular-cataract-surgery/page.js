@@ -87,6 +87,7 @@ export const metadata = {
 export default function MonocularCataractSurgeryPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "Cataract Surgery in a Monocular Eye | Mr. Baird\u2019s Journey to Desert Vision Center", "description": "Mr. Baird only has vision in one eye, making him a monocular patient - and deciding to undergo cataract surgery was not ", "thumbnailUrl": "https://i.ytimg.com/vi/vdD3lBubt58/maxresdefault.jpg", "uploadDate": "2025-03-21", "duration": "PT7M33S", "contentUrl": "https://www.youtube.com/watch?v=vdD3lBubt58", "embedUrl": "https://www.youtube.com/embed/vdD3lBubt58"}) }} />
       {jsonLd.map((schema, i) => (
         <script
           key={i}

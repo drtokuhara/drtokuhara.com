@@ -70,6 +70,7 @@ export default function YamaneTechniquePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageBreadcrumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "Fixing a Dislocated Lens Implant:  Yamane Technique", "description": "Does cataract surgery last forever? What happens when the lens implant from cataract surgery dislocates?  Dr. Tokuhara d", "thumbnailUrl": "https://i.ytimg.com/vi/ZrnRIEa0F44/maxresdefault.jpg", "uploadDate": "2022-01-03", "duration": "PT3M36S", "contentUrl": "https://www.youtube.com/watch?v=ZrnRIEa0F44", "embedUrl": "https://www.youtube.com/embed/ZrnRIEa0F44"}) }} />
 
       {/* HERO */}
       <VideoBackground src="/media/ambient-timepiece-mechanism.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>

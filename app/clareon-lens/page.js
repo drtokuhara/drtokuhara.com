@@ -73,6 +73,7 @@ export const metadata = {
 export default function ClareonLens() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "Clareon Lens:  Cataract Surgery with Dr. Tokuhara", "description": "First Clareon Lens Cataract Surgery in Coachella Valley.  Join Dr. Tokuhara in the operating room for a hands on look at", "thumbnailUrl": "https://i.ytimg.com/vi/85V5DGG6Rw0/maxresdefault.jpg", "uploadDate": "2021-09-21", "duration": "PT4M55S", "contentUrl": "https://www.youtube.com/watch?v=85V5DGG6Rw0", "embedUrl": "https://www.youtube.com/embed/85V5DGG6Rw0"}) }} />
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}

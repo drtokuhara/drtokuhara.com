@@ -48,6 +48,7 @@ export default function YagLaserCapsulotomy() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageBreadcrumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "Yag Laser Capsulotomy for Posterior Capsule Opacification", "description": "Blurred vision and glare after cataract surgery?  It may be easily reversed with laser.  \n\nIn this video, Dr. Tokuhara d", "thumbnailUrl": "https://i.ytimg.com/vi/JzspGX4RErQ/hqdefault.jpg", "uploadDate": "2023-05-03", "duration": "PT4M44S", "contentUrl": "https://www.youtube.com/watch?v=JzspGX4RErQ", "embedUrl": "https://www.youtube.com/embed/JzspGX4RErQ"}) }} />
 
       {/* CINEMATIC HERO WITH VIDEO */}
       <VideoBackground

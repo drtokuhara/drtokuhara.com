@@ -130,6 +130,30 @@ export function articleSchema({ title, description, slug, datePublished }) {
   };
 }
 
+export function videoSchema({ id, title, description, duration, thumbnailUrl, uploadDate }) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: title,
+    description: description,
+    thumbnailUrl: thumbnailUrl,
+    uploadDate: uploadDate,
+    duration: duration,
+    contentUrl: `https://www.youtube.com/watch?v=${id}`,
+    embedUrl: `https://www.youtube.com/embed/${id}`,
+    publisher: {
+      '@type': 'MedicalOrganization',
+      name: 'Desert Vision Center',
+      url: 'https://drtokuhara.com',
+    },
+    author: {
+      '@type': 'Physician',
+      name: 'Dr. Keith Tokuhara',
+      url: 'https://drtokuhara.com/about',
+    },
+  };
+}
+
 export function breadcrumbSchema(items) {
   return {
     '@context': 'https://schema.org',

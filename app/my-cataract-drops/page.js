@@ -46,6 +46,7 @@ export default function MyCataractDrops() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageBreadcrumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "My Cataract Drops:  Phone App by Dr. Tokuhara ", "description": "If you\u2019ve been told you have cataracts, you probably have questions... and not enough clear answers.\n\nThe My Cataract Dr", "thumbnailUrl": "https://i.ytimg.com/vi/im9_7hi4Dqg/maxresdefault.jpg", "uploadDate": "2026-05-05", "duration": "PT37S", "contentUrl": "https://www.youtube.com/watch?v=im9_7hi4Dqg", "embedUrl": "https://www.youtube.com/embed/im9_7hi4Dqg"}) }} />
 
       {/* HERO */}
       <VideoBackground

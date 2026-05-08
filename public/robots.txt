@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://drtokuhara.com/sitemap.xml
+Sitemap: https://drtokuhara.com/video-sitemap.xml

@@ -70,6 +70,7 @@ export default function CataractPreOp() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageBreadcrumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "What Happens in Cataract Pre-Op?", "description": "Welcome to the Pre-Op Area at Desert Vision Center! \ud83d\udc41\ufe0f\u2728 Join Dr. Tokuhara as he takes you behind the scenes of the pre-o", "thumbnailUrl": "https://i.ytimg.com/vi/XeELWvMkBY8/maxresdefault.jpg", "uploadDate": "2025-04-03", "duration": "PT4M27S", "contentUrl": "https://www.youtube.com/watch?v=XeELWvMkBY8", "embedUrl": "https://www.youtube.com/embed/XeELWvMkBY8"}) }} />
 
       {/* HERO */}
       <VideoBackground src="/media/ambient-light-as-information.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
