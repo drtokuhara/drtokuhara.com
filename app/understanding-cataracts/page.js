@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { breadcrumbSchema } from '../schema';
 import Image from 'next/image';
 import {
   ScrollReveal,
@@ -29,9 +30,16 @@ const faqSchema = {
   ],
 };
 
+
+const pageBreadcrumbs = breadcrumbSchema([
+  { name: 'Home', href: '/' },
+  { name: 'Understanding Cataracts', href: '/understanding-cataracts' },
+]);
+
 export default function UnderstandingCataracts() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageBreadcrumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* HERO */}
       <VideoBackground src="/media/ambient-iris-closeup-v2.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>

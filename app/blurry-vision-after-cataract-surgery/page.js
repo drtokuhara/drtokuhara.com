@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { breadcrumbSchema } from '../schema';
 import Image from 'next/image';
 import {
   ScrollReveal,
@@ -29,9 +30,16 @@ export const metadata = {
   },
 };
 
+
+const pageBreadcrumbs = breadcrumbSchema([
+  { name: 'Home', href: '/' },
+  { name: 'Blurry Vision After Surgery', href: '/blurry-vision-after-cataract-surgery' },
+]);
+
 export default function BlurryVisionAfterSurgery() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageBreadcrumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <VideoBackground src="/media/ambient-light-tunnel.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>

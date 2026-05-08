@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { breadcrumbSchema } from '../schema';
 import Image from 'next/image';
 import {
   ScrollReveal,
@@ -113,13 +114,20 @@ const videoCategories = [
   },
 ];
 
+
+const pageBreadcrumbs = breadcrumbSchema([
+  { name: 'Home', href: '/' },
+  { name: 'Education', href: '/education' },
+]);
+
 export default function EducationPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageBreadcrumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* PAGE HERO */}
-      <VideoBackground src="/media/ambient-desert-sunrise-v2.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-desert-sunrise-golden.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <ScrollReveal direction="up" once={true}>
             <h1>Patient <strong>Education</strong></h1>

@@ -7,6 +7,7 @@ import {
   ScrollReveal,
   BlurReveal,
   LineDraw,
+  VideoBackground,
 } from '../../components/ScrollAnimations';
 import AuthorByline from '../../components/AuthorByline';
 
@@ -16,20 +17,18 @@ export default function TwentyYearsForwardContent() {
   return (
     <>
       {/* HERO */}
-      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
-        <Image
-          src="/media/elderly-woman-walker-courtyard.jpg"
-          alt="Seniors strolling along a resort promenade at night"
-          fill
-          style={{objectFit: 'cover', objectPosition: 'center 30%'}}
-          priority
-        />
-        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.4) 0%, rgba(0,20,30,0.7) 100%)', zIndex: 1}} />
-        <div style={{position: 'relative', zIndex: 2}} className="container">
+      <VideoBackground
+        src="/media/ambient-decision-moment.mp4"
+        overlayOpacity={0.6}
+        overlayColor="0, 20, 30"
+        className="page-hero page-hero-image"
+        style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+      >
+        <div className="container">
           <h1 dangerouslySetInnerHTML={{ __html: t('insights.twentyYears.title') || 'Twenty Years <strong>Forward</strong>' }} />
           <p className="page-hero-sub">{t('insights.twentyYears.subtitle') || 'A cataract decision across time.'}</p>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* OPENING */}
       <section className="section section-white">

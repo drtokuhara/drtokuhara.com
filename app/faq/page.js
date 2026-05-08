@@ -1,4 +1,5 @@
 import React from 'react';
+import { breadcrumbSchema } from '../schema';
 import Link from 'next/link';
 import Image from 'next/image';
 import {
@@ -167,9 +168,16 @@ const faqSchema = {
 
 const sectionStyles = ['section-white', 'section-warm'];
 
+
+const pageBreadcrumbs = breadcrumbSchema([
+  { name: 'Home', href: '/' },
+  { name: 'FAQ', href: '/faq' },
+]);
+
 export default function FAQPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageBreadcrumbs) }} />
       {/* FAQ Schema JSON-LD */}
       <script
         type="application/ld+json"
@@ -177,7 +185,7 @@ export default function FAQPage() {
       />
 
       {/* PAGE HERO */}
-      <VideoBackground src="/media/ambient-crystal-alignment.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-desert-night-sky.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <ScrollReveal direction="up" once={true}>
             <h1>Frequently Asked <strong>Questions</strong></h1>
@@ -214,8 +222,8 @@ export default function FAQPage() {
               <div className="container content-narrow">
                 <div className="content-image">
                   <Image
-                    src="/media/stock-couple-brunch-patio.jpg"
-                    alt="Couple enjoying outdoor sunshine in the desert"
+                    src="/media/dvc-clinic-interior-1.jpeg"
+                    alt="Desert Vision Center clinic interior"
                     width={680}
                     height={453}
                     style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
@@ -229,8 +237,8 @@ export default function FAQPage() {
               <div className="container content-narrow">
                 <div className="content-image">
                   <Image
-                    src="/media/stock-couple-outdoor-dining-view.jpg"
-                    alt="Seniors enjoying an outdoor meal together"
+                    src="/media/dvc-clinic-interior-2.jpeg"
+                    alt="Desert Vision Center examination area"
                     width={680}
                     height={453}
                     style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
@@ -244,8 +252,8 @@ export default function FAQPage() {
               <div className="container content-narrow">
                 <div className="content-image">
                   <Image
-                    src="/media/stock-couple-balcony-golf-resort.jpg"
-                    alt="Woman relaxing at an outdoor cafe with clear vision"
+                    src="/media/elderly-woman-window-desert-view.png"
+                    alt="Patient enjoying clear vision by the window with a desert view"
                     width={680}
                     height={453}
                     style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
@@ -256,6 +264,40 @@ export default function FAQPage() {
           )}
         </React.Fragment>
       ))}
+
+      {/* DEEP DIVE LINKS */}
+      <section className="section section-light">
+        <div className="container content-narrow">
+          <h2 className="section-title">Go <strong>Deeper</strong></h2>
+          <p className="prose" style={{textAlign: 'center', marginBottom: '32px'}}>Many of these topics have their own dedicated pages with more detail.</p>
+          <div className="related-grid">
+            <Link href="/cataract-surgery" className="related-card">
+              <h3>Cataract Surgery</h3>
+              <p>A comprehensive guide to what cataract surgery involves.</p>
+            </Link>
+            <Link href="/lens-implants-explained" className="related-card">
+              <h3>Lens Implants Explained</h3>
+              <p>Monofocal, toric, EDOF, and multifocal options compared.</p>
+            </Link>
+            <Link href="/cataract-recovery" className="related-card">
+              <h3>Recovery Guide</h3>
+              <p>What to expect day by day after surgery.</p>
+            </Link>
+            <Link href="/is-cataract-surgery-safe" className="related-card">
+              <h3>Is Cataract Surgery Safe?</h3>
+              <p>The real safety record, risks, and what makes outcomes better.</p>
+            </Link>
+            <Link href="/complex-cases" className="related-card">
+              <h3>Complex Cases</h3>
+              <p>When surgery is more complicated and experience matters most.</p>
+            </Link>
+            <Link href="/choosing-your-surgeon" className="related-card">
+              <h3>Choosing Your Surgeon</h3>
+              <p>How to evaluate the surgeon, not just the surgery.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* CTA */}
       <section className="cta">

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { breadcrumbSchema } from '../schema';
 import Image from 'next/image';
 import {
   ScrollReveal,
@@ -73,13 +74,20 @@ export const metadata = {
   },
 };
 
+
+const pageBreadcrumbs = breadcrumbSchema([
+  { name: 'Home', href: '/' },
+  { name: 'Is Surgery Safe?', href: '/is-cataract-surgery-safe' },
+]);
+
 export default function IsCataractSurgerySafePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageBreadcrumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* HERO */}
-      <VideoBackground src="/media/ambient-architectural-precision.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-desert-moonrise.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <ScrollReveal direction="up" once={true}>
             <h1>Is Cataract Surgery <strong>Safe?</strong></h1>

@@ -21,6 +21,7 @@ import {
 } from './components/ScrollAnimations';
 import TiltCard from './components/TiltCard';
 import TypewriterText from './components/TypewriterText';
+import YouTubeShorts from './components/YouTubeShorts';
 
 /* ───────────────────────────────────────────
    SCHEMA MARKUP
@@ -992,6 +993,11 @@ export default function Home() {
 
           <LineDraw style={{margin: '60px auto', maxWidth: '200px'}} color="var(--oasis)" />
 
+          {/* ═══ SECTION 7B: YOUTUBE SHORTS ═══ */}
+          <YouTubeShorts />
+
+          <LineDraw style={{margin: '60px auto', maxWidth: '200px'}} color="var(--dune)" />
+
           {/* ═══ SECTION 8: EXPLORE ═══ */}
           <section className="lux-explore">
             <div className="container">
@@ -1127,7 +1133,7 @@ function ConversationScreen({ screen, onChoose }) {
     <div className="conv-body">
       {screen.image && (
         <div className="conv-image">
-          <Image src={screen.image} alt="" width={800} height={400} style={{width: '100%', height: 'auto', maxHeight: '280px', objectFit: 'contain', borderRadius: '16px', marginBottom: '32px'}} />
+          <Image src={screen.image} alt={screen.paragraphs?.[0] ? `Illustration for: ${screen.paragraphs[0].substring(0, 80)}` : 'Cataract surgery conversation illustration'} width={800} height={400} style={{width: '100%', height: 'auto', maxHeight: '280px', objectFit: 'contain', borderRadius: '16px', marginBottom: '32px'}} />
         </div>
       )}
       <div className="conv-text-block">
@@ -1166,7 +1172,7 @@ function CloseScreen({ screen, onStartOver }) {
     <div className="conv-body">
       {screen.image && (
         <div className="conv-image">
-          <Image src={screen.image} alt="" width={800} height={400} style={{width: '100%', height: 'auto', maxHeight: '280px', objectFit: 'contain', borderRadius: '16px', marginBottom: '32px'}} />
+          <Image src={screen.image} alt={screen.paragraphs?.[0] ? `Illustration for: ${screen.paragraphs[0].substring(0, 80)}` : 'Cataract surgery outcome illustration'} width={800} height={400} style={{width: '100%', height: 'auto', maxHeight: '280px', objectFit: 'contain', borderRadius: '16px', marginBottom: '32px'}} />
         </div>
       )}
       <div className="conv-text-block">

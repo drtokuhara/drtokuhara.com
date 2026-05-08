@@ -160,8 +160,8 @@ export default function AboutPage() {
         <div className="container content-narrow">
           <div className="content-image">
             <Image
-              src="/media/stock-couple-golf-cart.png"
-              alt="Couple enjoying a ride in a golf cart"
+              src="/media/dvc-office-front.png"
+              alt="Desert Vision Center office"
               width={680}
               height={453}
               style={{ width: '100%', height: 'auto', borderRadius: '12px' }}

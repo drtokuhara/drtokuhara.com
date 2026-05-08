@@ -323,6 +323,27 @@ export default function PatientJourneyContent() {
         </div>
       </section>
 
+      {/* RELATED PAGES */}
+      <section className="section section-light">
+        <div className="container content-narrow">
+          <h2 className="section-title">Learn <strong>More</strong></h2>
+          <div className="related-grid">
+            <Link href="/cataract-pre-op" className="related-card">
+              <h3>Before Surgery</h3>
+              <p>A detailed walkthrough of the pre-operative experience.</p>
+            </Link>
+            <Link href="/cataract-recovery" className="related-card">
+              <h3>After Surgery</h3>
+              <p>What to expect in recovery and when to call.</p>
+            </Link>
+            <Link href="/choosing-your-surgeon" className="related-card">
+              <h3>Choosing Your Surgeon</h3>
+              <p>A framework for evaluating who should operate on your eyes.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="cta">
         <div className="container">

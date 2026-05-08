@@ -6,6 +6,7 @@ import {
   ScrollReveal,
   BlurReveal,
   LineDraw,
+  VideoBackground,
 } from '../components/ScrollAnimations';
 
 const faqSchema = {
@@ -94,14 +95,14 @@ export default function CoachellaValleyEyeCarePage() {
         />
       ))}
 
-      <section className="page-hero">
+      <VideoBackground src="/media/ambient-desert-resort-sunrise.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <h1>Eye Care in the <strong>Coachella Valley</strong></h1>
           <p className="page-hero-sub">
             Desert living puts your eyes under stress that most people in other climates never experience. Here is what that means for your long-term vision, and why local expertise matters.
           </p>
         </div>
-      </section>
+      </VideoBackground>
 
       <section className="section section-white">
         <div className="container content-narrow">

@@ -482,7 +482,7 @@ export function HorizontalScroll({
   const x = useTransform(scrollYProgress, [0, 1], ['0%', '-66%']);
 
   return (
-    <div ref={containerRef} className={className} style={{ height: '150vh', position: 'relative', ...style }}>
+    <div ref={containerRef} className={className} style={{ height: '120vh', position: 'relative', ...style }}>
       <div style={{ position: 'sticky', top: 0, height: '100vh', overflow: 'hidden', display: 'flex', alignItems: 'center' }}>
         <motion.div style={{ display: 'flex', gap: '32px', x, paddingLeft: '5vw', paddingRight: '5vw' }}>
           {children}

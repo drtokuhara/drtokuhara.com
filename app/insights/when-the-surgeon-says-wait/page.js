@@ -4,6 +4,7 @@ import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
 import {
   ScrollReveal,
+  VideoBackground,
   BlurReveal,
   LineDraw,
 } from '../../components/ScrollAnimations';
@@ -41,23 +42,21 @@ export default function WhenTheSurgeonSaysWait() {
       ))}
 
       {/* HERO */}
-      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
-        <Image
-          src="/media/stock-couple-desert-overlook.jpg"
-          fill
-          style={{objectFit: 'cover', objectPosition: 'center 40%'}}
-          priority
-          alt="Couple overlooking the desert valley - the patience to wait for the right moment"
-        />
-        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.35) 0%, rgba(0,20,30,0.75) 100%)', zIndex: 1}} />
-        <div style={{position: 'relative', zIndex: 2}} className="container">
+      <VideoBackground
+        src="/media/ambient-ink-clarity.mp4"
+        overlayOpacity={0.6}
+        overlayColor="0, 20, 30"
+        className="page-hero page-hero-image"
+        style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+      >
+        <div className="container">
           <ScrollReveal direction="up" once={true}>
             <span className="insight-hero-cluster">Surgical Restraint</span>
             <h1>When the Surgeon <strong>Says Wait</strong></h1>
             <p className="page-hero-sub">Saying no takes more courage than saying yes. A reflection on what it means to hold back when holding back is the right answer.</p>
           </ScrollReveal>
         </div>
-      </section>
+      </VideoBackground>
 
       {/* AUTHOR + INTRO */}
       <section className="section section-white">

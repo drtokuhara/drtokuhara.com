@@ -10,6 +10,7 @@ import {
   VideoBackground,
   LineDraw,
 } from '../components/ScrollAnimations';
+import YouTubeShorts from '../components/YouTubeShorts';
 
 const jsonLd = [
   articleSchema({
@@ -247,6 +248,12 @@ export default function PatientStories() {
           </div></BlurReveal>
         </div>
       </section>
+
+      {/* YouTube Shorts */}
+      <YouTubeShorts
+        title="Watch Their Stories"
+        subtitle="Real patients sharing real experiences. No scripts, no actors."
+      />
 
       {/* CTA */}
       <section className="section section-warm">

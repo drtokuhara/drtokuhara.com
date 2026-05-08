@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { breadcrumbSchema } from '../schema';
 import Image from 'next/image';
 import {
   ScrollReveal,
@@ -57,9 +58,16 @@ export const metadata = {
   },
 };
 
+
+const pageBreadcrumbs = breadcrumbSchema([
+  { name: 'Home', href: '/' },
+  { name: 'Vivity vs PanOptix', href: '/vivity-vs-panoptix' },
+]);
+
 export default function VivityVsPanoptix() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageBreadcrumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* HERO */}

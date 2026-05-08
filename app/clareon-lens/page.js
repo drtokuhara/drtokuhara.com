@@ -78,7 +78,7 @@ export default function ClareonLens() {
       ))}
 
       {/* HERO */}
-      <VideoBackground src="/media/ambient-glass-horizon.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-desert-dawn-mist.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <ScrollReveal direction="up" once={true}>
             <h1>The <strong>Clareon Lens</strong></h1>

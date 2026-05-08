@@ -1,4 +1,5 @@
 import PatientJourneyContent from './PatientJourneyContent';
+import { breadcrumbSchema } from '../schema';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -24,9 +25,16 @@ export const metadata = {
   },
 };
 
+
+const pageBreadcrumbs = breadcrumbSchema([
+  { name: 'Home', href: '/' },
+  { name: 'Patient Journey', href: '/patient-journey' },
+]);
+
 export default function PatientJourneyPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageBreadcrumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <PatientJourneyContent />
     </>

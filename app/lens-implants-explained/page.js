@@ -321,17 +321,29 @@ export default function LensImplantsExplained() {
         <div className="container content-narrow">
           <h2 className="section-title">Learn <strong>More</strong></h2>
           <div className="related-grid">
-            <Link href="/understanding-cataracts" className="related-card">
-              <h3>Understanding Cataracts</h3>
-              <p>If you're still learning about cataracts themselves, start here.</p>
+            <Link href="/vivity-vs-panoptix" className="related-card">
+              <h3>Vivity vs. PanOptix</h3>
+              <p>An honest comparison of the two most popular premium lenses.</p>
+            </Link>
+            <Link href="/panoptix-vs-panoptix-pro" className="related-card">
+              <h3>PanOptix vs. PanOptix Pro</h3>
+              <p>What changed between generations and whether it matters for your eyes.</p>
+            </Link>
+            <Link href="/toric-lens-astigmatism" className="related-card">
+              <h3>Toric Lenses for Astigmatism</h3>
+              <p>How toric implants reduce astigmatism during cataract surgery.</p>
+            </Link>
+            <Link href="/clareon-lens" className="related-card">
+              <h3>The Clareon Lens</h3>
+              <p>The newest biomaterial platform and what makes it different.</p>
             </Link>
             <Link href="/choosing-your-surgeon" className="related-card">
               <h3>Choosing Your Surgeon</h3>
-              <p>The lens matters. So does the person putting it in. Here's how to evaluate.</p>
+              <p>The lens matters. So does the person putting it in.</p>
             </Link>
             <Link href="/insights/the-reader-who-almost-gave-up-her-books" className="related-card">
               <h3>The Reader Who Almost Gave Up Her Books</h3>
-              <p>A story about a patient who didn't know she had a choice - until someone told her.</p>
+              <p>A story about a patient who didn't know she had a choice.</p>
             </Link>
           </div>
         </div>

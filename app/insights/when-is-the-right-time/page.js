@@ -7,6 +7,7 @@ import {
   ParallaxImage,
   BlurReveal,
   LineDraw,
+  VideoBackground,
 } from '../../components/ScrollAnimations';
 
 export const metadata = {
@@ -40,23 +41,21 @@ export default function InsightWhenIsTheRightTime() {
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
-      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
-        <Image
-          src="/media/stock-couple-lawn-sunset-coachella.jpg"
-          alt=""
-          fill
-          style={{objectFit: 'cover', objectPosition: 'center 30%'}}
-          priority
-        />
-        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.35) 0%, rgba(0,20,30,0.75) 100%)', zIndex: 1}} />
-        <div style={{position: 'relative', zIndex: 2}} className="container">
+      <VideoBackground
+        src="/media/ambient-lens-refraction.mp4"
+        overlayOpacity={0.6}
+        overlayColor="0, 20, 30"
+        className="page-hero page-hero-image"
+        style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+      >
+        <div className="container">
           <ScrollReveal direction="up" once={true}>
           <span className="insight-hero-cluster">Decisions & Timing</span>
           <h1>When Is the <strong>Right Time?</strong></h1>
           <p className="page-hero-sub">The question I hear more than any other. There is no magic number. The right time depends on your life, not a chart.</p>
           </ScrollReveal>
         </div>
-      </section>
+      </VideoBackground>
 
       <section className="section section-white">
         <div className="container content-narrow">

@@ -1,4 +1,10 @@
 import ContactContent from './ContactContent';
+import { medicalOrganizationSchema, breadcrumbSchema } from '../schema';
+
+const contactBreadcrumbs = breadcrumbSchema([
+  { name: 'Home', href: '/' },
+  { name: 'Contact', href: '/contact' },
+]);
 
 export const metadata = {
   title: 'Contact Desert Vision Center',
@@ -14,5 +20,11 @@ export const metadata = {
 };
 
 export default function ContactPage() {
-  return <ContactContent />;
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalOrganizationSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactBreadcrumbs) }} />
+      <ContactContent />
+    </>
+  );
 }

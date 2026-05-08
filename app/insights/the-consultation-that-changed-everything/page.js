@@ -6,6 +6,7 @@ import {
   ScrollReveal,
   BlurReveal,
   LineDraw,
+  VideoBackground,
 } from '../../components/ScrollAnimations';
 
 export const metadata = {
@@ -39,23 +40,21 @@ export default function InsightConsultationChangedEverything() {
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
 
-      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
-        <Image
-          src="/media/honest-consultation-trust.png"
-          alt=""
-          fill
-          style={{objectFit: 'cover', objectPosition: 'center 40%'}}
-          priority
-        />
-        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.35) 0%, rgba(0,20,30,0.75) 100%)', zIndex: 1}} />
-        <div style={{position: 'relative', zIndex: 2}} className="container">
+      <VideoBackground
+        src="/media/ambient-desert-twilight.mp4"
+        overlayOpacity={0.6}
+        overlayColor="0, 20, 30"
+        className="page-hero page-hero-image"
+        style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+      >
+        <div className="container">
           <ScrollReveal direction="up" once={true}>
             <span className="insight-hero-cluster">Philosophy of Care</span>
             <h1>The Consultation That <strong>Changed Everything</strong></h1>
             <p className="page-hero-sub">When a patient finally gets the time and honesty they deserve, something shifts. It is not about surgery. It is about feeling understood.</p>
           </ScrollReveal>
         </div>
-      </section>
+      </VideoBackground>
 
       <section className="section section-white">
         <div className="container content-narrow">

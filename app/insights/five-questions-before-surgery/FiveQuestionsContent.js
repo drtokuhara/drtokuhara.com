@@ -2,26 +2,24 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { ScrollReveal, BlurReveal, LineDraw } from '../../components/ScrollAnimations';
+import { ScrollReveal, VideoBackground, BlurReveal, LineDraw } from '../../components/ScrollAnimations';
 
 export default function FiveQuestionsContent() {
   return (
     <>
-      <section className="page-hero page-hero-image" style={{position: 'relative', overflow: 'hidden'}}>
-        <Image
-          src="/media/stock-couple-patio-scenic-view.jpg"
-          alt=""
-          fill
-          style={{objectFit: 'cover', objectPosition: 'center 30%'}}
-          priority
-        />
-        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,20,30,0.35) 0%, rgba(0,20,30,0.75) 100%)', zIndex: 1}} />
-        <div style={{position: 'relative', zIndex: 2}} className="container">
+      <VideoBackground
+        src="/media/ambient-light-as-information.mp4"
+        overlayOpacity={0.6}
+        overlayColor="0, 20, 30"
+        className="page-hero page-hero-image"
+        style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+      >
+        <div className="container">
           <span className="insight-hero-cluster">Decisions &amp; Timing</span>
           <h1>Five Questions to Ask Before <strong>Cataract Surgery</strong></h1>
           <p className="page-hero-sub">Your surgeon should welcome every one of them. If they don't, that tells you something too.</p>
         </div>
-      </section>
+      </VideoBackground>
 
       <section className="section section-white">
         <div className="container content-narrow">
@@ -176,16 +174,20 @@ export default function FiveQuestionsContent() {
           <LineDraw style={{margin: '40px auto', maxWidth: '200px'}} />
 
           <ScrollReveal delay={0.2}>
-            <p style={{textAlign: 'center', marginTop: '24px'}}>
-              <Link href="/choosing-your-surgeon" className="cta-link">
-                More on choosing your surgeon &rarr;
+            <div className="related-grid" style={{marginTop: '32px'}}>
+              <Link href="/choosing-your-surgeon" className="related-card">
+                <h3>Choosing Your Surgeon</h3>
+                <p>How to evaluate the surgeon, not just the surgery.</p>
               </Link>
-            </p>
-            <p style={{textAlign: 'center', marginTop: '12px'}}>
-              <Link href="/contact" className="cta-link">
-                Schedule a consultation &rarr;
+              <Link href="/lens-implants-explained" className="related-card">
+                <h3>Lens Implants Explained</h3>
+                <p>Understand your options before the conversation.</p>
               </Link>
-            </p>
+              <Link href="/cataract-surgery" className="related-card">
+                <h3>Cataract Surgery Overview</h3>
+                <p>What the procedure involves, step by step.</p>
+              </Link>
+            </div>
           </ScrollReveal>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { breadcrumbSchema } from '../schema';
 import {
   ScrollReveal,
   StaggerChildren,
@@ -160,9 +161,29 @@ const insights = [
   },
 ];
 
+const insightsSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Insights from the Clinic',
+  description: 'Clinical reflections from Dr. Keith Tokuhara on cataract surgery, lens implant decisions, and patient care.',
+  url: 'https://drtokuhara.com/insights',
+  author: {
+    '@type': 'Physician',
+    name: 'Dr. Keith Tokuhara',
+    url: 'https://drtokuhara.com/about',
+  },
+};
+
+const breadcrumbs = breadcrumbSchema([
+  { name: 'Home', href: '/' },
+  { name: 'Insights', href: '/insights' },
+]);
+
 export default function InsightsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(insightsSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
       <VideoBackground
         src="/media/ambient-desert-sunrise.mp4"
         poster="/media/stock-couple-market-sunlight.jpg"

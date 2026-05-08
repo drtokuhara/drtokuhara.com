@@ -3,9 +3,11 @@ import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import {
   ScrollReveal,
+  VideoBackground,
   BlurReveal,
   LineDraw,
 } from '../../components/ScrollAnimations';
+import RelatedComplexCases from '../../components/RelatedComplexCases';
 import AuthorByline from '../../components/AuthorByline';
 
 const jsonLd = [
@@ -50,12 +52,18 @@ export default function ParkinsonsDiseasePage() {
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
-      <section className="page-hero">
+      <VideoBackground
+        src="/media/ambient-light-tunnel.mp4"
+        overlayOpacity={0.6}
+        overlayColor="0, 20, 30"
+        className="page-hero page-hero-image"
+        style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+      >
         <div className="container">
           <h1>Cataract Surgery with <strong>Parkinson&rsquo;s Disease</strong></h1>
           <p className="page-hero-sub">Tremor, positioning challenges, and medication management add complexity, but they do not make surgery impossible.</p>
         </div>
-      </section>
+      </VideoBackground>
 
       <section className="section section-white">
         <div className="container content-narrow">
@@ -111,6 +119,7 @@ export default function ParkinsonsDiseasePage() {
         </div>
       </section>
 
+      <RelatedComplexCases current="parkinsons-disease" />
       <LineDraw style={{margin: "0 auto", maxWidth: "200px"}} color="var(--oasis)" />
       <section className="cta">
         <div className="container">

@@ -3,9 +3,11 @@ import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import {
   ScrollReveal,
+  VideoBackground,
   BlurReveal,
   LineDraw,
 } from '../../components/ScrollAnimations';
+import RelatedComplexCases from '../../components/RelatedComplexCases';
 import AuthorByline from '../../components/AuthorByline';
 
 const jsonLd = [
@@ -50,12 +52,18 @@ export default function MacularDegenerationPage() {
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
-      <section className="page-hero">
+      <VideoBackground
+        src="/media/ambient-desert-twilight-v2.mp4"
+        overlayOpacity={0.6}
+        overlayColor="0, 20, 30"
+        className="page-hero page-hero-image"
+        style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+      >
         <div className="container">
           <h1>Macular Degeneration and <strong>Cataract Surgery</strong></h1>
           <p className="page-hero-sub">The only cataract surgeon in the Coachella Valley who is board certified and fellowship trained in retina. Both conditions, one doctor who understands them completely.</p>
         </div>
-      </section>
+      </VideoBackground>
 
       <section className="section section-white">
         <div className="container content-narrow">
@@ -136,6 +144,7 @@ export default function MacularDegenerationPage() {
         </div>
       </section>
 
+      <RelatedComplexCases current="macular-degeneration" />
       <LineDraw style={{margin: "0 auto", maxWidth: "200px"}} color="var(--oasis)" />
       <section className="cta">
         <div className="container">

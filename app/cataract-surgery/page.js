@@ -418,6 +418,39 @@ export default function CataractSurgeryPage() {
         </div>
       </section>
 
+      {/* RELATED PAGES */}
+      <section className="section section-light">
+        <div className="container content-narrow">
+          <h2 className="section-title">Explore <strong>More</strong></h2>
+          <div className="related-grid">
+            <Link href="/lens-implants-explained" className="related-card">
+              <h3>Lens Implants Explained</h3>
+              <p>Monofocal, toric, EDOF, and multifocal options. Which one fits your life?</p>
+            </Link>
+            <Link href="/complex-cases" className="related-card">
+              <h3>Complex and Revision Cases</h3>
+              <p>When surgery is more complicated, experience matters most.</p>
+            </Link>
+            <Link href="/clear-in-a-day" className="related-card">
+              <h3>CLEAR in a Day</h3>
+              <p>Both eyes in a single visit for eligible patients.</p>
+            </Link>
+            <Link href="/cataract-pre-op" className="related-card">
+              <h3>Before Surgery</h3>
+              <p>What happens in pre-op and how to prepare.</p>
+            </Link>
+            <Link href="/cataract-recovery" className="related-card">
+              <h3>Recovery</h3>
+              <p>What to expect after surgery and when to call.</p>
+            </Link>
+            <Link href="/choosing-your-surgeon" className="related-card">
+              <h3>Choosing Your Surgeon</h3>
+              <p>A framework for evaluating who should operate on your eyes.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="cta">
         <div className="container">
