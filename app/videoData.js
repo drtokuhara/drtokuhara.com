@@ -2,6 +2,13 @@
 // Source: YouTube Data API v3
 
 export const youtubeVideos = {
+  'jLPyZV_bUig': {
+    title: 'Dr. Keith G. Tokuhara, M.D. Ophthalmologist in Rancho Mirage, California at Desert Vision Center',
+    description: 'Dr. Tokuhara is incredible! Cataract surgery on both eyes resulted in 20/20 vision. My left eye already had a Kamra lens (more complex), but he did it perfectly.',
+    duration: 'PT1M23S',
+    thumbnailUrl: 'https://i.ytimg.com/vi/jLPyZV_bUig/maxresdefault.jpg',
+    uploadDate: '2026-03-11',
+  },
   '3vEQKShP_Tg': {
     title: 'Laser Cataract Surgery with Dr. Tokuhara',
     description: 'What is it like to have laser cataract surgery?  Are you anxious about having cataract surgery?  Dr. Tokuhara\'s patient,',

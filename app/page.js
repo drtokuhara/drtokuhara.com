@@ -622,6 +622,7 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(physicianSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "Ron Sloy: From Cataracts to 20/20 Vision with Dr. Tokuhara", "description": "Patient Ron Sloy shares his experience getting cataract surgery on both eyes with Dr. Keith Tokuhara at Desert Vision Center. His left eye had a prior Kamra lens, making it a complex case. After thorough research and careful planning, Dr. Tokuhara achieved 20/20 vision in both eyes.", "thumbnailUrl": "https://i.ytimg.com/vi/jLPyZV_bUig/maxresdefault.jpg", "uploadDate": "2026-03-11", "duration": "PT1M23S", "contentUrl": "https://www.youtube.com/watch?v=jLPyZV_bUig", "embedUrl": "https://www.youtube.com/embed/jLPyZV_bUig"}) }} />
 
       {mode === 'homepage' ? (
         <div className="homepage">

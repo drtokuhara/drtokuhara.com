@@ -562,4 +562,30 @@ In this video, Dr. Tokuhara d</video:description>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
   </url>
+  <url>
+    <loc>https://drtokuhara.com/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/jLPyZV_bUig/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Dr. Keith G. Tokuhara, M.D. Ophthalmologist in Rancho Mirage, California at Desert Vision Center</video:title>
+      <video:description>Dr. Tokuhara is incredible! Cataract surgery on both eyes resulted in 20/20 vision. My left eye already had a Kamra lens (more complex), but he did it perfectly.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=jLPyZV_bUig</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/jLPyZV_bUig</video:player_loc>
+      <video:duration>PT1M23S</video:duration>
+      <video:publication_date>2026-03-11</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://drtokuhara.com/patient-stories</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/jLPyZV_bUig/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Dr. Keith G. Tokuhara, M.D. Ophthalmologist in Rancho Mirage, California at Desert Vision Center</video:title>
+      <video:description>Dr. Tokuhara is incredible! Cataract surgery on both eyes resulted in 20/20 vision. My left eye already had a Kamra lens (more complex), but he did it perfectly.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=jLPyZV_bUig</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/jLPyZV_bUig</video:player_loc>
+      <video:duration>PT1M23S</video:duration>
+      <video:publication_date>2026-03-11</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
 </urlset>
