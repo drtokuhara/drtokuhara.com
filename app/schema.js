@@ -46,7 +46,6 @@ export const physicianSchema = {
   sameAs: [
     'https://x.com/DoctorTokuhara',
     'https://youtube.com/@desertvisioncenter',
-    'https://desertvisioncenter.com/ophthalmologist-dr-tokuhara/',
   ],
   availableService: [
     {

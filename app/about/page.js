@@ -35,8 +35,8 @@ const jsonLd = [
 ];
 
 export const metadata = {
-  title: 'About Dr. Keith Tokuhara - The Surgeon Behind the Scrub Cap',
-  description: 'The full story. Training under Dr. Howard Gimbel, international surgical missions, complex case expertise, and why physician independence matters. Meet the person, not just the credentials.',
+  title: 'Dr. Keith Tokuhara, MD - Cataract Surgeon, Rancho Mirage',
+  description: 'Dr. Keith Tokuhara is a fellowship-trained cataract surgeon at Desert Vision Center in Rancho Mirage, California. Specializing in complex cataract surgery, advanced lens implants, and ethical patient care in the Coachella Valley.',
   alternates: {
     canonical: '/about',
   },

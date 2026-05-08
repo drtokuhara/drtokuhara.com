@@ -10,7 +10,7 @@ export const metadata = {
     default: 'Dr. Keith Tokuhara, MD | Cataract Expert & Patient Educator',
     template: '%s | Dr. Keith Tokuhara, MD',
   },
-  description: 'Dr. Keith Tokuhara - fellowship trained cataract surgeon, educator, and patient advocate. Honest answers about cataracts, lens implants, and what to expect from surgery. Desert Vision Center, Coachella Valley.',
+  description: 'Dr. Keith Tokuhara, MD - fellowship-trained cataract surgeon at Desert Vision Center in Rancho Mirage, CA. Specializing in complex cataract surgery, advanced lens implants, and personalized patient care in the Coachella Valley.',
   metadataBase: new URL('https://drtokuhara.com'),
   alternates: {
     canonical: '/',

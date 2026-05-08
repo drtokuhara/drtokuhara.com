@@ -75,8 +75,7 @@ const physicianSchema = {
   ],
   "sameAs": [
     "https://x.com/DoctorTokuhara",
-    "https://youtube.com/@desertvisioncenter",
-    "https://desertvisioncenter.com/ophthalmologist-dr-tokuhara/"
+    "https://youtube.com/@desertvisioncenter"
   ]
 };
 
@@ -642,17 +641,20 @@ export default function Home() {
                 <p className="lux-hero-eyebrow">Desert Vision Center &middot; Rancho Mirage</p>
               </ScrollReveal>
               <KineticText
-                text="See your world with clarity"
+                text="Dr. Keith Tokuhara, MD"
                 Tag="h1"
                 className="lux-hero-headline"
                 mode="word"
                 staggerDelay={0.06}
                 threshold={0.1}
               />
-              <ScrollReveal direction="up" delay={0.6} once={true}>
+              <ScrollReveal direction="up" delay={0.5} once={true}>
+                <p className="lux-hero-tagline">See your world with clarity</p>
+              </ScrollReveal>
+              <ScrollReveal direction="up" delay={0.7} once={true}>
                 <p className="lux-hero-sub">
-                  Advanced cataract surgery by Dr. Keith Tokuhara.
-                  Precision. Integrity. Your vision, reimagined.
+                  Fellowship-trained cataract surgeon. Precision, integrity,
+                  and honest answers about your vision. Desert Vision Center, Rancho Mirage.
                 </p>
               </ScrollReveal>
               <ScrollReveal direction="up" delay={0.8} once={true}>
