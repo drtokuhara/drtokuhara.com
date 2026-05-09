@@ -94,7 +94,7 @@ function FellowshipVisual() {
         <>
           <FloatingStat delay={0.2} x="10%" y="15%">
             <div className="afc-badge">
-              <AnimatedCounter target={10000} suffix="+" />
+              <AnimatedCounter target={20000} suffix="+" />
               <span className="afc-badge-label">Surgeries</span>
             </div>
           </FloatingStat>
