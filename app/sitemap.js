@@ -77,6 +77,8 @@ export default function sitemap() {
 
   // Insight articles
   const insightPages = [
+    '/insights/the-lens-nobody-talks-about',
+    '/insights/what-i-learned-from-the-surgeon-who-trained-me',
     '/insights/the-eye-you-least-suspect',
     '/insights/the-consultation-that-changed-everything',
     '/insights/do-i-really-need-surgery',

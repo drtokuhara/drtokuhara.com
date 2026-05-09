@@ -152,6 +152,7 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/three-things-patients-say">Three Things Patients Say</Link>
                     <Link href="/insights/the-reader-who-almost-gave-up-her-books">The Reader Who Almost Gave Up</Link>
                     <Link href="/insights/are-premium-lenses-worth-it">Are Premium Lenses Worth It?</Link>
+                    <Link href="/insights/the-lens-nobody-talks-about">The Lens Nobody Talks About</Link>
                     <Link href="/insights/the-number-that-wasnt-the-problem">The Number That Wasn't the Problem</Link>
                   </div>
                   <div className="nav-mega-col">
@@ -162,6 +163,7 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/the-man-who-wanted-his-younger-eyes-back">Younger Eyes Back</Link>
                     <Link href="/insights/when-guilt-replaces-explanation">When Guilt Replaces Explanation</Link>
                     <Link href="/insights/when-more-isnt-better">When More Isn't Better</Link>
+                    <Link href="/insights/what-i-learned-from-the-surgeon-who-trained-me">The Surgeon Who Trained Me</Link>
                     <Link href="/insights/the-consultation-that-changed-everything">The Consultation That Changed Everything</Link>
                     <Link href="/insights" style={{color: 'var(--oasis)', fontWeight: 600, marginTop: '8px'}}>View All Insights</Link>
                   </div>

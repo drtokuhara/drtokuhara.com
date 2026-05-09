@@ -24,6 +24,22 @@ export const metadata = {
 
 const insights = [
   {
+    slug: 'the-lens-nobody-talks-about',
+    title: 'The Lens Nobody Talks About',
+    date: 'May 2026',
+    description: 'He arrived with a folder full of research, convinced he needed the most expensive multifocal lens. His dry eye and early macular changes told a different story. The best lens is the one that matches your eyes, not the one that costs the most.',
+    cluster: 'Lens Selection',
+    image: '/media/stock-couple-bar-golf-view.jpg',
+  },
+  {
+    slug: 'what-i-learned-from-the-surgeon-who-trained-me',
+    title: 'What I Learned From the Surgeon Who Trained Me',
+    date: 'May 2026',
+    description: 'A fellowship moment with Dr. Howard Gimbel that changed everything. Not a technique, but a principle: your reaction to the complication is the problem. How mentorship shapes not just skill, but surgical philosophy.',
+    cluster: 'Philosophy of Care',
+    image: '/media/stock-couple-patio-scenic-view.jpg',
+  },
+  {
     slug: 'twenty-years-forward',
     title: 'Twenty Years Forward',
     date: 'May 2026',
