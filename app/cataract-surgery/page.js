@@ -10,6 +10,7 @@ import {
   BlurReveal,
   LineDraw,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -96,6 +97,8 @@ export default function CataractSurgeryPage() {
           </ScrollReveal>
         </div>
       </VideoBackground>
+
+      <AudioNarration src="/audio/narrations/cataract-surgery.mp3" title="What Is Cataract Surgery Really Like?" />
 
       {/* WHAT ARE CATARACTS */}
       <section className="section section-white">

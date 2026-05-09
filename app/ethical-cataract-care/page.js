@@ -8,6 +8,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -79,6 +80,8 @@ export default function EthicalCataractCare() {
           <p className="page-hero-sub">Your cataract surgeon should be chosen for their skill, not because someone got paid to send you there.</p>
         </div>
       </VideoBackground>
+
+      <AudioNarration src="/audio/narrations/ethical-cataract-care.mp3" title="Ethical Cataract Care" />
 
       {/* INTRO */}
       <section className="section section-white">

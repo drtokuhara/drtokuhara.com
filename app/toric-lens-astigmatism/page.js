@@ -8,6 +8,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -81,6 +82,8 @@ export default function ToricLensAstigmatismPage() {
           <p className="page-hero-sub">If you have been told you have astigmatism, this page is written for you.</p>
         </div>
       </VideoBackground>
+
+      <AudioNarration src="/audio/narrations/toric-lens-astigmatism.mp3" title="Toric Lenses and Astigmatism" />
 
       {/* INTRO */}
       <section className="section section-white">

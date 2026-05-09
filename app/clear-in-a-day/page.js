@@ -8,6 +8,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 const jsonLd = [
   articleSchema({
@@ -56,6 +57,8 @@ export default function ClearInADayPage() {
           <p className="page-hero-sub">Both eyes. One surgeon. One day. A smarter path to clear vision.</p>
         </div>
       </VideoBackground>
+
+      <AudioNarration src="/audio/narrations/clear-in-a-day.mp3" title="CLEAR in a Day: Same-Day Bilateral Surgery" />
 
       {/* WHAT IS CLEAR IN A DAY */}
       <section className="section section-white">

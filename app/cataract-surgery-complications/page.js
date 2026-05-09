@@ -8,6 +8,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -77,6 +78,8 @@ export default function CataractSurgeryComplications() {
           <p className="page-hero-sub">What can go wrong, how I handle it, and why this page exists at all.</p>
         </div>
       </VideoBackground>
+
+      <AudioNarration src="/audio/narrations/cataract-surgery-complications.mp3" title="Cataract Surgery Complications" />
 
       {/* INTRO */}
       <section className="section section-white">

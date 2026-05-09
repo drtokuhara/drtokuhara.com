@@ -12,6 +12,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -63,6 +64,8 @@ export default function AboutPage() {
           </ScrollReveal>
         </div>
       </VideoBackground>
+
+      <AudioNarration src="/audio/narrations/about-why-the-desert.mp3" title="Why the Desert" />
 
       {/* BIO SECTION */}
       <section className="section section-white">

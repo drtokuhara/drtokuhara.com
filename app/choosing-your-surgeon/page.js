@@ -9,6 +9,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 const jsonLd = [
   articleSchema({
@@ -58,6 +59,8 @@ export default function ChoosingYourSurgeon() {
           <p className="page-hero-sub">The questions nobody tells you to ask - and why the answer isn't always the biggest name or the closest office.</p>
         </div>
       </VideoBackground>
+
+      <AudioNarration src="/audio/narrations/choosing-your-surgeon.mp3" title="Choosing Your Cataract Surgeon" />
 
       <section className="section section-white">
         <div className="container content-narrow">

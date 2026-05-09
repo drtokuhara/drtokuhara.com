@@ -7,6 +7,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 export const metadata = {
   title: 'Understanding Cataracts: What Your Eye Doctor May Not Have Time to Explain',
@@ -48,6 +49,8 @@ export default function UnderstandingCataracts() {
           <p className="page-hero-sub">What your eye doctor may not have time to explain - and what you actually need to know before making any decisions.</p>
         </div>
       </VideoBackground>
+
+      <AudioNarration src="/audio/narrations/understanding-cataracts.mp3" title="Understanding Cataracts" />
 
       {/* HERO IMAGE */}
       <section className="section section-white" style={{paddingBottom: 0}}>

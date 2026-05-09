@@ -7,6 +7,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -95,6 +96,8 @@ export default function IsCataractSurgerySafePage() {
           </ScrollReveal>
         </div>
       </VideoBackground>
+
+      <AudioNarration src="/audio/narrations/is-cataract-surgery-safe.mp3" title="Is Cataract Surgery Safe?" />
 
       {/* THE SHORT ANSWER */}
       <section className="section section-white">

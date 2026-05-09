@@ -10,6 +10,7 @@ import {
   MagneticElement,
   LineDraw,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 const jsonLd = [
   articleSchema({
@@ -64,6 +65,8 @@ export default function LensImplantsExplained() {
           </ScrollReveal>
         </div>
       </VideoBackground>
+
+      <AudioNarration src="/audio/narrations/lens-implants-explained.mp3" title="Lens Implants Explained" />
 
       <section className="section section-white">
         <div className="container content-narrow">
