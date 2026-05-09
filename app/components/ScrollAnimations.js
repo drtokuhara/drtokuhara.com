@@ -14,6 +14,21 @@ function useHydrated() {
   useEffect(() => { setHydrated(true); }, []);
   return hydrated;
 }
+/**
+ * useSafeInView - wraps useInView with a timeout fallback.
+ * If IntersectionObserver doesn't fire within timeoutMs, force visible.
+ * Prevents blank pages on mobile when IO fails to trigger.
+ */
+function useSafeInView(ref, options, timeoutMs = 1500) {
+  const isInView = useInView(ref, options);
+  const [forceVisible, setForceVisible] = useState(false);
+  useEffect(() => {
+    if (isInView) return;
+    const t = setTimeout(() => setForceVisible(true), timeoutMs);
+    return () => clearTimeout(t);
+  }, [isInView, timeoutMs]);
+  return isInView || forceVisible;
+}
 
 /* ═══════════════════════════════════════════
    SCROLL REVEAL - Fade + slide on viewport entry
@@ -32,7 +47,7 @@ export function ScrollReveal({
 }) {
   const ref = useRef(null);
   const hydrated = useHydrated();
-  const isInView = useInView(ref, { once, amount: threshold, margin: '0px 0px -40px 0px' });
+  const isInView = useSafeInView(ref, { once, amount: threshold, margin: '0px 0px -40px 0px' });
 
   const directions = {
     up: { y: distance, x: 0 },
@@ -84,7 +99,7 @@ export function StaggerChildren({
 }) {
   const ref = useRef(null);
   const hydrated = useHydrated();
-  const isInView = useInView(ref, { once, amount: threshold });
+  const isInView = useSafeInView(ref, { once, amount: threshold });
 
   // Before hydration: render as plain div (visible)
   if (!hydrated) {
@@ -242,7 +257,7 @@ export function KineticText({
 }) {
   const ref = useRef(null);
   const hydrated = useHydrated();
-  const isInView = useInView(ref, { once, amount: threshold });
+  const isInView = useSafeInView(ref, { once, amount: threshold });
 
   const units = mode === 'char' ? text.split('') : text.split(' ');
 
@@ -304,7 +319,7 @@ export function CountUp({
   style = {},
 }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once, amount: threshold });
+  const isInView = useSafeInView(ref, { once, amount: threshold });
   const [count, setCount] = useState(start);
 
   useEffect(() => {
@@ -561,7 +576,7 @@ export function BlurReveal({
 }) {
   const ref = useRef(null);
   const hydrated = useHydrated();
-  const isInView = useInView(ref, { once, amount: threshold });
+  const isInView = useSafeInView(ref, { once, amount: threshold });
 
   // Before hydration: render as plain div (visible)
   if (!hydrated) {
@@ -638,7 +653,7 @@ export function LineDraw({
   style = {},
 }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once, amount: threshold });
+  const isInView = useSafeInView(ref, { once, amount: threshold });
 
   return (
     <motion.div ref={ref} className={className} style={{ overflow: 'hidden', ...style }}>
