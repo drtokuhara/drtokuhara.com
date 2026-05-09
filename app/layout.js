@@ -156,6 +156,7 @@ export default function RootLayout({ children }) {
                   </div>
                   <div className="nav-mega-col">
                     <span className="nav-mega-label">Patient Stories</span>
+                    <Link href="/insights/the-eye-you-least-suspect">The Eye You Least Suspect</Link>
                     <Link href="/insights/permission-to-see-again">Permission to See Again</Link>
                     <Link href="/insights/the-man-who-wanted-his-younger-eyes-back">Younger Eyes Back</Link>
                     <Link href="/insights/when-guilt-replaces-explanation">When Guilt Replaces Explanation</Link>

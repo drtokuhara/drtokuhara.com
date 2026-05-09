@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState, useCallback } from 'react';
+import { useRef, useState, useCallback, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 /**
@@ -19,9 +19,12 @@ export default function TiltCard({
   onClick,
 }) {
   const ref = useRef(null);
+  const [hydrated, setHydrated] = useState(false);
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
   const [glarePos, setGlarePos] = useState({ x: 50, y: 50 });
   const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() => { setHydrated(true); }, []);
 
   const handleMove = useCallback((e) => {
     const el = ref.current;
@@ -42,6 +45,15 @@ export default function TiltCard({
     setIsHovered(false);
     setTilt({ x: 0, y: 0 });
   }, []);
+
+  // Before hydration: render as plain div (visible, no animation)
+  if (!hydrated) {
+    return (
+      <div ref={ref} className={className} style={style} onClick={onClick}>
+        {children}
+      </div>
+    );
+  }
 
   return (
     <motion.div

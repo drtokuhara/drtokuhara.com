@@ -19,7 +19,7 @@ export default function PatientJourneyContent() {
     <>
       {/* PAGE HERO */}
       <VideoBackground
-        src="/media/ambient-resort-pool.mp4"
+        src="/media/desert-driving-freedom.mp4"
         poster="/media/stock-couple-desert-overlook.jpg"
         overlayOpacity={0.5}
         overlayColor="0, 20, 30"

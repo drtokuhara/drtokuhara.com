@@ -51,7 +51,7 @@ export default function LensImplantsExplained() {
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
       <VideoBackground
-        src="/media/ambient-lens-refraction.mp4"
+        src="/media/lens-caustic-light-patterns.mp4"
         overlayOpacity={0.6}
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"

@@ -77,6 +77,7 @@ export default function sitemap() {
 
   // Insight articles
   const insightPages = [
+    '/insights/the-eye-you-least-suspect',
     '/insights/the-consultation-that-changed-everything',
     '/insights/do-i-really-need-surgery',
     '/insights/when-is-the-right-time',
@@ -113,7 +114,7 @@ export default function sitemap() {
 
   return allPages.map(({ path, priority, changeFrequency }) => ({
     url: `${baseUrl}${path}`,
-    lastModified: new Date('2026-05-06'),
+    lastModified: new Date('2026-05-09'),
     changeFrequency,
     priority,
   }));

@@ -42,7 +42,7 @@ export default function ArePremiumLensesWorthIt() {
       ))}
 
       <VideoBackground
-        src="/media/ambient-lens-refraction-v2.mp4"
+        src="/media/lens-caustic-light-patterns.mp4"
         overlayOpacity={0.6}
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"

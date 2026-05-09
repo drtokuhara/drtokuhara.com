@@ -24,6 +24,14 @@ export const metadata = {
 
 const insights = [
   {
+    slug: 'the-eye-you-least-suspect',
+    title: 'The Eye You Least Suspect',
+    date: 'May 2026',
+    description: 'He assumed his right eye was getting worse. The real problem was in his left: wet macular degeneration had emerged silently. A reflection on anchoring bias, diagnostic humility, and why we examine both eyes every time.',
+    cluster: 'Clinical Insight',
+    image: '/media/the-eye-you-least-suspect-hero.png',
+  },
+  {
     slug: 'the-consultation-that-changed-everything',
     title: 'The Consultation That Changed Everything',
     date: 'May 2026',

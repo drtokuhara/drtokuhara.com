@@ -54,7 +54,7 @@ export default function PatientStories() {
 
       {/* CINEMATIC HERO */}
       <VideoBackground
-        src="/media/ambient-desert-golden-hour.mp4"
+        src="/media/golf-course-wide-golden.mp4"
         overlayOpacity={0.55}
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"

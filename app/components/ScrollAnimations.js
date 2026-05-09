@@ -3,6 +3,18 @@
 import { useRef, useEffect, useState, useCallback } from 'react';
 import { motion, useScroll, useTransform, useSpring, useInView, useMotionValueEvent } from 'framer-motion';
 
+/**
+ * useHydrated - returns true only after client hydration.
+ * This ensures content is VISIBLE in static HTML (opacity: 1, no transform)
+ * and animations only kick in after JS loads.
+ * ROOT CAUSE FIX: prevents blank pages when JS fails to load/hydrate.
+ */
+function useHydrated() {
+  const [hydrated, setHydrated] = useState(false);
+  useEffect(() => { setHydrated(true); }, []);
+  return hydrated;
+}
+
 /* ═══════════════════════════════════════════
    SCROLL REVEAL - Fade + slide on viewport entry
    ═══════════════════════════════════════════ */
@@ -19,6 +31,7 @@ export function ScrollReveal({
   style = {},
 }) {
   const ref = useRef(null);
+  const hydrated = useHydrated();
   const isInView = useInView(ref, { once, amount: threshold, margin: '0px 0px -40px 0px' });
 
   const directions = {
@@ -30,6 +43,15 @@ export function ScrollReveal({
   };
 
   const dir = directions[direction] || directions.up;
+
+  // Before hydration: render as plain div (visible, no animation)
+  if (!hydrated) {
+    return (
+      <div ref={ref} className={className} style={style}>
+        {children}
+      </div>
+    );
+  }
 
   return (
     <motion.div
@@ -61,7 +83,17 @@ export function StaggerChildren({
   style = {},
 }) {
   const ref = useRef(null);
+  const hydrated = useHydrated();
   const isInView = useInView(ref, { once, amount: threshold });
+
+  // Before hydration: render as plain div (visible)
+  if (!hydrated) {
+    return (
+      <div ref={ref} className={className} style={style}>
+        {children}
+      </div>
+    );
+  }
 
   return (
     <motion.div
@@ -91,6 +123,7 @@ export function StaggerItem({
   distance = 40,
   style = {},
 }) {
+  const hydrated = useHydrated();
   const directions = {
     up: { y: distance, x: 0 },
     down: { y: -distance, x: 0 },
@@ -98,6 +131,15 @@ export function StaggerItem({
     right: { x: -distance, y: 0 },
   };
   const dir = directions[direction] || directions.up;
+
+  // Before hydration: render as plain div (visible)
+  if (!hydrated) {
+    return (
+      <div className={className} style={style}>
+        {children}
+      </div>
+    );
+  }
 
   return (
     <motion.div
@@ -199,9 +241,19 @@ export function KineticText({
   style = {},
 }) {
   const ref = useRef(null);
+  const hydrated = useHydrated();
   const isInView = useInView(ref, { once, amount: threshold });
 
   const units = mode === 'char' ? text.split('') : text.split(' ');
+
+  // Before hydration: render as plain text (visible)
+  if (!hydrated) {
+    return (
+      <Tag ref={ref} className={className} style={style}>
+        {text}
+      </Tag>
+    );
+  }
 
   return (
     <Tag ref={ref} className={className} style={{ overflow: 'hidden', ...style }}>
@@ -426,8 +478,12 @@ export function VideoBackground({
     if (videoRef.current) videoRef.current.play().catch(() => {});
   }, []);
 
+  // VideoBackground renders standard HTML - poster image shows as CSS background
+  // even without JS. Video is progressive enhancement.
+  const bgStyle = poster ? { backgroundImage: `url(${poster})`, backgroundSize: 'cover', backgroundPosition: 'center' } : {};
+
   return (
-    <div className={className} style={{ position: 'relative', overflow: 'hidden', ...style }}>
+    <div className={className} style={{ position: 'relative', overflow: 'hidden', ...bgStyle, ...style }}>
       <video
         ref={videoRef}
         autoPlay
@@ -504,7 +560,17 @@ export function BlurReveal({
   style = {},
 }) {
   const ref = useRef(null);
+  const hydrated = useHydrated();
   const isInView = useInView(ref, { once, amount: threshold });
+
+  // Before hydration: render as plain div (visible)
+  if (!hydrated) {
+    return (
+      <div ref={ref} className={className} style={style}>
+        {children}
+      </div>
+    );
+  }
 
   return (
     <motion.div
@@ -531,6 +597,7 @@ export function ScaleOnScroll({
   style = {},
 }) {
   const ref = useRef(null);
+  const hydrated = useHydrated();
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['start end', 'center center'],
@@ -538,6 +605,15 @@ export function ScaleOnScroll({
 
   const scale = useTransform(scrollYProgress, [0, 1], scaleRange);
   const opacity = useTransform(scrollYProgress, [0, 1], opacityRange);
+
+  // Before hydration: render as plain div (visible, full opacity, full scale)
+  if (!hydrated) {
+    return (
+      <div ref={ref} className={className} style={style}>
+        {children}
+      </div>
+    );
+  }
 
   return (
     <motion.div

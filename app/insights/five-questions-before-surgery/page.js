@@ -1,4 +1,5 @@
 import FiveQuestionsContent from './FiveQuestionsContent';
+import { breadcrumbSchema } from '../../schema';
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -60,11 +61,18 @@ export const metadata = {
   },
 };
 
+const breadcrumbs = breadcrumbSchema([
+  { name: 'Home', href: '/' },
+  { name: 'Insights', href: '/insights' },
+  { name: '5 Questions to Ask Before Cataract Surgery', href: '/insights/five-questions-before-surgery' },
+]);
+
 export default function FiveQuestionsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
       <FiveQuestionsContent />
     </>
   );
