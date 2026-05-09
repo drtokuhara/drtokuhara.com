@@ -35,7 +35,7 @@ const insights = [
     slug: 'what-i-learned-from-the-surgeon-who-trained-me',
     title: 'What I Learned From the Surgeon Who Trained Me',
     date: 'May 2026',
-    description: 'A fellowship moment with Dr. Howard Gimbel that changed everything. Not a technique, but a principle: your reaction to the complication is the problem. How mentorship shapes not just skill, but surgical philosophy.',
+    description: 'A residency moment with Dr. Howard Gimbel that changed everything. Not a technique, but a principle: your reaction to the complication is the problem. How mentorship shapes not just skill, but surgical philosophy.',
     cluster: 'Philosophy of Care',
     image: '/media/stock-couple-patio-scenic-view.jpg',
   },

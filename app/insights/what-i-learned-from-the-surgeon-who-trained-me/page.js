@@ -11,11 +11,11 @@ import {
 
 export const metadata = {
   title: 'What I Learned From the Surgeon Who Trained Me',
-  description: 'A reflection on Dr. Howard Gimbel and the fellowship moment that shaped how Dr. Tokuhara approaches surgery and patient care. Surgical mentorship is not just about technique. It is about how you think.',
+  description: 'A reflection on Dr. Howard Gimbel and the residency moment that shaped how Dr. Tokuhara approaches surgery and patient care. Surgical mentorship is not just about technique. It is about how you think.',
   alternates: { canonical: '/insights/what-i-learned-from-the-surgeon-who-trained-me' },
   openGraph: {
     title: 'What I Learned From the Surgeon Who Trained Me | Dr. Keith Tokuhara',
-    description: 'A fellowship moment with Dr. Howard Gimbel that changed everything. Surgical mentorship shapes not just technique, but philosophy.',
+    description: 'A residency moment with Dr. Howard Gimbel that changed everything. Surgical mentorship shapes not just technique, but philosophy.',
     url: 'https://drtokuhara.com/insights/what-i-learned-from-the-surgeon-who-trained-me',
   },
 };
@@ -23,7 +23,7 @@ export const metadata = {
 const jsonLd = [
   articleSchema({
     title: 'What I Learned From the Surgeon Who Trained Me',
-    description: 'A reflection on Dr. Howard Gimbel and the fellowship moment that shaped how Dr. Tokuhara approaches surgery and patient care. Surgical mentorship is not just about technique. It is about how you think.',
+    description: 'A reflection on Dr. Howard Gimbel and the residency moment that shaped how Dr. Tokuhara approaches surgery and patient care. Surgical mentorship is not just about technique. It is about how you think.',
     slug: '/insights/what-i-learned-from-the-surgeon-who-trained-me',
     datePublished: '2026-05-09',
   }),
@@ -52,7 +52,7 @@ export default function InsightWhatILearnedFromTheSurgeon() {
           <ScrollReveal direction="up" once={true}>
           <span className="insight-hero-cluster">Philosophy of Care</span>
           <h1>What I Learned From the Surgeon Who <strong>Trained Me</strong></h1>
-          <p className="page-hero-sub">The moment during fellowship that changed how I think about surgery, patients, and the difference between competence and mastery.</p>
+          <p className="page-hero-sub">The moment during residency that changed how I think about surgery, patients, and the difference between competence and mastery.</p>
           </ScrollReveal>
         </div>
       </VideoBackground>
@@ -62,7 +62,7 @@ export default function InsightWhatILearnedFromTheSurgeon() {
           <AuthorByline />
           <div className="section-divider" style={{margin: '32px auto'}} />
           <p className="body-lead body-lead-dropcap">
-            During my fellowship in anterior segment and refractive surgery, I trained under Dr. Howard Gimbel in Calgary. Gimbel was, and remains, one of the most important cataract surgeons of the modern era. He pioneered continuous curvilinear capsulorhexis, the technique that made modern cataract surgery predictable and safe. Before Gimbel refined that step, the capsular bag was an unpredictable variable. After him, it became a controlled one. Nearly every cataract surgeon in the world uses his contribution, whether they know his name or not.
+            During my residency, I trained under Dr. Howard Gimbel in Calgary. Gimbel was, and remains, one of the most important cataract surgeons of the modern era. He pioneered continuous curvilinear capsulorhexis, the technique that made modern cataract surgery predictable and safe. Before Gimbel refined that step, the capsular bag was an unpredictable variable. After him, it became a controlled one. Nearly every cataract surgeon in the world uses his contribution, whether they know his name or not.
           </p>
           <p>
             But the lesson that shaped me most was not a surgical technique. It was something quieter, and it happened on an ordinary Tuesday morning.
@@ -143,7 +143,7 @@ export default function InsightWhatILearnedFromTheSurgeon() {
           </p>
 
           <BlurReveal><div className="insight-highlight">
-            <p><strong>Patients do not need a surgeon who has never encountered difficulty. They need a surgeon who knows exactly what to do when difficulty arrives. That distinction, between perfection and preparedness, is one of the most important things I learned during fellowship.</strong></p>
+            <p><strong>Patients do not need a surgeon who has never encountered difficulty. They need a surgeon who knows exactly what to do when difficulty arrives. That distinction, between perfection and preparedness, is one of the most important things I learned during residency.</strong></p>
           </div></BlurReveal>
         </div>
       </section>
