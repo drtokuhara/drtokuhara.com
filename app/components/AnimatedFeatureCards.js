@@ -100,7 +100,7 @@ function FellowshipVisual() {
           </FloatingStat>
           <FloatingStat delay={0.5} x="58%" y="8%">
             <div className="afc-badge afc-badge-accent">
-              <span className="afc-badge-value">Dual</span>
+              <span className="afc-badge-value">Retina</span>
               <span className="afc-badge-label">Fellowship</span>
             </div>
           </FloatingStat>
