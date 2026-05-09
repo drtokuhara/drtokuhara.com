@@ -3076,3 +3076,279 @@ html {
   .related-cases-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
   .related-case-card { padding: 16px 18px; }
 }
+
+/* ═══════════════════════════════════════════════════
+   ANIMATED FEATURE CARDS
+   ═══════════════════════════════════════════════════ */
+
+.afc-section {
+  padding: 100px 0 80px;
+  background: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.afc-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.afc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.afc-card {
+  background: var(--white);
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.02);
+  overflow: hidden;
+  cursor: default;
+  transition: box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.afc-card:hover {
+  box-shadow: 0 25px 50px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.04);
+}
+
+/* ── Card visual area (top ~65%) ── */
+.afc-card-visual {
+  position: relative;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, rgba(0,125,149,0.03) 0%, rgba(46,148,164,0.06) 100%);
+  padding: 32px 24px;
+  overflow: hidden;
+}
+
+/* ── Card text area (bottom) ── */
+.afc-card-content {
+  padding: 28px 28px 32px;
+  flex: 1;
+}
+
+.afc-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+.afc-card-desc {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-light);
+}
+
+/* ── Visual internals ── */
+.afc-visual {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.afc-lens-icon,
+.afc-shield-icon,
+.afc-clock-icon {
+  position: relative;
+  z-index: 2;
+}
+
+/* Orbital ring */
+.afc-orbital {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border: 1.5px dashed rgba(0,125,149,0.12);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Pulse ring on shield */
+.afc-pulse-ring {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border: 2px solid var(--oasis);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/* ── Floating badges ── */
+.afc-floating-stat {
+  z-index: 3;
+  pointer-events: none;
+}
+
+.afc-badge {
+  background: var(--white);
+  border: 1px solid rgba(0,125,149,0.12);
+  border-radius: 14px;
+  padding: 10px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  white-space: nowrap;
+}
+
+.afc-badge-accent {
+  background: linear-gradient(135deg, var(--night-horizon), var(--oasis));
+  border: none;
+  color: #fff;
+}
+
+.afc-badge-accent .afc-badge-label {
+  color: rgba(255,255,255,0.85);
+}
+
+.afc-counter,
+.afc-badge-value {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--night-horizon);
+  line-height: 1.2;
+}
+
+.afc-badge-accent .afc-counter,
+.afc-badge-accent .afc-badge-value {
+  color: #fff;
+}
+
+.afc-badge-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  line-height: 1.2;
+}
+
+/* ── Timeline comparison (Card 3) ── */
+.afc-timeline-compare {
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.afc-timeline-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.afc-timeline-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  width: 72px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.afc-timeline-bar {
+  flex: 1;
+  height: 28px;
+  border-radius: 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+.afc-timeline-bar-old {
+  background: rgba(0,0,0,0.04);
+}
+
+.afc-timeline-bar-new {
+  background: rgba(0,125,149,0.08);
+}
+
+.afc-timeline-fill-old {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(0,0,0,0.08);
+  border-radius: 14px;
+}
+
+.afc-timeline-fill-new {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, var(--night-horizon), var(--oasis));
+  border-radius: 14px;
+}
+
+.afc-timeline-value {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.afc-timeline-bar-new .afc-timeline-value {
+  color: var(--night-horizon);
+  right: auto;
+  left: calc(18% + 12px);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .afc-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 680px) {
+  .afc-section {
+    padding: 72px 0 56px;
+  }
+  .afc-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 420px;
+  }
+  .afc-header {
+    margin-bottom: 40px;
+  }
+  .afc-card-visual {
+    min-height: 220px;
+    padding: 28px 20px;
+  }
+  .afc-card-content {
+    padding: 24px 24px 28px;
+  }
+}

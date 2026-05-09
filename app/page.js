@@ -22,6 +22,7 @@ import {
 import TiltCard from './components/TiltCard';
 import TypewriterText from './components/TypewriterText';
 import YouTubeShorts from './components/YouTubeShorts';
+import AnimatedFeatureCards from './components/AnimatedFeatureCards';
 
 /* ───────────────────────────────────────────
    SCHEMA MARKUP
@@ -705,6 +706,11 @@ export default function Home() {
           </section>
 
           <LineDraw style={{margin: '60px auto', maxWidth: '200px'}} color="var(--dune)" />
+
+          {/* ═══ ANIMATED FEATURE CARDS ═══ */}
+          <AnimatedFeatureCards />
+
+          <LineDraw style={{margin: '60px auto', maxWidth: '200px'}} color="var(--oasis)" />
 
           {/* ═══ SECTION 2: LIFESTYLE PANORAMA ═══ */}
           <section className="lux-lifestyle">
