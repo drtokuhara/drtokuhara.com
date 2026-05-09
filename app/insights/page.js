@@ -24,6 +24,14 @@ export const metadata = {
 
 const insights = [
   {
+    slug: 'twenty-years-forward',
+    title: 'Twenty Years Forward',
+    date: 'May 2026',
+    description: 'She thought she just needed new glasses. Her optician adjusted her prescription every year, but things still weren\'t right. The exam revealed cataracts. A reflection on how patients accept gradual vision loss as aging, and the consultation that changes everything.',
+    cluster: 'Clinical Insight',
+    image: '/media/stock-seniors-resort-promenade-night.jpg',
+  },
+  {
     slug: 'the-eye-you-least-suspect',
     title: 'The Eye You Least Suspect',
     date: 'May 2026',
@@ -158,14 +166,6 @@ const insights = [
     description: 'A 32-year-old had a multifocal lens, then a YAG, then LASIK. A year later she still wasn\'t seeing right. Sometimes each fix creates the need for the next one.',
     cluster: 'Expectations & Reality',
     image: '/media/stock-couple-night-walk-dog.jpg',
-  },
-  {
-    slug: 'twenty-years-forward',
-    title: 'Twenty Years Forward',
-    date: 'April 2026',
-    description: 'She chose a multifocal lens at 68. Now at 88 with macular degeneration, that decision looks different. What this teaches about lens choices, tradeoffs, and making decisions for a future you cannot predict.',
-    cluster: 'Lens Selection',
-    image: '/media/stock-seniors-resort-promenade-night.jpg',
   },
 ];
 

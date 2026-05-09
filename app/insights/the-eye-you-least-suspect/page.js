@@ -204,7 +204,7 @@ export default function InsightTheEyeYouLeastSuspect() {
             </Link>
             <Link href="/insights/twenty-years-forward" className="related-card">
               <h3>Twenty Years Forward</h3>
-              <p>A lens choice at 68 looks different at 88. Decisions for a future you cannot predict.</p>
+              <p>She thought she just needed new glasses. The exam revealed something treatable, not just aging.</p>
             </Link>
             <Link href="/insights/the-consultation-that-changed-everything" className="related-card">
               <h3>The Consultation That Changed Everything</h3>
