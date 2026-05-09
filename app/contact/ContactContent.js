@@ -171,10 +171,10 @@ export default function ContactContent() {
         <div className="container content-narrow">
           <div className="content-image">
             <Image
-              src="/media/lifestyle-sunset-dining.jpg"
-              alt={lang === 'es' ? 'Cena al atardecer en el Valle de Coachella' : 'Sunset dining in the Coachella Valley - the lifestyle our patients enjoy'}
-              width={680}
-              height={453}
+              src="/media/dvc-front-desk.jpg"
+              alt={lang === 'es' ? 'Recepcion de Desert Vision Center con logotipo' : 'Desert Vision Center front desk and reception area with DVC logo'}
+              width={1200}
+              height={568}
               style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
             />
           </div>

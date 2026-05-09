@@ -20,7 +20,7 @@ export default function PatientJourneyContent() {
       {/* PAGE HERO */}
       <VideoBackground
         src="/media/desert-driving-freedom.mp4"
-        poster="/media/stock-couple-desert-overlook.jpg"
+        poster="/media/dvc-building-exterior.jpg"
         overlayOpacity={0.5}
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"
@@ -104,10 +104,10 @@ export default function PatientJourneyContent() {
               </div>
               <div className="journey-image-wrap">
                 <Image
-                  src="/media/patient-couple-consultation.jpg"
-                  alt={lang === 'es' ? 'Consulta de paciente en Desert Vision Center' : 'Patient consultation at Desert Vision Center'}
-                  width={600}
-                  height={400}
+                  src="/media/dvc-testing-equipment.jpg"
+                  alt={lang === 'es' ? 'Equipo de pruebas oculares en Desert Vision Center' : 'Diagnostic testing equipment at Desert Vision Center used during your initial evaluation'}
+                  width={1200}
+                  height={568}
                   className="journey-image"
                 />
               </div>
@@ -145,10 +145,10 @@ export default function PatientJourneyContent() {
               </div>
               <div className="journey-image-wrap">
                 <Image
-                  src="/media/lifestyle-sunset-dining.jpg"
-                  alt={lang === 'es' ? 'Pareja retirada disfrutando la cena en el Valle de Coachella' : 'Retired couple enjoying dinner in the Coachella Valley'}
-                  width={600}
-                  height={400}
+                  src="/media/dvc-exam-room.jpg"
+                  alt={lang === 'es' ? 'Sala de examen en Desert Vision Center' : 'Desert Vision Center exam room where Dr. Tokuhara discusses your lens options'}
+                  width={1200}
+                  height={568}
                   className="journey-image"
                 />
               </div>
@@ -239,10 +239,10 @@ export default function PatientJourneyContent() {
               </div>
               <div className="journey-image-wrap">
                 <Image
-                  src="/media/lifestyle-poolside-reading.jpg"
-                  alt={lang === 'es' ? 'Mujer leyendo junto a la piscina en Palm Desert' : 'Woman reading by a resort pool in Palm Desert'}
-                  width={600}
-                  height={400}
+                  src="/media/dvc-phoropter.jpg"
+                  alt={lang === 'es' ? 'Foróptero en Desert Vision Center para medición de la vista' : 'Phoropter at Desert Vision Center used for precise vision measurement during follow-up visits'}
+                  width={1200}
+                  height={568}
                   className="journey-image"
                 />
               </div>

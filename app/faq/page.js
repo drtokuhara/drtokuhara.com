@@ -252,10 +252,10 @@ export default function FAQPage() {
               <div className="container content-narrow">
                 <div className="content-image">
                   <Image
-                    src="/media/elderly-woman-window-desert-view.png"
-                    alt="Patient enjoying clear vision by the window with a desert view"
-                    width={680}
-                    height={453}
+                    src="/media/dvc-waiting-area-2.jpg"
+                    alt="Desert Vision Center waiting area with logo signage and welcoming interior"
+                    width={1200}
+                    height={1200}
                     style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
                   />
                 </div>

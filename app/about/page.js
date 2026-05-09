@@ -161,10 +161,10 @@ export default function AboutPage() {
         <div className="container content-narrow">
           <div className="content-image">
             <Image
-              src="/media/dvc-office-front.png"
-              alt="Desert Vision Center office"
-              width={680}
-              height={453}
+              src="/media/dvc-entrance-close-up.jpg"
+              alt="Desert Vision Center building entrance at 35900 Bob Hope Drive in Rancho Mirage"
+              width={1200}
+              height={568}
               style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
             />
           </div>
@@ -236,10 +236,10 @@ export default function AboutPage() {
 
           <div className="content-image" style={{marginTop: '32px'}}>
             <Image
-              src="/media/lifestyle-joshua-tree.jpg"
-              alt="Joshua Tree landscape in the Coachella Valley - the desert community Dr. Tokuhara calls home"
-              width={680}
-              height={453}
+              src="/media/dvc-optical-shop.jpg"
+              alt="Desert Vision Center optical shop with eyewear displays and consultation area"
+              width={1200}
+              height={568}
               style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
             />
           </div>
@@ -288,10 +288,10 @@ export default function AboutPage() {
         <div className="container content-narrow">
           <div className="content-image">
             <Image
-              src="/media/about-coachella-valley-golden-hour.jpg"
-              alt="Coachella Valley desert landscape at golden hour with palm trees and mountains"
-              width={680}
-              height={453}
+              src="/media/dvc-waiting-area.jpg"
+              alt="Desert Vision Center waiting area with DVC logo and comfortable seating"
+              width={1200}
+              height={568}
               style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
             />
           </div>
