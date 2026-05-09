@@ -1,3 +1,12 @@
+import { breadcrumbSchema } from '../schema';
+
+const jsonLd = [
+  breadcrumbSchema([
+    { name: 'Home', href: '/' },
+    { name: 'App Privacy Policy', href: '/app-privacy' },
+  ]),
+];
+
 export const metadata = {
   title: 'Privacy Policy - My Cataract Drops App',
   description: 'Privacy policy for the My Cataract Drops mobile application. No data collection, no tracking, no accounts required.',
@@ -14,6 +23,14 @@ export const metadata = {
 export default function AppPrivacyPage() {
   return (
     <>
+      {jsonLd.map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
+
       {/* PAGE HERO */}
       <section className="page-hero">
         <div className="container">
