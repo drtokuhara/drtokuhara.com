@@ -280,7 +280,7 @@ const cards = [
   {
     id: 'fellowship',
     title: 'Fellowship-Trained Expertise',
-    description: 'Trained under the legendary Dr. Howard Gimbel in anterior segment surgery, with a second fellowship in retina. That rare combination means Dr. Tokuhara sees the whole eye as a connected system, not isolated parts.',
+    description: 'Trained under the legendary Dr. Howard Gimbel during residency, with a retina fellowship for complex eye disease. That rare combination means Dr. Tokuhara sees the whole eye as a connected system, not isolated parts.',
     Visual: FellowshipVisual,
   },
   {

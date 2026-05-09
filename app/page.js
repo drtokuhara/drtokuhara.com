@@ -787,7 +787,7 @@ export default function Home() {
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
                     </div>
                     <h3>Fellowship-Trained Subspecialist</h3>
-                    <p>Dr. Tokuhara completed both an anterior segment fellowship under the legendary Dr. Howard Gimbel and a retina fellowship at Loma Linda University. That dual training gives him a perspective most cataract surgeons simply do not have, seeing the entire eye as a connected system rather than isolated parts.</p>
+                    <p>Dr. Tokuhara trained under the legendary Dr. Howard Gimbel during residency at Loma Linda University, then completed a retina fellowship for complex eye disease. That combination of cataract training under Gimbel and retina specialization gives him a perspective most cataract surgeons simply do not have, seeing the entire eye as a connected system rather than isolated parts.</p>
                   </TiltCard>
                 </StaggerItem>
                 <StaggerItem>
@@ -859,7 +859,7 @@ export default function Home() {
                   <p className="lux-section-eyebrow">Meet Your Surgeon</p>
                   <h2 className="lux-editorial-headline">Keith G. Tokuhara, M.D.</h2>
                   <p className="lux-editorial-prose">
-                    Fellowship-trained at Loma Linda University under the legendary Dr. Howard Gimbel. Named Top Doctor by Palm Springs Life every year since 2019. Recognized by NBC as the best cataract surgeon in the Coachella Valley.
+                    Residency-trained under the legendary Dr. Howard Gimbel, with a retina fellowship at Loma Linda University. Named Top Doctor by Palm Springs Life every year since 2019. Recognized by NBC as the best cataract surgeon in the Coachella Valley.
                   </p>
                   <p className="lux-editorial-prose">
                     But what actually matters happens in the exam room. The way I listen to your concerns. The way I explain your options without jargon or sales pressure. The way I plan your surgery as if it were for my own family.

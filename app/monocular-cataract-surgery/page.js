@@ -237,7 +237,7 @@ export default function MonocularCataractSurgeryPage() {
         <div className="container content-narrow">
           <h2 className="section-title">Why Dual Fellowship <strong>Training Matters</strong></h2>
           <p className="prose">
-            Most cataract surgeons complete a single fellowship in anterior segment surgery. I completed fellowship training that covers both cataract surgery and retinal surgery under Dr. Howard Gimbel at Loma Linda University - one of the most respected cataract training programs in the world.
+            Most cataract surgeons focus on one area. I trained in cataract surgery under Dr. Howard Gimbel during my residency at Loma Linda University, one of the most respected cataract training programs in the world, and then completed a retina fellowship for complex eye disease.
           </p>
           <p className="prose">
             For most cataract patients, retinal training is not specifically relevant. For monocular patients - especially those who have had prior retinal surgery, retinal detachments, or retained silicone oil - it changes everything. I understand the anatomy, the prior interventions, and the risks from the back of the eye, not just the front.

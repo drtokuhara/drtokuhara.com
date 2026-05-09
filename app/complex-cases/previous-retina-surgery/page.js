@@ -101,7 +101,7 @@ export default function PreviousRetinaSurgeryPage() {
 
           <h2 className="section-title">My Unique <strong>Advantage</strong></h2>
           <p className="prose">
-            Here is where my training makes a real difference. I am fellowship-trained in both cataract surgery and retina. I trained under Dr. Howard Gimbel, one of the most respected cataract surgeons in the world, and I completed a retina fellowship at Loma Linda University. I understand the posterior segment. I know what the retina surgeon did, why they did it, and how it changes the eye I am now operating on.
+            Here is where my training makes a real difference. I trained under Dr. Howard Gimbel during residency, one of the most respected cataract surgeons in the world, and I completed a retina fellowship at Loma Linda University. I understand the posterior segment. I know what the retina surgeon did, why they did it, and how it changes the eye I am now operating on.
           </p>
           <p className="prose">
             Most cataract surgeons have limited retinal training. They can handle a straightforward post-vitrectomy cataract, but when the case involves residual silicone oil, a scleral buckle, compromised zonules, or an unstable retina, they are outside their comfort zone. I am not. These are the cases I trained for.

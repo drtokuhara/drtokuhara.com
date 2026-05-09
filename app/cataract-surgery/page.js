@@ -414,7 +414,7 @@ export default function CataractSurgeryPage() {
             Desert Vision Center is physician-owned and fully independent. There is no corporate parent company, no private equity investors, and no one influencing which lenses I recommend or how I practice. Every surgical plan is built around your eyes, your lifestyle, and your goals.
           </p>
           <p className="prose">
-            I completed my fellowship training under Dr. Howard Gimbel at Loma Linda University, one of the most respected names in cataract surgery worldwide. That training, combined with years of specializing in complex and revision cases, shapes how I approach every patient. Even routine cataracts benefit from the kind of planning and judgment that comes from handling the hardest cases regularly.
+            I trained under Dr. Howard Gimbel during my residency at Loma Linda University. Gimbel is one of the most respected names in cataract surgery worldwide. That training, combined with a retina fellowship and years of specializing in complex and revision cases, shapes how I approach every patient. Even routine cataracts benefit from the kind of planning and judgment that comes from handling the hardest cases regularly.
           </p>
           <p className="prose">
             Named a Top Doctor by Palm Springs Life every year since 2019. Recognized by NBC as the best cataract surgeon in the Coachella Valley. First in the valley to perform Yamane secondary lens fixation, Vivity lens implantation, and PanOptix Pro trifocal implantation.

@@ -18,7 +18,7 @@ const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [
-    { '@type': 'Question', name: 'What is Dr. Tokuhara\'s training and background?', acceptedAnswer: { '@type': 'Answer', text: 'Dr. Keith Tokuhara is a fellowship-trained cataract and anterior segment surgeon. He completed his fellowship under Dr. Howard Gimbel, a pioneer in cataract surgery. He is also board certified in retina, making him uniquely qualified to manage complex cases involving both the front and back of the eye.' } },
+    { '@type': 'Question', name: 'What is Dr. Tokuhara\'s training and background?', acceptedAnswer: { '@type': 'Answer', text: 'Dr. Keith Tokuhara trained in cataract and anterior segment surgery under Dr. Howard Gimbel during his residency at Loma Linda University. He then completed a retina fellowship specializing in complex eye disease. He is board certified in retina, making him uniquely qualified to manage complex cases involving both the front and back of the eye.' } },
     { '@type': 'Question', name: 'Is Desert Vision Center a private or corporate practice?', acceptedAnswer: { '@type': 'Answer', text: 'Desert Vision Center is a fully independent, physician-owned practice. Dr. Tokuhara is not affiliated with any corporate or private-equity group. This independence means treatment decisions are based solely on what is best for the patient, not corporate quotas or profit targets.' } },
     { '@type': 'Question', name: 'Where is Desert Vision Center located?', acceptedAnswer: { '@type': 'Answer', text: 'Desert Vision Center is located in Rancho Mirage, California, serving the Coachella Valley and surrounding areas including Palm Springs, Palm Desert, Indian Wells, and La Quinta.' } },
     { '@type': 'Question', name: 'Does Dr. Tokuhara do international surgical missions?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Dr. Tokuhara participates in international surgical missions, bringing advanced eye care to underserved communities. These experiences reinforce his commitment to ethical, patient-centered care.' } },
@@ -85,7 +85,7 @@ export default function AboutPage() {
               I&rsquo;m a cataract surgeon in Rancho Mirage, California. I run Desert Vision Center, an independent practice that I took over in 2016 and built into what it is today. Patients come to me for advanced cataract surgery, complex cases that other surgeons won&rsquo;t touch, and honest answers about their eyes.
             </p>
             <p>
-              I did my residency and fellowship at Loma Linda University, where I trained under Dr. Howard Gimbel. If you know cataract surgery, you know that name. He&rsquo;s one of the most respected surgeons in the field, and training under him shaped the way I think about every case.
+              I did my residency at Loma Linda University, where I trained under Dr. Howard Gimbel. If you know cataract surgery, you know that name. He is one of the most respected surgeons in the field, and training under him shaped the way I think about every case. I then completed a retina fellowship, which gave me the ability to manage complex eye disease alongside cataract surgery.
             </p>
             <p>
               Palm Springs Life has named me a Top Doctor every year since 2019. I was recognized by NBC as the best cataract surgeon in the Coachella Valley. Those things are nice, but what actually matters is what happens in the operating room and the conversations we have before we get there.
