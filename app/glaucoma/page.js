@@ -85,6 +85,7 @@ export default function GlaucomaPage() {
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"
         style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+        bottomOverlay={<AudioNarration src="/audio/narrations/glaucoma.mp3" />}
       >
         <div className="container">
           <KineticText text="Glaucoma" Tag="h1" mode="word" staggerDelay={0.06} />
@@ -93,8 +94,6 @@ export default function GlaucomaPage() {
           </ScrollReveal>
         </div>
       </VideoBackground>
-
-      <AudioNarration src="/audio/narrations/glaucoma.mp3" title="Understanding Glaucoma" />
 
       {/* WHAT IS GLAUCOMA */}
       <section className="section section-white">

@@ -88,7 +88,7 @@ export default function IsCataractSurgerySafePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* HERO */}
-      <VideoBackground src="/media/ambient-desert-moonrise.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-desert-moonrise.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}} bottomOverlay={<AudioNarration src="/audio/narrations/is-cataract-surgery-safe.mp3" />}>
         <div className="container">
           <ScrollReveal direction="up" once={true}>
             <h1>Is Cataract Surgery <strong>Safe?</strong></h1>
@@ -96,8 +96,6 @@ export default function IsCataractSurgerySafePage() {
           </ScrollReveal>
         </div>
       </VideoBackground>
-
-      <AudioNarration src="/audio/narrations/is-cataract-surgery-safe.mp3" title="Is Cataract Surgery Safe?" />
 
       {/* THE SHORT ANSWER */}
       <section className="section section-white">

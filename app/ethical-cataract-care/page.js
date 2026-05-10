@@ -74,14 +74,12 @@ export default function EthicalCataractCare() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([{"@context": "https://schema.org", "@type": "VideoObject", "name": "Ethical Cataract Surgery & Patient-First Eye Care | Dr. Tokuhara at Ethics in Eyecare 2025", "description": "On June 28, 2025, local physicians and advocates gathered for the Ethics in Eyecare event hosted by Desert Vision Center", "thumbnailUrl": "https://i.ytimg.com/vi/sG3rN3WXW3o/maxresdefault.jpg", "uploadDate": "2025-06-29", "duration": "PT1M22S", "contentUrl": "https://www.youtube.com/watch?v=sG3rN3WXW3o", "embedUrl": "https://www.youtube.com/embed/sG3rN3WXW3o"}, {"@context": "https://schema.org", "@type": "VideoObject", "name": "The unspoken story of cataract referral kickbacks:   What you need to know", "description": "I get this question often enough from patients that I thought it would be worthwhile to make a video about it. It\u2019s the ", "thumbnailUrl": "https://i.ytimg.com/vi/oPV_lteXtzo/maxresdefault.jpg", "uploadDate": "2024-07-02", "duration": "PT4M51S", "contentUrl": "https://www.youtube.com/watch?v=oPV_lteXtzo", "embedUrl": "https://www.youtube.com/embed/oPV_lteXtzo"}]) }} />
 
       {/* HERO */}
-      <VideoBackground src="/media/ambient-desert-blue-hour.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-desert-blue-hour.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}} bottomOverlay={<AudioNarration src="/audio/narrations/ethical-cataract-care.mp3" />}>
         <div className="container">
           <ScrollReveal direction="up" once={true}><h1>Ethical <strong>Cataract Care</strong></h1></ScrollReveal>
           <p className="page-hero-sub">Your cataract surgeon should be chosen for their skill, not because someone got paid to send you there.</p>
         </div>
       </VideoBackground>
-
-      <AudioNarration src="/audio/narrations/ethical-cataract-care.mp3" title="Ethical Cataract Care" />
 
       {/* INTRO */}
       <section className="section section-white">

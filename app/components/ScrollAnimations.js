@@ -486,6 +486,7 @@ export function VideoBackground({
   overlayColor = '0, 20, 30',
   gradient = true,
   style = {},
+  bottomOverlay,
 }) {
   const videoRef = useRef(null);
 
@@ -532,6 +533,7 @@ export function VideoBackground({
       <div style={{ position: 'relative', zIndex: 2 }}>
         {children}
       </div>
+      {bottomOverlay}
     </div>
   );
 }

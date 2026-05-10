@@ -56,7 +56,7 @@ export default function AboutPage() {
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
       {/* PAGE HERO */}
-      <VideoBackground src="/media/ambient-desert-twilight-v2.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-desert-twilight-v2.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}} bottomOverlay={<AudioNarration src="/audio/narrations/about-why-the-desert.mp3" />}>
         <div className="container">
           <KineticText text="About Dr. Tokuhara" Tag="h1" mode="word" staggerDelay={0.06} />
           <ScrollReveal direction="up" delay={0.3} once={true}>
@@ -64,8 +64,6 @@ export default function AboutPage() {
           </ScrollReveal>
         </div>
       </VideoBackground>
-
-      <AudioNarration src="/audio/narrations/about-why-the-desert.mp3" title="Why the Desert" />
 
       {/* BIO SECTION */}
       <section className="section section-white">

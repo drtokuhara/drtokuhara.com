@@ -74,7 +74,7 @@ export default function CataractRecoveryPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "Cataract Recovery:  What happens after surgery in the recovery room?", "description": "After cataract surgery, you're brought to the recovery unit.  In this video, Dr. Tokuhara talks to the surgery nurses ab", "thumbnailUrl": "https://i.ytimg.com/vi/7mkouTcQWOo/maxresdefault.jpg", "uploadDate": "2023-03-12", "duration": "PT3M46S", "contentUrl": "https://www.youtube.com/watch?v=7mkouTcQWOo", "embedUrl": "https://www.youtube.com/embed/7mkouTcQWOo"}) }} />
 
       {/* HERO */}
-      <VideoBackground src="/media/ambient-desert-sunrise-v2.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-desert-sunrise-v2.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}} bottomOverlay={<AudioNarration src="/audio/narrations/cataract-recovery.mp3" />}>
         <div className="container">
           <ScrollReveal direction="up" once={true}>
             <h1>Cataract <strong>Recovery</strong></h1>
@@ -82,8 +82,6 @@ export default function CataractRecoveryPage() {
           <p className="page-hero-sub">What actually happens after surgery - in the recovery room and when you get home.</p>
         </div>
       </VideoBackground>
-
-      <AudioNarration src="/audio/narrations/cataract-recovery.mp3" title="Cataract Surgery Recovery" />
 
       {/* INTRO */}
       <section className="section section-white">

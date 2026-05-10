@@ -89,6 +89,7 @@ export default function CataractSurgeryPage() {
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"
         style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+        bottomOverlay={<AudioNarration src="/audio/narrations/cataract-surgery.mp3" />}
       >
         <div className="container">
           <KineticText text="Cataract Surgery" Tag="h1" mode="word" staggerDelay={0.06} />
@@ -97,8 +98,6 @@ export default function CataractSurgeryPage() {
           </ScrollReveal>
         </div>
       </VideoBackground>
-
-      <AudioNarration src="/audio/narrations/cataract-surgery.mp3" title="What Is Cataract Surgery Really Like?" />
 
       {/* WHAT ARE CATARACTS */}
       <section className="section section-white">

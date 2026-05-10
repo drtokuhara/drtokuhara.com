@@ -74,7 +74,7 @@ export default function ToricLensAstigmatismPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "Cataracts and Toric Lens Implants for Patients with Astigmatism", "description": "The astigmatism lens implant used in cataract surgery is called a toric lens.  In this video, Dr. Tokuhara reviews astig", "thumbnailUrl": "https://i.ytimg.com/vi/uCbLzD-KXe4/maxresdefault.jpg", "uploadDate": "2020-06-29", "duration": "PT8M28S", "contentUrl": "https://www.youtube.com/watch?v=uCbLzD-KXe4", "embedUrl": "https://www.youtube.com/embed/uCbLzD-KXe4"}) }} />
 
       {/* HERO */}
-      <VideoBackground src="/media/ambient-polished-surface.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-polished-surface.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}} bottomOverlay={<AudioNarration src="/audio/narrations/toric-lens-astigmatism.mp3" />}>
         <div className="container">
           <ScrollReveal direction="up" once={true}>
             <h1>Toric Lens Implants <strong>and Astigmatism</strong></h1>
@@ -82,8 +82,6 @@ export default function ToricLensAstigmatismPage() {
           <p className="page-hero-sub">If you have been told you have astigmatism, this page is written for you.</p>
         </div>
       </VideoBackground>
-
-      <AudioNarration src="/audio/narrations/toric-lens-astigmatism.mp3" title="Toric Lenses and Astigmatism" />
 
       {/* INTRO */}
       <section className="section section-white">

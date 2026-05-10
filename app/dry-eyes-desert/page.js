@@ -85,6 +85,7 @@ export default function DryEyesDesertPage() {
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"
         style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+        bottomOverlay={<AudioNarration src="/audio/narrations/dry-eyes-desert.mp3" />}
       >
         <div className="container">
           <KineticText text="Dry Eyes and the Desert" Tag="h1" mode="word" staggerDelay={0.06} />
@@ -93,8 +94,6 @@ export default function DryEyesDesertPage() {
           </ScrollReveal>
         </div>
       </VideoBackground>
-
-      <AudioNarration src="/audio/narrations/dry-eyes-desert.mp3" title="Dry Eyes and the Desert" />
 
       {/* THE DESERT DIFFERENCE */}
       <section className="section section-white">

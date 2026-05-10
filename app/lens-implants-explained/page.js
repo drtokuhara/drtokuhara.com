@@ -57,6 +57,7 @@ export default function LensImplantsExplained() {
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"
         style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+        bottomOverlay={<AudioNarration src="/audio/narrations/lens-implants-explained.mp3" />}
       >
         <div className="container">
           <KineticText text="Lens Implants Explained" Tag="h1" mode="word" staggerDelay={0.06} />
@@ -65,8 +66,6 @@ export default function LensImplantsExplained() {
           </ScrollReveal>
         </div>
       </VideoBackground>
-
-      <AudioNarration src="/audio/narrations/lens-implants-explained.mp3" title="Lens Implants Explained" />
 
       <section className="section section-white">
         <div className="container content-narrow">

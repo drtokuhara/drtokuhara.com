@@ -43,14 +43,12 @@ export default function UnderstandingCataracts() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageBreadcrumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* HERO */}
-      <VideoBackground src="/media/ambient-iris-closeup-v2.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-iris-closeup-v2.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}} bottomOverlay={<AudioNarration src="/audio/narrations/understanding-cataracts.mp3" />}>
         <div className="container">
           <ScrollReveal direction="up" once={true}><h1>Understanding <strong>Cataracts</strong></h1></ScrollReveal>
           <p className="page-hero-sub">What your eye doctor may not have time to explain - and what you actually need to know before making any decisions.</p>
         </div>
       </VideoBackground>
-
-      <AudioNarration src="/audio/narrations/understanding-cataracts.mp3" title="Understanding Cataracts" />
 
       {/* HERO IMAGE */}
       <section className="section section-white" style={{paddingBottom: 0}}>

@@ -51,14 +51,12 @@ export default function ClearInADayPage() {
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
       {/* PAGE HERO */}
-      <VideoBackground src="/media/ambient-precision-instrument.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-precision-instrument.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}} bottomOverlay={<AudioNarration src="/audio/narrations/clear-in-a-day.mp3" />}>
         <div className="container">
           <ScrollReveal direction="up" once={true}><h1>CLEAR in a Day<sup>&trade;</sup></h1></ScrollReveal>
           <p className="page-hero-sub">Both eyes. One surgeon. One day. A smarter path to clear vision.</p>
         </div>
       </VideoBackground>
-
-      <AudioNarration src="/audio/narrations/clear-in-a-day.mp3" title="CLEAR in a Day: Same-Day Bilateral Surgery" />
 
       {/* WHAT IS CLEAR IN A DAY */}
       <section className="section section-white">
