@@ -109,6 +109,15 @@ export default function sitemap() {
     { path: '/cataract-surgeon-la-quinta', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/cataract-surgeon-palm-springs', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/cataract-surgeon-cathedral-city', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/cataract-surgeon-indio', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/cataract-surgeon-coachella', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/cataract-surgeon-desert-hot-springs', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/cataract-surgeon-bermuda-dunes', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/cataract-surgeon-thousand-palms', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/cataract-surgeon-thermal-mecca', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/cataract-surgeon-redlands', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/cataract-surgeon-yucaipa', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/cataract-surgeon-calimesa', priority: 0.7, changeFrequency: 'monthly' },
   ];
 
   // Utility pages

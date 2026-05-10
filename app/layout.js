@@ -234,6 +234,15 @@ export default function RootLayout({ children }) {
                   <Link href="/cataract-surgeon-indian-wells">Indian Wells</Link>
                   <Link href="/cataract-surgeon-la-quinta">La Quinta</Link>
                   <Link href="/cataract-surgeon-cathedral-city">Cathedral City</Link>
+                  <Link href="/cataract-surgeon-indio">Indio</Link>
+                  <Link href="/cataract-surgeon-coachella">Coachella</Link>
+                  <Link href="/cataract-surgeon-desert-hot-springs">Desert Hot Springs</Link>
+                  <Link href="/cataract-surgeon-bermuda-dunes">Bermuda Dunes</Link>
+                  <Link href="/cataract-surgeon-thousand-palms">Thousand Palms</Link>
+                  <Link href="/cataract-surgeon-thermal-mecca">Thermal &amp; Mecca</Link>
+                  <Link href="/cataract-surgeon-redlands">Redlands</Link>
+                  <Link href="/cataract-surgeon-yucaipa">Yucaipa</Link>
+                  <Link href="/cataract-surgeon-calimesa">Calimesa</Link>
                 </div>
                 <div className="footer-col">
                   <h4>Social</h4>
