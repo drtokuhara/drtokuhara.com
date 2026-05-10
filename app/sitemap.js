@@ -101,6 +101,16 @@ export default function sitemap() {
     '/insights/twenty-years-forward',
   ].map((path) => ({ path, priority: 0.6, changeFrequency: 'monthly' }));
 
+  // City landing pages - local SEO
+  const cityPages = [
+    { path: '/cataract-surgeon-rancho-mirage', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/cataract-surgeon-palm-desert', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/cataract-surgeon-indian-wells', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/cataract-surgeon-la-quinta', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/cataract-surgeon-palm-springs', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/cataract-surgeon-cathedral-city', priority: 0.7, changeFrequency: 'monthly' },
+  ];
+
   // Utility pages
   const utilityPages = [
     { path: '/app-privacy', priority: 0.3, changeFrequency: 'yearly' },
@@ -113,6 +123,7 @@ export default function sitemap() {
     ...conditionPages,
     ...complexCasePages,
     ...insightPages,
+    ...cityPages,
     ...utilityPages,
   ];
 

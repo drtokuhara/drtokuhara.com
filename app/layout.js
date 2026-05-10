@@ -227,6 +227,15 @@ export default function RootLayout({ children }) {
                   <a href="tel:7603404700">760.340.4700</a>
                 </div>
                 <div className="footer-col">
+                  <h4>Locations We Serve</h4>
+                  <Link href="/cataract-surgeon-rancho-mirage">Rancho Mirage</Link>
+                  <Link href="/cataract-surgeon-palm-desert">Palm Desert</Link>
+                  <Link href="/cataract-surgeon-palm-springs">Palm Springs</Link>
+                  <Link href="/cataract-surgeon-indian-wells">Indian Wells</Link>
+                  <Link href="/cataract-surgeon-la-quinta">La Quinta</Link>
+                  <Link href="/cataract-surgeon-cathedral-city">Cathedral City</Link>
+                </div>
+                <div className="footer-col">
                   <h4>Social</h4>
                   <a href="https://x.com/DoctorTokuhara">X / Twitter</a>
                   <a href="https://youtube.com/@desertvisioncenter">YouTube</a>
