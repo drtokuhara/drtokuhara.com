@@ -54,6 +54,8 @@ export default function sitemap() {
     { path: '/yag-laser-capsulotomy', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/yamane-technique', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/diabetic-retinopathy', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/glaucoma', priority: 0.8, changeFrequency: 'monthly' },
+    { path: '/dry-eyes-desert', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/dust-in-eyes', priority: 0.5, changeFrequency: 'monthly' },
   ];
 

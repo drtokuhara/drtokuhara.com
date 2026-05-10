@@ -97,6 +97,8 @@ export default function RootLayout({ children }) {
                     <Link href="/yag-laser-capsulotomy">YAG Laser / PCO</Link>
                     <Link href="/blurry-vision-after-cataract-surgery">Blurry Vision After Surgery</Link>
                     <Link href="/halos-after-cataract-surgery">Halos After Surgery</Link>
+                    <Link href="/glaucoma">Glaucoma</Link>
+                    <Link href="/dry-eyes-desert">Dry Eyes / Desert</Link>
                     <Link href="/dust-in-eyes">Dust in Eyes</Link>
                     <Link href="/monocular-cataract-surgery">Monocular Eye Surgery</Link>
                     <Link href="/yamane-technique">Dislocated Lens / Yamane</Link>
