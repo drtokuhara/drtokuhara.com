@@ -503,6 +503,14 @@ export default function CataractSurgeryComplications() {
               <h3>Cataract Surgery</h3>
               <p>What the standard procedure involves from start to finish.</p>
             </Link>
+            <Link href="/insights/when-guilt-replaces-explanation" className="related-card">
+              <h3>When Guilt Replaces Explanation</h3>
+              <p>What happens when a complication is met with blame instead of a plan.</p>
+            </Link>
+            <Link href="/insights/what-i-learned-from-the-surgeon-who-trained-me" className="related-card">
+              <h3>What I Learned from the Surgeon Who Trained Me</h3>
+              <p>The lessons from Dr. Gimbel that shape how I handle every complication.</p>
+            </Link>
           </div>
         </div>
       </section>

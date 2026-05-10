@@ -321,6 +321,31 @@ export default function ClearInADayPage() {
 
             <PageFAQ faqs={pageFaqs} />
 
+      {/* RELATED READING */}
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
+          <div className="related-grid">
+            <Link href="/insights/do-i-really-need-surgery" className="related-card">
+              <h3>Do I Really Need Surgery?</h3>
+              <p>A patient came in convinced he needed cataract surgery. His eyes told a different story.</p>
+            </Link>
+            <Link href="/insights/five-questions-before-surgery" className="related-card">
+              <h3>Five Questions Before Surgery</h3>
+              <p>The questions you should ask before anyone operates on your eyes.</p>
+            </Link>
+            <Link href="/cataract-surgery" className="related-card">
+              <h3>Cataract Surgery</h3>
+              <p>What the procedure involves from start to finish, in plain language.</p>
+            </Link>
+            <Link href="/cataract-recovery" className="related-card">
+              <h3>Recovery</h3>
+              <p>What to expect after surgery and when to call.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
 {/* CTA */}
       <section className="cta">
         <div className="container">

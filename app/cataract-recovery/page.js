@@ -280,6 +280,14 @@ export default function CataractRecoveryPage() {
               <h3>Cataract Surgery</h3>
               <p>What the procedure itself involves, from start to finish, in plain language.</p>
             </Link>
+            <Link href="/insights/when-patients-wait" className="related-card">
+              <h3>When Patients Wait</h3>
+              <p>What happens when patients delay surgery, and why timing matters more than you think.</p>
+            </Link>
+            <Link href="/insights/permission-to-see-again" className="related-card">
+              <h3>Permission to See Again</h3>
+              <p>Some patients need more than a new lens. They need permission to believe it will work.</p>
+            </Link>
           </div>
         </div>
       </section>

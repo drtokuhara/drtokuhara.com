@@ -253,6 +253,14 @@ export default function ChoosingYourSurgeon() {
               <h3>When Guilt Replaces Explanation</h3>
               <p>A story about what happens when a surgeon blames the patient instead of solving the problem.</p>
             </Link>
+            <Link href="/insights/when-the-surgeon-says-wait" className="related-card">
+              <h3>When the Surgeon Says Wait</h3>
+              <p>Sometimes the best surgical decision is to not operate yet.</p>
+            </Link>
+            <Link href="/insights/the-consultation-that-changed-everything" className="related-card">
+              <h3>The Consultation That Changed Everything</h3>
+              <p>What happens when a surgeon takes the time to listen before picking up a scalpel.</p>
+            </Link>
           </div>
         </div>
       </section>

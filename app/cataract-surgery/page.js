@@ -460,6 +460,18 @@ export default function CataractSurgeryPage() {
               <h3>Choosing Your Surgeon</h3>
               <p>A framework for evaluating who should operate on your eyes.</p>
             </Link>
+            <Link href="/insights/do-i-really-need-surgery" className="related-card">
+              <h3>Do I Really Need Surgery?</h3>
+              <p>A patient came in convinced he needed cataract surgery. His eyes told a different story.</p>
+            </Link>
+            <Link href="/insights/the-consultation-that-changed-everything" className="related-card">
+              <h3>The Consultation That Changed Everything</h3>
+              <p>What happens when a surgeon takes the time to listen before picking up a scalpel.</p>
+            </Link>
+            <Link href="/insights/five-questions-before-surgery" className="related-card">
+              <h3>Five Questions Before Surgery</h3>
+              <p>The questions you should ask before anyone operates on your eyes.</p>
+            </Link>
           </div>
         </div>
       </section>

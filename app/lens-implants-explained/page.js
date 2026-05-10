@@ -358,6 +358,18 @@ export default function LensImplantsExplained() {
               <h3>The Reader Who Almost Gave Up Her Books</h3>
               <p>A story about a patient who didn't know she had a choice.</p>
             </Link>
+            <Link href="/insights/are-premium-lenses-worth-it" className="related-card">
+              <h3>Are Premium Lenses Worth It?</h3>
+              <p>An honest reflection on premium vs standard lenses, and when each makes sense.</p>
+            </Link>
+            <Link href="/insights/three-things-patients-say" className="related-card">
+              <h3>Three Things Patients Say</h3>
+              <p>The phrases I hear most often in consultations, and what they really mean.</p>
+            </Link>
+            <Link href="/insights/the-lens-nobody-talks-about" className="related-card">
+              <h3>The Lens Nobody Talks About</h3>
+              <p>Why the most commonly implanted lens rarely gets a conversation.</p>
+            </Link>
           </div>
         </div>
       </section>

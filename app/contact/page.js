@@ -1,5 +1,5 @@
 import ContactContent from './ContactContent';
-import { medicalOrganizationSchema, breadcrumbSchema } from '../schema';
+import { medicalOrganizationSchema, medicalBusinessSchema, breadcrumbSchema } from '../schema';
 
 const contactBreadcrumbs = breadcrumbSchema([
   { name: 'Home', href: '/' },
@@ -23,6 +23,7 @@ export default function ContactPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalOrganizationSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactBreadcrumbs) }} />
       <ContactContent />
     </>

@@ -252,6 +252,14 @@ export default function ToricLensAstigmatismPage() {
               <h3>Understand Your Options</h3>
               <p>A guided look at the decisions you will make before cataract surgery, and how to think through them.</p>
             </Link>
+            <Link href="/insights/the-number-that-wasnt-the-problem" className="related-card">
+              <h3>The Number That Wasn't the Problem</h3>
+              <p>When the measurements look right but something still doesn't add up.</p>
+            </Link>
+            <Link href="/insights/are-premium-lenses-worth-it" className="related-card">
+              <h3>Are Premium Lenses Worth It?</h3>
+              <p>An honest reflection on premium vs standard lenses, and when each makes sense.</p>
+            </Link>
           </div>
         </div>
       </section>

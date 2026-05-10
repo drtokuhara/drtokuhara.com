@@ -303,6 +303,14 @@ export default function EthicalCataractCare() {
               <h3>Cataract Surgery</h3>
               <p>What happens during the procedure, from consultation to recovery.</p>
             </Link>
+            <Link href="/insights/when-more-isnt-better" className="related-card">
+              <h3>When More Isn't Better</h3>
+              <p>Why doing less can be the most ethical surgical decision.</p>
+            </Link>
+            <Link href="/insights/the-consultation-that-changed-everything" className="related-card">
+              <h3>The Consultation That Changed Everything</h3>
+              <p>What happens when a surgeon takes the time to listen before picking up a scalpel.</p>
+            </Link>
           </div>
         </div>
       </section>

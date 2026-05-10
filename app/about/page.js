@@ -331,6 +331,31 @@ export default function AboutPage() {
 
             <PageFAQ faqs={pageFaqs} />
 
+      {/* RELATED READING */}
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
+          <div className="related-grid">
+            <Link href="/insights/what-i-learned-from-the-surgeon-who-trained-me" className="related-card">
+              <h3>What I Learned from the Surgeon Who Trained Me</h3>
+              <p>The lessons from Dr. Gimbel that shape how I approach every case.</p>
+            </Link>
+            <Link href="/patient-stories" className="related-card">
+              <h3>Patient Stories</h3>
+              <p>Real experiences from real patients, in their own words.</p>
+            </Link>
+            <Link href="/insights/the-consultation-that-changed-everything" className="related-card">
+              <h3>The Consultation That Changed Everything</h3>
+              <p>What happens when a surgeon takes the time to listen before picking up a scalpel.</p>
+            </Link>
+            <Link href="/ethical-cataract-care" className="related-card">
+              <h3>Ethical Cataract Care</h3>
+              <p>Why financial incentives should never influence your surgical recommendation.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
 {/* CTA */}
       <section className="cta">
         <div className="container">

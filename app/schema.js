@@ -4,11 +4,11 @@ export const physicianSchema = {
   '@context': 'https://schema.org',
   '@type': 'Physician',
   name: 'Dr. Keith Tokuhara',
-  alternateName: 'Keith Tokuhara, MD',
-  description: 'Fellowship-trained cataract surgeon specializing in complex and revision cataract surgery, advanced lens implants, and personalized patient care at Desert Vision Center in the Coachella Valley.',
-  url: 'https://drtokuhara.com',
+  alternateName: 'Keith G. Tokuhara, MD',
+  description: 'Fellowship-trained cataract and anterior segment surgeon specializing in complex cataract surgery, lens implants, and revision cases. Board certified in retina.',
+  url: 'https://drtokuhara.com/about',
   image: 'https://drtokuhara.com/dr-tokuhara-hero.jpg',
-  telephone: '+17603403937',
+  telephone: '+17603404700',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '35900 Bob Hope Dr, Suite 175',
@@ -20,17 +20,21 @@ export const physicianSchema = {
   geo: {
     '@type': 'GeoCoordinates',
     latitude: 33.7397,
-    longitude: -116.4132,
+    longitude: -116.4128,
   },
-  medicalSpecialty: 'Ophthalmology',
+  medicalSpecialty: ['Ophthalmology', 'Cataract Surgery', 'Anterior Segment Surgery', 'Retina'],
+  hospitalAffiliation: {
+    '@type': 'Hospital',
+    name: 'Desert Vision Center',
+  },
   alumniOf: [
     { '@type': 'EducationalOrganization', name: 'Loma Linda University' },
     { '@type': 'EducationalOrganization', name: 'University of Hawaii, John A. Burns School of Medicine' },
     { '@type': 'EducationalOrganization', name: 'University of California, Riverside' },
   ],
   award: [
-    'Palm Springs Life Top Doctor (2019-2026)',
-    'NBC Best Cataract Surgeon in the Coachella Valley',
+    'Palm Springs Life Top Doctor 2019-2026',
+    'NBC Best Cataract Surgeon Coachella Valley',
   ],
   knowsAbout: [
     'Cataract Surgery',
@@ -44,6 +48,7 @@ export const physicianSchema = {
     'Iris Reconstruction',
   ],
   sameAs: [
+    'https://desertvisioncenter.com/ophthalmologist-dr-tokuhara/',
     'https://x.com/DoctorTokuhara',
     'https://youtube.com/@desertvisioncenter',
   ],
@@ -82,7 +87,7 @@ export const medicalOrganizationSchema = {
   name: 'Desert Vision Center',
   description: 'Physician-owned, independent eye care practice specializing in advanced cataract surgery and complex revision cases in Rancho Mirage, California.',
   url: 'https://drtokuhara.com',
-  telephone: '+17603403937',
+  telephone: '+17603404700',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '35900 Bob Hope Dr, Suite 175',
@@ -94,7 +99,7 @@ export const medicalOrganizationSchema = {
   geo: {
     '@type': 'GeoCoordinates',
     latitude: 33.7397,
-    longitude: -116.4132,
+    longitude: -116.4128,
   },
   medicalSpecialty: 'Ophthalmology',
   isAcceptingNewPatients: true,
@@ -103,6 +108,38 @@ export const medicalOrganizationSchema = {
     name: 'Dr. Keith Tokuhara',
     url: 'https://drtokuhara.com/about',
   },
+};
+
+export const medicalBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'MedicalBusiness',
+  name: 'Desert Vision Center',
+  alternateName: 'DVC',
+  url: 'https://drtokuhara.com',
+  telephone: '+17603404700',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '35900 Bob Hope Dr, Suite 175',
+    addressLocality: 'Rancho Mirage',
+    addressRegion: 'CA',
+    postalCode: '92270',
+    addressCountry: 'US',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 33.7397,
+    longitude: -116.4128,
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '08:00',
+      closes: '17:00',
+    },
+  ],
+  medicalSpecialty: 'Ophthalmology',
+  priceRange: '$$',
 };
 
 export function articleSchema({ title, description, slug, datePublished }) {
