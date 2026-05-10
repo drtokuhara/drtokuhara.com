@@ -8,6 +8,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import PageFAQ from '../components/PageFAQ';
 import AudioNarration from '../components/AudioNarration';
 
 const jsonLd = [
@@ -43,6 +44,13 @@ export const metadata = {
     url: 'https://drtokuhara.com/clear-in-a-day',
   },
 };
+
+
+const pageFaqs = [
+  { q: 'Is same-day bilateral cataract surgery safe?', a: 'Yes. Same-day bilateral cataract surgery (CLEAR in a Day) is performed with strict safety protocols including separate sterile setups for each eye. Large clinical studies show comparable safety and outcomes to traditional sequential surgery, with the added benefit of faster visual recovery and fewer total visits.' },
+  { q: 'Can both eyes be done on the same day?', a: 'Yes, for eligible patients. CLEAR in a Day performs cataract surgery on both eyes in a single surgical visit. Each eye is treated as a completely separate procedure with independent sterilization. Not all patients are candidates, and Dr. Tokuhara evaluates eligibility based on individual eye health and risk factors.' },
+  { q: 'What are the benefits of same-day bilateral cataract surgery?', a: 'Benefits include faster overall recovery, fewer surgical visits, reduced time off work, quicker visual balance between both eyes, and less total disruption to your daily life. Many patients appreciate completing the process in a single day rather than scheduling two separate surgeries weeks apart.' },
+];
 
 export default function ClearInADayPage() {
   return (
@@ -311,7 +319,9 @@ export default function ClearInADayPage() {
         </div>
       </section>
 
-      {/* CTA */}
+            <PageFAQ faqs={pageFaqs} />
+
+{/* CTA */}
       <section className="cta">
         <div className="container">
           <h2>Is CLEAR in a Day <strong>right for you?</strong></h2>

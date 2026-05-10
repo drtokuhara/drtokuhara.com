@@ -8,6 +8,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import PageFAQ from '../components/PageFAQ';
 import AudioNarration from '../components/AudioNarration';
 
 const faqSchema = {
@@ -63,6 +64,16 @@ const pageBreadcrumbs = breadcrumbSchema([
   { name: 'Home', href: '/' },
   { name: 'Complications', href: '/cataract-surgery-complications' },
 ]);
+
+
+const pageFaqs = [
+  { q: 'How common are cataract surgery complications?', a: 'Cataract surgery has a success rate exceeding 99%. Serious complications like posterior capsule rupture occur in approximately 1-3% of cases. Harvard\'s Massachusetts Eye and Ear reported their rate at 1.7% in 2018. While rare, having an experienced surgeon who can manage complications is essential.' },
+  { q: 'What is posterior capsule rupture during cataract surgery?', a: 'Posterior capsule rupture occurs when the thin membrane behind the cataract breaks during surgery. This can allow cataract fragments to fall toward the retina, cause vitreous to pull forward (risking retinal detachment), or compromise the support structure for the lens implant. An experienced surgeon can manage this during the procedure.' },
+  { q: 'Can iris damage from cataract surgery be repaired?', a: 'Yes. Iris damage can be repaired with microsurgical suturing techniques. Dr. Tokuhara regularly performs iris repair surgery for patients who experienced complications elsewhere, restoring pupil shape and reducing debilitating glare symptoms.' },
+  { q: 'What is a dislocated lens implant and how is it fixed?', a: 'A dislocated lens implant occurs when the artificial lens shifts or falls out of position, sometimes years after surgery. Dr. Tokuhara uses the Yamane technique, a sutureless method that anchors the lens haptics directly into the sclera, to reposition or replace dislocated lenses.' },
+  { q: 'Can I still get a premium lens if I had a complication?', a: 'In most cases of posterior capsule rupture, premium lenses cannot be placed traditionally. However, advanced techniques like reverse optic capture and intrascleral fixation can provide alternative options. Each case requires individual evaluation.' },
+  { q: 'What should I do if I had a complication from cataract surgery elsewhere?', a: 'Dr. Tokuhara regularly sees patients for second-opinion consultations after complications from surgery performed elsewhere. With fellowship training in both cataract surgery and medical retina, he is uniquely qualified to evaluate and manage these situations. Contact Desert Vision Center to schedule a consultation.' },
+];
 
 export default function CataractSurgeryComplications() {
   return (
@@ -461,7 +472,9 @@ export default function CataractSurgeryComplications() {
         </div>
       </section>
 
-      {/* RELATED */}
+            <PageFAQ faqs={pageFaqs} />
+
+{/* RELATED */}
       <section className="section section-white">
         <div className="container content-narrow">
           <h2 className="section-title">Learn <strong>More</strong></h2>

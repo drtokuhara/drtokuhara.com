@@ -8,6 +8,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import PageFAQ from '../components/PageFAQ';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -230,6 +231,13 @@ export default function YamaneTechniquePage() {
           </div>
         </div>
       </section>
+
+      <PageFAQ faqs={[
+        { q: 'What is the Yamane technique for dislocated lens implants?', a: 'The Yamane technique is a sutureless intrascleral haptic fixation procedure. Each haptic of the lens is externalized through a small scleral tunnel, and a tiny flange is created using thermal cautery. The flange is tucked under the conjunctiva, holding the lens securely without any sutures.' },
+        { q: 'Why do lens implants dislocate after cataract surgery?', a: 'A lens implant can dislocate years or even decades after successful cataract surgery. Causes include ocular trauma, progressive weakening of the zonular fibers, conditions like pseudoexfoliation syndrome, and prior retina surgery. The lens may shift gradually or dislodge suddenly.' },
+        { q: 'How long does Yamane technique surgery take to recover from?', a: 'Recovery is similar to recovery from cataract surgery. Most patients notice improvement in vision within the first few days. Full stability typically occurs over several weeks. Because there are no sutures, there is less risk of suture-related complications.' },
+        { q: 'Is the Yamane technique better than suture fixation for dislocated lenses?', a: 'The Yamane technique offers several advantages over older suture-based fixation. Sutures can erode, break, or cause long-term inflammation. The Yamane flanges are permanent and do not degrade over time. Dr. Tokuhara was the first surgeon in the Coachella Valley to perform this technique.' },
+      ]} />
 
       {/* RELATED */}
       <section className="section section-white">

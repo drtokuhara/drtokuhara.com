@@ -7,6 +7,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import PageFAQ from '../components/PageFAQ';
 import AudioNarration from '../components/AudioNarration';
 
 export const metadata = {
@@ -36,6 +37,14 @@ const pageBreadcrumbs = breadcrumbSchema([
   { name: 'Home', href: '/' },
   { name: 'Understanding Cataracts', href: '/understanding-cataracts' },
 ]);
+
+
+const pageFaqs = [
+  { q: 'What causes cataracts?', a: 'Cataracts are caused by the natural breakdown of proteins in the lens of the eye over time. The lens gradually goes from clear to cloudy. Age is the primary factor, though UV exposure, diabetes, certain medications, and genetics can accelerate the process.' },
+  { q: 'What do cataracts look like to the patient?', a: 'Patients describe cataracts as looking through a foggy window. Colors appear duller, night driving becomes difficult with glare and halos, and everything seems to need cleaning. The change is so gradual that many patients do not realize how much vision they have lost until after surgery.' },
+  { q: 'Can cataracts be treated without surgery?', a: 'Currently, surgery is the only proven treatment for cataracts. There are no eye drops, medications, or exercises that can reverse a cataract. However, cataracts do not require immediate treatment. Surgery is recommended when vision loss affects your daily life and activities.' },
+  { q: 'How fast do cataracts progress?', a: 'Cataract progression varies widely. Some develop over years and barely change, while others progress noticeably within months. There is no universal timeline, and cataracts do not punish you for waiting. Your doctor should monitor them regularly.' },
+];
 
 export default function UnderstandingCataracts() {
   return (
@@ -252,7 +261,9 @@ export default function UnderstandingCataracts() {
         </div>
       </section>
 
-      {/* RELATED */}
+            <PageFAQ faqs={pageFaqs} />
+
+{/* RELATED */}
       <section className="section section-warm">
         <div className="container content-narrow">
           <h2 className="section-title">Learn <strong>More</strong></h2>

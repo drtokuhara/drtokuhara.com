@@ -8,6 +8,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import PageFAQ from '../components/PageFAQ';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -232,6 +233,13 @@ export default function LaserCataractSurgery() {
           </div>
         </div>
       </section>
+
+      <PageFAQ faqs={[
+        { q: 'What is laser cataract surgery?', a: 'Laser cataract surgery uses a femtosecond laser to perform key steps of the procedure with computer-guided precision. The laser creates the incision, opens the capsule, and breaks the cataract into smaller pieces before the surgeon completes the removal and lens implant placement.' },
+        { q: 'Is laser cataract surgery better than traditional?', a: 'Laser cataract surgery offers enhanced precision for certain steps, particularly capsulotomy creation and astigmatism correction. For most patients, the visual outcomes are comparable to skilled traditional surgery. The laser is most beneficial for patients receiving premium lens implants.' },
+        { q: 'Is laser cataract surgery painful?', a: 'No. Like traditional cataract surgery, the laser-assisted procedure uses numbing drops and mild sedation. Most patients feel pressure but no pain. The laser portion adds only a few minutes to the procedure.' },
+        { q: 'Does insurance cover laser cataract surgery?', a: 'Insurance typically covers the standard cataract surgery portion. The femtosecond laser component is usually considered an upgrade and may involve an additional out-of-pocket cost. Dr. Tokuhara discusses all costs transparently during the consultation at Desert Vision Center.' },
+      ]} />
 
       {/* RELATED */}
       <section className="section section-warm">

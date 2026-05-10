@@ -9,6 +9,7 @@ import {
   VideoBackground,
 } from '../components/ScrollAnimations';
 import AudioNarration from '../components/AudioNarration';
+import PageFAQ from '../components/PageFAQ';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -226,6 +227,13 @@ export default function ToricLensAstigmatismPage() {
           </div>
         </div>
       </section>
+
+      <PageFAQ faqs={[
+        { q: 'What is astigmatism and how does it affect vision?', a: 'Astigmatism occurs when the cornea is curved more steeply in one direction than another, like a football rather than a basketball. This unequal curvature means light focuses at multiple points rather than one, causing blur and distortion at all distances.' },
+        { q: 'How does a toric lens implant reduce astigmatism?', a: 'A toric lens implant has different optical power in different meridians, designed to neutralize the unequal curvature of the cornea. During implantation, the lens is rotated to a specific axis where its corrective power aligns precisely with the axis of the corneal astigmatism.' },
+        { q: 'Am I a candidate for a toric lens even if I have macular degeneration?', a: 'Yes. A toric lens can still reduce astigmatism even in patients with macular degeneration or other retinal conditions. While the macular condition may limit overall visual acuity, reducing astigmatism can still improve the quality of whatever vision is available.' },
+        { q: 'What measurements are needed before placing a toric lens?', a: 'Accurate toric lens placement requires detailed corneal topography to map the shape and axis of the astigmatism, as well as biometry to calculate the correct lens power. Dr. Tokuhara reviews each patient\'s measurements personally on Sunday evenings before surgery to confirm the toric axis.' },
+      ]} />
 
       {/* RELATED */}
       <section className="section section-warm">

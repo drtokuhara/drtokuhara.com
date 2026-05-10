@@ -9,6 +9,7 @@ import {
   VideoBackground,
 } from '../components/ScrollAnimations';
 import AudioNarration from '../components/AudioNarration';
+import PageFAQ from '../components/PageFAQ';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -254,6 +255,13 @@ export default function CataractRecoveryPage() {
           </div>
         </div>
       </section>
+
+      <PageFAQ faqs={[
+        { q: 'What happens in the recovery room after cataract surgery?', a: 'After cataract surgery, you are moved to the recovery room where a nurse checks your vital signs, you receive a snack and something to drink, and your IV is removed. A protective shield is taped over your eye. You spend approximately 20 minutes in recovery before a family member or driver takes you home.' },
+        { q: 'Is the anesthesia for cataract surgery like general anesthesia?', a: 'No. Cataract surgery uses a much lighter form of sedation than general anesthesia, typically IV sedation combined with numbing eye drops. You are relaxed and comfortable but not deeply unconscious. Most patients describe feeling calm and drowsy, not knocked out. Recovery is much faster.' },
+        { q: 'When can I resume normal activities after cataract surgery?', a: 'Most patients can read, watch television, and resume light activities the day of surgery or the following morning. Dr. Tokuhara provides his personal phone number so patients can reach him directly with any concerns. More strenuous activities like swimming or heavy lifting have a longer restriction period.' },
+        { q: 'What is placed on my eye at the end of cataract surgery?', a: 'A clear plastic shield is placed over your eye and secured with tape. This shield protects the eye during the immediate post-operative period and is typically worn at night during the first week of recovery to prevent accidental rubbing during sleep.' },
+      ]} />
 
       {/* RELATED */}
       <section className="section section-white">

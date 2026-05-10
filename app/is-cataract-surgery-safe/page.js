@@ -8,6 +8,7 @@ import {
   VideoBackground,
 } from '../components/ScrollAnimations';
 import AudioNarration from '../components/AudioNarration';
+import PageFAQ from '../components/PageFAQ';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -274,6 +275,15 @@ export default function IsCataractSurgerySafePage() {
           </div>
         </div>
       </section>
+
+      <PageFAQ faqs={[
+        { q: 'Is cataract surgery safe?', a: 'Yes. Cataract surgery is one of the safest elective surgical procedures in medicine. More than 4 million procedures are performed in the United States every year, with an overall success rate exceeding 99 percent.' },
+        { q: 'What is the success rate of cataract surgery?', a: 'The success rate for cataract surgery exceeds 99 percent when measured by the absence of serious complications. Most patients experience significant improvement in visual clarity, contrast sensitivity, and quality of life.' },
+        { q: 'What are the risks of cataract surgery?', a: 'Possible risks include infection, inflammation, elevated eye pressure, and posterior capsule opacification. Rare but serious complications include retinal detachment. An experienced surgeon will discuss your individual risk profile before surgery.' },
+        { q: 'What makes cataract surgery safer?', a: 'Modern cataract surgery uses phacoemulsification through a very small incision. Topical anesthesia eliminates injection-based risks. Outpatient surgery minimizes hospital-associated risks. High surgeon volume and fellowship training further reduce complication rates.' },
+        { q: 'Who should be extra careful about cataract surgery?', a: 'Patients with pseudoexfoliation syndrome, Fuchs dystrophy, prior retinal surgery, prior LASIK or radial keratotomy, glaucoma, or diabetes require more careful evaluation and planning. These are not automatically higher-risk, but they require a surgeon with specific experience.' },
+        { q: 'How do I know if I have the right surgeon for cataract surgery?', a: 'Look for a surgeon who performs high surgical volume, has fellowship training, is transparent about risks and complication rates, and takes time to understand your eyes and goals. Volume builds instinct. Training builds judgment. Transparency builds trust.' },
+      ]} />
 
       {/* RELATED */}
       <section className="section section-warm">

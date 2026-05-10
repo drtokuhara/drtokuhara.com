@@ -9,6 +9,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import PageFAQ from '../components/PageFAQ';
 import AudioNarration from '../components/AudioNarration';
 
 const jsonLd = [
@@ -42,6 +43,13 @@ export const metadata = {
     url: 'https://drtokuhara.com/choosing-your-surgeon',
   },
 };
+
+
+const pageFaqs = [
+  { q: 'How do I choose the best cataract surgeon?', a: 'Look beyond credentials alone. Ask about surgical volume, complication management experience, whether they handle complex cases, and how they approach lens selection. A surgeon who listens to your goals and explains tradeoffs honestly is more valuable than one who simply offers the newest technology.' },
+  { q: 'What questions should I ask my cataract surgeon?', a: 'Ask how many cataract surgeries they perform annually, how they handle complications, what lens options they offer, whether they have experience with your specific eye conditions, and what their approach is to managing unexpected findings during surgery.' },
+  { q: 'Does it matter how many cataract surgeries a surgeon has performed?', a: 'Yes, surgical volume correlates with outcomes and complication management skill. A high-volume surgeon has seen more variations, managed more unexpected situations, and developed the judgment that only comes from extensive experience.' },
+];
 
 export default function ChoosingYourSurgeon() {
   return (
@@ -226,7 +234,9 @@ export default function ChoosingYourSurgeon() {
         </div>
       </section>
 
-      {/* RELATED */}
+            <PageFAQ faqs={pageFaqs} />
+
+{/* RELATED */}
       <section className="section section-white">
         <div className="container content-narrow">
           <h2 className="section-title">Learn <strong>More</strong></h2>

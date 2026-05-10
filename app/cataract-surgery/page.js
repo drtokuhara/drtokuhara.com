@@ -10,6 +10,7 @@ import {
   BlurReveal,
   LineDraw,
 } from '../components/ScrollAnimations';
+import PageFAQ from '../components/PageFAQ';
 import AudioNarration from '../components/AudioNarration';
 
 const faqSchema = {
@@ -19,7 +20,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'How long does cataract surgery take?',
-      acceptedAnswer: { '@type': 'Answer', text: 'The actual cataract surgery procedure typically takes less than 15-20 minutes per eye. Including pre-op preparation and recovery observation, plan for about 2-3 hours at the surgical center.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'The actual cataract surgery procedure typically takes about 10 to 15 minutes per eye. Including pre-op preparation and recovery observation, plan for about 2 to 3 hours at the surgical center.' },
     },
     {
       '@type': 'Question',
@@ -70,6 +71,15 @@ export const metadata = {
     url: 'https://drtokuhara.com/cataract-surgery',
   },
 };
+
+
+const pageFaqs = [
+  { q: 'How long does cataract surgery take?', a: 'The actual cataract surgery procedure typically takes about 10 to 15 minutes per eye. Including pre-op preparation and recovery observation, plan for about 2 to 3 hours at the surgical center.' },
+  { q: 'Is cataract surgery painful?', a: 'No. Cataract surgery uses numbing eye drops and mild IV sedation. Most patients feel pressure but no pain during the procedure. Many patients say the experience was much easier than they expected.' },
+  { q: 'How soon can I see after cataract surgery?', a: 'Most patients notice improved vision within 24-48 hours. Vision continues to sharpen over the first week as the eye heals. Full visual stability typically occurs within 4-6 weeks.' },
+  { q: 'Can I drive after cataract surgery?', a: 'You cannot drive yourself home from surgery. Most patients can resume driving within a few days once their vision meets the legal requirement, which Dr. Tokuhara confirms at the post-operative visit.' },
+  { q: 'Does insurance cover cataract surgery?', a: 'Yes, standard cataract surgery is covered by Medicare and most insurance plans when medically necessary. Premium lens implants and laser-assisted technology may involve additional out-of-pocket costs, which are discussed transparently during consultation.' },
+];
 
 export default function CataractSurgeryPage() {
   return (
@@ -454,7 +464,9 @@ export default function CataractSurgeryPage() {
         </div>
       </section>
 
-      {/* CTA */}
+            <PageFAQ faqs={pageFaqs} />
+
+{/* CTA */}
       <section className="cta">
         <div className="container">
           <h2>Have questions about <strong>your eyes?</strong></h2>

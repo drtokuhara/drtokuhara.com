@@ -7,6 +7,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import PageFAQ from '../components/PageFAQ';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -308,6 +309,13 @@ export default function VivityVsPanoptix() {
           </div>
         </div>
       </section>
+
+      <PageFAQ faqs={[
+        { q: 'What is the difference between Vivity and PanOptix lenses?', a: 'Vivity is an Extended Depth of Focus (EDOF) lens that stretches light for continuous focus from distance through intermediate, with minimal halos and glare. PanOptix is a trifocal lens that splits light into three focal points, providing stronger near vision but with a slightly higher chance of nighttime visual phenomena.' },
+        { q: 'Which lens is better, Vivity or PanOptix?', a: 'Neither lens is universally better. The right choice depends on your lifestyle, visual priorities, and eye health. Vivity is often preferred by patients who prioritize night driving and can tolerate light readers for fine print. PanOptix is often chosen by patients who want maximum glasses independence at all distances.' },
+        { q: 'What is PanOptix Pro?', a: 'PanOptix Pro is the next generation of the PanOptix trifocal lens by Alcon. It uses the same trifocal optic design with enhanced UV and blue-violet light filtering, more light utilization reaching the retina, and less light scatter. Dr. Tokuhara was the first surgeon in the Coachella Valley to implant the PanOptix Pro.' },
+        { q: 'Can everyone get a Vivity or PanOptix lens?', a: 'No. Not every eye is a good candidate for premium lens implants. Corneal irregularity, significant dry eye disease, epiretinal membrane, macular degeneration, and other conditions can limit the visual quality these lenses deliver. A thorough pre-operative evaluation is essential.' },
+      ]} />
 
       {/* RELATED */}
       <section className="section section-warm">

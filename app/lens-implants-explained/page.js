@@ -10,6 +10,7 @@ import {
   MagneticElement,
   LineDraw,
 } from '../components/ScrollAnimations';
+import PageFAQ from '../components/PageFAQ';
 import AudioNarration from '../components/AudioNarration';
 
 const jsonLd = [
@@ -44,6 +45,14 @@ export const metadata = {
     url: 'https://drtokuhara.com/lens-implants-explained',
   },
 };
+
+
+const pageFaqs = [
+  { q: 'What is the best lens implant for cataract surgery?', a: 'There is no single best lens. The right choice depends on your lifestyle, visual priorities, and eye health. Monofocal lenses are reliable for distance vision with reading glasses. Toric lenses reduce astigmatism. EDOF lenses like Vivity extend focus from distance through intermediate. Multifocal lenses like PanOptix provide vision at all distances.' },
+  { q: 'Are premium lens implants worth it?', a: 'For many patients, yes. Premium lenses can significantly reduce or eliminate dependence on glasses after cataract surgery. However, they require healthy eyes to perform optimally and involve tradeoffs like potential halos or glare. A thorough consultation helps determine if the benefits outweigh the tradeoffs for your specific situation.' },
+  { q: 'What is the difference between monofocal and multifocal lens implants?', a: 'Monofocal lenses focus at one distance (usually far), requiring reading glasses for near tasks. Multifocal lenses split light into multiple focal points to provide vision at distance, intermediate, and near, reducing glasses dependence. The tradeoff is that multifocal lenses may produce halos around lights at night.' },
+  { q: 'Can a lens implant be replaced after cataract surgery?', a: 'Lens exchange is possible but is a more complex procedure than the original surgery. It is typically reserved for cases where the lens is causing significant visual problems. This is why careful lens selection during the initial consultation is so important.' },
+];
 
 export default function LensImplantsExplained() {
   return (
@@ -318,7 +327,9 @@ export default function LensImplantsExplained() {
         </div>
       </VideoBackground>
 
-      {/* RELATED */}
+            <PageFAQ faqs={pageFaqs} />
+
+{/* RELATED */}
       <section className="section section-warm">
         <div className="container content-narrow">
           <h2 className="section-title">Learn <strong>More</strong></h2>

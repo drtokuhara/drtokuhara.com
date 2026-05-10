@@ -10,6 +10,7 @@ import {
   VideoBackground,
   LineDraw,
 } from '../components/ScrollAnimations';
+import PageFAQ from '../components/PageFAQ';
 import YouTubeShorts from '../components/YouTubeShorts';
 
 const jsonLd = [
@@ -42,6 +43,13 @@ export const metadata = {
     url: 'https://drtokuhara.com/patient-stories',
   },
 };
+
+
+const pageFaqs = [
+  { q: 'What do patients say about cataract surgery at Desert Vision Center?', a: 'Patients consistently describe feeling heard before surgery, calm during the procedure, and surprised by how quickly they recovered. Many report seeing clearly the morning after surgery.' },
+  { q: 'Are there patient testimonial videos for Dr. Tokuhara?', a: 'Yes. Desert Vision Center has recorded multiple patient testimonials. These are real patients sharing their own experiences, not actors or paid endorsements.' },
+  { q: 'Does Dr. Tokuhara do cataract surgery on patients with only one eye?', a: 'Yes. Dr. Tokuhara has performed cataract surgery on monocular patients. Harold Baird shares his experience on this page. These cases require a surgeon with the experience and judgment to manage the additional risk.' },
+];
 
 export default function PatientStories() {
   return (
@@ -257,7 +265,9 @@ export default function PatientStories() {
         subtitle="Real patients sharing real experiences. No scripts, no actors."
       />
 
-      {/* CTA */}
+            <PageFAQ faqs={pageFaqs} />
+
+{/* CTA */}
       <section className="section section-warm">
         <div className="container content-narrow" style={{textAlign: 'center'}}>
           <ScrollReveal direction="up" once={true}>

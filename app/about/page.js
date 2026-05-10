@@ -12,6 +12,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import PageFAQ from '../components/PageFAQ';
 import AudioNarration from '../components/AudioNarration';
 
 const faqSchema = {
@@ -22,7 +23,7 @@ const faqSchema = {
     { '@type': 'Question', name: 'Is Desert Vision Center a private or corporate practice?', acceptedAnswer: { '@type': 'Answer', text: 'Desert Vision Center is a fully independent, physician-owned practice. Dr. Tokuhara is not affiliated with any corporate or private-equity group. This independence means treatment decisions are based solely on what is best for the patient, not corporate quotas or profit targets.' } },
     { '@type': 'Question', name: 'Where is Desert Vision Center located?', acceptedAnswer: { '@type': 'Answer', text: 'Desert Vision Center is located in Rancho Mirage, California, serving the Coachella Valley and surrounding areas including Palm Springs, Palm Desert, Indian Wells, and La Quinta.' } },
     { '@type': 'Question', name: 'Does Dr. Tokuhara do international surgical missions?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Dr. Tokuhara participates in international surgical missions, bringing advanced eye care to underserved communities. These experiences reinforce his commitment to ethical, patient-centered care.' } },
-    { '@type': 'Question', name: 'What makes Dr. Tokuhara different from other cataract surgeons?', acceptedAnswer: { '@type': 'Answer', text: 'Dr. Tokuhara combines fellowship training in both cataract/anterior segment surgery and retina, physician independence from corporate influence, expertise in complex and revision cases, and a commitment to ethical care. He is a surgeon other doctors refer their most challenging cases to.' } },
+    { '@type': 'Question', name: 'What makes Dr. Tokuhara different from other cataract surgeons?', acceptedAnswer: { '@type': 'Answer', text: 'Dr. Tokuhara combines residency training in cataract and anterior segment surgery under Dr. Howard Gimbel, a retina fellowship for complex eye disease, physician independence from corporate influence, and expertise in complex and revision cases. He is a surgeon other doctors refer their most challenging cases to.' } },
   ],
 };
 
@@ -47,6 +48,15 @@ export const metadata = {
     url: 'https://drtokuhara.com/about',
   },
 };
+
+
+const pageFaqs = [
+  { q: 'What is Dr. Tokuhara\'s training and background?', a: 'Dr. Keith Tokuhara trained in cataract and anterior segment surgery under Dr. Howard Gimbel during his residency at Loma Linda University. He then completed a retina fellowship specializing in complex eye disease. He is board certified in retina, making him uniquely qualified to manage complex cases involving both the front and back of the eye.' },
+  { q: 'Is Desert Vision Center a private or corporate practice?', a: 'Desert Vision Center is a fully independent, physician-owned practice. Dr. Tokuhara is not affiliated with any corporate or private-equity group. This independence means treatment decisions are based solely on what is best for the patient, not corporate quotas or profit targets.' },
+  { q: 'Where is Desert Vision Center located?', a: 'Desert Vision Center is located in Rancho Mirage, California, serving the Coachella Valley and surrounding areas including Palm Springs, Palm Desert, Indian Wells, and La Quinta.' },
+  { q: 'Does Dr. Tokuhara do international surgical missions?', a: 'Yes. Dr. Tokuhara participates in international surgical missions, bringing advanced eye care to underserved communities. These experiences reinforce his commitment to ethical, patient-centered care.' },
+  { q: 'What makes Dr. Tokuhara different from other cataract surgeons?', a: 'Dr. Tokuhara combines residency training in cataract and anterior segment surgery under Dr. Howard Gimbel, a retina fellowship for complex eye disease, physician independence from corporate influence, and expertise in complex and revision cases. He is a surgeon other doctors refer their most challenging cases to.' },
+];
 
 export default function AboutPage() {
   return (
@@ -319,7 +329,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CTA */}
+            <PageFAQ faqs={pageFaqs} />
+
+{/* CTA */}
       <section className="cta">
         <div className="container">
           <h2>Want to <strong>meet in person?</strong></h2>

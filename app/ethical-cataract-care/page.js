@@ -9,6 +9,7 @@ import {
   VideoBackground,
 } from '../components/ScrollAnimations';
 import AudioNarration from '../components/AudioNarration';
+import PageFAQ from '../components/PageFAQ';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -277,6 +278,13 @@ export default function EthicalCataractCare() {
           </div>
         </div>
       </section>
+
+      <PageFAQ faqs={[
+        { q: 'What are cataract referral kickbacks?', a: 'Cataract referral kickbacks occur when a referring doctor receives financial incentives, gifts, or other benefits in exchange for sending patients to a specific cataract surgeon or surgical center. This practice is illegal under the federal Stark Law, which was created to protect patients from physicians making decisions based on financial gain.' },
+        { q: 'Are cataract referral kickbacks common?', a: 'While the exact prevalence is unknown, the Office of Inspector General has prosecuted several multi-million dollar cases in recent years, including a $17 million settlement in Tennessee, a $2.9 million settlement in Texas, and a $1.1 million settlement in Rhode Island.' },
+        { q: 'How do I know if my cataract surgeon referral is legitimate?', a: 'Ask your referring doctor directly about their relationship with the surgeon. A legitimate referral is based on surgical skill, outcomes, and what is best for you. Red flags include being referred to a surgeon far away when qualified surgeons are nearby, or being pressured to use a specific surgeon without explanation.' },
+        { q: 'What is the ethical cataract care pledge?', a: 'The ethical cataract care pledge is a commitment by ophthalmologists to oppose financial incentives that influence cataract surgery referrals. Dr. Tokuhara hosted the Stand for Ethical Eye Care seminar in the Coachella Valley and signed the Ethical Cataract Care Contract.' },
+      ]} />
 
       {/* RELATED */}
       <section className="section section-white">
