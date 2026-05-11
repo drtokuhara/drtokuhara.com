@@ -82,6 +82,8 @@ export default function sitemap() {
     '/insights/the-lens-nobody-talks-about',
     '/insights/what-i-learned-from-the-surgeon-who-trained-me',
     '/insights/the-eye-you-least-suspect',
+    '/insights/when-the-eye-surface-changes-everything',
+    '/insights/when-the-unexpected-leads-to-the-right-outcome',
     '/insights/the-consultation-that-changed-everything',
     '/insights/do-i-really-need-surgery',
     '/insights/when-is-the-right-time',
@@ -120,6 +122,13 @@ export default function sitemap() {
     { path: '/cataract-surgeon-calimesa', priority: 0.7, changeFrequency: 'monthly' },
   ];
 
+  // Geographic expansion pages - underserved communities beyond the valley
+  const geographicPages = [
+    { path: '/cataract-surgeon-mammoth-lakes', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/cataract-surgeon-big-bear', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/cataract-surgeon-blythe', priority: 0.7, changeFrequency: 'monthly' },
+  ];
+
   // Utility pages
   const utilityPages = [
     { path: '/app-privacy', priority: 0.3, changeFrequency: 'yearly' },
@@ -133,6 +142,7 @@ export default function sitemap() {
     ...complexCasePages,
     ...insightPages,
     ...cityPages,
+    ...geographicPages,
     ...utilityPages,
   ];
 

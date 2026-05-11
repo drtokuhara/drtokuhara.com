@@ -155,6 +155,7 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/the-reader-who-almost-gave-up-her-books">The Reader Who Almost Gave Up</Link>
                     <Link href="/insights/are-premium-lenses-worth-it">Are Premium Lenses Worth It?</Link>
                     <Link href="/insights/the-lens-nobody-talks-about">The Lens Nobody Talks About</Link>
+                    <Link href="/insights/when-the-eye-surface-changes-everything">When the Eye Surface Changes Everything</Link>
                     <Link href="/insights/the-number-that-wasnt-the-problem">The Number That Wasn't the Problem</Link>
                   </div>
                   <div className="nav-mega-col">
@@ -166,6 +167,7 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/when-guilt-replaces-explanation">When Guilt Replaces Explanation</Link>
                     <Link href="/insights/when-more-isnt-better">When More Isn't Better</Link>
                     <Link href="/insights/what-i-learned-from-the-surgeon-who-trained-me">The Surgeon Who Trained Me</Link>
+                    <Link href="/insights/when-the-unexpected-leads-to-the-right-outcome">When the Unexpected Leads Right</Link>
                     <Link href="/insights/the-consultation-that-changed-everything">The Consultation That Changed Everything</Link>
                     <Link href="/insights" style={{color: 'var(--oasis)', fontWeight: 600, marginTop: '8px'}}>View All Insights</Link>
                   </div>
@@ -226,23 +228,43 @@ export default function RootLayout({ children }) {
                   <a href="https://desertvisioncenter.com">Desert Vision Center</a>
                   <a href="tel:7603404700">760.340.4700</a>
                 </div>
-                <div className="footer-col">
-                  <h4>Locations We Serve</h4>
-                  <Link href="/cataract-surgeon-rancho-mirage">Rancho Mirage</Link>
-                  <Link href="/cataract-surgeon-palm-desert">Palm Desert</Link>
-                  <Link href="/cataract-surgeon-palm-springs">Palm Springs</Link>
-                  <Link href="/cataract-surgeon-indian-wells">Indian Wells</Link>
-                  <Link href="/cataract-surgeon-la-quinta">La Quinta</Link>
-                  <Link href="/cataract-surgeon-cathedral-city">Cathedral City</Link>
-                  <Link href="/cataract-surgeon-indio">Indio</Link>
-                  <Link href="/cataract-surgeon-coachella">Coachella</Link>
-                  <Link href="/cataract-surgeon-desert-hot-springs">Desert Hot Springs</Link>
-                  <Link href="/cataract-surgeon-bermuda-dunes">Bermuda Dunes</Link>
-                  <Link href="/cataract-surgeon-thousand-palms">Thousand Palms</Link>
-                  <Link href="/cataract-surgeon-thermal-mecca">Thermal &amp; Mecca</Link>
-                  <Link href="/cataract-surgeon-redlands">Redlands</Link>
-                  <Link href="/cataract-surgeon-yucaipa">Yucaipa</Link>
-                  <Link href="/cataract-surgeon-calimesa">Calimesa</Link>
+                <div className="footer-col footer-col-locations">
+                  <h4>Serving the Coachella Valley</h4>
+                  <p className="footer-locations-flow">
+                    <Link href="/cataract-surgeon-rancho-mirage">Rancho Mirage</Link>
+                    <span className="footer-loc-sep">&middot;</span>
+                    <Link href="/cataract-surgeon-palm-desert">Palm Desert</Link>
+                    <span className="footer-loc-sep">&middot;</span>
+                    <Link href="/cataract-surgeon-palm-springs">Palm Springs</Link>
+                    <span className="footer-loc-sep">&middot;</span>
+                    <Link href="/cataract-surgeon-indian-wells">Indian Wells</Link>
+                    <span className="footer-loc-sep">&middot;</span>
+                    <Link href="/cataract-surgeon-la-quinta">La Quinta</Link>
+                    <span className="footer-loc-sep">&middot;</span>
+                    <Link href="/cataract-surgeon-cathedral-city">Cathedral City</Link>
+                    <span className="footer-loc-sep">&middot;</span>
+                    <Link href="/cataract-surgeon-indio">Indio</Link>
+                    <span className="footer-loc-sep">&middot;</span>
+                    <Link href="/cataract-surgeon-coachella">Coachella</Link>
+                    <span className="footer-loc-sep">&middot;</span>
+                    <Link href="/cataract-surgeon-desert-hot-springs">Desert Hot Springs</Link>
+                    <span className="footer-loc-sep">&middot;</span>
+                    <Link href="/cataract-surgeon-bermuda-dunes">Bermuda Dunes</Link>
+                    <span className="footer-loc-sep">&middot;</span>
+                    <Link href="/cataract-surgeon-thousand-palms">Thousand Palms</Link>
+                    <span className="footer-loc-sep">&middot;</span>
+                    <Link href="/cataract-surgeon-thermal-mecca">Thermal &amp; Mecca</Link>
+                  </p>
+                  <p className="footer-locations-also">Also serving patients from{' '}
+                    <Link href="/cataract-surgeon-redlands">Redlands</Link>,{' '}
+                    <Link href="/cataract-surgeon-yucaipa">Yucaipa</Link>, and{' '}
+                    <Link href="/cataract-surgeon-calimesa">Calimesa</Link>
+                  </p>
+                  <p className="footer-locations-also">Serving patients beyond the valley:{' '}
+                    <Link href="/cataract-surgeon-mammoth-lakes">Mammoth Lakes</Link>,{' '}
+                    <Link href="/cataract-surgeon-big-bear">Big Bear</Link>, and{' '}
+                    <Link href="/cataract-surgeon-blythe">Blythe</Link>
+                  </p>
                 </div>
                 <div className="footer-col">
                   <h4>Social</h4>
