@@ -24,6 +24,14 @@ export const metadata = {
 
 const insights = [
   {
+    slug: 'when-experience-speaks',
+    title: 'When Experience Speaks',
+    date: 'May 2026',
+    description: 'The principles a surgeon carries into every operating room are invisible. But they determine everything. A reflection on Dr. Howard Gimbel, intergenerational surgical wisdom, and a case where decades of training made all the difference.',
+    cluster: 'Surgical Heritage',
+    image: '/media/stock-couple-patio-scenic-view.jpg',
+  },
+  {
     slug: 'cataract-surgery-step-by-step',
     title: 'Cataract Surgery Step by Step: What Actually Happens',
     date: 'May 2026',

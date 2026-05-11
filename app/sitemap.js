@@ -79,6 +79,7 @@ export default function sitemap() {
 
   // Insight articles
   const insightPages = [
+    '/insights/when-experience-speaks',
     '/insights/cataract-surgery-step-by-step',
     '/insights/first-week-after-cataract-surgery',
     '/insights/is-cataract-surgery-painful',
