@@ -72,7 +72,7 @@ export default function CataractRecoveryPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageBreadcrumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "Cataract Recovery:  What happens after surgery in the recovery room?", "description": "After cataract surgery, you're brought to the recovery unit.  In this video, Dr. Tokuhara talks to the surgery nurses ab", "thumbnailUrl": "https://i.ytimg.com/vi/7mkouTcQWOo/maxresdefault.jpg", "uploadDate": "2023-03-12", "duration": "PT3M46S", "contentUrl": "https://www.youtube.com/watch?v=7mkouTcQWOo", "embedUrl": "https://www.youtube.com/embed/7mkouTcQWOo"}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "Cataract Recovery:  What happens after surgery in the recovery room?", "description": "After cataract surgery, you're brought to the recovery unit.  In this video, Dr. Tokuhara talks to the surgery nurses ab", "thumbnailUrl": "https://i.ytimg.com/vi/7mkouTcQWOo/maxresdefault.jpg", "uploadDate": "2023-03-12T00:00:00Z", "duration": "PT3M46S", "contentUrl": "https://www.youtube.com/watch?v=7mkouTcQWOo", "embedUrl": "https://www.youtube.com/embed/7mkouTcQWOo"}) }} />
 
       {/* HERO */}
       <VideoBackground src="/media/ambient-desert-sunrise-v2.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}} bottomOverlay={<AudioNarration src="/audio/narrations/cataract-recovery.mp3" />}>
@@ -287,6 +287,10 @@ export default function CataractRecoveryPage() {
             <Link href="/insights/permission-to-see-again" className="related-card">
               <h3>Permission to See Again</h3>
               <p>Some patients need more than a new lens. They need permission to believe it will work.</p>
+            </Link>
+            <Link href="/insights/first-week-after-cataract-surgery" className="related-card">
+              <h3>Your First Week After Surgery</h3>
+              <p>A day-by-day guide to what is normal and what to watch for during recovery.</p>
             </Link>
           </div>
         </div>

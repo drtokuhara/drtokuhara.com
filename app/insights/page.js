@@ -24,6 +24,30 @@ export const metadata = {
 
 const insights = [
   {
+    slug: 'cataract-surgery-step-by-step',
+    title: 'Cataract Surgery Step by Step: What Actually Happens',
+    date: 'May 2026',
+    description: 'A surgeon with over 20,000 procedures walks you through exactly what happens before, during, and after cataract surgery. No jargon, no sugarcoating.',
+    cluster: 'The Procedure',
+    image: '/media/stock-couple-patio-scenic-view.jpg',
+  },
+  {
+    slug: 'first-week-after-cataract-surgery',
+    title: 'Your First Week After Cataract Surgery: Day by Day',
+    date: 'May 2026',
+    description: 'What to expect each day during your first week of recovery. What is normal, what is not, when to call, and why the drops matter more than you think.',
+    cluster: 'Recovery',
+    image: '/media/stock-woman-outdoor-cafe.jpg',
+  },
+  {
+    slug: 'is-cataract-surgery-painful',
+    title: 'Is Cataract Surgery Painful? Here\'s the Honest Answer',
+    date: 'May 2026',
+    description: 'The fear of pain keeps more patients from cataract surgery than any other concern. Here is what you actually feel, what you see, and why the anticipation is almost always worse than the reality.',
+    cluster: 'Fear & Reassurance',
+    image: '/media/stock-woman-portrait-sunlit-resort.jpg',
+  },
+  {
     slug: 'the-lens-nobody-talks-about',
     title: 'The Lens Nobody Talks About',
     date: 'May 2026',
@@ -48,12 +72,28 @@ const insights = [
     image: '/media/stock-seniors-resort-promenade-night.jpg',
   },
   {
+    slug: 'when-the-eye-surface-changes-everything',
+    title: 'When the Eye Surface Changes Everything',
+    date: 'May 2026',
+    description: 'She did everything right. Multiple adjustment treatments, long drives to Los Angeles, months of follow-up visits. But her vision never settled. The problem was not the lens. It was the surface of the eye.',
+    cluster: 'Clinical Insight',
+    image: '/media/stock-woman-outdoor-cafe.jpg',
+  },
+  {
+    slug: 'when-the-unexpected-leads-to-the-right-outcome',
+    title: 'When the Unexpected Leads to the Right Outcome',
+    date: 'May 2026',
+    description: 'A surgical complication left him with hand-motion vision. What looked like a catastrophe revealed a hidden condition that changed everything we thought we knew about his eyes.',
+    cluster: 'Patient Stories',
+    image: '/media/stock-couple-desert-overlook.jpg',
+  },
+  {
     slug: 'the-eye-you-least-suspect',
     title: 'The Eye You Least Suspect',
     date: 'May 2026',
     description: 'He assumed his right eye was getting worse. The real problem was in his left: wet macular degeneration had emerged silently. A reflection on anchoring bias, diagnostic humility, and why we examine both eyes every time.',
     cluster: 'Clinical Insight',
-    image: '/media/the-eye-you-least-suspect-hero.png',
+    image: '/media/stock-man-portrait-outdoor-dining.jpg',
   },
   {
     slug: 'the-consultation-that-changed-everything',
@@ -77,7 +117,7 @@ const insights = [
     date: 'May 2026',
     description: 'A 70-year-old man was told surgery could eliminate his glasses. His vision was 20/25+. After an honest exam, we decided together to wait.',
     cluster: 'Surgical Restraint',
-    image: '/media/stock-couple-balcony-golf-resort.jpg',
+    image: '/media/stock-man-walking-dog-sunset.png',
   },
   {
     slug: 'when-the-surgeon-says-wait',
@@ -181,7 +221,7 @@ const insights = [
     date: 'April 2026',
     description: 'A 32-year-old had a multifocal lens, then a YAG, then LASIK. A year later she still wasn\'t seeing right. Sometimes each fix creates the need for the next one.',
     cluster: 'Expectations & Reality',
-    image: '/media/stock-couple-night-walk-dog.jpg',
+    image: '/media/stock-woman-portrait-evening-glamour.jpg',
   },
 ];
 

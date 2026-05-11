@@ -79,6 +79,9 @@ export default function sitemap() {
 
   // Insight articles
   const insightPages = [
+    '/insights/cataract-surgery-step-by-step',
+    '/insights/first-week-after-cataract-surgery',
+    '/insights/is-cataract-surgery-painful',
     '/insights/the-lens-nobody-talks-about',
     '/insights/what-i-learned-from-the-surgeon-who-trained-me',
     '/insights/the-eye-you-least-suspect',
@@ -148,7 +151,7 @@ export default function sitemap() {
 
   return allPages.map(({ path, priority, changeFrequency }) => ({
     url: `${baseUrl}${path}`,
-    lastModified: new Date('2026-05-09'),
+    lastModified: new Date('2026-05-11'),
     changeFrequency,
     priority,
   }));
