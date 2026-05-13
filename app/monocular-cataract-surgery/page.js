@@ -9,6 +9,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -96,7 +97,7 @@ export default function MonocularCataractSurgeryPage() {
         />
       ))}
 
-      <VideoBackground src="/media/ambient-precision-instrument.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-precision-instrument.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}} bottomOverlay={<AudioNarration src="/audio/narrations/monocular-cataract-surgery.mp3" />}>
         <div className="container">
           <KineticText
             text="Cataract Surgery in a Monocular Eye"

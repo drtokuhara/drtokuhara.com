@@ -8,6 +8,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -94,7 +95,7 @@ export default function WhatCausesCataractsPage() {
         />
       ))}
 
-      <VideoBackground src="/media/ambient-lens-refraction-v2.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-lens-refraction-v2.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}} bottomOverlay={<AudioNarration src="/audio/narrations/what-causes-cataracts.mp3" />}>
         <div className="container">
           <h1>What Causes Cataracts? <strong>A Complete Guide</strong></h1>
           <p className="page-hero-sub">

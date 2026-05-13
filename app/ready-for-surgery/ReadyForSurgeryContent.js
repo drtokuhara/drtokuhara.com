@@ -10,6 +10,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -27,7 +28,7 @@ export default function ReadyForSurgeryContent() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* PAGE HERO */}
-      <VideoBackground src="/media/ambient-decision-moment.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-decision-moment.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}} bottomOverlay={<AudioNarration src="/audio/narrations/ready-for-surgery.mp3" />}>
         <div className="container">
           <h1 dangerouslySetInnerHTML={{ __html: t('readyForSurgery.title') || 'Ready to See <strong>Clearly Again</strong>' }} />
           <p className="page-hero-sub">{t('readyForSurgery.subtitle') || "You've made the decision. Here's everything you need to feel prepared, confident, and calm."}</p>

@@ -9,6 +9,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 export default function UnderstandYourOptionsContent() {
   const { t, lang } = useLanguage();
@@ -16,7 +17,7 @@ export default function UnderstandYourOptionsContent() {
   return (
     <>
       {/* PAGE HERO */}
-      <VideoBackground src="/media/ambient-ink-clarity.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-ink-clarity.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}} bottomOverlay={<AudioNarration src="/audio/narrations/understand-your-options.mp3" />}>
         <div className="container">
           <h1 dangerouslySetInnerHTML={{ __html: t('understandOptions.title') || 'Understanding Your <strong>Options</strong>' }} />
           <p className="page-hero-sub">{t('understandOptions.subtitle') || "You don't need to decide anything right now. Start by understanding what you're dealing with."}</p>

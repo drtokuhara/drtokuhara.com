@@ -8,6 +8,7 @@ import {
   StaggerChildren,
   StaggerItem,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -71,6 +72,7 @@ export default function DysphotopsiaAfterCataractSurgery() {
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"
         style={{minHeight: '55vh', display: 'flex', alignItems: 'center'}}
+        bottomOverlay={<AudioNarration src="/audio/narrations/dysphotopsia-after-cataract-surgery.mp3" />}
       >
         <div className="container" style={{textAlign: 'center'}}>
           <ScrollReveal direction="up" once={true}>
