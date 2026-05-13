@@ -102,10 +102,10 @@ export default function CataractSurgeonLaQuintaPage() {
             <h2 className="section-title">Cataract Care for <strong>La Quinta</strong> Residents</h2>
           </ScrollReveal>
           <p className="prose">
-            La Quinta is defined by outdoor living. PGA West, La Quinta Resort and Club, SilverRock, hiking trails in the Santa Rosa Mountains, and a community that moved here specifically to be active under the desert sun. Golf, tennis, pickleball, cycling, hiking: this is not retirement, it is a lifestyle upgrade.
+            La Quinta is a community that lives outdoors. Young families walk to school under clear skies, retirees head out for morning rounds of golf at PGA West, hikers tackle the Santa Rosa Mountains, and working professionals finish the day with a bike ride or a walk through the neighborhood. It is a city where people came to build a life, not just slow down.
           </p>
           <p className="prose">
-            Cataracts threaten that lifestyle in ways that creep up gradually. The golf ball is harder to see against a bright sky. Depth perception on the fairway feels off. Night driving back from dinner in Palm Desert becomes stressful. Colors look washed out. By the time most patients come to see me, they have been compensating for months or years without realizing how much vision they have lost.
+            Cataracts affect that life in ways that creep up gradually. Reading your child's homework becomes a strain. Night driving back from Palm Desert feels stressful. The golf ball is harder to pick up against a bright sky. Colors look washed out. By the time most patients come to see me, they have been compensating for months or years without realizing how much vision they have lost.
           </p>
           <p className="prose">
             I see La Quinta patients regularly, and the conversation almost always starts the same way: they want to get back to the activities they love, and they want a surgeon who takes the time to understand what that means for their lens choice and surgical plan. That is exactly how I practice.
@@ -134,15 +134,15 @@ export default function CataractSurgeonLaQuintaPage() {
       <section className="section section-white">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}>
-            <h2 className="section-title">Services for <strong>Active Eyes</strong></h2>
+            <h2 className="section-title">Services for <strong>Every Lifestyle</strong></h2>
           </ScrollReveal>
           <p className="prose">
-            For La Quinta patients with outdoor-focused lifestyles, the lens choice in cataract surgery is particularly important. Here is what Desert Vision Center offers:
+            For La Quinta patients, the lens choice in cataract surgery reflects how you actually live. Whether you spend your days outdoors, at a desk, driving, or caring for family, the right lens makes a difference. Here is what Desert Vision Center offers:
           </p>
           <ul className="content-list">
             <li><strong>Advanced cataract surgery:</strong> Precise, modern technique performed personally by Dr. Tokuhara. No hand-offs, no assistants doing the surgery. <Link href="/cataract-surgery">Learn about cataract surgery</Link>.</li>
             <li><strong>CLEAR in a Day:</strong> Same-day bilateral surgery for eligible patients. Both eyes in one visit means fewer trips from La Quinta and a faster return to your activities. <Link href="/clear-in-a-day">Learn about CLEAR in a Day</Link>.</li>
-            <li><strong>Premium lens implants:</strong> EDOF lenses for extended range, toric lenses that reduce astigmatism, and multifocal options. For golfers and tennis players, the right lens can mean the difference between glasses on the course and freedom from them. <Link href="/lens-implants-explained">Explore lens options</Link>.</li>
+            <li><strong>Premium lens implants:</strong> EDOF lenses for extended range, toric lenses that reduce astigmatism, and multifocal options. For patients who want freedom from glasses, whether at work, on the golf course, or in everyday life, the right lens selection makes a real difference. <Link href="/lens-implants-explained">Explore lens options</Link>.</li>
             <li><strong>Complex and revision surgery:</strong> Dislocated lenses, Yamane technique, iris reconstruction, and cases requiring advanced surgical skill. <Link href="/complex-cases">See complex case expertise</Link>.</li>
             <li><strong>Comprehensive eye care:</strong> Glaucoma management, diabetic eye care, dry eye treatment, and ongoing monitoring for patients with multiple conditions. <Link href="/glaucoma">Glaucoma</Link> | <Link href="/diabetic-retinopathy">Diabetic eye care</Link> | <Link href="/dry-eyes-desert">Dry eye</Link>.</li>
           </ul>
@@ -166,7 +166,7 @@ export default function CataractSurgeonLaQuintaPage() {
 
           <BlurReveal>
             <div className="insight-highlight">
-              <p><strong>Your outdoor lifestyle is not an afterthought in the lens selection conversation. It is the starting point. For La Quinta patients who golf, play tennis, cycle, or hike, the surgical plan is built around getting you back to what you love with the clearest, most comfortable vision possible.</strong></p>
+              <p><strong>How you use your eyes every day is not an afterthought in the lens selection conversation. It is the starting point. For La Quinta patients, whether you are back at work the next week, driving your kids to school, enjoying a round of golf, or reading on the patio, the surgical plan is built around getting you back to your life with the clearest, most comfortable vision possible.</strong></p>
             </div>
           </BlurReveal>
         </div>

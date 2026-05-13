@@ -7,6 +7,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -42,7 +43,7 @@ export default function HalosAfterSurgery() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageBreadcrumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <VideoBackground src="/media/ambient-bokeh-particles.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-bokeh-particles.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}} bottomOverlay={<AudioNarration src="/audio/narrations/halos-after-cataract-surgery.mp3" />}>
         <div className="container">
           <ScrollReveal direction="up" once={true}><h1>Halos After <strong>Cataract Surgery</strong></h1></ScrollReveal>
           <p className="page-hero-sub">If you are seeing rings of light around headlights or streetlights after surgery, you are not alone. Here is what is happening and what to expect.</p>

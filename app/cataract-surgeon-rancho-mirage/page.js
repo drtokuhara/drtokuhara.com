@@ -108,7 +108,7 @@ export default function CataractSurgeonRanchoMiragePage() {
             For Rancho Mirage residents, having a fellowship-trained cataract surgeon within minutes of home is not a convenience. It is an advantage. Post-operative visits are easy to keep. If a question comes up after surgery, you are not driving across the valley. And when you are choosing someone to operate on your eyes, knowing that your surgeon is invested in the same community where you live and play matters.
           </p>
           <p className="prose">
-            Rancho Mirage draws people who expect the best. Thunderbird Country Club, The Springs, Tamarisk, the Ritz-Carlton. Residents here have high standards for everything from dining to healthcare. I built my practice around that expectation: unhurried consultations, personalized surgical plans, and outcomes that let you get back to the life you came here to live.
+            Rancho Mirage residents set a high standard for their care. Whether you are part of the medical community along Bob Hope Drive, raising a family near Rancho Mirage High School, enjoying retirement at one of the city's well-known country clubs, or simply appreciate the pace of life here, the expectation is the same: quality without compromise. I built my practice around that expectation. Unhurried consultations, personalized surgical plans, and outcomes that let you get back to the life you came here to live.
           </p>
         </div>
       </section>

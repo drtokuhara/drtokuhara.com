@@ -9,6 +9,7 @@ import {
 } from '../../components/ScrollAnimations';
 import RelatedComplexCases from '../../components/RelatedComplexCases';
 import AuthorByline from '../../components/AuthorByline';
+import AudioNarration from '../../components/AudioNarration';
 
 const jsonLd = [
   articleSchema({
@@ -53,6 +54,7 @@ export default function MacularDegenerationPage() {
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
       <VideoBackground
+        bottomOverlay={<AudioNarration src="/audio/narrations/macular-degeneration.mp3" />}
         src="/media/ambient-desert-twilight-v2.mp4"
         overlayOpacity={0.6}
         overlayColor="0, 20, 30"

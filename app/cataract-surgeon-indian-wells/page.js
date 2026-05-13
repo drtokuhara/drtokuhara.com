@@ -102,10 +102,10 @@ export default function CataractSurgeonIndianWellsPage() {
             <h2 className="section-title">Cataract Care for <strong>Indian Wells</strong> Residents</h2>
           </ScrollReveal>
           <p className="prose">
-            Indian Wells is a community built around excellence. From the BNP Paribas Open at the Indian Wells Tennis Garden to the meticulously maintained courses at Indian Wells Golf Resort, residents here expect precision and quality in every aspect of their lives. Healthcare should be no different.
+            Indian Wells is a community built around excellence. From the world-class BNP Paribas Open to the city's beautifully maintained neighborhoods, residents here expect precision and quality in every aspect of their lives. Healthcare should be no different.
           </p>
           <p className="prose">
-            When cataracts begin to affect your vision, the impact is personal. Maybe the tennis ball is harder to track. Maybe the scorecard is harder to read. Maybe driving home after dinner at a favorite restaurant on Highway 111 feels less comfortable than it used to. These are not small inconveniences for people who came to Indian Wells to live an active, engaged life.
+            When cataracts begin to affect your vision, the impact is personal. Maybe reading feels like more effort than it should. Maybe driving home after dinner on Highway 111 is less comfortable than it used to be. Maybe the tennis ball is harder to track, or your grandchildren's faces are not as sharp across the room. These are not small inconveniences for people who came to Indian Wells to live well.
           </p>
           <p className="prose">
             I treat a number of patients from Indian Wells, and I understand the standard they expect. My consultations are unhurried and thorough. I explain what is happening in your eyes, what your options are, and what I honestly recommend. There is no assembly-line approach, no corporate formula. Just a fellowship-trained surgeon who treats every patient as an individual.
@@ -162,7 +162,7 @@ export default function CataractSurgeonIndianWellsPage() {
             My training under Dr. Howard Gimbel during residency gave me a foundation in surgical precision that I carry into every case. My retina fellowship added a dimension that most cataract surgeons lack: an understanding of the entire eye, including the macula and optic nerve, that informs how I plan and execute surgery.
           </p>
           <p className="prose">
-            For Indian Wells patients who play competitive tennis, golf regularly, or simply expect to see the world with clarity and comfort, I bring that training to bear on your lens selection, your surgical plan, and your post-operative care. Premium lens implants can reduce or eliminate dependence on glasses, and the right choice depends on a detailed understanding of both your anatomy and your lifestyle.
+            Whether you spend your days on the tennis court, reading in your garden, working from home, or keeping up with grandchildren, I bring that training to bear on your lens selection, your surgical plan, and your post-operative care. Premium lens implants can reduce or eliminate dependence on glasses, and the right choice depends on a detailed understanding of both your anatomy and how you actually use your eyes every day.
           </p>
 
           <BlurReveal>

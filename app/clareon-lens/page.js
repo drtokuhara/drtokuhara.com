@@ -7,6 +7,7 @@ import {
   BlurReveal,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 const jsonLd = [
   articleSchema({
@@ -73,13 +74,13 @@ export const metadata = {
 export default function ClareonLens() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "Clareon Lens:  Cataract Surgery with Dr. Tokuhara", "description": "First Clareon Lens Cataract Surgery in Coachella Valley.  Join Dr. Tokuhara in the operating room for a hands on look at", "thumbnailUrl": "https://i.ytimg.com/vi/85V5DGG6Rw0/maxresdefault.jpg", "uploadDate": "2021-09-21", "duration": "PT4M55S", "contentUrl": "https://www.youtube.com/watch?v=85V5DGG6Rw0", "embedUrl": "https://www.youtube.com/embed/85V5DGG6Rw0"}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "Clareon Lens:  Cataract Surgery with Dr. Tokuhara", "description": "First Clareon Lens Cataract Surgery in Coachella Valley.  Join Dr. Tokuhara in the operating room for a hands on look at", "thumbnailUrl": "https://i.ytimg.com/vi/85V5DGG6Rw0/maxresdefault.jpg", "uploadDate": "2021-09-21T00:00:00Z", "duration": "PT4M55S", "contentUrl": "https://www.youtube.com/watch?v=85V5DGG6Rw0", "embedUrl": "https://www.youtube.com/embed/85V5DGG6Rw0"}) }} />
       {jsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
 
       {/* HERO */}
-      <VideoBackground src="/media/ambient-desert-dawn-mist.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-desert-dawn-mist.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}} bottomOverlay={<AudioNarration src="/audio/narrations/clareon-lens.mp3" />}>
         <div className="container">
           <ScrollReveal direction="up" once={true}>
             <h1>The <strong>Clareon Lens</strong></h1>

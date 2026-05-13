@@ -102,10 +102,10 @@ export default function CataractSurgeonBermudaDunesPage() {
             <h2 className="section-title">Why Bermuda Dunes Residents Choose <strong>Desert Vision Center</strong></h2>
           </ScrollReveal>
           <p className="prose">
-            Bermuda Dunes is one of the Coachella Valley's best-kept secrets. A tight-knit community centered around the Bermuda Dunes Country Club, the airport, and quiet residential neighborhoods where people value privacy, relaxation, and a slower pace. Many residents are retirees who came for the golf, the weather, and a community that feels more like a small town than a desert suburb.
+            Bermuda Dunes is one of the Coachella Valley's best-kept secrets. A tight-knit community with quiet residential neighborhoods, the airport, and a pace of life that lets you breathe. Retirees, working families, and people who wanted a real neighborhood rather than a resort town all end up here, drawn by the weather, the affordability, and a community that feels more like a small town than a desert suburb.
           </p>
           <p className="prose">
-            When cataracts begin affecting your ability to enjoy that lifestyle, whether it is difficulty tracking the golf ball, struggling with glare on the drive to the grocery store, or finding that your reading vision is not what it used to be, it is time for a thorough evaluation. I see patients from Bermuda Dunes regularly, and the conversation often starts with a simple observation: things just look different than they used to.
+            When cataracts begin affecting your daily life, whether it is struggling with glare on the drive to the grocery store, finding that reading small print takes more effort, or noticing that your grandchildren's faces are not as clear as they should be, it is time for a thorough evaluation. I see patients from Bermuda Dunes regularly, and the conversation often starts with a simple observation: things just look different than they used to.
           </p>
           <p className="prose">
             My consultations are thorough and personal. I take the time to understand how you use your eyes, what matters to you, and what your expectations are. Then I give you my honest recommendation. No pressure, no upselling, just clear information so you can make the best decision for your vision.
@@ -158,13 +158,13 @@ export default function CataractSurgeonBermudaDunesPage() {
             <h2 className="section-title">What Makes Dr. Tokuhara <strong>Different</strong></h2>
           </ScrollReveal>
           <p className="prose">
-            Bermuda Dunes residents are often active golfers, and golf is one of the activities most affected by cataracts. Contrast sensitivity drops, making it harder to track a white ball against a bright sky. Depth perception changes, affecting putting and distance judgment. Glare from the morning sun on the fairway becomes blinding rather than just bright.
+            What sets Desert Vision Center apart is that I do not recommend the same lens to every patient. Your eyes are different from anyone else's, and so is your life. Some patients need to drive safely at all hours. Others want to read without reaching for glasses. Some want to get back on the golf course with sharp contrast and depth perception. Many just want to see their family clearly and move through daily life without frustration.
           </p>
           <p className="prose">
-            I have this conversation regularly with patients from the Bermuda Dunes Country Club and other courses in the area. The lens choice matters enormously for golfers because different lenses affect contrast, glare, and distance vision differently. I take the time to understand how you play and what matters most to your game, and I match the lens to those priorities.
+            I take the time to understand how you actually use your eyes. What matters to you at arm's length, at a distance, in bright light, and in low light. Then I match the lens to those priorities, not to a formula.
           </p>
           <p className="prose">
-            This level of personalization is what sets Desert Vision Center apart from practices that recommend the same lens to everyone. Your eyes are unique, your life is unique, and your surgical plan should be too.
+            That level of personalization, built on over 20,000 surgeries and fellowship training in both cataract and retina surgery, is why patients from Bermuda Dunes and across the valley trust Desert Vision Center with their vision.
           </p>
 
           <BlurReveal>

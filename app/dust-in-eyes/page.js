@@ -87,7 +87,7 @@ export const metadata = {
 export default function DustInEyesPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "What to do when you get dust in your eyes?", "description": "The Coachella Valley is one of the driest, windiest places in the world.  What should you do when the wind blows sand an", "thumbnailUrl": "https://i.ytimg.com/vi/NJ1dx9nKHCA/maxresdefault.jpg", "uploadDate": "2024-05-17", "duration": "PT1M44S", "contentUrl": "https://www.youtube.com/watch?v=NJ1dx9nKHCA", "embedUrl": "https://www.youtube.com/embed/NJ1dx9nKHCA"}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "What to do when you get dust in your eyes?", "description": "The Coachella Valley is one of the driest, windiest places in the world.  What should you do when the wind blows sand an", "thumbnailUrl": "https://i.ytimg.com/vi/NJ1dx9nKHCA/maxresdefault.jpg", "uploadDate": "2024-05-17T00:00:00Z", "duration": "PT1M44S", "contentUrl": "https://www.youtube.com/watch?v=NJ1dx9nKHCA", "embedUrl": "https://www.youtube.com/embed/NJ1dx9nKHCA"}) }} />
       {jsonLd.map((schema, i) => (
         <script
           key={i}

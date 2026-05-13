@@ -7,6 +7,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -42,7 +43,7 @@ export default function BlurryVisionAfterSurgery() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageBreadcrumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <VideoBackground src="/media/ambient-light-tunnel.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-light-tunnel.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}} bottomOverlay={<AudioNarration src="/audio/narrations/blurry-vision-after-cataract-surgery.mp3" />}>
         <div className="container">
           <ScrollReveal direction="up" once={true}><h1>Blurry Vision After <strong>Cataract Surgery</strong></h1></ScrollReveal>
           <p className="page-hero-sub">If your vision is not as clear as you expected after surgery, here is what might be happening and what to do about it.</p>

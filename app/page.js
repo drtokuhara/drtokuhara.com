@@ -334,7 +334,7 @@ const SCREENS = {
     ],
   },
   surgeon_decisions: {
-    image: "/media/stock-couple-balcony-golf-resort.jpg",
+    image: "/media/stock-couple-garden-blooming.jpg",
     step: 4, totalSteps: 5,
     paragraphs: [
       "It starts with your eyes, obviously. But I'm also thinking about your lifestyle. What you do for work. Whether you drive at night. What bothers you most about your vision right now.",
@@ -451,7 +451,7 @@ const SCREENS = {
     buttons: [{ label: "That makes sense", next: "lens_close" }],
   },
   lens_close: {
-    image: "/media/stock-seniors-formal-resort-dusk.jpg",
+    image: "/media/stock-couple-farmers-market.jpg",
     type: 'close', step: 5, totalSteps: 5,
     paragraphs: [
       "Choosing a lens can feel overwhelming when you read about it online. In person, it's a much simpler conversation.",
@@ -623,7 +623,7 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(physicianSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "Ron Sloy: From Cataracts to 20/20 Vision with Dr. Tokuhara", "description": "Patient Ron Sloy shares his experience getting cataract surgery on both eyes with Dr. Keith Tokuhara at Desert Vision Center. His left eye had a prior Kamra lens, making it a complex case. After thorough research and careful planning, Dr. Tokuhara achieved 20/20 vision in both eyes.", "thumbnailUrl": "https://i.ytimg.com/vi/jLPyZV_bUig/maxresdefault.jpg", "uploadDate": "2026-03-11", "duration": "PT1M23S", "contentUrl": "https://www.youtube.com/watch?v=jLPyZV_bUig", "embedUrl": "https://www.youtube.com/embed/jLPyZV_bUig"}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "Ron Sloy: From Cataracts to 20/20 Vision with Dr. Tokuhara", "description": "Patient Ron Sloy shares his experience getting cataract surgery on both eyes with Dr. Keith Tokuhara at Desert Vision Center. His left eye had a prior Kamra lens, making it a complex case. After thorough research and careful planning, Dr. Tokuhara achieved 20/20 vision in both eyes.", "thumbnailUrl": "https://i.ytimg.com/vi/jLPyZV_bUig/maxresdefault.jpg", "uploadDate": "2026-03-11T00:00:00Z", "duration": "PT1M23S", "contentUrl": "https://www.youtube.com/watch?v=jLPyZV_bUig", "embedUrl": "https://www.youtube.com/embed/jLPyZV_bUig"}) }} />
 
       {mode === 'homepage' ? (
         <div className="homepage">
@@ -720,17 +720,17 @@ export default function Home() {
             </ScrollReveal>
             <HorizontalScroll style={{marginTop: '40px'}}>
               {[
-                { src: '/media/lifestyle-golf-man.jpg', alt: 'Golf in the Coachella Valley' },
-                { src: '/media/lifestyle-tennis-woman.jpg', alt: 'Tennis at a desert country club' },
-                { src: '/media/lifestyle-elpaseo-shopping.jpg', alt: 'Shopping on El Paseo' },
-                { src: '/media/lifestyle-couple-resort.jpg', alt: 'Couple at a luxury desert resort' },
-                { src: '/media/lifestyle-poolside-reading.jpg', alt: 'Reading by the pool in Palm Desert' },
-                { src: '/media/lifestyle-joshua-tree.jpg', alt: 'Hiking in Joshua Tree' },
-                { src: '/media/lifestyle-sunset-dining.jpg', alt: 'Sunset dining in the desert' },
-                { src: '/media/lifestyle-art-gallery.jpg', alt: 'Art galleries on El Paseo' },
-                { src: '/media/lifestyle-pickleball.jpg', alt: 'Pickleball in Indian Wells' },
-                { src: '/media/lifestyle-convertible.jpg', alt: 'Driving through Palm Springs' },
-                { src: '/media/lifestyle-morning-walk.jpg', alt: 'Morning walk in Rancho Mirage' },
+                { src: '/media/lifestyle-golf-man.jpg', alt: 'Golfer on the course in the Coachella Valley' },
+                { src: '/media/lifestyle-grandparent-reading.jpg', alt: 'Grandparent reading to a child in the Coachella Valley' },
+                { src: '/media/lifestyle-elpaseo-shopping.jpg', alt: 'Shopping on El Paseo in Palm Desert' },
+                { src: '/media/lifestyle-family-park.jpg', alt: 'Family enjoying a sunny day at a desert park' },
+                { src: '/media/lifestyle-kitchen-cooking.jpg', alt: 'Preparing dinner at home in the desert' },
+                { src: '/media/lifestyle-joshua-tree.jpg', alt: 'Hiking in Joshua Tree National Park' },
+                { src: '/media/lifestyle-tennis-woman.jpg', alt: 'Playing tennis in the Coachella Valley' },
+                { src: '/media/lifestyle-driving-commute.jpg', alt: 'Driving along Highway 111 in the Coachella Valley' },
+                { src: '/media/lifestyle-pickleball.jpg', alt: 'Pickleball game in the desert' },
+                { src: '/media/lifestyle-kids-sports.jpg', alt: 'Watching a youth sports game in the Coachella Valley' },
+                { src: '/media/lifestyle-morning-walk.jpg', alt: 'Morning walk through a Coachella Valley neighborhood' },
               ].map((img, i) => (
                 <div key={i} className="lux-lifestyle-item" style={{minWidth: '420px', flexShrink: 0}}>
                   <Image src={img.src} alt={img.alt} width={420} height={560} className="lux-lifestyle-img" />

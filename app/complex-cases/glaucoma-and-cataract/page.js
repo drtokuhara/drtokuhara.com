@@ -9,6 +9,7 @@ import {
 } from '../../components/ScrollAnimations';
 import RelatedComplexCases from '../../components/RelatedComplexCases';
 import AuthorByline from '../../components/AuthorByline';
+import AudioNarration from '../../components/AudioNarration';
 
 const jsonLd = [
   articleSchema({
@@ -58,6 +59,7 @@ export default function GlaucomaAndCataractPage() {
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"
         style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+        bottomOverlay={<AudioNarration src="/audio/narrations/cataracts-and-glaucoma.mp3" />}
       >
         <div className="container">
           <h1>Glaucoma and <strong>Cataract Surgery</strong></h1>

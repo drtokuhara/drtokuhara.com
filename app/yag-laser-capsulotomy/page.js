@@ -12,6 +12,7 @@ import {
   StaggerItem,
   ScaleOnScroll,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -48,7 +49,7 @@ export default function YagLaserCapsulotomy() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageBreadcrumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "Yag Laser Capsulotomy for Posterior Capsule Opacification", "description": "Blurred vision and glare after cataract surgery?  It may be easily reversed with laser.  \n\nIn this video, Dr. Tokuhara d", "thumbnailUrl": "https://i.ytimg.com/vi/JzspGX4RErQ/hqdefault.jpg", "uploadDate": "2023-05-03", "duration": "PT4M44S", "contentUrl": "https://www.youtube.com/watch?v=JzspGX4RErQ", "embedUrl": "https://www.youtube.com/embed/JzspGX4RErQ"}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "Yag Laser Capsulotomy for Posterior Capsule Opacification", "description": "Blurred vision and glare after cataract surgery?  It may be easily reversed with laser.  \n\nIn this video, Dr. Tokuhara d", "thumbnailUrl": "https://i.ytimg.com/vi/JzspGX4RErQ/hqdefault.jpg", "uploadDate": "2023-05-03T00:00:00Z", "duration": "PT4M44S", "contentUrl": "https://www.youtube.com/watch?v=JzspGX4RErQ", "embedUrl": "https://www.youtube.com/embed/JzspGX4RErQ"}) }} />
 
       {/* CINEMATIC HERO WITH VIDEO */}
       <VideoBackground
@@ -57,6 +58,7 @@ export default function YagLaserCapsulotomy() {
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"
         style={{minHeight: '60vh', display: 'flex', alignItems: 'center'}}
+        bottomOverlay={<AudioNarration src="/audio/narrations/yag-laser-capsulotomy.mp3" />}
       >
         <div className="container" style={{textAlign: 'center'}}>
           <ScrollReveal direction="up" once={true}>

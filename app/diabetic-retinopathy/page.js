@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../schema';
 import AuthorByline from '../components/AuthorByline';
+import AudioNarration from '../components/AudioNarration';
 import {
   ScrollReveal,
   BlurReveal,
@@ -94,7 +95,7 @@ export default function DiabeticRetinopathyPage() {
         />
       ))}
 
-      <VideoBackground src="/media/ambient-light-as-information.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-light-as-information.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}} bottomOverlay={<AudioNarration src="/audio/narrations/diabetic-retinopathy.mp3" />}>
         <div className="container">
           <h1>Diabetic Retinopathy: <strong>What Every Diabetic Patient Should Know</strong></h1>
           <p className="page-hero-sub">

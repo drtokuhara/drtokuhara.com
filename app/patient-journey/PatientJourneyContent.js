@@ -11,6 +11,7 @@ import {
   VideoBackground,
   LineDraw,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 export default function PatientJourneyContent() {
   const { t, lang } = useLanguage();
@@ -25,6 +26,7 @@ export default function PatientJourneyContent() {
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"
         style={{position: 'relative', overflow: 'hidden'}}
+        bottomOverlay={<AudioNarration src="/audio/narrations/patient-journey.mp3" />}
       >
         <div className="container">
           <h1 dangerouslySetInnerHTML={{ __html: t('patientJourney.title') || 'Your <strong>Patient Journey</strong>' }} />

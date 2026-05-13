@@ -9,6 +9,7 @@ import {
   VideoBackground,
 } from '../components/ScrollAnimations';
 import PageFAQ from '../components/PageFAQ';
+import AudioNarration from '../components/AudioNarration';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -71,10 +72,10 @@ export default function LaserCataractSurgery() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageBreadcrumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "Laser Cataract Surgery with Dr. Tokuhara", "description": "What is it like to have laser cataract surgery?  Are you anxious about having cataract surgery?  Dr. Tokuhara's patient,", "thumbnailUrl": "https://i.ytimg.com/vi/3vEQKShP_Tg/maxresdefault.jpg", "uploadDate": "2021-07-26", "duration": "PT3M49S", "contentUrl": "https://www.youtube.com/watch?v=3vEQKShP_Tg", "embedUrl": "https://www.youtube.com/embed/3vEQKShP_Tg"}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "VideoObject", "name": "Laser Cataract Surgery with Dr. Tokuhara", "description": "What is it like to have laser cataract surgery?  Are you anxious about having cataract surgery?  Dr. Tokuhara's patient,", "thumbnailUrl": "https://i.ytimg.com/vi/3vEQKShP_Tg/maxresdefault.jpg", "uploadDate": "2021-07-26T00:00:00Z", "duration": "PT3M49S", "contentUrl": "https://www.youtube.com/watch?v=3vEQKShP_Tg", "embedUrl": "https://www.youtube.com/embed/3vEQKShP_Tg"}) }} />
 
       {/* HERO */}
-      <VideoBackground src="/media/ambient-architectural-precision.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-architectural-precision.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}} bottomOverlay={<AudioNarration src="/audio/narrations/laser-cataract-surgery.mp3" />}>
         <div className="container">
           <ScrollReveal direction="up" once={true}><h1>Laser Cataract <strong>Surgery</strong></h1></ScrollReveal>
           <p className="page-hero-sub">There is nothing more precise than a computer-guided laser. When it comes to cataract surgery, precision is key.</p>

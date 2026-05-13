@@ -6,6 +6,7 @@ import {
   LineDraw,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import AudioNarration from '../components/AudioNarration';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -76,10 +77,10 @@ export default function PanOptixVsPanOptixPro() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageBreadcrumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([{"@context": "https://schema.org", "@type": "VideoObject", "name": "What's the Difference Between PanOptix and PanOptix Pro? Real Patient Experience with Dr. Tokuhara", "description": "Thinking about cataract surgery in 2025? Wondering whether to choose the PanOptix Pro lens over the original PanOptix?\n\n", "thumbnailUrl": "https://i.ytimg.com/vi/Yomf55PktXU/maxresdefault.jpg", "uploadDate": "2025-06-20", "duration": "PT2M43S", "contentUrl": "https://www.youtube.com/watch?v=Yomf55PktXU", "embedUrl": "https://www.youtube.com/embed/Yomf55PktXU"}, {"@context": "https://schema.org", "@type": "VideoObject", "name": "First PanOptix Pro Cataract Surgery in Coachella Valley: Dr. Tokuhara", "description": "Watch the first PanOptix Pro lens implant in the Coachella Valley, performed by Dr. Keith Tokuhara, a Fellowship trained", "thumbnailUrl": "https://i.ytimg.com/vi/i7ME2ufk1iM/maxresdefault.jpg", "uploadDate": "2025-06-10", "duration": "PT5M11S", "contentUrl": "https://www.youtube.com/watch?v=i7ME2ufk1iM", "embedUrl": "https://www.youtube.com/embed/i7ME2ufk1iM"}]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([{"@context": "https://schema.org", "@type": "VideoObject", "name": "What's the Difference Between PanOptix and PanOptix Pro? Real Patient Experience with Dr. Tokuhara", "description": "Thinking about cataract surgery in 2025? Wondering whether to choose the PanOptix Pro lens over the original PanOptix?\n\n", "thumbnailUrl": "https://i.ytimg.com/vi/Yomf55PktXU/maxresdefault.jpg", "uploadDate": "2025-06-20T00:00:00Z", "duration": "PT2M43S", "contentUrl": "https://www.youtube.com/watch?v=Yomf55PktXU", "embedUrl": "https://www.youtube.com/embed/Yomf55PktXU"}, {"@context": "https://schema.org", "@type": "VideoObject", "name": "First PanOptix Pro Cataract Surgery in Coachella Valley: Dr. Tokuhara", "description": "Watch the first PanOptix Pro lens implant in the Coachella Valley, performed by Dr. Keith Tokuhara, a Fellowship trained", "thumbnailUrl": "https://i.ytimg.com/vi/i7ME2ufk1iM/maxresdefault.jpg", "uploadDate": "2025-06-10T00:00:00Z", "duration": "PT5M11S", "contentUrl": "https://www.youtube.com/watch?v=i7ME2ufk1iM", "embedUrl": "https://www.youtube.com/embed/i7ME2ufk1iM"}]) }} />
 
       {/* HERO */}
-      <VideoBackground src="/media/ambient-glass-horizon.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-glass-horizon.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}} bottomOverlay={<AudioNarration src="/audio/narrations/panoptix-vs-panoptix-pro.mp3" />}>
         <div className="container">
           <ScrollReveal direction="up" once={true}><h1>PanOptix vs <strong>PanOptix Pro</strong></h1></ScrollReveal>
           <p className="page-hero-sub">Same trifocal architecture. A meaningful optical refinement. Here is what actually changed, and whether it matters for your surgery.</p>
