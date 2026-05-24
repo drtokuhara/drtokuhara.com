@@ -100,6 +100,7 @@ export default function InsightWhenExperienceSpeaks() {
         <div className="container content-narrow">
           <AuthorByline />
           <div className="section-divider" style={{margin: '32px auto'}} />
+          <div style={{textAlign: "center", margin: "32px 0"}}>n            <img src="/media/dr-gimbel-portrait-lineart.jpg" alt="Dr. Howard Gimbel - line art portrait" style={{maxWidth: "220px", width: "100%", height: "auto", borderRadius: "8px", opacity: 0.85}} />n            <p style={{fontSize: "0.8rem", color: "var(--text-light)", marginTop: "8px", fontStyle: "italic"}}>Dr. Howard Gimbel</p>n          </div>
 
           <p className="body-lead body-lead-dropcap">
             There is a moment in every surgeon's training when a principle stops being something you memorized and becomes something you feel. It moves from the textbook into your hands. It becomes part of how you see.
