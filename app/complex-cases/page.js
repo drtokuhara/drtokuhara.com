@@ -9,6 +9,9 @@ import {
   BlurReveal,
   LineDraw,
   VideoBackground,
+  ScaleOnScroll,
+  MagneticElement,
+  KineticText,
 } from '../components/ScrollAnimations';
 import TiltCard from '../components/TiltCard';
 
@@ -60,8 +63,10 @@ export default function ComplexCasesPage() {
       {/* PAGE HERO */}
       <VideoBackground src="/media/ambient-timepiece-mechanism.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
-          <h1>When Other Surgeons Say <strong>Nothing Can Be Done</strong></h1>
+          <KineticText text="When Other Surgeons Say Nothing Can Be Done" Tag="h1" mode="word" staggerDelay={0.05} />
+          <ScrollReveal direction="up" delay={0.3} once={true}>
           <p className="page-hero-sub">Complex cataract surgery, corrective procedures, and honest second opinions for patients who&rsquo;ve been told there are no options left.</p>
+          </ScrollReveal>
         </div>
       </VideoBackground>
 
@@ -69,10 +74,12 @@ export default function ComplexCasesPage() {
       <section className="section section-white">
         <div className="container content-narrow">
           <AuthorByline />
+          <ScaleOnScroll scaleRange={[0.92, 1]} opacityRange={[0.7, 1]}>
           <h2 className="section-title">What Makes a Case <strong>Complex</strong></h2>
           <p className="prose">
             A cataract case becomes complex when something increases risk, reduces predictability, or requires additional surgical skill, tools, or planning. Not every cataract is routine. Most are, and that&rsquo;s good news. But some eyes come with challenges that change the entire approach. Those challenges fall into a few distinct categories.
           </p>
+          </ScaleOnScroll>
 
           <h3 className="subsection-title">Patient and Anatomy Factors</h3>
           <p className="prose">
@@ -122,39 +129,56 @@ export default function ComplexCasesPage() {
             <h2 className="section-title">Cases I <strong>Specialize In</strong></h2>
             <div className="section-subtitle">These are the problems I solve every week. Not once a year. Every week.</div>
           </ScrollReveal>
+          <LineDraw color="var(--oasis)" thickness={2} threshold={0.2} once={true} style={{marginBottom: '40px', maxWidth: '200px', margin: '0 auto 40px'}} />
           <StaggerChildren className="card-grid" staggerDelay={0.08}>
+            <StaggerItem>
             <div className="card">
               <h3>Dislocated or Subluxated Lens Implants</h3>
               <p>A lens implant that has shifted, tilted, or fallen out of position. This can happen months or years after surgery due to progressive zonular weakness, pseudoexfoliation syndrome, or trauma. The lens may sublux partially or dislocate completely into the vitreous cavity. I use the Yamane flanged intrascleral fixation technique, a sutureless approach that creates stable, long-term lens centration even without capsular support. I was the first surgeon in the Coachella Valley to perform this technique.</p>
             </div>
+            </StaggerItem>
+            <StaggerItem>
             <div className="card">
               <h3>Retained Lens Fragments</h3>
               <p>Pieces of the cataract left behind during surgery. Small cortical fragments may resorb on their own, but larger nuclear fragments can trigger severe inflammation (lens-induced uveitis), sustained intraocular pressure elevation, and corneal edema. Timing matters: prolonged retention increases the risk of cystoid macular edema and permanent endothelial cell loss. I&rsquo;ve seen patients told to &ldquo;just wait it out&rdquo; when they needed the fragment removed promptly. If you&rsquo;re still having problems weeks after cataract surgery, this is one of the things I evaluate carefully.</p>
             </div>
+            </StaggerItem>
+            <StaggerItem>
             <div className="card">
               <h3>Posterior Capsule Rupture Complications</h3>
               <p>A tear in the capsule during surgery. It&rsquo;s the most common serious intraoperative complication, and how it&rsquo;s managed in the moment determines the long-term outcome. When it isn&rsquo;t handled well, patients end up with lens instability, retained material, or worse. I repair the consequences and place a stable lens when the original plan is no longer possible.</p>
             </div>
+            </StaggerItem>
+            <StaggerItem>
             <div className="card">
               <h3>Iris Damage and Reconstruction</h3>
               <p>The iris can be damaged during complicated surgery, from trauma, or from certain medical devices. A damaged iris causes severe light sensitivity, glare, and cosmetic concerns. I perform iris reconstruction to restore both function and appearance, reducing symptoms that can be genuinely debilitating.</p>
             </div>
+            </StaggerItem>
+            <StaggerItem>
             <div className="card">
               <h3>Failed or Unsatisfactory Premium Lens Outcomes</h3>
               <p>Multifocal and extended depth of focus lenses can deliver incredible results, but they&rsquo;re not right for every eye. Persistent dysphotopsia (unwanted visual phenomena like halos, starbursts, or waxy vision) can result from residual refractive error, posterior capsule opacification, dry eye, corneal irregularity, or simply a mismatch between the lens optics and the patient&rsquo;s visual system. When symptoms persist beyond the expected neuroadaptation period, the conversation shifts to whether the lens should be exchanged for a monofocal or EDOF alternative. I help patients navigate that decision honestly, based on objective testing and careful examination, without pressure to just &ldquo;give it more time.&rdquo;</p>
             </div>
+            </StaggerItem>
+            <StaggerItem>
             <div className="card">
               <h3>Secondary Lens Implantation</h3>
               <p>Some patients are left without a lens implant after a complicated surgery, or their original implant needs to come out. Secondary implantation using the Yamane technique lets me place a new lens in eyes that no longer have the natural capsule to hold one. It&rsquo;s a specialized procedure, and it changes lives for patients who&rsquo;ve been wearing thick glasses or contact lenses since their complication.</p>
             </div>
+            </StaggerItem>
+            <StaggerItem>
             <div className="card">
               <h3>Complex Anterior Segment Reconstruction</h3>
               <p>When multiple structures in the front of the eye are damaged, the repair isn&rsquo;t just one thing. It might involve the iris, the capsule, the lens, and the cornea all in the same case. Anterior segment reconstruction requires planning the entire repair as a single coordinated surgery, not a series of patchwork fixes.</p>
             </div>
+            </StaggerItem>
+            <StaggerItem>
             <div className="card">
               <h3>Reoperation After Another Surgeon&rsquo;s Complication</h3>
               <p>This is the hardest conversation in ophthalmology. Something went wrong, and now you need someone else to fix it. I approach these cases without judgment toward the original surgeon. Complications can happen to anyone. My focus is entirely on what we can do now to give you the best possible outcome.</p>
             </div>
+            </StaggerItem>
           </StaggerChildren>
         </div>
       </section>
@@ -320,9 +344,9 @@ export default function ComplexCasesPage() {
           <h2>If another doctor told you there&rsquo;s nothing more they can do, <strong>let&rsquo;s talk.</strong></h2>
           <p>You don&rsquo;t need a referral. You don&rsquo;t need to feel guilty about asking for a second opinion. You just need someone who will look at your situation with fresh eyes and give you an honest answer.</p>
           <div className="cta-buttons">
-            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
-            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
-            <Link href="/cataract-surgery" className="btn-secondary">Back to Cataract Surgery</Link>
+            <MagneticElement strength={0.2}><Link href="/contact" className="btn-primary">Schedule a Consultation</Link></MagneticElement>
+            <MagneticElement strength={0.2}><a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a></MagneticElement>
+            <MagneticElement strength={0.2}><Link href="/cataract-surgery" className="btn-secondary">Back to Cataract Surgery</Link></MagneticElement>
           </div>
         </div>
       </section>

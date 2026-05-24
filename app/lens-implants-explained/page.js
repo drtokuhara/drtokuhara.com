@@ -9,6 +9,9 @@ import {
   BlurReveal,
   MagneticElement,
   LineDraw,
+  StaggerChildren,
+  StaggerItem,
+  CountUp,
 } from '../components/ScrollAnimations';
 import PageFAQ from '../components/PageFAQ';
 import AudioNarration from '../components/AudioNarration';
@@ -141,10 +144,14 @@ export default function LensImplantsExplained() {
       {/* MONOFOCAL */}
       <section className="section section-warm">
         <div className="container content-narrow">
+          <StaggerChildren staggerDelay={0.1} threshold={0.15} once={true}>
+          <StaggerItem>
           <ScrollReveal direction="left" once={true}>
             <h2 className="section-title">Monofocal <strong>Lens</strong></h2>
           </ScrollReveal>
           <p className="lens-tagline">The reliable foundation. Covered by insurance.</p>
+          </StaggerItem>
+          <StaggerItem>
           <p>
             A monofocal lens gives you clear vision at one distance. Most patients choose distance - sharp for driving, television, walking around. You'd wear reading glasses for close work. The standard monofocal IOL is the most extensively studied implant in ophthalmology, with decades of clinical data supporting its reliability and optical quality.
           </p>
@@ -159,16 +166,22 @@ export default function LensImplantsExplained() {
             <p><strong>What you accept:</strong> Glasses for the other distance. If you pick distance, you need readers. If you pick near, you need glasses for driving.</p>
             <p><strong>Best for:</strong> Patients who don't mind glasses for some tasks and want the most predictable outcome. Patients with strong near-vision identity (readers, craftspeople, artists).</p>
           </div>
+          </StaggerItem>
+          </StaggerChildren>
         </div>
       </section>
 
       {/* TORIC */}
       <section className="section section-white">
         <div className="container content-narrow">
+          <StaggerChildren staggerDelay={0.1} threshold={0.15} once={true}>
+          <StaggerItem>
           <ScrollReveal direction="right" once={true}>
             <h2 className="section-title">Toric <strong>Lens</strong></h2>
           </ScrollReveal>
           <p className="lens-tagline">For patients with astigmatism. Sharper uncorrected vision.</p>
+          </StaggerItem>
+          <StaggerItem>
           <p>
             If you have astigmatism - an irregular curvature of the cornea - a standard lens won't fully address it. A toric lens is designed to compensate for that shape, giving you sharper uncorrected vision at your chosen distance. Common toric platforms include the AcrySof IQ Toric, Tecnis Toric, and enVista Toric, each with specific toricity ranges and optical characteristics.
           </p>
@@ -180,6 +193,8 @@ export default function LensImplantsExplained() {
             <p><strong>What you accept:</strong> Still a single-focus lens - you'll need readers for close work. Premium cost above insurance coverage.</p>
             <p><strong>Best for:</strong> Patients with moderate to significant astigmatism who want the clearest possible distance vision without glasses.</p>
           </div>
+          </StaggerItem>
+          </StaggerChildren>
         </div>
       </section>
 
@@ -202,10 +217,14 @@ export default function LensImplantsExplained() {
       {/* EDOF */}
       <section className="section section-warm">
         <div className="container content-narrow">
+          <StaggerChildren staggerDelay={0.1} threshold={0.15} once={true}>
+          <StaggerItem>
           <ScrollReveal direction="left" once={true}>
             <h2 className="section-title">Extended Depth of Focus <strong>(EDOF)</strong></h2>
           </ScrollReveal>
           <p className="lens-tagline">A wider range of clear vision. A modern middle ground.</p>
+          </StaggerItem>
+          <StaggerItem>
           <p>
             EDOF lenses stretch your focus from distance through intermediate - roughly arm's length. That means driving, cooking, using a computer, and reading your phone are all clearer without glasses. Fine print and prolonged close reading may still benefit from light readers.
           </p>
@@ -220,16 +239,22 @@ export default function LensImplantsExplained() {
             <p><strong>What you accept:</strong> Small print and close-up detail work may still need readers. Not as strong at near as multifocal. Premium cost.</p>
             <p><strong>Best for:</strong> Active patients who use computers, cook, and drive - and who value visual quality over total glasses independence.</p>
           </div>
+          </StaggerItem>
+          </StaggerChildren>
         </div>
       </section>
 
       {/* MULTIFOCAL */}
       <section className="section section-white">
         <div className="container content-narrow">
+          <StaggerChildren staggerDelay={0.1} threshold={0.15} once={true}>
+          <StaggerItem>
           <ScrollReveal direction="right" once={true}>
             <h2 className="section-title">Multifocal <strong>Lens</strong></h2>
           </ScrollReveal>
           <p className="lens-tagline">The closest to glasses-free at all distances. With tradeoffs.</p>
+          </StaggerItem>
+          <StaggerItem>
           <p>
             Multifocal lenses split incoming light to create multiple focal points - distance, intermediate, and near - simultaneously. The result: many patients rarely or never need glasses for any task.
           </p>
@@ -263,6 +288,8 @@ export default function LensImplantsExplained() {
             <p><strong>Best for:</strong> Patients who strongly dislike wearing glasses, have healthy eyes beyond cataracts, and are comfortable with the adaptation period.</p>
           </div>
           </BlurReveal>
+          </StaggerItem>
+          </StaggerChildren>
         </div>
       </section>
 
@@ -321,8 +348,8 @@ export default function LensImplantsExplained() {
           <h2 style={{fontFamily: 'var(--font-display)', fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: '#fff', marginBottom: '16px'}}>The right lens changes everything</h2>
           <p style={{color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto 32px'}}>No pressure, no upsell. Just an honest conversation about which option fits your life.</p>
           <div style={{display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap'}}>
-            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
-            <a href="tel:7603404700" className="btn-secondary" style={{borderColor: 'rgba(255,255,255,0.3)', color: '#fff'}}>Call 760.340.4700</a>
+            <MagneticElement strength={0.2}><Link href="/contact" className="btn-primary">Schedule a Consultation</Link></MagneticElement>
+            <MagneticElement strength={0.2}><a href="tel:7603404700" className="btn-secondary" style={{borderColor: 'rgba(255,255,255,0.3)', color: '#fff'}}>Call 760.340.4700</a></MagneticElement>
           </div>
         </div>
       </VideoBackground>

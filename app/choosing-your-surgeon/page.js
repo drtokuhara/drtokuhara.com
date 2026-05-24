@@ -8,6 +8,9 @@ import {
   BlurReveal,
   LineDraw,
   VideoBackground,
+  StaggerChildren,
+  StaggerItem,
+  MagneticElement,
 } from '../components/ScrollAnimations';
 import PageFAQ from '../components/PageFAQ';
 import AudioNarration from '../components/AudioNarration';
@@ -63,8 +66,10 @@ export default function ChoosingYourSurgeon() {
       ))}
       <VideoBackground src="/media/ambient-decision-moment.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}} bottomOverlay={<AudioNarration src="/audio/narrations/choosing-your-surgeon.mp3" />}>
         <div className="container">
-          <ScrollReveal direction="up" once={true}><h1>Choosing a Cataract <strong>Surgeon</strong></h1></ScrollReveal>
+          <KineticText text="Choosing a Cataract Surgeon" Tag="h1" mode="word" staggerDelay={0.06} />
+          <ScrollReveal direction="up" delay={0.3} once={true}>
           <p className="page-hero-sub">The questions nobody tells you to ask - and why the answer isn't always the biggest name or the closest office.</p>
+          </ScrollReveal>
         </div>
       </VideoBackground>
 
@@ -108,8 +113,12 @@ export default function ChoosingYourSurgeon() {
       {/* WHAT ACTUALLY MATTERS */}
       <section className="section section-white">
         <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
           <h2 className="section-title">What Actually <strong>Matters</strong></h2>
+          </ScrollReveal>
 
+          <StaggerChildren staggerDelay={0.12} threshold={0.15} once={true}>
+          <StaggerItem>
           <h3 className="content-subhead">Experience with complications - not just with routine cases</h3>
           <p>
             Every cataract surgeon can do a straightforward case. What separates surgeons is what they do when something unexpected happens. Ask about their experience with complications. Not "do complications happen?" - of course they do. Ask: "When something goes wrong, what happens next?"
@@ -141,6 +150,8 @@ export default function ChoosingYourSurgeon() {
           <p>
             If something feels off after surgery, you want access to the person who was in the operating room. Not a voicemail. Not "the next available provider."
           </p>
+          </StaggerItem>
+          </StaggerChildren>
         </div>
       </section>
 
@@ -162,7 +173,11 @@ export default function ChoosingYourSurgeon() {
       {/* RED FLAGS */}
       <section className="section section-warm">
         <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
           <h2 className="section-title">Red <strong>Flags</strong></h2>
+          </ScrollReveal>
+          <StaggerChildren staggerDelay={0.1} threshold={0.15} once={true}>
+          <StaggerItem>
           <ul className="content-list">
             <li><strong>Pressure to decide immediately.</strong> Cataract surgery is almost never urgent. If you feel rushed, slow down.</li>
             <li><strong>Guilt about your choices.</strong> If a surgeon implies that complications happened because you chose the "wrong" option, that's blame - not medicine.</li>
@@ -170,6 +185,8 @@ export default function ChoosingYourSurgeon() {
             <li><strong>The surgeon doesn't answer your questions directly.</strong> Vague answers, redirecting to a coordinator, or dismissing concerns are signs that communication won't improve after surgery.</li>
             <li><strong>You can't find out who will manage complications.</strong> If the answer is unclear or "we'll cross that bridge when we come to it," keep looking.</li>
           </ul>
+          </StaggerItem>
+          </StaggerChildren>
         </div>
       </section>
 
@@ -228,8 +245,8 @@ export default function ChoosingYourSurgeon() {
           </div>
 
           <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
-            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
-            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+            <MagneticElement strength={0.2}><Link href="/contact" className="btn-primary">Schedule a Consultation</Link></MagneticElement>
+            <MagneticElement strength={0.2}><a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a></MagneticElement>
           </div>
         </div>
       </section>

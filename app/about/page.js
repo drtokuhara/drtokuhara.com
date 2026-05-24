@@ -11,6 +11,8 @@ import {
   BlurReveal,
   LineDraw,
   VideoBackground,
+  CountUp,
+  MagneticElement,
 } from '../components/ScrollAnimations';
 import PageFAQ from '../components/PageFAQ';
 import AudioNarration from '../components/AudioNarration';
@@ -96,7 +98,7 @@ export default function AboutPage() {
               I did my residency at Loma Linda University, where I trained under Dr. Howard Gimbel. If you know cataract surgery, you know that name. He is one of the most respected surgeons in the field, and training under him shaped the way I think about every case. I then completed a retina fellowship, which gave me the ability to manage complex eye disease alongside cataract surgery.
             </p>
             <p>
-              Palm Springs Life has named me a Top Doctor every year since 2019. I was recognized by NBC as the best cataract surgeon in the Coachella Valley. Those things are nice, but what actually matters is what happens in the operating room and the conversations we have before we get there.
+              Palm Springs Life has named me a Top Doctor every year since <CountUp end={2019} start={2015} duration={1.5} once={true} threshold={0.5} />. I was recognized by NBC as the best cataract surgeon in the Coachella Valley. Those things are nice, but what actually matters is what happens in the operating room and the conversations we have before we get there.
             </p>
           </div>
         </div>
@@ -138,6 +140,7 @@ export default function AboutPage() {
           <ScrollReveal direction="up" once={true}>
             <h2 className="section-title">Training &amp; <strong>Credentials</strong></h2>
           </ScrollReveal>
+          <LineDraw color="var(--oasis)" thickness={2} threshold={0.2} once={true} style={{marginBottom: '48px'}} />
           <StaggerChildren className="credentials-grid" staggerDelay={0.1}>
             <StaggerItem className="credential-item">
               <h3>Education</h3>
@@ -239,6 +242,7 @@ export default function AboutPage() {
           <ScrollReveal direction="up" once={true}>
             <h2 className="section-title">Why I Practice <strong>This Way</strong></h2>
           </ScrollReveal>
+          <LineDraw color="var(--oasis)" thickness={2} threshold={0.2} once={true} style={{marginBottom: '32px'}} />
           <BlurReveal>
           <p className="prose">
             There&rsquo;s a problem in eye care that nobody wants to talk about. Referral kickbacks. Corporate chains that tell surgeons which lenses to use. Private equity firms buying up practices and squeezing out the doctors who built them. Patients end up as line items on a spreadsheet.
@@ -287,7 +291,10 @@ export default function AboutPage() {
       {/* INTERNATIONAL MISSIONS & FAMILY */}
       <section className="section section-warm">
         <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
           <h2 className="section-title">Beyond the <strong>Operating Room</strong></h2>
+          </ScrollReveal>
+          <LineDraw color="var(--oasis)" thickness={2} threshold={0.2} once={true} style={{marginBottom: '32px'}} />
           <h3 style={{color: 'var(--night-horizon)', marginBottom: '12px'}}>International Surgical Missions</h3>
           <p className="prose">
             I&rsquo;ve done surgical mission work in the Philippines, Micronesia, and Guam. These trips remind you why you went into medicine in the first place. People who have been functionally blind for years, getting their sight back with a 15 minute procedure. No insurance paperwork. No lens upgrades. Just a patient who needs help and a surgeon who can provide it.
@@ -366,7 +373,10 @@ export default function AboutPage() {
       {/* AWARDS & RECOGNITION */}
       <section className="section section-warm">
         <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
           <h2 className="section-title">Awards &amp; <strong>Recognition</strong></h2>
+          </ScrollReveal>
+          <LineDraw color="var(--oasis)" thickness={2} threshold={0.2} once={true} style={{marginBottom: '32px'}} />
           <div className="credentials-grid">
             <div className="credential-item">
               <h3>NBC Recognition</h3>
@@ -413,9 +423,9 @@ export default function AboutPage() {
           <h2>Want to <strong>meet in person?</strong></h2>
           <p>Whether you have questions about your eyes or you&rsquo;re ready to talk about surgery, I&rsquo;m here.</p>
           <div className="cta-buttons">
-            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
-            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
-            <Link href="/cataract-surgery" className="btn-secondary">Learn About Cataract Surgery</Link>
+            <MagneticElement strength={0.2}><Link href="/contact" className="btn-primary">Schedule a Consultation</Link></MagneticElement>
+            <MagneticElement strength={0.2}><a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a></MagneticElement>
+            <MagneticElement strength={0.2}><Link href="/cataract-surgery" className="btn-secondary">Learn About Cataract Surgery</Link></MagneticElement>
           </div>
         </div>
       </section>
