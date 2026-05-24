@@ -98,7 +98,7 @@ export default function AboutPage() {
               I did my residency at Loma Linda University, where I trained under Dr. Howard Gimbel. If you know cataract surgery, you know that name. He is one of the most respected surgeons in the field, and training under him shaped the way I think about every case. I then completed a retina fellowship, which gave me the ability to manage complex eye disease alongside cataract surgery.
             </p>
             <p>
-              Palm Springs Life has named me a Top Doctor every year since <CountUp end={2019} start={2015} duration={1.5} once={true} threshold={0.5} />. I was recognized by NBC as the best cataract surgeon in the Coachella Valley. Those things are nice, but what actually matters is what happens in the operating room and the conversations we have before we get there.
+              Palm Springs Life has named me a Top Doctor every year since 2019. I was recognized by NBC as the best cataract surgeon in the Coachella Valley. Those things are nice, but what actually matters is what happens in the operating room and the conversations we have before we get there.
             </p>
           </div>
         </div>

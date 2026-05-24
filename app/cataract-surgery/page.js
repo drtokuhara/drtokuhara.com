@@ -299,20 +299,20 @@ export default function CataractSurgeryPage() {
           <StaggerChildren className="card-grid" staggerDelay={0.12}>
             <StaggerItem>
               <div className="card">
-                <h3>Monofocal Lenses</h3>
+                <h3><Link href="/insights/choosing-the-standard-lens">Monofocal Lenses</Link></h3>
                 <p>The standard lens implant. Sets your focus at one distance, usually far away. Most patients still need reading glasses afterward. It&rsquo;s reliable, proven, and covered by insurance. For a lot of patients, this is the right choice.</p>
               </div>
             </StaggerItem>
             <StaggerItem>
               <div className="card">
-                <h3>Toric Lenses</h3>
-                <p>Designed for patients with astigmatism. A toric lens reduces the irregular curvature of your cornea at the same time as cataract removal. Without it, astigmatism will still blur your vision even after surgery. I use precise alignment techniques to get the best result.</p>
+                <h3><Link href="/toric-lens-astigmatism">Toric Lenses</Link></h3>
+                <p>Designed for patients with astigmatism. A <Link href="/toric-lens-astigmatism">toric lens</Link> reduces the irregular curvature of your cornea at the same time as cataract removal. Without it, astigmatism will still blur your vision even after surgery. I use precise alignment techniques to get the best result.</p>
               </div>
             </StaggerItem>
             <StaggerItem>
               <div className="card">
                 <h3>Multifocal &amp; Extended Depth Lenses</h3>
-                <p>Lenses like PanOptix, PanOptix Pro, and Vivity give you a range of vision. Distance, intermediate, and sometimes near. The goal is reducing or eliminating dependence on glasses. These lenses aren&rsquo;t for everyone, and I&rsquo;ll explain why some eyes do better with them than others.</p>
+                <p>Lenses like <Link href="/panoptix-vs-panoptix-pro">PanOptix and PanOptix Pro</Link>, and <Link href="/vivity-vs-panoptix">Vivity</Link> give you a range of vision. Distance, intermediate, and sometimes near. The goal is reducing or eliminating dependence on glasses. These lenses aren&rsquo;t for everyone, and I&rsquo;ll explain why some eyes do better with them than others.</p>
               </div>
             </StaggerItem>
           </StaggerChildren>
