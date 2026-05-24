@@ -6,6 +6,8 @@ import {
   ScrollReveal,
   BlurReveal,
   VideoBackground,
+  StaggerChildren,
+  StaggerItem,
 } from '../../components/ScrollAnimations';
 
 export const metadata = {
@@ -284,6 +286,69 @@ export default function InsightWhatYouSeeDuringCataractSurgery() {
               <em>I have performed over 20,000 cataract surgeries, and I have never had a patient tell me afterward that the visual experience during surgery was traumatic. I have had patients say it was strange. I have had patients say it was boring. I have had patients say they barely remember it. But the thing they were afraid they would see, the sharp, vivid, disturbing image of their own surgery, that does not happen. The eye does not work that way. The procedure does not work that way. And knowing that, really understanding it, is often the thing that finally allows patients to move forward.</em>
             </p>
           </div></BlurReveal>
+        </div>
+      </section>
+
+      <section className="section" style={{backgroundColor: 'var(--midnight)', color: 'var(--white)', padding: '80px 0'}}>
+        <div className="container">
+          <ScrollReveal direction="up" once={true}>
+            <div style={{textAlign: 'center', maxWidth: '800px', margin: '0 auto 48px'}}>
+              <h2 className="section-title" style={{color: 'var(--white)'}}>Through Their Eyes: <strong>What Patients Drew After Surgery</strong></h2>
+              <p style={{fontSize: '1.125rem', lineHeight: '1.7', color: 'rgba(255, 255, 255, 0.9)'}}>
+                Several of my patients who are artists have sketched what they saw during their cataract surgery. These drawings, created independently by different patients, reveal something remarkable: the consistency of the experience. Kaleidoscopic patterns, hearts, orbs, turquoise and gold light, tunnels of color. Nothing frightening. I show these to anxious patients before surgery to demonstrate that the reality is not a surgical scene, it is a beautiful light show.
+              </p>
+            </div>
+          </ScrollReveal>
+          
+          <StaggerChildren>
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: '24px',
+              maxWidth: '1400px',
+              margin: '0 auto'
+            }}>
+              {[
+                '/media/patient-art/1.jpeg',
+                '/media/patient-art/2.jpeg',
+                '/media/patient-art/3.jpeg',
+                '/media/patient-art/4.jpeg',
+                '/media/patient-art/5.jpeg',
+                '/media/patient-art/6.jpeg',
+                '/media/patient-art/7.jpeg',
+                '/media/patient-art/8.jpeg',
+                '/media/patient-art/9.a.jpeg',
+                '/media/patient-art/9.b.jpeg',
+                '/media/patient-art/9.c.jpeg',
+                '/media/patient-art/9.d.jpeg',
+                '/media/patient-art/10.jpeg',
+                '/media/patient-art/11.jpeg',
+              ].map((src, i) => (
+                <StaggerItem key={i}>
+                  <div className="gallery-card">
+                    <img 
+                      src={src} 
+                      alt="Patient artwork depicting their cataract surgery visual experience"
+                      loading="lazy"
+                      style={{
+                        width: '100%',
+                        height: 'auto',
+                        display: 'block'
+                      }}
+                    />
+                  </div>
+                </StaggerItem>
+              ))}
+            </div>
+          </StaggerChildren>
+
+          <ScrollReveal direction="up" once={true}>
+            <div style={{textAlign: 'center', maxWidth: '800px', margin: '64px auto 0'}}>
+              <p style={{fontSize: '1.125rem', lineHeight: '1.7', color: 'rgba(255, 255, 255, 0.9)'}}>
+                These drawings are evidence of something I tell every nervous patient: the experience is not what you fear. Multiple people, working independently, all drew versions of the same thing. Hearts. Circles. Flowing colors. Light moving through space. What you see during cataract surgery is closer to watching an animated film than witnessing a medical procedure. And that is exactly what I want you to understand before you arrive.
+              </p>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
