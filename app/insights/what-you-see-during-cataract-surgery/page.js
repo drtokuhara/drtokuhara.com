@@ -102,7 +102,7 @@ export default function InsightWhatYouSeeDuringCataractSurgery() {
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"
         style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
-        bottomOverlay={<AudioNarration src="" />}
+        bottomOverlay={<AudioNarration src="/audio/narrations/what-you-see-during-cataract-surgery.mp3" />}
       >
         <div className="container">
           <ScrollReveal direction="up" once={true}>
