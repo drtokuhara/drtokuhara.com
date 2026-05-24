@@ -234,11 +234,19 @@ export default function InsightWhenPatientsWait() {
           <div className="related-grid">
             <Link href="/insights/when-is-the-right-time" className="related-card">
               <h3>When Is the Right Time?</h3>
-              <p>The myth of "bad enough" and why the right time depends on your life, not a number on a chart.</p>
+              <p>The myth of bad enough and why the right time depends on your life, not a number on a chart.</p>
             </Link>
             <Link href="/insights/permission-to-see-again" className="related-card">
               <h3>Permission to See Again</h3>
-              <p>A woman delayed care for six years. She didn't need a surgical plan. She needed permission.</p>
+              <p>A woman delayed care for six years. She did not need a surgical plan. She needed permission.</p>
+            </Link>
+            <Link href="/insights/when-do-i-need-cataract-surgery" className="related-card">
+              <h3>When Do I Need Cataract Surgery?</h3>
+              <p>The question everyone asks, and why there is no single number that answers it.</p>
+            </Link>
+            <Link href="/insights/the-needle-that-wasnt-there" className="related-card">
+              <h3>The Needle That Wasn't There</h3>
+              <p>She avoided surgery for years because of a procedure that is no longer used.</p>
             </Link>
           </div>
         </div>

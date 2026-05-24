@@ -166,13 +166,21 @@ export default function InsightReader() {
           </div>
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
-            <Link href="/lens-implants-explained" className="related-card">
-              <h3>Lens Implants Explained</h3>
-              <p>A full guide to monofocal, toric, EDOF, and multifocal lenses - and how to decide.</p>
-            </Link>
             <Link href="/insights/permission-to-see-again" className="related-card">
               <h3>Permission to See Again</h3>
               <p>Another story about a patient who needed something beyond a surgical plan.</p>
+            </Link>
+            <Link href="/insights/three-things-patients-say" className="related-card">
+              <h3>Three Things Patients Say</h3>
+              <p>How three common statements in my exam room tell me which lens to recommend.</p>
+            </Link>
+            <Link href="/insights/are-premium-lenses-worth-it" className="related-card">
+              <h3>Are Premium Lenses Worth It?</h3>
+              <p>An honest reflection on premium versus standard lens implants and what the answer depends on.</p>
+            </Link>
+            <Link href="/insights/the-consultation-that-changed-everything" className="related-card">
+              <h3>The Consultation That Changed Everything</h3>
+              <p>What a thorough consultation actually looks like, and why it matters.</p>
             </Link>
           </div>
         </div>

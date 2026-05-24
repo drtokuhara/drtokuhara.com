@@ -145,18 +145,34 @@ export default function InsightThreeThingsPatientsSay() {
             <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
           </div>
 
-          <div className="section-divider" style={{margin: '40px auto'}} />
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
+            <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
+        </div>
+      </section>
 
-          <p style={{textAlign: 'center', marginTop: '24px'}}>
-            <Link href="/lens-implants-explained" className="cta-link">
-              Learn more about your lens options &rarr;
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
+          <div className="related-grid">
+            <Link href="/insights/are-premium-lenses-worth-it" className="related-card">
+              <h3>Are Premium Lens Implants Worth It?</h3>
+              <p>An honest reflection on premium versus standard lens implants and what the answer depends on.</p>
             </Link>
-          </p>
-          <p style={{textAlign: 'center', marginTop: '12px'}}>
-            <Link href="/contact" className="cta-link">
-              Schedule a consultation &rarr;
+            <Link href="/insights/the-lens-nobody-talks-about" className="related-card">
+              <h3>The Lens Nobody Talks About</h3>
+              <p>A patient was convinced she needed a multifocal. Her eyes and lifestyle told a different story.</p>
             </Link>
-          </p>
+            <Link href="/insights/when-ai-recommends-your-lens" className="related-card">
+              <h3>When AI Recommends Your Lens</h3>
+              <p>A patient used AI to choose his lens. His eyes told a different story.</p>
+            </Link>
+            <Link href="/insights/the-consultation-that-changed-everything" className="related-card">
+              <h3>The Consultation That Changed Everything</h3>
+              <p>What a thorough consultation actually looks like, and why it matters.</p>
+            </Link>
+          </div>
         </div>
       </section>
     </>

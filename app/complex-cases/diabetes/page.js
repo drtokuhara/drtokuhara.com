@@ -8,6 +8,7 @@ import {
   LineDraw,
 } from '../../components/ScrollAnimations';
 import RelatedComplexCases from '../../components/RelatedComplexCases';
+import PatientGuideDownload from '../../components/PatientGuideDownload';
 import AuthorByline from '../../components/AuthorByline';
 
 const jsonLd = [
@@ -26,7 +27,7 @@ const jsonLd = [
 
 export const metadata = {
   title: 'Diabetes and Cataract Surgery - Retinopathy, Timing, and Expert Management',
-  description: 'Diabetes adds complexity to cataract surgery through retinopathy, macular edema, and slower healing. Dr. Tokuhara, with dual cataract and retina fellowship training, manages the complete picture.',
+  description: 'Diabetes adds complexity to cataract surgery through retinopathy, macular edema, and slower healing. Dr. Tokuhara, with cataract residency training and retina fellowship, manages the complete picture.',
   alternates: { canonical: '/complex-cases/diabetes' },
   openGraph: {
     title: 'Diabetes & Cataract Surgery | Dr. Keith Tokuhara',
@@ -130,6 +131,12 @@ export default function DiabetesPage() {
           <p className="prose">
             Because I am fellowship-trained in retina, I can evaluate diabetic retinopathy, read OCT scans, perform retinal imaging, and make treatment decisions about the retina - not just the cataract. Most cataract surgeons refer diabetic retinopathy management entirely to a retina specialist. I do it all in-house. I perform the anti-VEGF injections, the laser photocoagulation, and the cataract surgery. One surgeon, one cohesive plan, one set of eyes watching everything. That means fewer appointments, no coordination gaps between separate doctors, and a surgeon who understands your entire eye at every step.
           </p>
+
+          <PatientGuideDownload
+            pdfPath="/guides/cataract-surgery-with-diabetes.pdf"
+            title="Cataract Surgery with Diabetes"
+            description="One-page visual guide about diabetic cataract surgery"
+          />
         </div>
       </section>
 

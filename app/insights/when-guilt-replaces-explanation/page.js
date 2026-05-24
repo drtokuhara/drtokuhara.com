@@ -179,13 +179,21 @@ export default function InsightGuilt() {
           </div>
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
-            <Link href="/choosing-your-surgeon" className="related-card">
-              <h3>Choosing Your Surgeon</h3>
-              <p>What to look for - and what to watch out for - when picking someone to operate on your eyes.</p>
+            <Link href="/insights/when-cataract-surgery-goes-wrong" className="related-card">
+              <h3>When Cataract Surgery Goes Wrong</h3>
+              <p>A comprehensive look at what can go wrong and how each complication is managed.</p>
             </Link>
-            <Link href="/understanding-cataracts" className="related-card">
-              <h3>Understanding Cataracts</h3>
-              <p>A deeper explanation of what cataracts are and when it's time to consider surgery.</p>
+            <Link href="/insights/how-to-choose-a-cataract-surgeon" className="related-card">
+              <h3>How to Choose a Cataract Surgeon</h3>
+              <p>Five things that actually matter when choosing the surgeon who will operate on your eyes.</p>
+            </Link>
+            <Link href="/insights/cataract-referral-kickbacks" className="related-card">
+              <h3>Cataract Referral Kickbacks</h3>
+              <p>Financial incentives in referrals are more common than patients realize. Here is what you should know.</p>
+            </Link>
+            <Link href="/insights/what-i-learned-from-the-surgeon-who-trained-me" className="related-card">
+              <h3>What I Learned From the Surgeon Who Trained Me</h3>
+              <p>The residency moment that changed how I think about surgery and complications.</p>
             </Link>
           </div>
         </div>

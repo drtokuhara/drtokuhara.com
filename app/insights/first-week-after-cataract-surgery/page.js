@@ -284,6 +284,14 @@ export default function InsightFirstWeek() {
               <h3>My Cataract Drops</h3>
               <p>Understanding your post-operative drop schedule.</p>
             </Link>
+            <Link href="/is-cataract-surgery-safe" className="related-card">
+              <h3>Is Cataract Surgery Safe?</h3>
+              <p>The facts about safety, risk, and what modern surgery has changed.</p>
+            </Link>
+            <Link href="/insights/life-after-cataract-surgery" className="related-card">
+              <h3>Life After Cataract Surgery</h3>
+              <p>Five things patients say they did not expect after the procedure.</p>
+            </Link>
           </div>
         </div>
       </section>

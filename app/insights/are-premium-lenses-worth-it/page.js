@@ -201,17 +201,21 @@ export default function ArePremiumLensesWorthIt() {
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
-            <Link href="/lens-implants-explained" className="related-card">
-              <h3>All Lens Options Explained</h3>
-              <p>Monofocal, toric, Extended Depth of Focus, and multifocal. The full picture in plain language.</p>
-            </Link>
-            <Link href="/vivity-vs-panoptix" className="related-card">
-              <h3>Vivity vs PanOptix</h3>
-              <p>Two excellent premium lenses. Different tradeoffs. How to decide which fits your life.</p>
-            </Link>
             <Link href="/insights/three-things-patients-say" className="related-card">
               <h3>Three Things Patients Say</h3>
               <p>How three common statements in my exam room tell me which lens to recommend.</p>
+            </Link>
+            <Link href="/insights/the-lens-nobody-talks-about" className="related-card">
+              <h3>The Lens Nobody Talks About</h3>
+              <p>A patient was convinced she needed a multifocal. Her eyes and lifestyle told a different story.</p>
+            </Link>
+            <Link href="/insights/when-ai-recommends-your-lens" className="related-card">
+              <h3>When AI Recommends Your Lens</h3>
+              <p>A patient used AI to choose his lens. His eyes told a different story.</p>
+            </Link>
+            <Link href="/insights/the-consultation-that-changed-everything" className="related-card">
+              <h3>The Consultation That Changed Everything</h3>
+              <p>What a thorough consultation actually looks like, and why it matters.</p>
             </Link>
           </div>
         </div>

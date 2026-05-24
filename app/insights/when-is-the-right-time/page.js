@@ -199,6 +199,14 @@ export default function InsightWhenIsTheRightTime() {
               <h3>Permission to See Again</h3>
               <p>A woman spent six years caring for her husband. When she finally came in, she needed permission, not a plan.</p>
             </Link>
+            <Link href="/insights/do-i-really-need-surgery" className="related-card">
+              <h3>Do I Really Need Surgery Yet?</h3>
+              <p>Sometimes the answer is not yet. Timing and honest evaluation matter.</p>
+            </Link>
+            <Link href="/insights/when-do-i-need-cataract-surgery" className="related-card">
+              <h3>When Do I Need Cataract Surgery?</h3>
+              <p>The question everyone asks, and why there is no single number that answers it.</p>
+            </Link>
           </div>
         </div>
       </section>

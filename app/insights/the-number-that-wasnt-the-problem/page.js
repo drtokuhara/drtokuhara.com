@@ -183,13 +183,21 @@ export default function InsightTheNumber() {
           </div>
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
-            <Link href="/lens-implants-explained" className="related-card">
-              <h3>Lens Implants Explained</h3>
-              <p>How different lens types work, what they correct, and how to think about the tradeoffs.</p>
-            </Link>
             <Link href="/insights/when-more-isnt-better" className="related-card">
               <h3>When More Isn't Better</h3>
               <p>A young woman's experience with a multifocal lens and the cascade of interventions that followed.</p>
+            </Link>
+            <Link href="/insights/when-ai-recommends-your-lens" className="related-card">
+              <h3>When AI Recommends Your Lens</h3>
+              <p>A patient used AI to choose his lens. His eyes told a different story.</p>
+            </Link>
+            <Link href="/insights/the-lens-nobody-talks-about" className="related-card">
+              <h3>The Lens Nobody Talks About</h3>
+              <p>A patient was convinced she needed a multifocal. Her eyes and lifestyle told a different story.</p>
+            </Link>
+            <Link href="/insights/when-the-eye-surface-changes-everything" className="related-card">
+              <h3>When the Eye Surface Changes Everything</h3>
+              <p>Advanced lens implants can only perform as well as the eye surface allows.</p>
             </Link>
           </div>
         </div>

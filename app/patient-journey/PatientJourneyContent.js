@@ -342,6 +342,10 @@ export default function PatientJourneyContent() {
               <h3>Choosing Your Surgeon</h3>
               <p>A framework for evaluating who should operate on your eyes.</p>
             </Link>
+            <Link href="/gimbel-heritage" className="related-card">
+              <h3>The Gimbel Heritage Series</h3>
+              <p>The mentorship and surgical philosophy behind Dr. Tokuhara's training.</p>
+            </Link>
           </div>
         </div>
       </section>

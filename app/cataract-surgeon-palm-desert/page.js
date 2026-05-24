@@ -1,11 +1,16 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { breadcrumbSchema, physicianSchema } from '../schema';
 import {
   ScrollReveal,
   BlurReveal,
   LineDraw,
+  ScaleOnScroll,
+  StaggerChildren,
+  StaggerItem,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import TiltCard from '../components/TiltCard';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -13,10 +18,10 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Who is the best cataract surgeon near Palm Desert?',
+      name: 'Why do Palm Desert patients choose Desert Vision Center over local ophthalmologists?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Dr. Keith Tokuhara at Desert Vision Center in Rancho Mirage is a fellowship-trained cataract surgeon just minutes from Palm Desert. He has been recognized as a Palm Springs Life Top Doctor every year from 2019 through 2026 and was named Best Cataract Surgeon in the Coachella Valley by NBC. He specializes in complex cases, premium lens implants, and patients with conditions like diabetes, glaucoma, and previous eye surgery.',
+        text: 'Palm Desert has several ophthalmologists, and patients have options. Those who choose Desert Vision Center consistently cite the thorough consultation, the honest lens recommendation, and the confidence that comes from a fellowship-trained surgeon who has performed over 20,000 procedures. Many Palm Desert patients come in after a second-opinion consultation because they did not feel heard elsewhere.',
       },
     },
     {
@@ -24,31 +29,31 @@ const faqSchema = {
       name: 'How far is Desert Vision Center from Palm Desert?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Desert Vision Center at 35900 Bob Hope Drive in Rancho Mirage is approximately a 10-minute drive from central Palm Desert. The office is easily accessible via Highway 111 or Bob Hope Drive, with ample parking.',
+        text: 'Desert Vision Center at 35900 Bob Hope Drive in Rancho Mirage is approximately 10 minutes from central Palm Desert via Highway 111 or Bob Hope Drive. Most Palm Desert residents find the drive shorter than they expected.',
       },
     },
     {
       '@type': 'Question',
-      name: 'What cataract surgery options are available near Palm Desert?',
+      name: 'Does Dr. Tokuhara treat working-age patients who need cataract surgery?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Desert Vision Center offers standard and laser-assisted cataract surgery, premium lens implants including EDOF, toric, and multifocal lenses, CLEAR in a Day same-day bilateral surgery, and complex case management. Dr. Tokuhara creates a personalized plan for every patient based on their eyes, lifestyle, and visual goals.',
+        text: 'Yes. While cataracts are more common in patients over 60, Dr. Tokuhara regularly sees working-age patients from Palm Desert, including teachers, healthcare workers, small business owners, and students. CLEAR in a Day same-day bilateral surgery is especially valuable for patients who cannot take multiple days off work.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Do I need a referral to see Dr. Tokuhara from Palm Desert?',
+      name: 'What lens options does Dr. Tokuhara recommend for Palm Desert patients?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No referral is required. Palm Desert residents can call Desert Vision Center directly at 760.340.4700 or use the online contact form to schedule a consultation. Many patients self-refer after researching cataract surgeons in the area.',
+        text: 'Dr. Tokuhara does not have a default recommendation. He evaluates your eyes, listens to your priorities, and matches the lens to your anatomy and lifestyle. Options include EDOF lenses for extended range of vision, toric lenses to reduce astigmatism, multifocal options, and the standard lens covered by Medicare. He will tell you honestly if the standard lens is the right choice.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Does Dr. Tokuhara treat patients with diabetes or glaucoma who need cataract surgery?',
+      name: 'Do I need a referral from my Palm Desert doctor to see Dr. Tokuhara?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Dr. Tokuhara is fellowship-trained in retina surgery and specializes in complex cataract cases including patients with diabetes, glaucoma, pseudoexfoliation, previous LASIK, and prior retina surgery. He manages these conditions in-house rather than referring out.',
+        text: 'No referral is required. Many Palm Desert patients self-refer after researching cataract surgeons. Call 760.340.4700 or use the online contact form to schedule.',
       },
     },
   ],
@@ -65,13 +70,13 @@ const jsonLd = [
 
 export const metadata = {
   title: 'Cataract Surgeon Near Palm Desert | Dr. Keith Tokuhara | Desert Vision Center',
-  description: 'Looking for a cataract surgeon near Palm Desert? Dr. Keith Tokuhara at Desert Vision Center in Rancho Mirage is just 10 minutes away. Fellowship-trained, 20,000+ surgeries, Top Doctor 2019-2026. Premium lenses and complex case expertise.',
+  description: 'Palm Desert residents: Dr. Tokuhara at Desert Vision Center is 10 minutes away. Thorough consultations, honest lens recommendations, 20,000+ surgeries. The second opinion that becomes the first choice.',
   alternates: {
     canonical: '/cataract-surgeon-palm-desert',
   },
   openGraph: {
     title: 'Cataract Surgeon Near Palm Desert | Desert Vision Center',
-    description: 'Fellowship-trained cataract surgeon Dr. Keith Tokuhara, just 10 minutes from Palm Desert. Advanced cataract surgery, premium lenses, complex cases. 760.340.4700.',
+    description: 'Ten minutes from Palm Desert. Fellowship-trained, physician-owned, and built around honest consultations. 760.340.4700.',
     url: 'https://drtokuhara.com/cataract-surgeon-palm-desert',
   },
 };
@@ -87,11 +92,11 @@ export default function CataractSurgeonPalmDesertPage() {
         />
       ))}
 
-      <VideoBackground src="/media/ambient-desert-golden-hour.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-desert-resort-sunrise.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <h1>Cataract Surgeon in <strong>Palm Desert</strong></h1>
           <p className="page-hero-sub">
-            Palm Desert residents deserve a cataract surgeon who matches the quality of life they have built here. Desert Vision Center is 10 minutes away in Rancho Mirage.
+            The second opinion that becomes the first choice. Ten minutes from Palm Desert in Rancho Mirage.
           </p>
         </div>
       </VideoBackground>
@@ -99,16 +104,16 @@ export default function CataractSurgeonPalmDesertPage() {
       <section className="section section-white">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}>
-            <h2 className="section-title">Why Palm Desert Residents Choose <strong>Desert Vision Center</strong></h2>
+            <h2 className="section-title">The Patient Who Kept <strong>Looking</strong></h2>
           </ScrollReveal>
           <p className="prose">
-            Palm Desert is the cultural and commercial heart of the Coachella Valley. El Paseo, the College of the Desert, Desert Willow Golf Resort, the Living Desert Zoo, and a community of people who came here for sunshine, outdoor living, and a high quality of life. When cataracts start interfering with that life, when driving becomes harder at night or the golf ball disappears against a bright sky, the next step matters.
+            There is a pattern I see regularly. A patient from Palm Desert comes in for a cataract evaluation. They have already seen another surgeon who gave them a quick assessment, recommended the most expensive lens, and sent them on their way. They did not feel heard. They did not feel confident. So they kept looking.
           </p>
           <p className="prose">
-            I see patients from Palm Desert every week. Many of them tell me the same thing: they want a surgeon they can trust, someone who will take the time to explain what is happening and what the options are, and someone with the skill to handle whatever their eyes present. That is exactly how I built Desert Vision Center.
+            When they sit down in my consultation room, the experience is different. I take the time to examine their eyes thoroughly. I explain what I see, show them the imaging, and discuss their options in the context of their actual life. If they spend their mornings hiking the Bump and Grind Trail and their evenings reading, that shapes the lens conversation. If they are on Medicare and want to know whether the standard lens is genuinely adequate for their eyes, I tell them honestly. Sometimes it is.
           </p>
           <p className="prose">
-            Palm Desert residents tend to be well-informed, active, and direct. You have probably already read about lens options, compared surgeons, and thought carefully about what matters to you. I respect that. My consultations are thorough, not scripted. I answer every question, and I give you my honest opinion about what will serve your vision best, even when that means steering you away from a more expensive option.
+            By the end of that first conversation, most of these patients say the same thing: "This is what I was looking for."
           </p>
         </div>
       </section>
@@ -116,19 +121,19 @@ export default function CataractSurgeonPalmDesertPage() {
       <section className="section section-warm">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}>
-            <h2 className="section-title">Why Choose <strong>Desert Vision Center</strong></h2>
+            <h2 className="section-title">The Real <strong>Palm Desert</strong></h2>
           </ScrollReveal>
           <p className="prose">
-            There are several ophthalmologists in the Coachella Valley. Here is what sets Desert Vision Center apart:
+            Palm Desert is the most lived-in city in the Valley. It is where people actually do their grocery shopping, take their kids to school, and build their daily routines. The reputation is El Paseo galleries and Desert Willow fairways, and those are real. But so are the young families near College of the Desert, the retirees walking laps at the Living Desert on weekday mornings, and the working professionals who commute along Highway 111.
           </p>
-          <ul className="content-list">
-            <li><strong>Physician-owned and independent:</strong> No corporate chain, no private equity investors, no hospital system telling me how many patients to see per hour. I own my practice, which means I answer to my patients and no one else.</li>
-            <li><strong>Gimbel-trained during residency:</strong> I trained under Dr. Howard Gimbel at Loma Linda University, one of the most influential cataract surgeons in the world. His approach to precision, technique, and patient-centered decision making shaped everything I do.</li>
-            <li><strong>Retina fellowship:</strong> After residency, I completed a fellowship in retina surgery. That training gives me a complete understanding of the eye, front to back. When I evaluate your cataracts, I am also assessing the retina, the optic nerve, and the overall health of the eye in a way that most cataract-only surgeons cannot.</li>
-            <li><strong>Over 20,000 surgeries:</strong> Surgical volume translates directly to experience with complications, anatomical variations, and challenging cases. I have seen virtually everything cataract surgery can present.</li>
-            <li><strong>Complex case specialist:</strong> Patients who have been turned away by other surgeons, who have had a previous surgery that did not go well, or who have complicating conditions like diabetes, glaucoma, or prior retina surgery regularly come to my practice.</li>
-            <li><strong>Top Doctor 2019-2026:</strong> Recognized by Palm Springs Life every year. Named Best Cataract Surgeon in the Coachella Valley by NBC.</li>
-          </ul>
+
+          <div style={{margin: '2rem 0', borderRadius: '12px', overflow: 'hidden'}}>
+            <Image src="/media/stock-couple-farmers-market.jpg" alt="Couple enjoying a morning at a local farmers market, the kind of everyday Palm Desert life that depends on clear vision" width={800} height={500} style={{width: '100%', height: 'auto', display: 'block'}} />
+          </div>
+
+          <p className="prose">
+            From the 55+ communities around Sun City to the student apartments near COD, Palm Desert has a broader economic mix than people expect. I see that full range in my patient population. Retired executives. Teachers. Healthcare workers. College students with early cataracts from a lifetime under the desert sun. Small business owners who need to get back to work fast. The approach is the same for everyone: thorough evaluation, honest conversation, personalized plan.
+          </p>
         </div>
       </section>
 
@@ -137,41 +142,85 @@ export default function CataractSurgeonPalmDesertPage() {
       <section className="section section-white">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}>
-            <h2 className="section-title">Cataract Surgery <strong>Services</strong></h2>
+            <h2 className="section-title">Why My Practice <strong>Is Different</strong></h2>
           </ScrollReveal>
           <p className="prose">
-            Every treatment plan at Desert Vision Center is individualized. I do not have a default recommendation. I have a process for understanding your eyes and your priorities, and the recommendation follows from there.
+            Palm Desert has ophthalmologists. You have choices. Here is why patients choose to drive 10 minutes to Desert Vision Center:
           </p>
-          <ul className="content-list">
-            <li><strong>Advanced cataract surgery:</strong> Precise, efficient removal of cataracts using the latest surgical techniques. I perform every surgery personally from start to finish. <Link href="/cataract-surgery">Learn about cataract surgery</Link>.</li>
-            <li><strong>CLEAR in a Day:</strong> Same-day bilateral cataract surgery for eligible patients. Both eyes in one visit means less time away from your routine and fewer trips to the office. <Link href="/clear-in-a-day">Learn about CLEAR in a Day</Link>.</li>
-            <li><strong>Premium lens implants:</strong> EDOF lenses for extended range of vision, toric lenses that reduce astigmatism, and multifocal options. The right lens depends on your anatomy, your activities, and how you use your eyes. I walk you through every option honestly. <Link href="/lens-implants-explained">Explore lens options</Link>.</li>
-            <li><strong>Complex and revision surgery:</strong> Dislocated lenses, failed prior procedures, Yamane sutured lenses, iris reconstruction, and other cases that require advanced surgical skill. <Link href="/complex-cases">See complex case expertise</Link>.</li>
-            <li><strong>Glaucoma and diabetic eye care:</strong> Comprehensive management of glaucoma and diabetic retinopathy, including in-house injections and laser treatment. <Link href="/glaucoma">Glaucoma</Link> | <Link href="/diabetic-retinopathy">Diabetic eye care</Link>.</li>
-          </ul>
+          <div style={{display: 'grid', gap: '1.5rem', marginTop: '1.5rem'}}>
+            <TiltCard className="insight-highlight" style={{padding: '1.5rem'}}>
+              <p><strong>Honest lens recommendations.</strong> I give you my genuine opinion about which lens fits your eyes and your life, even when that means steering you away from the more expensive option. If the standard lens covered by Medicare is the right choice, I will tell you. I do not have a financial incentive to upsell, because I own my practice and answer only to my patients.</p>
+            </TiltCard>
+            <TiltCard className="insight-highlight" style={{padding: '1.5rem'}}>
+              <p><strong>Residency and fellowship training.</strong> I trained under Dr. Howard Gimbel at Loma Linda, one of the most influential cataract surgeons in the world. Then I completed a retina fellowship. That combination means I evaluate the entire eye, not just the lens. Diabetic changes, macular conditions, glaucoma, prior retina surgery: I see the full picture and factor it all into your plan.</p>
+            </TiltCard>
+            <TiltCard className="insight-highlight" style={{padding: '1.5rem'}}>
+              <p><strong>Physician-owned independence.</strong> No corporate chain, no private equity investors, no hospital system. I set my own schedule, my own standards, and my own pace. That independence shows up in every consultation: unhurried, thorough, personal.</p>
+            </TiltCard>
+          </div>
         </div>
       </section>
 
       <section className="section section-warm">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}>
-            <h2 className="section-title">What Makes Dr. Tokuhara <strong>Different</strong></h2>
+            <h2 className="section-title">For the Working <strong>Palm Desert</strong></h2>
           </ScrollReveal>
           <p className="prose">
-            There is a pattern I see regularly. A patient from Palm Desert comes in for a cataract evaluation. They have already seen another surgeon who gave them a quick assessment, recommended the most expensive lens, and sent them on their way. They did not feel heard. They did not feel confident. So they kept looking.
+            Many of my Palm Desert patients are still working. Teachers at the schools along Cook Street. Healthcare workers at the medical offices on Highway 111. Small business owners. COD staff and faculty. They cannot take weeks off for surgery, and they need a clear explanation of what to expect.
           </p>
           <p className="prose">
-            My consultations are different. I take the time to examine your eyes thoroughly, explain what I see, and discuss your options in the context of your actual life. If you are an avid golfer at Desert Willow or JW Marriott, that affects the lens conversation. If you read for hours every day, that changes the recommendation. If you have diabetes or a history of other eye procedures, I factor all of that in.
+            CLEAR in a Day was designed for patients like this. Eligible patients can have both eyes treated in a single visit. That means one day away from work, not multiple. The typical cataract procedure itself takes 10 to 15 minutes per eye. Most patients return to normal activities within a day or two. For working patients, that efficiency matters.
           </p>
+
+          <div style={{margin: '2rem 0', borderRadius: '12px', overflow: 'hidden'}}>
+            <Image src="/media/stock-seniors-outdoor-dining.jpg" alt="Active retirees enjoying outdoor dining in the Coachella Valley" width={800} height={500} style={{width: '100%', height: 'auto', display: 'block'}} />
+          </div>
+
           <p className="prose">
-            I trained under Dr. Howard Gimbel during residency, a surgeon whose techniques are used in operating rooms worldwide. After that, I completed a retina fellowship. That dual training means I approach cataract surgery with a perspective that most surgeons simply do not have. I understand the entire eye, not just the lens.
+            For Palm Desert retirees, the calculation is different but the standard is the same. Whether you are walking El Paseo after lunch, hiking the Bump and Grind at dawn, taking a watercolor class at COD, or driving to the Saturday farmers market at Civic Center Park, clear vision shapes the quality of every day. The lens we choose together should match the life you actually live.
           </p>
+        </div>
+      </section>
+
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">The Full Range of <strong>What I Do</strong></h2>
+          </ScrollReveal>
+          <ul className="content-list">
+            <li><strong>Advanced cataract surgery:</strong> Precise technique, personally performed from start to finish. No handoffs, no rotating surgeons. Over 20,000 procedures. <Link href="/cataract-surgery">Learn about cataract surgery</Link>.</li>
+            <li><strong>CLEAR in a Day:</strong> Both eyes in one visit for eligible patients. One trip from Palm Desert. <Link href="/clear-in-a-day">Learn about CLEAR in a Day</Link>.</li>
+            <li><strong>Premium and standard lens options:</strong> EDOF, toric, multifocal, and the standard Medicare-covered lens. The right choice depends on your eyes, not my revenue. <Link href="/lens-implants-explained">Explore lens options</Link>.</li>
+            <li><strong>Complex and revision surgery:</strong> Patients turned away elsewhere. Dislocated lenses, Yamane sutured IOLs, iris reconstruction, failed prior procedures. These cases are central to my practice, not referrals I avoid. <Link href="/complex-cases">See complex case expertise</Link>.</li>
+            <li><strong>Glaucoma and diabetic eye care:</strong> In-house management including injections and laser. My retina fellowship means you do not need a separate specialist. <Link href="/glaucoma">Glaucoma</Link> | <Link href="/diabetic-retinopathy">Diabetic eye care</Link>.</li>
+          </ul>
+
+          <div style={{margin: '2rem 0'}}>
+            <Image src="/media/diverse-couple-closeup-portrait.jpeg" alt="Close-up portrait of a happy senior couple with bright, clear eyes smiling at the camera" width={800} height={450} style={{width: '100%', height: 'auto', borderRadius: '12px'}} />
+          </div>
 
           <BlurReveal>
             <div className="insight-highlight">
-              <p><strong>Palm Desert residents who value thoroughness, honesty, and technical excellence in their healthcare consistently find their way to Desert Vision Center. The 10-minute drive to Rancho Mirage is one of the easiest decisions in the process.</strong></p>
+              <p><strong>Palm Desert patients who value thoroughness, honesty, and precision consistently find their way to Desert Vision Center. The 10-minute drive to Rancho Mirage is one of the easiest decisions in the process. The hard part was finding a surgeon they trust. Now they have.</strong></p>
             </div>
           </BlurReveal>
+        </div>
+      </section>
+
+      <section className="section section-warm">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">Common Questions from <strong>Palm Desert Patients</strong></h2>
+          </ScrollReveal>
+          <div style={{marginTop: '1.5rem'}}>
+            {faqSchema.mainEntity.map((faq, i) => (
+              <details key={i} style={{marginBottom: '1rem', padding: '1rem 1.5rem', background: 'rgba(255,255,255,0.5)', borderRadius: '8px'}}>
+                <summary style={{cursor: 'pointer', fontWeight: 600, fontSize: '1.05rem'}}>{faq.name}</summary>
+                <p className="prose" style={{marginTop: '0.75rem'}}>{faq.acceptedAnswer.text}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -184,21 +233,21 @@ export default function CataractSurgeonPalmDesertPage() {
             Desert Vision Center is located at <strong>35900 Bob Hope Drive, Suite 175, Rancho Mirage, CA 92270</strong>. From central Palm Desert, the drive is approximately 10 minutes.
           </p>
           <p className="prose">
-            <strong>From El Paseo / central Palm Desert:</strong> Head northwest on Highway 111 toward Rancho Mirage. Turn right onto Bob Hope Drive. The office is on your right, just past the Eisenhower Medical Center area.
+            <strong>From El Paseo / central Palm Desert:</strong> Head northwest on Highway 111 toward Rancho Mirage. Turn right onto Bob Hope Drive. The office is on your right, near Eisenhower Health.
           </p>
           <p className="prose">
-            <strong>From Desert Willow / south Palm Desert:</strong> Take Cook Street or Portola Avenue north to Highway 111, then head west toward Rancho Mirage. Turn right on Bob Hope Drive.
+            <strong>From Sun City / south Palm Desert:</strong> Take Washington Street or Cook Street north to Highway 111, then head west toward Rancho Mirage. Turn right on Bob Hope Drive.
           </p>
           <p className="prose">
-            There is ample parking directly in front of the building. The office is easily accessible, and we keep our waiting times short so you spend more time with the doctor than in the lobby.
+            Ample parking directly in front of the building. No parking garages, no campus navigation. Walk from your car to the front door in under a minute.
           </p>
         </div>
       </section>
 
       <section className="cta">
         <div className="container">
-          <h2>Looking for a cataract surgeon near <strong>Palm Desert?</strong></h2>
-          <p>Desert Vision Center in Rancho Mirage is just 10 minutes away. Call us or send a message to schedule your consultation. No referral required.</p>
+          <h2>Palm Desert: the surgeon who <strong>listens first.</strong></h2>
+          <p>Desert Vision Center in Rancho Mirage. Ten minutes from Palm Desert. Thorough consultations, honest recommendations, and a fellowship-trained surgeon who performs every procedure personally. No referral required.</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
             <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>

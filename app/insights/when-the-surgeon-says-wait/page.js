@@ -225,9 +225,13 @@ export default function WhenTheSurgeonSaysWait() {
               <h3>When Patients Wait</h3>
               <p>The psychology of timing, outcome bias, and why readiness is not the same as candidacy.</p>
             </Link>
-            <Link href="/ethical-cataract-care" className="related-card">
-              <h3>Ethical Cataract Care</h3>
-              <p>Why financial incentives in medicine can distort surgical decisions, and what to look for.</p>
+            <Link href="/insights/do-i-really-need-surgery" className="related-card">
+              <h3>Do I Really Need Surgery Yet?</h3>
+              <p>Sometimes the answer is not yet. Timing and honest evaluation matter.</p>
+            </Link>
+            <Link href="/insights/when-is-the-right-time" className="related-card">
+              <h3>When Is the Right Time?</h3>
+              <p>The myth of bad enough and why the right time depends on your life, not a number on a chart.</p>
             </Link>
           </div>
         </div>

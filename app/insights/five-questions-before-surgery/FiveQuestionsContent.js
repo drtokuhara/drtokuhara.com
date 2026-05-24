@@ -171,24 +171,30 @@ export default function FiveQuestionsContent() {
             <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
           </div>
 
-          <LineDraw style={{margin: '40px auto', maxWidth: '200px'}} />
+        </div>
+      </section>
 
-          <ScrollReveal delay={0.2}>
-            <div className="related-grid" style={{marginTop: '32px'}}>
-              <Link href="/choosing-your-surgeon" className="related-card">
-                <h3>Choosing Your Surgeon</h3>
-                <p>How to evaluate the surgeon, not just the surgery.</p>
-              </Link>
-              <Link href="/lens-implants-explained" className="related-card">
-                <h3>Lens Implants Explained</h3>
-                <p>Understand your options before the conversation.</p>
-              </Link>
-              <Link href="/cataract-surgery" className="related-card">
-                <h3>Cataract Surgery Overview</h3>
-                <p>What the procedure involves, step by step.</p>
-              </Link>
-            </div>
-          </ScrollReveal>
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
+          <div className="related-grid">
+            <Link href="/insights/how-to-choose-a-cataract-surgeon" className="related-card">
+              <h3>How to Choose a Cataract Surgeon</h3>
+              <p>Five things that actually matter when choosing the surgeon who will operate on your eyes.</p>
+            </Link>
+            <Link href="/insights/the-consultation-that-changed-everything" className="related-card">
+              <h3>The Consultation That Changed Everything</h3>
+              <p>What a thorough consultation actually looks like, and why it matters.</p>
+            </Link>
+            <Link href="/insights/cataract-referral-kickbacks" className="related-card">
+              <h3>Cataract Referral Kickbacks</h3>
+              <p>Financial incentives in referrals are more common than patients realize. Here is what you should know.</p>
+            </Link>
+            <Link href="/insights/are-premium-lenses-worth-it" className="related-card">
+              <h3>Are Premium Lens Implants Worth It?</h3>
+              <p>An honest reflection on premium versus standard lens implants and what the answer depends on.</p>
+            </Link>
+          </div>
         </div>
       </section>
     </>

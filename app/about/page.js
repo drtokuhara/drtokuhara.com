@@ -167,6 +167,57 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* HERITAGE SERIES CALLOUT */}
+      <section className="section section-white">
+        <div className="container content-narrow" style={{textAlign: 'center'}}>
+          <ScrollReveal direction="up" once={true}>
+            <div style={{
+              padding: '48px 32px',
+              background: 'linear-gradient(135deg, #1a2332 0%, #22303f 100%)',
+              borderRadius: '8px',
+              border: '1px solid rgba(196, 162, 101, 0.25)',
+            }}>
+              <p style={{
+                fontFamily: 'Montserrat, sans-serif',
+                fontSize: '0.7rem',
+                fontWeight: 500,
+                letterSpacing: '3px',
+                textTransform: 'uppercase',
+                color: '#c4a265',
+                marginBottom: '16px',
+              }}>A Four-Part Series</p>
+              <h3 style={{
+                fontFamily: 'Playfair Display, Georgia, serif',
+                fontSize: 'clamp(1.4rem, 3.5vw, 2rem)',
+                fontWeight: 400,
+                color: '#f5f0e8',
+                margin: '0 0 12px',
+              }}>The Gimbel Heritage Series</h3>
+              <p style={{
+                fontFamily: 'Playfair Display, Georgia, serif',
+                fontSize: '1rem',
+                fontStyle: 'italic',
+                color: 'rgba(245, 240, 232, 0.7)',
+                maxWidth: '480px',
+                margin: '0 auto 24px',
+                lineHeight: '1.6',
+              }}>On mentorship, surgical philosophy, and the principles from Dr. Gimbel that shape every case.</p>
+              <Link href="/gimbel-heritage" style={{
+                fontFamily: 'Montserrat, sans-serif',
+                fontSize: '0.8rem',
+                fontWeight: 500,
+                letterSpacing: '1px',
+                textTransform: 'uppercase',
+                color: '#c4a265',
+                textDecoration: 'none',
+                borderBottom: '1px solid rgba(196, 162, 101, 0.4)',
+                paddingBottom: '2px',
+              }}>Explore the Series &rarr;</Link>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* LIFESTYLE IMAGE BREAK */}
       <section className="section" style={{paddingTop: 0, paddingBottom: 0}}>
         <div className="container content-narrow">

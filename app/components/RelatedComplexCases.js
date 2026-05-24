@@ -15,6 +15,7 @@ const caseData = {
   'previous-rk': { short: 'Previous RK' },
   'pseudoexfoliation': { short: 'Pseudoexfoliation' },
   'retained-silicone-oil': { short: 'Retained Silicone Oil' },
+  'uveitis': { short: 'Uveitis' },
 };
 
 const relatedMap = {
@@ -32,6 +33,7 @@ const relatedMap = {
   'previous-rk': ['previous-lasik', 'fuchs-dystrophy', 'glaucoma-and-cataract', 'pseudoexfoliation'],
   'pseudoexfoliation': ['floppy-iris', 'glaucoma-and-cataract', 'fuchs-dystrophy', 'previous-rk'],
   'retained-silicone-oil': ['aphakia-after-retina', 'previous-retina-surgery', 'macular-degeneration', 'glaucoma-and-cataract'],
+  'uveitis': ['glaucoma-and-cataract', 'floppy-iris', 'pseudoexfoliation', 'fuchs-dystrophy'],
 };
 
 export default function RelatedComplexCases({ current }) {

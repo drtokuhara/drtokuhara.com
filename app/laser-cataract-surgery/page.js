@@ -97,7 +97,7 @@ export default function LaserCataractSurgery() {
       <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
         <div className="container content-narrow">
           <div className="content-image">
-            <Image src="/media/stock-seniors-bocce-desert.jpg" alt="Active seniors in the desert enjoying activities - the active life laser precision makes possible" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+            <Image src="/media/senior-woman-driving-desert-highway.jpeg" alt="Active senior woman confidently driving through the desert, the kind of clear distance vision that laser-assisted cataract surgery enables" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
           </div>
         </div>
       </section>

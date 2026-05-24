@@ -30,7 +30,7 @@ export const metadata = {
   alternates: { canonical: '/complex-cases/previous-retina-surgery' },
   openGraph: {
     title: 'Cataract Surgery After Retina Surgery | Dr. Keith Tokuhara',
-    description: 'Post-vitrectomy cataracts require specialized expertise. Dr. Tokuhara is both cataract and retina fellowship-trained.',
+    description: 'Post-vitrectomy cataracts require specialized expertise. Dr. Tokuhara is cataract-trained under Dr. Gimbel with retina fellowship.',
     url: 'https://drtokuhara.com/complex-cases/previous-retina-surgery',
   },
 };

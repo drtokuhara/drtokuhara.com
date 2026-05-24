@@ -169,13 +169,21 @@ export default function InsightWhenMore() {
           </div>
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
-            <Link href="/lens-implants-explained" className="related-card">
-              <h3>Lens Implants Explained</h3>
-              <p>A clear overview of the different lens options, what they do, and the tradeoffs involved in each.</p>
-            </Link>
             <Link href="/insights/the-number-that-wasnt-the-problem" className="related-card">
               <h3>The Number That Wasn't the Problem</h3>
               <p>When a patient's astigmatism number looked fixable but the real issue was something no lens could address.</p>
+            </Link>
+            <Link href="/insights/the-man-who-wanted-his-younger-eyes-back" className="related-card">
+              <h3>The Man Who Wanted His Younger Eyes Back</h3>
+              <p>He wanted better vision but his cataract was early. Why we chose to wait, and what happened next.</p>
+            </Link>
+            <Link href="/insights/are-premium-lenses-worth-it" className="related-card">
+              <h3>Are Premium Lens Implants Worth It?</h3>
+              <p>An honest reflection on premium versus standard lens implants and what the answer depends on.</p>
+            </Link>
+            <Link href="/insights/when-cataract-surgery-goes-wrong" className="related-card">
+              <h3>When Cataract Surgery Goes Wrong</h3>
+              <p>A comprehensive look at what can go wrong and how each complication is managed.</p>
             </Link>
           </div>
         </div>

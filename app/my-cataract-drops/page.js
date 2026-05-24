@@ -213,6 +213,69 @@ export default function MyCataractDrops() {
         </div>
       </section>
 
+      {/* EVIDENCE-BASED DESIGN */}
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">Why Drop Reminders <strong>Work</strong></h2>
+          </ScrollReveal>
+          <p className="body-lead">
+            This app is not a convenience feature. It is built on published clinical evidence.
+          </p>
+          <p>
+            Research consistently shows that forgetfulness is the number one reason patients miss their post-operative eye drops. Studies report that adherence rates for topical eye medications range from just 30% to 80% without any intervention. That gap between "prescribed" and "actually used" is where complications happen.
+          </p>
+          <p>
+            The good news: randomized controlled trials and systematic reviews confirm that push notification reminders significantly improve compliance. The approach behind My Cataract Drops is not guesswork. It is supported by peer-reviewed evidence from ophthalmology and digital health research.
+          </p>
+
+          <StaggerChildren className="insight-list" style={{marginTop: '40px'}} staggerDelay={0.08}>
+            <StaggerItem>
+              <div className="insight-item">
+                <strong>SMS reminders reduce anxiety and improve compliance after cataract surgery</strong>
+                <p>A randomized controlled trial found that medication reminders sent to patients after cataract surgery significantly reduced postoperative anxiety and improved drop compliance. <a href="https://www.jopan.org/article/S1089-9472(21)00269-0/fulltext" target="_blank" rel="noopener noreferrer">Journal of PeriAnesthesia Nursing</a></p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="insight-item">
+                <strong>Forgetfulness is the leading cause of noncompliance</strong>
+                <p>A study of cataract surgery patients found that noncompliance is common even when patients understand the importance of their drops, with forgetfulness identified as a primary factor. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9893395/" target="_blank" rel="noopener noreferrer">SAGE Open Medicine, 2023</a></p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="insight-item">
+                <strong>Smartphone notifications improve medication adherence</strong>
+                <p>A review in Current Opinion in Ophthalmology found that digital tools and smartphone app notifications improve medication adherence, with untreated adherence rates for topical medications as low as 30%. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8517037/" target="_blank" rel="noopener noreferrer">Current Opinion in Ophthalmology, 2022</a></p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="insight-item">
+                <strong>Automated reminders improve adherence (JAMA Ophthalmology)</strong>
+                <p>Published in one of ophthalmology's highest-impact journals, this study demonstrated that automated telecommunication-based reminders improved medication adherence for once-daily eye drops. <a href="https://jamanetwork.com/journals/jamaophthalmology/fullarticle/1871612" target="_blank" rel="noopener noreferrer">JAMA Ophthalmology</a></p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="insight-item">
+                <strong>Eye drop reminder app improves adherence scores</strong>
+                <p>The EyePhone study showed that a smartphone app with timed notifications improved scores on the Morisky Medication Adherence Scale, a validated measure of how consistently patients take their medications. <a href="https://europepmc.org/article/MED/33528649" target="_blank" rel="noopener noreferrer">Graefe's Archive, 2021</a></p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="insight-item">
+                <strong>Systematic review confirms apps promote adherence (2025)</strong>
+                <p>The most recent systematic review in the Journal of Medical Internet Research confirmed that mobile applications effectively promote medication adherence across chronic conditions. <a href="https://www.jmir.org/2025/1/e60822" target="_blank" rel="noopener noreferrer">JMIR, 2025</a></p>
+              </div>
+            </StaggerItem>
+          </StaggerChildren>
+
+          <ScrollReveal direction="up" once={true}>
+            <p style={{marginTop: '32px', fontSize: '15px', color: 'var(--text-light)'}}>
+              Better compliance means less inflammation, fewer complications, and smoother healing. That is why this app exists.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* FEATURES LIST */}
       <section className="section section-white">
         <div className="container content-narrow">

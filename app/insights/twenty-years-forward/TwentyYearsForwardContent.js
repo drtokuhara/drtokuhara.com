@@ -10,6 +10,7 @@ import {
   VideoBackground,
 } from '../../components/ScrollAnimations';
 import AuthorByline from '../../components/AuthorByline';
+import HeritageSeriesNav from '../../components/HeritageSeriesNav';
 
 export default function TwentyYearsForwardContent() {
   const { t } = useLanguage();
@@ -208,8 +209,15 @@ export default function TwentyYearsForwardContent() {
         </div>
       </section>
 
-      {/* RELATED */}
+      {/* HERITAGE SERIES NAV */}
       <section className="section section-white">
+        <div className="container content-narrow">
+          <HeritageSeriesNav currentSlug="/insights/twenty-years-forward" />
+        </div>
+      </section>
+
+      {/* RELATED */}
+      <section className="section section-warm">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">

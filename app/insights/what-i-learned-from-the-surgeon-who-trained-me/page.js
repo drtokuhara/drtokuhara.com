@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
+import HeritageSeriesNav from '../../components/HeritageSeriesNav';
 import {
   ScrollReveal,
   BlurReveal,
@@ -172,15 +173,21 @@ export default function InsightWhatILearnedFromTheSurgeon() {
 
       <section className="section section-white">
         <div className="container content-narrow">
+          <HeritageSeriesNav currentSlug="/insights/what-i-learned-from-the-surgeon-who-trained-me" />
+        </div>
+      </section>
+
+      <section className="section section-warm">
+        <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
-            <Link href="/insights/the-consultation-that-changed-everything" className="related-card">
-              <h3>The Consultation That Changed Everything</h3>
-              <p>What a thorough consultation actually looks like, and why it matters.</p>
+            <Link href="/insights/the-capsule-is-sacred" className="related-card">
+              <h3>The Capsule Is Sacred</h3>
+              <p>How Dr. Gimbel changed cataract surgery forever with a single technique.</p>
             </Link>
-            <Link href="/insights/when-guilt-replaces-explanation" className="related-card">
-              <h3>When Guilt Replaces Explanation</h3>
-              <p>What happens when blame replaces compassion in medicine.</p>
+            <Link href="/insights/when-experience-speaks" className="related-card">
+              <h3>When Experience Speaks</h3>
+              <p>The surgical training you cannot see, and the case where it mattered most.</p>
             </Link>
             <Link href="/about" className="related-card">
               <h3>About Dr. Tokuhara</h3>

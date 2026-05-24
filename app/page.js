@@ -560,6 +560,8 @@ const SCREENS = {
       "I handle complex and corrective cases every week. Not once a year. Every week. This is a significant part of what I do.",
       "If you're ready, let's have a conversation. No commitment beyond that.",
     ],
+    learnMoreHref: "/when-cataract-surgery-doesnt-go-as-planned",
+    learnMoreText: "Read more about complications and what can be done",
   },
 };
 
@@ -721,16 +723,20 @@ export default function Home() {
             <HorizontalScroll style={{marginTop: '40px'}}>
               {[
                 { src: '/media/lifestyle-golf-man.jpg', alt: 'Golfer on the course in the Coachella Valley' },
-                { src: '/media/lifestyle-grandparent-reading.jpg', alt: 'Grandparent reading to a child in the Coachella Valley' },
+                { src: '/media/lifestyle-poolside-reading.jpg', alt: 'Relaxing poolside with a book in the desert' },
                 { src: '/media/lifestyle-elpaseo-shopping.jpg', alt: 'Shopping on El Paseo in Palm Desert' },
-                { src: '/media/lifestyle-family-park.jpg', alt: 'Family enjoying a sunny day at a desert park' },
-                { src: '/media/lifestyle-kitchen-cooking.jpg', alt: 'Preparing dinner at home in the desert' },
+                { src: '/media/lifestyle-couple-walking-dog-morning.jpg', alt: 'Couple walking their dog on a desert morning' },
+                { src: '/media/lifestyle-sunset-dining.jpg', alt: 'Enjoying sunset dining in the Coachella Valley' },
                 { src: '/media/lifestyle-joshua-tree.jpg', alt: 'Hiking in Joshua Tree National Park' },
                 { src: '/media/lifestyle-tennis-woman.jpg', alt: 'Playing tennis in the Coachella Valley' },
-                { src: '/media/lifestyle-driving-commute.jpg', alt: 'Driving along Highway 111 in the Coachella Valley' },
+                { src: '/media/lifestyle-couple-cycling-palm-desert.jpg', alt: 'Cycling through Palm Desert' },
                 { src: '/media/lifestyle-pickleball.jpg', alt: 'Pickleball game in the desert' },
-                { src: '/media/lifestyle-kids-sports.jpg', alt: 'Watching a youth sports game in the Coachella Valley' },
+                { src: '/media/lifestyle-man-morning-coffee.jpg', alt: 'Morning coffee at home in the desert' },
                 { src: '/media/lifestyle-morning-walk.jpg', alt: 'Morning walk through a Coachella Valley neighborhood' },
+                { src: '/media/lifestyle-diverse-couple-park.jpg', alt: 'Active senior couple walking together in a Coachella Valley park' },
+                { src: '/media/lifestyle-grandparent-soccer.jpg', alt: 'Grandparent watching grandchildren play soccer at a sunny desert park' },
+                { src: '/media/lifestyle-desert-landscaping.jpg', alt: 'Neighbors working on desert landscaping in a Coachella Valley backyard' },
+                { src: '/media/lifestyle-active-woman-exercise.jpg', alt: 'Active senior woman getting ready for exercise in her sunlit home' },
               ].map((img, i) => (
                 <div key={i} className="lux-lifestyle-item" style={{minWidth: '420px', flexShrink: 0}}>
                   <Image src={img.src} alt={img.alt} width={420} height={560} className="lux-lifestyle-img" />
@@ -806,6 +812,7 @@ export default function Home() {
                     </div>
                     <h3>Ethics Over Revenue</h3>
                     <p>No referral kickbacks. No assembly-line surgery. No upselling premium lenses when a standard lens is the right choice. Dr. Tokuhara built his practice on the belief that transparency and honesty are not optional in medicine. If a procedure is not right for you, he will tell you, even when it means less revenue.</p>
+                    <p style={{marginTop: '0.75rem', fontSize: '0.97rem', opacity: 0.92}}>That also means telling you when the standard lens is the best option. Not because it costs less. Because it's what your eyes need.</p>
                   </TiltCard>
                 </StaggerItem>
                 <StaggerItem>
@@ -869,6 +876,9 @@ export default function Home() {
                   </p>
                   <Link href="/about" className="lux-text-link">
                     The full story <span className="lux-arrow">&rarr;</span>
+                  </Link>
+                  <Link href="/gimbel-heritage" className="lux-text-link" style={{marginLeft: '24px'}}>
+                    The Gimbel Heritage Series <span className="lux-arrow">&rarr;</span>
                   </Link>
                 </div>
               </ScrollReveal>
@@ -944,7 +954,7 @@ export default function Home() {
                     id: 'wrong_intro',
                     icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>,
                     title: "Something went wrong with my surgery",
-                    desc: "If you\u2019ve had a complication or your vision isn\u2019t what you were promised, let\u2019s talk about what\u2019s possible.",
+                    desc: "Dislocated lenses, capsule tears, cloudy vision after surgery. If another practice left you with questions, Dr. Tokuhara specializes in figuring out what happened and what comes next.",
                   },
                 ].map((card, i) => (
                   <ScaleOnScroll key={card.id} scaleRange={[0.9, 1]} opacityRange={[0.7, 1]}>
@@ -1193,6 +1203,11 @@ function CloseScreen({ screen, onStartOver }) {
         <a href="tel:7603404700" className="conv-btn conv-btn-primary">Call 760.340.4700</a>
         <a href="/contact" className="conv-btn conv-btn-outline">Continue this conversation in person</a>
       </div>
+      {screen.learnMoreHref && (
+        <div className={`anim-item anim-delay-${screen.paragraphs.length}`} style={{textAlign: 'center', marginTop: '16px'}}>
+          <a href={screen.learnMoreHref} style={{color: 'var(--night-horizon)', textDecoration: 'underline', fontSize: '14px'}}>{screen.learnMoreText || 'Learn more'}</a>
+        </div>
+      )}
       <button className={`conv-start-over anim-item anim-delay-${screen.paragraphs.length + 1}`} onClick={onStartOver}>Start over</button>
     </div>
   );

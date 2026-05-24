@@ -260,6 +260,10 @@ export default function InsightStepByStep() {
               <h3>Laser Cataract Surgery</h3>
               <p>What the femtosecond laser does and when it matters.</p>
             </Link>
+            <Link href="/choosing-your-surgeon" className="related-card">
+              <h3>Choosing Your Surgeon</h3>
+              <p>What to look for and why it matters more than any technology.</p>
+            </Link>
           </div>
         </div>
       </section>

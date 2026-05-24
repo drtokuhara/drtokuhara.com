@@ -176,16 +176,20 @@ export default function InsightConsultationChangedEverything() {
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
             <Link href="/insights/do-i-really-need-surgery" className="related-card">
-              <h3>"Do I Really Need Surgery Yet?"</h3>
+              <h3>Do I Really Need Surgery Yet?</h3>
               <p>A 70-year-old man was told surgery would fix everything. The honest exam told a different story.</p>
             </Link>
             <Link href="/insights/five-questions-before-surgery" className="related-card">
               <h3>5 Questions to Ask Before Surgery</h3>
               <p>What to ask your surgeon before cataract surgery, and what the answers reveal about the practice.</p>
             </Link>
-            <Link href="/ethical-cataract-care" className="related-card">
-              <h3>Ethical Cataract Care</h3>
-              <p>Why financial incentives should never influence a surgical recommendation.</p>
+            <Link href="/insights/how-to-choose-a-cataract-surgeon" className="related-card">
+              <h3>How to Choose a Cataract Surgeon</h3>
+              <p>Five things that actually matter when choosing the surgeon who will operate on your eyes.</p>
+            </Link>
+            <Link href="/insights/the-eye-you-least-suspect" className="related-card">
+              <h3>The Eye You Least Suspect</h3>
+              <p>He assumed his right eye was getting worse. The real problem was in his left.</p>
             </Link>
           </div>
         </div>

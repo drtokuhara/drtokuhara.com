@@ -1,11 +1,15 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { breadcrumbSchema, physicianSchema } from '../schema';
 import {
   ScrollReveal,
   BlurReveal,
   LineDraw,
   VideoBackground,
+  ScaleOnScroll,
+  StaggerChildren,
 } from '../components/ScrollAnimations';
+import TiltCard from '../components/TiltCard';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -16,7 +20,7 @@ const faqSchema = {
       name: 'Who is the best cataract surgeon near La Quinta?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Dr. Keith Tokuhara at Desert Vision Center in Rancho Mirage is a fellowship-trained cataract surgeon a short drive from La Quinta. He has been recognized as a Palm Springs Life Top Doctor every year from 2019 through 2026 and was named Best Cataract Surgeon in the Coachella Valley by NBC. He specializes in complex cases, premium lens implants, and patients with conditions like diabetes, glaucoma, and previous eye surgery.',
+        text: 'Dr. Keith Tokuhara at Desert Vision Center in Rancho Mirage is a fellowship-trained cataract surgeon approximately 15 to 20 minutes from La Quinta. He has performed over 20,000 surgeries, trained under Dr. Howard Gimbel during residency and completed a retina fellowship, and has been recognized as a Palm Springs Life Top Doctor every year from 2019 through 2026.',
       },
     },
     {
@@ -24,23 +28,23 @@ const faqSchema = {
       name: 'How far is Desert Vision Center from La Quinta?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Desert Vision Center at 35900 Bob Hope Drive in Rancho Mirage is approximately a 15 to 20 minute drive from La Quinta via Highway 111 or Interstate 10. The office has ample parking and is located along the Eisenhower health corridor.',
+        text: 'Desert Vision Center at 35900 Bob Hope Drive in Rancho Mirage is approximately 15 to 20 minutes from La Quinta via Highway 111 or Interstate 10. The office has ample parking and is located along the Eisenhower health corridor.',
       },
     },
     {
       '@type': 'Question',
-      name: 'What lens options are available for cataract surgery near La Quinta?',
+      name: 'Can I get both eyes done in one visit from La Quinta?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Desert Vision Center offers premium lens implants including EDOF lenses for extended range of vision, toric lenses that reduce astigmatism, and multifocal options. Dr. Tokuhara personalizes every lens selection based on your anatomy, lifestyle, and visual priorities, whether that is golf, reading, driving, or all of the above.',
+        text: 'Yes. Dr. Tokuhara offers CLEAR in a Day, same-day bilateral cataract surgery for eligible patients. Both eyes treated in a single visit means fewer trips between La Quinta and the office and a faster return to your routine, whether that means work, family, or activities.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Can I get both eyes done the same day near La Quinta?',
+      name: 'Does Desert Vision Center serve working families from La Quinta?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Desert Vision Center offers CLEAR in a Day, same-day bilateral cataract surgery for eligible patients. Both eyes are treated in a single visit, which means fewer trips between La Quinta and the office and a faster return to your routine.',
+        text: 'Yes. Many La Quinta patients are working parents, teachers, healthcare workers, and professionals who need to minimize time away from their responsibilities. CLEAR in a Day and efficient scheduling are designed to get patients back to their routine quickly.',
       },
     },
     {
@@ -58,20 +62,20 @@ const jsonLd = [
   faqSchema,
   breadcrumbSchema([
     { name: 'Home', href: '/' },
-    { name: 'Cataract Surgeon in La Quinta', href: '/cataract-surgeon-la-quinta' },
+    { name: 'Cataract Surgeon for La Quinta', href: '/cataract-surgeon-la-quinta' },
   ]),
   physicianSchema,
 ];
 
 export const metadata = {
   title: 'Cataract Surgeon Near La Quinta | Dr. Keith Tokuhara | Desert Vision Center',
-  description: 'La Quinta residents: Dr. Keith Tokuhara at Desert Vision Center in Rancho Mirage offers fellowship-trained cataract surgery, premium lens implants, and complex case expertise. 20,000+ surgeries. Top Doctor 2019-2026. A short drive from PGA West.',
+  description: 'La Quinta residents: Dr. Keith Tokuhara at Desert Vision Center offers fellowship-trained cataract surgery for families, retirees, and working professionals. 20,000+ surgeries. 15-20 minutes from La Quinta. Top Doctor 2019-2026.',
   alternates: {
     canonical: '/cataract-surgeon-la-quinta',
   },
   openGraph: {
     title: 'Cataract Surgeon Near La Quinta | Desert Vision Center',
-    description: 'Fellowship-trained cataract surgeon Dr. Keith Tokuhara, serving La Quinta residents from Rancho Mirage. Premium lenses, complex cases, physician-owned. 760.340.4700.',
+    description: 'Fellowship-trained cataract surgeon serving La Quinta families, retirees, and working professionals. Premium lenses, complex cases, physician-owned practice. 760.340.4700.',
     url: 'https://drtokuhara.com/cataract-surgeon-la-quinta',
   },
 };
@@ -87,11 +91,11 @@ export default function CataractSurgeonLaQuintaPage() {
         />
       ))}
 
-      <VideoBackground src="/media/golf-course-wide-golden.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-desert-twilight.mp4" overlayOpacity={0.55} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
-          <h1>Cataract Surgeon in <strong>La Quinta</strong></h1>
+          <h1>Cataract Surgeon for <strong>La Quinta</strong> Residents</h1>
           <p className="page-hero-sub">
-            La Quinta residents live for the outdoors. When cataracts get in the way, Desert Vision Center in Rancho Mirage delivers the surgical expertise your active lifestyle demands.
+            La Quinta has two identities. The one in the travel magazines is PGA West and the resort. The one people actually live in is Fritz Burns Park on Saturday mornings, kids' soccer leagues, and the hiking trails up in the Cove. Both depend on clear vision.
           </p>
         </div>
       </VideoBackground>
@@ -99,16 +103,19 @@ export default function CataractSurgeonLaQuintaPage() {
       <section className="section section-white">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}>
-            <h2 className="section-title">Cataract Care for <strong>La Quinta</strong> Residents</h2>
+            <h2 className="section-title">The La Quinta <strong>People Actually Live In</strong></h2>
           </ScrollReveal>
           <p className="prose">
-            La Quinta is a community that lives outdoors. Young families walk to school under clear skies, retirees head out for morning rounds of golf at PGA West, hikers tackle the Santa Rosa Mountains, and working professionals finish the day with a bike ride or a walk through the neighborhood. It is a city where people came to build a life, not just slow down.
+            Yes, PGA West is here. So is the La Quinta Resort, the Arts Festival in March, and some of the most photographed golf courses in the desert. But La Quinta's population is 41,000 people, and the vast majority of them are not teeing off at the Stadium Course on a Tuesday morning.
           </p>
           <p className="prose">
-            Cataracts affect that life in ways that creep up gradually. Reading your child's homework becomes a strain. Night driving back from Palm Desert feels stressful. The golf ball is harder to pick up against a bright sky. Colors look washed out. By the time most patients come to see me, they have been compensating for months or years without realizing how much vision they have lost.
+            South of Highway 111, La Quinta is a city of families. Kids at La Quinta High School. Parents commuting to Palm Desert or Rancho Mirage for work. Grocery shopping at Ralphs on Washington Street. Weekend mornings at Fritz Burns Park, where the farmers market sets up in season and kids' sports leagues fill the fields. The neighborhoods are newer, growing, and increasingly diverse, with a significant and growing Hispanic and Latino population.
           </p>
           <p className="prose">
-            I see La Quinta patients regularly, and the conversation almost always starts the same way: they want to get back to the activities they love, and they want a surgeon who takes the time to understand what that means for their lens choice and surgical plan. That is exactly how I practice.
+            Then there is the Cove. La Quinta Cove, the original part of town nestled against the Santa Rosa Mountains, has a different character entirely: bohemian, artsy, quieter. Galleries and small studios. Hiking trails like Bear Creek and the Cove Oasis trail that start right from the neighborhoods. Retirees who moved here for the mountain proximity and the creative community, not the golf.
+          </p>
+          <p className="prose">
+            Old Town La Quinta, along the main strip, is still developing. Restaurants, a few shops, and a growing sense of a walkable center. It is a city that is building its identity in real time.
           </p>
         </div>
       </section>
@@ -116,16 +123,28 @@ export default function CataractSurgeonLaQuintaPage() {
       <section className="section section-warm">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}>
-            <h2 className="section-title">Why Choose <strong>Desert Vision Center</strong></h2>
+            <h2 className="section-title">Working Parents, <strong>Working Vision</strong></h2>
           </ScrollReveal>
-          <ul className="content-list">
-            <li><strong>Physician-owned and independent:</strong> Desert Vision Center is my practice. No corporate oversight, no private equity investors dictating how I practice medicine. Every decision is made for one reason: what is best for your eyes.</li>
-            <li><strong>Gimbel-trained during residency:</strong> I trained under Dr. Howard Gimbel at Loma Linda University, learning surgical precision from one of the most respected cataract surgeons in the world. That foundation shapes every surgery I perform.</li>
-            <li><strong>Retina fellowship:</strong> My additional training in retina surgery gives me a complete view of the eye. I assess not just the cataract, but the retina, macula, and optic nerve. This matters especially for patients with diabetes, macular degeneration, or previous retina procedures.</li>
-            <li><strong>Over 20,000 surgeries:</strong> Surgical experience compounds. After this many procedures, I have encountered and managed virtually every complication and anatomical variation that cataract surgery can present.</li>
-            <li><strong>Complex case specialist:</strong> Patients turned away elsewhere, patients with prior surgical complications, patients with multiple eye conditions. These are a core part of my practice, not an occasional exception.</li>
-            <li><strong>Top Doctor 2019-2026:</strong> Recognized annually by Palm Springs Life. Named Best Cataract Surgeon in the Coachella Valley by NBC.</li>
-          </ul>
+          <p className="prose">
+            If you are a working parent in La Quinta, taking multiple days off for eye surgery is not simple. You are coordinating childcare, commute schedules, maybe covering for a coworker. You need to know exactly how much time this requires and how quickly you get back to normal.
+          </p>
+          <p className="prose">
+            CLEAR in a Day was designed for people like you. Same-day bilateral cataract surgery for eligible patients means both eyes are treated in a single visit. Instead of separate surgeries weeks apart, each requiring its own day off and recovery period, the process is consolidated. Most patients notice significant improvement within a day or two.
+          </p>
+
+          <div style={{margin: '2rem 0'}}>
+            <Image
+              src="/media/stock-family-golden-hour-walk.jpg"
+              alt="Family walking together during golden hour in the desert"
+              width={800}
+              height={450}
+              style={{width: '100%', height: 'auto', borderRadius: '12px'}}
+            />
+          </div>
+
+          <p className="prose">
+            For La Quinta residents whose jobs depend on their vision, CDL drivers, nurses, teachers, dental hygienists, construction workers, cataract surgery is not optional once vision starts affecting your ability to work safely. I have treated patients who needed to pass a DOT physical, maintain a professional license, or simply read charts and screens clearly enough to do their jobs. The surgical plan accounts for those specific requirements.
+          </p>
         </div>
       </section>
 
@@ -134,41 +153,117 @@ export default function CataractSurgeonLaQuintaPage() {
       <section className="section section-white">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}>
-            <h2 className="section-title">Services for <strong>Every Lifestyle</strong></h2>
+            <h2 className="section-title">Active at <strong>Every Age</strong></h2>
           </ScrollReveal>
           <p className="prose">
-            For La Quinta patients, the lens choice in cataract surgery reflects how you actually live. Whether you spend your days outdoors, at a desk, driving, or caring for family, the right lens makes a difference. Here is what Desert Vision Center offers:
+            La Quinta's retiree community is active in a way that goes well beyond golf. Hiking Bear Creek trail in the early morning before the heat. Playing pickleball at the community courts. Volunteering at the Arts Festival. Walking the dog through the Cove neighborhoods at sunset. Reading on the patio with the Santa Rosa Mountains as a backdrop.
           </p>
-          <ul className="content-list">
-            <li><strong>Advanced cataract surgery:</strong> Precise, modern technique performed personally by Dr. Tokuhara. No hand-offs, no assistants doing the surgery. <Link href="/cataract-surgery">Learn about cataract surgery</Link>.</li>
-            <li><strong>CLEAR in a Day:</strong> Same-day bilateral surgery for eligible patients. Both eyes in one visit means fewer trips from La Quinta and a faster return to your activities. <Link href="/clear-in-a-day">Learn about CLEAR in a Day</Link>.</li>
-            <li><strong>Premium lens implants:</strong> EDOF lenses for extended range, toric lenses that reduce astigmatism, and multifocal options. For patients who want freedom from glasses, whether at work, on the golf course, or in everyday life, the right lens selection makes a real difference. <Link href="/lens-implants-explained">Explore lens options</Link>.</li>
-            <li><strong>Complex and revision surgery:</strong> Dislocated lenses, Yamane technique, iris reconstruction, and cases requiring advanced surgical skill. <Link href="/complex-cases">See complex case expertise</Link>.</li>
-            <li><strong>Comprehensive eye care:</strong> Glaucoma management, diabetic eye care, dry eye treatment, and ongoing monitoring for patients with multiple conditions. <Link href="/glaucoma">Glaucoma</Link> | <Link href="/diabetic-retinopathy">Diabetic eye care</Link> | <Link href="/dry-eyes-desert">Dry eye</Link>.</li>
-          </ul>
+          <p className="prose">
+            Cataracts erode these activities gradually. Colors fade. Contrast drops. Night driving becomes stressful. Reading requires better light and a bigger font. Most people compensate for months or years before realizing how much vision they have lost.
+          </p>
+          <p className="prose">
+            I start every consultation with a conversation about how you actually use your eyes. Not a checklist. A real discussion about what matters at arm's length, at distance, in bright light, and in dim conditions. That conversation drives the entire plan, from lens selection to surgical approach to the expectations we set together.
+          </p>
+
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', margin: '2rem 0'}}>
+            <TiltCard>
+              <div style={{padding: '1.5rem', background: 'rgba(255,255,255,0.05)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.1)'}}>
+                <h3 style={{marginBottom: '0.75rem', fontSize: '1.1rem'}}>Outdoor Vision</h3>
+                <p style={{fontSize: '0.95rem', lineHeight: '1.6'}}>Hikers, cyclists, and trail runners need contrast and distance clarity. EDOF lenses provide a continuous range of sharp vision from intermediate through distance, ideal for active outdoor life.</p>
+              </div>
+            </TiltCard>
+            <TiltCard>
+              <div style={{padding: '1.5rem', background: 'rgba(255,255,255,0.05)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.1)'}}>
+                <h3 style={{marginBottom: '0.75rem', fontSize: '1.1rem'}}>Reading and Detail Work</h3>
+                <p style={{fontSize: '0.95rem', lineHeight: '1.6'}}>Artists in the Cove, readers, craftspeople, and anyone whose activities happen at arm's length. Multifocal and EDOF lenses can reduce or eliminate dependence on reading glasses.</p>
+              </div>
+            </TiltCard>
+            <TiltCard>
+              <div style={{padding: '1.5rem', background: 'rgba(255,255,255,0.05)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.1)'}}>
+                <h3 style={{marginBottom: '0.75rem', fontSize: '1.1rem'}}>Night Driving Confidence</h3>
+                <p style={{fontSize: '0.95rem', lineHeight: '1.6'}}>The drive home on Highway 111 after dinner in Palm Desert. The headlight glare that makes you grip the wheel. Standard or toric lenses can dramatically improve night driving comfort and safety.</p>
+              </div>
+            </TiltCard>
+          </div>
         </div>
       </section>
 
       <section className="section section-warm">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}>
-            <h2 className="section-title">What Makes Dr. Tokuhara <strong>Different</strong></h2>
+            <h2 className="section-title">A Growing Community <strong>Deserves Growing Access</strong></h2>
           </ScrollReveal>
           <p className="prose">
-            La Quinta patients tend to ask sharp, specific questions. They have done their research. They want to know why one lens versus another, what the realistic outcomes are, and whether the surgeon they are considering has handled cases like theirs before. I welcome that.
+            La Quinta is the fastest-growing city on the south side of the Valley. New neighborhoods, new families, a growing medical infrastructure along Washington Street. But for advanced cataract surgery, most La Quinta residents still drive west to Palm Desert or Rancho Mirage. That is standard, and the 15 to 20 minute drive to Desert Vision Center is genuinely easy.
           </p>
           <p className="prose">
-            My training under Dr. Howard Gimbel during residency was not just technical. It instilled a philosophy: understand the eye in front of you, plan meticulously, and execute precisely. My retina fellowship added another layer. When I evaluate your eyes for cataract surgery, I am assessing the full picture, including the health of the retina and the optic nerve, which can affect both the surgical plan and the visual outcome.
+            What I want La Quinta residents to know is that the care you receive at DVC is not a compromise. It is not "good enough for the desert." It is fellowship-level training, 20,000+ surgeries of experience, and a physician-owned practice where every surgical decision is made for one reason: what is best for your eyes.
           </p>
           <p className="prose">
-            With over 20,000 surgeries, I bring an experience base that is difficult to match. But numbers alone are not the point. What matters is that when something unexpected happens in the operating room, or when a patient's eyes present an unusual challenge, I have the training, experience, and judgment to adapt. That confidence comes from years of handling exactly those situations.
+            La Quinta's growing Hispanic and Latino population deserves the same access and the same clarity about the process. Families are welcome in every consultation. If a family member helps with questions or decision-making, they are part of the conversation. I explain everything clearly and make sure everyone in the room understands the plan before we move forward.
           </p>
 
-          <BlurReveal>
-            <div className="insight-highlight">
-              <p><strong>How you use your eyes every day is not an afterthought in the lens selection conversation. It is the starting point. For La Quinta patients, whether you are back at work the next week, driving your kids to school, enjoying a round of golf, or reading on the patio, the surgical plan is built around getting you back to your life with the clearest, most comfortable vision possible.</strong></p>
+          <div style={{margin: '2rem 0'}}>
+            <Image
+              src="/media/stock-couple-farmers-market.jpg"
+              alt="Couple shopping at a farmers market with clear vision"
+              width={800}
+              height={450}
+              style={{width: '100%', height: 'auto', borderRadius: '12px'}}
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">Why Dr. Tokuhara <strong>for La Quinta</strong></h2>
+          </ScrollReveal>
+          <p className="prose">
+            La Quinta patients tend to ask sharp, specific questions. They have done their research. They want to understand why one lens versus another, what realistic outcomes look like, and whether the surgeon they are considering has handled cases like theirs. Here is the short version:
+          </p>
+          <ul className="content-list">
+            <li><strong>Gimbel-trained precision:</strong> Residency under Dr. Howard Gimbel at Loma Linda University. The gold standard in cataract surgical technique.</li>
+            <li><strong>Retina fellowship:</strong> I evaluate the complete eye. Diabetic retinopathy, macular degeneration, glaucoma. If your exam reveals something beyond cataracts, I handle it in-house. <Link href="/diabetic-retinopathy">Diabetic eye care</Link> | <Link href="/glaucoma">Glaucoma</Link>.</li>
+            <li><strong>20,000+ surgeries:</strong> Experience that shows when something unexpected happens in the operating room. Complications, anatomical variations, challenging cases. I have seen and managed virtually all of them.</li>
+            <li><strong>Complex cases welcome:</strong> Prior surgeries, dislocated lenses, failed procedures, multiple eye conditions. These are not exceptions. They are a core part of my practice. <Link href="/complex-cases">Complex case expertise</Link>.</li>
+            <li><strong>Independent, physician-owned:</strong> No corporate chain, no private equity. My surgical decisions are driven by your eyes, not a business model.</li>
+          </ul>
+
+          <div style={{margin: '2rem 0'}}>
+            <Image src="/media/diverse-couple-portrait-park-bench.jpeg" alt="Smiling diverse senior couple enjoying a sunny day at the park, representing La Quinta's active community" width={800} height={450} style={{width: '100%', height: 'auto', borderRadius: '12px'}} />
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-warm">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">Frequently Asked <strong>Questions</strong></h2>
+          </ScrollReveal>
+          <div style={{display: 'flex', flexDirection: 'column', gap: '1.5rem'}}>
+            <div>
+              <h3 style={{fontSize: '1.05rem', marginBottom: '0.5rem'}}>I am a working parent. How much time off do I need?</h3>
+              <p className="prose">With CLEAR in a Day, eligible patients have both eyes done in a single visit. Most people notice significant improvement within a day or two. Many return to desk work and daily activities within a few days. Strenuous physical work may require a bit longer.</p>
             </div>
-          </BlurReveal>
+            <div>
+              <h3 style={{fontSize: '1.05rem', marginBottom: '0.5rem'}}>My job requires passing a vision test. Can cataract surgery help?</h3>
+              <p className="prose">Yes. I work with patients who need to meet specific visual standards for DOT physicals, professional licenses, and occupational requirements. The surgical plan takes those requirements into account.</p>
+            </div>
+            <div>
+              <h3 style={{fontSize: '1.05rem', marginBottom: '0.5rem'}}>Can family members come to the consultation?</h3>
+              <p className="prose">Absolutely. Families are part of the process. If a family member helps with questions, translation, or decision-making, they are welcome and included in the conversation.</p>
+            </div>
+            <div>
+              <h3 style={{fontSize: '1.05rem', marginBottom: '0.5rem'}}>Is cataract surgery covered by insurance?</h3>
+              <p className="prose">Standard cataract surgery is covered by Medicare and most insurance plans. Premium lens upgrades are an additional investment, discussed transparently before any decisions are made.</p>
+            </div>
+            <div>
+              <h3 style={{fontSize: '1.05rem', marginBottom: '0.5rem'}}>Do I need a referral?</h3>
+              <p className="prose">No referral required. Call 760.340.4700 or use the online contact form to schedule directly.</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -187,15 +282,21 @@ export default function CataractSurgeonLaQuintaPage() {
             <strong>Via Interstate 10:</strong> Take I-10 west to the Bob Hope Drive exit. Head south on Bob Hope Drive. The office is on your left before you reach Highway 111.
           </p>
           <p className="prose">
-            There is ample parking directly in front of the building. For CLEAR in a Day patients, both eyes are treated in one visit, which means fewer total trips from La Quinta.
+            Ample parking directly in front of the building. For CLEAR in a Day patients, both eyes treated in one visit means fewer total trips from La Quinta.
           </p>
+
+          <BlurReveal>
+            <div className="insight-highlight">
+              <p><strong>Whether you are hiking the Cove trails at dawn, dropping kids at school, commuting to Palm Desert for work, or reading on the patio after dinner, clear vision shapes every part of life in La Quinta. Desert Vision Center is 15 to 20 minutes away. No referral required.</strong></p>
+            </div>
+          </BlurReveal>
         </div>
       </section>
 
       <section className="cta">
         <div className="container">
-          <h2>La Quinta residents: ready to see your best <strong>game again?</strong></h2>
-          <p>Desert Vision Center in Rancho Mirage is a short drive from La Quinta. Call us or send a message to schedule a consultation. No referral required.</p>
+          <h2>La Quinta residents: ready to see clearly <strong>again?</strong></h2>
+          <p>Whether you are back at work next week, hiking the Cove on Saturday, or watching your kids play at Fritz Burns Park, the surgical plan is built around your life. Fellowship-trained. 20,000+ surgeries. No referral required.</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
             <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
+import HeritageSeriesNav from '../../components/HeritageSeriesNav';
 import {
   ScrollReveal,
   BlurReveal,
@@ -225,6 +226,12 @@ export default function InsightWhenExperienceSpeaks() {
         </div>
       </section>
 
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <HeritageSeriesNav currentSlug="/insights/when-experience-speaks" />
+        </div>
+      </section>
+
       <section className="section section-warm">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
@@ -233,13 +240,13 @@ export default function InsightWhenExperienceSpeaks() {
               <h3>What I Learned From the Surgeon Who Trained Me</h3>
               <p>A residency moment with Dr. Howard Gimbel that changed everything. Not a technique, but a principle.</p>
             </Link>
-            <Link href="/insights/when-the-unexpected-leads-to-the-right-outcome" className="related-card">
-              <h3>When the Unexpected Leads to the Right Outcome</h3>
-              <p>A surgical complication revealed a hidden condition that changed the entire clinical picture.</p>
+            <Link href="/insights/the-capsule-is-sacred" className="related-card">
+              <h3>The Capsule Is Sacred</h3>
+              <p>How Dr. Gimbel changed cataract surgery forever with the continuous curvilinear capsulorhexis.</p>
             </Link>
-            <Link href="/insights/the-consultation-that-changed-everything" className="related-card">
-              <h3>The Consultation That Changed Everything</h3>
-              <p>What a thorough consultation actually looks like, and why it matters.</p>
+            <Link href="/insights/twenty-years-forward" className="related-card">
+              <h3>Twenty Years Forward</h3>
+              <p>When gradual vision loss is not just aging, and the consultation that changes everything.</p>
             </Link>
             <Link href="/complex-cases" className="related-card">
               <h3>Complex and Revision Cases</h3>

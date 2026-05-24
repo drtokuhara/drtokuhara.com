@@ -3,6 +3,7 @@ import MobileNav from './MobileNav';
 import { LanguageProvider } from './LanguageContext';
 import LanguageToggle from './LanguageToggle';
 import CursorSpotlight from './components/CursorSpotlight';
+import GoogleAnalytics from './components/GoogleAnalytics';
 import './styles.css';
 
 export const metadata = {
@@ -58,6 +59,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <LanguageProvider>
+        <GoogleAnalytics />
         <CursorSpotlight />
         {/* NAV */}
         <nav className="nav">
@@ -154,6 +156,7 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/three-things-patients-say">Three Things Patients Say</Link>
                     <Link href="/insights/the-reader-who-almost-gave-up-her-books">The Reader Who Almost Gave Up</Link>
                     <Link href="/insights/are-premium-lenses-worth-it">Are Premium Lenses Worth It?</Link>
+                    <Link href="/insights/choosing-the-standard-lens">The Standard Lens</Link>
                     <Link href="/insights/the-lens-nobody-talks-about">The Lens Nobody Talks About</Link>
                     <Link href="/insights/when-the-eye-surface-changes-everything">When the Eye Surface Changes Everything</Link>
                     <Link href="/insights/the-number-that-wasnt-the-problem">The Number That Wasn't the Problem</Link>
@@ -169,7 +172,8 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/what-i-learned-from-the-surgeon-who-trained-me">The Surgeon Who Trained Me</Link>
                     <Link href="/insights/when-the-unexpected-leads-to-the-right-outcome">When the Unexpected Leads Right</Link>
                     <Link href="/insights/the-consultation-that-changed-everything">The Consultation That Changed Everything</Link>
-                    <Link href="/insights" style={{color: 'var(--oasis)', fontWeight: 600, marginTop: '8px'}}>View All Insights</Link>
+                    <Link href="/gimbel-heritage" style={{color: 'var(--oasis)', fontWeight: 600, marginTop: '8px'}}>The Gimbel Heritage Series</Link>
+                    <Link href="/insights" style={{color: 'var(--oasis)', fontWeight: 600, marginTop: '4px'}}>View All Insights</Link>
                   </div>
                 </div>
               </div>
@@ -218,6 +222,7 @@ export default function RootLayout({ children }) {
                 <div className="footer-col">
                   <h4>Learn</h4>
                   <Link href="/insights">Insights</Link>
+                  <Link href="/gimbel-heritage">The Gimbel Heritage Series</Link>
                   <Link href="/education">Education</Link>
                   <Link href="/patient-stories">Patient Stories</Link>
                   <Link href="/about">About Dr. Tokuhara</Link>

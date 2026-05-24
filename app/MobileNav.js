@@ -69,6 +69,7 @@ export default function MobileNav() {
             <Link href="/insights/do-i-really-need-surgery" onClick={close}>Do I Need Surgery Yet?</Link>
             <Link href="/insights/when-ai-recommends-your-lens" onClick={close}>When AI Recommends Your Lens</Link>
             <Link href="/insights/are-premium-lenses-worth-it" onClick={close}>Are Premium Lenses Worth It?</Link>
+            <Link href="/insights/choosing-the-standard-lens" onClick={close}>The Standard Lens</Link>
             <Link href="/insights/permission-to-see-again" onClick={close}>Permission to See Again</Link>
 
             <p className="mobile-nav-label">Learn</p>

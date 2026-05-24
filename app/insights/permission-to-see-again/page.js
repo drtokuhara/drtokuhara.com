@@ -169,13 +169,21 @@ export default function InsightPermission() {
           </div>
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
-            <Link href="/understanding-cataracts" className="related-card">
-              <h3>Understanding Cataracts</h3>
-              <p>What cataracts are, how they progress, and why there's almost never a reason to rush.</p>
-            </Link>
             <Link href="/insights/the-reader-who-almost-gave-up-her-books" className="related-card">
               <h3>The Reader Who Almost Gave Up Her Books</h3>
-              <p>Another story about a patient who delayed care - and the conversation that changed her mind.</p>
+              <p>Another story about a patient who delayed care and the conversation that changed her mind.</p>
+            </Link>
+            <Link href="/insights/when-is-the-right-time" className="related-card">
+              <h3>When Is the Right Time?</h3>
+              <p>The myth of bad enough and why the right time depends on your life, not a number on a chart.</p>
+            </Link>
+            <Link href="/insights/when-patients-wait" className="related-card">
+              <h3>When Patients Wait</h3>
+              <p>The psychology of timing in cataract surgery, and why guilt often follows a great outcome.</p>
+            </Link>
+            <Link href="/insights/twenty-years-forward" className="related-card">
+              <h3>Twenty Years Forward</h3>
+              <p>She thought she just needed new glasses. It was cataracts.</p>
             </Link>
           </div>
         </div>

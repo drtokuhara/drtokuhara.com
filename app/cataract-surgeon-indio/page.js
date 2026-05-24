@@ -1,11 +1,16 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { breadcrumbSchema, physicianSchema } from '../schema';
 import {
   ScrollReveal,
   BlurReveal,
   LineDraw,
+  ScaleOnScroll,
+  StaggerChildren,
+  StaggerItem,
   VideoBackground,
 } from '../components/ScrollAnimations';
+import TiltCard from '../components/TiltCard';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -13,10 +18,10 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Who is the best cataract surgeon near Indio?',
+      name: 'Does Dr. Tokuhara treat patients whose cataracts developed from outdoor work?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Dr. Keith Tokuhara at Desert Vision Center in Rancho Mirage is a fellowship-trained cataract surgeon approximately 25 minutes from Indio. He has been recognized as a Palm Springs Life Top Doctor every year from 2019 through 2026 and was named Best Cataract Surgeon in the Coachella Valley by NBC. He specializes in complex cases, premium lens implants, and patients with conditions like diabetes, glaucoma, and previous eye surgery.',
+        text: 'Yes. Dr. Tokuhara regularly treats patients from Indio and the eastern Valley whose cataracts developed earlier than typical due to years of UV exposure from agriculture, construction, landscaping, and other outdoor work. He provides thorough evaluations and personalized surgical plans for these patients.',
       },
     },
     {
@@ -24,31 +29,31 @@ const faqSchema = {
       name: 'How far is Desert Vision Center from Indio?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Desert Vision Center at 35900 Bob Hope Drive in Rancho Mirage is approximately a 25-minute drive from central Indio via Interstate 10 or Highway 111. The office has ample parking and is easily accessible.',
+        text: 'Desert Vision Center at 35900 Bob Hope Drive in Rancho Mirage is approximately 25 minutes from central Indio via Interstate 10 or Highway 111. The office has ample parking directly in front of the building.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Does Dr. Tokuhara treat patients who work outdoors or in agriculture?',
+      name: 'Is cataract surgery covered by insurance?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Dr. Tokuhara regularly treats patients whose work involves significant UV exposure, including those in agriculture and outdoor industries. Prolonged sun exposure is a known risk factor for cataracts, and he provides thorough evaluations and personalized treatment plans for patients with accelerated cataract development.',
+        text: 'Yes. Standard cataract surgery is covered by Medicare and most insurance plans. Premium lens upgrades involve an additional out-of-pocket cost. Desert Vision Center discusses all costs upfront during your consultation so there are no surprises.',
       },
     },
     {
       '@type': 'Question',
-      name: 'What lens options are available for cataract surgery near Indio?',
+      name: 'Can family members come to the consultation?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Desert Vision Center offers a full range of lens implants including EDOF lenses for extended range of vision, toric lenses that reduce astigmatism, and multifocal options. Dr. Tokuhara matches lens selection to each patient\'s anatomy, lifestyle, and visual priorities rather than recommending one lens for everyone.',
+        text: 'Absolutely. Many Indio patients bring family members who help with translation or medical decisions. Dr. Tokuhara welcomes families into the consultation and ensures everyone understands the diagnosis, options, and plan.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Do I need a referral to see Dr. Tokuhara from Indio?',
+      name: 'Can I have both eyes done in one visit to avoid multiple trips from Indio?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No referral is required. Indio residents can call Desert Vision Center directly at 760.340.4700 or use the online contact form to schedule a consultation.',
+        text: 'Yes, for eligible patients. CLEAR in a Day is same-day bilateral cataract surgery where both eyes are treated in a single visit. This is especially valuable for Indio patients who need to minimize time away from work. Dr. Tokuhara evaluates whether you qualify during your consultation.',
       },
     },
   ],
@@ -65,13 +70,13 @@ const jsonLd = [
 
 export const metadata = {
   title: 'Cataract Surgeon Near Indio | Dr. Keith Tokuhara | Desert Vision Center',
-  description: 'Looking for a cataract surgeon near Indio? Dr. Keith Tokuhara at Desert Vision Center in Rancho Mirage is just 25 minutes away. Fellowship-trained, 20,000+ surgeries, Top Doctor 2019-2026. Premium lenses and complex case expertise.',
+  description: 'Indio residents: Dr. Tokuhara treats cataracts caused by UV exposure, diabetes, and outdoor work. Fellowship-trained in cataract and retina surgery. 20,000+ procedures. Cost-transparent. Families welcome. 25 minutes west in Rancho Mirage.',
   alternates: {
     canonical: '/cataract-surgeon-indio',
   },
   openGraph: {
     title: 'Cataract Surgeon Near Indio | Desert Vision Center',
-    description: 'Fellowship-trained cataract surgeon Dr. Keith Tokuhara, just 25 minutes from Indio. Advanced cataract surgery, premium lenses, complex cases. 760.340.4700.',
+    description: 'Fellowship-trained cataract and retina surgeon, 25 minutes from Indio. Expertise in UV-related cataracts, diabetic eyes, and complex cases. 760.340.4700.',
     url: 'https://drtokuhara.com/cataract-surgeon-indio',
   },
 };
@@ -87,11 +92,11 @@ export default function CataractSurgeonIndioPage() {
         />
       ))}
 
-      <VideoBackground src="/media/ambient-desert-golden-hour.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-desert-sunrise.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
           <h1>Cataract Surgeon in <strong>Indio</strong></h1>
           <p className="page-hero-sub">
-            Indio is the fastest-growing city in the Coachella Valley, and its residents deserve a cataract surgeon who matches that momentum. Desert Vision Center is 25 minutes west in Rancho Mirage.
+            The Date Capital of the World. A century of agricultural history, a community of hard-working families, and a growing need for advanced eye care.
           </p>
         </div>
       </VideoBackground>
@@ -99,16 +104,13 @@ export default function CataractSurgeonIndioPage() {
       <section className="section section-white">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}>
-            <h2 className="section-title">Why Indio Residents Choose <strong>Desert Vision Center</strong></h2>
+            <h2 className="section-title">A City Built Under <strong>the Desert Sun</strong></h2>
           </ScrollReveal>
           <p className="prose">
-            Indio is a city in motion. New neighborhoods, new families, a growing economy anchored by agriculture, the date palm industry, and the international spotlight that comes with the Coachella Valley Music and Arts Festival. It is a diverse community where people work hard, spend time outdoors, and value straightforward, honest healthcare.
+            Indio is the Date Capital of the World. That is not a marketing slogan. It is a century of agricultural history visible in the groves that still line Highway 111 and Avenue 44. The people who built this city worked under the desert sun, and many still do. Agriculture, construction, county government at the Larson Justice Center, the festival economy at the Empire Polo Club, retail and service jobs along Monroe Street. Indio is the largest city in the Coachella Valley, and it is a working city.
           </p>
           <p className="prose">
-            I see many patients from Indio, and a theme runs through those conversations: years of UV exposure from outdoor work or an active desert lifestyle have accelerated their cataracts. Agriculture, construction, landscaping, festival logistics, or simply spending decades under the Coachella Valley sun. All of it adds up. When vision starts to blur, glare becomes a problem on the drive home on the I-10, or colors lose their richness, cataracts are often the reason.
-          </p>
-          <p className="prose">
-            My approach with every Indio patient is the same as with every patient: thorough examination, honest conversation about what I find, and a personalized plan. No assembly-line medicine. No upselling. Just a clear explanation of your options and my best recommendation based on decades of surgical experience.
+            That outdoor life has a cost. Years of UV exposure accelerate cataract development. I see patients from Indio who are in their 50s with cataracts that, in someone who spent their career indoors, would not develop until their 70s. Date farm supervisors, landscapers, construction workers, people who have spent decades under one of the most intense suns in Southern California. When their vision starts to blur, when glare makes the drive home on the I-10 difficult, when colors lose their richness, cataracts are usually the reason.
           </p>
         </div>
       </section>
@@ -116,19 +118,27 @@ export default function CataractSurgeonIndioPage() {
       <section className="section section-warm">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}>
-            <h2 className="section-title">Why Choose <strong>Desert Vision Center</strong></h2>
+            <h2 className="section-title">Cost, Time, and <strong>Straight Answers</strong></h2>
           </ScrollReveal>
           <p className="prose">
-            When you are researching cataract surgeons, here is what matters about Desert Vision Center:
+            I know what matters to working families in Indio. Not a sales pitch. Straight answers to three questions: What is wrong with my eyes? What will it cost? How fast can I get back to work?
           </p>
-          <ul className="content-list">
-            <li><strong>Physician-owned and independent:</strong> No corporate chain, no private equity investors, no hospital system dictating how I practice. I own my practice, which means my only obligation is to my patients.</li>
-            <li><strong>Gimbel-trained during residency:</strong> I trained under Dr. Howard Gimbel at Loma Linda University, one of the most influential cataract surgeons in the world. His standards for precision and technique are the foundation of everything I do in the operating room.</li>
-            <li><strong>Retina fellowship:</strong> After residency, I completed a fellowship in retina surgery. This means I understand the entire eye, front to back. When I evaluate your cataracts, I am also assessing the retina, the optic nerve, and conditions that other cataract surgeons might miss or refer out.</li>
-            <li><strong>Over 20,000 surgeries:</strong> That experience means I have handled virtually every complication, anatomical variation, and challenging situation that cataract surgery can present.</li>
-            <li><strong>Complex case specialist:</strong> Patients who have been told their case is too complicated, who had a previous surgery that did not go well, or who have diabetes, glaucoma, or other complicating conditions find their way to my practice.</li>
-            <li><strong>Top Doctor 2019-2026:</strong> Recognized by Palm Springs Life every year. Named Best Cataract Surgeon in the Coachella Valley by NBC.</li>
-          </ul>
+
+          <div style={{display: 'grid', gap: '1.25rem', marginTop: '1.5rem'}}>
+            <div style={{padding: '1.25rem', background: 'rgba(255,255,255,0.5)', borderRadius: '8px', borderLeft: '4px solid var(--oasis)'}}>
+              <p className="prose" style={{margin: 0}}><strong>Insurance and cost.</strong> Standard cataract surgery is covered by Medicare and most insurance plans. Premium lenses involve an additional out-of-pocket cost. I discuss everything upfront during your consultation. No surprises, no hidden fees.</p>
+            </div>
+            <div style={{padding: '1.25rem', background: 'rgba(255,255,255,0.5)', borderRadius: '8px', borderLeft: '4px solid var(--oasis)'}}>
+              <p className="prose" style={{margin: 0}}><strong>Time off work.</strong> The surgery itself takes 10 to 15 minutes per eye. Most patients return to normal activities within a day or two. CLEAR in a Day means eligible patients can have both eyes treated in a single visit, so one day away from work instead of multiple. <Link href="/clear-in-a-day">Learn about CLEAR in a Day</Link>.</p>
+            </div>
+            <div style={{padding: '1.25rem', background: 'rgba(255,255,255,0.5)', borderRadius: '8px', borderLeft: '4px solid var(--oasis)'}}>
+              <p className="prose" style={{margin: 0}}><strong>Honest recommendations.</strong> If the standard lens covered by Medicare is the right choice for your eyes, I will tell you that. I do not push the most expensive option because it exists. I push the option that matches your anatomy, your lifestyle, and your priorities.</p>
+            </div>
+          </div>
+
+          <div style={{margin: '2rem 0', borderRadius: '12px', overflow: 'hidden'}}>
+            <Image src="/media/worker-hardhat-desert-mountains.jpeg" alt="Active senior professional holding a hard hat in the sunny Coachella Valley desert, representing the outdoor workers of Indio" width={800} height={500} style={{width: '100%', height: 'auto', display: 'block'}} />
+          </div>
         </div>
       </section>
 
@@ -137,41 +147,82 @@ export default function CataractSurgeonIndioPage() {
       <section className="section section-white">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}>
-            <h2 className="section-title">Cataract Surgery <strong>Services</strong></h2>
+            <h2 className="section-title">Families Are Part of <strong>the Process</strong></h2>
           </ScrollReveal>
           <p className="prose">
-            Every treatment plan at Desert Vision Center is individualized. I do not have a default recommendation. I evaluate your eyes, listen to your priorities, and build a plan from there.
+            Many of my Indio patients bring a son, a daughter, or a spouse to their appointment. Sometimes that family member is the one who found Desert Vision Center online, made the phone call, and is driving their parent to the consultation. Sometimes they help with translation. Either way, they are welcome in the room.
           </p>
-          <ul className="content-list">
-            <li><strong>Advanced cataract surgery:</strong> Precise, efficient removal of cataracts using the latest surgical techniques. I perform every surgery personally from start to finish. <Link href="/cataract-surgery">Learn about cataract surgery</Link>.</li>
-            <li><strong>CLEAR in a Day:</strong> Same-day bilateral cataract surgery for eligible patients. Both eyes in one visit means fewer drives from Indio and less time away from work. <Link href="/clear-in-a-day">Learn about CLEAR in a Day</Link>.</li>
-            <li><strong>Premium lens implants:</strong> EDOF lenses for extended range of vision, toric lenses that reduce astigmatism, and multifocal options. The right lens depends on your anatomy, your activities, and how you use your eyes. <Link href="/lens-implants-explained">Explore lens options</Link>.</li>
-            <li><strong>Complex and revision surgery:</strong> Dislocated lenses, failed prior procedures, Yamane sutured lenses, iris reconstruction, and other cases that require advanced surgical skill. <Link href="/complex-cases">See complex case expertise</Link>.</li>
-            <li><strong>Glaucoma and diabetic eye care:</strong> Comprehensive management of glaucoma and diabetic retinopathy, including in-house injections and laser treatment. <Link href="/glaucoma">Glaucoma</Link> | <Link href="/diabetic-retinopathy">Diabetic eye care</Link>.</li>
-          </ul>
+          <p className="prose">
+            I explain everything clearly. I make sure both the patient and their family understand the diagnosis, the options, and the plan. If your daughter has questions about what recovery looks like, or your husband wants to understand the difference between lens types, I answer every question. No one leaves my office confused about what comes next.
+          </p>
+
+          <div style={{margin: '2rem 0'}}>
+            <Image src="/media/diverse-couple-watching-grandkids-park.jpeg" alt="Happy diverse couple watching their grandchildren play at a sunny park with palm trees" width={800} height={500} style={{width: '100%', height: 'auto', borderRadius: '12px'}} />
+          </div>
         </div>
       </section>
 
       <section className="section section-warm">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}>
-            <h2 className="section-title">What Makes Dr. Tokuhara <strong>Different</strong></h2>
+            <h2 className="section-title">Why Desert Vision Center <strong>for Indio</strong></h2>
           </ScrollReveal>
           <p className="prose">
-            Many of my Indio patients tell me they appreciate the fact that I take the time to explain everything. They have questions about UV damage and cataracts, about whether outdoor work contributed to their condition, about what lens will work best for someone who is still working, still driving, still active. I answer all of those questions because an informed patient makes a better decision.
+            Indio has eye care options, including optometrists along Monroe Street and the JFK Memorial Hospital system. For advanced cataract surgery, here is what I bring to Indio patients specifically:
           </p>
-          <p className="prose">
-            I also see patients from Indio who have diabetes or early diabetic eye changes. My retina fellowship means I can evaluate and manage those conditions in-house rather than sending you to a separate specialist. When your cataract surgeon also understands diabetic retinopathy and macular disease, you get more coordinated, more complete care.
-          </p>
-          <p className="prose">
-            Desert Vision Center is not a volume practice. I do not rush through evaluations, and I do not hand you off to a technician for the important conversations. You see me, you talk to me, and I perform your surgery myself.
-          </p>
+          <StaggerChildren staggerDelay={0.08}>
+            <StaggerItem>
+              <TiltCard className="insight-highlight" style={{marginBottom: '1.5rem', padding: '1.5rem'}}>
+                <p><strong>Retina expertise for diabetic eyes.</strong> Diabetes is common in this community. My retina fellowship means I evaluate and manage diabetic retinopathy, macular edema, and cataracts together, in-house. You do not need a separate retina specialist. <Link href="/diabetic-retinopathy">Learn about diabetic eye care</Link>.</p>
+              </TiltCard>
+            </StaggerItem>
+            <StaggerItem>
+              <TiltCard className="insight-highlight" style={{marginBottom: '1.5rem', padding: '1.5rem'}}>
+                <p><strong>UV-accelerated cataracts.</strong> I understand the specific cataract patterns that develop from years of outdoor work. These cases sometimes present differently than age-related cataracts, and my experience with over 20,000 surgeries means I have seen every variation. <Link href="/cataract-surgery">Learn about cataract surgery</Link>.</p>
+              </TiltCard>
+            </StaggerItem>
+            <StaggerItem>
+              <TiltCard className="insight-highlight" style={{marginBottom: '1.5rem', padding: '1.5rem'}}>
+                <p><strong>Gimbel training, independent practice.</strong> I learned cataract surgery from Dr. Howard Gimbel at Loma Linda University, one of the most influential cataract surgeons in modern ophthalmology. I built my own practice so I could apply that training without corporate constraints. No one tells me how many patients to see or which lens to recommend.</p>
+              </TiltCard>
+            </StaggerItem>
+          </StaggerChildren>
+        </div>
+      </section>
+
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">What Indio Patients <strong>Can Expect</strong></h2>
+          </ScrollReveal>
+          <ul className="content-list">
+            <li><strong>Every surgery performed by me personally.</strong> No residents, no fellows, no handoffs. Over 20,000 procedures of experience behind every case.</li>
+            <li><strong>A real consultation, not an assembly line.</strong> I examine your eyes, explain what I find, discuss your options, and answer every question. Nobody rushes you through.</li>
+            <li><strong>Lens options that fit your life.</strong> EDOF lenses for extended range, toric lenses to reduce astigmatism, multifocal options, and the standard Medicare-covered lens. I match the recommendation to your eyes and your budget. <Link href="/lens-implants-explained">Explore lens options</Link>.</li>
+            <li><strong>Complex case capability.</strong> Patients with diabetes, glaucoma, prior eye surgery, or complications from other procedures come to my practice from across the Valley. I do not refer these cases out. <Link href="/complex-cases">See complex case expertise</Link>.</li>
+          </ul>
 
           <BlurReveal>
             <div className="insight-highlight">
-              <p><strong>Indio residents who want a cataract surgeon with deep experience, honest communication, and the ability to handle complex eyes consistently choose Desert Vision Center. The 25-minute drive west on the I-10 leads to some of the best cataract care in the region.</strong></p>
+              <p><strong>Whether you are heading to Shields for a date shake, watching your grandkids at a school soccer game, or driving home from work on Monroe Street, clear vision changes the quality of everything. Desert Vision Center is 25 minutes west, and the drive is worth it.</strong></p>
             </div>
           </BlurReveal>
+        </div>
+      </section>
+
+      <section className="section section-warm">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">Common Questions from <strong>Indio Patients</strong></h2>
+          </ScrollReveal>
+          <div style={{marginTop: '1.5rem'}}>
+            {faqSchema.mainEntity.map((faq, i) => (
+              <details key={i} style={{marginBottom: '1rem', padding: '1rem 1.5rem', background: 'rgba(255,255,255,0.5)', borderRadius: '8px'}}>
+                <summary style={{cursor: 'pointer', fontWeight: 600, fontSize: '1.05rem'}}>{faq.name}</summary>
+                <p className="prose" style={{marginTop: '0.75rem'}}>{faq.acceptedAnswer.text}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -184,21 +235,21 @@ export default function CataractSurgeonIndioPage() {
             Desert Vision Center is located at <strong>35900 Bob Hope Drive, Suite 175, Rancho Mirage, CA 92270</strong>. From central Indio, the drive is approximately 25 minutes.
           </p>
           <p className="prose">
-            <strong>Via Interstate 10:</strong> Head west on I-10 from Indio. Take the Bob Hope Drive exit and head south. The office is on your left, just past the Eisenhower Medical Center area.
+            <strong>Via Interstate 10:</strong> Head west on I-10 from Indio. Take the Bob Hope Drive exit and head south. The office is on your left, near Eisenhower Health.
           </p>
           <p className="prose">
-            <strong>Via Highway 111:</strong> Take Highway 111 (also known as the main corridor through the Valley) west through La Quinta and Indian Wells toward Rancho Mirage. Turn right on Bob Hope Drive.
+            <strong>Via Highway 111:</strong> Take Highway 111 west through La Quinta and Indian Wells toward Rancho Mirage. Turn right on Bob Hope Drive.
           </p>
           <p className="prose">
-            There is ample parking directly in front of the building. We keep our waiting times short, and the CLEAR in a Day option means eligible patients can have both eyes done in a single trip from Indio.
+            Ample parking directly in front of the building. CLEAR in a Day means eligible patients can handle both eyes in a single trip from Indio.
           </p>
         </div>
       </section>
 
       <section className="cta">
         <div className="container">
-          <h2>Looking for a cataract surgeon near <strong>Indio?</strong></h2>
-          <p>Desert Vision Center in Rancho Mirage is just 25 minutes away. Call us or send a message to schedule your consultation. No referral required.</p>
+          <h2>Indio: advanced eye care, <strong>straight answers, fair cost.</strong></h2>
+          <p>Desert Vision Center in Rancho Mirage. 25 minutes from Indio. Fellowship-trained cataract and retina surgeon. Families welcome. Insurance and cost discussed upfront. No referral required.</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
             <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>

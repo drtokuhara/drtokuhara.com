@@ -311,6 +311,10 @@ export default function PanOptixVsPanOptixPro() {
               <h3>Halos After Cataract Surgery</h3>
               <p>What causes them, how long they last, and when to be concerned.</p>
             </Link>
+            <Link href="/insights/are-premium-lenses-worth-it" className="related-card">
+              <h3>Are Premium Lenses Worth It?</h3>
+              <p>An honest look at when premium lenses make sense and when they do not.</p>
+            </Link>
           </div>
         </div>
       </section>

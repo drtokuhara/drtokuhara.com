@@ -430,7 +430,7 @@ export default function CataractSurgeryComplications() {
             <li>You are not a burden. You deserve answers.</li>
             <li>Complications do not always mean the surgeon did something wrong. But you deserve to understand what happened.</li>
             <li>Many complications are repairable. Iris damage, dislocated lenses, retained fragments, and other issues often have solutions.</li>
-            <li>My dual fellowship training in cataract surgery and medical retina means I evaluate these cases from both the front and back of the eye.</li>
+            <li>My cataract training under Dr. Gimbel during residency and my medical retina fellowship means I evaluate these cases from both the front and back of the eye.</li>
           </ul>
 
           <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap'}}>

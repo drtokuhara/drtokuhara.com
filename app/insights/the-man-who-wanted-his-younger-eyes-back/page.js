@@ -169,13 +169,21 @@ export default function InsightYoungerEyes() {
           </div>
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
-            <Link href="/lens-implants-explained" className="related-card">
-              <h3>Lens Implants Explained</h3>
-              <p>A clear overview of the different lens options, what they do, and the tradeoffs involved in each.</p>
+            <Link href="/insights/when-the-surgeon-says-wait" className="related-card">
+              <h3>When the Surgeon Says Wait</h3>
+              <p>Choosing to wait is not choosing to do nothing. In cataract surgery, timing matters as much as technique.</p>
             </Link>
             <Link href="/insights/when-more-isnt-better" className="related-card">
               <h3>When More Isn't Better</h3>
               <p>When each procedure was supposed to be the fix, and the real answer was stepping back.</p>
+            </Link>
+            <Link href="/insights/do-i-really-need-surgery" className="related-card">
+              <h3>Do I Really Need Surgery Yet?</h3>
+              <p>A 70-year-old man was told surgery would fix everything. The honest exam told a different story.</p>
+            </Link>
+            <Link href="/insights/are-premium-lenses-worth-it" className="related-card">
+              <h3>Are Premium Lenses Worth It?</h3>
+              <p>An honest reflection on premium versus standard lens implants and what the answer depends on.</p>
             </Link>
           </div>
         </div>

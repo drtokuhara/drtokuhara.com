@@ -1,11 +1,15 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { breadcrumbSchema, physicianSchema } from '../schema';
 import {
   ScrollReveal,
   BlurReveal,
   LineDraw,
   VideoBackground,
+  ScaleOnScroll,
+  StaggerChildren,
 } from '../components/ScrollAnimations';
+import TiltCard from '../components/TiltCard';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -13,42 +17,42 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Who is the best cataract surgeon near Thousand Palms?',
+      name: 'Is there a cataract surgeon in Thousand Palms?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Dr. Keith Tokuhara at Desert Vision Center in Rancho Mirage is a fellowship-trained cataract surgeon approximately 15 minutes from Thousand Palms. He has been recognized as a Palm Springs Life Top Doctor every year from 2019 through 2026 and was named Best Cataract Surgeon in the Coachella Valley by NBC.',
+        text: 'There is no ophthalmologist or cataract surgeon based in Thousand Palms. However, Desert Vision Center in Rancho Mirage is approximately 15 minutes away via Bob Hope Drive, which connects directly from the Thousand Palms area to the office. Dr. Keith Tokuhara is a fellowship-trained cataract surgeon with over 20,000 procedures performed.',
       },
     },
     {
       '@type': 'Question',
-      name: 'How far is Desert Vision Center from Thousand Palms?',
+      name: 'How do I get from Thousand Palms to Desert Vision Center?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Desert Vision Center at 35900 Bob Hope Drive in Rancho Mirage is approximately a 15-minute drive from Thousand Palms via Bob Hope Drive or Interstate 10. The office has ample parking.',
+        text: 'The most direct route is Bob Hope Drive, which runs straight from the Thousand Palms area south to Desert Vision Center in Rancho Mirage. The drive is approximately 15 minutes with no highway driving required. You can also take I-10 West briefly and exit at Bob Hope Drive heading south.',
       },
     },
     {
       '@type': 'Question',
-      name: 'What cataract surgery options are available near Thousand Palms?',
+      name: 'Does Desert Vision Center accept Medicare patients from Thousand Palms?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Desert Vision Center offers advanced cataract surgery, premium lens implants including EDOF, toric, and multifocal lenses, CLEAR in a Day same-day bilateral surgery, and complex case management. Dr. Tokuhara creates a personalized plan for every patient.',
+        text: 'Yes. Standard cataract surgery is covered by Medicare and most insurance plans. Dr. Tokuhara discusses all costs upfront during your consultation, including any additional investment for premium lens options, so there are no surprises.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Does Dr. Tokuhara treat patients with diabetes who need cataract surgery?',
+      name: 'Can I have both eyes done in one visit from Thousand Palms?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Dr. Tokuhara completed a fellowship in retina surgery and specializes in complex cataract cases including patients with diabetes, diabetic retinopathy, glaucoma, and other complicating conditions. He manages these conditions in-house.',
+        text: 'Yes. Dr. Tokuhara offers CLEAR in a Day, same-day bilateral cataract surgery for eligible patients. Both eyes treated in a single visit means fewer trips and a faster return to your routine.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Do I need a referral to see Dr. Tokuhara from Thousand Palms?',
+      name: 'Does Dr. Tokuhara treat patients with diabetes and cataracts?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No referral is required. Thousand Palms residents can call Desert Vision Center directly at 760.340.4700 or use the online contact form to schedule a consultation.',
+        text: 'Yes. Dr. Tokuhara completed a retina fellowship in addition to his cataract training, which means he evaluates the entire eye, including checking for diabetic retinopathy and other retinal conditions. He manages both cataracts and diabetic eye issues in-house.',
       },
     },
   ],
@@ -58,20 +62,20 @@ const jsonLd = [
   faqSchema,
   breadcrumbSchema([
     { name: 'Home', href: '/' },
-    { name: 'Cataract Surgeon in Thousand Palms', href: '/cataract-surgeon-thousand-palms' },
+    { name: 'Cataract Surgeon for Thousand Palms', href: '/cataract-surgeon-thousand-palms' },
   ]),
   physicianSchema,
 ];
 
 export const metadata = {
   title: 'Cataract Surgeon Near Thousand Palms | Dr. Keith Tokuhara | Desert Vision Center',
-  description: 'Looking for a cataract surgeon near Thousand Palms? Dr. Keith Tokuhara at Desert Vision Center in Rancho Mirage is just 15 minutes away. Fellowship-trained, 20,000+ surgeries, Top Doctor 2019-2026.',
+  description: 'Thousand Palms residents: Desert Vision Center is 15 minutes straight down Bob Hope Drive. Dr. Tokuhara is fellowship-trained with 20,000+ surgeries. Medicare accepted. No referral needed.',
   alternates: {
     canonical: '/cataract-surgeon-thousand-palms',
   },
   openGraph: {
     title: 'Cataract Surgeon Near Thousand Palms | Desert Vision Center',
-    description: 'Fellowship-trained cataract surgeon Dr. Keith Tokuhara, just 15 minutes from Thousand Palms. Advanced cataract surgery, premium lenses, complex cases. 760.340.4700.',
+    description: 'No eye surgeon in Thousand Palms? Dr. Tokuhara at Desert Vision Center is 15 minutes south on Bob Hope Drive. Fellowship-trained, physician-owned, complex case specialist. 760.340.4700.',
     url: 'https://drtokuhara.com/cataract-surgeon-thousand-palms',
   },
 };
@@ -87,11 +91,11 @@ export default function CataractSurgeonThousandPalmsPage() {
         />
       ))}
 
-      <VideoBackground src="/media/ambient-desert-golden-hour.mp4" overlayOpacity={0.6} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
+      <VideoBackground src="/media/ambient-desert-twilight.mp4" overlayOpacity={0.55} overlayColor="0, 20, 30" className="page-hero page-hero-image" style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="container">
-          <h1>Cataract Surgeon in <strong>Thousand Palms</strong></h1>
+          <h1>Cataract Surgeon for <strong>Thousand Palms</strong> Residents</h1>
           <p className="page-hero-sub">
-            Thousand Palms residents are closer to Desert Vision Center than many people realize. Just 15 minutes down Bob Hope Drive to some of the best cataract care in the Coachella Valley.
+            Thousand Palms often gets overlooked. But here is something most residents do not realize: Bob Hope Drive runs straight from your community to Desert Vision Center's front door. Fifteen minutes. No freeway required.
           </p>
         </div>
       </VideoBackground>
@@ -99,36 +103,53 @@ export default function CataractSurgeonThousandPalmsPage() {
       <section className="section section-white">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}>
-            <h2 className="section-title">Why Thousand Palms Residents Choose <strong>Desert Vision Center</strong></h2>
+            <h2 className="section-title">The Community <strong>Between</strong></h2>
           </ScrollReveal>
           <p className="prose">
-            Thousand Palms is a community that sits right along the I-10 corridor, positioned between Palm Springs and the eastern Valley. It is home to the Coachella Valley Preserve, a growing residential population, and people who enjoy the more relaxed, affordable side of desert living. The community is close-knit, practical, and values straightforward service.
+            Thousand Palms is not Palm Springs. It is not Indio. It is not quite anywhere on the tourist map. But the people who live here, in the manufactured home communities along Varner Road, in the neighborhoods near the I-10, and in the newer developments spreading east, know what they have: affordable homes, the Coachella Valley Preserve practically in the backyard, and a community that is quieter than its more famous neighbors.
           </p>
           <p className="prose">
-            I see patients from Thousand Palms who are often surprised at how close Desert Vision Center actually is. Bob Hope Drive connects directly from the I-10 area to our office in Rancho Mirage. It is a 15-minute drive, and for many Thousand Palms residents, that is shorter than the drive to some of the bigger medical centers in the Valley.
+            The Thousand Palms Oasis at the Coachella Valley Preserve is one of the most beautiful spots in the entire desert. Native Washingtonia fan palms, the kind the community is named for, growing alongside spring-fed pools at the base of the Indio Hills. If you have hiked those trails, you know how much clear vision matters when you are navigating rocky desert paths and scanning for wildlife.
           </p>
           <p className="prose">
-            My approach is simple and consistent: a thorough examination, an honest conversation about what I find, and a treatment plan tailored to your eyes and your life. Whether you are still working, enjoying retirement, or somewhere in between, I factor in how you actually use your vision every day.
+            But Thousand Palms residents also know the reality of living in a community with minimal medical infrastructure. There is no hospital here. No specialist offices. For most healthcare beyond the basics, you are driving somewhere else. The good news is that "somewhere else" for eye care is closer than most people think.
           </p>
+
+          <div style={{margin: '2rem 0'}}>
+            <Image src="/media/senior-man-moving-desert-mountains.jpeg" alt="Active senior man carrying a moving box with desert mountains in the background, representing independent living in the Coachella Valley" width={800} height={500} style={{width: '100%', height: 'auto', borderRadius: '12px'}} />
+          </div>
         </div>
       </section>
 
       <section className="section section-warm">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}>
-            <h2 className="section-title">Why Choose <strong>Desert Vision Center</strong></h2>
+            <h2 className="section-title">Fifteen Minutes <strong>Down Bob Hope Drive</strong></h2>
           </ScrollReveal>
+
+          <ScaleOnScroll startScale={0.9} endScale={1}>
+            <div style={{textAlign: 'center', padding: '1.5rem 0 2rem'}}>
+              <div style={{fontSize: '3.5rem', fontWeight: '700', color: 'var(--oasis)'}}>15 min</div>
+              <div style={{fontSize: '1.05rem', opacity: 0.8}}>Bob Hope Drive. Straight south. No freeway, no traffic, no hassle.</div>
+            </div>
+          </ScaleOnScroll>
+
           <p className="prose">
-            Here is what sets Desert Vision Center apart:
+            Bob Hope Drive literally connects Thousand Palms to Desert Vision Center's doorstep. Head south from the I-10 area, pass through the Eisenhower Medical Center corridor, and you are there. For a community where getting to specialist care usually means navigating across the Valley, this is one of the most direct routes to an advanced eye care practice anywhere in the region.
           </p>
-          <ul className="content-list">
-            <li><strong>Physician-owned and independent:</strong> No corporate chain, no private equity investors. I own my practice, and my only obligation is to my patients.</li>
-            <li><strong>Gimbel-trained during residency:</strong> I trained under Dr. Howard Gimbel at Loma Linda University, one of the most influential cataract surgeons in the world. That foundation of precision shapes everything I do.</li>
-            <li><strong>Retina fellowship:</strong> After residency, I completed a fellowship in retina surgery. I understand the entire eye, which means I catch things that cataract-only surgeons might miss.</li>
-            <li><strong>Over 20,000 surgeries:</strong> That experience means I have handled virtually every complication and challenging situation cataract surgery can present.</li>
-            <li><strong>Complex case specialist:</strong> Patients with diabetes, glaucoma, prior surgeries, or cases other surgeons have declined regularly come to my practice.</li>
-            <li><strong>Top Doctor 2019-2026:</strong> Recognized by Palm Springs Life every year. Named Best Cataract Surgeon in the Coachella Valley by NBC.</li>
-          </ul>
+          <p className="prose">
+            That matters. Not because 15 minutes is some remarkable distance, but because Thousand Palms residents should not have to settle for whatever is closest. You deserve the same quality of care that patients in Palm Desert or Indian Wells receive. The only difference is that most of those patients do not realize they share a surgeon with their neighbors from Thousand Palms.
+          </p>
+
+          <div style={{margin: '2rem 0'}}>
+            <Image
+              src="/media/dvc-building-exterior.jpg"
+              alt="Desert Vision Center building in Rancho Mirage with easy front-door parking"
+              width={800}
+              height={450}
+              style={{width: '100%', height: 'auto', borderRadius: '12px'}}
+            />
+          </div>
         </div>
       </section>
 
@@ -137,17 +158,81 @@ export default function CataractSurgeonThousandPalmsPage() {
       <section className="section section-white">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}>
-            <h2 className="section-title">Cataract Surgery <strong>Services</strong></h2>
+            <h2 className="section-title">Practical Care for <strong>Practical People</strong></h2>
           </ScrollReveal>
           <p className="prose">
-            Every treatment plan is individualized. I evaluate your eyes, listen to your priorities, and build a plan from there.
+            Thousand Palms is a practical community. People here are not looking for the flashiest marketing or the biggest name. They want a doctor who is going to be straight with them, explain what is happening, and not make them feel rushed or judged for waiting too long to come in.
           </p>
+          <p className="prose">
+            That is exactly how I practice. When you come to Desert Vision Center, I examine your eyes thoroughly, explain what I find in plain language, and give you my honest recommendation. If the standard lens covered by Medicare is the right choice for your eyes, I tell you that. If a premium lens would genuinely improve your outcome, I explain why, what it costs, and what the realistic expectations are. Then you decide.
+          </p>
+          <p className="prose">
+            Many of my Thousand Palms patients are retirees on fixed incomes. Some are still working. Some are managing diabetes or glaucoma alongside their cataracts. Whatever your situation, I factor it into the plan. Your eyes are unique. Your life circumstances are unique. The surgery should reflect both.
+          </p>
+
+          <div style={{margin: '2rem 0'}}>
+            <Image
+              src="/media/patient-elderly-man-calm.jpg"
+              alt="Calm patient during eye care consultation"
+              width={800}
+              height={450}
+              style={{width: '100%', height: 'auto', borderRadius: '12px'}}
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-warm">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">What I Bring to <strong>Your Care</strong></h2>
+          </ScrollReveal>
+          <div style={{margin: '2rem 0'}}>
+            <Image src="/media/senior-asian-man-desert-mountains.jpeg" alt="Senior man getting ready for an active day with desert mountains visible through the bedroom window" width={800} height={450} style={{width: '100%', height: 'auto', borderRadius: '12px'}} />
+          </div>
+
+          <p className="prose">
+            Thousand Palms does not have its own ophthalmologist, so when you need cataract surgery, you are choosing from surgeons across the Valley. Here is what you are getting at Desert Vision Center:
+          </p>
+
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', margin: '2rem 0'}}>
+            <TiltCard>
+              <div style={{padding: '1.5rem', background: 'rgba(255,255,255,0.05)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.1)'}}>
+                <h3 style={{marginBottom: '0.75rem', fontSize: '1.1rem'}}>Your Surgeon. Every Time.</h3>
+                <p style={{fontSize: '0.95rem', lineHeight: '1.6'}}>I perform every surgery personally. No residents, no fellows, no handoffs to an associate. The surgeon you consulted with is the surgeon in the operating room.</p>
+              </div>
+            </TiltCard>
+            <TiltCard>
+              <div style={{padding: '1.5rem', background: 'rgba(255,255,255,0.05)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.1)'}}>
+                <h3 style={{marginBottom: '0.75rem', fontSize: '1.1rem'}}>The Whole Eye, Not Just the Cataract</h3>
+                <p style={{fontSize: '0.95rem', lineHeight: '1.6'}}>My retina fellowship means I evaluate the full picture: cataracts, diabetic changes, macular concerns, glaucoma. One surgeon, one practice, comprehensive care.</p>
+              </div>
+            </TiltCard>
+            <TiltCard>
+              <div style={{padding: '1.5rem', background: 'rgba(255,255,255,0.05)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.1)'}}>
+                <h3 style={{marginBottom: '0.75rem', fontSize: '1.1rem'}}>20,000+ Surgeries</h3>
+                <p style={{fontSize: '0.95rem', lineHeight: '1.6'}}>Experience compounds. After this many procedures, I have seen and managed virtually every complication, anatomical variation, and challenging situation cataract surgery can present.</p>
+              </div>
+            </TiltCard>
+          </div>
+
+          <p className="prose">
+            I am also a complex case specialist. Patients with diabetes, glaucoma, prior failed surgeries, or cases other surgeons have declined regularly come to my practice. If your eyes present challenges, I do not refer you elsewhere. I handle them.
+          </p>
+        </div>
+      </section>
+
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">Services for <strong>Thousand Palms Patients</strong></h2>
+          </ScrollReveal>
           <ul className="content-list">
-            <li><strong>Advanced cataract surgery:</strong> Precise, efficient removal of cataracts using the latest techniques. I perform every surgery personally from start to finish. <Link href="/cataract-surgery">Learn about cataract surgery</Link>.</li>
-            <li><strong>CLEAR in a Day:</strong> Same-day bilateral cataract surgery for eligible patients. Both eyes in one visit means less time away from your routine. <Link href="/clear-in-a-day">Learn about CLEAR in a Day</Link>.</li>
-            <li><strong>Premium lens implants:</strong> EDOF lenses for extended range of vision, toric lenses for astigmatism, and multifocal options. The right lens depends on your eyes and your life. <Link href="/lens-implants-explained">Explore lens options</Link>.</li>
-            <li><strong>Complex and revision surgery:</strong> Dislocated lenses, failed prior procedures, Yamane sutured lenses, iris reconstruction, and other advanced cases. <Link href="/complex-cases">See complex case expertise</Link>.</li>
-            <li><strong>Glaucoma and diabetic eye care:</strong> Comprehensive management including in-house injections and laser treatment. <Link href="/glaucoma">Glaucoma</Link> | <Link href="/diabetic-retinopathy">Diabetic eye care</Link>.</li>
+            <li><strong>Advanced cataract surgery:</strong> Precise, modern technique performed by me personally, start to finish. <Link href="/cataract-surgery">Learn about cataract surgery</Link>.</li>
+            <li><strong>CLEAR in a Day:</strong> Same-day bilateral cataract surgery for eligible patients. Both eyes in one visit. For Thousand Palms residents, that means fewer total appointments, less time coordinating rides, and a faster return to normal. <Link href="/clear-in-a-day">Learn about CLEAR in a Day</Link>.</li>
+            <li><strong>Honest lens selection:</strong> EDOF lenses for broader range, toric lenses to reduce astigmatism, multifocal options. I match the lens to your eyes and your life. If the standard lens is the best fit, I say so. <Link href="/lens-implants-explained">Explore lens options</Link>.</li>
+            <li><strong>Diabetic eye care:</strong> Many Thousand Palms patients manage diabetes. My retina fellowship means I check for diabetic retinopathy and manage it in the same practice where I treat your cataracts. <Link href="/diabetic-retinopathy">Diabetic eye care</Link>.</li>
+            <li><strong>Complex and revision cases:</strong> Dislocated lenses, failed prior procedures, Yamane sutured lenses, and other cases that require advanced surgical skill. <Link href="/complex-cases">Complex case expertise</Link>.</li>
           </ul>
         </div>
       </section>
@@ -155,23 +240,30 @@ export default function CataractSurgeonThousandPalmsPage() {
       <section className="section section-warm">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}>
-            <h2 className="section-title">What Makes Dr. Tokuhara <strong>Different</strong></h2>
+            <h2 className="section-title">Frequently Asked <strong>Questions</strong></h2>
           </ScrollReveal>
-          <p className="prose">
-            Thousand Palms residents sometimes feel caught between the medical infrastructure of Palm Springs to the west and the eastern Valley communities. Desert Vision Center is geographically central and easy to reach, but more importantly, it offers a level of personalized care that bigger facilities cannot match.
-          </p>
-          <p className="prose">
-            You will not sit in a crowded waiting room here. You will not be seen by a different doctor than the one you researched. You will not be handed a one-page brochure about your lens options and told to choose. I sit with you, explain what I see, walk through your options, and answer every question until you feel confident in the plan.
-          </p>
-          <p className="prose">
-            My retina fellowship also means that if I find something beyond cataracts during your exam, whether it is diabetic changes, macular concerns, or early glaucoma, I can evaluate and manage those conditions right here rather than sending you elsewhere.
-          </p>
-
-          <BlurReveal>
-            <div className="insight-highlight">
-              <p><strong>Thousand Palms residents who want a cataract surgeon with deep experience, honest communication, and the ability to handle complex eyes choose Desert Vision Center. The 15-minute drive to Rancho Mirage puts you in one of the best-equipped eye care practices in the region.</strong></p>
+          <div style={{display: 'flex', flexDirection: 'column', gap: '1.5rem'}}>
+            <div>
+              <h3 style={{fontSize: '1.05rem', marginBottom: '0.5rem'}}>Is there a cataract surgeon in Thousand Palms?</h3>
+              <p className="prose">There is no ophthalmologist based in Thousand Palms. Desert Vision Center in Rancho Mirage is the closest advanced eye surgery practice, 15 minutes south on Bob Hope Drive.</p>
             </div>
-          </BlurReveal>
+            <div>
+              <h3 style={{fontSize: '1.05rem', marginBottom: '0.5rem'}}>Does Desert Vision Center accept Medicare?</h3>
+              <p className="prose">Yes. Standard cataract surgery is covered by Medicare and most insurance plans. Premium lens upgrades are an additional cost, discussed in full before you make any decision.</p>
+            </div>
+            <div>
+              <h3 style={{fontSize: '1.05rem', marginBottom: '0.5rem'}}>What if I have diabetes and cataracts?</h3>
+              <p className="prose">Dr. Tokuhara completed a retina fellowship specifically to manage complex eye conditions like diabetic retinopathy. He evaluates the entire eye, not just the cataract, and manages both conditions in-house.</p>
+            </div>
+            <div>
+              <h3 style={{fontSize: '1.05rem', marginBottom: '0.5rem'}}>Can I get both eyes done at once?</h3>
+              <p className="prose">Eligible patients can have both eyes treated on the same day through the CLEAR in a Day program. This means fewer total visits and a faster visual recovery.</p>
+            </div>
+            <div>
+              <h3 style={{fontSize: '1.05rem', marginBottom: '0.5rem'}}>Do I need a referral?</h3>
+              <p className="prose">No referral is required. Call 760.340.4700 or use the online contact form to schedule directly.</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -184,21 +276,27 @@ export default function CataractSurgeonThousandPalmsPage() {
             Desert Vision Center is located at <strong>35900 Bob Hope Drive, Suite 175, Rancho Mirage, CA 92270</strong>. From Thousand Palms, the drive is approximately 15 minutes.
           </p>
           <p className="prose">
-            <strong>Via Bob Hope Drive:</strong> Head south on Bob Hope Drive directly from the Thousand Palms area. The office is on your right, near the Eisenhower Medical Center area. This is the most direct route.
+            <strong>Via Bob Hope Drive (recommended):</strong> Head south on Bob Hope Drive from the Thousand Palms area. The road runs directly to Desert Vision Center near the Eisenhower Medical Center corridor. No freeway needed.
           </p>
           <p className="prose">
             <strong>Via Interstate 10:</strong> Head west on I-10 briefly and exit at Bob Hope Drive. Head south to the office.
           </p>
           <p className="prose">
-            There is ample parking directly in front of the building. We keep waiting times short and the process efficient.
+            Ample parking directly in front of the building. We run on time, so you will not spend your morning in a waiting room.
           </p>
+
+          <BlurReveal>
+            <div className="insight-highlight">
+              <p><strong>Thousand Palms may not have its own ophthalmologist, but it has something better: a 15-minute straight shot to one of the most experienced cataract surgeons in the Coachella Valley. Bob Hope Drive connects you directly. No referral required.</strong></p>
+            </div>
+          </BlurReveal>
         </div>
       </section>
 
       <section className="cta">
         <div className="container">
-          <h2>Looking for a cataract surgeon near <strong>Thousand Palms?</strong></h2>
-          <p>Desert Vision Center in Rancho Mirage is just 15 minutes away. Call us or send a message to schedule your consultation. No referral required.</p>
+          <h2>Thousand Palms residents: world-class eye care is <strong>15 minutes south.</strong></h2>
+          <p>Bob Hope Drive takes you straight to Desert Vision Center. Fellowship-trained surgeon, 20,000+ procedures, honest recommendations. Medicare accepted. No referral required.</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
             <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>

@@ -88,7 +88,7 @@ export default function CataractPreOp() {
             Most of the anxiety around cataract surgery is not about the surgery itself. It is about the unknown: what happens when I walk through the door, who will be there, what will they do to me before I go in?
           </p>
           <p>
-            I asked two of our pre-op nurses, Megan and Kristen, to walk you through exactly what happens. Because when you know what to expect, the anxiety drops considerably.
+            I asked our pre-op counseling team to walk you through exactly what happens. Because when you know what to expect, the anxiety drops considerably.
           </p>
         </div>
       </section>
@@ -178,7 +178,7 @@ export default function CataractPreOp() {
 
           <BlurReveal><div className="insight-highlight">
             <p><strong>"They can't believe how much they didn't see before. Everything is clearer, crisper, brighter. They have likened it to cleaning a dirty window."</strong></p>
-            <p style={{fontSize: '14px', color: 'var(--text-light)', marginTop: '8px'}}>- Kristen, Pre-Op Nurse</p>
+            <p style={{fontSize: '14px', color: 'var(--text-light)', marginTop: '8px'}}>- DVC Pre-Op Team</p>
           </div></BlurReveal>
         </div>
       </section>
@@ -188,7 +188,7 @@ export default function CataractPreOp() {
         <div className="container content-narrow">
           <h2 className="section-title">Watch the <strong>Walkthrough</strong></h2>
           <p>
-            Megan and Kristen walk you through the entire pre-op experience in this video. If you are scheduled for surgery, this is worth watching the night before.
+            Our team walks you through the entire pre-op experience in this video. If you are scheduled for surgery, this is worth watching the night before.
           </p>
           <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px', marginTop: '24px'}}>
             <iframe

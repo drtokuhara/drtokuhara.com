@@ -38,7 +38,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'Who performs the secondary lens implant after a dropped lens fragment?',
-      acceptedAnswer: { '@type': 'Answer', text: 'The surgery is typically a team effort. A vitreoretinal surgeon handles the vitrectomy to remove the retained lens fragments. Once the eye has recovered, an anterior segment specialist like Dr. Tokuhara performs the secondary lens implant. Dr. Tokuhara is fellowship-trained in both cornea/anterior segment surgery and vitreoretinal surgery, giving him unique perspective on these complex cases. He works alongside retina colleagues throughout the process.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'The surgery is typically a team effort. A vitreoretinal surgeon handles the vitrectomy to remove the retained lens fragments. Once the eye has recovered, an anterior segment specialist like Dr. Tokuhara performs the secondary lens implant. Dr. Tokuhara is trained in cataract surgery during residency and retina surgery during fellowship, giving him unique perspective on these complex cases. He works alongside retina colleagues throughout the process.' },
     },
   ],
 };
@@ -218,7 +218,7 @@ export default function DroppedLensAfterCataractSurgery() {
             <li>The judgment to choose the right technique for each situation</li>
           </ul>
           <p>
-            Dr. Tokuhara is fellowship-trained in both <strong>cornea and anterior segment surgery</strong> and <strong>vitreoretinal surgery</strong>. This dual training gives him a perspective that few surgeons have: he understands the retina surgeon's work, the vitrectomized anatomy, and the structural challenges that follow, in addition to his expertise with advanced lens implantation techniques like <Link href="/yamane-technique" style={{color: 'var(--night-horizon)', textDecoration: 'underline'}}>Yamane fixation</Link>.
+            Dr. Tokuhara is trained in <strong>cataract and anterior segment surgery</strong> during residency under Dr. Gimbel and <strong>retina surgery</strong> during fellowship. This combined training gives him a perspective that few surgeons have: he understands the retina surgeon's work, the vitrectomized anatomy, and the structural challenges that follow, in addition to his expertise with advanced lens implantation techniques like <Link href="/yamane-technique" style={{color: 'var(--night-horizon)', textDecoration: 'underline'}}>Yamane fixation</Link>.
           </p>
 
           <BlurReveal><div className="insight-highlight" style={{marginTop: '24px'}}>

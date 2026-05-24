@@ -192,7 +192,7 @@ export default function PatientStories() {
       {/* LIFESTYLE BREAK */}
       <section style={{padding: 0}}>
         <div className="editorial-image-break">
-          <Image src="/media/stock-seniors-poolside-resort.jpg" alt="Seniors relaxing poolside at a luxury desert resort" width={1920} height={500} style={{width: "100%", height: "auto"}} />
+          <Image src="/media/diverse-couple-walking-park-path.jpeg" alt="Active diverse couple walking together along a park path, enjoying clear vision" width={1920} height={500} style={{width: "100%", height: "auto"}} />
         </div>
       </section>
 

@@ -8,6 +8,7 @@ import {
   LineDraw,
 } from '../../components/ScrollAnimations';
 import RelatedComplexCases from '../../components/RelatedComplexCases';
+import PatientGuideDownload from '../../components/PatientGuideDownload';
 import AuthorByline from '../../components/AuthorByline';
 
 const jsonLd = [
@@ -41,7 +42,7 @@ const faqSchema = {
   mainEntity: [
 
     { '@type': 'Question', name: "Can I have cataract surgery after radial keratotomy (RK)?", acceptedAnswer: { '@type': 'Answer', text: "Yes, but RK presents unique challenges. The corneal incisions from RK cause fluctuating vision and change corneal measurements. Lens power calculations must account for these alterations. Dr. Tokuhara uses specialized formulas and may stage the surgery to optimize results." } },
-    { '@type': 'Question', name: "Why is cataract surgery more complex after RK?", acceptedAnswer: { '@type': 'Answer', text: "Radial keratotomy incisions permanently alter the corneal shape and weaken corneal structure. This makes lens power prediction more difficult. Multiple measurements with different devices, advanced formulas, and intraoperative verification help achieve the best possible outcome. In rare cases, the cornea can rupture along old RK incision lines during surgery, requiring intraoperative sutures." } }
+    { '@type': 'Question', name: "Why is cataract surgery more complex after RK?", acceptedAnswer: { '@type': 'Answer', text: "Radial keratotomy incisions permanently alter the corneal shape and weaken corneal structure. This makes lens power prediction more difficult. Multiple measurements with different devices and advanced formulas help achieve the best possible outcome. Intraoperative aberrometry (ORA) may be offered but is often unreliable in post-RK corneas. In rare cases, the cornea can rupture along old RK incision lines during surgery, requiring intraoperative sutures." } }
   ],
 };
 
@@ -111,7 +112,7 @@ export default function PreviousRKPage() {
             <li>Multiple measurements using different machines to account for variability across devices and capture the most accurate corneal data</li>
             <li>Topography-guided IOL calculations using both the central and paracentral cornea</li>
             <li>Multiple IOL formulas cross-referenced against each other</li>
-            <li>Intraoperative aberrometry for real-time verification</li>
+            <li>Intraoperative aberrometry (ORA) when appropriate, though results in post-RK eyes can be unreliable and are not always usable</li>
             <li>Honest preoperative counseling about the realistic range of outcomes</li>
           </ul>
           <p className="prose">
@@ -130,8 +131,14 @@ export default function PreviousRKPage() {
 
           <h2 className="section-title">What You Should <strong>Expect</strong></h2>
           <p className="prose">
-            If you had RK decades ago and are now facing cataract surgery, the most important thing is finding a surgeon who has significant experience with post-RK eyes and who will be honest with you about the limitations. The goal is excellent vision, and most post-RK patients achieve it. But the path may involve more fine-tuning than it would for a patient with a normal cornea, and you should know that going in.
+            If you had RK decades ago and are now facing cataract surgery, the most important thing is finding a surgeon who has significant experience with post-RK eyes and who will be honest with you about the limitations. The goal is good vision, and most post-RK patients achieve it. But the path may involve more fine-tuning than it would for a patient with a normal cornea, and you should know that going in.
           </p>
+
+          <PatientGuideDownload
+            pdfPath="/guides/cataract-surgery-after-rk.pdf"
+            title="Cataract Surgery After Radial Keratotomy"
+            description="One-page visual guide to take home or share with your family"
+          />
         </div>
       </section>
 

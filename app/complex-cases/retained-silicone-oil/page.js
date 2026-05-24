@@ -41,7 +41,7 @@ const faqSchema = {
   mainEntity: [
 
     { '@type': 'Question', name: "What happens when silicone oil remains after retina surgery?", acceptedAnswer: { '@type': 'Answer', text: "Silicone oil is sometimes left in the eye long-term after complex retinal detachment repair. It can accelerate cataract formation and affect lens implant calculations. Cataract surgery in these eyes requires specialized techniques and careful management of the oil-eye interface." } },
-    { '@type': 'Question', name: "Can cataract surgery be performed with silicone oil in the eye?", acceptedAnswer: { '@type': 'Answer', text: "Yes. Dr. Tokuhara has experience performing cataract surgery in eyes with retained silicone oil. The procedure requires modified techniques and specialized lens calculations to account for the oil's optical properties. His dual fellowship in cataract and retina surgery provides the expertise needed for these complex cases." } }
+    { '@type': 'Question', name: "Can cataract surgery be performed with silicone oil in the eye?", acceptedAnswer: { '@type': 'Answer', text: "Yes. Dr. Tokuhara has experience performing cataract surgery in eyes with retained silicone oil. The procedure requires modified techniques and specialized lens calculations to account for the oil's optical properties. His cataract residency training and retina fellowship provides the expertise needed for these complex cases." } }
   ],
 };
 
@@ -106,7 +106,7 @@ export default function RetainedSiliconeOilPage() {
 
           <h2 className="section-title">My Retina Training <strong>Advantage</strong></h2>
           <p className="prose">
-            Because I am fellowship-trained in both cataract surgery and retina, I understand what the silicone oil is doing in the eye, why it was placed, and what the implications are for any anterior segment surgery. I can read the retina, assess its stability, and communicate effectively with the retina surgeon about timing and coordination. This is not a case where a cataract surgeon who does not understand the posterior segment can safely operate without that perspective.
+            Because I am trained in cataract surgery during residency under Dr. Gimbel and fellowship-trained in retina, I understand what the silicone oil is doing in the eye, why it was placed, and what the implications are for any anterior segment surgery. I can read the retina, assess its stability, and communicate effectively with the retina surgeon about timing and coordination. This is not a case where a cataract surgeon who does not understand the posterior segment can safely operate without that perspective.
           </p>
           <p className="prose">
             If you have silicone oil in your eye and are dealing with vision problems, elevated pressure, or cataracts, I can evaluate the situation comprehensively and work with your retina specialist to create a coordinated plan.

@@ -8,6 +8,7 @@ import {
   LineDraw,
 } from '../../components/ScrollAnimations';
 import RelatedComplexCases from '../../components/RelatedComplexCases';
+import PatientGuideDownload from '../../components/PatientGuideDownload';
 import AuthorByline from '../../components/AuthorByline';
 import AudioNarration from '../../components/AudioNarration';
 
@@ -139,6 +140,11 @@ export default function GlaucomaAndCataractPage() {
           <p className="prose">
             This is one of the conversations where honesty matters most. I will never recommend a premium multifocal lens to a glaucoma patient who is unlikely to tolerate it well, even if they are hoping for spectacle independence. Getting the lens choice right is more important than making a sale.
           </p>
+          <PatientGuideDownload
+            pdfPath="/guides/cataract-surgery-with-glaucoma.pdf"
+            title="Cataract Surgery with Glaucoma"
+            description="One-page visual guide about combined cataract and glaucoma surgery"
+          />
         </div>
       </section>
 

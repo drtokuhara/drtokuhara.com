@@ -36,7 +36,7 @@ const faqSchema = {
       name: 'What qualifications should a surgeon have to operate on a monocular patient?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Look for a surgeon with dual fellowship training in both cataract and retinal surgery. This dual expertise means the surgeon understands the risks from both the front and back of the eye. Dr. Tokuhara's fellowship training covers both cataract and retinal surgery, which is specifically relevant for monocular cases.",
+        text: "Look for a surgeon with residency training under Dr. Howard Gimbel in cataract surgery and a separate retina fellowship. This combined training means the surgeon understands the risks from both the front and back of the eye. Dr. Tokuhara's fellowship training covers both cataract and retinal surgery, which is specifically relevant for monocular cases.",
       },
     },
     {
@@ -80,7 +80,7 @@ export const metadata = {
   },
   openGraph: {
     title: 'Monocular Cataract Surgery | Dr. Keith Tokuhara',
-    description: 'High-stakes cataract surgery for patients with only one functioning eye. Dual fellowship training, thorough evaluation, and exceptional results.',
+    description: 'High-stakes cataract surgery for patients with only one functioning eye. Residency and fellowship training, thorough evaluation, and exceptional results.',
     url: 'https://drtokuhara.com/monocular-cataract-surgery',
   },
 };
@@ -202,7 +202,7 @@ export default function MonocularCataractSurgeryPage() {
               <strong>Extra time at consultation:</strong> I do not rush monocular evaluations. Harold's first exam was 70 minutes. I want every question answered before the patient leaves, and I want to understand their specific history thoroughly - especially if there has been prior retinal surgery.
             </li>
             <li>
-              <strong>Complete retinal assessment:</strong> My dual fellowship training covers both cataract surgery and retinal surgery. I know how to evaluate the back of the eye, and I know what prior retinal surgery means for the surgical approach. For a patient with a history of retinal detachment, this knowledge is directly relevant.
+              <strong>Complete retinal assessment:</strong> My training includes cataract surgery under Dr. Gimbel during residency and a retina fellowship. I know how to evaluate the back of the eye, and I know what prior retinal surgery means for the surgical approach. For a patient with a history of retinal detachment, this knowledge is directly relevant.
             </li>
             <li>
               <strong>Thorough preoperative imaging:</strong> Advanced biometry, optical coherence tomography, and careful review of prior surgical records give me the full picture before we start.
@@ -236,7 +236,7 @@ export default function MonocularCataractSurgeryPage() {
 
       <section className="section section-white">
         <div className="container content-narrow">
-          <h2 className="section-title">Why Dual Fellowship <strong>Training Matters</strong></h2>
+          <h2 className="section-title">Why Combined Residency and Fellowship <strong>Training Matters</strong></h2>
           <p className="prose">
             Most cataract surgeons focus on one area. I trained in cataract surgery under Dr. Howard Gimbel during my residency at Loma Linda University, one of the most respected cataract training programs in the world, and then completed a retina fellowship for complex eye disease.
           </p>

@@ -17,6 +17,7 @@ export default function sitemap() {
     { path: '/education', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/patient-stories', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/insights', priority: 0.8, changeFrequency: 'weekly' },
+    { path: '/gimbel-heritage', priority: 0.8, changeFrequency: 'monthly' },
   ];
 
   // Service and educational pages
@@ -29,6 +30,7 @@ export default function sitemap() {
     { path: '/is-cataract-surgery-safe', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/laser-cataract-surgery', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/cataract-surgery-complications', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/when-cataract-surgery-doesnt-go-as-planned', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/ethical-cataract-care', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/ready-for-surgery', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/understand-your-options', priority: 0.7, changeFrequency: 'monthly' },
@@ -102,6 +104,7 @@ export default function sitemap() {
     '/insights/when-guilt-replaces-explanation',
     '/insights/when-more-isnt-better',
     '/insights/are-premium-lenses-worth-it',
+    '/insights/choosing-the-standard-lens',
     '/insights/five-questions-before-surgery',
     '/insights/three-things-patients-say',
     '/insights/twenty-years-forward',

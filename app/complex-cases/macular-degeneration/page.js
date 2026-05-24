@@ -8,6 +8,7 @@ import {
   LineDraw,
 } from '../../components/ScrollAnimations';
 import RelatedComplexCases from '../../components/RelatedComplexCases';
+import PatientGuideDownload from '../../components/PatientGuideDownload';
 import AuthorByline from '../../components/AuthorByline';
 import AudioNarration from '../../components/AudioNarration';
 
@@ -143,6 +144,11 @@ export default function MacularDegenerationPage() {
           <p className="prose">
             I will always be straightforward about what cataract surgery can and cannot do for a patient with macular degeneration. I will not promise perfect vision when the macula limits it. But I will explain exactly what improvement to expect and why it is worth pursuing. For most patients with both conditions, the answer is clear: removing the cataract helps. The question is how much, and the answer depends on the specifics of your macula, your cataract, and your visual goals.
           </p>
+          <PatientGuideDownload
+            pdfPath="/guides/cataract-surgery-with-macular-degeneration.pdf"
+            title="Cataract Surgery with Macular Degeneration"
+            description="One-page visual guide about cataract surgery with macular degeneration"
+          />
         </div>
       </section>
 

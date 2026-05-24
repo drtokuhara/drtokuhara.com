@@ -8,6 +8,7 @@ import {
   LineDraw,
 } from '../../components/ScrollAnimations';
 import RelatedComplexCases from '../../components/RelatedComplexCases';
+import PatientGuideDownload from '../../components/PatientGuideDownload';
 import AuthorByline from '../../components/AuthorByline';
 import AudioNarration from '../../components/AudioNarration';
 
@@ -128,6 +129,11 @@ export default function PreviousLasikPage() {
           <p className="prose">
             If you had LASIK, PRK, or any corneal refractive surgery, bring whatever records you have to your consultation. Your pre-LASIK measurements, your LASIK operative report, and your pre-LASIK refraction are all valuable for improving the accuracy of your IOL calculations. If you do not have them, do not worry - I have methods that work without historical data. But every piece of information helps.
           </p>
+          <PatientGuideDownload
+            pdfPath="/guides/cataract-surgery-after-lasik.pdf"
+            title="Cataract Surgery After LASIK"
+            description="One-page visual guide about cataract surgery after previous LASIK"
+          />
         </div>
       </section>
 

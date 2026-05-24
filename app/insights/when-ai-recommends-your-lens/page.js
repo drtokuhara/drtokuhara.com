@@ -217,17 +217,21 @@ export default function InsightAILens() {
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
-            <Link href="/lens-implants-explained" className="related-card">
-              <h3>Lens Implants Explained</h3>
-              <p>Monofocal, toric, EDOF, and multifocal. What each lens does and who it works best for.</p>
+            <Link href="/insights/are-premium-lenses-worth-it" className="related-card">
+              <h3>Are Premium Lens Implants Worth It?</h3>
+              <p>An honest reflection on premium versus standard lens implants and what the answer depends on.</p>
             </Link>
-            <Link href="/vivity-vs-panoptix" className="related-card">
-              <h3>Vivity vs PanOptix</h3>
-              <p>A detailed comparison of two popular premium lens options and how to choose.</p>
+            <Link href="/insights/the-lens-nobody-talks-about" className="related-card">
+              <h3>The Lens Nobody Talks About</h3>
+              <p>A patient was convinced she needed a multifocal. Her eyes and lifestyle told a different story.</p>
             </Link>
-            <Link href="/choosing-your-surgeon" className="related-card">
-              <h3>Choosing Your Surgeon</h3>
-              <p>The questions nobody tells you to ask, and the red flags to watch for.</p>
+            <Link href="/insights/three-things-patients-say" className="related-card">
+              <h3>Three Things Patients Say</h3>
+              <p>How three common statements in my exam room tell me which lens to recommend.</p>
+            </Link>
+            <Link href="/insights/the-consultation-that-changed-everything" className="related-card">
+              <h3>The Consultation That Changed Everything</h3>
+              <p>What a thorough consultation actually looks like, and why it matters.</p>
             </Link>
           </div>
         </div>

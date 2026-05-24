@@ -3363,3 +3363,474 @@ html {
     padding: 24px 24px 28px;
   }
 }
+
+/* ═══════════════════════════════════════════
+   THE GIMBEL HERITAGE SERIES
+   Museum-quality exhibition aesthetic
+   ═══════════════════════════════════════════ */
+
+/* Heritage Palette */
+:root {
+  --heritage-navy: #1a2332;
+  --heritage-charcoal: #2a3441;
+  --heritage-cream: #f5f0e8;
+  --heritage-warm: #faf6f0;
+  --heritage-gold: #c4a265;
+  --heritage-gold-light: #d4b87a;
+  --heritage-gold-dim: rgba(196, 162, 101, 0.3);
+  --heritage-text: #2a2520;
+  --heritage-text-secondary: #6b5e52;
+  --heritage-border: rgba(196, 162, 101, 0.25);
+}
+
+/* ─── Heritage Page Container ─── */
+.heritage-page {
+  background: var(--heritage-cream);
+  min-height: 100vh;
+}
+
+/* ─── Hero ─── */
+.heritage-hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: var(--heritage-navy);
+}
+
+.heritage-hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(196, 162, 101, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 80%, rgba(196, 162, 101, 0.05) 0%, transparent 60%),
+    linear-gradient(180deg, #111a26 0%, #1a2332 40%, #22303f 100%);
+  opacity: 1;
+}
+
+/* Subtle linen texture overlay */
+.heritage-hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.heritage-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 60px 24px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.heritage-visible .heritage-hero-inner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.heritage-hero-eyebrow {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--heritage-gold);
+  margin-bottom: 32px;
+}
+
+.heritage-hero-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2.8rem, 7vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--heritage-cream);
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+.heritage-hero-rule {
+  width: 80px;
+  height: 1px;
+  background: var(--heritage-gold);
+  margin: 32px auto;
+  opacity: 0.6;
+}
+
+.heritage-hero-subtitle {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.7;
+  color: rgba(245, 240, 232, 0.7);
+  margin: 0;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ─── Divider ─── */
+.heritage-divider {
+  display: flex;
+  justify-content: center;
+  padding: 32px 0;
+  color: var(--heritage-gold-dim);
+}
+
+/* ─── Container ─── */
+.heritage-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ─── Series Introduction ─── */
+.heritage-intro {
+  padding: 64px 0;
+  background: var(--heritage-cream);
+}
+
+.heritage-intro-text {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.heritage-intro-text p {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.1rem;
+  line-height: 1.85;
+  color: var(--heritage-text);
+  margin: 0 0 20px;
+}
+
+.heritage-intro-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* ─── Exhibition Cards ─── */
+.heritage-exhibition {
+  padding: 32px 0 80px;
+  background: var(--heritage-cream);
+}
+
+.heritage-card {
+  display: flex;
+  gap: 32px;
+  padding: 40px;
+  margin-bottom: 24px;
+  background: var(--heritage-warm);
+  border: 1px solid var(--heritage-border);
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(24px);
+  animation: heritageCardReveal 0.8s ease forwards;
+}
+
+.heritage-card:hover {
+  border-color: var(--heritage-gold);
+  box-shadow: 0 8px 40px rgba(26, 35, 50, 0.08);
+  transform: translateY(-2px);
+}
+
+@keyframes heritageCardReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.heritage-card-number {
+  flex-shrink: 0;
+  width: 64px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--heritage-gold);
+  line-height: 1;
+  padding-top: 4px;
+}
+
+.heritage-card-body {
+  flex: 1;
+}
+
+.heritage-card-theme {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--heritage-gold);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.heritage-card-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--heritage-navy);
+  line-height: 1.3;
+  margin: 0 0 6px;
+}
+
+.heritage-card-subtitle {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--heritage-text-secondary);
+  margin: 0 0 16px;
+}
+
+.heritage-card-excerpt {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--heritage-text);
+  margin: 0 0 20px;
+}
+
+.heritage-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heritage-card-time {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  color: var(--heritage-text-secondary);
+}
+
+.heritage-card-read {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--heritage-gold);
+  transition: color 0.3s ease;
+}
+
+.heritage-card:hover .heritage-card-read {
+  color: var(--heritage-gold-light);
+}
+
+.heritage-arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.heritage-card:hover .heritage-arrow {
+  transform: translateX(4px);
+}
+
+/* ─── Closing Section ─── */
+.heritage-closing {
+  padding: 64px 0 80px;
+  background: var(--heritage-navy);
+  color: var(--heritage-cream);
+}
+
+.heritage-closing .heritage-divider {
+  color: rgba(196, 162, 101, 0.2);
+}
+
+.heritage-closing-quote {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.heritage-closing-quote p {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-style: italic;
+  line-height: 1.6;
+  color: rgba(245, 240, 232, 0.9);
+  margin: 0 0 20px;
+}
+
+.heritage-closing-quote cite {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: var(--heritage-gold);
+}
+
+.heritage-closing-cta {
+  text-align: center;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.heritage-closing-cta p {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(245, 240, 232, 0.6);
+  margin: 0 0 32px;
+}
+
+.heritage-closing-links {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.heritage-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--heritage-gold);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.heritage-link:hover {
+  border-bottom-color: var(--heritage-gold);
+}
+
+/* ─── Heritage Series Navigation (in articles) ─── */
+.heritage-series-nav {
+  margin: 48px 0;
+  padding: 32px;
+  background: var(--heritage-warm, #faf6f0);
+  border: 1px solid var(--heritage-border, rgba(196, 162, 101, 0.25));
+  border-radius: 4px;
+}
+
+.heritage-series-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--heritage-border, rgba(196, 162, 101, 0.25));
+}
+
+.heritage-series-nav-badge {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--heritage-gold, #c4a265);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.heritage-series-nav-badge:hover {
+  color: var(--heritage-gold-light, #d4b87a);
+}
+
+.heritage-series-nav-position {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--heritage-text-secondary, #6b5e52);
+}
+
+.heritage-series-nav-links {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.heritage-series-nav-link {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  flex: 1;
+}
+
+.heritage-series-nav-link:hover {
+  background: rgba(196, 162, 101, 0.08);
+}
+
+.heritage-series-nav-next {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.heritage-series-nav-direction {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--heritage-gold, #c4a265);
+}
+
+.heritage-series-nav-link-number {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--heritage-text-secondary, #6b5e52);
+}
+
+.heritage-series-nav-link-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1rem;
+  color: var(--heritage-navy, #1a2332);
+  font-weight: 500;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  .heritage-hero {
+    min-height: 65vh;
+  }
+
+  .heritage-card {
+    flex-direction: column;
+    gap: 16px;
+    padding: 28px 24px;
+  }
+
+  .heritage-card-number {
+    width: auto;
+    font-size: 1.8rem;
+  }
+
+  .heritage-card-title {
+    font-size: 1.25rem;
+  }
+
+  .heritage-series-nav-links {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .heritage-series-nav-next {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .heritage-closing-links {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

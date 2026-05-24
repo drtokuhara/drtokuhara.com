@@ -166,7 +166,7 @@ export default function CataractRecoveryPage() {
       <section className="section section-white" style={{paddingTop: 0, paddingBottom: 0}}>
         <div className="container content-narrow">
           <div className="content-image">
-            <Image src="/media/stock-seniors-outdoor-dining.jpg" alt="Seniors enjoying a meal outdoors - the simple pleasures patients can return to soon after cataract surgery" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+            <Image src="/media/diverse-couple-watching-grandkids-park.jpeg" alt="Diverse couple watching grandchildren play at the park, the kind of moment patients enjoy again after cataract surgery" width={680} height={453} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
           </div>
         </div>
       </section>
