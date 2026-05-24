@@ -77,6 +77,7 @@ export default function RootLayout({ children }) {
                   <Link href="/cataract-recovery">Recovery</Link>
                   <Link href="/is-cataract-surgery-safe">Is It Safe?</Link>
                   <Link href="/cataract-surgery-complications">Complications</Link>
+                  <Link href="/insights/what-you-see-during-cataract-surgery">What You See During Surgery</Link>
                 </div>
               </div>
               <div className="nav-dropdown">
