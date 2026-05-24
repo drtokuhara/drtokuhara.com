@@ -184,6 +184,7 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/when-more-isnt-better">When More Isn't Better</Link>
                     <Link href="/insights/the-number-that-wasnt-the-problem">The Number That Wasn't the Problem</Link>
                     <Link href="/insights/three-things-patients-say">Three Things Patients Say</Link>
+                    <Link href="/insights/not-every-patient-wants-the-same-vision">Not Every Patient Wants the Same Vision</Link>
                   </div>
                   <div className="nav-mega-col">
                     <span className="nav-mega-label">Patient Stories & Trust</span>
