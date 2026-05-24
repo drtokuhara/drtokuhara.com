@@ -297,7 +297,7 @@ const insights = [
     image: '/media/stock-woman-portrait-evening-glamour.jpg',
   },
   {
-    slug: 'what-is-aura-machine',
+    slug: 'what-is-ora-machine',
     title: 'What Is the ORA Machine in Cataract Surgery?',
     date: 'May 2026',
     description: 'Intraoperative aberrometry sounds impressive. But what does the ORA machine actually do, when does it help, and when should you not rely on it? A surgeon\'s honest take.',

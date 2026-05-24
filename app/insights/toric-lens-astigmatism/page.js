@@ -188,7 +188,7 @@ export default function InsightToricLensAstigmatism() {
               <h3>The Standard Lens Is Not a Consolation Prize</h3>
               <p>Why choosing the standard lens is sometimes the smartest, most considered decision a patient can make.</p>
             </Link>
-            <Link href="/insights/what-is-aura-machine" className="related-card">
+            <Link href="/insights/what-is-ora-machine" className="related-card">
               <h3>What Is the ORA Machine?</h3>
               <p>How intraoperative aberrometry helps verify lens power and alignment in real time during surgery.</p>
             </Link>

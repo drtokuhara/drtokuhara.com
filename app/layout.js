@@ -170,7 +170,7 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/cataract-pre-op-appointment">Pre-Op Appointment</Link>
                     <Link href="/insights/laser-vs-traditional-cataract-surgery">Laser vs Traditional</Link>
                     <Link href="/insights/when-cataract-surgery-goes-wrong">When Surgery Goes Wrong</Link>
-                    <Link href="/insights/what-is-aura-machine">The Aura Machine</Link>
+                    <Link href="/insights/what-is-ora-machine">The ORA Machine</Link>
                     <Link href="/insights/medicare-cataract-surgery">Medicare Coverage</Link>
                   </div>
                   <div className="nav-mega-col">

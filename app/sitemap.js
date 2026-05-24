@@ -118,7 +118,7 @@ export default function sitemap() {
     '/insights/second-opinion-cataract-surgery',
     '/insights/the-capsule-is-sacred',
     '/insights/toric-lens-astigmatism',
-    '/insights/what-is-aura-machine',
+    '/insights/what-is-ora-machine',
     '/insights/when-cataract-surgery-goes-wrong',
     '/insights/when-do-i-need-cataract-surgery',
     '/insights/what-you-see-during-cataract-surgery',
