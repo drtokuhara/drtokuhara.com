@@ -88,6 +88,7 @@ export default function MobileNav() {
             <Link href="/insights/medicare-cataract-surgery" onClick={close}>Medicare Coverage</Link>
             <Link href="/insights/second-opinion-cataract-surgery" onClick={close}>Getting a Second Opinion</Link>
             <Link href="/insights/second-opinion-that-changed-everything" onClick={close}>A Second Opinion That Changed Everything</Link>
+            <Link href="/insights/when-cataracts-are-not-the-real-problem" onClick={close}>When Cataracts Are Not the Real Problem</Link>
 
             <p className="mobile-nav-label">Learn</p>
             <Link href="/about" onClick={close}>About Dr. Tokuhara</Link>

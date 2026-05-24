@@ -309,6 +309,7 @@ export default function InsightWhatYouSeeDuringCataractSurgery() {
               margin: '0 auto'
             }}>
               {[
+                '/media/patient-art/8-redacted.jpeg',
                 '/media/patient-art/1.jpeg',
                 '/media/patient-art/2.jpeg',
                 '/media/patient-art/3.jpeg',

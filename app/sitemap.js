@@ -124,6 +124,7 @@ export default function sitemap() {
     '/insights/what-you-see-during-cataract-surgery',
     '/insights/best-lens-for-night-driving',
     '/insights/second-opinion-that-changed-everything',
+    '/insights/when-cataracts-are-not-the-real-problem',
   ].map((path) => ({ path, priority: 0.6, changeFrequency: 'monthly' }));
 
   // City landing pages - local SEO
