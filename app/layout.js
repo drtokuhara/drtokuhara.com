@@ -154,6 +154,7 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/five-questions-before-surgery">5 Questions to Ask</Link>
                     <Link href="/insights/when-the-surgeon-says-wait">When the Surgeon Says Wait</Link>
                     <Link href="/insights/second-opinion-cataract-surgery">Getting a Second Opinion</Link>
+                    <Link href="/insights/second-opinion-that-changed-everything">A Second Opinion That Changed Everything</Link>
                     <Link href="/insights/how-to-choose-a-cataract-surgeon">How to Choose a Surgeon</Link>
                   </div>
                   <div className="nav-mega-col">
