@@ -121,6 +121,8 @@ export default function sitemap() {
     '/insights/what-is-aura-machine',
     '/insights/when-cataract-surgery-goes-wrong',
     '/insights/when-do-i-need-cataract-surgery',
+    '/insights/what-you-see-during-cataract-surgery',
+    '/insights/best-lens-for-night-driving',
   ].map((path) => ({ path, priority: 0.6, changeFrequency: 'monthly' }));
 
   // City landing pages - local SEO
