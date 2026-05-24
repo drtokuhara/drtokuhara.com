@@ -95,7 +95,7 @@ export default function InsightBestLensForNightDriving() {
       ))}
       <VideoBackground
         src="/media/ambient-desert-sunrise-golden.mp4"
-        poster="/media/stock-couple-patio-scenic-view.jpg"
+        poster="/media/hero-best-lens-night-driving.jpg"
         overlayOpacity={0.6}
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"

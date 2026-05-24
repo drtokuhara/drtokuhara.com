@@ -100,6 +100,7 @@ export default function SecondOpinionChangedEverythingPage() {
 
       <VideoBackground
         src="/media/ambient-mountain-sierra-alpine.mp4"
+        poster="/media/hero-second-opinion-changed.jpg"
         fallbackColor="#0a1628"
         overlayOpacity={0.7}
         overlayColor="10, 22, 40"
