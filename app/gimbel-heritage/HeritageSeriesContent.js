@@ -83,6 +83,14 @@ export default function HeritageSeriesContent() {
       <section className="heritage-intro">
         <div className="heritage-container">
           <HeritageDivider />
+          <div style={{textAlign: 'center', marginBottom: '40px'}}>
+            <img
+              src="/media/dr-gimbel-portrait-lineart.jpg"
+              alt="Dr. Howard Gimbel - line art portrait"
+              style={{maxWidth: '280px', width: '100%', height: 'auto', borderRadius: '8px', opacity: 0.9}}
+            />
+            <p style={{fontSize: '0.85rem', color: 'var(--text-light)', marginTop: '12px', fontStyle: 'italic'}}>Dr. Howard Gimbel</p>
+          </div>
           <div className="heritage-intro-text">
             <p>
               During his residency at Loma Linda University, Dr. Keith Tokuhara trained under
