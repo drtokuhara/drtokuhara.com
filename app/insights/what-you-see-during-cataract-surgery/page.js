@@ -386,6 +386,14 @@ export default function InsightWhatYouSeeDuringCataractSurgery() {
               <h3>Your First Week After Cataract Surgery</h3>
               <p>What to expect day by day during the first week of recovery.</p>
             </Link>
+            <Link href="/insights/cataract-pre-op-appointment" className="related-card">
+              <h3>What Happens at Your Pre-Op Appointment</h3>
+              <p>The measurements, the questions, and what we learn before surgery day.</p>
+            </Link>
+            <Link href="/insights/permission-to-see-again" className="related-card">
+              <h3>Permission to See Again</h3>
+              <p>A patient story about moving past fear and into clarity.</p>
+            </Link>
           </div>
         </div>
       </section>

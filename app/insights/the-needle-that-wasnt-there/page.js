@@ -201,6 +201,14 @@ export default function InsightNeedle() {
               <h3>Permission to See Again</h3>
               <p>Another story about a patient who waited, and why that was okay.</p>
             </Link>
+            <Link href="/insights/is-cataract-surgery-painful" className="related-card">
+              <h3>Is Cataract Surgery Painful?</h3>
+              <p>The honest answer about pain and what you actually feel during surgery.</p>
+            </Link>
+            <Link href="/insights/what-you-see-during-cataract-surgery" className="related-card">
+              <h3>What You See During Cataract Surgery</h3>
+              <p>Not what you imagine. Here is what patients actually experience.</p>
+            </Link>
           </div>
         </div>
       </section>

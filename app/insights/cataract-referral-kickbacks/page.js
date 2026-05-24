@@ -299,6 +299,14 @@ export default function InsightCataractReferralKickbacks() {
               <h3>About Dr. Tokuhara</h3>
               <p>Independent, fellowship-trained, and committed to ethical care. Learn about the surgeon behind Desert Vision Center.</p>
             </Link>
+            <Link href="/insights/second-opinion-cataract-surgery" className="related-card">
+              <h3>Second Opinion on Cataract Surgery</h3>
+              <p>When and why seeking another perspective matters for your eyes.</p>
+            </Link>
+            <Link href="/insights/the-consultation-that-changed-everything" className="related-card">
+              <h3>The Consultation That Changed Everything</h3>
+              <p>What a thorough, independent consultation actually looks like.</p>
+            </Link>
           </div>
         </div>
       </section>

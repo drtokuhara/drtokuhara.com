@@ -315,6 +315,14 @@ export default function InsightSecondOpinionCataractSurgery() {
               <h3>Ethical Cataract Care</h3>
               <p>Why independence and integrity matter in ophthalmology.</p>
             </Link>
+            <Link href="/insights/second-opinion-that-changed-everything" className="related-card">
+              <h3>The Second Opinion That Changed Everything</h3>
+              <p>A patient story about trusting her instincts and seeking another perspective.</p>
+            </Link>
+            <Link href="/insights/when-cataract-surgery-goes-wrong" className="related-card">
+              <h3>When Cataract Surgery Goes Wrong</h3>
+              <p>What can go wrong, how complications are managed, and when revision is needed.</p>
+            </Link>
           </div>
         </div>
       </section>

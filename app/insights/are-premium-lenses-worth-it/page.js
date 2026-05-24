@@ -217,6 +217,14 @@ export default function ArePremiumLensesWorthIt() {
               <h3>The Consultation That Changed Everything</h3>
               <p>What a thorough consultation actually looks like, and why it matters.</p>
             </Link>
+            <Link href="/insights/choosing-the-standard-lens" className="related-card">
+              <h3>Choosing the Standard Lens</h3>
+              <p>Sometimes the standard monofocal lens is exactly the right choice.</p>
+            </Link>
+            <Link href="/insights/toric-lens-astigmatism" className="related-card">
+              <h3>Toric Lenses and Astigmatism</h3>
+              <p>How toric lenses correct astigmatism during cataract surgery.</p>
+            </Link>
           </div>
         </div>
       </section>

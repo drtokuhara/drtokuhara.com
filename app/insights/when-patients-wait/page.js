@@ -248,6 +248,14 @@ export default function InsightWhenPatientsWait() {
               <h3>The Needle That Wasn't There</h3>
               <p>She avoided surgery for years because of a procedure that is no longer used.</p>
             </Link>
+            <Link href="/insights/do-i-really-need-surgery" className="related-card">
+              <h3>Do I Really Need Surgery Yet?</h3>
+              <p>Sometimes the answer is not yet. Timing and honest evaluation matter.</p>
+            </Link>
+            <Link href="/insights/twenty-years-forward" className="related-card">
+              <h3>Twenty Years Forward</h3>
+              <p>She thought she just needed new glasses. It was cataracts.</p>
+            </Link>
           </div>
         </div>
       </section>

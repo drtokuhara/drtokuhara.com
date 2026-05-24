@@ -337,6 +337,14 @@ export default function InsightLaserVsTraditional() {
               <h3>Cataract Surgery Step by Step</h3>
               <p>A detailed walkthrough of what happens before, during, and after your procedure.</p>
             </Link>
+            <Link href="/insights/are-premium-lenses-worth-it" className="related-card">
+              <h3>Are Premium Lenses Worth It?</h3>
+              <p>An honest reflection on premium versus standard lens implants.</p>
+            </Link>
+            <Link href="/insights/when-cataract-surgery-goes-wrong" className="related-card">
+              <h3>When Cataract Surgery Goes Wrong</h3>
+              <p>Complications, management, and why surgeon experience matters most.</p>
+            </Link>
           </div>
         </div>
       </section>

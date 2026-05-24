@@ -194,6 +194,14 @@ export default function InsightTheLensNobodyTalksAbout() {
               <h3>Lens Implants Explained</h3>
               <p>A comprehensive guide to understanding your lens implant options for cataract surgery.</p>
             </Link>
+            <Link href="/insights/choosing-the-standard-lens" className="related-card">
+              <h3>Choosing the Standard Lens</h3>
+              <p>Sometimes the standard monofocal lens is exactly the right choice.</p>
+            </Link>
+            <Link href="/insights/when-more-isnt-better" className="related-card">
+              <h3>When More Isn't Better</h3>
+              <p>More focal points are not always better for everyone.</p>
+            </Link>
           </div>
         </div>
       </section>

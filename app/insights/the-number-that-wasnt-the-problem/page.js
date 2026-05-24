@@ -199,6 +199,14 @@ export default function InsightTheNumber() {
               <h3>When the Eye Surface Changes Everything</h3>
               <p>Advanced lens implants can only perform as well as the eye surface allows.</p>
             </Link>
+            <Link href="/insights/toric-lens-astigmatism" className="related-card">
+              <h3>Toric Lenses and Astigmatism</h3>
+              <p>How toric lenses correct astigmatism during cataract surgery.</p>
+            </Link>
+            <Link href="/insights/cataract-pre-op-appointment" className="related-card">
+              <h3>What Happens at Your Pre-Op Appointment</h3>
+              <p>The measurements and evaluation that determine surgical planning.</p>
+            </Link>
           </div>
         </div>
       </section>

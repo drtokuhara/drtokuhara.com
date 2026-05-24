@@ -253,6 +253,14 @@ export default function InsightWhatIsAuraMachine() {
               <h3>5 Questions to Ask Before Surgery</h3>
               <p>What to ask your surgeon during the consultation.</p>
             </Link>
+            <Link href="/insights/cataract-pre-op-appointment" className="related-card">
+              <h3>What Happens at Your Pre-Op Appointment</h3>
+              <p>The measurements and evaluation that determine surgical planning.</p>
+            </Link>
+            <Link href="/insights/the-number-that-wasnt-the-problem" className="related-card">
+              <h3>The Number That Wasn't the Problem</h3>
+              <p>When astigmatism looked fixable but the real issue was something else.</p>
+            </Link>
           </div>
         </div>
       </section>

@@ -195,6 +195,14 @@ export default function InsightGuilt() {
               <h3>What I Learned From the Surgeon Who Trained Me</h3>
               <p>The residency moment that changed how I think about surgery and complications.</p>
             </Link>
+            <Link href="/insights/second-opinion-cataract-surgery" className="related-card">
+              <h3>Second Opinion on Cataract Surgery</h3>
+              <p>When and why seeking another perspective matters for your eyes.</p>
+            </Link>
+            <Link href="/insights/when-the-unexpected-leads-to-the-right-outcome" className="related-card">
+              <h3>When the Unexpected Leads to the Right Outcome</h3>
+              <p>A complicated surgery revealed an undiagnosed condition.</p>
+            </Link>
           </div>
         </div>
       </section>

@@ -207,6 +207,14 @@ export default function InsightWhenIsTheRightTime() {
               <h3>When Do I Need Cataract Surgery?</h3>
               <p>The question everyone asks, and why there is no single number that answers it.</p>
             </Link>
+            <Link href="/insights/when-the-surgeon-says-wait" className="related-card">
+              <h3>When the Surgeon Says Wait</h3>
+              <p>Sometimes the best surgical decision is to defer surgery.</p>
+            </Link>
+            <Link href="/insights/life-after-cataract-surgery" className="related-card">
+              <h3>Life After Cataract Surgery</h3>
+              <p>What patients notice first and what surprises them most about recovery.</p>
+            </Link>
           </div>
         </div>
       </section>

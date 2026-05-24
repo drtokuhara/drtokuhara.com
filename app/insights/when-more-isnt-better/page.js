@@ -185,6 +185,14 @@ export default function InsightWhenMore() {
               <h3>When Cataract Surgery Goes Wrong</h3>
               <p>A comprehensive look at what can go wrong and how each complication is managed.</p>
             </Link>
+            <Link href="/insights/the-lens-nobody-talks-about" className="related-card">
+              <h3>The Lens Nobody Talks About</h3>
+              <p>A patient convinced she needed a multifocal. Her eyes told a different story.</p>
+            </Link>
+            <Link href="/insights/best-lens-for-night-driving" className="related-card">
+              <h3>Best Lens for Night Driving</h3>
+              <p>What really matters for clear night vision after cataract surgery.</p>
+            </Link>
           </div>
         </div>
       </section>

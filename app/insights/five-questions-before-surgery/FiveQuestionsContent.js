@@ -194,6 +194,14 @@ export default function FiveQuestionsContent() {
               <h3>Are Premium Lens Implants Worth It?</h3>
               <p>An honest reflection on premium versus standard lens implants and what the answer depends on.</p>
             </Link>
+            <Link href="/insights/laser-vs-traditional-cataract-surgery" className="related-card">
+              <h3>Laser vs Traditional Cataract Surgery</h3>
+              <p>The honest answer about whether laser technology makes a measurable difference.</p>
+            </Link>
+            <Link href="/insights/when-cataract-surgery-goes-wrong" className="related-card">
+              <h3>When Cataract Surgery Goes Wrong</h3>
+              <p>How complications are managed and why surgeon experience is critical.</p>
+            </Link>
           </div>
         </div>
       </section>

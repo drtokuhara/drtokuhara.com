@@ -233,6 +233,14 @@ export default function InsightAILens() {
               <h3>The Consultation That Changed Everything</h3>
               <p>What a thorough consultation actually looks like, and why it matters.</p>
             </Link>
+            <Link href="/insights/when-more-isnt-better" className="related-card">
+              <h3>When More Isn't Better</h3>
+              <p>More focal points don't always mean better vision for everyone.</p>
+            </Link>
+            <Link href="/insights/choosing-the-standard-lens" className="related-card">
+              <h3>Choosing the Standard Lens</h3>
+              <p>Sometimes the standard monofocal lens is exactly the right choice.</p>
+            </Link>
           </div>
         </div>
       </section>

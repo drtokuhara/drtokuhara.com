@@ -233,6 +233,14 @@ export default function WhenTheSurgeonSaysWait() {
               <h3>When Is the Right Time?</h3>
               <p>The myth of bad enough and why the right time depends on your life, not a number on a chart.</p>
             </Link>
+            <Link href="/insights/when-do-i-need-cataract-surgery" className="related-card">
+              <h3>When Do I Need Cataract Surgery?</h3>
+              <p>The question everyone asks, and why there is no single number that answers it.</p>
+            </Link>
+            <Link href="/insights/the-consultation-that-changed-everything" className="related-card">
+              <h3>The Consultation That Changed Everything</h3>
+              <p>What a thorough consultation actually looks like, and why it matters.</p>
+            </Link>
           </div>
         </div>
       </section>

@@ -306,6 +306,14 @@ export default function InsightLifeAfterCataractSurgery() {
               <h3>When Is the Right Time for Cataract Surgery?</h3>
               <p>There is no magic number. The right time depends on your life, not a chart.</p>
             </Link>
+            <Link href="/insights/permission-to-see-again" className="related-card">
+              <h3>Permission to See Again</h3>
+              <p>A patient story about moving past hesitation into clarity.</p>
+            </Link>
+            <Link href="/insights/the-reader-who-almost-gave-up-her-books" className="related-card">
+              <h3>The Reader Who Almost Gave Up Her Books</h3>
+              <p>An 81-year-old who delayed surgery for years and what changed her mind.</p>
+            </Link>
           </div>
         </div>
       </section>

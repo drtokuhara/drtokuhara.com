@@ -302,6 +302,14 @@ export default function InsightCataractPreOpAppointment() {
               <h3>Lens Options</h3>
               <p>Monofocal, toric, extended depth of focus, and multifocal lenses explained.</p>
             </Link>
+            <Link href="/insights/what-is-aura-machine" className="related-card">
+              <h3>What Is the Aura Machine?</h3>
+              <p>The measurement device that changed the accuracy of cataract surgery planning.</p>
+            </Link>
+            <Link href="/insights/the-number-that-wasnt-the-problem" className="related-card">
+              <h3>The Number That Wasn't the Problem</h3>
+              <p>When astigmatism looked fixable but the real issue was something else entirely.</p>
+            </Link>
           </div>
         </div>
       </section>

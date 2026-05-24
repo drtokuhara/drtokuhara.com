@@ -782,6 +782,56 @@ export default function InsightTheCapsuleIsSacred() {
                 What a thorough evaluation actually looks like, and why it matters.
               </p>
             </Link>
+            <Link href="/insights/when-cataract-surgery-goes-wrong" className="related-card" style={{
+              padding: '32px',
+              background: 'white',
+              borderRadius: '12px',
+              border: '1px solid rgba(0, 0, 0, 0.08)',
+              transition: 'all 0.3s ease',
+              display: 'block',
+            }}>
+              <h3 style={{
+                fontSize: '1.2rem',
+                fontFamily: 'Playfair Display, Georgia, serif',
+                marginBottom: '12px',
+                color: '#2a2a2a',
+              }}>
+                When Cataract Surgery Goes Wrong
+              </h3>
+              <p style={{
+                fontSize: '0.95rem',
+                color: '#7a7a8e',
+                lineHeight: '1.6',
+                margin: 0,
+              }}>
+                Complications, management, and why surgeon training and experience matter.
+              </p>
+            </Link>
+            <Link href="/insights/when-experience-speaks" className="related-card" style={{
+              padding: '32px',
+              background: 'white',
+              borderRadius: '12px',
+              border: '1px solid rgba(0, 0, 0, 0.08)',
+              transition: 'all 0.3s ease',
+              display: 'block',
+            }}>
+              <h3 style={{
+                fontSize: '1.2rem',
+                fontFamily: 'Playfair Display, Georgia, serif',
+                marginBottom: '12px',
+                color: '#2a2a2a',
+              }}>
+                When Experience Speaks
+              </h3>
+              <p style={{
+                fontSize: '0.95rem',
+                color: '#7a7a8e',
+                lineHeight: '1.6',
+                margin: 0,
+              }}>
+                Patient stories about surgeon experience, judgment, and clinical expertise.
+              </p>
+            </Link>
           </div>
         </div>
       </section>

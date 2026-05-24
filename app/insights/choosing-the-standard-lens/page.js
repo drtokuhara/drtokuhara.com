@@ -304,6 +304,14 @@ export default function InsightChoosingTheStandardLens() {
               <h3>The Lens Nobody Talks About</h3>
               <p>A patient convinced he needed a multifocal. His eyes told a different story.</p>
             </Link>
+            <Link href="/insights/when-more-isnt-better" className="related-card">
+              <h3>When More Isn't Better</h3>
+              <p>More focal points don't always mean better vision for everyone.</p>
+            </Link>
+            <Link href="/insights/best-lens-for-night-driving" className="related-card">
+              <h3>Best Lens for Night Driving</h3>
+              <p>What really matters for clear, glare-free night vision after cataract surgery.</p>
+            </Link>
           </div>
         </div>
       </section>

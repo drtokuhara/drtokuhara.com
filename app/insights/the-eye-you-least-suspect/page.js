@@ -210,6 +210,14 @@ export default function InsightTheEyeYouLeastSuspect() {
               <h3>The Consultation That Changed Everything</h3>
               <p>What a thorough consultation actually looks like, and why it matters.</p>
             </Link>
+            <Link href="/insights/the-number-that-wasnt-the-problem" className="related-card">
+              <h3>The Number That Wasn't the Problem</h3>
+              <p>When astigmatism looked fixable but the real issue was something else.</p>
+            </Link>
+            <Link href="/insights/when-the-eye-surface-changes-everything" className="related-card">
+              <h3>When the Eye Surface Changes Everything</h3>
+              <p>How ocular surface health affects surgical outcomes and measurements.</p>
+            </Link>
           </div>
         </div>
       </section>

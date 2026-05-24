@@ -182,6 +182,14 @@ export default function InsightReader() {
               <h3>The Consultation That Changed Everything</h3>
               <p>What a thorough consultation actually looks like, and why it matters.</p>
             </Link>
+            <Link href="/insights/twenty-years-forward" className="related-card">
+              <h3>Twenty Years Forward</h3>
+              <p>She thought she just needed new glasses. It was cataracts.</p>
+            </Link>
+            <Link href="/insights/life-after-cataract-surgery" className="related-card">
+              <h3>Life After Cataract Surgery</h3>
+              <p>What patients notice first and what surprises them most about recovery.</p>
+            </Link>
           </div>
         </div>
       </section>

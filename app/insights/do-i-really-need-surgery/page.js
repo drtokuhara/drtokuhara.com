@@ -169,6 +169,14 @@ export default function InsightDoINeedSurgery() {
               <h3>Ethical Cataract Care</h3>
               <p>Why financial incentives should never influence your surgical recommendation.</p>
             </Link>
+            <Link href="/insights/when-patients-wait" className="related-card">
+              <h3>When Patients Wait</h3>
+              <p>Sometimes waiting is a choice. Sometimes it becomes a habit.</p>
+            </Link>
+            <Link href="/insights/when-the-surgeon-says-wait" className="related-card">
+              <h3>When the Surgeon Says Wait</h3>
+              <p>Sometimes the best surgical decision is to defer surgery.</p>
+            </Link>
           </div>
         </div>
       </section>

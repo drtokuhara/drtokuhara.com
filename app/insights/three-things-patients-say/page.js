@@ -172,6 +172,14 @@ export default function InsightThreeThingsPatientsSay() {
               <h3>The Consultation That Changed Everything</h3>
               <p>What a thorough consultation actually looks like, and why it matters.</p>
             </Link>
+            <Link href="/insights/choosing-the-standard-lens" className="related-card">
+              <h3>Choosing the Standard Lens</h3>
+              <p>Sometimes the standard monofocal lens is exactly the right choice.</p>
+            </Link>
+            <Link href="/insights/the-reader-who-almost-gave-up-her-books" className="related-card">
+              <h3>The Reader Who Almost Gave Up Her Books</h3>
+              <p>An 81-year-old who delayed surgery for years and what changed her mind.</p>
+            </Link>
           </div>
         </div>
       </section>

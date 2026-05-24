@@ -237,6 +237,14 @@ export default function TwentyYearsForwardContent() {
               <h3>The Reader Who Almost Gave Up Her Books</h3>
               <p>An 81-year-old delayed surgery for years because nobody told her she had a choice.</p>
             </Link>
+            <Link href="/insights/permission-to-see-again" className="related-card">
+              <h3>Permission to See Again</h3>
+              <p>Sometimes patients need permission to prioritize their own vision.</p>
+            </Link>
+            <Link href="/insights/life-after-cataract-surgery" className="related-card">
+              <h3>Life After Cataract Surgery</h3>
+              <p>What patients notice first, and what surprises them most about recovery.</p>
+            </Link>
           </div>
         </div>
       </section>

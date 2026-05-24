@@ -197,6 +197,14 @@ export default function InsightWhatILearnedFromTheSurgeon() {
               <h3>Complex Cataract Cases</h3>
               <p>When surgery requires more than a standard approach.</p>
             </Link>
+            <Link href="/insights/when-cataract-surgery-goes-wrong" className="related-card">
+              <h3>When Cataract Surgery Goes Wrong</h3>
+              <p>Complications, management, and why training matters most.</p>
+            </Link>
+            <Link href="/insights/how-to-choose-a-cataract-surgeon" className="related-card">
+              <h3>How to Choose a Cataract Surgeon</h3>
+              <p>The five things that actually matter when selecting your surgeon.</p>
+            </Link>
           </div>
         </div>
       </section>

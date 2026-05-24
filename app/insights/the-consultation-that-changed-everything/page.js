@@ -191,6 +191,14 @@ export default function InsightConsultationChangedEverything() {
               <h3>The Eye You Least Suspect</h3>
               <p>He assumed his right eye was getting worse. The real problem was in his left.</p>
             </Link>
+            <Link href="/insights/second-opinion-cataract-surgery" className="related-card">
+              <h3>Second Opinion on Cataract Surgery</h3>
+              <p>When and why seeking another perspective matters for your eyes.</p>
+            </Link>
+            <Link href="/insights/when-the-eye-surface-changes-everything" className="related-card">
+              <h3>When the Eye Surface Changes Everything</h3>
+              <p>How accurate measurements depend on a healthy ocular surface.</p>
+            </Link>
           </div>
         </div>
       </section>

@@ -185,6 +185,14 @@ export default function InsightPermission() {
               <h3>Twenty Years Forward</h3>
               <p>She thought she just needed new glasses. It was cataracts.</p>
             </Link>
+            <Link href="/insights/life-after-cataract-surgery" className="related-card">
+              <h3>Life After Cataract Surgery</h3>
+              <p>What patients notice first, and what surprises them most about recovery.</p>
+            </Link>
+            <Link href="/insights/the-needle-that-wasnt-there" className="related-card">
+              <h3>The Needle That Wasn't There</h3>
+              <p>She avoided surgery for years because of a procedure that no longer exists.</p>
+            </Link>
           </div>
         </div>
       </section>

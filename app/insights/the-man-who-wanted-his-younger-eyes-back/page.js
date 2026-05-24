@@ -185,6 +185,14 @@ export default function InsightYoungerEyes() {
               <h3>Are Premium Lenses Worth It?</h3>
               <p>An honest reflection on premium versus standard lens implants and what the answer depends on.</p>
             </Link>
+            <Link href="/insights/when-is-the-right-time" className="related-card">
+              <h3>When Is the Right Time?</h3>
+              <p>There is no magic number. The right time depends on your life, not a chart.</p>
+            </Link>
+            <Link href="/insights/permission-to-see-again" className="related-card">
+              <h3>Permission to See Again</h3>
+              <p>A patient story about moving past hesitation into clarity.</p>
+            </Link>
           </div>
         </div>
       </section>

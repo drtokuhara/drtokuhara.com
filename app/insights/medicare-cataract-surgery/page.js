@@ -298,6 +298,14 @@ export default function InsightMedicareCataractSurgery() {
               <h3>What to Expect at Your Pre-Op Appointment</h3>
               <p>The evaluation visit where lens selection and surgical planning happen.</p>
             </Link>
+            <Link href="/insights/are-premium-lenses-worth-it" className="related-card">
+              <h3>Are Premium Lenses Worth It?</h3>
+              <p>An honest reflection on premium versus standard lens implants.</p>
+            </Link>
+            <Link href="/insights/choosing-the-standard-lens" className="related-card">
+              <h3>Choosing the Standard Lens</h3>
+              <p>Sometimes the standard monofocal lens is exactly the right choice.</p>
+            </Link>
           </div>
         </div>
       </section>

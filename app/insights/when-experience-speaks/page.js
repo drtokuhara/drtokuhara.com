@@ -252,6 +252,14 @@ export default function InsightWhenExperienceSpeaks() {
               <h3>Complex and Revision Cases</h3>
               <p>When cataract surgery does not go as planned, experience and training make all the difference.</p>
             </Link>
+            <Link href="/insights/when-cataract-surgery-goes-wrong" className="related-card">
+              <h3>When Cataract Surgery Goes Wrong</h3>
+              <p>Complications, management, and why surgeon experience is critical.</p>
+            </Link>
+            <Link href="/insights/how-to-choose-a-cataract-surgeon" className="related-card">
+              <h3>How to Choose a Cataract Surgeon</h3>
+              <p>The five things that actually matter when selecting your surgeon.</p>
+            </Link>
           </div>
         </div>
       </section>
