@@ -105,7 +105,7 @@ export default function SecondOpinionChangedEverythingPage() {
         overlayColor="10, 22, 40"
         className="page-hero page-hero-image"
         style={{ minHeight: '50vh', display: 'flex', alignItems: 'center' }}
-        bottomOverlay={<AudioNarration src="" />}
+        bottomOverlay={<AudioNarration src="/audio/narrations/second-opinion-that-changed-everything.mp3" />}
       >
         <div className="container">
           <ScrollReveal direction="up" once={true}>
