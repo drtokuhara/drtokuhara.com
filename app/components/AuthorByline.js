@@ -6,7 +6,7 @@ export default function AuthorByline({ date }) {
     <div className="author-byline">
       <div className="author-byline-avatar">
         <Image
-          src="/media/Dr-Tokuhara.jpg"
+          src="/media/dr-tokuhara-portrait.jpg"
           alt="Dr. Keith Tokuhara"
           width={48}
           height={48}

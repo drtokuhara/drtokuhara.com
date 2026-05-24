@@ -321,7 +321,7 @@ const SCREENS = {
     buttons: [{ label: "What makes you different?", next: "surgeon_diff" }],
   },
   surgeon_diff: {
-    image: "/media/Dr-Tokuhara.jpg",
+    image: "/media/dr-tokuhara-portrait.jpg",
     step: 3, totalSteps: 5,
     paragraphs: [
       "Here's what's different about how I work.",
@@ -532,7 +532,7 @@ const SCREENS = {
     buttons: [{ label: "I'd like someone to really look", next: "wrong_secondopinion" }],
   },
   wrong_fixable: {
-    image: "/media/Dr-Tokuhara.jpg",
+    image: "/media/dr-tokuhara-portrait.jpg",
     step: 3, totalSteps: 5,
     paragraphs: [
       "In most cases, yes, something can be done.",
@@ -854,7 +854,7 @@ export default function Home() {
               <ScrollReveal direction="left" once={true}>
                 <div className="lux-editorial-image">
                   <ParallaxImage
-                    src="/media/Dr-Tokuhara.jpg"
+                    src="/media/dr-tokuhara-portrait.jpg"
                     alt="Dr. Keith Tokuhara"
                     speed={0.15}
                     containerStyle={{borderRadius: '16px', height: '100%', minHeight: '500px'}}

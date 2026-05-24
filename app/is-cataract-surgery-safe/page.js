@@ -265,7 +265,7 @@ export default function IsCataractSurgerySafePage() {
         <div className="container content-narrow">
           <div className="content-image">
             <Image
-              src="/media/Dr-Tokuhara.jpg"
+              src="/media/dr-tokuhara-portrait.jpg"
               alt="Dr. Keith Tokuhara, fellowship-trained cataract surgeon at Desert Vision Center"
               width={680}
               height={453}

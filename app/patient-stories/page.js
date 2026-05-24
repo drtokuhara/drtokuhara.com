@@ -243,7 +243,7 @@ export default function PatientStories() {
         <div className="container content-narrow">
           <div className="content-image" style={{marginBottom: '32px'}}>
             <Image
-              src="/media/Dr-Tokuhara.jpg"
+              src="/media/dr-tokuhara-portrait.jpg"
               alt="Dr. Keith Tokuhara"
               width={680}
               height={453}
