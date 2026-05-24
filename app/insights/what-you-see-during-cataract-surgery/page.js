@@ -173,6 +173,34 @@ export default function InsightWhatYouSeeDuringCataractSurgery() {
             Some patients see colors. Blues, oranges, whites, sometimes a shifting pattern of color as the surgeon works. A few describe it as kaleidoscopic, not in a sharp geometric way, but in a soft, abstract way. Shapes may appear, usually blurred circles or ovals. None of it is sharp. None of it is recognizable as a surgical instrument. It is more like watching light move through water.
           </p>
 
+          <ScrollReveal direction="up" once={true}>
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+              gap: '20px',
+              margin: '40px 0',
+              padding: '32px',
+              background: 'var(--sand-light, #f8f5f0)',
+              borderRadius: '16px'
+            }}>
+              <div style={{borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.08)'}}>
+                <img src="/media/patient-art/1.jpeg" alt="Patient drawing: geometric hearts and pink-blue light tunnel during cataract surgery" loading="lazy" style={{width: '100%', height: 'auto', display: 'block'}} />
+              </div>
+              <div style={{borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.08)'}}>
+                <img src="/media/patient-art/2.jpeg" alt="Patient drawing: pink curves with blue shapes and hearts seen during cataract surgery" loading="lazy" style={{width: '100%', height: 'auto', display: 'block'}} />
+              </div>
+              <div style={{borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.08)'}}>
+                <img src="/media/patient-art/3.jpeg" alt="Patient drawing: orange-pink kaleidoscope color spots during cataract surgery" loading="lazy" style={{width: '100%', height: 'auto', display: 'block'}} />
+              </div>
+              <div style={{borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.08)'}}>
+                <img src="/media/patient-art/4.jpeg" alt="Patient drawing: roiling lavender-pink clouds seen during cataract surgery" loading="lazy" style={{width: '100%', height: 'auto', display: 'block'}} />
+              </div>
+            </div>
+            <p style={{textAlign: 'center', fontSize: '0.9rem', color: 'var(--text-light)', fontStyle: 'italic', marginTop: '12px'}}>
+              Drawn by patients after their cataract surgery
+            </p>
+          </ScrollReveal>
+
           <BlurReveal><div className="pull-quote">
             <p>One patient told me: "I kept waiting to see something scary. I never did. It was just light and color, kind of pretty actually. I remember thinking, that's it? This is what I was so worried about?"</p>
           </div></BlurReveal>
@@ -181,6 +209,28 @@ export default function InsightWhatYouSeeDuringCataractSurgery() {
           <p>
             A few patients report seeing shadows or a sense of movement, like something passing in front of the light. This is normal. The surgeon's hands, the instruments, and the irrigation fluid all create shadows. But again, these are not sharp images. They are vague, fleeting, and most patients describe them as non-threatening. Several have compared it to looking at shadows through a shower curtain.
           </p>
+
+          <ScrollReveal direction="up" once={true}>
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: '20px',
+              margin: '40px 0',
+              padding: '32px',
+              background: 'var(--sand-light, #f8f5f0)',
+              borderRadius: '16px'
+            }}>
+              <div style={{borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.08)'}}>
+                <img src="/media/patient-art/5.jpeg" alt="Patient drawing: red-black circular turbulence with blue spiral during cataract surgery" loading="lazy" style={{width: '100%', height: 'auto', display: 'block'}} />
+              </div>
+              <div style={{borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.08)'}}>
+                <img src="/media/patient-art/7.jpeg" alt="Patient drawing: dark amber textured horizon circle during cataract surgery" loading="lazy" style={{width: '100%', height: 'auto', display: 'block'}} />
+              </div>
+            </div>
+            <p style={{textAlign: 'center', fontSize: '0.9rem', color: 'var(--text-light)', fontStyle: 'italic', marginTop: '12px'}}>
+              Drawn by patients after their cataract surgery
+            </p>
+          </ScrollReveal>
 
           <h3 style={{marginTop: '2rem'}}>Almost Nothing</h3>
           <p>
@@ -245,6 +295,28 @@ export default function InsightWhatYouSeeDuringCataractSurgery() {
             <p>A retired school principal told me: "I was terrified right up until the moment it started. Then I realized I couldn't see anything scary, I couldn't feel anything painful, and it was already halfway done. I had worked myself up for nothing."</p>
           </div></BlurReveal>
 
+          <ScrollReveal direction="up" once={true}>
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: '20px',
+              margin: '40px 0',
+              padding: '32px',
+              background: 'var(--sand-light, #f8f5f0)',
+              borderRadius: '16px'
+            }}>
+              <div style={{borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.08)'}}>
+                <img src="/media/patient-art/10.jpeg" alt="Patient drawing: chaotic energy with yellow glow, pink hearts, and purple waves during cataract surgery" loading="lazy" style={{width: '100%', height: 'auto', display: 'block'}} />
+              </div>
+              <div style={{borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.08)'}}>
+                <img src="/media/patient-art/11.jpeg" alt="Patient drawing: blue vortex with orange fragments during cataract surgery" loading="lazy" style={{width: '100%', height: 'auto', display: 'block'}} />
+              </div>
+            </div>
+            <p style={{textAlign: 'center', fontSize: '0.9rem', color: 'var(--text-light)', fontStyle: 'italic', marginTop: '12px'}}>
+              Drawn by patients after their cataract surgery
+            </p>
+          </ScrollReveal>
+
           <p>
             That is the most common post-operative sentiment I hear. Not that it was easy, though many say that. But that it was easier than expected. The gap between what patients feared and what they experienced is often enormous.
           </p>
@@ -275,6 +347,31 @@ export default function InsightWhatYouSeeDuringCataractSurgery() {
           <p>
             This sounds abstract, but it matters. Cataract surgery is one of the most commonly performed surgeries in the world. Tens of millions of people have been through it. The technique is refined, the outcomes are predictable, and the anesthetic works. You are not the first person to be afraid. You are not the first person to wonder what you will see. And you will not be the first person to come out the other side and say, "that was not as bad as I thought."
           </p>
+
+          <ScrollReveal direction="up" once={true}>
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+              gap: '20px',
+              margin: '40px 0',
+              padding: '32px',
+              background: 'var(--sand-light, #f8f5f0)',
+              borderRadius: '16px'
+            }}>
+              <div style={{borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.08)'}}>
+                <img src="/media/patient-art/9.b.jpeg" alt="Patient drawing: bold black circle on yellow sunburst during cataract surgery" loading="lazy" style={{width: '100%', height: 'auto', display: 'block'}} />
+              </div>
+              <div style={{borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.08)'}}>
+                <img src="/media/patient-art/9.d.jpeg" alt="Patient drawing: pop art hearts with dot grids during cataract surgery" loading="lazy" style={{width: '100%', height: 'auto', display: 'block'}} />
+              </div>
+              <div style={{borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.08)'}}>
+                <img src="/media/patient-art/9.c.jpeg" alt="Patient drawing: fluid forms with dripping patterns during cataract surgery" loading="lazy" style={{width: '100%', height: 'auto', display: 'block'}} />
+              </div>
+            </div>
+            <p style={{textAlign: 'center', fontSize: '0.9rem', color: 'var(--text-light)', fontStyle: 'italic', marginTop: '12px'}}>
+              Drawn by patients after their cataract surgery
+            </p>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -293,7 +390,7 @@ export default function InsightWhatYouSeeDuringCataractSurgery() {
         <div className="container">
           <ScrollReveal direction="up" once={true}>
             <div style={{textAlign: 'center', maxWidth: '800px', margin: '0 auto 48px'}}>
-              <h2 className="section-title" style={{color: 'var(--white)'}}>Through Their Eyes: <strong>What Patients Drew After Surgery</strong></h2>
+              <h2 className="section-title" style={{color: 'var(--white)'}}>The Complete Collection: <strong>Patient Artwork Gallery</strong></h2>
               <p style={{fontSize: '1.125rem', lineHeight: '1.7', color: 'rgba(255, 255, 255, 0.9)'}}>
                 Several of my patients who are artists have sketched what they saw during their cataract surgery. These drawings, created independently by different patients, reveal something remarkable: the consistency of the experience. Kaleidoscopic patterns, hearts, orbs, turquoise and gold light, tunnels of color. Nothing frightening. I show these to anxious patients before surgery to demonstrate that the reality is not a surgical scene, it is a beautiful light show.
               </p>
