@@ -11,19 +11,28 @@ import {
 } from '../../components/ScrollAnimations';
 
 export const metadata = {
-  title: 'What Do You Actually See During Cataract Surgery? - Dr. Keith Tokuhara',
-  description: 'Most patients worry about being awake during cataract surgery. Here\'s exactly what you see, what you feel, and why it\'s easier than you think.',
-  keywords: ['what do you see during cataract surgery', 'cataract surgery patient perspective', 'awake during cataract surgery what to expect', 'what does cataract surgery feel like', 'cataract surgery experience'],
+  title: 'What Do You See During Cataract Surgery? The Honest Answer | Dr. Tokuhara',
+  description: 'What do you actually see during cataract surgery? Not instruments or needles. Real patient drawings show the experience is a beautiful light show. Dr. Tokuhara explains with audio narration and patient artwork.',
+  keywords: ['what do you see during cataract surgery', 'cataract surgery patient perspective', 'awake during cataract surgery what to expect', 'what does cataract surgery feel like', 'cataract surgery experience', 'cataract surgery light show', 'patient drawings cataract surgery'],
   alternates: { canonical: '/insights/what-you-see-during-cataract-surgery' },
   openGraph: {
-    title: 'What Do You Actually See During Cataract Surgery? | Dr. Keith Tokuhara',
-    description: 'The honest answer about being awake during cataract surgery. What you see, what you feel, and why most patients say it was easier than expected.',
+    title: 'What Do You See During Cataract Surgery? Patient Drawings Reveal the Truth',
+    description: 'What do you actually see during cataract surgery? Not instruments or needles. Real patient drawings show the experience is a beautiful light show. Dr. Tokuhara explains with audio narration and patient artwork.',
     url: 'https://drtokuhara.com/insights/what-you-see-during-cataract-surgery',
+    images: [
+      {
+        url: 'https://drtokuhara.com/media/patient-art/1.jpeg',
+        width: 800,
+        height: 600,
+        alt: 'Patient drawing showing geometric hearts and light tunnel during cataract surgery',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'What Do You Actually See During Cataract Surgery?',
-    description: 'The truth about being awake during cataract surgery. Most patients are surprised by how easy it actually is.',
+    title: 'What Do You See During Cataract Surgery? Patient Drawings Reveal the Truth',
+    description: 'What do you actually see during cataract surgery? Not instruments or needles. Real patient drawings show the experience is a beautiful light show.',
+    images: ['https://drtokuhara.com/media/patient-art/1.jpeg'],
   },
 };
 
@@ -74,10 +83,49 @@ const faqSchema = {
   ],
 };
 
+const imageGallerySchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ImageGallery',
+  'name': 'What Patients See During Cataract Surgery - Patient Artwork',
+  'description': 'Real drawings by cataract surgery patients showing what they experienced during the procedure. Recurring themes include hearts, kaleidoscopic patterns, orbs, and flowing colors.',
+  'image': [
+    {
+      '@type': 'ImageObject',
+      'url': 'https://drtokuhara.com/media/patient-art/1.jpeg',
+      'name': 'Patient drawing: geometric hearts and light tunnel during cataract surgery',
+      'description': 'A cataract surgery patient drew geometric hearts and a light tunnel in pink and blue, representing the visual experience during the procedure.',
+      'author': { '@type': 'Person', 'name': 'Cataract surgery patient' }
+    },
+    {
+      '@type': 'ImageObject',
+      'url': 'https://drtokuhara.com/media/patient-art/3.jpeg',
+      'name': 'Patient drawing: kaleidoscope color spots during cataract surgery',
+      'description': 'A patient drew orange and pink kaleidoscopic color spots labeled "Flashing and moving like a Kaleidoscope" - their visual experience during cataract surgery.'
+    },
+    {
+      '@type': 'ImageObject',
+      'url': 'https://drtokuhara.com/media/patient-art/10.jpeg',
+      'name': 'Patient drawing: flowing colors and hearts during cataract surgery',
+      'description': 'A patient drew chaotic flowing colors with pink hearts and purple waves - their visual experience during cataract surgery.'
+    }
+  ]
+};
+
+const audioObjectSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AudioObject',
+  'name': 'What You See During Cataract Surgery - Dr. Keith Tokuhara',
+  'description': 'Dr. Tokuhara explains what patients actually see during cataract surgery, including descriptions of patient artwork from real procedures.',
+  'contentUrl': 'https://drtokuhara.com/audio/narrations/what-you-see-during-cataract-surgery.mp3',
+  'encodingFormat': 'audio/mpeg',
+  'duration': 'PT1M5S',
+  'author': { '@type': 'Person', 'name': 'Dr. Keith Tokuhara' }
+};
+
 const jsonLd = [
   articleSchema({
-    title: 'What Do You Actually See During Cataract Surgery?',
-    description: 'Most patients worry about being awake during cataract surgery. Here\'s exactly what you see, what you feel, and why it\'s easier than you think.',
+    title: 'What Do You See During Cataract Surgery? The Honest Answer',
+    description: 'What do you actually see during cataract surgery? Not instruments or needles. Real patient drawings show the experience is a beautiful light show. Dr. Tokuhara explains with audio narration and patient artwork.',
     slug: '/insights/what-you-see-during-cataract-surgery',
     datePublished: '2026-05-24',
   }),
@@ -87,6 +135,8 @@ const jsonLd = [
     { name: 'What You See During Cataract Surgery', href: '/insights/what-you-see-during-cataract-surgery' },
   ]),
   faqSchema,
+  imageGallerySchema,
+  audioObjectSchema,
 ];
 
 export default function InsightWhatYouSeeDuringCataractSurgery() {
@@ -97,7 +147,7 @@ export default function InsightWhatYouSeeDuringCataractSurgery() {
       ))}
       <VideoBackground
         src="/media/ambient-desert-sunrise-golden.mp4"
-        poster="/media/stock-couple-patio-scenic-view.jpg"
+        poster="/media/hero-what-you-see-during-surgery.jpg"
         overlayOpacity={0.6}
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"
