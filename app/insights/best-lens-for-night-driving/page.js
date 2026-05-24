@@ -100,7 +100,7 @@ export default function InsightBestLensForNightDriving() {
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"
         style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
-        bottomOverlay={<AudioNarration src="" />}
+        bottomOverlay={<AudioNarration src="/audio/narrations/best-lens-for-night-driving.mp3" />}
       >
         <div className="container">
           <ScrollReveal direction="up" once={true}>
