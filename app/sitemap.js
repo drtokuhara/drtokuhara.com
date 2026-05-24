@@ -77,6 +77,7 @@ export default function sitemap() {
     '/complex-cases/previous-rk',
     '/complex-cases/pseudoexfoliation',
     '/complex-cases/retained-silicone-oil',
+    '/complex-cases/uveitis',
   ].map((path) => ({ path, priority: 0.7, changeFrequency: 'monthly' }));
 
   // Insight articles
@@ -108,6 +109,18 @@ export default function sitemap() {
     '/insights/five-questions-before-surgery',
     '/insights/three-things-patients-say',
     '/insights/twenty-years-forward',
+    '/insights/cataract-pre-op-appointment',
+    '/insights/cataract-referral-kickbacks',
+    '/insights/how-to-choose-a-cataract-surgeon',
+    '/insights/laser-vs-traditional-cataract-surgery',
+    '/insights/life-after-cataract-surgery',
+    '/insights/medicare-cataract-surgery',
+    '/insights/second-opinion-cataract-surgery',
+    '/insights/the-capsule-is-sacred',
+    '/insights/toric-lens-astigmatism',
+    '/insights/what-is-aura-machine',
+    '/insights/when-cataract-surgery-goes-wrong',
+    '/insights/when-do-i-need-cataract-surgery',
   ].map((path) => ({ path, priority: 0.6, changeFrequency: 'monthly' }));
 
   // City landing pages - local SEO
@@ -155,7 +168,7 @@ export default function sitemap() {
 
   return allPages.map(({ path, priority, changeFrequency }) => ({
     url: `${baseUrl}${path}`,
-    lastModified: new Date('2026-05-11'),
+    lastModified: new Date('2026-05-24'),
     changeFrequency,
     priority,
   }));
