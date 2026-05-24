@@ -62,7 +62,10 @@ export default function InsightWhatILearnedFromTheSurgeon() {
         <div className="container content-narrow">
           <AuthorByline />
           <div className="section-divider" style={{margin: '32px auto'}} />
-          <div style={{textAlign: "center", margin: "32px 0"}}>n            <img src="/media/dr-gimbel-portrait-lineart.jpg" alt="Dr. Howard Gimbel - line art portrait" style={{maxWidth: "220px", width: "100%", height: "auto", borderRadius: "8px", opacity: 0.85}} />n            <p style={{fontSize: "0.8rem", color: "var(--text-light)", marginTop: "8px", fontStyle: "italic"}}>Dr. Howard Gimbel</p>n          </div>
+          <div style={{float: 'right', marginLeft: '24px', marginBottom: '16px', textAlign: 'center'}}>
+            <img src="/media/dr-gimbel-portrait-lineart.jpg" alt="Dr. Howard Gimbel - line art portrait" style={{width: '160px', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 16px rgba(0,0,0,0.08)'}} />
+            <p style={{fontSize: '0.8rem', color: 'var(--text-light)', marginTop: '8px', fontStyle: 'italic'}}>Dr. Howard Gimbel</p>
+          </div>
           <p className="body-lead body-lead-dropcap">
             During my residency, I trained under Dr. Howard Gimbel in Calgary. Gimbel was, and remains, one of the most important cataract surgeons of the modern era. He pioneered continuous curvilinear capsulorhexis, the technique that made modern cataract surgery predictable and safe. Before Gimbel refined that step, the capsular bag was an unpredictable variable. After him, it became a controlled one. Nearly every cataract surgeon in the world uses his contribution, whether they know his name or not.
           </p>

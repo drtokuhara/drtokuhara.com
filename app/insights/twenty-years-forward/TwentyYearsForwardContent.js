@@ -39,7 +39,10 @@ export default function TwentyYearsForwardContent() {
         <div className="container content-narrow">
           <AuthorByline date="May 9, 2026" />
           <div className="section-divider" style={{margin: '32px auto'}} />
-          <div style={{textAlign: "center", margin: "32px 0"}}><img src="/media/dr-gimbel-portrait-lineart.jpg" alt="Dr. Howard Gimbel - line art portrait" style={{maxWidth: "220px", width: "100%", height: "auto", borderRadius: "8px", opacity: 0.85}} /><p style={{fontSize: "0.8rem", color: "var(--text-light)", marginTop: "8px", fontStyle: "italic"}}>Dr. Howard Gimbel</p></div>
+          <div style={{float: 'right', marginLeft: '24px', marginBottom: '16px', textAlign: 'center'}}>
+            <img src="/media/dr-gimbel-portrait-lineart.jpg" alt="Dr. Howard Gimbel - line art portrait" style={{width: '160px', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 16px rgba(0,0,0,0.08)'}} />
+            <p style={{fontSize: '0.8rem', color: 'var(--text-light)', marginTop: '8px', fontStyle: 'italic'}}>Dr. Howard Gimbel</p>
+          </div>
           <p className="body-lead body-lead-dropcap">
             She came in expecting a new glasses prescription. That was all. Her optician had been adjusting her lenses every year for the past several years, each time nudging the numbers a little, trying to sharpen what had slowly gone soft. She had followed every recommendation. New frames. Updated lenses. Sometimes a slight improvement, sometimes not.
           </p>

@@ -114,7 +114,10 @@ export default function InsightTheCapsuleIsSacred() {
         <div className="container content-narrow">
           <AuthorByline />
           <div className="section-divider" style={{margin: '40px auto'}} />
-          <div style={{textAlign: "center", margin: "32px 0"}}><img src="/media/dr-gimbel-portrait-lineart.jpg" alt="Dr. Howard Gimbel - line art portrait" style={{maxWidth: "220px", width: "100%", height: "auto", borderRadius: "8px", opacity: 0.85}} /><p style={{fontSize: "0.8rem", color: "var(--text-light)", marginTop: "8px", fontStyle: "italic"}}>Dr. Howard Gimbel</p></div>
+          <div style={{float: 'right', marginLeft: '24px', marginBottom: '16px', textAlign: 'center'}}>
+            <img src="/media/dr-gimbel-portrait-lineart.jpg" alt="Dr. Howard Gimbel - line art portrait" style={{width: '160px', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 16px rgba(0,0,0,0.08)'}} />
+            <p style={{fontSize: '0.8rem', color: 'var(--text-light)', marginTop: '8px', fontStyle: 'italic'}}>Dr. Howard Gimbel</p>
+          </div>
           <p className="body-lead body-lead-dropcap">
             Before 1984, cataract surgeons opened the lens capsule with what was called a can-opener capsulotomy. The name describes it perfectly: a series of punctures around the anterior capsule, then tearing between them to create an opening. It worked. Lenses could be removed. But the edges were irregular, unpredictable. The capsule, weakened by multiple puncture points, was prone to tearing during the procedure. Complications were common enough that they were expected.
           </p>
