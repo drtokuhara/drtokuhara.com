@@ -48,14 +48,24 @@ export default function MobileNav() {
             <Link href="/complex-cases/macular-degeneration" onClick={close}>Macular Degeneration</Link>
             <Link href="/complex-cases/previous-retina-surgery" onClick={close}>Previous Retina Surgery</Link>
             <Link href="/complex-cases/previous-lasik" onClick={close}>Previous LASIK</Link>
+            <Link href="/complex-cases/previous-rk" onClick={close}>Previous RK</Link>
+            <Link href="/complex-cases/uveitis" onClick={close}>Uveitis</Link>
+            <Link href="/complex-cases/fuchs-dystrophy" onClick={close}>Fuchs Dystrophy</Link>
+            <Link href="/complex-cases/floppy-iris" onClick={close}>Floppy Iris (Flomax)</Link>
+            <Link href="/complex-cases/pseudoexfoliation" onClick={close}>Pseudoexfoliation</Link>
             <Link href="/complex-cases/parkinsons-disease" onClick={close}>Parkinson's</Link>
             <Link href="/complex-cases/alzheimers-dementia" onClick={close}>Alzheimer's / Dementia</Link>
             <Link href="/complex-cases/down-syndrome" onClick={close}>Down Syndrome</Link>
+            <Link href="/complex-cases/retained-silicone-oil" onClick={close}>Retained Silicone Oil</Link>
+            <Link href="/complex-cases/aphakia-after-retina" onClick={close}>Aphakia After Retina</Link>
 
             <p className="mobile-nav-label">Lenses</p>
             <Link href="/lens-implants-explained" onClick={close}>Lens Guide</Link>
             <Link href="/vivity-vs-panoptix" onClick={close}>Vivity vs PanOptix</Link>
+            <Link href="/panoptix-vs-panoptix-pro" onClick={close}>PanOptix vs PanOptix Pro</Link>
             <Link href="/toric-lens-astigmatism" onClick={close}>Toric / Astigmatism</Link>
+            <Link href="/clareon-lens" onClick={close}>Clareon Lens</Link>
+            <Link href="/insights/best-lens-for-night-driving" onClick={close}>Best Lens for Night Driving</Link>
 
             <p className="mobile-nav-label">For Patients</p>
             <Link href="/patient-journey" onClick={close}>Your Journey</Link>
@@ -64,13 +74,19 @@ export default function MobileNav() {
             <Link href="/my-cataract-drops" onClick={close}>My Cataract Drops App</Link>
             <Link href="/choosing-your-surgeon" onClick={close}>Choosing a Surgeon</Link>
 
-            <p className="mobile-nav-label">Insights by Topic</p>
+            <p className="mobile-nav-label">Insights</p>
             <Link href="/insights" onClick={close}>All Insights</Link>
+            <Link href="/insights/cataract-surgery-step-by-step" onClick={close}>Step by Step</Link>
+            <Link href="/insights/what-you-see-during-cataract-surgery" onClick={close}>What You See During Surgery</Link>
+            <Link href="/insights/is-cataract-surgery-painful" onClick={close}>Is It Painful?</Link>
+            <Link href="/insights/first-week-after-cataract-surgery" onClick={close}>Your First Week After</Link>
+            <Link href="/insights/life-after-cataract-surgery" onClick={close}>Life After Surgery</Link>
+            <Link href="/insights/how-to-choose-a-cataract-surgeon" onClick={close}>How to Choose a Surgeon</Link>
             <Link href="/insights/do-i-really-need-surgery" onClick={close}>Do I Need Surgery Yet?</Link>
-            <Link href="/insights/when-ai-recommends-your-lens" onClick={close}>When AI Recommends Your Lens</Link>
+            <Link href="/insights/when-cataract-surgery-goes-wrong" onClick={close}>When Surgery Goes Wrong</Link>
             <Link href="/insights/are-premium-lenses-worth-it" onClick={close}>Are Premium Lenses Worth It?</Link>
-            <Link href="/insights/choosing-the-standard-lens" onClick={close}>The Standard Lens</Link>
-            <Link href="/insights/permission-to-see-again" onClick={close}>Permission to See Again</Link>
+            <Link href="/insights/medicare-cataract-surgery" onClick={close}>Medicare Coverage</Link>
+            <Link href="/insights/second-opinion-cataract-surgery" onClick={close}>Getting a Second Opinion</Link>
 
             <p className="mobile-nav-label">Learn</p>
             <Link href="/about" onClick={close}>About Dr. Tokuhara</Link>
