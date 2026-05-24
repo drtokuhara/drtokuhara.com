@@ -123,6 +123,7 @@ export default function sitemap() {
     '/insights/when-do-i-need-cataract-surgery',
     '/insights/what-you-see-during-cataract-surgery',
     '/insights/best-lens-for-night-driving',
+    '/insights/second-opinion-that-changed-everything',
   ].map((path) => ({ path, priority: 0.6, changeFrequency: 'monthly' }));
 
   // City landing pages - local SEO
