@@ -79,18 +79,22 @@ export default function HeritageSeriesContent() {
         </div>
       </section>
 
+      {/* GIMBEL PORTRAIT - overlapping hero bottom */}
+      <div style={{textAlign: 'center', marginTop: '-80px', marginBottom: '24px', position: 'relative', zIndex: 10}}>
+        <div style={{display: 'inline-block', background: 'white', borderRadius: '50%', padding: '8px', boxShadow: '0 8px 30px rgba(0,0,0,0.15)'}}>
+          <img
+            src="/media/dr-gimbel-portrait-lineart.jpg"
+            alt="Dr. Howard Gimbel - line art portrait"
+            style={{width: '180px', height: '180px', borderRadius: '50%', objectFit: 'cover', objectPosition: 'center 15%', display: 'block'}}
+          />
+        </div>
+        <p style={{fontSize: '0.85rem', color: 'var(--text-light)', marginTop: '12px', fontStyle: 'italic', letterSpacing: '0.03em'}}>Dr. Howard Gimbel</p>
+      </div>
+
       {/* SERIES INTRODUCTION */}
       <section className="heritage-intro">
         <div className="heritage-container">
           <HeritageDivider />
-          <div style={{textAlign: 'center', marginBottom: '40px'}}>
-            <img
-              src="/media/dr-gimbel-portrait-lineart.jpg"
-              alt="Dr. Howard Gimbel - line art portrait"
-              style={{maxWidth: '280px', width: '100%', height: 'auto', borderRadius: '8px', opacity: 0.9}}
-            />
-            <p style={{fontSize: '0.85rem', color: 'var(--text-light)', marginTop: '12px', fontStyle: 'italic'}}>Dr. Howard Gimbel</p>
-          </div>
           <div className="heritage-intro-text">
             <p>
               During his residency at Loma Linda University, Dr. Keith Tokuhara trained under
