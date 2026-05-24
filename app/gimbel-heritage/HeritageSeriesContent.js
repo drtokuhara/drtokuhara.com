@@ -79,23 +79,19 @@ export default function HeritageSeriesContent() {
         </div>
       </section>
 
-      {/* GIMBEL PORTRAIT - overlapping hero bottom */}
-      <div style={{textAlign: 'center', marginTop: '-80px', marginBottom: '24px', position: 'relative', zIndex: 10}}>
-        <div style={{display: 'inline-block', background: 'white', borderRadius: '50%', padding: '8px', boxShadow: '0 8px 30px rgba(0,0,0,0.15)'}}>
-          <img
-            src="/media/dr-gimbel-portrait-lineart.jpg"
-            alt="Dr. Howard Gimbel - line art portrait"
-            style={{width: '180px', height: '180px', borderRadius: '50%', objectFit: 'cover', objectPosition: 'center 15%', display: 'block'}}
-          />
-        </div>
-        <p style={{fontSize: '0.85rem', color: 'var(--text-light)', marginTop: '12px', fontStyle: 'italic', letterSpacing: '0.03em'}}>Dr. Howard Gimbel</p>
-      </div>
-
       {/* SERIES INTRODUCTION */}
       <section className="heritage-intro">
         <div className="heritage-container">
           <HeritageDivider />
           <div className="heritage-intro-text">
+            <div style={{float: 'right', marginLeft: '32px', marginBottom: '16px', textAlign: 'center'}}>
+              <img
+                src="/media/dr-gimbel-portrait-lineart.jpg"
+                alt="Dr. Howard Gimbel - line art portrait"
+                style={{width: '200px', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 16px rgba(0,0,0,0.08)'}}
+              />
+              <p style={{fontSize: '0.8rem', color: 'var(--text-light)', marginTop: '8px', fontStyle: 'italic'}}>Dr. Howard Gimbel</p>
+            </div>
             <p>
               During his residency at Loma Linda University, Dr. Keith Tokuhara trained under
               Dr. Howard Gimbel, one of the most consequential cataract surgeons of the modern era.
