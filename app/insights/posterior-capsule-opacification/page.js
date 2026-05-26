@@ -299,6 +299,14 @@ export default function InsightPosteriorCapsuleOpacification() {
         </div>
       </section>
 
+      <section className="section section-warm" style={{background: 'linear-gradient(135deg, #00313d 0%, #004d5c 100%)', color: '#fff'}}>
+        <div className="container content-narrow" style={{textAlign: 'center', padding: '48px 0'}}>
+          <h2 style={{fontSize: '28px', fontWeight: 300, color: '#fff', marginBottom: '12px', fontFamily: 'var(--serif)'}}>Ready for the <strong>Treatment?</strong></h2>
+          <p style={{color: 'rgba(255,255,255,0.75)', maxWidth: '500px', margin: '0 auto 24px', lineHeight: 1.6}}>YAG laser capsulotomy takes five minutes, requires no incision, and restores the clear vision you had after your original surgery. Learn exactly what to expect.</p>
+          <Link href="/yag-laser-capsulotomy" className="btn btn-primary" style={{background: '#fff', color: '#00313d'}}>Read the YAG Laser Capsulotomy Guide</Link>
+        </div>
+      </section>
+
       <section className="section section-warm">
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>

@@ -344,6 +344,14 @@ export default function YagLaserCapsulotomy() {
         </div>
       </section>
 
+      <section className="section" style={{background: 'linear-gradient(135deg, #00313d 0%, #004d5c 100%)', color: '#fff'}}>
+        <div className="container content-narrow" style={{textAlign: 'center', padding: '48px 0'}}>
+          <h2 style={{fontSize: '28px', fontWeight: 300, color: '#fff', marginBottom: '12px', fontFamily: 'var(--serif)'}}>Wondering Why This <strong>Happened?</strong></h2>
+          <p style={{color: 'rgba(255,255,255,0.75)', maxWidth: '500px', margin: '0 auto 24px', lineHeight: 1.6}}>Posterior capsule opacification is not a failed surgery. It is one of the most predictable events in ophthalmology. Read the full explanation of what is happening inside your eye and why.</p>
+          <Link href="/insights/posterior-capsule-opacification" className="btn btn-primary" style={{background: '#fff', color: '#00313d'}}>Read: When Vision Gets Cloudy Again</Link>
+        </div>
+      </section>
+
       {/* RELATED */}
       <section className="section section-warm">
         <div className="container content-narrow">
