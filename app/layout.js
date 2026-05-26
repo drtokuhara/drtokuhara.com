@@ -144,7 +144,7 @@ export default function RootLayout({ children }) {
                 </div>
               </div>
               <div className="nav-dropdown nav-dropdown-wide">
-                <span className="nav-dropdown-trigger">Insights</span>
+                <Link href="/insights" className="nav-dropdown-trigger" style={{cursor: 'pointer'}}>Insights</Link>
                 <div className="nav-dropdown-menu nav-dropdown-mega">
                   <div className="nav-mega-col">
                     <span className="nav-mega-label">Decisions & Timing</span>

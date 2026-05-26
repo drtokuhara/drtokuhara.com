@@ -90,6 +90,9 @@ export default function PanOptixVsPanOptixPro() {
       {/* INTRO */}
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{maxWidth: '600px', margin: '0 auto 36px'}}>
+            <Image src="/media/hero-panoptix-vs-panoptix-pro.png" alt="PanOptix and PanOptix Pro trifocal intraocular lens implants" width={1024} height={1024} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+          </div>
           <p className="body-lead">
             I was the first surgeon in the Coachella Valley to implant the PanOptix Pro. That distinction came with an early clinical education, including a patient who had the original PanOptix in one eye and the Pro in the other, and could compare both directly within 24 hours of her second surgery.
           </p>

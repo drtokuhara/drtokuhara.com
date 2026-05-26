@@ -319,7 +319,7 @@ export const insights = [
     date: 'May 2026',
     description: 'Your cataract surgery went well. Your vision was clear. Then it started to blur again. Posterior capsule opacification is not a failed surgery. It is one of the most common, predictable, and treatable events in ophthalmology.',
     cluster: 'Education / Post-Surgery',
-    image: '/media/hero-cataract-recovery.jpg',
+    image: '/media/hero-posterior-capsule-opacification.png',
   },
 ];
 export default insights;
