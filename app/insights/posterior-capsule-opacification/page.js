@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
 import {
@@ -94,7 +95,7 @@ export default function InsightPosteriorCapsuleOpacification() {
       ))}
       <VideoBackground
         src="/media/ambient-desert-sunrise-golden.mp4"
-        poster="/media/hero-cataract-recovery.jpg"
+        poster="/media/hero-posterior-capsule-opacification.png"
         overlayOpacity={0.6}
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"
@@ -114,6 +115,9 @@ export default function InsightPosteriorCapsuleOpacification() {
           <AuthorByline />
           <div className="section-divider" style={{margin: '32px auto'}} />
 
+          <div className="content-image" style={{maxWidth: '600px', margin: '0 auto 36px'}}>
+            <Image src="/media/hero-posterior-capsule-opacification.png" alt="Posterior capsule opacification - when vision gets cloudy again after cataract surgery" width={1024} height={1024} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+          </div>
           <p className="body-lead body-lead-dropcap">
             It usually starts the same way. A patient calls the office, sometimes anxious, sometimes frustrated. "My vision was great after surgery," they say. "Now it feels like my cataract is coming back." I hear some version of that conversation several times a month. And every time, the first thing I tell them is this: your cataract is not back. It cannot come back. What you are experiencing is something different, something predictable, and something we can fix.
           </p>
@@ -206,6 +210,19 @@ export default function InsightPosteriorCapsuleOpacification() {
           <p>
             It is one of the most commonly performed procedures in ophthalmology, and one of the most satisfying for both patients and doctors. The moment you clear that membrane and the patient's vision sharpens, they often say the same thing: "It's like my surgery all over again."
           </p>
+
+          <div style={{margin: '2.5rem 0'}}>
+            <h3 style={{marginBottom: '1rem'}}>Watch: YAG Laser Capsulotomy Explained</h3>
+            <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px'}}>
+              <iframe
+                src="https://www.youtube.com/embed/JzspGX4RErQ"
+                title="YAG Laser Capsulotomy for Posterior Capsule Opacification - Dr. Keith Tokuhara"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none'}}
+              />
+            </div>
+          </div>
 
           <h3 style={{marginTop: '2rem'}}>What to Expect Afterward</h3>
           <p>
