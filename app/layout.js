@@ -172,6 +172,7 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/when-cataract-surgery-goes-wrong">When Surgery Goes Wrong</Link>
                     <Link href="/insights/what-is-ora-machine">The ORA Machine</Link>
                     <Link href="/insights/medicare-cataract-surgery">Medicare Coverage</Link>
+                    <Link href="/insights/posterior-capsule-opacification">Cloudy Vision After Surgery (PCO)</Link>
                   </div>
                   <div className="nav-mega-col">
                     <span className="nav-mega-label">Lens Selection</span>

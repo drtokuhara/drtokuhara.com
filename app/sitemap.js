@@ -126,6 +126,7 @@ export default function sitemap() {
     '/insights/second-opinion-that-changed-everything',
     '/insights/when-cataracts-are-not-the-real-problem',
     '/insights/not-every-patient-wants-the-same-vision',
+    '/insights/posterior-capsule-opacification',
   ].map((path) => ({ path, priority: 0.6, changeFrequency: 'monthly' }));
 
   // City landing pages - local SEO

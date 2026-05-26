@@ -179,6 +179,10 @@ export default function BlurryVisionAfterSurgery() {
               <h3>Halos After Surgery</h3>
               <p>Why you might see rings around lights, and when they go away.</p>
             </Link>
+            <Link href="/insights/posterior-capsule-opacification" className="related-card">
+              <h3>Posterior Capsule Opacification</h3>
+              <p>When vision gets cloudy again months or years after surgery. What it is, why it happens, and the simple fix.</p>
+            </Link>
           </div>
         </div>
       </section>

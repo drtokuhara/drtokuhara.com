@@ -364,6 +364,10 @@ export default function YagLaserCapsulotomy() {
               <h3>Halos After Surgery</h3>
               <p>Why you might see rings around lights, and when they resolve.</p>
             </Link>
+            <Link href="/insights/posterior-capsule-opacification" className="related-card">
+              <h3>Posterior Capsule Opacification Explained</h3>
+              <p>Why vision gets cloudy again after surgery, what causes it, and why it is not a complication.</p>
+            </Link>
           </div>
         </div>
       </section>

@@ -87,6 +87,7 @@ export default function MobileNav() {
             <Link href="/insights/are-premium-lenses-worth-it" onClick={close}>Are Premium Lenses Worth It?</Link>
             <Link href="/insights/not-every-patient-wants-the-same-vision" onClick={close}>Not Every Patient Wants the Same Vision</Link>
             <Link href="/insights/medicare-cataract-surgery" onClick={close}>Medicare Coverage</Link>
+            <Link href="/insights/posterior-capsule-opacification" onClick={close}>Cloudy Vision After Surgery (PCO)</Link>
             <Link href="/insights/second-opinion-cataract-surgery" onClick={close}>Getting a Second Opinion</Link>
             <Link href="/insights/second-opinion-that-changed-everything" onClick={close}>A Second Opinion That Changed Everything</Link>
             <Link href="/insights/when-cataracts-are-not-the-real-problem" onClick={close}>When Cataracts Are Not the Real Problem</Link>
