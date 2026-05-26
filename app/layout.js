@@ -4,6 +4,7 @@ import { LanguageProvider } from './LanguageContext';
 import LanguageToggle from './LanguageToggle';
 import CursorSpotlight from './components/CursorSpotlight';
 import GoogleAnalytics from './components/GoogleAnalytics';
+import SiteSearch from './components/SiteSearch';
 import './styles.css';
 
 export const metadata = {
@@ -210,6 +211,7 @@ export default function RootLayout({ children }) {
               <Link href="/education">Education</Link>
               <Link href="/faq">FAQ</Link>
               <Link href="/contact">Contact</Link>
+              <SiteSearch />
               <LanguageToggle />
             </div>
             <MobileNav />
