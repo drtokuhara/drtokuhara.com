@@ -112,6 +112,9 @@ export default function YagLaserCapsulotomy() {
       {/* INTRO */}
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{maxWidth: '600px', margin: '0 auto 36px'}}>
+            <Image src="/media/hero-posterior-capsule-opacification.png" alt="YAG laser capsulotomy treats posterior capsule opacification to restore clear vision" width={1024} height={1024} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+          </div>
           <ScrollReveal direction="up" once={true}>
             <p className="body-lead">
               "Doctor, I think my cataract came back."
