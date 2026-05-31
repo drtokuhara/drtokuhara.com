@@ -31,7 +31,7 @@ const physicianSchema = {
   "@context": "https://schema.org",
   "@type": "Physician",
   "name": "Dr. Keith Tokuhara",
-  "alternateName": "Keith Tokuhara, MD",
+  "alternateName": ["Keith Tokuhara, MD", "Dr. Tokuhara", "Dr. Keithuhara", "Dr. Takahara", "Keith Takahara", "Tokuhara ophthalmologist"],
   "description": "Fellowship-trained cataract surgeon specializing in complex and revision cataract surgery, advanced lens implants, and personalized patient care at Desert Vision Center in the Coachella Valley.",
   "url": "https://drtokuhara.com",
   "image": "https://drtokuhara.com/dr-tokuhara-hero.jpg",
@@ -974,6 +974,30 @@ export default function Home() {
           </section>
 
           <LineDraw style={{margin: '60px auto', maxWidth: '200px'}} color="var(--dune)" />
+
+          {/* ═══ AFTER YOUR SURGERY TRUST ANCHOR ═══ */}
+          <section className="lux-postop-anchor">
+            <div className="container">
+              <ScrollReveal direction="up" once={true}>
+                <div className="lux-postop-content">
+                  <p className="lux-section-eyebrow">After Your Surgery</p>
+                  <h2 className="lux-section-headline">Recovery is usually simpler<br />than patients expect</h2>
+                  <p className="lux-postop-text">
+                    But questions come up. What&rsquo;s normal. What&rsquo;s not. When to call.
+                  </p>
+                  <p className="lux-postop-text">
+                    Dr. Tokuhara&rsquo;s team is available by phone, and you&rsquo;ll be seen the next day.
+                    If something doesn&rsquo;t feel right at any point, you call. That&rsquo;s what we&rsquo;re here for.
+                  </p>
+                  <Link href="/cataract-recovery" className="lux-postop-link">
+                    Recovery Guide \u2192
+                  </Link>
+                </div>
+              </ScrollReveal>
+            </div>
+          </section>
+
+          <LineDraw style={{margin: '60px auto', maxWidth: '200px'}} color="var(--oasis)" />
 
           {/* ═══ SECTION 7: PATIENT VOICES ═══ */}
           <section className="lux-testimonials">

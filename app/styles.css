@@ -569,6 +569,42 @@ body:has(.homepage) .footer {
   color: var(--text-light);
 }
 
+/* --- POST-OP TRUST ANCHOR --- */
+.lux-postop-anchor {
+  padding: 100px 0;
+  background: var(--bg);
+}
+.lux-postop-content {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+.lux-postop-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text);
+  opacity: 0.85;
+  margin-top: 16px;
+  font-weight: 300;
+}
+.lux-postop-link {
+  display: inline-block;
+  margin-top: 32px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--mirage);
+  text-decoration: none;
+  padding: 14px 32px;
+  border: 1px solid var(--mirage);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.02em;
+}
+.lux-postop-link:hover {
+  background: var(--mirage);
+  color: var(--white);
+}
+
 /* --- TESTIMONIALS --- */
 .lux-testimonials {
   padding: 120px 0;

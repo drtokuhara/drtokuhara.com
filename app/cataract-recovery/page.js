@@ -292,6 +292,14 @@ export default function CataractRecoveryPage() {
               <h3>Your First Week After Surgery</h3>
               <p>A day-by-day guide to what is normal and what to watch for during recovery.</p>
             </Link>
+            <Link href="/yag-laser-capsulotomy" className="related-card">
+              <h3>YAG Laser Capsulotomy</h3>
+              <p>If vision gets hazy months or years after surgery, a quick in-office laser treatment can restore clarity in minutes.</p>
+            </Link>
+            <Link href="/insights/two-in-the-morning" className="related-card">
+              <h3>Two in the Morning</h3>
+              <p>The question that comes at 2 AM the night before surgery, and why calling the office is always the right move.</p>
+            </Link>
           </div>
         </div>
       </section>

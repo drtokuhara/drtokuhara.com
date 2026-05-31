@@ -321,5 +321,21 @@ export const insights = [
     cluster: 'Education / Post-Surgery',
     image: '/media/hero-posterior-capsule-opacification.png',
   },
+  {
+    slug: 'the-standard-lens-was-the-right-call',
+    title: 'The Standard Lens Was the Right Call',
+    date: 'May 2026',
+    description: 'He researched the adjustable lens, the multifocal, the extended depth of focus option. Then he chose the standard lens. Six months later, he has no regrets.',
+    cluster: 'Decisions & Timing',
+    image: '/media/elderly-man-courtyard-desert.jpg',
+  },
+  {
+    slug: 'two-in-the-morning',
+    title: 'Two in the Morning',
+    date: 'May 2026',
+    description: 'She had asked fourteen questions at the consultation. Written them on a yellow legal pad. But the fifteenth came at 2 AM the night before surgery.',
+    cluster: 'The Human Side',
+    image: '/media/senior-couple-sunlit-bedroom.jpeg',
+  },
 ];
 export default insights;

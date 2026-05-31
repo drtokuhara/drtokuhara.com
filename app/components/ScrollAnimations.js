@@ -320,10 +320,17 @@ export function CountUp({
 }) {
   const ref = useRef(null);
   const isInView = useSafeInView(ref, { once, amount: threshold });
-  const [count, setCount] = useState(start);
+  // SSR renders the real end value (SEO/accessibility). Client resets to start for animation.
+  const [count, setCount] = useState(end);
+  const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
-    if (!isInView) return;
+    setHydrated(true);
+    setCount(start);
+  }, [start]);
+
+  useEffect(() => {
+    if (!isInView || !hydrated) return;
 
     let startTime = null;
     const animate = (timestamp) => {
@@ -336,7 +343,7 @@ export function CountUp({
     };
 
     requestAnimationFrame(animate);
-  }, [isInView, start, end, duration, decimals]);
+  }, [isInView, hydrated, start, end, duration, decimals]);
 
   return (
     <span ref={ref} className={className} style={style}>

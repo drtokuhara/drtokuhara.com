@@ -308,6 +308,10 @@ export default function InsightChoosingTheStandardLens() {
               <h3>When More Isn't Better</h3>
               <p>More focal points don't always mean better vision for everyone.</p>
             </Link>
+            <Link href="/insights/the-standard-lens-was-the-right-call" className="related-card">
+              <h3>The Standard Lens Was the Right Call</h3>
+              <p>A patient who researched every premium option, chose the standard lens, and six months later has no regrets.</p>
+            </Link>
             <Link href="/insights/best-lens-for-night-driving" className="related-card">
               <h3>Best Lens for Night Driving</h3>
               <p>What really matters for clear, glare-free night vision after cataract surgery.</p>

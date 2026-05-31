@@ -180,6 +180,7 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/best-lens-for-night-driving">Best Lens for Night Driving</Link>
                     <Link href="/insights/are-premium-lenses-worth-it">Are Premium Lenses Worth It?</Link>
                     <Link href="/insights/choosing-the-standard-lens">The Standard Lens</Link>
+                    <Link href="/insights/the-standard-lens-was-the-right-call">The Standard Lens Was Right</Link>
                     <Link href="/insights/toric-lens-astigmatism">Toric Lens / Astigmatism</Link>
                     <Link href="/insights/the-lens-nobody-talks-about">The Lens Nobody Talks About</Link>
                     <Link href="/insights/when-ai-recommends-your-lens">When AI Recommends Your Lens</Link>
@@ -200,6 +201,7 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/when-the-unexpected-leads-to-the-right-outcome">When the Unexpected Leads Right</Link>
                     <Link href="/insights/when-the-eye-surface-changes-everything">When the Eye Surface Changes</Link>
                     <Link href="/insights/when-experience-speaks">When Experience Speaks</Link>
+                    <Link href="/insights/two-in-the-morning">Two in the Morning</Link>
                     <Link href="/insights/the-capsule-is-sacred">The Capsule Is Sacred</Link>
                     <Link href="/insights/cataract-referral-kickbacks">Referral Kickbacks</Link>
                     <Link href="/insights/what-i-learned-from-the-surgeon-who-trained-me">The Surgeon Who Trained Me</Link>

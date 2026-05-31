@@ -379,6 +379,10 @@ export default function YagLaserCapsulotomy() {
               <h3>Posterior Capsule Opacification Explained</h3>
               <p>Why vision gets cloudy again after surgery, what causes it, and why it is not a complication.</p>
             </Link>
+            <Link href="/cataract-recovery" className="related-card">
+              <h3>Cataract Recovery Guide</h3>
+              <p>What to expect in the days and weeks after cataract surgery, from eye drops to follow-up visits.</p>
+            </Link>
           </div>
         </div>
       </section>

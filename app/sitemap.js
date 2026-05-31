@@ -127,6 +127,8 @@ export default function sitemap() {
     '/insights/when-cataracts-are-not-the-real-problem',
     '/insights/not-every-patient-wants-the-same-vision',
     '/insights/posterior-capsule-opacification',
+    '/insights/the-standard-lens-was-the-right-call',
+    '/insights/two-in-the-morning',
   ].map((path) => ({ path, priority: 0.6, changeFrequency: 'monthly' }));
 
   // City landing pages - local SEO

@@ -292,6 +292,10 @@ export default function InsightFirstWeek() {
               <h3>Life After Cataract Surgery</h3>
               <p>Five things patients say they did not expect after the procedure.</p>
             </Link>
+            <Link href="/yag-laser-capsulotomy" className="related-card">
+              <h3>YAG Laser Capsulotomy</h3>
+              <p>If vision gets hazy months later, a quick in-office laser treatment restores clarity. Here is what to expect.</p>
+            </Link>
           </div>
         </div>
       </section>
