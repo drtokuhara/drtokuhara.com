@@ -200,6 +200,7 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/the-eye-you-least-suspect">The Eye You Least Suspect</Link>
                     <Link href="/insights/when-experience-speaks">When Experience Speaks</Link>
                     <Link href="/insights/the-patient-i-never-saw-again">The Patient I Never Saw Again</Link>
+                    <Link href="/insights/the-week-everything-changed">The Week Everything Changed</Link>
                     <Link href="/insights/what-i-learned-from-the-surgeon-who-trained-me">The Surgeon Who Trained Me</Link>
                     <Link href="/insights/the-capsule-is-sacred">The Capsule Is Sacred</Link>
                     <Link href="/gimbel-heritage" style={{color: 'var(--oasis)', fontWeight: 600, marginTop: '8px'}}>The Gimbel Heritage Series</Link>

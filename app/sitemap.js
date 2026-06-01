@@ -133,6 +133,7 @@ export default function sitemap() {
     '/insights/the-bicycle-rider-and-the-binoculars',
     '/insights/the-lens-we-didnt-implant',
     '/insights/the-patient-i-never-saw-again',
+    '/insights/the-week-everything-changed',
   ].map((path) => ({ path, priority: 0.6, changeFrequency: 'monthly' }));
 
   // City landing pages - local SEO

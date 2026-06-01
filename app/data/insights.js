@@ -369,5 +369,13 @@ export const insights = [
     cluster: 'Real Patient Stories',
     image: '/media/couple-evening-walk-palm-trees.jpg',
   },
+  {
+    slug: 'the-week-everything-changed',
+    title: 'The Week Everything Changed',
+    date: 'May 2026',
+    description: 'Two weeks after surgery, her life changed completely. The lens that was perfect for the life she had was wrong for the life she was about to live.',
+    cluster: 'Real Patient Stories',
+    image: '/media/elderly-woman-walker-courtyard.jpg',
+  },
 ];
 export default insights;

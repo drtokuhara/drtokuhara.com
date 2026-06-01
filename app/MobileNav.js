@@ -97,6 +97,7 @@ export default function MobileNav() {
             <Link href="/insights/the-bicycle-rider-and-the-binoculars" onClick={close}>The Bicycle Rider and Anisometropia</Link>
             <Link href="/insights/the-lens-we-didnt-implant" onClick={close}>The Lens We Didn't Implant</Link>
             <Link href="/insights/the-patient-i-never-saw-again" onClick={close}>The Patient I Never Saw Again</Link>
+            <Link href="/insights/the-week-everything-changed" onClick={close}>The Week Everything Changed</Link>
 
             <p className="mobile-nav-label">Learn</p>
             <Link href="/about" onClick={close}>About Dr. Tokuhara</Link>
