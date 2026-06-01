@@ -361,5 +361,13 @@ export const insights = [
     cluster: 'Honest Answers',
     image: '/media/patient-elderly-man-calm.jpg',
   },
+  {
+    slug: 'the-patient-i-never-saw-again',
+    title: 'The Patient I Never Saw Again',
+    date: 'May 2026',
+    description: 'His vision went from count fingers to 20/20 overnight. Then he disappeared. Twenty years later, I still think about what happened next.',
+    cluster: 'Real Patient Stories',
+    image: '/media/couple-evening-walk-palm-trees.jpg',
+  },
 ];
 export default insights;
