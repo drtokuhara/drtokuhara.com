@@ -61,6 +61,7 @@ export default function sitemap() {
     { path: '/dry-eyes-desert', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/dust-in-eyes', priority: 0.5, changeFrequency: 'monthly' },
     { path: '/posterior-subcapsular-cataract', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/narrow-angle-cataract', priority: 0.7, changeFrequency: 'monthly' },
   ];
 
   // Complex case subpages

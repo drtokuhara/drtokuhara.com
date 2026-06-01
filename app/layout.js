@@ -106,6 +106,7 @@ export default function RootLayout({ children }) {
                     <Link href="/dysphotopsia-after-cataract-surgery">Dysphotopsia</Link>
                     <Link href="/dropped-lens-after-cataract-surgery">Dropped Lens</Link>
                     <Link href="/glaucoma">Glaucoma</Link>
+                    <Link href="/narrow-angle-cataract">Narrow Angles + Cataracts</Link>
                     <Link href="/diabetic-retinopathy">Diabetic Retinopathy</Link>
                     <Link href="/dry-eyes-desert">Dry Eyes / Desert</Link>
                     <Link href="/monocular-cataract-surgery">Monocular Eye Surgery</Link>
