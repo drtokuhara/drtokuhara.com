@@ -127,9 +127,11 @@ export default function sitemap() {
     '/insights/when-cataracts-are-not-the-real-problem',
     '/insights/not-every-patient-wants-the-same-vision',
     '/insights/posterior-capsule-opacification',
+    '/insights/blepharitis-demodex-red-itchy-eyes',
     '/insights/the-standard-lens-was-the-right-call',
     '/insights/two-in-the-morning',
     '/insights/the-bicycle-rider-and-the-binoculars',
+    '/insights/the-lens-we-didnt-implant',
   ].map((path) => ({ path, priority: 0.6, changeFrequency: 'monthly' }));
 
   // City landing pages - local SEO

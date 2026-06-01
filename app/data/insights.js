@@ -1,5 +1,13 @@
 export const insights = [
   {
+    slug: 'blepharitis-demodex-red-itchy-eyes',
+    title: 'Blepharitis and Demodex: The Hidden Cause of Red, Itchy Eyes',
+    date: 'June 2026',
+    description: 'Red, itchy, irritated eyes that never quite go away? Blepharitis and Demodex mites are among the most common and most overlooked causes. What they are, why they matter for cataract surgery, and how to treat them.',
+    cluster: 'Education',
+    image: '/media/eye-closeup-single.png',
+  },
+  {
     slug: 'choosing-the-standard-lens',
     title: 'The Standard Lens Is Not a Consolation Prize',
     date: 'May 2026',
@@ -344,6 +352,14 @@ export const insights = [
     description: 'A 75-year-old cyclist described the vision imbalance between his eyes as turning a binocular focusing wheel that never quite gets there. It was the most accurate description of anisometropia I have ever heard.',
     cluster: 'Real Patient Stories',
     image: '/media/lifestyle-couple-cycling-palm-desert.jpg',
+  },
+  {
+    slug: 'the-lens-we-didnt-implant',
+    title: 'The Lens We Didn\'t Implant',
+    date: 'May 2026',
+    description: 'Every measurement said toric. The operating room said otherwise. When intraoperative data contradicts the plan, the best surgeons listen.',
+    cluster: 'Honest Answers',
+    image: '/media/patient-elderly-man-calm.jpg',
   },
 ];
 export default insights;

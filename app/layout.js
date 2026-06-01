@@ -170,10 +170,12 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/laser-vs-traditional-cataract-surgery">Laser vs Traditional</Link>
                     <Link href="/insights/what-is-ora-machine">The ORA Machine</Link>
                     <Link href="/insights/posterior-capsule-opacification">Cloudy Vision After Surgery (PCO)</Link>
+                    <Link href="/insights/blepharitis-demodex-red-itchy-eyes">Blepharitis & Demodex</Link>
                     <span className="nav-mega-label" style={{marginTop: '16px'}}>Honest Answers</span>
                     <Link href="/insights/when-cataract-surgery-goes-wrong">When Surgery Goes Wrong</Link>
                     <Link href="/insights/cataract-referral-kickbacks">Referral Kickbacks</Link>
                     <Link href="/insights/when-guilt-replaces-explanation">When Guilt Replaces Explanation</Link>
+                    <Link href="/insights/the-lens-we-didnt-implant">The Lens We Didn't Implant</Link>
                   </div>
                   <div className="nav-mega-col">
                     <span className="nav-mega-label">Lens Options</span>

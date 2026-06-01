@@ -184,6 +184,10 @@ export default function InsightWhenTheEyeSurfaceChangesEverything() {
               <h3>The Eye You Least Suspect</h3>
               <p>He assumed his right eye was getting worse. The real problem was in his left.</p>
             </Link>
+            <Link href="/insights/blepharitis-demodex-red-itchy-eyes" className="related-card">
+              <h3>Blepharitis and Demodex</h3>
+              <p>The most common and most overlooked cause of chronic red, itchy eyes. Why it matters before cataract surgery.</p>
+            </Link>
             <Link href="/insights/the-number-that-wasnt-the-problem" className="related-card">
               <h3>The Number That Wasn't the Problem</h3>
               <p>When astigmatism looked fixable but the real issue was something else.</p>
