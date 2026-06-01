@@ -98,6 +98,7 @@ export default function RootLayout({ children }) {
                   <div className="nav-mega-col">
                     <span className="nav-mega-label">Eye Conditions</span>
                     <Link href="/understanding-cataracts">Understanding Cataracts</Link>
+                    <Link href="/posterior-subcapsular-cataract">PSC Cataracts</Link>
                     <Link href="/yag-laser-capsulotomy">YAG Laser / PCO</Link>
                     <Link href="/blurry-vision-after-cataract-surgery">Blurry Vision After Surgery</Link>
                     <Link href="/halos-after-cataract-surgery">Halos After Surgery</Link>

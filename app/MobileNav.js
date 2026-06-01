@@ -71,6 +71,7 @@ export default function MobileNav() {
             <Link href="/patient-journey" onClick={close}>Your Journey</Link>
             <Link href="/cataract-pre-op" onClick={close}>Pre-Op Guide</Link>
             <Link href="/cataract-recovery" onClick={close}>Recovery</Link>
+            <Link href="/posterior-subcapsular-cataract" onClick={close}>PSC Cataracts</Link>
             <Link href="/my-cataract-drops" onClick={close}>My Cataract Drops App</Link>
             <Link href="/choosing-your-surgeon" onClick={close}>Choosing a Surgeon</Link>
 

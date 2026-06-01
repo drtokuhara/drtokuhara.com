@@ -280,6 +280,10 @@ export default function UnderstandingCataracts() {
               <h3>Permission to See Again</h3>
               <p>A story about a woman who waited six years, and why that was okay.</p>
             </Link>
+            <Link href="/posterior-subcapsular-cataract" className="related-card">
+              <h3>Posterior Subcapsular Cataracts</h3>
+              <p>The fast-moving cataract linked to diabetes, steroids, and younger patients. Why it causes severe symptoms and when surgery is needed.</p>
+            </Link>
           </div>
         </div>
       </section>
