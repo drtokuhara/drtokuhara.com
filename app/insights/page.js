@@ -8,12 +8,12 @@ import InsightsSearch from '../components/InsightsSearch';
 import insights from '../data/insights';
 
 export const metadata = {
-  title: 'Insights from the Clinic',
-  description: 'Clinical reflections from Dr. Keith Tokuhara on cataract surgery, lens implant decisions, IOL selection, and the things about eye care that don\'t fit in a brochure.',
+  title: 'Patient Stories & Guides | Dr. Keith Tokuhara',
+  description: 'Real patient stories, honest answers, and practical guides about cataract surgery from Dr. Keith Tokuhara. What to expect, how to decide, and what other patients experienced.',
   alternates: { canonical: '/insights' },
   openGraph: {
-    title: 'Insights from the Clinic | Dr. Keith Tokuhara',
-    description: 'Real clinical stories and reflections on cataracts, surgery decisions, and patient care from a Coachella Valley ophthalmologist.',
+    title: 'Patient Stories & Guides | Dr. Keith Tokuhara',
+    description: 'Real patient stories, honest answers, and practical guides about cataract surgery from a Coachella Valley ophthalmologist.',
     url: 'https://drtokuhara.com/insights',
   },
 };
@@ -23,8 +23,8 @@ export const metadata = {
 const insightsSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Insights from the Clinic',
-  description: 'Clinical reflections from Dr. Keith Tokuhara on cataract surgery, lens implant decisions, and patient care.',
+  name: 'Patient Stories & Guides',
+  description: 'Real patient stories, honest answers, and practical guides about cataract surgery from Dr. Keith Tokuhara.',
   url: 'https://drtokuhara.com/insights',
   author: {
     '@type': 'Physician',
@@ -35,7 +35,7 @@ const insightsSchema = {
 
 const breadcrumbs = breadcrumbSchema([
   { name: 'Home', href: '/' },
-  { name: 'Insights', href: '/insights' },
+  { name: 'Patient Stories', href: '/insights' },
 ]);
 
 export default function InsightsPage() {
@@ -53,8 +53,8 @@ export default function InsightsPage() {
       >
         <div className="container">
           <ScrollReveal direction="up" once={true}>
-            <h1>Insights from the <strong>Clinic</strong></h1>
-            <p className="page-hero-sub">These aren't medical articles. They're reflections - on the patients I see, the decisions we navigate together, and what I've learned about the space between a diagnosis and a choice.</p>
+            <h1>Patient Stories <strong>&amp; Guides</strong></h1>
+            <p className="page-hero-sub">Real experiences from real patients. Honest answers to the questions people ask before, during, and after cataract surgery.</p>
           </ScrollReveal>
         </div>
       </VideoBackground>

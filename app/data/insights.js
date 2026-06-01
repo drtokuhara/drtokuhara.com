@@ -4,7 +4,7 @@ export const insights = [
     title: 'The Standard Lens Is Not a Consolation Prize',
     date: 'May 2026',
     description: 'The standard monofocal lens delivers excellent distance vision. For many patients, it is the right choice. Not a downgrade, not a compromise. When and why the standard lens is genuinely the best option.',
-    cluster: 'Lens Selection',
+    cluster: 'Lens Options',
     image: '/media/hero-standard-lens-cataract-surgery.png',
   },
   {
@@ -12,7 +12,7 @@ export const insights = [
     title: 'Laser vs Traditional Cataract Surgery: What\'s the Real Difference?',
     date: 'May 2026',
     description: 'Patients hear "laser" and assume it is automatically better. The truth is more nuanced. What the femtosecond laser actually does, what it does not do, and how to decide which approach is right for your eyes.',
-    cluster: 'The Procedure',
+    cluster: 'Surgery & Recovery',
     image: '/media/stock-couple-patio-scenic-view.jpg',
   },
   {
@@ -20,7 +20,7 @@ export const insights = [
     title: 'Do I Really Need Cataract Surgery Right Now? How to Know When It\'s Time',
     date: 'May 2026',
     description: 'The most common question in cataract consultations. No emergency, no rush, but waiting too long has real risks. How to self-assess, what happens when patients delay, and why the decision is always yours.',
-    cluster: 'Decisions & Timing',
+    cluster: 'Before You Decide',
     image: '/media/stock-couple-lawn-sunset-coachella.jpg',
   },
   {
@@ -28,7 +28,7 @@ export const insights = [
     title: 'How to Choose a Cataract Surgeon: 5 Things That Actually Matter',
     date: 'May 2026',
     description: 'Fellowship training, surgical volume, complication management, physician independence, and honest communication. Here is what I would tell my own family about choosing a cataract surgeon.',
-    cluster: 'Choosing Your Surgeon',
+    cluster: 'Before You Decide',
     image: '/media/stock-couple-outdoor-sunshine.jpg',
   },
   {
@@ -36,7 +36,7 @@ export const insights = [
     title: 'When Cataract Surgery Doesn\'t Go As Planned',
     date: 'May 2026',
     description: 'Posterior capsule rupture, dislocated lenses, retained fragments, cloudy vision, premium lens problems. If something went wrong, you deserve answers. Most complications can be evaluated, explained, and often improved.',
-    cluster: 'Complications & Trust',
+    cluster: 'Honest Answers',
     image: '/media/hero-when-surgery-doesnt-go-as-planned.png',
     href: '/when-cataract-surgery-doesnt-go-as-planned',
   },
@@ -45,7 +45,7 @@ export const insights = [
     title: 'What Happens When Cataract Surgery Goes Wrong (And How We Fix It)',
     date: 'May 2026',
     description: 'Complications are rare but real. What separates a good surgeon is how they handle the unexpected. An honest look at capsule tears, dropped lenses, IOL exchanges, and why experience matters most.',
-    cluster: 'Complications & Trust',
+    cluster: 'Honest Answers',
     image: '/media/stock-couple-desert-overlook.jpg',
   },
   {
@@ -53,7 +53,7 @@ export const insights = [
     title: 'When Experience Speaks',
     date: 'May 2026',
     description: 'The principles a surgeon carries into every operating room are invisible. But they determine everything. A reflection on Dr. Howard Gimbel, intergenerational surgical wisdom, and a case where decades of training made all the difference.',
-    cluster: 'Surgical Heritage',
+    cluster: 'Real Patient Stories',
     image: '/media/stock-seniors-formal-resort-dusk.jpg',
   },
   {
@@ -61,7 +61,7 @@ export const insights = [
     title: 'Cataract Surgery Step by Step: What Actually Happens',
     date: 'May 2026',
     description: 'A surgeon with over 20,000 procedures walks you through exactly what happens before, during, and after cataract surgery. No jargon, no sugarcoating.',
-    cluster: 'The Procedure',
+    cluster: 'Surgery & Recovery',
     image: '/media/hero-cataract-surgery-step-by-step.png',
   },
   {
@@ -69,7 +69,7 @@ export const insights = [
     title: 'Your First Week After Cataract Surgery: Day by Day',
     date: 'May 2026',
     description: 'What to expect each day during your first week of recovery. What is normal, what is not, when to call, and why the drops matter more than you think.',
-    cluster: 'Recovery',
+    cluster: 'Surgery & Recovery',
     image: '/media/hero-first-week-after-cataract-surgery.png',
   },
   {
@@ -77,7 +77,7 @@ export const insights = [
     title: 'Is Cataract Surgery Painful? Here\'s the Honest Answer',
     date: 'May 2026',
     description: 'The fear of pain keeps more patients from cataract surgery than any other concern. Here is what you actually feel, what you see, and why the anticipation is almost always worse than the reality.',
-    cluster: 'Fear & Reassurance',
+    cluster: 'Surgery & Recovery',
     image: '/media/stock-woman-portrait-sunlit-resort.jpg',
   },
   {
@@ -85,7 +85,7 @@ export const insights = [
     title: 'The Lens Nobody Talks About',
     date: 'May 2026',
     description: 'He arrived with a folder full of research, convinced he needed the most expensive multifocal lens. His dry eye and early macular changes told a different story. The best lens is the one that matches your eyes, not the one that costs the most.',
-    cluster: 'Lens Selection',
+    cluster: 'Lens Options',
     image: '/media/stock-couple-bar-golf-view.jpg',
   },
   {
@@ -93,7 +93,7 @@ export const insights = [
     title: 'What I Learned From the Surgeon Who Trained Me',
     date: 'May 2026',
     description: 'A residency moment with Dr. Howard Gimbel that changed everything. Not a technique, but a principle: your reaction to the complication is the problem. How mentorship shapes not just skill, but surgical philosophy.',
-    cluster: 'Philosophy of Care',
+    cluster: 'Real Patient Stories',
     image: '/media/elderly-man-courtyard-desert.jpg',
   },
   {
@@ -101,7 +101,7 @@ export const insights = [
     title: 'Twenty Years Forward',
     date: 'May 2026',
     description: 'She thought she just needed new glasses. Her optician adjusted her prescription every year, but things still weren\'t right. The exam revealed cataracts. A reflection on how patients accept gradual vision loss as aging, and the consultation that changes everything.',
-    cluster: 'Clinical Insight',
+    cluster: 'Real Patient Stories',
     image: '/media/stock-seniors-resort-promenade-night.jpg',
   },
   {
@@ -109,7 +109,7 @@ export const insights = [
     title: 'When the Eye Surface Changes Everything',
     date: 'May 2026',
     description: 'She did everything right. Multiple adjustment treatments, long drives to Los Angeles, months of follow-up visits. But her vision never settled. The problem was not the lens. It was the surface of the eye.',
-    cluster: 'Clinical Insight',
+    cluster: 'Real Patient Stories',
     image: '/media/stock-woman-portrait-pool-dusk.jpg',
   },
   {
@@ -117,7 +117,7 @@ export const insights = [
     title: 'When the Unexpected Leads to the Right Outcome',
     date: 'May 2026',
     description: 'A surgical complication left him with hand-motion vision. What looked like a catastrophe revealed a hidden condition that changed everything we thought we knew about his eyes.',
-    cluster: 'Patient Stories',
+    cluster: 'Real Patient Stories',
     image: '/media/stock-couple-stargazing-desert.jpg',
   },
   {
@@ -125,7 +125,7 @@ export const insights = [
     title: 'The Eye You Least Suspect',
     date: 'May 2026',
     description: 'He assumed his right eye was getting worse. The real problem was in his left: wet macular degeneration had emerged silently. A reflection on anchoring bias, diagnostic humility, and why we examine both eyes every time.',
-    cluster: 'Clinical Insight',
+    cluster: 'Real Patient Stories',
     image: '/media/stock-man-portrait-outdoor-dining.jpg',
   },
   {
@@ -133,7 +133,7 @@ export const insights = [
     title: 'The Consultation That Changed Everything',
     date: 'May 2026',
     description: 'Harold Baird had been to three ophthalmologists in ten-minute appointments before he came to see me. His first visit with me lasted 70 minutes. This is what a consultation should feel like.',
-    cluster: 'Philosophy of Care',
+    cluster: 'Real Patient Stories',
     image: '/media/stock-couple-brunch-patio.jpg',
   },
   {
@@ -141,7 +141,7 @@ export const insights = [
     title: 'The Needle That Wasn\'t There',
     date: 'May 2026',
     description: 'An 86-year-old woman avoided surgery for years because of a needle that is no longer used. Her late husband was an ophthalmologist. A story about outdated fears and how medicine evolves.',
-    cluster: 'Decisions & Timing',
+    cluster: 'Before You Decide',
     image: '/media/elderly-woman-poolside-desert.jpg',
   },
   {
@@ -149,7 +149,7 @@ export const insights = [
     title: '"Do I Really Need Cataract Surgery Yet?"',
     date: 'May 2026',
     description: 'A 70-year-old man was told surgery could eliminate his glasses. His vision was 20/25+. After an honest exam, we decided together to wait.',
-    cluster: 'Surgical Restraint',
+    cluster: 'Before You Decide',
     image: '/media/stock-man-walking-dog-sunset.png',
   },
   {
@@ -157,7 +157,7 @@ export const insights = [
     title: 'When the Surgeon Says Wait',
     date: 'May 2026',
     description: 'Many surgeons default to yes because surgery generates revenue. A reflection on the courage it takes to tell a patient they are not ready, and why that honesty builds lasting trust.',
-    cluster: 'Surgical Restraint',
+    cluster: 'Before You Decide',
     image: '/media/stock-seniors-evening-stroll.jpg',
   },
   {
@@ -165,7 +165,7 @@ export const insights = [
     title: 'When AI Recommends Your Lens... But Your Eye Tells a Different Story',
     date: 'May 2026',
     description: 'A patient used AI to choose his cataract lens. Every tool agreed. But his eyes told a different story. A reflection on the limits of AI in medicine.',
-    cluster: 'Clinical Judgment',
+    cluster: 'Real Patient Stories',
     image: '/media/stock-couple-market-sunlight.jpg',
   },
   {
@@ -173,7 +173,7 @@ export const insights = [
     title: 'Are Premium Lens Implants Worth It?',
     date: 'May 2026',
     description: 'An honest reflection on premium versus standard lens implants. The answer depends on your life, your eyes, and the quality of your pre-surgical conversation.',
-    cluster: 'Lens Selection',
+    cluster: 'Lens Options',
     image: '/media/stock-couple-pool-mountain-view.jpg',
   },
   {
@@ -181,7 +181,7 @@ export const insights = [
     title: '5 Questions to Ask Before Cataract Surgery',
     date: 'May 2026',
     description: 'Your surgeon should welcome every one of them. The five most important questions to ask before cataract surgery, and what the answers reveal.',
-    cluster: 'Decisions & Timing',
+    cluster: 'Before You Decide',
     image: '/media/stock-couple-outdoor-dining-view.jpg',
   },
   {
@@ -189,7 +189,7 @@ export const insights = [
     title: 'Three Things Patients Say That Tell Me Which Lens to Recommend',
     date: 'May 2026',
     description: 'Your words tell me more than any chart. How three common statements in the exam room reveal which lens implant fits your life.',
-    cluster: 'Lens Selection',
+    cluster: 'Lens Options',
     image: '/media/stock-couple-art-interior.jpg',
   },
   {
@@ -197,7 +197,7 @@ export const insights = [
     title: 'When Is the Right Time for Cataract Surgery?',
     date: 'April 2026',
     description: 'The question I hear more than any other. There is no magic number. The right time depends on your life, not a chart.',
-    cluster: 'Decisions & Timing',
+    cluster: 'Before You Decide',
     image: '/media/stock-couple-sunset-cooking.jpg',
   },
   {
@@ -205,7 +205,7 @@ export const insights = [
     title: 'When Patients Wait',
     date: 'April 2026',
     description: 'Her outcome was excellent. Her biggest regret was that she didn\'t do it sooner. The psychology of timing, outcome bias, and why readiness is not the same as candidacy.',
-    cluster: 'Decisions & Timing',
+    cluster: 'Before You Decide',
     image: '/media/elderly-woman-window-desert-view.png',
   },
   {
@@ -213,7 +213,7 @@ export const insights = [
     title: 'The Man Who Wanted His Younger Eyes Back',
     date: 'April 2026',
     description: 'He didn\'t just want better vision. He wanted to feel the way he did before glasses became part of his identity. Sometimes the most important surgical decision is choosing to wait.',
-    cluster: 'Decisions & Timing',
+    cluster: 'Before You Decide',
     image: '/media/stock-men-car-show.jpg',
   },
   {
@@ -221,7 +221,7 @@ export const insights = [
     title: 'When Guilt Replaces Explanation',
     date: 'April 2026',
     description: 'A patient was told his cataract complication was his fault. It wasn\'t. What happens when blame replaces compassion in medicine.',
-    cluster: 'Ethics & Trust',
+    cluster: 'Honest Answers',
     image: '/media/x-patient-contemplation-waiting-room.jpg',
   },
   {
@@ -229,7 +229,7 @@ export const insights = [
     title: 'The Reader Who Almost Gave Up Her Books',
     date: 'April 2026',
     description: 'An 81-year-old avid reader delayed surgery for years because nobody told her she had a choice about how she would see afterward.',
-    cluster: 'Lens Selection',
+    cluster: 'Lens Options',
     image: '/media/stock-woman-dog-livingroom.png',
   },
   {
@@ -237,7 +237,7 @@ export const insights = [
     title: 'Permission to See Again',
     date: 'April 2026',
     description: 'A woman spent six years caring for her husband. When she finally came in for her own eyes, she didn\'t need a surgical plan. She needed permission.',
-    cluster: 'Decision Making',
+    cluster: 'Before You Decide',
     image: '/media/stock-family-golden-hour-walk.jpg',
   },
   {
@@ -245,7 +245,7 @@ export const insights = [
     title: 'The Number That Wasn\'t the Problem',
     date: 'April 2026',
     description: 'A man with keratoconus saw residual astigmatism after cataract surgery and wanted a lens exchange. The real answer was understanding why that number wasn\'t what it seemed.',
-    cluster: 'Surgical Restraint',
+    cluster: 'Honest Answers',
     image: '/media/stock-friends-indoor-portrait.jpg',
   },
   {
@@ -253,7 +253,7 @@ export const insights = [
     title: 'Life After Cataract Surgery: 5 Things Patients Say They Didn\'t Expect',
     date: 'May 2026',
     description: 'Brighter colors, better night driving, emotional moments, and the most common reaction: why didn\'t I do this sooner? Real things patients report after cataract surgery that nobody warned them about.',
-    cluster: 'Patient Stories',
+    cluster: 'Real Patient Stories',
     image: '/media/stock-couple-wildflower-field.jpg',
   },
   {
@@ -261,7 +261,7 @@ export const insights = [
     title: 'What Are Cataract Referral Kickbacks? What Every Patient Should Know',
     date: 'May 2026',
     description: 'Some eye care providers receive financial incentives for referring patients to specific surgeons. Co-management fees, facility ownership, referral patterns, and why physician independence matters.',
-    cluster: 'Ethics & Trust',
+    cluster: 'Honest Answers',
     image: '/media/stock-group-cafe-outdoor.jpg',
   },
   {
@@ -269,7 +269,7 @@ export const insights = [
     title: 'When More Isn\'t Better',
     date: 'April 2026',
     description: 'A 32-year-old had a multifocal lens, then a YAG, then LASIK. A year later she still wasn\'t seeing right. Sometimes each fix creates the need for the next one.',
-    cluster: 'Expectations & Reality',
+    cluster: 'Lens Options',
     image: '/media/stock-woman-portrait-evening-glamour.jpg',
   },
   {
@@ -277,7 +277,7 @@ export const insights = [
     title: 'What Is the ORA Machine in Cataract Surgery?',
     date: 'May 2026',
     description: 'Intraoperative aberrometry sounds impressive. But what does the ORA machine actually do, when does it help, and when should you not rely on it? A surgeon\'s honest take.',
-    cluster: 'The Procedure',
+    cluster: 'Surgery & Recovery',
     image: '/media/stock-couple-night-restaurant.jpg',
   },
   {
@@ -285,7 +285,7 @@ export const insights = [
     title: 'Getting a Second Opinion Before Cataract Surgery',
     date: 'May 2026',
     description: 'If something feels off about the plan, the pressure, or the conversation, a second opinion is not an insult. It is good judgment. Here is what to look for.',
-    cluster: 'Ethics & Trust',
+    cluster: 'Before You Decide',
     image: '/media/stock-couple-evening-walk-dog.jpg',
   },
   {
@@ -293,7 +293,7 @@ export const insights = [
     title: 'PanOptix vs PanOptix Pro: What Changed and Does It Matter?',
     date: 'May 2026',
     description: 'An honest comparison of both generations of Alcon\'s trifocal lens. What improved in the Pro, whether it matters for your surgery, and a patient who has one of each.',
-    cluster: 'Lens Selection',
+    cluster: 'Lens Options',
     image: '/media/hero-panoptix-vs-panoptix-pro.png',
     href: '/panoptix-vs-panoptix-pro',
   },
@@ -302,7 +302,7 @@ export const insights = [
     title: 'What Happens at a Cataract Pre-Op Appointment',
     date: 'May 2026',
     description: 'The appointment before surgery is where the real decisions happen. What measurements are taken, what questions to ask, and why this visit matters more than you think.',
-    cluster: 'The Procedure',
+    cluster: 'Surgery & Recovery',
     image: '/media/stock-couple-sunny-pathway-luxury.jpg',
   },
   {
@@ -310,7 +310,7 @@ export const insights = [
     title: 'Does Medicare Cover Cataract Surgery?',
     date: 'May 2026',
     description: 'The short answer is yes. The longer answer involves understanding what is covered, what is not, and where the real out-of-pocket costs come from.',
-    cluster: 'Decisions & Timing',
+    cluster: 'Before You Decide',
     image: '/media/stock-couple-produce-market.jpg',
   },
   {
@@ -318,7 +318,7 @@ export const insights = [
     title: 'When Vision Gets Cloudy Again After Cataract Surgery',
     date: 'May 2026',
     description: 'Your cataract surgery went well. Your vision was clear. Then it started to blur again. Posterior capsule opacification is not a failed surgery. It is one of the most common, predictable, and treatable events in ophthalmology.',
-    cluster: 'Education / Post-Surgery',
+    cluster: 'Surgery & Recovery',
     image: '/media/hero-posterior-capsule-opacification.png',
   },
   {
@@ -326,7 +326,7 @@ export const insights = [
     title: 'The Standard Lens Was the Right Call',
     date: 'May 2026',
     description: 'He researched the adjustable lens, the multifocal, the extended depth of focus option. Then he chose the standard lens. Six months later, he has no regrets.',
-    cluster: 'Decisions & Timing',
+    cluster: 'Lens Options',
     image: '/media/elderly-man-courtyard-desert.jpg',
   },
   {
@@ -334,7 +334,7 @@ export const insights = [
     title: 'Two in the Morning',
     date: 'May 2026',
     description: 'She had asked fourteen questions at the consultation. Written them on a yellow legal pad. But the fifteenth came at 2 AM the night before surgery.',
-    cluster: 'The Human Side',
+    cluster: 'Real Patient Stories',
     image: '/media/senior-couple-sunlit-bedroom.jpeg',
   },
   {
@@ -342,7 +342,7 @@ export const insights = [
     title: 'The Bicycle Rider Who Taught Me About Anisometropia',
     date: 'May 2026',
     description: 'A 75-year-old cyclist described the vision imbalance between his eyes as turning a binocular focusing wheel that never quite gets there. It was the most accurate description of anisometropia I have ever heard.',
-    cluster: 'The Human Side',
+    cluster: 'Real Patient Stories',
     image: '/media/lifestyle-couple-cycling-palm-desert.jpg',
   },
 ];

@@ -74,8 +74,8 @@ export default function MobileNav() {
             <Link href="/my-cataract-drops" onClick={close}>My Cataract Drops App</Link>
             <Link href="/choosing-your-surgeon" onClick={close}>Choosing a Surgeon</Link>
 
-            <p className="mobile-nav-label">Insights</p>
-            <Link href="/insights" onClick={close}>All Insights</Link>
+            <p className="mobile-nav-label">Patient Stories</p>
+            <Link href="/insights" onClick={close}>All Stories & Guides</Link>
             <Link href="/insights/cataract-surgery-step-by-step" onClick={close}>Step by Step</Link>
             <Link href="/insights/what-you-see-during-cataract-surgery" onClick={close}>What You See During Surgery</Link>
             <Link href="/insights/is-cataract-surgery-painful" onClick={close}>Is It Painful?</Link>

@@ -5,6 +5,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Fuse from 'fuse.js';
 
+const CATEGORIES = [
+  { label: 'All', value: null },
+  { label: 'Before You Decide', value: 'Before You Decide' },
+  { label: 'Surgery & Recovery', value: 'Surgery & Recovery' },
+  { label: 'Lens Options', value: 'Lens Options' },
+  { label: 'Real Patient Stories', value: 'Real Patient Stories' },
+  { label: 'Honest Answers', value: 'Honest Answers' },
+];
+
 const fuseOptions = {
   keys: [
     { name: 'title', weight: 0.4 },
@@ -20,6 +29,7 @@ export default function InsightsSearch({ insights }) {
   const [query, setQuery] = useState('');
   const [debouncedQuery, setDebouncedQuery] = useState('');
   const [debounceTimer, setDebounceTimer] = useState(null);
+  const [activeCategory, setActiveCategory] = useState(null);
 
   const fuse = useMemo(() => new Fuse(insights, fuseOptions), [insights]);
 
@@ -32,15 +42,67 @@ export default function InsightsSearch({ insights }) {
   }, [debounceTimer]);
 
   const results = useMemo(() => {
-    if (!debouncedQuery.trim()) return insights;
-    return fuse.search(debouncedQuery).map((r) => r.item);
-  }, [debouncedQuery, fuse, insights]);
+    let items = insights;
+
+    // Apply category filter first
+    if (activeCategory) {
+      items = items.filter((i) => i.cluster === activeCategory);
+    }
+
+    // Then apply search
+    if (debouncedQuery.trim()) {
+      if (activeCategory) {
+        // Search within the filtered category
+        const categoryFuse = new Fuse(items, fuseOptions);
+        items = categoryFuse.search(debouncedQuery).map((r) => r.item);
+      } else {
+        items = fuse.search(debouncedQuery).map((r) => r.item);
+      }
+    }
+
+    return items;
+  }, [debouncedQuery, activeCategory, fuse, insights]);
 
   const resultCount = results.length;
-  const isFiltered = debouncedQuery.trim().length > 0;
+  const isFiltered = debouncedQuery.trim().length > 0 || activeCategory !== null;
 
   return (
     <>
+      {/* Category Tabs */}
+      <div style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        gap: '8px',
+        justifyContent: 'center',
+        marginBottom: '32px',
+        maxWidth: '800px',
+        margin: '0 auto 32px',
+      }}>
+        {CATEGORIES.map((cat) => (
+          <button
+            key={cat.label}
+            onClick={() => setActiveCategory(cat.value)}
+            style={{
+              padding: '10px 20px',
+              fontSize: '14px',
+              fontFamily: 'inherit',
+              fontWeight: activeCategory === cat.value ? 600 : 400,
+              color: activeCategory === cat.value ? '#fff' : '#2c3e50',
+              background: activeCategory === cat.value ? '#00313d' : '#f5f5f5',
+              border: activeCategory === cat.value ? '1px solid #00313d' : '1px solid #ddd',
+              borderRadius: '24px',
+              cursor: 'pointer',
+              transition: 'all 0.2s ease',
+              letterSpacing: '0.01em',
+              whiteSpace: 'nowrap',
+            }}
+          >
+            {cat.label}
+          </button>
+        ))}
+      </div>
+
+      {/* Search */}
       <div style={{
         maxWidth: '600px',
         margin: '0 auto 40px',
@@ -73,8 +135,8 @@ export default function InsightsSearch({ insights }) {
             type="text"
             value={query}
             onChange={handleChange}
-            placeholder="Search insights... (e.g. lens options, recovery, second opinion)"
-            aria-label="Search clinical insights"
+            placeholder="Search stories and guides..."
+            aria-label="Search patient stories and guides"
             style={{
               width: '100%',
               padding: '14px 16px 14px 48px',
@@ -115,7 +177,7 @@ export default function InsightsSearch({ insights }) {
                 lineHeight: 1,
               }}
             >
-              ✕
+              &#x2715;
             </button>
           )}
         </div>
@@ -127,8 +189,8 @@ export default function InsightsSearch({ insights }) {
             marginTop: '12px',
           }}>
             {resultCount === 0
-              ? 'No matching insights found. Try a different search.'
-              : `Showing ${resultCount} of ${insights.length} insights`}
+              ? 'No matching stories found. Try a different search or category.'
+              : `Showing ${resultCount} of ${insights.length} stories`}
           </p>
         )}
       </div>

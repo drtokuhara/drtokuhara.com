@@ -145,69 +145,62 @@ export default function RootLayout({ children }) {
                 </div>
               </div>
               <div className="nav-dropdown nav-dropdown-wide">
-                <Link href="/insights" className="nav-dropdown-trigger" style={{cursor: 'pointer'}}>Insights</Link>
+                <Link href="/insights" className="nav-dropdown-trigger" style={{cursor: 'pointer'}}>Patient Stories</Link>
                 <div className="nav-dropdown-menu nav-dropdown-mega">
                   <div className="nav-mega-col">
-                    <span className="nav-mega-label">Decisions & Timing</span>
+                    <span className="nav-mega-label">Before You Decide</span>
                     <Link href="/insights/do-i-really-need-surgery">Do I Need Surgery Yet?</Link>
                     <Link href="/insights/when-is-the-right-time">When Is the Right Time?</Link>
-                    <Link href="/insights/when-do-i-need-cataract-surgery">When Do I Need Surgery?</Link>
-                    <Link href="/insights/when-patients-wait">When Patients Wait</Link>
                     <Link href="/insights/five-questions-before-surgery">5 Questions to Ask</Link>
-                    <Link href="/insights/when-the-surgeon-says-wait">When the Surgeon Says Wait</Link>
-                    <Link href="/insights/second-opinion-cataract-surgery">Getting a Second Opinion</Link>
-                    <Link href="/insights/second-opinion-that-changed-everything">A Second Opinion That Changed Everything</Link>
-                    <Link href="/insights/when-cataracts-are-not-the-real-problem">When Cataracts Are Not the Real Problem</Link>
                     <Link href="/insights/how-to-choose-a-cataract-surgeon">How to Choose a Surgeon</Link>
+                    <Link href="/insights/second-opinion-cataract-surgery">Getting a Second Opinion</Link>
+                    <Link href="/insights/when-the-surgeon-says-wait">When the Surgeon Says Wait</Link>
+                    <Link href="/insights/the-needle-that-wasnt-there">The Needle That Wasn't There</Link>
+                    <Link href="/insights/when-patients-wait">When Patients Wait</Link>
+                    <Link href="/insights/medicare-cataract-surgery">Medicare Coverage</Link>
+                    <Link href="/insights/permission-to-see-again">Permission to See Again</Link>
                   </div>
                   <div className="nav-mega-col">
                     <span className="nav-mega-label">Surgery & Recovery</span>
                     <Link href="/insights/cataract-surgery-step-by-step">Step by Step</Link>
-                    <Link href="/insights/what-you-see-during-cataract-surgery">What You See During Surgery</Link>
                     <Link href="/insights/is-cataract-surgery-painful">Is It Painful?</Link>
-                    <Link href="/insights/the-needle-that-wasnt-there">The Needle That Wasn't There</Link>
-                    <Link href="/insights/first-week-after-cataract-surgery">Your First Week After</Link>
-                    <Link href="/insights/life-after-cataract-surgery">Life After Surgery</Link>
+                    <Link href="/insights/what-you-see-during-cataract-surgery">What You See During Surgery</Link>
                     <Link href="/insights/cataract-pre-op-appointment">Pre-Op Appointment</Link>
+                    <Link href="/insights/first-week-after-cataract-surgery">Your First Week After</Link>
                     <Link href="/insights/laser-vs-traditional-cataract-surgery">Laser vs Traditional</Link>
-                    <Link href="/insights/when-cataract-surgery-goes-wrong">When Surgery Goes Wrong</Link>
                     <Link href="/insights/what-is-ora-machine">The ORA Machine</Link>
-                    <Link href="/insights/medicare-cataract-surgery">Medicare Coverage</Link>
                     <Link href="/insights/posterior-capsule-opacification">Cloudy Vision After Surgery (PCO)</Link>
+                    <span className="nav-mega-label" style={{marginTop: '16px'}}>Honest Answers</span>
+                    <Link href="/insights/when-cataract-surgery-goes-wrong">When Surgery Goes Wrong</Link>
+                    <Link href="/insights/cataract-referral-kickbacks">Referral Kickbacks</Link>
+                    <Link href="/insights/when-guilt-replaces-explanation">When Guilt Replaces Explanation</Link>
                   </div>
                   <div className="nav-mega-col">
-                    <span className="nav-mega-label">Lens Selection</span>
-                    <Link href="/insights/best-lens-for-night-driving">Best Lens for Night Driving</Link>
+                    <span className="nav-mega-label">Lens Options</span>
                     <Link href="/insights/are-premium-lenses-worth-it">Are Premium Lenses Worth It?</Link>
                     <Link href="/insights/choosing-the-standard-lens">The Standard Lens</Link>
                     <Link href="/insights/the-standard-lens-was-the-right-call">The Standard Lens Was Right</Link>
+                    <Link href="/insights/best-lens-for-night-driving">Best Lens for Night Driving</Link>
                     <Link href="/insights/toric-lens-astigmatism">Toric Lens / Astigmatism</Link>
                     <Link href="/insights/the-lens-nobody-talks-about">The Lens Nobody Talks About</Link>
-                    <Link href="/insights/when-ai-recommends-your-lens">When AI Recommends Your Lens</Link>
-                    <Link href="/insights/when-more-isnt-better">When More Isn't Better</Link>
-                    <Link href="/insights/the-number-that-wasnt-the-problem">The Number That Wasn't the Problem</Link>
                     <Link href="/insights/three-things-patients-say">Three Things Patients Say</Link>
+                    <Link href="/insights/when-more-isnt-better">When More Isn't Better</Link>
                     <Link href="/insights/not-every-patient-wants-the-same-vision">Not Every Patient Wants the Same Vision</Link>
                   </div>
                   <div className="nav-mega-col">
-                    <span className="nav-mega-label">Patient Stories & Trust</span>
-                    <Link href="/insights/twenty-years-forward">Twenty Years Forward</Link>
-                    <Link href="/insights/the-eye-you-least-suspect">The Eye You Least Suspect</Link>
-                    <Link href="/insights/permission-to-see-again">Permission to See Again</Link>
-                    <Link href="/insights/the-man-who-wanted-his-younger-eyes-back">Younger Eyes Back</Link>
-                    <Link href="/insights/the-reader-who-almost-gave-up-her-books">The Reader Who Almost Gave Up</Link>
-                    <Link href="/insights/when-guilt-replaces-explanation">When Guilt Replaces Explanation</Link>
-                    <Link href="/insights/the-consultation-that-changed-everything">The Consultation That Changed Everything</Link>
-                    <Link href="/insights/when-the-unexpected-leads-to-the-right-outcome">When the Unexpected Leads Right</Link>
-                    <Link href="/insights/when-the-eye-surface-changes-everything">When the Eye Surface Changes</Link>
-                    <Link href="/insights/when-experience-speaks">When Experience Speaks</Link>
+                    <span className="nav-mega-label">Real Patient Stories</span>
                     <Link href="/insights/two-in-the-morning">Two in the Morning</Link>
-                    <Link href="/insights/the-bicycle-rider-and-the-binoculars">The Bicycle Rider and Anisometropia</Link>
-                    <Link href="/insights/the-capsule-is-sacred">The Capsule Is Sacred</Link>
-                    <Link href="/insights/cataract-referral-kickbacks">Referral Kickbacks</Link>
+                    <Link href="/insights/the-bicycle-rider-and-the-binoculars">The Bicycle Rider</Link>
+                    <Link href="/insights/the-consultation-that-changed-everything">The Consultation That Changed Everything</Link>
+                    <Link href="/insights/twenty-years-forward">Twenty Years Forward</Link>
+                    <Link href="/insights/life-after-cataract-surgery">Life After Surgery</Link>
+                    <Link href="/insights/the-reader-who-almost-gave-up-her-books">The Reader Who Almost Gave Up</Link>
+                    <Link href="/insights/the-eye-you-least-suspect">The Eye You Least Suspect</Link>
+                    <Link href="/insights/when-experience-speaks">When Experience Speaks</Link>
                     <Link href="/insights/what-i-learned-from-the-surgeon-who-trained-me">The Surgeon Who Trained Me</Link>
+                    <Link href="/insights/the-capsule-is-sacred">The Capsule Is Sacred</Link>
                     <Link href="/gimbel-heritage" style={{color: 'var(--oasis)', fontWeight: 600, marginTop: '8px'}}>The Gimbel Heritage Series</Link>
-                    <Link href="/insights" style={{color: 'var(--oasis)', fontWeight: 600, marginTop: '4px'}}>View All Insights</Link>
+                    <Link href="/insights" style={{color: 'var(--oasis)', fontWeight: 600, marginTop: '4px'}}>View All Stories &amp; Guides</Link>
                   </div>
                 </div>
               </div>
