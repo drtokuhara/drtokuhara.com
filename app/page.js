@@ -96,11 +96,18 @@ const medicalBusinessSchema = {
     "addressCountry": "US"
   },
   "geo": { "@type": "GeoCoordinates", "latitude": 33.7397, "longitude": -116.4132 },
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-    "opens": "08:00", "closes": "17:00"
-  }],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Thursday","Friday"],
+      "opens": "08:30", "closes": "16:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Wednesday"],
+      "opens": "08:30", "closes": "12:30"
+    }
+  ],
   "priceRange": "$$",
   "medicalSpecialty": "Ophthalmology",
   "isAcceptingNewPatients": true

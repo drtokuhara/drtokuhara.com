@@ -133,9 +133,15 @@ export const medicalBusinessSchema = {
   openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '08:00',
-      closes: '17:00',
+      dayOfWeek: ['Monday', 'Tuesday', 'Thursday', 'Friday'],
+      opens: '08:30',
+      closes: '16:30',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Wednesday'],
+      opens: '08:30',
+      closes: '12:30',
     },
   ],
   medicalSpecialty: 'Ophthalmology',
