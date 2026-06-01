@@ -45,6 +45,7 @@ export default function sitemap() {
     { path: '/panoptix-vs-panoptix-pro', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/toric-lens-astigmatism', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/clareon-lens', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/multifocal-vs-monofocal', priority: 0.8, changeFrequency: 'monthly' },
   ];
 
   // Post-surgery condition pages

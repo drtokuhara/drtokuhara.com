@@ -61,6 +61,7 @@ export default function MobileNav() {
 
             <p className="mobile-nav-label">Lenses</p>
             <Link href="/lens-implants-explained" onClick={close}>Lens Guide</Link>
+            <Link href="/multifocal-vs-monofocal" onClick={close}>Multifocal vs Monofocal</Link>
             <Link href="/vivity-vs-panoptix" onClick={close}>Vivity vs PanOptix</Link>
             <Link href="/panoptix-vs-panoptix-pro" onClick={close}>PanOptix vs PanOptix Pro</Link>
             <Link href="/toric-lens-astigmatism" onClick={close}>Toric / Astigmatism</Link>

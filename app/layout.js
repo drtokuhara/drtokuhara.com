@@ -85,6 +85,7 @@ export default function RootLayout({ children }) {
                 <span className="nav-dropdown-trigger">Lenses</span>
                 <div className="nav-dropdown-menu">
                   <Link href="/lens-implants-explained">Lens Guide</Link>
+                  <Link href="/multifocal-vs-monofocal">Multifocal vs Monofocal</Link>
                   <Link href="/vivity-vs-panoptix">Vivity vs PanOptix</Link>
                   <Link href="/panoptix-vs-panoptix-pro">PanOptix vs Pro</Link>
                   <Link href="/toric-lens-astigmatism">Toric / Astigmatism</Link>
