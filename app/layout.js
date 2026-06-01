@@ -202,6 +202,7 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/when-the-eye-surface-changes-everything">When the Eye Surface Changes</Link>
                     <Link href="/insights/when-experience-speaks">When Experience Speaks</Link>
                     <Link href="/insights/two-in-the-morning">Two in the Morning</Link>
+                    <Link href="/insights/the-bicycle-rider-and-the-binoculars">The Bicycle Rider and Anisometropia</Link>
                     <Link href="/insights/the-capsule-is-sacred">The Capsule Is Sacred</Link>
                     <Link href="/insights/cataract-referral-kickbacks">Referral Kickbacks</Link>
                     <Link href="/insights/what-i-learned-from-the-surgeon-who-trained-me">The Surgeon Who Trained Me</Link>

@@ -129,6 +129,7 @@ export default function sitemap() {
     '/insights/posterior-capsule-opacification',
     '/insights/the-standard-lens-was-the-right-call',
     '/insights/two-in-the-morning',
+    '/insights/the-bicycle-rider-and-the-binoculars',
   ].map((path) => ({ path, priority: 0.6, changeFrequency: 'monthly' }));
 
   // City landing pages - local SEO

@@ -337,5 +337,13 @@ export const insights = [
     cluster: 'The Human Side',
     image: '/media/senior-couple-sunlit-bedroom.jpeg',
   },
+  {
+    slug: 'the-bicycle-rider-and-the-binoculars',
+    title: 'The Bicycle Rider Who Taught Me About Anisometropia',
+    date: 'May 2026',
+    description: 'A 75-year-old cyclist described the vision imbalance between his eyes as turning a binocular focusing wheel that never quite gets there. It was the most accurate description of anisometropia I have ever heard.',
+    cluster: 'The Human Side',
+    image: '/media/lifestyle-couple-cycling-palm-desert.jpg',
+  },
 ];
 export default insights;
