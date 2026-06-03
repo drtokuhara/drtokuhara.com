@@ -44,7 +44,7 @@ const faqSchema = {
       name: 'What measurements are needed before placing a toric lens?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Accurate toric lens placement requires detailed corneal topography to map the shape and axis of the astigmatism, as well as biometry to calculate the correct lens power. I use corneal topography to visualize the characteristic propeller or figure-8 shape of astigmatism, and the Aura measurement system to refine the axis calculations before surgery. On Sunday evenings before surgery, I review each patient\'s measurements personally to confirm the toric axis.',
+        text: 'Accurate toric lens placement requires detailed corneal topography to map the shape and axis of the astigmatism, as well as biometry to calculate the correct lens power. I use corneal topography to visualize the characteristic propeller or figure-8 shape of astigmatism, and the ORA measurement system to refine the axis calculations before surgery. On Sunday evenings before surgery, I review each patient\'s measurements personally to confirm the toric axis.',
       },
     },
   ],
@@ -170,11 +170,11 @@ export default function ToricLensAstigmatismPage() {
               <p><strong>Corneal topography</strong> maps the shape of your cornea in precise detail. I look for the propeller or figure-8 pattern that indicates astigmatism, and I identify the axis - the direction the steep curvature runs. This tells me where the toric lens needs to be oriented.</p>
             </div>
             <div className="insight-item">
-              <p><strong>The Aura measurement system</strong> refines the axis calculation. It gives me a second, independent data source to cross-check against the topography. When both measurements agree, I have confidence in the axis. When they differ, I investigate why before I proceed.</p>
+              <p><strong>The ORA measurement system</strong> refines the axis calculation. It gives me a second, independent data source to cross-check against the topography. When both measurements agree, I have confidence in the axis. When they differ, I investigate why before I proceed.</p>
             </div>
           </div>
           <p>
-            Then, on Sunday evenings before my Monday surgeries, I sit down with each patient's file. I look at the topography, check the Aura data, confirm the toric axis, and enter the final lens parameters. This is planning I do personally, not something that gets handed off. The toric lens calculation is too important to rush through.
+            Then, on Sunday evenings before my Monday surgeries, I sit down with each patient's file. I look at the topography, check the ORA data, confirm the toric axis, and enter the final lens parameters. This is planning I do personally, not something that gets handed off. The toric lens calculation is too important to rush through.
           </p>
         </div>
       </section>

@@ -241,11 +241,11 @@ export default function InsightWhatIsOraMachine() {
               <h3>How to Choose a Cataract Surgeon</h3>
               <p>The five things that actually matter when selecting your surgeon.</p>
             </Link>
-            <Link href="/complex-cases/post-lasik-cataract-surgery" className="related-card">
+            <Link href="/complex-cases/previous-lasik" className="related-card">
               <h3>Cataract Surgery After LASIK</h3>
               <p>The challenges and strategies for eyes with previous refractive surgery.</p>
             </Link>
-            <Link href="/complex-cases/post-rk-cataract-surgery" className="related-card">
+            <Link href="/complex-cases/previous-rk" className="related-card">
               <h3>Cataract Surgery After RK</h3>
               <p>Why radial keratotomy eyes require specialized planning and conservative lens selection.</p>
             </Link>

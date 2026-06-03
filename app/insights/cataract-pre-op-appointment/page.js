@@ -298,7 +298,7 @@ export default function InsightCataractPreOpAppointment() {
               <h3>5 Questions to Ask Before Surgery</h3>
               <p>What to ask your surgeon during the pre-op consultation.</p>
             </Link>
-            <Link href="/lens-options" className="related-card">
+            <Link href="/lens-implants-explained" className="related-card">
               <h3>Lens Options</h3>
               <p>Monofocal, toric, extended depth of focus, and multifocal lenses explained.</p>
             </Link>

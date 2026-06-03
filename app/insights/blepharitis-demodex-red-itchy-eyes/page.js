@@ -280,7 +280,7 @@ export default function InsightBlepharitisDemodex() {
               <h3>Your Cataract Pre-Op Appointment</h3>
               <p>What happens during the evaluation that determines your surgical plan.</p>
             </Link>
-            <Link href="/dry-eye" className="related-card">
+            <Link href="/dry-eyes-desert" className="related-card">
               <h3>Dry Eye Treatment</h3>
               <p>Advanced dry eye management at Desert Vision Center, including LipiFlow and IPL therapy.</p>
             </Link>

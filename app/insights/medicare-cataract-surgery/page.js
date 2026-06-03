@@ -282,7 +282,7 @@ export default function InsightMedicareCataractSurgery() {
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
-            <Link href="/lens-options" className="related-card">
+            <Link href="/lens-implants-explained" className="related-card">
               <h3>Lens Options</h3>
               <p>Monofocal, toric, extended depth of focus, and multifocal lenses explained.</p>
             </Link>
