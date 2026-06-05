@@ -268,6 +268,18 @@ export default function UnderstandingCataracts() {
         <div className="container content-narrow">
           <h2 className="section-title">Learn <strong>More</strong></h2>
           <div className="related-grid">
+            <Link href="/posterior-subcapsular-cataract" className="related-card">
+              <h3>Posterior Subcapsular Cataracts</h3>
+              <p>The fast-moving cataract linked to diabetes, steroids, and younger patients. Why it causes severe symptoms and when surgery is needed.</p>
+            </Link>
+            <Link href="/narrow-angle-cataract" className="related-card">
+              <h3>Narrow Angles and Cataracts</h3>
+              <p>When narrow angles and cataracts occur together, cataract surgery can treat both conditions at once.</p>
+            </Link>
+            <Link href="/multifocal-vs-monofocal" className="related-card">
+              <h3>Multifocal vs Monofocal Lens Comparison</h3>
+              <p>Sharp distance vision with readers, or glasses freedom with halos at night? An honest comparison.</p>
+            </Link>
             <Link href="/lens-implants-explained" className="related-card">
               <h3>Lens Implants Explained</h3>
               <p>If you're considering surgery, the lens choice matters. Here's how to think about it.</p>
@@ -279,10 +291,6 @@ export default function UnderstandingCataracts() {
             <Link href="/insights/permission-to-see-again" className="related-card">
               <h3>Permission to See Again</h3>
               <p>A story about a woman who waited six years, and why that was okay.</p>
-            </Link>
-            <Link href="/posterior-subcapsular-cataract" className="related-card">
-              <h3>Posterior Subcapsular Cataracts</h3>
-              <p>The fast-moving cataract linked to diabetes, steroids, and younger patients. Why it causes severe symptoms and when surgery is needed.</p>
             </Link>
           </div>
         </div>

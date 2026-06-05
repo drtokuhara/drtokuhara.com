@@ -237,6 +237,10 @@ export default function InsightWhatIsOraMachine() {
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
+            <Link href="/insights/the-lens-we-didnt-implant" className="related-card">
+              <h3>The Lens We Didn't Implant</h3>
+              <p>A real patient story where intraoperative measurements told a different story than the preoperative plan.</p>
+            </Link>
             <Link href="/insights/how-to-choose-a-cataract-surgeon" className="related-card">
               <h3>How to Choose a Cataract Surgeon</h3>
               <p>The five things that actually matter when selecting your surgeon.</p>
@@ -256,10 +260,6 @@ export default function InsightWhatIsOraMachine() {
             <Link href="/insights/cataract-pre-op-appointment" className="related-card">
               <h3>What Happens at Your Pre-Op Appointment</h3>
               <p>The measurements and evaluation that determine surgical planning.</p>
-            </Link>
-            <Link href="/insights/the-number-that-wasnt-the-problem" className="related-card">
-              <h3>The Number That Wasn't the Problem</h3>
-              <p>When astigmatism looked fixable but the real issue was something else.</p>
             </Link>
           </div>
         </div>

@@ -122,6 +122,10 @@ export default function InsightBestLensForNightDriving() {
           <p>
             Not reading. Not golf. Not close-up work. Night driving. It comes up more than any other single concern, and for good reason. Night driving is where lens choice matters most. It is where the optical differences between lens types become visible, literal, and unavoidable. Halos around headlights. Glare from streetlights. A sense that your vision is sharp during the day but somehow compromised after dark.
           </p>
+
+          <div style={{margin: '40px 0'}}>
+            <img src="/media/senior-man-night-driving-starry.jpeg" alt="Senior man driving at night with concern about vision clarity" style={{width: '100%', height: 'auto', borderRadius: '12px'}} />
+          </div>
           <p>
             The problem is that the conversation around lens implants is often dominated by features. Multifocal. Extended Depth of Focus. Toric. Patients are handed brochures with glossy images and terms that sound impressive but do not clearly answer the question they actually care about: <em>Which lens will let me see clearly at night?</em>
           </p>
@@ -185,6 +189,10 @@ export default function InsightBestLensForNightDriving() {
           <p>
             The downside is that splitting light creates optical compromises. At night, many patients with multifocal lenses see halos or rings around lights. Headlights. Streetlights. Taillights. The effect is especially noticeable in the first few months after surgery. Some patients adapt and stop noticing the halos over time. Others do not. And for patients who drive frequently at night, the halos can be distracting, uncomfortable, or in some cases, unacceptable.
           </p>
+
+          <div style={{margin: '40px 0'}}>
+            <img src="/media/halo-simulation-night-driving.png" alt="Simulation of halos around headlights as seen with multifocal lens implants at night" style={{width: '100%', height: 'auto', borderRadius: '12px'}} />
+          </div>
 
           <BlurReveal><div className="insight-highlight">
             <p><strong>I do not recommend multifocal lenses to patients whose lifestyle or work requires a lot of night driving. I have seen too many patients who chose a multifocal for the convenience of not wearing glasses, only to regret it the first time they drove home after dark and saw halos around every headlight. Some adapt. Some do not. But the risk is real, and it is worth taking seriously.</strong></p>
@@ -255,6 +263,10 @@ export default function InsightBestLensForNightDriving() {
             The question is not which lens is best in the abstract. The question is which lens is best for you. And to answer that, you need to be honest with yourself about what you actually do.
           </p>
 
+          <div style={{margin: '40px 0'}}>
+            <img src="/media/night-driving-city-lights-mountains.jpeg" alt="Night driving through city with streetlights and mountain backdrop" style={{width: '100%', height: 'auto', borderRadius: '12px'}} />
+          </div>
+
           <h3 style={{marginTop: '2rem'}}>Ask Yourself These Questions</h3>
           <ul style={{marginTop: '1rem', lineHeight: '1.8'}}>
             <li>How often do you drive at night? Daily? Weekly? Rarely?</li>
@@ -320,6 +332,10 @@ export default function InsightBestLensForNightDriving() {
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
+            <Link href="/multifocal-vs-monofocal" className="related-card">
+              <h3>Multifocal vs Monofocal: An Honest Comparison</h3>
+              <p>Sharp distance vision with readers, or glasses freedom with halos at night? The real tradeoffs explained.</p>
+            </Link>
             <Link href="/vivity-vs-panoptix" className="related-card">
               <h3>Vivity vs PanOptix: Which Lens Is Right for You?</h3>
               <p>A detailed comparison of EDOF and multifocal lenses, including night vision trade-offs.</p>

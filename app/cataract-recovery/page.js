@@ -268,6 +268,10 @@ export default function CataractRecoveryPage() {
         <div className="container content-narrow">
           <h2 className="section-title">Learn <strong>More</strong></h2>
           <div className="related-grid">
+            <Link href="/insights/the-bicycle-rider-and-the-binoculars" className="related-card">
+              <h3>The Bicycle Rider and the Binoculars</h3>
+              <p>A cyclist described anisometropia better than any textbook. A story about how both eyes work together.</p>
+            </Link>
             <Link href="/ready-for-surgery" className="related-card">
               <h3>Ready for Surgery</h3>
               <p>Everything you need to know to prepare for your surgery day - what to bring, what to expect, and how the day unfolds.</p>

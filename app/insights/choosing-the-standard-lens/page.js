@@ -288,13 +288,17 @@ export default function InsightChoosingTheStandardLens() {
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
+            <Link href="/multifocal-vs-monofocal" className="related-card">
+              <h3>Multifocal vs Monofocal: An Honest Comparison</h3>
+              <p>Sharp distance vision with readers, or glasses freedom with halos at night? The real tradeoffs explained.</p>
+            </Link>
+            <Link href="/insights/the-lens-we-didnt-implant" className="related-card">
+              <h3>The Lens We Didn't Implant</h3>
+              <p>Every measurement said toric. The operating room said otherwise.</p>
+            </Link>
             <Link href="/insights/are-premium-lenses-worth-it" className="related-card">
               <h3>Are Premium Lenses Worth It?</h3>
               <p>An honest reflection on what premium lenses deliver and when they make sense.</p>
-            </Link>
-            <Link href="/insights/medicare-cataract-surgery" className="related-card">
-              <h3>Medicare and Cataract Surgery</h3>
-              <p>What is covered, what is not, and where the real out-of-pocket costs come from.</p>
             </Link>
             <Link href="/insights/three-things-patients-say" className="related-card">
               <h3>Three Things Patients Say</h3>

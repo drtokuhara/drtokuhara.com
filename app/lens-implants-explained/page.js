@@ -361,6 +361,10 @@ export default function LensImplantsExplained() {
         <div className="container content-narrow">
           <h2 className="section-title">Learn <strong>More</strong></h2>
           <div className="related-grid">
+            <Link href="/multifocal-vs-monofocal" className="related-card">
+              <h3>Multifocal vs Monofocal: An Honest Comparison</h3>
+              <p>Sharp distance vision with readers, or glasses freedom with halos at night? The real tradeoffs explained.</p>
+            </Link>
             <Link href="/vivity-vs-panoptix" className="related-card">
               <h3>Vivity vs. PanOptix</h3>
               <p>An honest comparison of the two most popular premium lenses.</p>

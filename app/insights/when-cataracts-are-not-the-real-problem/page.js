@@ -165,6 +165,10 @@ export default function WhenCataractsAreNotTheRealProblemPage() {
             </div>
           </BlurReveal>
 
+          <div style={{margin: '40px 0'}}>
+            <img src="/media/glaucoma-eye-anatomy.png" alt="Glaucoma optic nerve damage anatomy illustration" style={{width: '100%', height: 'auto', borderRadius: '12px'}} />
+          </div>
+
           <ScrollReveal direction="up" once={true}>
             <p className="prose">
               At that point, the conversation shifted completely.
@@ -215,6 +219,10 @@ export default function WhenCataractsAreNotTheRealProblemPage() {
             </p>
           </ScrollReveal>
 
+          <div style={{margin: '40px 0'}}>
+            <img src="/media/dvc-phoropter-exam.png" alt="Comprehensive eye examination at Desert Vision Center" style={{width: '100%', height: 'auto', borderRadius: '12px'}} />
+          </div>
+
           <ScrollReveal direction="up" once={true}>
             <p className="prose">
               Equally important, her vision was still functioning quite well. At 20/20 and 20/30, she was not experiencing major daily limitations from the cataracts themselves. She was not struggling significantly with driving, reading, or routine activities. In medicine, the presence of a cataract alone does not automatically mean surgery is necessary. The decision should always connect back to how much the condition is truly affecting a patient's quality of life.
@@ -245,6 +253,10 @@ export default function WhenCataractsAreNotTheRealProblemPage() {
               Modern medicine often moves quickly. Patients may feel pressure to "fix" anything visible on an exam, especially when surgery is involved. But good medical care is not about finding the fastest procedure. It is about identifying the true problem and treating the patient as a whole person.
             </p>
           </ScrollReveal>
+
+          <div style={{margin: '40px 0'}}>
+            <img src="/media/faq-hero-consultation.png" alt="Patient consultation discussing treatment options" style={{width: '100%', height: 'auto', borderRadius: '12px'}} />
+          </div>
 
           <ScrollReveal direction="up" once={true}>
             <h2 className="section-title">Trusting Your Instincts</h2>

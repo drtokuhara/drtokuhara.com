@@ -206,6 +206,14 @@ export default function InsightTwoInTheMorning() {
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
+            <Link href="/insights/the-patient-i-never-saw-again" className="related-card">
+              <h3>The Patient I Never Saw Again</h3>
+              <p>His vision went from count fingers to 20/20 overnight. Then he disappeared.</p>
+            </Link>
+            <Link href="/insights/the-week-everything-changed" className="related-card">
+              <h3>The Week Everything Changed</h3>
+              <p>Two weeks after surgery, her life changed completely. The lens that was perfect no longer matched her needs.</p>
+            </Link>
             <Link href="/insights/five-questions-before-surgery" className="related-card">
               <h3>Five Questions Before Surgery</h3>
               <p>The questions worth asking before your cataract procedure.</p>

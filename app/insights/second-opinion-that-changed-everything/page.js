@@ -150,6 +150,10 @@ export default function SecondOpinionChangedEverythingPage() {
             </p>
           </ScrollReveal>
 
+          <div style={{margin: '40px 0'}}>
+            <img src="/media/dr-t-slit-lamp-patient-view.jpg" alt="Dr. Tokuhara examining patient at slit lamp" style={{width: '100%', height: 'auto', borderRadius: '12px'}} />
+          </div>
+
           <BlurReveal once={true}>
             <div style={{ background: 'var(--sand-light, #f8f5f0)', padding: '32px', borderRadius: '12px', margin: '32px 0', borderLeft: '4px solid var(--oasis)' }}>
               <p className="prose" style={{ margin: 0 }}>
@@ -169,6 +173,11 @@ export default function SecondOpinionChangedEverythingPage() {
             <p className="prose">
               I explained to her that the cataract itself was no longer the main issue. The poor vision was coming from the retinal detachment. Unfortunately, chronic retinal detachments often carry a poor visual prognosis if they are not repaired quickly. Once the central retina, known as the macula, has been detached for an extended period of time, vision may never fully recover even if surgery successfully reattaches the retina.
             </p>
+
+            <div style={{margin: '40px 0'}}>
+              <img src="/media/honest-consultation-trust.png" alt="Honest medical consultation building patient trust" style={{width: '100%', height: 'auto', borderRadius: '12px'}} />
+            </div>
+
             <p className="prose">
               That was the difficult part of the conversation.
             </p>
@@ -196,6 +205,11 @@ export default function SecondOpinionChangedEverythingPage() {
             <p className="prose">
               This case also highlights something physicians sometimes underestimate: patients may avoid returning after a bad outcome because they feel embarrassed, discouraged, angry, or afraid of hearing more bad news. Some quietly lose trust in the process altogether. Unfortunately, delaying evaluation can sometimes allow treatable conditions to become permanent ones.
             </p>
+
+            <div style={{margin: '40px 0'}}>
+              <img src="/media/complex-cases-patient-hope.jpg" alt="Patient consultation bringing hope in complex cases" style={{width: '100%', height: 'auto', borderRadius: '12px'}} />
+            </div>
+
             <p className="prose">
               One of the most important things patients should understand is this: seeking a second opinion is not disloyal, confrontational, or disrespectful. Medicine is complicated. Complications happen even in excellent hands. Good doctors understand that patients sometimes need reassurance, another perspective, or simply a fresh set of eyes on a difficult situation.
             </p>

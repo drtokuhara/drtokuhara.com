@@ -169,6 +169,10 @@ export default function InsightPermission() {
           </div>
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
+            <Link href="/insights/the-patient-i-never-saw-again" className="related-card">
+              <h3>The Patient I Never Saw Again</h3>
+              <p>His vision went from count fingers to 20/20 overnight. Then he disappeared. Twenty years later, the question remains.</p>
+            </Link>
             <Link href="/insights/the-reader-who-almost-gave-up-her-books" className="related-card">
               <h3>The Reader Who Almost Gave Up Her Books</h3>
               <p>Another story about a patient who delayed care and the conversation that changed her mind.</p>

@@ -440,6 +440,14 @@ export default function CataractSurgeryPage() {
               <h3>Lens Implants Explained</h3>
               <p>Monofocal, toric, EDOF, and multifocal options. Which one fits your life?</p>
             </Link>
+            <Link href="/posterior-subcapsular-cataract" className="related-card">
+              <h3>Posterior Subcapsular Cataracts</h3>
+              <p>The fast-moving cataract linked to diabetes, steroids, and younger patients.</p>
+            </Link>
+            <Link href="/narrow-angle-cataract" className="related-card">
+              <h3>Narrow Angles and Cataracts</h3>
+              <p>When cataract surgery can treat both narrow angles and cataracts in one procedure.</p>
+            </Link>
             <Link href="/complex-cases" className="related-card">
               <h3>Complex and Revision Cases</h3>
               <p>When surgery is more complicated, experience matters most.</p>
@@ -447,14 +455,6 @@ export default function CataractSurgeryPage() {
             <Link href="/clear-in-a-day" className="related-card">
               <h3>CLEAR in a Day</h3>
               <p>Both eyes in a single visit for eligible patients.</p>
-            </Link>
-            <Link href="/cataract-pre-op" className="related-card">
-              <h3>Before Surgery</h3>
-              <p>What happens in pre-op and how to prepare.</p>
-            </Link>
-            <Link href="/cataract-recovery" className="related-card">
-              <h3>Recovery</h3>
-              <p>What to expect after surgery and when to call.</p>
             </Link>
             <Link href="/choosing-your-surgeon" className="related-card">
               <h3>Choosing Your Surgeon</h3>

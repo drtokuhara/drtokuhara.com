@@ -326,6 +326,10 @@ export default function ClearInADayPage() {
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
+            <Link href="/insights/the-bicycle-rider-and-the-binoculars" className="related-card">
+              <h3>The Bicycle Rider and the Binoculars</h3>
+              <p>A cyclist described anisometropia better than any textbook. Why both eyes working together matters.</p>
+            </Link>
             <Link href="/insights/do-i-really-need-surgery" className="related-card">
               <h3>Do I Really Need Surgery?</h3>
               <p>A patient came in convinced he needed cataract surgery. His eyes told a different story.</p>
