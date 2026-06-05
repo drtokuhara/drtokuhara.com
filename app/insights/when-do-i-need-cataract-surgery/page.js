@@ -318,6 +318,10 @@ export default function InsightWhenDoINeedSurgery() {
               <h3>Your Patient Journey</h3>
               <p>From first consultation to full recovery: what the process looks like at Desert Vision Center.</p>
             </Link>
+            <Link href="/insights/cataract-surgery-at-50" className="related-card">
+              <h3>Cataract Surgery at 50</h3>
+              <p>Some patients develop visually significant cataracts in their 50s. Here is what that means for timing and lens choice.</p>
+            </Link>
           </div>
         </div>
       </section>

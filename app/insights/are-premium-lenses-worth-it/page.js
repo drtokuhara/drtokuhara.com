@@ -221,6 +221,10 @@ export default function ArePremiumLensesWorthIt() {
               <h3>Choosing the Standard Lens</h3>
               <p>Sometimes the standard monofocal lens is exactly the right choice.</p>
             </Link>
+            <Link href="/insights/cataract-surgery-at-50" className="related-card">
+              <h3>Cataract Surgery at 50</h3>
+              <p>Younger cataract patients have different visual demands and decades ahead. How that changes the lens conversation.</p>
+            </Link>
             <Link href="/insights/toric-lens-astigmatism" className="related-card">
               <h3>Toric Lenses and Astigmatism</h3>
               <p>How toric lenses correct astigmatism during cataract surgery.</p>

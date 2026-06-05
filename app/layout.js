@@ -194,6 +194,7 @@ export default function RootLayout({ children }) {
                   </div>
                   <div className="nav-mega-col">
                     <span className="nav-mega-label">Real Patient Stories</span>
+                    <Link href="/insights/cataract-surgery-at-50">Cataract Surgery at 50</Link>
                     <Link href="/insights/two-in-the-morning">Two in the Morning</Link>
                     <Link href="/insights/the-bicycle-rider-and-the-binoculars">The Bicycle Rider</Link>
                     <Link href="/insights/the-consultation-that-changed-everything">The Consultation That Changed Everything</Link>

@@ -299,6 +299,10 @@ export default function InsightChooseASurgeon() {
               <h3>What I Learned From the Surgeon Who Trained Me</h3>
               <p>A residency moment with Dr. Howard Gimbel that changed everything.</p>
             </Link>
+            <Link href="/insights/cataract-surgery-at-50" className="related-card">
+              <h3>Cataract Surgery at 50</h3>
+              <p>Younger patients need more detailed lens conversations. Experience with complex cases matters even more.</p>
+            </Link>
             <Link href="/insights/five-questions-before-surgery" className="related-card">
               <h3>5 Questions to Ask Before Surgery</h3>
               <p>Your surgeon should welcome every one of them.</p>

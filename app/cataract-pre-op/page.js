@@ -238,6 +238,10 @@ export default function CataractPreOp() {
             </Link>
             <Link href="/insights/cataract-surgery-step-by-step" className="related-card">
               <h3>Cataract Surgery Step by Step</h3>
+            </Link>
+            <Link href="/insights/blepharitis-demodex-red-itchy-eyes" className="related-card">
+              <h3>Blepharitis and Demodex</h3>
+              <p>Why treating eyelid inflammation before surgery matters for outcomes.</p>
               <p>A surgeon's walkthrough of exactly what happens during the procedure.</p>
             </Link>
           </div>

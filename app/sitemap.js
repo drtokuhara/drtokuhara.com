@@ -131,6 +131,7 @@ export default function sitemap() {
     '/insights/not-every-patient-wants-the-same-vision',
     '/insights/posterior-capsule-opacification',
     '/insights/blepharitis-demodex-red-itchy-eyes',
+    '/insights/cataract-surgery-at-50',
     '/insights/the-standard-lens-was-the-right-call',
     '/insights/two-in-the-morning',
     '/insights/the-bicycle-rider-and-the-binoculars',

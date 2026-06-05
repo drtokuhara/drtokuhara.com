@@ -1,28 +1,26 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
 import {
   ScrollReveal,
   BlurReveal,
-  LineDraw,
   VideoBackground,
 } from '../../components/ScrollAnimations';
 
 export const metadata = {
   title: 'Blepharitis and Demodex: The Hidden Cause of Red, Itchy Eyes - Dr. Keith Tokuhara',
-  description: 'Red, itchy, irritated eyes that never quite go away? Blepharitis and Demodex mites are among the most common and most overlooked causes. What they are, why they matter for cataract surgery, and how to treat them.',
-  keywords: ['blepharitis treatment', 'demodex eyelash mites', 'red itchy eyes causes', 'eyelid inflammation', 'blepharitis and cataract surgery', 'meibomian gland dysfunction', 'chronic red eyes treatment'],
+  description: 'Many patients think they have dry eye or allergies when the real cause is blepharitis or Demodex mites. Learn how these conditions are diagnosed, treated, and why they matter for cataract surgery planning.',
+  keywords: ['blepharitis', 'demodex mites', 'red eyes', 'itchy eyes', 'eye inflammation', 'cataract surgery', 'dry eye', 'eye care Rancho Mirage', 'ophthalmologist Palm Desert'],
   alternates: { canonical: '/insights/blepharitis-demodex-red-itchy-eyes' },
   openGraph: {
     title: 'Blepharitis and Demodex: The Hidden Cause of Red, Itchy Eyes | Dr. Keith Tokuhara',
-    description: 'The most common eye condition most patients have never heard of. What blepharitis and Demodex mites actually are, why they make your eyes miserable, and what finally works.',
+    description: 'Many patients come in thinking they have dry eye or allergies. Often the real issue is living on their eyelids. Here is what blepharitis and Demodex mites are and why they matter.',
     url: 'https://drtokuhara.com/insights/blepharitis-demodex-red-itchy-eyes',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Blepharitis and Demodex: The Hidden Cause of Red, Itchy Eyes',
-    description: 'The most common eye condition most patients have never heard of. Why your eyes are red and itchy, and what finally works.',
+    description: 'Many patients think they have dry eye or allergies when the real cause is blepharitis or Demodex mites. Learn what these conditions are and why they matter for cataract surgery.',
   },
 };
 
@@ -35,31 +33,39 @@ const faqSchema = {
       name: 'What is blepharitis and what causes it?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Blepharitis is chronic inflammation of the eyelids, usually along the lash line. It can be caused by bacterial buildup, oil gland dysfunction (meibomian gland dysfunction), skin conditions like rosacea, or Demodex mites. It is extremely common, especially in patients over 50, and tends to be a chronic condition that requires ongoing management rather than a one-time cure.',
+        text: 'Blepharitis is chronic inflammation of the eyelid margins where the lashes grow. It can be caused by bacterial overgrowth, oil gland dysfunction, skin conditions like rosacea or seborrheic dermatitis, or Demodex mites. The condition causes redness, irritation, crusting, and a gritty sensation. Many patients mistake it for dry eye or allergies because the symptoms overlap.',
       },
     },
     {
       '@type': 'Question',
-      name: 'What are Demodex mites and can they live on eyelashes?',
+      name: 'What are Demodex mites and how do they affect the eyes?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Demodex are microscopic mites that naturally live in hair follicles and oil glands, including along the eyelashes. Most people have some Demodex without symptoms. When populations grow too large, they cause irritation, redness, itching, crusty lashes, and a gritty feeling. They are more common in older adults and can be a significant contributor to chronic blepharitis that does not respond to standard treatments.',
+        text: 'Demodex are microscopic mites that live in hair follicles and oil glands, including the eyelash follicles. Two species commonly affect the eyes: Demodex folliculorum and Demodex brevis. They are extremely common in older adults, the same population most likely to develop cataracts. When populations grow too large, they cause inflammation, itching, redness, and crusting along the lash line. The mites feed on oils and dead skin, and their waste products trigger an inflammatory response.',
       },
     },
     {
       '@type': 'Question',
-      name: 'How does blepharitis affect cataract surgery?',
+      name: 'How is blepharitis or Demodex diagnosed?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Untreated blepharitis can affect cataract surgery in several ways. It disrupts the tear film, which changes the measurements used to select your lens implant. This means the lens calculation may be less accurate, potentially affecting your outcome. It also increases infection risk. Most cataract surgeons want blepharitis well controlled before operating, and addressing it beforehand often leads to better surgical results and a more comfortable recovery.',
+        text: 'Diagnosis is made through a slit lamp examination. The ophthalmologist looks for characteristic signs like debris or cylindrical dandruff at the base of the lashes, redness and swelling of the lid margins, oil gland blockage, and inflammatory changes. For Demodex, seeing cylindrical collarettes around the lash roots is highly suggestive. Sometimes a lash sample is examined under a microscope to confirm the presence of mites.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Can blepharitis be cured permanently?',
+      name: 'Why does blepharitis matter for cataract surgery?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Blepharitis is typically a chronic condition that can be managed effectively but not permanently cured. Most patients find that consistent lid hygiene, warm compresses, and appropriate treatment keep symptoms minimal. Flare-ups can occur with seasonal changes, stress, or lapses in routine. The goal is long-term control, not a one-time fix, and most patients do very well once they understand their condition and maintain good habits.',
+        text: 'Untreated blepharitis increases the risk of infection after cataract surgery because bacteria and inflammatory debris live along the lid margin near the surgical site. It can also affect the accuracy of measurements used to select the correct lens implant power. Additionally, patients with chronic blepharitis may have worse dry eye symptoms after surgery. For these reasons, many surgeons treat or optimize lid hygiene before proceeding with cataract surgery.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How is blepharitis and Demodex treated?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Treatment focuses on reducing the mite population and controlling inflammation. This includes daily lid hygiene with tea tree oil-based cleansers, warm compresses to open blocked oil glands, prescription medications like ivermectin cream or oral ivermectin in severe cases, and sometimes in-office procedures like intense pulsed light therapy or mechanical lid debridement. Treatment is ongoing because Demodex and blepharitis tend to recur without maintenance.',
       },
     },
   ],
@@ -68,8 +74,9 @@ const faqSchema = {
 const jsonLd = [
   articleSchema({
     title: 'Blepharitis and Demodex: The Hidden Cause of Red, Itchy Eyes',
-    description: 'Red, itchy, irritated eyes that never quite go away? Blepharitis and Demodex mites are among the most common and most overlooked causes. What they are, why they matter, and how to treat them.',
+    description: 'Many patients think they have dry eye or allergies when the real cause is blepharitis or Demodex mites. Learn how these conditions are diagnosed, treated, and why they matter for cataract surgery planning.',
     slug: '/insights/blepharitis-demodex-red-itchy-eyes',
+    datePublished: '2026-06-04',
   }),
   breadcrumbSchema([
     { name: 'Home', href: '/' },
@@ -86,209 +93,192 @@ export default function InsightBlepharitisDemodex() {
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
       <VideoBackground
-        src="/media/ambient-desert-golden-hour.mp4"
-        overlayOpacity={0.6}
+        src="/media/ambient-desert-sunrise.mp4"
+        poster="/media/hero-cataracts-glaucoma.jpg"
+        overlayOpacity={0.65}
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"
         style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
       >
         <div className="container">
           <ScrollReveal direction="up" once={true}>
-          <span className="insight-hero-cluster">Education</span>
-          <h1>Blepharitis and Demodex: The Hidden Cause of Red, <strong>Itchy Eyes</strong></h1>
-          <p className="page-hero-sub">The most common eye condition most patients have never heard of. If your eyes have been red and irritated for months, this may be why.</p>
+          <span className="insight-hero-cluster">Education / Dry Eye</span>
+          <h1>Blepharitis and Demodex: <strong>The Hidden Cause of Red, Itchy Eyes</strong></h1>
+          <p className="page-hero-sub">Many patients think they have allergies. Often, the real problem is living on their eyelids.</p>
           </ScrollReveal>
         </div>
       </VideoBackground>
 
       <section className="section section-white">
         <div className="container content-narrow">
-          <AuthorByline />
+          <AuthorByline date="June 4, 2026" />
           <div className="section-divider" style={{margin: '32px auto'}} />
           <p className="body-lead body-lead-dropcap">
-            She had been using artificial tears four times a day for over a year. Her previous eye doctor told her she had dry eye and gave her a prescription. The drops helped a little, but the redness never fully went away. The itching came and went. Some mornings her lashes were crusted together.
+            A patient sits in my exam chair and describes symptoms that sound familiar: red, irritated eyes. A gritty, burning sensation. Crusting along the lashes in the morning. They have tried over-the-counter allergy drops. They have used artificial tears. Nothing has really helped.
           </p>
           <p>
-            When she came to our office for a cataract evaluation, the first thing I noticed was her eyelids. The lash line was red. There was a waxy buildup at the base of her lashes. Under the slit lamp, I could see the telltale cylindrical dandruff-like deposits that Demodex mites leave behind.
+            When I examine them under the slit lamp, the diagnosis is clear. Their eyelid margins are inflamed. The base of the lashes is covered in debris. And in many cases, there are tiny cylindrical collarettes wrapped around the lash roots, a telltale sign of Demodex mites.
           </p>
           <p>
-            She did not have dry eye alone. She had blepharitis, and it had been there for a long time.
+            This is not an allergy. It is not classic dry eye, though dry eye often coexists. It is blepharitis, frequently driven by microscopic organisms living along the eyelid margin. And it is far more common than most people realize.
           </p>
         </div>
       </section>
 
       <section className="section section-warm">
         <div className="container content-narrow">
-          <h2 className="section-title">What Blepharitis <strong>Actually Is</strong></h2>
+          <h2 className="section-title">What <strong>Blepharitis</strong> Is</h2>
           <p>
-            Blepharitis is inflammation of the eyelids, specifically along the lash line and the tiny oil glands that sit just behind it. Those oil glands, called meibomian glands, produce the lipid layer of your tear film. When they become clogged or inflamed, the tears evaporate too quickly and the eyelids become irritated.
+            Blepharitis is chronic inflammation of the eyelid margins, the area where the lashes grow. The condition creates redness, swelling, crusting, and irritation. For many patients, it feels like something is always in their eye, even when nothing is there.
           </p>
           <p>
-            It is extraordinarily common. In clinical practice, I see some degree of blepharitis in the majority of patients over 50. Most have never been told what it is. They have been given artificial tears or told their eyes are "just dry."
+            The causes vary. Bacterial overgrowth can play a role. Dysfunction of the meibomian glands, which produce the oily layer of the tear film, contributes. Skin conditions like rosacea or seborrheic dermatitis can trigger it. And in a large percentage of cases, particularly in older adults, Demodex mites are involved.
           </p>
 
           <BlurReveal><div className="insight-highlight">
-            <p><strong>Blepharitis is the most underdiagnosed condition in ophthalmology. Not because it is hard to find, but because it is easy to overlook.</strong></p>
+            <p><strong>Blepharitis is not just uncomfortable. Left untreated, it can affect the quality of the tear film, increase the risk of styes and chalazia, and complicate cataract surgery planning.</strong></p>
           </div></BlurReveal>
 
           <p>
-            There are two main types. Anterior blepharitis affects the outside of the eyelid, right at the lash line. It is often caused by bacteria or, increasingly recognized, by Demodex mites. Posterior blepharitis involves the meibomian glands themselves and is closely related to meibomian gland dysfunction, or MGD.
-          </p>
-          <p>
-            Most patients have some combination of both.
+            The desert environment in the Coachella Valley makes things worse. Low humidity, dust, and wind dry out the tear film and irritate already inflamed eyelids. Many of my patients in Rancho Mirage, Palm Desert, and Indian Wells struggle with this daily.
           </p>
         </div>
       </section>
 
       <section className="section section-white">
         <div className="container content-narrow">
-          <h2 className="section-title">The Demodex <strong>Question</strong></h2>
-
-          <div className="content-image" style={{marginBottom: '32px'}}>
-            <Image
-              src="/media/eye-closeup-single.png"
-              alt="Close-up view of an eye, showing the detail of the iris and lash line where Demodex mites may be present"
-              width={680}
-              height={453}
-              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
-            />
-          </div>
-
+          <h2 className="section-title">Demodex Mites: <strong>More Common Than You Think</strong></h2>
           <p>
-            Demodex mites are microscopic organisms that live in hair follicles and oil glands. Nearly every adult has them. They are a normal part of the skin ecosystem, and in small numbers they cause no problems.
+            Demodex are microscopic mites that live in hair follicles and oil glands throughout the body, including the base of the eyelashes. Two species affect the eyes: <em>Demodex folliculorum</em>, which lives in the lash follicles, and <em>Demodex brevis</em>, which burrows into the oil glands.
           </p>
           <p>
-            But when populations grow too large, particularly in the lash follicles, they become a problem. Demodex feed on skin cells and sebum. Their waste products trigger inflammation. Their physical presence clogs the follicle openings. The result is chronic irritation that does not respond well to standard dry eye treatment.
+            These mites are not rare. Studies show that the prevalence increases with age. By the time someone is 70 or 80 years old, the same age when cataracts become visually significant, the presence of Demodex is extremely common. Most people carry them without symptoms. But when the population grows too large, problems begin.
           </p>
           <p>
-            The classic sign under the slit lamp is cylindrical dandruff: tiny, waxy sleeves wrapped around the base of each eyelash. If I see that, Demodex is almost certainly a major contributor.
-          </p>
-          <p>
-            Demodex blepharitis tends to be more common in patients over 60, in people with rosacea, and in those with weakened immune systems. But I see it across all ages. The mites are not a sign of poor hygiene. They are simply part of being human, and sometimes they overpopulate.
-          </p>
-        </div>
-      </section>
-
-      <section className="section section-warm">
-        <div className="container content-narrow">
-          <h2 className="section-title">Why This Matters for <strong>Cataract Surgery</strong></h2>
-          <p>
-            This is where blepharitis goes from "nuisance" to "clinically important."
-          </p>
-          <p>
-            Before cataract surgery, we take precise measurements of the eye to calculate the correct lens implant power. Those measurements depend on the tear film being stable and the corneal surface being smooth. Blepharitis disrupts both.
-          </p>
-
-          <BlurReveal><div className="insight-highlight">
-            <p><strong>An unstable tear film changes the measurements. Changed measurements can mean a less accurate lens selection. That is why we want blepharitis controlled before surgery, not after.</strong></p>
-          </div></BlurReveal>
-
-          <p>
-            There is also an infection risk consideration. The bacteria and inflammatory debris along blepharitic eyelids represent a potential source of contamination during surgery. While modern surgical prep minimizes this risk significantly, starting with clean, healthy lids provides an additional margin of safety.
-          </p>
-          <p>
-            I have seen patients whose cataract surgery outcomes were compromised not by the surgery itself, but by unaddressed surface disease that made the preoperative measurements unreliable. It is one of the most preventable causes of a less-than-optimal result.
-          </p>
-        </div>
-      </section>
-
-      <section className="section section-white">
-        <div className="container content-narrow">
-          <h2 className="section-title">What <strong>Treatment Looks Like</strong></h2>
-          <p>
-            The good news is that blepharitis responds well to treatment. The less good news is that it requires consistency. This is a chronic condition, like managing blood pressure or cholesterol. You do not treat it once and walk away.
-          </p>
-          <p>
-            The foundation is lid hygiene. Warm compresses applied to closed eyelids for 5 to 10 minutes help soften the oil in clogged meibomian glands. Gentle lid scrubs with diluted baby shampoo or commercially available lid wipes remove debris and bacteria from the lash line.
-          </p>
-          <p>
-            For Demodex specifically, tea tree oil-based products have been a mainstay. More recently, prescription treatments targeting Demodex directly have become available and tend to be more effective and better tolerated than the older tea tree oil preparations.
-          </p>
-          <p>
-            In-office treatments can make a significant difference for patients with moderate to severe disease. Thermal pulsation therapy (such as LipiFlow) heats and expresses the meibomian glands directly. Intense pulsed light (IPL) therapy reduces inflammation and improves gland function over a series of treatments.
-          </p>
-
-          <div className="content-image" style={{marginBottom: '32px'}}>
-            <Image
-              src="/media/patient-elderly-woman-smiling.jpg"
-              alt="Older woman smiling with clear, comfortable eyes after treatment"
-              width={680}
-              height={453}
-              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
-            />
-          </div>
-
-          <p>
-            For the patient I mentioned at the beginning, we started treatment three months before her cataract surgery. Lid hygiene, a short course of anti-Demodex drops, and one round of IPL. By the time she came in for her pre-op measurements, her tear film was stable, her lids were clean, and her measurements were reliable.
-          </p>
-          <p>
-            Her cataract surgery went well. But just as importantly, her eyes felt better than they had in years. The redness was gone. The itching stopped. She told me the cataract surgery was great, but the blepharitis treatment changed her daily life.
-          </p>
-        </div>
-      </section>
-
-      <section className="section section-warm">
-        <div className="container content-narrow">
-          <h2 className="section-title">Signs You Might <strong>Have It</strong></h2>
-          <p>
-            Blepharitis does not always announce itself dramatically. Many patients have lived with it so long they think their symptoms are normal. If any of the following sound familiar, it is worth having your eyelids evaluated:
-          </p>
-          <ul style={{lineHeight: '2', marginTop: '16px', marginBottom: '16px'}}>
-            <li>Red, irritated eyelids that look worse in the morning</li>
-            <li>Crusty or flaky debris on your lashes when you wake up</li>
-            <li>A gritty, sandy feeling that artificial tears only partially relieve</li>
-            <li>Itching along the lash line, especially later in the day</li>
-            <li>Eyes that water excessively but still feel dry</li>
-            <li>Fluctuating vision that clears briefly after blinking</li>
-            <li>Eyelid styes or chalazia that keep coming back</li>
-            <li>Sensitivity to light that seems disproportionate</li>
-          </ul>
-          <p>
-            If you have been treated for dry eye without improvement, blepharitis may be the underlying cause that has not been addressed.
+            The mites feed on oils and dead skin cells. Their waste products and the bacteria they carry trigger an inflammatory response. That inflammation shows up as redness, itching, flaking, and crusting along the lash line. Patients often describe waking up with their lashes stuck together.
           </p>
 
           <BlurReveal><div className="pull-quote">
-            <p>"The treatment that finally worked was not for what I thought was wrong."</p>
+            <p>"I thought I just needed better eye drops. I had no idea something was actually living on my eyelids."</p>
           </div></BlurReveal>
-        </div>
-      </section>
 
-      <section className="section section-white">
-        <div className="container content-narrow">
-          <h2 className="section-title">The Bigger <strong>Picture</strong></h2>
           <p>
-            Blepharitis is not dangerous. It will not cause blindness. But it can make your eyes genuinely miserable, and when left untreated, it can affect other procedures and treatments.
-          </p>
-          <p>
-            What I tell patients is this: think of your eyelids the way you think of your gums. You do not just brush your teeth. You take care of the tissue around them. Your eyelids are the same. They are part of the system that keeps your eyes healthy, and they deserve attention.
-          </p>
-          <p>
-            If your eyes have been red and irritated for months, and drops alone are not solving it, ask your eye doctor to take a close look at your eyelids. The answer may have been sitting right there the whole time.
+            This is the reaction I hear most often when I explain the diagnosis. There is surprise, sometimes discomfort at the idea, and then relief that there is a clear explanation and a treatment plan.
           </p>
         </div>
       </section>
 
       <section className="section section-warm">
         <div className="container content-narrow">
-          <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
-          <div className="related-grid">
-            <Link href="/insights/when-the-eye-surface-changes-everything" className="related-card">
-              <h3>When the Eye Surface Changes Everything</h3>
-              <p>How ocular surface disease affects cataract surgery planning and outcomes.</p>
-            </Link>
-            <Link href="/insights/cataract-pre-op-appointment" className="related-card">
-              <h3>Your Cataract Pre-Op Appointment</h3>
-              <p>What happens during the evaluation that determines your surgical plan.</p>
-            </Link>
-            <Link href="/dry-eyes-desert" className="related-card">
-              <h3>Dry Eye Treatment</h3>
-              <p>Advanced dry eye management at Desert Vision Center, including LipiFlow and IPL therapy.</p>
-            </Link>
-            <Link href="/insights/when-cataracts-are-not-the-real-problem" className="related-card">
-              <h3>When Cataracts Are Not the Real Problem</h3>
-              <p>Sometimes the cataract is not what is causing the symptoms. What else to consider.</p>
-            </Link>
-          </div>
+          <h2 className="section-title">How It Is <strong>Diagnosed</strong></h2>
+          <p>
+            Diagnosis is made during a slit lamp examination. I look for characteristic signs: debris along the lash line, redness and thickening of the lid margin, blocked or inflamed oil glands, and the cylindrical collarettes that are strongly associated with Demodex.
+          </p>
+          <p>
+            In some cases, I will remove a lash and examine it under a microscope to confirm the presence of mites. But often, the clinical picture is clear enough that microscopy is not needed.
+          </p>
+          <p>
+            What matters is recognizing the condition early. Many patients have been treating themselves for dry eye or allergies for months or years without improvement. Once the correct diagnosis is made, treatment can begin.
+          </p>
+        </div>
+      </section>
+
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <h2 className="section-title">Why This Matters for <strong>Cataract Surgery</strong></h2>
+          <p>
+            Blepharitis and Demodex are not just comfort issues. They directly affect cataract surgery outcomes in several ways.
+          </p>
+          <p>
+            First, untreated blepharitis increases the risk of postoperative infection. Bacteria live along the inflamed eyelid margin, close to the surgical site. Good preoperative hygiene reduces that risk, but chronic inflammation makes sterilization more difficult.
+          </p>
+          <p>
+            Second, blepharitis can affect the accuracy of the measurements used to calculate lens implant power. Inflammation and tear film instability can alter the surface curvature of the cornea, leading to inaccurate readings. If those readings are off, the lens power calculation will be off, and the patient may not achieve the best possible vision.
+          </p>
+          <p>
+            Third, patients with chronic blepharitis tend to have worse dry eye symptoms after surgery. Cataract surgery temporarily disrupts the ocular surface. If that surface is already compromised by inflammation, recovery can be slower and more uncomfortable.
+          </p>
+
+          <BlurReveal><div className="insight-highlight">
+            <p><strong>For these reasons, I often treat or optimize lid hygiene before proceeding with cataract surgery. The goal is not perfection. It is reducing risk and improving the surgical environment.</strong></p>
+          </div></BlurReveal>
+        </div>
+      </section>
+
+      <section className="section section-warm">
+        <div className="container content-narrow">
+          <h2 className="section-title">How It Is <strong>Treated</strong></h2>
+          <p>
+            Treatment for blepharitis and Demodex focuses on reducing the mite population, controlling inflammation, and improving lid hygiene. This is not a one-time fix. It is an ongoing maintenance process.
+          </p>
+          <p>
+            The cornerstone of treatment is daily eyelid hygiene. This includes warm compresses to soften blockages in the oil glands, followed by gentle cleaning of the lash line with tea tree oil-based cleansers. Tea tree oil has natural anti-Demodex properties and is one of the most effective topical treatments.
+          </p>
+          <p>
+            In more severe cases, I prescribe medications. Topical ivermectin cream targets the mites directly. Oral ivermectin is reserved for patients with widespread or refractory infestations. Antibiotic ointments or oral antibiotics may be used if bacterial overgrowth is contributing.
+          </p>
+          <p>
+            In-office treatments are also available. Intense pulsed light (IPL) therapy reduces inflammation and improves oil gland function. Mechanical lid debridement, where I carefully remove debris and biofilm from the lash margin, provides immediate relief and allows medications to penetrate better.
+          </p>
+          <p>
+            The challenge is that Demodex and blepharitis tend to recur. Without consistent maintenance, the mites repopulate and inflammation returns. Patients who stay on top of their lid hygiene tend to do much better long-term.
+          </p>
+        </div>
+      </section>
+
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <h2 className="section-title">Why the Desert <strong>Environment</strong> Makes It Worse</h2>
+          <p>
+            Living in the Coachella Valley comes with certain environmental challenges. The air is dry. Humidity is often below 20%. Wind picks up dust and debris. All of this stresses the ocular surface.
+          </p>
+          <p>
+            For patients with blepharitis, this environment amplifies symptoms. The tear film evaporates faster. The eyelids become more irritated. Inflammation worsens. Many of my patients notice that their eyes feel worse during the hot, dry summer months.
+          </p>
+          <p>
+            Managing blepharitis in the desert requires more aggressive lid hygiene and often more frequent use of artificial tears or prescription anti-inflammatory drops. The goal is to create a stable ocular surface despite the challenging environment.
+          </p>
+        </div>
+      </section>
+
+      <section className="section section-warm">
+        <div className="container content-narrow">
+          <h2 className="section-title">What Patients Should <strong>Know</strong></h2>
+          <p>
+            If you have chronic redness, itching, or crusting along your eyelids, do not assume it is just dry eye or allergies. It may be blepharitis or Demodex. And if you are planning cataract surgery, treating this condition beforehand can improve both your comfort and your surgical outcome.
+          </p>
+          <p>
+            The good news is that blepharitis is manageable. It requires consistency and patience, but most patients see significant improvement within a few weeks of starting treatment. And once the condition is under control, maintaining it becomes easier.
+          </p>
+          <p>
+            If you are experiencing these symptoms, schedule an examination. A slit lamp evaluation takes a few minutes and provides a clear diagnosis. From there, we can build a treatment plan that fits your life and prepares you for cataract surgery if that is part of your care.
+          </p>
+        </div>
+      </section>
+
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <h3 className="section-title-sm">Related <strong>Reading</strong></h3>
+          <ul className="insight-related-list">
+            <li><Link href="/insights/when-the-eye-surface-changes-everything">When the Eye Surface Changes Everything</Link></li>
+            <li><Link href="/insights/posterior-capsule-opacification">Posterior Capsule Opacification: When Vision Clouds Again After Cataract Surgery</Link></li>
+            <li><Link href="/insights/is-cataract-surgery-painful">Is Cataract Surgery Painful? Here's the Honest Answer</Link></li>
+            <li><Link href="/services/cataract-surgery">Cataract Surgery at Desert Vision Center</Link></li>
+            <li><Link href="/services/glaucoma-care">Glaucoma Care and Management</Link></li>
+            <li><Link href="/contact">Schedule a Consultation</Link></li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="section section-cta">
+        <div className="container content-narrow text-center">
+          <h2>Ready to Address Red, Itchy Eyes?</h2>
+          <p>If you are experiencing chronic eyelid irritation or preparing for cataract surgery, an evaluation can identify the underlying cause and create a clear treatment plan.</p>
+          <p><strong>Desert Vision Center</strong><br />
+          35900 Bob Hope Dr, Suite 175<br />
+          Rancho Mirage, CA 92270</p>
+          <p>Serving Rancho Mirage, Palm Desert, Indian Wells, La Quinta, Palm Springs, and the Coachella Valley.</p>
+          <Link href="/contact" className="btn btn-primary btn-lg">Schedule Your Consultation</Link>
         </div>
       </section>
     </>

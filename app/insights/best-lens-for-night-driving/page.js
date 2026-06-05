@@ -348,6 +348,10 @@ export default function InsightBestLensForNightDriving() {
               <h3>Are Premium Lenses Worth It?</h3>
               <p>When to choose a premium lens and when a standard monofocal is the better call.</p>
             </Link>
+            <Link href="/insights/cataract-surgery-at-50" className="related-card">
+              <h3>Cataract Surgery at 50: When You Are Younger Than Most Patients</h3>
+              <p>Why lens choice conversations are different for patients in their 50s who still work full-time and drive at night regularly.</p>
+            </Link>
             <Link href="/halos-after-cataract-surgery" className="related-card">
               <h3>Halos After Cataract Surgery: What They Are and What to Do</h3>
               <p>Why some lenses cause halos, how to know if they will bother you, and what can be done.</p>

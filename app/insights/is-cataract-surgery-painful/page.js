@@ -199,6 +199,10 @@ export default function InsightPainful() {
               <h3>Cataract Surgery Step by Step</h3>
               <p>What actually happens during the procedure, start to finish.</p>
             </Link>
+            <Link href="/insights/blepharitis-demodex-red-itchy-eyes" className="related-card">
+              <h3>Blepharitis and Demodex</h3>
+              <p>Treating eyelid inflammation before surgery reduces risk and improves comfort during recovery.</p>
+            </Link>
             <Link href="/insights/first-week-after-cataract-surgery" className="related-card">
               <h3>Your First Week After Surgery</h3>
               <p>A day-by-day guide to recovery and what to expect.</p>

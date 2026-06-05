@@ -1,5 +1,13 @@
 export const insights = [
   {
+    slug: 'cataract-surgery-at-50',
+    title: 'Cataract Surgery at 50: When You Are Younger Than Most Patients',
+    date: 'June 2026',
+    description: 'Most people associate cataracts with being 70 or older. But some patients develop visually significant cataracts in their 50s. Here is what makes younger cataract patients different and how lens choice conversations change when you have decades ahead.',
+    cluster: 'Story',
+    image: '/media/patient-driving-concern.jpg',
+  },
+  {
     slug: 'blepharitis-demodex-red-itchy-eyes',
     title: 'Blepharitis and Demodex: The Hidden Cause of Red, Itchy Eyes',
     date: 'June 2026',
