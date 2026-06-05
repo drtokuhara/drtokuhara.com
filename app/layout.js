@@ -174,6 +174,8 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/what-is-ora-machine">The ORA Machine</Link>
                     <Link href="/insights/posterior-capsule-opacification">Cloudy Vision After Surgery (PCO)</Link>
                     <Link href="/insights/blepharitis-demodex-red-itchy-eyes">Blepharitis & Demodex</Link>
+                    <Link href="/insights/technology-behind-modern-cataract-surgery">The Technology Behind Modern Surgery</Link>
+                    <Link href="/insights/cataract-surgery-and-diabetes">Cataract Surgery and Diabetes</Link>
                     <span className="nav-mega-label" style={{marginTop: '16px'}}>Honest Answers</span>
                     <Link href="/insights/when-cataract-surgery-goes-wrong">When Surgery Goes Wrong</Link>
                     <Link href="/insights/cataract-referral-kickbacks">Referral Kickbacks</Link>

@@ -229,6 +229,10 @@ export default function ArePremiumLensesWorthIt() {
               <h3>Toric Lenses and Astigmatism</h3>
               <p>How toric lenses correct astigmatism during cataract surgery.</p>
             </Link>
+            <Link href="/insights/cataract-surgery-and-diabetes" className="related-card">
+              <h3>Cataract Surgery and Diabetes</h3>
+              <p>Diabetic retinopathy affects lens choice. Premium lenses may not perform well if the retina is compromised.</p>
+            </Link>
           </div>
         </div>
       </section>

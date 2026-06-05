@@ -333,6 +333,7 @@ export default function WhenCataractsAreNotTheRealProblemPage() {
                 <li><Link href="/glaucoma" className="lux-text-link">Glaucoma Care</Link></li>
                 <li><Link href="/complex-cases/glaucoma-and-cataract" className="lux-text-link">Glaucoma and Cataract: Combined Treatment</Link></li>
                 <li><Link href="/insights/how-to-choose-a-cataract-surgeon" className="lux-text-link">How to Choose a Cataract Surgeon</Link></li>
+                <li><Link href="/insights/cataract-surgery-and-diabetes" className="lux-text-link">Cataract Surgery and Diabetes: What You Need to Know</Link></li>
               </ul>
             </div>
           </ScrollReveal>

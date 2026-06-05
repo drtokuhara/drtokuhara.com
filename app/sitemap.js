@@ -138,6 +138,8 @@ export default function sitemap() {
     '/insights/the-lens-we-didnt-implant',
     '/insights/the-patient-i-never-saw-again',
     '/insights/the-week-everything-changed',
+    '/insights/technology-behind-modern-cataract-surgery',
+    '/insights/cataract-surgery-and-diabetes',
   ].map((path) => ({ path, priority: 0.6, changeFrequency: 'monthly' }));
 
   // City landing pages - local SEO

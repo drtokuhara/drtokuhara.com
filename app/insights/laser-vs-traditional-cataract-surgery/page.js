@@ -345,6 +345,10 @@ export default function InsightLaserVsTraditional() {
               <h3>When Cataract Surgery Goes Wrong</h3>
               <p>Complications, management, and why surgeon experience matters most.</p>
             </Link>
+            <Link href="/insights/technology-behind-modern-cataract-surgery" className="related-card">
+              <h3>The Technology Behind Modern Cataract Surgery</h3>
+              <p>Plain-language explanation of phacoemulsification, femtosecond laser, ORA, torsional ultrasound, and advanced IOL designs.</p>
+            </Link>
           </div>
         </div>
       </section>

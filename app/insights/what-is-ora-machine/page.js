@@ -261,6 +261,10 @@ export default function InsightWhatIsOraMachine() {
               <h3>What Happens at Your Pre-Op Appointment</h3>
               <p>The measurements and evaluation that determine surgical planning.</p>
             </Link>
+            <Link href="/insights/technology-behind-modern-cataract-surgery" className="related-card">
+              <h3>The Technology Behind Modern Cataract Surgery</h3>
+              <p>A comprehensive look at phacoemulsification, femtosecond laser, ORA, and advanced IOL technology.</p>
+            </Link>
           </div>
         </div>
       </section>

@@ -137,6 +137,14 @@ export default function DiabetesPage() {
             title="Cataract Surgery with Diabetes"
             description="One-page visual guide about diabetic cataract surgery"
           />
+
+          <h2 className="section-title">Learn <strong>More</strong></h2>
+          <div style={{display: 'grid', gap: '16px', marginTop: '24px'}}>
+            <Link href="/insights/cataract-surgery-and-diabetes" style={{padding: '16px', border: '1px solid var(--sand)', borderRadius: '8px', textDecoration: 'none', display: 'block'}}>
+              <h3 style={{color: 'var(--primary)', marginBottom: '8px', fontSize: '18px'}}>Cataract Surgery and Diabetes: What You Need to Know</h3>
+              <p style={{color: 'var(--text)', margin: 0}}>A thorough patient guide covering why diabetics develop cataracts earlier, retinopathy evaluation, blood sugar control, lens choice, and post-operative monitoring.</p>
+            </Link>
+          </div>
         </div>
       </section>
 

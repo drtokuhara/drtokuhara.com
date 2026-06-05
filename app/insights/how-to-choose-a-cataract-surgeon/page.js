@@ -311,6 +311,14 @@ export default function InsightChooseASurgeon() {
               <h3>The Consultation That Changed Everything</h3>
               <p>What a 70-minute first visit looks like, and why it matters.</p>
             </Link>
+            <Link href="/insights/technology-behind-modern-cataract-surgery" className="related-card">
+              <h3>The Technology Behind Modern Cataract Surgery</h3>
+              <p>Understanding the tools matters less than choosing the surgeon who knows when and how to use them.</p>
+            </Link>
+            <Link href="/insights/cataract-surgery-and-diabetes" className="related-card">
+              <h3>Cataract Surgery and Diabetes</h3>
+              <p>Diabetic patients need a surgeon who understands the additional considerations and complications.</p>
+            </Link>
           </div>
         </div>
       </section>

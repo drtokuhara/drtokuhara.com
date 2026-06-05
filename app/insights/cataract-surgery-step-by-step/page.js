@@ -264,6 +264,10 @@ export default function InsightStepByStep() {
               <h3>Choosing Your Surgeon</h3>
               <p>What to look for and why it matters more than any technology.</p>
             </Link>
+            <Link href="/insights/technology-behind-modern-cataract-surgery" className="related-card">
+              <h3>The Technology Behind Modern Cataract Surgery</h3>
+              <p>Plain-language explanation of the tools and techniques used in modern cataract procedures.</p>
+            </Link>
           </div>
         </div>
       </section>

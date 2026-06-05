@@ -1,5 +1,21 @@
 export const insights = [
   {
+    slug: 'technology-behind-modern-cataract-surgery',
+    title: 'The Technology Behind Modern Cataract Surgery',
+    date: 'June 2026',
+    description: 'Patients hear terms like "laser cataract surgery," "ORA," "torsional phaco" and have no idea what they mean. A surgeon with 20,000+ procedures explains the actual technology in plain language and what matters most.',
+    cluster: 'Tech Explainer',
+    image: '/media/hero-cataracts-glaucoma.jpg',
+  },
+  {
+    slug: 'cataract-surgery-and-diabetes',
+    title: 'Cataract Surgery and Diabetes: What You Need to Know',
+    date: 'June 2026',
+    description: 'Diabetic patients develop cataracts earlier and face additional surgical considerations. Why diabetic retinopathy evaluation matters, how blood sugar control affects healing, and what post-operative monitoring looks like.',
+    cluster: 'Comorbidity',
+    image: '/media/hero-second-opinion-changed.jpg',
+  },
+  {
     slug: 'cataract-surgery-at-50',
     title: 'Cataract Surgery at 50: When You Are Younger Than Most Patients',
     date: 'June 2026',
