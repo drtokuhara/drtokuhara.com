@@ -185,10 +185,6 @@ export default function InsightWhenTheUnexpectedLeadsToTheRightOutcome() {
               <h3>Do I Really Need Surgery Yet?</h3>
               <p>Sometimes the answer is not yet. Timing and honest evaluation matter.</p>
             </Link>
-            <Link href="/insights/when-guilt-replaces-explanation" className="related-card">
-              <h3>When Guilt Replaces Explanation</h3>
-              <p>A patient story about honest communication after an unexpected outcome.</p>
-            </Link>
             <Link href="/insights/when-cataract-surgery-goes-wrong" className="related-card">
               <h3>When Cataract Surgery Goes Wrong</h3>
               <p>Complications, management, and why surgeon experience matters most.</p>

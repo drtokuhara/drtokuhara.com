@@ -9,9 +9,16 @@ import {
   KineticText,
   BlurReveal,
   LineDraw,
+  CountUp,
+  TrustBadge,
+  FloatingQuote,
+  PremiumImageBreak,
+  TextSlide,
+  NumberReveal,
 } from '../components/ScrollAnimations';
 import PageFAQ from '../components/PageFAQ';
 import AudioNarration from '../components/AudioNarration';
+import AuthorByline from '../components/AuthorByline';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -109,6 +116,39 @@ export default function CataractSurgeryPage() {
         </div>
       </VideoBackground>
 
+      {/* STATS BAR */}
+      <section style={{padding: '48px 0', background: 'linear-gradient(135deg, #f8f9fa 0%, #e8f4f5 100%)'}}>
+        <div className="container" style={{display: 'flex', justifyContent: 'center', gap: 'clamp(32px, 6vw, 80px)', flexWrap: 'wrap', textAlign: 'center'}}>
+          <ScrollReveal direction="up" delay={0.1} once={true}>
+            <div style={{minWidth: '140px'}}>
+              <div style={{fontSize: 'clamp(36px, 5vw, 56px)', fontWeight: 700, color: 'var(--midnight)', lineHeight: 1}}><CountUp end={20000} duration={2.5} suffix="+" /></div>
+              <div style={{fontSize: '14px', fontWeight: 500, letterSpacing: '0.05em', textTransform: 'uppercase', color: 'var(--mirage)', marginTop: '8px'}}>Surgeries Performed</div>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal direction="up" delay={0.3} once={true}>
+            <div style={{minWidth: '140px'}}>
+              <div style={{fontSize: 'clamp(36px, 5vw, 56px)', fontWeight: 700, color: 'var(--midnight)', lineHeight: 1}}><CountUp end={20} duration={2} suffix="+" /></div>
+              <div style={{fontSize: '14px', fontWeight: 500, letterSpacing: '0.05em', textTransform: 'uppercase', color: 'var(--mirage)', marginTop: '8px'}}>Years Experience</div>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal direction="up" delay={0.5} once={true}>
+            <div style={{minWidth: '140px'}}>
+              <div style={{fontSize: 'clamp(36px, 5vw, 56px)', fontWeight: 700, color: 'var(--midnight)', lineHeight: 1}}>Since 2005</div>
+              <div style={{fontSize: '14px', fontWeight: 500, letterSpacing: '0.05em', textTransform: 'uppercase', color: 'var(--mirage)', marginTop: '8px'}}>Performing Cataract Surgery</div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* TRUST BADGES */}
+      <section style={{padding: '32px 0', background: 'var(--midnight)'}}>
+        <div className="container" style={{display: 'flex', justifyContent: 'center', gap: '40px', flexWrap: 'wrap', textAlign: 'center'}}>
+          <TrustBadge delay={0.1}><span style={{color: 'var(--oasis)', fontSize: '14px', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase'}}>Palm Springs Life Top Doctor 2019-2026</span></TrustBadge>
+          <TrustBadge delay={0.3}><span style={{color: 'var(--oasis)', fontSize: '14px', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase'}}>NBC Recognition: Best in Coachella Valley</span></TrustBadge>
+          <TrustBadge delay={0.5}><span style={{color: 'var(--oasis)', fontSize: '14px', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase'}}>First in Valley for Advanced Procedures</span></TrustBadge>
+        </div>
+      </section>
+
       {/* WHAT ARE CATARACTS */}
       <section className="section section-white">
         <div className="container content-narrow">
@@ -171,6 +211,29 @@ export default function CataractSurgeryPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* PATIENT QUOTE 1 */}
+      <FloatingQuote>
+        <div className="container content-narrow" style={{textAlign: 'center', padding: '48px 20px'}}>
+          <p style={{fontFamily: 'var(--font-playfair)', fontSize: 'clamp(20px, 3vw, 28px)', fontStyle: 'italic', color: 'var(--midnight)', lineHeight: 1.6, maxWidth: '640px', margin: '0 auto'}}>"I wish I hadn't waited two years. The difference was immediate."</p>
+          <p style={{fontSize: '14px', color: 'var(--mirage)', marginTop: '12px', fontWeight: 500}}>Cataract surgery patient</p>
+        </div>
+      </FloatingQuote>
+
+      {/* EYE ANATOMY IMAGE BREAK */}
+      <section className="section" style={{paddingTop: '24px', paddingBottom: '24px', background: '#f8f9fa'}}>
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <Image
+              src="/media/medical-eye-lens-anatomy.png"
+              alt="Detailed anatomy of the human eye showing cornea, iris, lens, retina, and optic nerve"
+              width={1536}
+              height={1024}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </ScrollReveal>
         </div>
       </section>
 
@@ -256,6 +319,75 @@ export default function CataractSurgeryPage() {
         </div>
       </section>
 
+      {/* PATIENT QUOTE 2 */}
+      <FloatingQuote>
+        <div className="container content-narrow" style={{textAlign: 'center', padding: '48px 20px'}}>
+          <p style={{fontFamily: 'var(--font-playfair)', fontSize: 'clamp(20px, 3vw, 28px)', fontStyle: 'italic', color: 'var(--midnight)', lineHeight: 1.6, maxWidth: '640px', margin: '0 auto'}}>"I was terrified. Ten minutes later, I couldn't believe it was already done."</p>
+          <p style={{fontSize: '14px', color: 'var(--mirage)', marginTop: '12px', fontWeight: 500}}>Cataract surgery patient</p>
+        </div>
+      </FloatingQuote>
+
+      {/* YOUR JOURNEY TO CLEAR VISION */}
+      <section className="section" style={{background: 'linear-gradient(135deg, #f0f7f8 0%, #e8f0f1 100%)'}}>
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title" style={{textAlign: 'center', marginBottom: '40px'}}>Your Journey to <strong>Clear Vision</strong></h2>
+          </ScrollReveal>
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '24px'}}>
+            <ScrollReveal direction="up" delay={0.1} once={true}>
+              <div style={{textAlign: 'center', padding: '24px 16px'}}>
+                <div style={{width: '48px', height: '48px', borderRadius: '50%', background: 'var(--oasis)', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px', fontSize: '20px', fontWeight: 700}}>1</div>
+                <h3 style={{fontSize: '16px', fontWeight: 700, marginBottom: '8px'}}>Consultation</h3>
+                <p style={{fontSize: '14px', color: 'var(--mirage)'}}>Thorough evaluation, honest conversation about your options</p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal direction="up" delay={0.2} once={true}>
+              <div style={{textAlign: 'center', padding: '24px 16px'}}>
+                <div style={{width: '48px', height: '48px', borderRadius: '50%', background: 'var(--oasis)', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px', fontSize: '20px', fontWeight: 700}}>2</div>
+                <h3 style={{fontSize: '16px', fontWeight: 700, marginBottom: '8px'}}>Precision Measurements</h3>
+                <p style={{fontSize: '14px', color: 'var(--mirage)'}}>Advanced imaging to map your eye and select the right lens</p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal direction="up" delay={0.3} once={true}>
+              <div style={{textAlign: 'center', padding: '24px 16px'}}>
+                <div style={{width: '48px', height: '48px', borderRadius: '50%', background: 'var(--oasis)', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px', fontSize: '20px', fontWeight: 700}}>3</div>
+                <h3 style={{fontSize: '16px', fontWeight: 700, marginBottom: '8px'}}>Surgery Day</h3>
+                <p style={{fontSize: '14px', color: 'var(--mirage)'}}>10-15 minutes, numbing drops, no pain, no stitches</p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal direction="up" delay={0.4} once={true}>
+              <div style={{textAlign: 'center', padding: '24px 16px'}}>
+                <div style={{width: '48px', height: '48px', borderRadius: '50%', background: 'var(--oasis)', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px', fontSize: '20px', fontWeight: 700}}>4</div>
+                <h3 style={{fontSize: '16px', fontWeight: 700, marginBottom: '8px'}}>Recovery</h3>
+                <p style={{fontSize: '14px', color: 'var(--mirage)'}}>Most patients see clearly within a day or two</p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal direction="up" delay={0.5} once={true}>
+              <div style={{textAlign: 'center', padding: '24px 16px'}}>
+                <div style={{width: '48px', height: '48px', borderRadius: '50%', background: 'var(--oasis)', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px', fontSize: '20px', fontWeight: 700}}>5</div>
+                <h3 style={{fontSize: '16px', fontWeight: 700, marginBottom: '8px'}}>Clear Vision</h3>
+                <p style={{fontSize: '14px', color: 'var(--mirage)'}}>Brighter colors, sharper details, life without cloudy vision</p>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* SURGICAL PRECISION IMAGE */}
+      <section className="section" style={{paddingTop: '24px', paddingBottom: '24px'}}>
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <Image
+              src="/media/surgical-precision-line-art.png"
+              alt="Minimalist line art of surgical precision during cataract surgery"
+              width={1536}
+              height={1024}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* CLEAR IN A DAY */}
       <section id="clear-in-a-day" className="section section-warm">
         <div className="container content-narrow">
@@ -286,6 +418,29 @@ export default function CataractSurgeryPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* PATIENT QUOTE 3 */}
+      <FloatingQuote>
+        <div className="container content-narrow" style={{textAlign: 'center', padding: '48px 20px'}}>
+          <p style={{fontFamily: 'var(--font-playfair)', fontSize: 'clamp(20px, 3vw, 28px)', fontStyle: 'italic', color: 'var(--midnight)', lineHeight: 1.6, maxWidth: '640px', margin: '0 auto'}}>"He told me the standard lens was the right choice for my eyes. No upsell. Just honesty."</p>
+          <p style={{fontSize: '14px', color: 'var(--mirage)', marginTop: '12px', fontWeight: 500}}>Cataract surgery patient</p>
+        </div>
+      </FloatingQuote>
+
+      {/* CONSULTATION IMAGE */}
+      <section className="section" style={{paddingTop: '24px', paddingBottom: '24px', background: '#f8f9fa'}}>
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <Image
+              src="/media/consultation-line-art.png"
+              alt="Doctor and patient consultation about cataract surgery options"
+              width={1536}
+              height={1024}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </ScrollReveal>
         </div>
       </section>
 
@@ -358,6 +513,14 @@ export default function CataractSurgeryPage() {
           </div>
         </div>
       </section>
+
+      {/* PATIENT QUOTE 4 */}
+      <FloatingQuote>
+        <div className="container content-narrow" style={{textAlign: 'center', padding: '48px 20px'}}>
+          <p style={{fontFamily: 'var(--font-playfair)', fontSize: 'clamp(20px, 3vw, 28px)', fontStyle: 'italic', color: 'var(--midnight)', lineHeight: 1.6, maxWidth: '640px', margin: '0 auto'}}>"Colors are so vivid now. I didn't realize how much I was missing."</p>
+          <p style={{fontSize: '14px', color: 'var(--mirage)', marginTop: '12px', fontWeight: 500}}>Cataract surgery patient</p>
+        </div>
+      </FloatingQuote>
 
       {/* COMPLEX CASES */}
       <section id="complex-cases" className="section section-warm">

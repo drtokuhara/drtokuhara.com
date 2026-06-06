@@ -85,6 +85,9 @@ export default function sitemap() {
 
   // Insight articles
   const insightPages = [
+    '/insights/panoptix-vs-panoptix-pro',
+    '/insights/swimming-after-cataract-surgery',
+    '/insights/what-causes-cataracts',
     '/insights/when-experience-speaks',
     '/insights/cataract-surgery-step-by-step',
     '/insights/first-week-after-cataract-surgery',
@@ -105,7 +108,7 @@ export default function sitemap() {
     '/insights/the-man-who-wanted-his-younger-eyes-back',
     '/insights/the-number-that-wasnt-the-problem',
     '/insights/when-ai-recommends-your-lens',
-    '/insights/when-guilt-replaces-explanation',
+
     '/insights/when-more-isnt-better',
     '/insights/are-premium-lenses-worth-it',
     '/insights/choosing-the-standard-lens',
@@ -140,6 +143,9 @@ export default function sitemap() {
     '/insights/the-week-everything-changed',
     '/insights/technology-behind-modern-cataract-surgery',
     '/insights/cataract-surgery-and-diabetes',
+    '/insights/subconjunctival-hemorrhage',
+    '/insights/panoptix-vs-vivity',
+    '/insights/driving-after-cataract-surgery',
   ].map((path) => ({ path, priority: 0.6, changeFrequency: 'monthly' }));
 
   // City landing pages - local SEO

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
+import AudioNarration from '../../components/AudioNarration';
 import {
   ScrollReveal,
   BlurReveal,
@@ -94,6 +95,7 @@ export default function InsightStepByStep() {
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"
         style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+        bottomOverlay={<AudioNarration src="/audio/narrations/cataract-surgery-step-by-step.mp3" />}
       >
         <div className="container">
           <ScrollReveal direction="up" once={true}>
@@ -251,6 +253,10 @@ export default function InsightStepByStep() {
             <Link href="/insights/first-week-after-cataract-surgery" className="related-card">
               <h3>Your First Week After Cataract Surgery</h3>
               <p>A day-by-day guide to what is normal and what to watch for.</p>
+            </Link>
+            <Link href="/insights/driving-after-cataract-surgery" className="related-card">
+              <h3>Driving After Cataract Surgery</h3>
+              <p>When you can safely return to driving and what determines readiness.</p>
             </Link>
             <Link href="/cataract-pre-op" className="related-card">
               <h3>Pre-Op Guide</h3>

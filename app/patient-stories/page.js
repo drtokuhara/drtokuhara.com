@@ -229,11 +229,7 @@ export default function PatientStories() {
               </Link>
             </StaggerItem>
             <StaggerItem>
-              <Link href="/insights/when-guilt-replaces-explanation" className="related-card">
-                <h3>When Guilt Replaces Explanation</h3>
-                <p>A patient was told his complication was his fault. It was not.</p>
-              </Link>
-            </StaggerItem>
+              </StaggerItem>
           </StaggerChildren>
         </div>
       </section>

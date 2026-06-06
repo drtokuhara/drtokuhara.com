@@ -136,7 +136,7 @@ export default function InsightDiabetesCataracts() {
             Most people associate cataracts with aging. The typical non-diabetic patient develops visually significant cataracts in their 70s. Diabetic patients often develop them in their 50s, sometimes even earlier.
           </p>
           <p>
-            The mechanism is biochemical. Chronically elevated blood sugar causes glucose to accumulate in the lens. The lens has no blood supply, so it absorbs glucose from the aqueous fluid that bathes it. Excess glucose is converted into sorbitol, a sugar alcohol that cannot easily leave the lens. Sorbitol accumulation disrupts the normal lens protein structure, leading to clouding.
+            The mechanism is biochemical. Chronically elevated blood sugar causes glucose to accumulate in the lens. The lens has no blood supply, so it absorbs glucose from the aqueous fluid that bathes it. Excess glucose is converted into sorbitol, a sugar alcohol that cannot easily leave the lens. Sorbitol accumulation disrupts the normal lens protein structure, leading to clouding. For a deeper explanation of all cataract causes, see <Link href="/insights/what-causes-cataracts">What Causes Cataracts</Link>.
           </p>
           <p>
             The longer you have had diabetes, and the less controlled your blood sugar has been over the years, the more likely you are to develop cataracts earlier than your peers. This is not a failure on your part. It is a consequence of the disease process.

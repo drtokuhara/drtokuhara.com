@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
+import AudioNarration from '../../components/AudioNarration';
 import {
   ScrollReveal,
   BlurReveal,
@@ -99,6 +100,7 @@ export default function InsightCataractAt50() {
         overlayColor="10, 20, 30"
         className="page-hero page-hero-image"
         style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+        bottomOverlay={<AudioNarration src="/audio/narrations/cataract-surgery-at-50.mp3" />}
       >
         <div className="container">
           <ScrollReveal direction="up" once={true}>

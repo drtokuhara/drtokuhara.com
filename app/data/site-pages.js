@@ -423,7 +423,6 @@ const sitePages = [
     "category": "Insight"
   },
   {
-    "path": "/insights/when-guilt-replaces-explanation",
     "title": "When Guilt Replaces Explanation",
     "description": "A cataract surgery complication was blamed on the patient for not choosing laser. It was not his fault. A reflection on surgical ethics, posterior capsule rupture, and what patients deserve when compl",
     "category": "Insight"

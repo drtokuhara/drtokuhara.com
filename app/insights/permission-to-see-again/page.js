@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
+import AudioNarration from '../../components/AudioNarration';
 import {
   ScrollReveal,
   ParallaxImage,
@@ -47,6 +48,7 @@ export default function InsightPermission() {
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"
         style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+        bottomOverlay={<AudioNarration src="/audio/narrations/permission-to-see-again.mp3" />}
       >
         <div className="container">
           <ScrollReveal direction="up" once={true}>

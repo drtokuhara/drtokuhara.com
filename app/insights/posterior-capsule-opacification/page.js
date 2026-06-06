@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
+import AudioNarration from '../../components/AudioNarration';
 import {
   ScrollReveal,
   BlurReveal,
@@ -100,6 +101,7 @@ export default function InsightPosteriorCapsuleOpacification() {
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"
         style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+        bottomOverlay={<AudioNarration src="/audio/narrations/posterior-capsule-opacification.mp3" />}
       >
         <div className="container">
           <ScrollReveal direction="up" once={true}>

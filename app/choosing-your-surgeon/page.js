@@ -266,10 +266,6 @@ export default function ChoosingYourSurgeon() {
               <h3>Lens Implants Explained</h3>
               <p>A guide to lens options based on how you live - not what costs the most.</p>
             </Link>
-            <Link href="/insights/when-guilt-replaces-explanation" className="related-card">
-              <h3>When Guilt Replaces Explanation</h3>
-              <p>A story about what happens when a surgeon blames the patient instead of solving the problem.</p>
-            </Link>
             <Link href="/insights/when-the-surgeon-says-wait" className="related-card">
               <h3>When the Surgeon Says Wait</h3>
               <p>Sometimes the best surgical decision is to not operate yet.</p>

@@ -101,7 +101,7 @@ export default function InsightStandardLensRightCall() {
             A patient came in uncertain. He had been reading about premium lenses online, asking on Nextdoor, scrolling through Reddit threads at midnight. Everyone had an opinion. The adjustable lens sounded incredible. The multifocal promised everything at once.
           </p>
           <p>
-            He came to the consultation with a list of questions. Good questions. He wanted to know about the Light Adjustable Lens, the extended depth of focus options, the toric for his mild astigmatism. He had done his homework.
+            He came to the consultation with a list of questions. Good questions. He wanted to know about every premium option available, the extended depth of focus lenses, the toric for his mild astigmatism. He had done his homework.
           </p>
           <p>
             After examining his eyes, running the dry eye screening, taking corneal measurements, and evaluating his tear film, I recommended the standard monofocal lens. Set for distance.
@@ -116,7 +116,7 @@ export default function InsightStandardLensRightCall() {
             He was surprised. Maybe even a little disappointed. He expected to hear about the latest technology. He expected me to recommend the option that sounded the most advanced.
           </p>
           <p>
-            I explained. His corneal surface was slightly irregular from dry eye. A multifocal lens would amplify halos and glare, especially at night. The Light Adjustable Lens requires multiple UV light treatment visits after surgery, and his work schedule as a traveling sales manager made that impractical. The extended depth of focus lens would give him some intermediate range, but with his corneal surface, the tradeoffs were real.
+            I explained. His corneal surface was slightly irregular from dry eye. A multifocal lens would amplify halos and glare, especially at night. The extended depth of focus lens would give him some intermediate range, but with his corneal surface, the tradeoffs were real.
           </p>
           <p>
             The standard lens, set for distance, would give him the cleanest, most reliable vision.

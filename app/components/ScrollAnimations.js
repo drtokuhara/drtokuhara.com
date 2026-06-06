@@ -679,3 +679,543 @@ export function LineDraw({
     </motion.div>
   );
 }
+
+/* ═══════════════════════════════════════════
+   PREMIUM IMAGE BREAK - Full-bleed image with parallax
+   ═══════════════════════════════════════════ */
+export function PremiumImageBreak({
+  src,
+  alt = '',
+  className = '',
+  height = '60vh',
+  overlayOpacity = 0.2,
+  overlayColor = '0, 20, 30',
+  children,
+  style = {},
+}) {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start end', 'end start'],
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], ['-15%', '15%']);
+
+  return (
+    <div
+      ref={ref}
+      className={className}
+      style={{
+        position: 'relative',
+        height,
+        overflow: 'hidden',
+        ...style,
+      }}
+    >
+      <motion.img
+        src={src}
+        alt={alt}
+        style={{
+          position: 'absolute',
+          top: '-15%',
+          left: 0,
+          width: '100%',
+          height: '130%',
+          objectFit: 'cover',
+          y,
+        }}
+      />
+      {overlayOpacity > 0 && (
+        <div
+          style={{
+            position: 'absolute',
+            inset: 0,
+            background: `rgba(${overlayColor}, ${overlayOpacity})`,
+            zIndex: 1,
+          }}
+        />
+      )}
+      {children && (
+        <div style={{ position: 'relative', zIndex: 2, height: '100%' }}>
+          {children}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ═══════════════════════════════════════════
+   TRUST BADGE - Animated badge/logo reveal
+   ═══════════════════════════════════════════ */
+export function TrustBadge({
+  children,
+  className = '',
+  delay = 0,
+  style = {},
+}) {
+  const ref = useRef(null);
+  const hydrated = useHydrated();
+  const isInView = useSafeInView(ref, { once: true, amount: 0.5 });
+
+  if (!hydrated) {
+    return (
+      <div ref={ref} className={className} style={style}>
+        {children}
+      </div>
+    );
+  }
+
+  return (
+    <motion.div
+      ref={ref}
+      className={className}
+      style={style}
+      initial={{ opacity: 0, scale: 0.9, filter: 'blur(4px)' }}
+      animate={isInView ? { opacity: 1, scale: 1, filter: 'blur(0px)' } : { opacity: 0, scale: 0.9, filter: 'blur(4px)' }}
+      transition={{ duration: 0.6, delay, ease: [0.16, 1, 0.3, 1] }}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+/* ═══════════════════════════════════════════
+   TEXT SLIDE - Text that slides in from sides
+   ═══════════════════════════════════════════ */
+export function TextSlide({
+  children,
+  className = '',
+  direction = 'left',  // left | right
+  distance = 100,
+  delay = 0,
+  once = true,
+  threshold = 0.2,
+  style = {},
+}) {
+  const ref = useRef(null);
+  const hydrated = useHydrated();
+  const isInView = useSafeInView(ref, { once, amount: threshold });
+
+  const x = direction === 'left' ? -distance : distance;
+
+  if (!hydrated) {
+    return (
+      <div ref={ref} className={className} style={style}>
+        {children}
+      </div>
+    );
+  }
+
+  return (
+    <motion.div
+      ref={ref}
+      className={className}
+      style={style}
+      initial={{ opacity: 0, x }}
+      animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x }}
+      transition={{ duration: 1, delay, ease: [0.16, 1, 0.3, 1] }}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+/* ═══════════════════════════════════════════
+   FLOATING QUOTE - Large pull quote with subtle float
+   ═══════════════════════════════════════════ */
+export function FloatingQuote({
+  quote,
+  attribution,
+  className = '',
+  delay = 0,
+  style = {},
+}) {
+  const ref = useRef(null);
+  const hydrated = useHydrated();
+  const isInView = useSafeInView(ref, { once: true, amount: 0.3 });
+
+  if (!hydrated) {
+    return (
+      <div ref={ref} className={className} style={{
+        padding: '48px 32px',
+        textAlign: 'center',
+        position: 'relative',
+        ...style,
+      }}>
+        <p style={{
+          fontSize: 'clamp(24px, 4vw, 36px)',
+          fontFamily: 'var(--serif)',
+          lineHeight: 1.5,
+          color: 'var(--text)',
+          marginBottom: '16px',
+          fontStyle: 'italic',
+        }}>
+          &ldquo;{quote}&rdquo;
+        </p>
+        {attribution && (
+          <p style={{
+            fontSize: '14px',
+            fontWeight: 600,
+            letterSpacing: '0.05em',
+            textTransform: 'uppercase',
+            color: 'var(--oasis)',
+          }}>
+            {attribution}
+          </p>
+        )}
+      </div>
+    );
+  }
+
+  return (
+    <motion.div
+      ref={ref}
+      className={className}
+      style={{
+        padding: '48px 32px',
+        textAlign: 'center',
+        position: 'relative',
+        ...style,
+      }}
+      initial={{ opacity: 0, y: 40 }}
+      animate={isInView ? {
+        opacity: 1,
+        y: [40, 0, -4, 0],
+      } : { opacity: 0, y: 40 }}
+      transition={{
+        duration: 1.2,
+        delay,
+        ease: [0.16, 1, 0.3, 1],
+        y: {
+          duration: 6,
+          repeat: Infinity,
+          repeatType: 'reverse',
+          ease: 'easeInOut',
+        }
+      }}
+    >
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 0.8, delay: delay + 0.3 }}
+        style={{
+          fontSize: 'clamp(24px, 4vw, 36px)',
+          fontFamily: 'var(--serif)',
+          lineHeight: 1.5,
+          color: 'var(--text)',
+          marginBottom: '16px',
+          fontStyle: 'italic',
+        }}
+      >
+        &ldquo;{quote}&rdquo;
+      </motion.p>
+      {attribution && (
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ duration: 0.6, delay: delay + 0.5 }}
+          style={{
+            fontSize: '14px',
+            fontWeight: 600,
+            letterSpacing: '0.05em',
+            textTransform: 'uppercase',
+            color: 'var(--oasis)',
+          }}
+        >
+          {attribution}
+        </motion.p>
+      )}
+    </motion.div>
+  );
+}
+
+/* ═══════════════════════════════════════════
+   STICKY REVEAL - Content pins and reveals items on scroll
+   ═══════════════════════════════════════════ */
+export function StickyReveal({
+  items,
+  className = '',
+  stickyHeight = '200vh',
+  style = {},
+}) {
+  const containerRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ['start start', 'end end'],
+  });
+
+  return (
+    <div
+      ref={containerRef}
+      className={className}
+      style={{ height: stickyHeight, position: 'relative', ...style }}
+    >
+      <div style={{ position: 'sticky', top: 0, height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        {items.map((item, i) => {
+          const start = i / items.length;
+          const end = (i + 1) / items.length;
+          const opacity = useTransform(scrollYProgress, [start, start + 0.1, end - 0.1, end], [0, 1, 1, 0]);
+          const scale = useTransform(scrollYProgress, [start, start + 0.1, end - 0.1, end], [0.9, 1, 1, 0.95]);
+
+          return (
+            <motion.div
+              key={i}
+              style={{
+                position: 'absolute',
+                opacity,
+                scale,
+                maxWidth: '800px',
+                padding: '32px',
+              }}
+            >
+              {item}
+            </motion.div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+/* ═══════════════════════════════════════════
+   VIDEO GALLERY - Elegant video presentation
+   ═══════════════════════════════════════════ */
+export function VideoGallery({
+  videos,
+  className = '',
+  columns = 2,
+  style = {},
+}) {
+  const ref = useRef(null);
+  const hydrated = useHydrated();
+  const isInView = useSafeInView(ref, { once: true, amount: 0.1 });
+
+  if (!hydrated) {
+    return (
+      <div ref={ref} className={className} style={{
+        display: 'grid',
+        gridTemplateColumns: `repeat(auto-fit, minmax(300px, 1fr))`,
+        gap: '24px',
+        ...style,
+      }}>
+        {videos.map((video, i) => (
+          <div key={i} style={{
+            background: 'var(--white)',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            boxShadow: '0 4px 16px rgba(0,0,0,0.08)',
+          }}>
+            <div style={{ position: 'relative', paddingTop: '56.25%', background: '#000' }}>
+              <iframe
+                src={video.embedUrl}
+                title={video.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                loading="lazy"
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%',
+                  border: 'none',
+                }}
+              />
+            </div>
+            {video.title && (
+              <div style={{ padding: '16px' }}>
+                <p style={{ fontSize: '14px', color: 'var(--text)', lineHeight: 1.5 }}>
+                  {video.title}
+                </p>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  return (
+    <motion.div
+      ref={ref}
+      className={className}
+      initial="hidden"
+      animate={isInView ? 'visible' : 'hidden'}
+      variants={{
+        hidden: {},
+        visible: { transition: { staggerChildren: 0.15 } },
+      }}
+      style={{
+        display: 'grid',
+        gridTemplateColumns: `repeat(auto-fit, minmax(300px, 1fr))`,
+        gap: '24px',
+        ...style,
+      }}
+    >
+      {videos.map((video, i) => (
+        <motion.div
+          key={i}
+          variants={{
+            hidden: { opacity: 0, y: 40, scale: 0.95 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] },
+            },
+          }}
+          whileHover={{ scale: 1.02, y: -4 }}
+          transition={{ duration: 0.3 }}
+          style={{
+            background: 'var(--white)',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            boxShadow: '0 4px 16px rgba(0,0,0,0.08)',
+            cursor: 'pointer',
+          }}
+        >
+          <div style={{ position: 'relative', paddingTop: '56.25%', background: '#000' }}>
+            <iframe
+              src={video.embedUrl}
+              title={video.title}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              loading="lazy"
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                border: 'none',
+              }}
+            />
+          </div>
+          {video.title && (
+            <div style={{ padding: '16px' }}>
+              <p style={{ fontSize: '14px', color: 'var(--text)', lineHeight: 1.5 }}>
+                {video.title}
+              </p>
+            </div>
+          )}
+        </motion.div>
+      ))}
+    </motion.div>
+  );
+}
+
+/* ═══════════════════════════════════════════
+   GRADIENT TRANSITION - Smooth color shift between sections
+   ═══════════════════════════════════════════ */
+export function GradientTransition({
+  children,
+  className = '',
+  fromColor = 'var(--white)',
+  toColor = 'var(--bg-warm)',
+  height = '120vh',
+  style = {},
+}) {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start end', 'end start'],
+  });
+
+  const background = useTransform(
+    scrollYProgress,
+    [0, 0.5, 1],
+    [fromColor, `color-mix(in srgb, ${fromColor} 50%, ${toColor} 50%)`, toColor]
+  );
+
+  return (
+    <motion.div
+      ref={ref}
+      className={className}
+      style={{ background, minHeight: height, ...style }}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+/* ═══════════════════════════════════════════
+   NUMBER REVEAL - Dramatic stat with supporting text
+   ═══════════════════════════════════════════ */
+export function NumberReveal({
+  number,
+  label,
+  className = '',
+  delay = 0,
+  style = {},
+}) {
+  const ref = useRef(null);
+  const hydrated = useHydrated();
+  const isInView = useSafeInView(ref, { once: true, amount: 0.5 });
+
+  if (!hydrated) {
+    return (
+      <div ref={ref} className={className} style={{ textAlign: 'center', ...style }}>
+        <div style={{
+          fontSize: 'clamp(48px, 8vw, 96px)',
+          fontFamily: 'var(--serif)',
+          fontWeight: 700,
+          color: 'var(--oasis)',
+          lineHeight: 1,
+          marginBottom: '12px',
+        }}>
+          {number}
+        </div>
+        <div style={{
+          fontSize: '14px',
+          fontWeight: 600,
+          letterSpacing: '0.05em',
+          textTransform: 'uppercase',
+          color: 'var(--text-light)',
+        }}>
+          {label}
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <motion.div
+      ref={ref}
+      className={className}
+      style={{ textAlign: 'center', ...style }}
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+      transition={{ duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] }}
+    >
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+        transition={{ duration: 0.6, delay: delay + 0.2 }}
+        style={{
+          fontSize: 'clamp(48px, 8vw, 96px)',
+          fontFamily: 'var(--serif)',
+          fontWeight: 700,
+          color: 'var(--oasis)',
+          lineHeight: 1,
+          marginBottom: '12px',
+        }}
+      >
+        {number}
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 0.6, delay: delay + 0.4 }}
+        style={{
+          fontSize: '14px',
+          fontWeight: 600,
+          letterSpacing: '0.05em',
+          textTransform: 'uppercase',
+          color: 'var(--text-light)',
+        }}
+      >
+        {label}
+      </motion.div>
+    </motion.div>
+  );
+}

@@ -146,6 +146,19 @@ const faqData = [
       },
     ],
   },
+  {
+    category: 'Finding Dr. Tokuhara',
+    questions: [
+      {
+        q: 'How do you spell Dr. Tokuhara\'s name?',
+        a: 'Dr. Tokuhara\'s full name is Dr. Keith Tokuhara, MD. Common search variations include Dr. Keithuhara, Dr. Takahara, Dr. Tokahara, and Tokuhara eye doctor. He is an ophthalmologist and cataract surgeon at Desert Vision Center, located at 35900 Bob Hope Drive, Suite 175, in Rancho Mirage, California.',
+      },
+      {
+        q: 'Where is Desert Vision Center located?',
+        a: 'Desert Vision Center is at 35900 Bob Hope Drive, Suite 175, Rancho Mirage, CA 92270. The practice serves the entire Coachella Valley including Palm Springs, Palm Desert, Indian Wells, La Quinta, Cathedral City, Indio, and surrounding communities. Call 760-340-4700 to schedule.',
+      },
+    ],
+  },
 ];
 
 // Build JSON-LD FAQ schema

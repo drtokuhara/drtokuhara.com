@@ -1,5 +1,29 @@
 export const insights = [
   {
+    slug: 'panoptix-vs-panoptix-pro',
+    title: 'PanOptix vs PanOptix Pro: What Changed and Why It Matters',
+    date: 'June 2026',
+    description: 'The PanOptix Pro is the newest version of the trifocal lens with improved optics and better performance. A side-by-side comparison from the first surgeon in the Coachella Valley to implant it.',
+    cluster: 'Lens Options',
+    image: '/media/tool-image-generation/panoptix-comparison-lenses---7f1c82f1-0d9c-4c28-8345-fef2a43d0def.png',
+  },
+  {
+    slug: 'swimming-after-cataract-surgery',
+    title: 'Can You Swim After Cataract Surgery',
+    date: 'June 2026',
+    description: 'When can you swim after cataract surgery? Practical advice on pools, hot tubs, ocean swimming, and water exposure during cataract surgery recovery. Evidence-based timelines from a cataract surgeon.',
+    cluster: 'Surgery & Recovery',
+    image: '/media/tool-image-generation/swimming-after-cataract-surgery---5b7d42b0-f571-4e22-a54a-85414762b1a4.png',
+  },
+  {
+    slug: 'what-causes-cataracts',
+    title: 'What Causes Cataracts',
+    date: 'June 2026',
+    description: 'UV exposure, aging, diabetes, steroid use, genetics, trauma, and smoking all contribute to cataract formation. Evidence-based explanation on what accelerates lens clouding and what you can control.',
+    cluster: 'Education',
+    image: '/media/tool-image-generation/what-causes-cataracts-eye---9a0d5051-a96d-485c-acfb-3af2d5053dda.png',
+  },
+  {
     slug: 'technology-behind-modern-cataract-surgery',
     title: 'The Technology Behind Modern Cataract Surgery',
     date: 'June 2026',
@@ -249,7 +273,6 @@ export const insights = [
     image: '/media/stock-men-car-show.jpg',
   },
   {
-    slug: 'when-guilt-replaces-explanation',
     title: 'When Guilt Replaces Explanation',
     date: 'April 2026',
     description: 'A patient was told his cataract complication was his fault. It wasn\'t. What happens when blame replaces compassion in medicine.',

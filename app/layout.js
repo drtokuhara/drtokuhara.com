@@ -170,16 +170,19 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/what-you-see-during-cataract-surgery">What You See During Surgery</Link>
                     <Link href="/insights/cataract-pre-op-appointment">Pre-Op Appointment</Link>
                     <Link href="/insights/first-week-after-cataract-surgery">Your First Week After</Link>
+                    <Link href="/insights/driving-after-cataract-surgery">Driving After Surgery</Link>
                     <Link href="/insights/laser-vs-traditional-cataract-surgery">Laser vs Traditional</Link>
                     <Link href="/insights/what-is-ora-machine">The ORA Machine</Link>
                     <Link href="/insights/posterior-capsule-opacification">Cloudy Vision After Surgery (PCO)</Link>
                     <Link href="/insights/blepharitis-demodex-red-itchy-eyes">Blepharitis & Demodex</Link>
+                    <Link href="/insights/subconjunctival-hemorrhage">Subconjunctival Hemorrhage</Link>
                     <Link href="/insights/technology-behind-modern-cataract-surgery">The Technology Behind Modern Surgery</Link>
                     <Link href="/insights/cataract-surgery-and-diabetes">Cataract Surgery and Diabetes</Link>
+                    <Link href="/insights/swimming-after-cataract-surgery">Swimming After Surgery</Link>
+                    <Link href="/insights/what-causes-cataracts">What Causes Cataracts</Link>
                     <span className="nav-mega-label" style={{marginTop: '16px'}}>Honest Answers</span>
                     <Link href="/insights/when-cataract-surgery-goes-wrong">When Surgery Goes Wrong</Link>
                     <Link href="/insights/cataract-referral-kickbacks">Referral Kickbacks</Link>
-                    <Link href="/insights/when-guilt-replaces-explanation">When Guilt Replaces Explanation</Link>
                     <Link href="/insights/the-lens-we-didnt-implant">The Lens We Didn't Implant</Link>
                   </div>
                   <div className="nav-mega-col">
@@ -188,6 +191,8 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/choosing-the-standard-lens">The Standard Lens</Link>
                     <Link href="/insights/the-standard-lens-was-the-right-call">The Standard Lens Was Right</Link>
                     <Link href="/insights/best-lens-for-night-driving">Best Lens for Night Driving</Link>
+                    <Link href="/insights/panoptix-vs-vivity">PanOptix vs Vivity</Link>
+                    <Link href="/insights/panoptix-vs-panoptix-pro">PanOptix vs PanOptix Pro</Link>
                     <Link href="/insights/toric-lens-astigmatism">Toric Lens / Astigmatism</Link>
                     <Link href="/insights/the-lens-nobody-talks-about">The Lens Nobody Talks About</Link>
                     <Link href="/insights/three-things-patients-say">Three Things Patients Say</Link>
@@ -319,8 +324,8 @@ export default function RootLayout({ children }) {
               </div>
             </div>
             <div className="footer-bottom">
-              <p style={{marginBottom: '8px'}}>This website is for educational purposes only and does not replace a medical consultation.</p>
-              © {new Date().getFullYear()} Dr. Keith Tokuhara. All rights reserved.
+              <p style={{marginBottom: '8px', fontSize: '12px', lineHeight: '1.6', color: 'rgba(255,255,255,0.6)'}}>Medical Disclaimer: The content on this website is for educational and informational purposes only. It is not intended as, and should not be interpreted as, medical advice, diagnosis, or treatment. Always consult your physician or qualified healthcare provider with any questions regarding a medical condition. Individual results may vary. No doctor-patient relationship is established by viewing this website. If you are experiencing a medical emergency, call 911 immediately.</p>
+              <p style={{marginBottom: '8px'}}>© {new Date().getFullYear()} Dr. Keith Tokuhara, MD. Desert Vision Center. All rights reserved.</p>
             </div>
           </div>
         </footer>

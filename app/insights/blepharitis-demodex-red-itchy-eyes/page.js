@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
+import AudioNarration from '../../components/AudioNarration';
 import {
   ScrollReveal,
   BlurReveal,
@@ -99,6 +100,7 @@ export default function InsightBlepharitisDemodex() {
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"
         style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+        bottomOverlay={<AudioNarration src="/audio/narrations/blepharitis-demodex-red-itchy-eyes.mp3" />}
       >
         <div className="container">
           <ScrollReveal direction="up" once={true}>
@@ -261,6 +263,7 @@ export default function InsightBlepharitisDemodex() {
           <h3 className="section-title-sm">Related <strong>Reading</strong></h3>
           <ul className="insight-related-list">
             <li><Link href="/insights/when-the-eye-surface-changes-everything">When the Eye Surface Changes Everything</Link></li>
+            <li><Link href="/insights/subconjunctival-hemorrhage">Subconjunctival Hemorrhage: Why Your Eye Looks Scary but You Are Fine</Link></li>
             <li><Link href="/insights/posterior-capsule-opacification">Posterior Capsule Opacification: When Vision Clouds Again After Cataract Surgery</Link></li>
             <li><Link href="/insights/is-cataract-surgery-painful">Is Cataract Surgery Painful? Here's the Honest Answer</Link></li>
             <li><Link href="/services/cataract-surgery">Cataract Surgery at Desert Vision Center</Link></li>

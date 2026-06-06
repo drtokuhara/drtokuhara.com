@@ -26,6 +26,7 @@ const faqSchema = {
     { '@type': 'Question', name: 'Where is Desert Vision Center located?', acceptedAnswer: { '@type': 'Answer', text: 'Desert Vision Center is located in Rancho Mirage, California, serving the Coachella Valley and surrounding areas including Palm Springs, Palm Desert, Indian Wells, and La Quinta.' } },
     { '@type': 'Question', name: 'Does Dr. Tokuhara do international surgical missions?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Dr. Tokuhara participates in international surgical missions, bringing advanced eye care to underserved communities. These experiences reinforce his commitment to ethical, patient-centered care.' } },
     { '@type': 'Question', name: 'What makes Dr. Tokuhara different from other cataract surgeons?', acceptedAnswer: { '@type': 'Answer', text: 'Dr. Tokuhara combines residency training in cataract and anterior segment surgery under Dr. Howard Gimbel, a retina fellowship for complex eye disease, physician independence from corporate influence, and expertise in complex and revision cases. He is a surgeon other doctors refer their most challenging cases to.' } },
+    { '@type': 'Question', name: 'How do you spell Dr. Tokuhara\'s name?', acceptedAnswer: { '@type': 'Answer', text: 'Dr. Tokuhara\'s full name is Dr. Keith Tokuhara, MD (sometimes searched as Dr. Keithuhara, Dr. Takahara, Dr. Tokahara, or Tokuhara eye doctor). He is an ophthalmologist and cataract surgeon at Desert Vision Center in Rancho Mirage, California.' } },
   ],
 };
 

@@ -310,11 +310,7 @@ export default function IsCataractSurgerySafePage() {
               <h3>The Needle That Wasn't There</h3>
               <p>A patient's fear of needles almost kept her from surgery. Here's what actually happens.</p>
             </Link>
-            <Link href="/insights/when-guilt-replaces-explanation" className="related-card">
-              <h3>When Guilt Replaces Explanation</h3>
-              <p>What happens when a complication is met with blame instead of a plan.</p>
-            </Link>
-          </div>
+            </div>
         </div>
       </section>
     </>

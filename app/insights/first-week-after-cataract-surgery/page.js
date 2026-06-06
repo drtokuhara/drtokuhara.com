@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
+import AudioNarration from '../../components/AudioNarration';
 import {
   ScrollReveal,
   BlurReveal,
@@ -94,6 +95,7 @@ export default function InsightFirstWeek() {
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"
         style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+        bottomOverlay={<AudioNarration src="/audio/narrations/first-week-after-cataract-surgery.mp3" />}
       >
         <div className="container">
           <ScrollReveal direction="up" once={true}>
@@ -161,7 +163,7 @@ export default function InsightFirstWeek() {
             This is when things start to feel real. The scratchiness fades. The redness starts to decrease. And the vision sharpens noticeably compared to Day 1. Most patients describe it as the fog lifting gradually.
           </p>
           <p>
-            You can shower, but keep soapy water out of the eye. You can watch TV, read, use your phone. Light activity is fine. You should still avoid bending at the waist (bend at the knees instead), lifting anything heavier than about 10 to 15 pounds, and any activity that could result in something hitting or pressing on the eye.
+            You can shower, but keep soapy water out of the eye. You can watch TV, read, use your phone. Light activity is fine. You should still avoid bending at the waist (bend at the knees instead), lifting anything heavier than about 10 to 15 pounds, and any activity that could result in something hitting or pressing on the eye. No swimming, hot tubs, or submerging your head underwater for at least three weeks (see <Link href="/insights/swimming-after-cataract-surgery">Swimming After Cataract Surgery</Link> for details).
           </p>
           <p>
             Some patients notice mild light sensitivity during these days, especially outdoors. Sunglasses help. You may also notice that the operated eye sees colors differently than the other eye. Things may look slightly blue-tinted or unusually bright. This is not a problem. Your old lens had a yellowish tint from the cataract. Now that it is gone, you are seeing true color temperature for the first time in years.
@@ -275,6 +277,10 @@ export default function InsightFirstWeek() {
             <Link href="/insights/is-cataract-surgery-painful" className="related-card">
               <h3>Is Cataract Surgery Painful?</h3>
               <p>The honest answer about what you feel during surgery.</p>
+            </Link>
+            <Link href="/insights/driving-after-cataract-surgery" className="related-card">
+              <h3>Driving After Cataract Surgery</h3>
+              <p>When you can safely return to driving and what determines readiness.</p>
             </Link>
             <Link href="/cataract-recovery" className="related-card">
               <h3>Cataract Surgery Recovery</h3>

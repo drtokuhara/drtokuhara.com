@@ -340,6 +340,10 @@ export default function InsightBestLensForNightDriving() {
               <h3>Vivity vs PanOptix: Which Lens Is Right for You?</h3>
               <p>A detailed comparison of EDOF and multifocal lenses, including night vision trade-offs.</p>
             </Link>
+            <Link href="/insights/panoptix-vs-vivity" className="related-card">
+              <h3>PanOptix vs Vivity: Patient Stories Perspective</h3>
+              <p>How to choose between these two premium lenses based on your lifestyle and priorities.</p>
+            </Link>
             <Link href="/panoptix-vs-panoptix-pro" className="related-card">
               <h3>PanOptix vs PanOptix Pro</h3>
               <p>Understanding the differences between these two multifocal options.</p>

@@ -249,7 +249,7 @@ export default function InsightCataractReferralKickbacks() {
             But patients deserve transparency. You deserve to know whether financial incentives played a role in where you were sent. You deserve to know that you have choices. And you deserve a surgeon who earned your referral through skill, reputation, and outcomes, not through a payment arrangement you never knew about.
           </p>
           <p>
-            <Link href="/insights/when-guilt-replaces-explanation">Trust in medicine is not automatic.</Link> It is built through honesty, transparency, and a willingness to let patients make informed decisions. The financial structures behind cataract surgery referrals are not something most patients think about. But once you know they exist, you can ask better questions, make more informed choices, and ensure that the person operating on your eyes is someone you chose, not someone who was chosen for you.
+            Trust in medicine is not automatic. It is built through honesty, transparency, and a willingness to let patients make informed decisions. The financial structures behind cataract surgery referrals are not something most patients think about. But once you know they exist, you can ask better questions, make more informed choices, and ensure that the person operating on your eyes is someone you chose, not someone who was chosen for you.
           </p>
         </div>
       </section>
@@ -283,10 +283,6 @@ export default function InsightCataractReferralKickbacks() {
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
-            <Link href="/insights/when-guilt-replaces-explanation" className="related-card">
-              <h3>When Guilt Replaces Explanation</h3>
-              <p>What happens when blame replaces compassion in medicine. A reflection on accountability and patient trust.</p>
-            </Link>
             <Link href="/insights/how-to-choose-a-cataract-surgeon" className="related-card">
               <h3>How to Choose a Cataract Surgeon</h3>
               <p>Five things that actually matter when choosing the surgeon who will operate on your eyes.</p>

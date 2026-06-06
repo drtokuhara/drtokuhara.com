@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import AudioNarration from '../../components/AudioNarration';
 import { ScrollReveal, VideoBackground, BlurReveal, LineDraw } from '../../components/ScrollAnimations';
 
 export default function FiveQuestionsContent() {
@@ -13,6 +14,7 @@ export default function FiveQuestionsContent() {
         overlayColor="0, 20, 30"
         className="page-hero page-hero-image"
         style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
+        bottomOverlay={<AudioNarration src="/audio/narrations/five-questions-before-surgery.mp3" />}
       >
         <div className="container">
           <span className="insight-hero-cluster">Decisions &amp; Timing</span>

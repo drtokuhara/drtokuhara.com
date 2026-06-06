@@ -83,6 +83,7 @@ export default function MobileNav() {
             <Link href="/insights/what-you-see-during-cataract-surgery" onClick={close}>What You See During Surgery</Link>
             <Link href="/insights/is-cataract-surgery-painful" onClick={close}>Is It Painful?</Link>
             <Link href="/insights/first-week-after-cataract-surgery" onClick={close}>Your First Week After</Link>
+            <Link href="/insights/driving-after-cataract-surgery" onClick={close}>Driving After Surgery</Link>
             <Link href="/insights/life-after-cataract-surgery" onClick={close}>Life After Surgery</Link>
             <Link href="/insights/how-to-choose-a-cataract-surgeon" onClick={close}>How to Choose a Surgeon</Link>
             <Link href="/insights/do-i-really-need-surgery" onClick={close}>Do I Need Surgery Yet?</Link>
@@ -92,8 +93,13 @@ export default function MobileNav() {
             <Link href="/insights/medicare-cataract-surgery" onClick={close}>Medicare Coverage</Link>
             <Link href="/insights/posterior-capsule-opacification" onClick={close}>Cloudy Vision After Surgery (PCO)</Link>
             <Link href="/insights/blepharitis-demodex-red-itchy-eyes" onClick={close}>Blepharitis & Demodex</Link>
+            <Link href="/insights/subconjunctival-hemorrhage" onClick={close}>Subconjunctival Hemorrhage</Link>
+            <Link href="/insights/panoptix-vs-vivity" onClick={close}>PanOptix vs Vivity</Link>
+            <Link href="/insights/panoptix-vs-panoptix-pro" onClick={close}>PanOptix vs PanOptix Pro</Link>
             <Link href="/insights/technology-behind-modern-cataract-surgery" onClick={close}>The Technology Behind Modern Surgery</Link>
             <Link href="/insights/cataract-surgery-and-diabetes" onClick={close}>Cataract Surgery and Diabetes</Link>
+            <Link href="/insights/swimming-after-cataract-surgery" onClick={close}>Swimming After Surgery</Link>
+            <Link href="/insights/what-causes-cataracts" onClick={close}>What Causes Cataracts</Link>
             <Link href="/insights/cataract-surgery-at-50" onClick={close}>Cataract Surgery at 50</Link>
             <Link href="/insights/second-opinion-cataract-surgery" onClick={close}>Getting a Second Opinion</Link>
             <Link href="/insights/second-opinion-that-changed-everything" onClick={close}>A Second Opinion That Changed Everything</Link>

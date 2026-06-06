@@ -4,7 +4,7 @@ export const physicianSchema = {
   '@context': 'https://schema.org',
   '@type': 'Physician',
   name: 'Dr. Keith Tokuhara',
-  alternateName: 'Keith G. Tokuhara, MD',
+  alternateName: ['Keith G. Tokuhara, MD', 'Dr. Tokuhara', 'Dr. Keith Tokuhara', 'Dr Tokuhara', 'Tokuhara ophthalmologist', 'Dr. Keithuhara', 'Dr. Takahara'],
   description: 'Fellowship-trained cataract and anterior segment surgeon specializing in complex cataract surgery, lens implants, and revision cases. Board certified in retina.',
   url: 'https://drtokuhara.com/about',
   image: 'https://drtokuhara.com/dr-tokuhara-hero.jpg',
@@ -205,6 +205,21 @@ export function breadcrumbSchema(items) {
       position: i + 1,
       name: item.name,
       item: `https://drtokuhara.com${item.href}`,
+    })),
+  };
+}
+
+export function faqSchema(items) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
     })),
   };
 }
