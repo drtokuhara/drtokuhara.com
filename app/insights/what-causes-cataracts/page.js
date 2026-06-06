@@ -154,7 +154,7 @@ export default function InsightWhatCausesCataracts() {
             Diabetic patients develop cataracts earlier and faster than non-diabetic patients. High blood sugar causes changes in the lens that accelerate protein breakdown and water accumulation. The lens swells, becomes cloudy, and loses transparency.
           </p>
           <p>
-            Good blood sugar control slows this process but does not stop it. Diabetic cataracts can still develop even with excellent glucose management, but the rate of progression is significantly slower. Poorly controlled diabetes can lead to visually significant cataracts in patients as young as their 40s or 50s.
+            Good blood sugar control slows this process but does not stop it. Diabetic cataracts can still develop even with excellent glucose management, but the rate of progression is significantly slower. Poorly controlled diabetes can lead to visually significant cataracts in patients as young as their 40s or 50s. For more on surgery at younger ages, see <Link href="/insights/cataract-surgery-at-50">Cataract Surgery at 50</Link>.
           </p>
           <p>
             Diabetic patients also face additional considerations during cataract surgery, particularly if they have diabetic retinopathy. Pre-operative retina evaluation is essential to assess macular health and plan for any necessary retina treatment before or after lens replacement. See <Link href="/insights/cataract-surgery-and-diabetes">Cataract Surgery and Diabetes</Link> for more detail.
@@ -295,6 +295,30 @@ export default function InsightWhatCausesCataracts() {
       </section>
 
       <section className="section section-white">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
+          <div className="related-grid">
+            <Link href="/insights/when-do-i-need-cataract-surgery" className="related-card">
+              <h3>When Do I Need Cataract Surgery?</h3>
+              <p>How to know when cataracts have progressed enough to warrant treatment.</p>
+            </Link>
+            <Link href="/insights/cataract-surgery-at-50" className="related-card">
+              <h3>Cataract Surgery at 50</h3>
+              <p>Why younger patients are choosing surgery earlier and what that means.</p>
+            </Link>
+            <Link href="/insights/cataract-surgery-and-diabetes" className="related-card">
+              <h3>Cataract Surgery and Diabetes</h3>
+              <p>What diabetic patients need to know about timing and outcomes.</p>
+            </Link>
+            <Link href="/insights/laser-vs-traditional-cataract-surgery" className="related-card">
+              <h3>Laser vs Traditional Cataract Surgery</h3>
+              <p>An honest comparison of femtosecond laser and manual techniques.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-warm">
         <div className="container content-narrow text-center">
           <div className="section-divider" style={{margin: '48px auto'}} />
           <p><strong>Questions about cataracts or cataract surgery?</strong></p>

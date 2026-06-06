@@ -81,7 +81,7 @@ export default function ArePremiumLensesWorthIt() {
           <ul className="content-list">
             <li><strong>Toric lenses</strong> reduce astigmatism as part of the cataract procedure, improving distance clarity without the distortion that uncorrected astigmatism causes.</li>
             <li><strong>Extended Depth of Focus (EDOF) lenses</strong> stretch the focal range from distance through intermediate, reducing glasses dependence without the hard tradeoffs of a multifocal design.</li>
-            <li><strong>Multifocal and trifocal lenses</strong> split light into two or three distinct focal points, offering the possibility of clear near, intermediate, and distance vision all without glasses.</li>
+            <li><strong>Multifocal and trifocal lenses</strong> split light into two or three distinct focal points, offering the possibility of clear near, intermediate, and distance vision all without glasses. For a detailed comparison, see <Link href="/insights/panoptix-vs-vivity">PanOptix vs Vivity</Link>.</li>
           </ul>
           <p>
             Each category solves a different problem and comes with different tradeoffs. None of them are right for every eye.

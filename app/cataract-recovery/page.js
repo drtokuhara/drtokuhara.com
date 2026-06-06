@@ -205,10 +205,10 @@ export default function CataractRecoveryPage() {
             <li><strong>Using your phone or computer</strong> - fine in moderation</li>
           </ul>
           <p>
-            The main restrictions in the first day or two are around rubbing the eye and exposing it to water. Both can disrupt the healing incisions. Your post-operative instructions cover these specifics in detail.
+            The main restrictions in the first day or two are around rubbing the eye and exposing it to water. Both can disrupt the healing incisions. Swimming, hot tubs, and submerging your head underwater should be avoided for at least three weeks (see <Link href="/insights/swimming-after-cataract-surgery">Swimming After Cataract Surgery</Link> for details). Your post-operative instructions cover these specifics in detail.
           </p>
           <p>
-            What about driving? You cannot drive yourself home from surgery. Most patients can resume driving within a few days, once vision in the operated eye meets the standard requirement. I confirm this at your first post-operative appointment.
+            What about driving? You cannot drive yourself home from surgery. Most patients can resume driving within a few days, once vision in the operated eye meets the standard requirement. I confirm this at your first post-operative appointment. For detailed guidance, see <Link href="/insights/driving-after-cataract-surgery">When Can You Drive After Cataract Surgery</Link>.
           </p>
         </div>
       </section>

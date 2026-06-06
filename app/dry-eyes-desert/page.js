@@ -141,7 +141,7 @@ export default function DryEyesDesertPage() {
 
           <h3 className="subsection-title">Evaporative Dry Eye</h3>
           <p className="prose">
-            This is the most common type, and the desert makes it worse. Your tears evaporate faster than they should because the outer oil layer of the tear film is deficient. The meibomian glands along your eyelid margins produce that oil layer, and when they become clogged or dysfunctional, the protective oil barrier breaks down. The result is rapid tear evaporation, especially in low humidity and windy conditions.
+            This is the most common type, and the desert makes it worse. Your tears evaporate faster than they should because the outer oil layer of the tear film is deficient. The meibomian glands along your eyelid margins produce that oil layer, and when they become clogged or dysfunctional, the protective oil barrier breaks down. The result is rapid tear evaporation, especially in low humidity and windy conditions. When eyelid inflammation (blepharitis) is involved, targeted treatment of the lids becomes essential (see <Link href="/insights/blepharitis-demodex-red-itchy-eyes">Blepharitis and Demodex</Link>).
           </p>
 
           <h3 className="subsection-title">Aqueous Deficient Dry Eye</h3>

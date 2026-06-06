@@ -201,6 +201,30 @@ export default function InsightPanOptixComparison() {
       </section>
 
       <section className="section section-white">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
+          <div className="related-grid">
+            <Link href="/insights/panoptix-vs-vivity" className="related-card">
+              <h3>PanOptix vs Vivity</h3>
+              <p>Comparing trifocal and extended depth of focus lenses.</p>
+            </Link>
+            <Link href="/insights/are-premium-lenses-worth-it" className="related-card">
+              <h3>Are Premium Lenses Worth It?</h3>
+              <p>Honest assessment of premium lens value and tradeoffs.</p>
+            </Link>
+            <Link href="/lens-implants-explained" className="related-card">
+              <h3>Lens Implants Explained</h3>
+              <p>Complete guide to understanding your lens options.</p>
+            </Link>
+            <Link href="/insights/best-lens-for-night-driving" className="related-card">
+              <h3>Best Lens for Night Driving</h3>
+              <p>Which lens implant minimizes halos and glare at night.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-warm">
         <div className="container content-narrow text-center">
           <div className="section-divider" style={{margin: '48px auto'}} />
           <p><strong>Questions about lens selection?</strong></p>

@@ -231,6 +231,30 @@ export default function InsightSwimmingAfterSurgery() {
       </section>
 
       <section className="section section-white">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
+          <div className="related-grid">
+            <Link href="/insights/first-week-after-cataract-surgery" className="related-card">
+              <h3>Your First Week After Cataract Surgery</h3>
+              <p>What to expect day by day in the first week of recovery.</p>
+            </Link>
+            <Link href="/insights/driving-after-cataract-surgery" className="related-card">
+              <h3>When Can You Drive After Cataract Surgery?</h3>
+              <p>The practical timeline for returning to driving after surgery.</p>
+            </Link>
+            <Link href="/cataract-recovery" className="related-card">
+              <h3>Cataract Surgery Recovery</h3>
+              <p>Complete guide to healing, restrictions, and returning to normal activities.</p>
+            </Link>
+            <Link href="/insights/cataract-surgery-step-by-step" className="related-card">
+              <h3>Cataract Surgery Step by Step</h3>
+              <p>What actually happens during the procedure.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-warm">
         <div className="container content-narrow text-center">
           <div className="section-divider" style={{margin: '48px auto'}} />
           <p><strong>Questions about recovery after cataract surgery?</strong></p>
