@@ -55,7 +55,7 @@ export default function ContactContent() {
             <StaggerItem>
               <div>
                 <p style={{fontSize: '14px', fontWeight: 600, color: 'var(--oasis)', marginBottom: '4px'}}>Hours</p>
-                <p style={{fontSize: '14px', color: 'rgba(255,255,255,0.8)', lineHeight: 1.5}}>Monday through Friday<br />8:00 AM to 5:00 PM</p>
+                <p style={{fontSize: '14px', color: 'rgba(255,255,255,0.8)', lineHeight: 1.5}}>Monday, Tuesday, Thursday, Friday<br />8:30 AM to 4:30 PM<br /><br />Wednesday<br />8:30 AM to 12:30 PM</p>
               </div>
             </StaggerItem>
             <StaggerItem>
@@ -108,8 +108,8 @@ export default function ContactContent() {
             <div className="contact-block">
               <h3>{t('contact.officeHours') || 'Office Hours'}</h3>
               <p>
-                {t('contact.officeHoursText') || 'Monday through Friday'}<br />
-                {t('contact.officeHoursTime') || '8:00 AM to 5:00 PM'}
+                {t('contact.officeHoursText') || 'Monday, Tuesday, Thursday, Friday: 8:30 AM - 4:30 PM'}<br />
+                {t('contact.officeHoursTime') || 'Wednesday: 8:30 AM - 12:30 PM'}
               </p>
               <p className="contact-note">{t('contact.closedWeekend') || 'Closed Saturday and Sunday'}</p>
             </div>
