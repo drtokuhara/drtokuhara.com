@@ -19,6 +19,7 @@ import {
 import PageFAQ from '../components/PageFAQ';
 import AudioNarration from '../components/AudioNarration';
 import AuthorByline from '../components/AuthorByline';
+import CinematicJourney from '../components/CinematicJourney';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -99,22 +100,9 @@ export default function CataractSurgeryPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       ))}
-      {/* PAGE HERO */}
-      <VideoBackground
-        src="/media/ambient-lens-refraction.mp4"
-        overlayOpacity={0.6}
-        overlayColor="0, 20, 30"
-        className="page-hero page-hero-image"
-        style={{minHeight: '50vh', display: 'flex', alignItems: 'center'}}
-        bottomOverlay={<AudioNarration src="/audio/narrations/cataract-surgery.mp3" />}
-      >
-        <div className="container">
-          <KineticText text="Cataract Surgery" Tag="h1" mode="word" staggerDelay={0.06} />
-          <ScrollReveal direction="up" delay={0.3} once={true}>
-            <p className="page-hero-sub">What it is, when it makes sense, and what to expect from start to finish.</p>
-          </ScrollReveal>
-        </div>
-      </VideoBackground>
+      
+      {/* CINEMATIC JOURNEY SECTION */}
+      <CinematicJourney />
 
       {/* STATS BAR */}
       <section style={{padding: '48px 0', background: 'linear-gradient(135deg, #f8f9fa 0%, #e8f4f5 100%)'}}>
