@@ -998,7 +998,7 @@ export default function Home() {
                     If something doesn&rsquo;t feel right at any point, you call. That&rsquo;s what we&rsquo;re here for.
                   </p>
                   <Link href="/cataract-recovery" className="lux-postop-link">
-                    Recovery Guide \u2192
+                    Recovery Guide →
                   </Link>
 
                   <h3 className="lux-postop-subhead" style={{marginTop: '2rem'}}>Months or years later, if your vision gets hazy again</h3>
@@ -1007,7 +1007,7 @@ export default function Home() {
                     and it takes about two minutes to fix.
                   </p>
                   <Link href="/insights/posterior-capsule-opacification" className="lux-postop-link">
-                    What Is PCO? \u2192
+                    What Is PCO? →
                   </Link>
                 </div>
               </ScrollReveal>
