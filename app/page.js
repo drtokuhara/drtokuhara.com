@@ -791,7 +791,8 @@ export default function Home() {
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
                     <h3>Physician-Owned, Fully Independent</h3>
-                    <p>No corporate parent. No private equity investors. No one telling Dr. Tokuhara which lenses to use or how many patients to see. Every recommendation is based solely on what is right for your eyes. That independence is increasingly rare in medicine, and it changes everything about how decisions get made.</p>
+                    <p>No corporate parent. No private equity investors. No one telling Dr. Tokuhara which lenses to use or how many patients to see. Every recommendation is based solely on what is right for your eyes.</p>
+                    <p>It also means Dr. Tokuhara will be here next year. And the year after that. When you call with a question six months after surgery, the surgeon who planned your procedure is the one who picks up. That continuity is increasingly rare in medicine, and it changes everything about how decisions get made.</p>
                   </TiltCard>
                 </StaggerItem>
                 <StaggerItem>
@@ -998,6 +999,15 @@ export default function Home() {
                   </p>
                   <Link href="/cataract-recovery" className="lux-postop-link">
                     Recovery Guide \u2192
+                  </Link>
+
+                  <h3 className="lux-postop-subhead" style={{marginTop: '2rem'}}>Months or years later, if your vision gets hazy again</h3>
+                  <p className="lux-postop-text">
+                    Your cataract didn&rsquo;t come back. It can&rsquo;t. But something else can happen,
+                    and it takes about two minutes to fix.
+                  </p>
+                  <Link href="/insights/posterior-capsule-opacification" className="lux-postop-link">
+                    What Is PCO? \u2192
                   </Link>
                 </div>
               </ScrollReveal>

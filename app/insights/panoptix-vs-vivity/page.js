@@ -140,6 +140,16 @@ export default function InsightPanOptixVsVivity() {
             That difference in design drives everything else. PanOptix gives you three sharp zones. Vivity gives you a continuous range with less definition at the extremes.
           </p>
 
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/eye-closeup-both.png"
+              alt="Close-up view of both eyes showing the clarity that premium lens implants can provide"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+
           <BlurReveal><div className="insight-highlight">
             <p><strong>When I explain this to patients, I use an analogy. PanOptix is like having three pairs of glasses built into one lens. Vivity is like having progressive lenses. Both reduce your dependence on glasses, but the experience is different.</strong></p>
           </div></BlurReveal>
@@ -193,6 +203,16 @@ export default function InsightPanOptixVsVivity() {
           <BlurReveal><div className="insight-highlight">
             <p><strong>I ask every patient about their nighttime driving habits before recommending a lens. If someone tells me they drive home from Los Angeles to Palm Springs at night twice a week, I steer them toward Vivity. If they tell me they rarely drive after sunset and want to read without glasses, PanOptix moves up the list.</strong></p>
           </div></BlurReveal>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/night-driving-wind-turbines-cv.jpeg"
+              alt="Clear nighttime driving view past wind turbines in the Coachella Valley"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -278,6 +298,20 @@ export default function InsightPanOptixVsVivity() {
 
           <BlurReveal><div className="insight-highlight">
             <p><strong>I have had patients come in convinced they want PanOptix, and after we talk through their priorities and lifestyle, they walk out choosing Vivity. I have had the reverse happen too. The conversation matters more than the initial assumption.</strong></p>
+          </div></BlurReveal>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/dvc-exam-room.jpg"
+              alt="The consultation room at Desert Vision Center where lens selection discussions take place"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+
+          <BlurReveal><div className="pull-quote">
+            <p>"The patients who do best are the ones who understand those tradeoffs going in and choose the lens that aligns with their priorities."</p>
           </div></BlurReveal>
         </div>
       </section>

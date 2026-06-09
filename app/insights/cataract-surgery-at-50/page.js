@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
 import AudioNarration from '../../components/AudioNarration';
@@ -118,6 +119,15 @@ export default function InsightCataractAt50() {
           <p className="body-lead body-lead-dropcap">
             She was 52. Still working full-time as a project manager. Still driving her kids to weekend tournaments. Still very much in the middle of her active life. And when I told her she had cataracts, her first response was, "Aren't I too young for this?"
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-driving-concern.jpg"
+              alt="Patient reflecting on vision changes that affect daily activities like driving"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             I hear this question often. Most people associate cataracts with their 70s and 80s, with retirement, with grandparents. The idea that someone in their 50s could need cataract surgery feels premature. Out of order. Something must be wrong.
           </p>
@@ -201,6 +211,16 @@ export default function InsightCataractAt50() {
           <p>
             For a 52-year-old who spends 8 hours a day on a computer, an EDOF lens might be ideal. For a 55-year-old who drives a truck at night for a living, a monofocal might be the safer choice. The decision is individual.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/lifestyle-poolside-reading.jpg"
+              alt="Person reading poolside, enjoying clear vision in the desert sun"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -263,6 +283,20 @@ export default function InsightCataractAt50() {
           <p>
             Do not let the surprise of needing surgery earlier than expected delay the decision. The timing is not wrong. It is just your timing. And addressing it now means you get to spend the next 30 or 40 years seeing clearly.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/active-senior-woman-tying-shoes.jpeg"
+              alt="Active woman tying her shoes, ready to get back to her routine with clear vision"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+
+          <BlurReveal><div className="pull-quote">
+            <p>"You are not too young for cataracts. You are exactly the right age for the eyes you have. And addressing it now means decades of clear vision ahead."</p>
+          </div></BlurReveal>
         </div>
       </section>
 

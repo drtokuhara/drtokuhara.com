@@ -836,6 +836,31 @@ export default function InsightTheCapsuleIsSacred() {
                 Patient stories about surgeon experience, judgment, and clinical expertise.
               </p>
             </Link>
+            <Link href="/insights/when-your-case-isnt-routine" className="related-card" style={{
+              padding: '32px',
+              background: 'white',
+              borderRadius: '12px',
+              border: '1px solid rgba(0, 0, 0, 0.08)',
+              transition: 'all 0.3s ease',
+              display: 'block',
+            }}>
+              <h3 style={{
+                fontSize: '1.2rem',
+                fontFamily: 'Playfair Display, Georgia, serif',
+                marginBottom: '12px',
+                color: '#2a2a2a',
+              }}>
+                When Your Case Isn't Routine
+              </h3>
+              <p style={{
+                fontSize: '0.95rem',
+                color: '#7a7a8e',
+                lineHeight: '1.6',
+                margin: 0,
+              }}>
+                Not every cataract is straightforward. How an experienced surgeon approaches the cases other doctors refer out.
+              </p>
+            </Link>
           </div>
         </div>
       </section>

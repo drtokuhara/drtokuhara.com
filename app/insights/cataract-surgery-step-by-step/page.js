@@ -116,6 +116,16 @@ export default function InsightStepByStep() {
           <p>
             So here it is. Step by step. What you will actually experience if you have cataract surgery with me at Desert Vision Center.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/medical-surgical-precision.png"
+              alt="Precision instruments and technology used in modern cataract surgery"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -188,6 +198,15 @@ export default function InsightStepByStep() {
           <p>
             You will rest briefly in the recovery area while the sedative wears off. Most patients feel mild grogginess, and the eye may be slightly scratchy or watery. This is normal. You will go home with a protective shield over the eye and instructions for your post-operative drop schedule.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/clear-vision-restored.png"
+              alt="Bright, vivid view representing restored clarity after cataract surgery"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             Here is the part that surprises most patients: many notice an improvement in vision within hours. Colors look brighter. Things look sharper, even through the residual blur that comes from the drops and mild swelling. By the next morning, the difference is often dramatic.
           </p>
@@ -228,6 +247,10 @@ export default function InsightStepByStep() {
           <p>
             That is what you are choosing when you choose a surgeon. Not a machine. Not a brand. A person who will make the right decisions for your eyes.
           </p>
+
+          <BlurReveal><div className="pull-quote">
+            <p>"Patients often tell me they spent weeks researching online. What they could not find was something simpler: what it actually feels like. The calm voice. The surprising speed. The moment they realize the fear was bigger than the reality."</p>
+          </div></BlurReveal>
         </div>
       </section>
 

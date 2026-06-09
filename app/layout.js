@@ -184,6 +184,7 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/when-cataract-surgery-goes-wrong">When Surgery Goes Wrong</Link>
                     <Link href="/insights/cataract-referral-kickbacks">Referral Kickbacks</Link>
                     <Link href="/insights/the-lens-we-didnt-implant">The Lens We Didn't Implant</Link>
+                    <Link href="/insights/when-your-case-isnt-routine">When Your Case Isn't Routine</Link>
                   </div>
                   <div className="nav-mega-col">
                     <span className="nav-mega-label">Lens Options</span>

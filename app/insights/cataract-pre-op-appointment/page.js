@@ -131,6 +131,15 @@ export default function InsightCataractPreOpAppointment() {
 
       <section className="section section-warm">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/dvc-phoropter-exam.png"
+              alt="Patient seated behind a phoropter during a comprehensive eye exam at Desert Vision Center"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <h2 className="section-title">IOL Master <strong>Biometry</strong></h2>
           <p>
             The first and most critical measurement is biometry, typically performed using a device called an IOL Master. This instrument uses optical coherence technology to measure three key dimensions of your eye: axial length (the distance from the front of the cornea to the retina), corneal curvature (how steep or flat the front surface of your eye is), and anterior chamber depth (the space between the cornea and the natural lens).
@@ -154,6 +163,16 @@ export default function InsightCataractPreOpAppointment() {
           <p>
             Some eyes have regular astigmatism, where the cornea is shaped more like a football than a basketball. These eyes benefit from a toric lens, which has built-in astigmatism correction. Other eyes have irregular astigmatism from conditions like keratoconus or previous surgery. These eyes may not be good candidates for certain premium lenses. Topography reveals these distinctions.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/medical-patient-consultation.png"
+              alt="Patient and doctor discussing results during an eye care consultation"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
 
           <BlurReveal><div className="pull-quote">
             <p>"Without topography, a surgeon is guessing about corneal shape. With it, they are measuring. That distinction matters."</p>
@@ -209,6 +228,20 @@ export default function InsightCataractPreOpAppointment() {
           <p>
             Your surgeon should also discuss the ocular surface. Dry eye disease affects lens performance, particularly with multifocal lenses. If your tear film is unstable, you may need treatment before surgery, or a different lens choice altogether.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/dvc-exam-room.jpg"
+              alt="The exam room at Desert Vision Center, equipped for comprehensive cataract evaluations"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+
+          <BlurReveal><div className="pull-quote">
+            <p>"The pre-op visit is where your outcome is determined. Every measurement, every scan, every question you ask shapes the plan that follows."</p>
+          </div></BlurReveal>
         </div>
       </section>
 

@@ -68,6 +68,15 @@ export default function PosteriorSubcapsularCataract() {
       {/* WHAT IS A PSC */}
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-couple-consultation.jpg"
+              alt="Couple consulting with their eye surgeon about a posterior subcapsular cataract diagnosis"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <ScrollReveal direction="up" once={true}>
             <h2 className="section-title">What Is a Posterior Subcapsular <strong>Cataract?</strong></h2>
           </ScrollReveal>
@@ -88,6 +97,10 @@ export default function PosteriorSubcapsularCataract() {
           <p>
             This is the cataract that catches patients off guard. Vision may seem fine at the annual exam. Six months later, everything has changed.
           </p>
+
+          <BlurReveal><div className="pull-quote">
+            <p>A PSC cataract the size of a pinhead can make reading difficult, turn oncoming headlights into blinding glare, and reduce vision in bright conditions more than a much larger nuclear cataract would.</p>
+          </div></BlurReveal>
         </div>
       </section>
 
@@ -147,6 +160,15 @@ export default function PosteriorSubcapsularCataract() {
       {/* SYMPTOMS */}
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/honest-consultation-trust.png"
+              alt="Honest patient-doctor conversation building trust during a cataract evaluation"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <ScrollReveal direction="up" once={true}>
             <h2 className="section-title">What Does a PSC Cataract <strong>Feel Like?</strong></h2>
           </ScrollReveal>
@@ -192,6 +214,15 @@ export default function PosteriorSubcapsularCataract() {
       {/* TREATMENT */}
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-joyful-clear-vision.jpg"
+              alt="Patient joyful after successful cataract surgery restoring clear vision"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <ScrollReveal direction="up" once={true}>
             <h2 className="section-title">Treatment: When Surgery <strong>Makes Sense</strong></h2>
           </ScrollReveal>

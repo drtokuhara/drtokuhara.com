@@ -70,6 +70,16 @@ export default function InsightPainful() {
           <p>
             So here is the honest answer.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-78yo-woman-desert-portrait.jpg"
+              alt="Woman reflecting thoughtfully before her cataract surgery consultation"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -140,6 +150,20 @@ export default function InsightPainful() {
           <p>
             Surprise at how fast it was. Surprise at how little it hurt. Surprise at how much they had been missing.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-joyful-clear-vision.jpg"
+              alt="Patient experiencing the joy of clear, restored vision after surgery"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+
+          <BlurReveal><div className="pull-quote">
+            <p>"The fear is almost never based on information. It is based on imagination. Once the gap between imagination and reality closes, the fear evaporates."</p>
+          </div></BlurReveal>
         </div>
       </section>
 

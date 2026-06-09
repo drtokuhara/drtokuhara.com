@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
 import {
@@ -62,6 +63,15 @@ export default function InsightWhenTheEyeSurfaceChangesEverything() {
           <p className="body-lead body-lead-dropcap">
             An 82-year-old woman recently came to my office for a second opinion. She had undergone cataract surgery at another facility in Los Angeles and received a newer lens implant designed to allow doctors to fine-tune vision after the procedure using special light treatments. The concept behind the technology is genuinely appealing: rather than committing to a single prescription at the time of surgery, the doctor can make precise adjustments afterward.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/eye-closeup-both.png"
+              alt="Close-up of both eyes showing the delicate surface structures that affect surgical outcomes"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             She had done everything right. She attended every follow-up visit, underwent repeated measurements and dilation exams, sat patiently through multiple adjustment treatments. She made several long drives back and forth to Los Angeles, each time hoping this would be the visit that finally brought clarity.
           </p>
@@ -88,6 +98,15 @@ export default function InsightWhenTheEyeSurfaceChangesEverything() {
             <p><strong>She had significant dry eye disease and irregularities across the corneal surface, including areas of mild corneal haze. These surface problems were causing her vision to fluctuate from visit to visit, making every measurement slightly different, and every adjustment based on those measurements less predictable than it needed to be.</strong></p>
           </div></BlurReveal>
 
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/dvc-clinic-interior-1.jpeg"
+              alt="Interior of Desert Vision Center, where thorough evaluations guide every surgical decision"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             This is something many patients do not realize, and it is one of the most important things I try to explain during consultations. Advanced lens implants can only perform as well as the surface of the eye allows. The lens sits inside the eye. Light has to pass through the cornea and the tear film before it ever reaches the implant. If that front surface is dry, irregular, or unstable, even the most sophisticated lens technology cannot fully compensate.
           </p>
@@ -120,6 +139,18 @@ export default function InsightWhenTheEyeSurfaceChangesEverything() {
       <section className="section section-warm">
         <div className="container content-narrow">
           <h2 className="section-title">The Emotional <strong>Cost</strong></h2>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-joyful-clear-vision.jpg"
+              alt="Patient experiencing the joy of clear vision, the outcome every patient hopes for"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+          <BlurReveal><div className="pull-quote">
+            <p>&ldquo;She had spent months investing time, money, and hope into a process that kept promising improvement but never quite delivered it.&rdquo;</p>
+          </div></BlurReveal>
           <p>
             One of the hardest parts of situations like this has nothing to do with the eye itself. It is the emotional toll. Patients often invest significant money in premium lens technology, expecting a transformative result. They invest time traveling to appointments. They invest hope with each visit, trusting that the next adjustment will be the one that finally works.
           </p>

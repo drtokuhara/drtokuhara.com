@@ -140,6 +140,16 @@ export default function InsightSubconjunctivalHemorrhage() {
           <BlurReveal><div className="insight-highlight">
             <p><strong>I see this weekly in clinic. Patients walk in convinced something is catastrophically wrong. I check their vision, examine the eye, and tell them the same thing: it will look worse before it looks better, and then it will fade completely. Most are relieved. Some do not believe me until it actually goes away.</strong></p>
           </div></BlurReveal>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/eye-closeup-single.png"
+              alt="Close-up view of an eye showing the surface structures where subconjunctival hemorrhage occurs"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -195,6 +205,20 @@ export default function InsightSubconjunctivalHemorrhage() {
 
           <BlurReveal><div className="insight-highlight">
             <p><strong>Patients ask if wearing sunglasses will help. It will not make the hemorrhage heal faster, but it will make you feel less self-conscious when you go out in public. That counts for something.</strong></p>
+          </div></BlurReveal>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/stock-seniors-formal-resort-dusk.jpg"
+              alt="Seniors enjoying a peaceful evening at a desert resort, relaxed and reassured"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+
+          <BlurReveal><div className="pull-quote">
+            <p>"The eye is designed to look alarming when something goes wrong. A bright red patch triggers every survival instinct. But in this case, the alarm is cosmetic."</p>
           </div></BlurReveal>
         </div>
       </section>

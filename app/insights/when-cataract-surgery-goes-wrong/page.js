@@ -151,6 +151,18 @@ export default function InsightWhenSurgeryGoesWrong() {
 
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/complex-cases-patient-hope.jpg"
+              alt="Patient looking hopeful after a complex case consultation, finding clarity after uncertainty"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+          <BlurReveal><div className="pull-quote">
+            <p>&ldquo;Fear grows in silence. Honesty is the antidote.&rdquo;</p>
+          </div></BlurReveal>
           <h2 className="section-title">The Dropped <strong>Lens</strong></h2>
           <p>
             Sometimes, during or after surgery, lens material falls through the capsule into the vitreous cavity, the gel-filled space behind the lens. This is called a <Link href="/dropped-lens-after-cataract-surgery">dropped nucleus or retained lens fragments</Link>. It happens in roughly 0.3 to 1 percent of cataract surgeries, more often with very dense cataracts or weak zonular support.
@@ -192,6 +204,15 @@ export default function InsightWhenSurgeryGoesWrong() {
 
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-distress-concern.png"
+              alt="Patient expressing concern, the kind of worry that brings people seeking a second opinion"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <h2 className="section-title">IOL Exchange: When the Lens <strong>Needs to Change</strong></h2>
           <p>
             Not every complication happens during surgery. Sometimes the issue surfaces weeks or months later: a lens implant that is the wrong power, a multifocal lens causing intolerable glare and halos, or a lens that has shifted out of position.
@@ -229,6 +250,15 @@ export default function InsightWhenSurgeryGoesWrong() {
 
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/honest-consultation-trust.png"
+              alt="Doctor and patient in an honest, trust-building conversation about surgical outcomes"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <h2 className="section-title">Why Experience <strong>Matters Most</strong></h2>
           <p>
             I want to be clear: cataract surgery is safe. It is one of the safest and most predictable surgeries in all of medicine. The complication rate is low. The vast majority of patients have excellent outcomes.
@@ -296,6 +326,10 @@ export default function InsightWhenSurgeryGoesWrong() {
             <Link href="/cataract-surgery-complications" className="related-card">
               <h3>Cataract Surgery Complications</h3>
               <p>A comprehensive look at what can go wrong and how each complication is managed.</p>
+            </Link>
+            <Link href="/insights/when-your-case-isnt-routine" className="related-card">
+              <h3>When Your Case Isn't Routine</h3>
+              <p>Not every cataract surgery is straightforward. Here is how an experienced surgeon approaches the cases other doctors refer out.</p>
             </Link>
             <Link href="/insights/how-to-choose-a-cataract-surgeon" className="related-card">
               <h3>How to Choose a Cataract Surgeon</h3>

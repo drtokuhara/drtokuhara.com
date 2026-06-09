@@ -124,7 +124,7 @@ export default function InsightPosteriorCapsuleOpacification() {
             It usually starts the same way. A patient calls the office, sometimes anxious, sometimes frustrated. "My vision was great after surgery," they say. "Now it feels like my cataract is coming back." I hear some version of that conversation several times a month. And every time, the first thing I tell them is this: your cataract is not back. It cannot come back. What you are experiencing is something different, something predictable, and something we can fix.
           </p>
           <p>
-            It is called posterior capsule opacification. Most doctors abbreviate it PCO. Some patients hear it called a "secondary cataract," which is technically a misnomer but has stuck because it describes the symptom so well: cloudy vision that feels exactly like the cataract did before surgery. The difference is in what is causing the cloudiness, and how easy it is to treat.
+            It is called posterior capsule opacification. Most doctors abbreviate it PCO. Some patients hear it called a "secondary cataract," which is technically a misnomer but has stuck because it describes the symptom so well: cloudy vision that feels exactly like the cataract did before surgery. The difference is in what is causing the cloudiness, and how easy it is to treat. If you are looking for general information about <Link href="/cataract-recovery" style={{color: 'inherit', textDecoration: 'underline'}}>what to expect after cataract surgery</Link>, that is a different conversation. This article is specifically about what happens when vision clouds again months or years later.
           </p>
         </div>
       </section>

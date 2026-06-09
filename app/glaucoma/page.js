@@ -1,7 +1,9 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { articleSchema, breadcrumbSchema, physicianSchema } from '../schema';
 import {
   ScrollReveal,
+  BlurReveal,
   VideoBackground,
   KineticText,
   LineDraw,
@@ -115,6 +117,15 @@ export default function GlaucomaPage() {
       {/* HOW IT STEALS YOUR VISION */}
       <section className="section section-warm">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/glaucoma-eye-anatomy.png"
+              alt="Anatomical illustration of the eye showing optic nerve damage from glaucoma"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <h2 className="section-title">How Glaucoma <strong>Steals Your Vision</strong></h2>
           <p className="prose">
             Glaucoma starts at the edges. It takes your peripheral vision first, slowly narrowing your field of view like looking through a tunnel that gets smaller over time. Your brain is remarkably good at compensating. It fills in the gaps, adjusts, and you genuinely do not notice what is missing. You might bump into door frames more often. You might not see a car approaching from the side. You might struggle to find things on a cluttered desk. But you would not think "I am losing my vision."
@@ -125,6 +136,10 @@ export default function GlaucomaPage() {
           <p className="prose">
             I have seen patients who had no idea anything was wrong until a routine exam revealed significant optic nerve damage. The exam that caught it probably saved their remaining vision. The patients who skip exams because they "see fine" are the ones who worry me most.
           </p>
+
+          <BlurReveal><div className="pull-quote">
+            <p>Your brain is remarkably good at compensating. It fills in the gaps, adjusts, and you genuinely do not notice what is missing. That is what makes glaucoma so insidious.</p>
+          </div></BlurReveal>
         </div>
       </section>
 
@@ -149,6 +164,15 @@ export default function GlaucomaPage() {
       {/* DETECTION AND DIAGNOSIS */}
       <section className="section section-warm">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/dvc-exam-room.jpg"
+              alt="Desert Vision Center exam room equipped for comprehensive glaucoma evaluation"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <h2 className="section-title">Detection and <strong>Diagnosis</strong></h2>
           <p className="prose">
             Diagnosing glaucoma is not as simple as checking eye pressure, though that is part of it. Some people have high pressure and never develop glaucoma. Others have normal pressure and lose vision anyway. That is why a thorough evaluation matters.
@@ -213,6 +237,15 @@ export default function GlaucomaPage() {
       {/* WHY ROUTINE EXAMS MATTER */}
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/lifestyle-morning-walk.jpg"
+              alt="Active senior enjoying a morning walk in the desert, maintaining quality of life through preventive eye care"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <h2 className="section-title">Why Routine Exams <strong>Change Everything</strong></h2>
           <p className="prose">
             I keep coming back to this because it is the single most important message about glaucoma: the exam matters more than anything else. Not the drops. Not the laser. Not the surgery. The exam. Because none of those treatments help if you do not know you need them.

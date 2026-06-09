@@ -69,6 +69,15 @@ export default function InsightThreeThingsPatientsSay() {
           <p>
             Over the years, I have noticed that certain statements come up again and again. Not medical statements. Just things people say when they are describing their day, their frustrations, their priorities. And those words tell me almost everything I need to know about which direction to go.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/medical-patient-consultation.png"
+              alt="Doctor and patient in conversation during an eye care consultation"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             Here are three of them.
           </p>
@@ -98,6 +107,15 @@ export default function InsightThreeThingsPatientsSay() {
           <p>
             This tells me intermediate range matters most. Not distance. Not near. The middle.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/senior-asian-woman-smartphone-patio.jpeg"
+              alt="Senior woman using her smartphone on a sunlit patio"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             People who work at computers live at arm's length. Their critical visual world is roughly 20 to 30 inches away, a zone that traditional monofocal lenses set for distance do not cover well. These patients often assume they need to choose between distance and near. They do not realize there is an entire category of lens technology designed for exactly where they spend their day.
           </p>
@@ -130,8 +148,20 @@ export default function InsightThreeThingsPatientsSay() {
       <section className="section section-white">
         <div className="container content-narrow">
           <h2 className="section-title">The Real <strong>Point</strong></h2>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/stock-seniors-pickleball-desert.jpg"
+              alt="Seniors playing pickleball in the desert sun, enjoying active lives with clear vision"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+          <BlurReveal><div className="pull-quote">
+            <p>&ldquo;Lens selection is not a menu. It is a conversation. The measurements tell me what is possible. Your words tell me what matters.&rdquo;</p>
+          </div></BlurReveal>
           <p>
-            Lens selection is not a menu. It is a conversation. The measurements tell me what is possible. Your words tell me what matters. The best outcomes happen when those two things align.
+            The best outcomes happen when those two things align.
           </p>
           <p>
             I have been doing this long enough to know that patients rarely walk in asking for a specific lens by name. They walk in describing a life they want to protect or a frustration they want to solve. My job is to translate that into a plan that respects both the engineering of the eye and the reality of how you live.

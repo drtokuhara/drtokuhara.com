@@ -120,6 +120,15 @@ export default function InsightWhenDoINeedSurgery() {
           <p className="body-lead body-lead-dropcap">
             This is the question I hear more than any other. Not "which lens should I get?" Not "is it going to hurt?" The most common question, by a wide margin, is: "Do I really need to do this right now?"
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-couple-consultation.jpg"
+              alt="Couple sitting together during an eye care consultation, considering their options"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             It is a fair question. Cataracts are not an emergency. Nobody is going to tell you that you must have surgery by next Tuesday or face dire consequences. In most cases, you have time. The cataract will not suddenly get worse overnight. Your eye will not be damaged by waiting a few more months.
           </p>
@@ -184,9 +193,27 @@ export default function InsightWhenDoINeedSurgery() {
           <p>
             <strong>The cataract gets denser.</strong> A mild cataract is relatively soft and can be removed with minimal ultrasound energy. A very dense, mature cataract, what we call a brunescent cataract, requires significantly more energy and more surgical steps to remove. The surgery becomes longer and more complex. Recovery can take longer. The risk of complications increases.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/grandparent-watching-kids-soccer-park.jpeg"
+              alt="Grandparent watching children play soccer in a park, the everyday moments clear vision protects"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             <strong>Fall risk increases.</strong> This is the one that concerns me most, especially for my older patients. Poor vision is one of the leading risk factors for falls in adults over 65. A fall can lead to a hip fracture, a head injury, or a loss of independence that is far more life-altering than cataract surgery. I have had patients who fell and broke a hip while they were "thinking about" scheduling their cataract surgery. That is a sequence I never want to see repeated.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/senior-man-driving-truck-desert.jpeg"
+              alt="Senior man driving through the desert, relying on clear vision for safety on the road"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             <strong>Driving becomes dangerous.</strong> Not just for you, but for everyone on the road. If your cataracts have progressed to the point where you are squinting, leaning forward, and gripping the wheel when headlights approach, you are putting yourself and others at risk. I say this not to frighten you, but because it is true, and your surgeon should be willing to say it clearly.
           </p>
@@ -253,6 +280,9 @@ export default function InsightWhenDoINeedSurgery() {
           <p>
             And many of them come back a few months later and say, "You know what, I am ready." Not because I pushed them. Because they gave themselves permission to want better vision. That is a powerful moment. And it happens at the patient's pace, not the surgeon's.
           </p>
+          <BlurReveal><div className="pull-quote">
+            <p>&ldquo;They gave themselves permission to want better vision. That is a powerful moment. And it happens at the patient's pace, not the surgeon's.&rdquo;</p>
+          </div></BlurReveal>
 
           <BlurReveal><div className="pull-quote">
             <p>"The most important thing I can give a patient in a cataract consultation is not a diagnosis. It is clarity about their choices."</p>

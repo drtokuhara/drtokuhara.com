@@ -112,6 +112,16 @@ export default function InsightPatientNeverSawAgain() {
           <p>
             Eventually, we scheduled cataract surgery.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/elderly-man-walker-courtyard-mountains.jpg"
+              alt="Elderly man in a courtyard with mountains in the background, navigating daily life with limited vision"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -171,6 +181,16 @@ export default function InsightPatientNeverSawAgain() {
           <p>
             But twenty years has a way of changing how you view things.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/senior-asian-man-desert-mountains.jpeg"
+              alt="Man standing alone in the desert landscape, looking out toward the mountains with quiet reflection"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             Looking back, I understand something I did not fully appreciate at the time. For a man without a home, that legal blindness certification may have been more than a document. It may have been connected to disability benefits, housing support, a safety net that his new 20/20 vision suddenly made him ineligible for. I gave him his sight back. He may have felt I was taking something else away.
           </p>
@@ -185,6 +205,10 @@ export default function InsightPatientNeverSawAgain() {
           <p>
             And I find myself wondering what happened next.
           </p>
+
+          <BlurReveal><div className="pull-quote">
+            <p>"Not just his eyesight. His possibilities."</p>
+          </div></BlurReveal>
         </div>
       </section>
 

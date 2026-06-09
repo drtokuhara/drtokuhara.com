@@ -424,5 +424,13 @@ export const insights = [
     cluster: 'Real Patient Stories',
     image: '/media/elderly-woman-walker-courtyard.jpg',
   },
+  {
+    slug: 'when-your-case-isnt-routine',
+    title: 'Complex Cataract Surgery: When Your Case Isn\'t Routine',
+    date: 'June 2026',
+    description: 'Not every cataract surgery is straightforward. Weak zonules, prior eye surgery, trauma, and other factors can make your case complex. Here is how an experienced surgeon approaches the cases other doctors refer out.',
+    cluster: 'Complex Cases',
+    image: '/media/insights/complex-cataract-surgical-planning.jpg',
+  },
 ];
 export default insights;

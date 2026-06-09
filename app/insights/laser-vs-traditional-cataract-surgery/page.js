@@ -145,6 +145,16 @@ export default function InsightLaserVsTraditional() {
           <BlurReveal><div className="insight-highlight">
             <p><strong>Traditional cataract surgery is not outdated. It is one of the most successful surgical procedures in all of medicine, with a long track record of safety and excellent visual outcomes.</strong></p>
           </div></BlurReveal>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/medical-surgical-precision.png"
+              alt="Precision surgical instruments used in modern cataract surgery"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -276,6 +286,20 @@ export default function InsightLaserVsTraditional() {
           <p>
             This is how individualized care works. The recommendation follows the eye, not the marketing plan.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/dr-t-slit-lamp-patient-view.jpg"
+              alt="Dr. Tokuhara examining a patient at the slit lamp during a cataract evaluation"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+
+          <BlurReveal><div className="pull-quote">
+            <p>"This is how individualized care works. The recommendation follows the eye, not the marketing plan."</p>
+          </div></BlurReveal>
         </div>
       </section>
 

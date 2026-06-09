@@ -36,6 +36,16 @@ export default function FiveQuestionsContent() {
               Here are five. They are not complicated. They are not confrontational. But the answers will tell you more about your surgeon and your surgery than any brochure ever could.
             </p>
           </ScrollReveal>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/consultation-line-art.png"
+              alt="Line art illustration of a patient and doctor in consultation"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -79,6 +89,16 @@ export default function FiveQuestionsContent() {
               The important thing is not which technique your surgeon uses. It is whether they can explain why they prefer it for your case. A thoughtful answer here tells you the surgeon is thinking about you specifically, not applying a one-size-fits-all protocol.
             </p>
           </ScrollReveal>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-reader-woman-books.jpg"
+              alt="Woman reading comfortably, representing the clear near vision patients hope to achieve"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -167,6 +187,10 @@ export default function FiveQuestionsContent() {
               You are not being difficult by asking. You are being smart. Your eyes deserve that.
             </p>
           </ScrollReveal>
+
+          <BlurReveal><div className="pull-quote">
+            <p>"A surgeon who welcomes your questions is a surgeon who respects your role in the decision. A surgeon who rushes past them is telling you something about how the rest of the experience will feel."</p>
+          </div></BlurReveal>
 
           <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>

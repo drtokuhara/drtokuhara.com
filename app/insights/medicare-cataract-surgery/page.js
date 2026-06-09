@@ -139,6 +139,16 @@ export default function InsightMedicareCataractSurgery() {
           <BlurReveal><div className="insight-highlight">
             <p><strong>If you choose a standard monofocal lens and standard manual cataract surgery, your out-of-pocket cost is limited to your Medicare Part B deductible and the 20% coinsurance, unless you have a Medicare Supplement plan (Medigap) that covers these amounts. For most patients, this means cataract surgery is affordable and predictable.</strong></p>
           </div></BlurReveal>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-elderly-woman-smiling.jpg"
+              alt="Smiling elderly woman feeling confident about her cataract surgery coverage"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -191,6 +201,20 @@ export default function InsightMedicareCataractSurgery() {
           <p>
             Your surgeon should guide this decision based on clinical judgment, not revenue. If the conversation feels like a sales pitch, or if premium lenses are presented as universally superior without discussing tradeoffs, consider seeking a <Link href="/insights/second-opinion-cataract-surgery">second opinion</Link>.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/honest-consultation-trust.png"
+              alt="Doctor and patient having an honest, transparent consultation about surgical options"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+
+          <BlurReveal><div className="pull-quote">
+            <p>"The conversation should never feel transactional. It should feel collaborative."</p>
+          </div></BlurReveal>
         </div>
       </section>
 

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { breadcrumbSchema } from '../schema';
 import {
   ScrollReveal,
@@ -102,12 +103,25 @@ export default function DysphotopsiaAfterCataractSurgery() {
           <p>
             Understanding what dysphotopsia is, why it happens, and what to expect can make the difference between weeks of anxiety and the calm patience that allows your brain to do what it does best: adapt.
           </p>
+
+          <BlurReveal><div className="pull-quote">
+            <p>They had surgery to see better, and now they are seeing something they did not have before. These symptoms have a name: dysphotopsia. It is not a sign that something went wrong.</p>
+          </div></BlurReveal>
         </div>
       </section>
 
       {/* THE TWO TYPES */}
       <section className="section section-warm">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/senior-man-driving-closeup-desert.jpeg"
+              alt="Senior man driving in the desert, where halos and glare from dysphotopsia can affect night driving"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <ScrollReveal direction="up" once={true}>
             <h2 className="section-title">Two Types of <strong>Dysphotopsia</strong></h2>
           </ScrollReveal>
@@ -280,6 +294,15 @@ export default function DysphotopsiaAfterCataractSurgery() {
       {/* DR. T'S APPROACH */}
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-couple-consultation.jpg"
+              alt="Couple meeting with their eye surgeon during a pre-operative consultation"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <ScrollReveal direction="up" once={true}>
             <h2 className="section-title">My Approach: Prevention <strong>Through Preparation</strong></h2>
           </ScrollReveal>
@@ -301,6 +324,15 @@ export default function DysphotopsiaAfterCataractSurgery() {
       {/* CLINIC THOUGHT */}
       <section className="section section-warm">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/clear-vision-restored.png"
+              alt="Clear, sharp vision restored after the brain adapts to a new lens implant"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <BlurReveal><div className="clinic-thought">
             <h3>A thought from the clinic</h3>
             <p>

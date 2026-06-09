@@ -88,6 +88,7 @@ export default function MobileNav() {
             <Link href="/insights/how-to-choose-a-cataract-surgeon" onClick={close}>How to Choose a Surgeon</Link>
             <Link href="/insights/do-i-really-need-surgery" onClick={close}>Do I Need Surgery Yet?</Link>
             <Link href="/insights/when-cataract-surgery-goes-wrong" onClick={close}>When Surgery Goes Wrong</Link>
+            <Link href="/insights/when-your-case-isnt-routine" onClick={close}>When Your Case Isn't Routine</Link>
             <Link href="/insights/are-premium-lenses-worth-it" onClick={close}>Are Premium Lenses Worth It?</Link>
             <Link href="/insights/not-every-patient-wants-the-same-vision" onClick={close}>Not Every Patient Wants the Same Vision</Link>
             <Link href="/insights/medicare-cataract-surgery" onClick={close}>Medicare Coverage</Link>

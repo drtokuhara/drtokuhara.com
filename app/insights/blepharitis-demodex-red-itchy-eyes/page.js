@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
 import AudioNarration from '../../components/AudioNarration';
@@ -124,6 +125,16 @@ export default function InsightBlepharitisDemodex() {
           <p>
             This is not an allergy. It is not classic dry eye, though dry eye often coexists. It is blepharitis, frequently driven by microscopic organisms living along the eyelid margin. And it is far more common than most people realize.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/eye-closeup-single.png"
+              alt="Close-up view of an eye showing eyelid margin detail"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -176,6 +187,15 @@ export default function InsightBlepharitisDemodex() {
           <p>
             Diagnosis is made during a slit lamp examination. I look for characteristic signs: debris along the lash line, redness and thickening of the lid margin, blocked or inflamed oil glands, and the cylindrical collarettes that are strongly associated with Demodex.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/dr-t-slit-lamp-patient-view.jpg"
+              alt="View through a slit lamp during an eye examination"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             In some cases, I will remove a lash and examine it under a microscope to confirm the presence of mites. But often, the clinical picture is clear enough that microscopy is not needed.
           </p>
@@ -240,6 +260,20 @@ export default function InsightBlepharitisDemodex() {
           <p>
             Managing blepharitis in the desert requires more aggressive lid hygiene and often more frequent use of artificial tears or prescription anti-inflammatory drops. The goal is to create a stable ocular surface despite the challenging environment.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/senior-woman-coffee-morning-balcony.jpg"
+              alt="Senior woman enjoying coffee on a morning balcony in the desert"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+
+          <BlurReveal><div className="pull-quote">
+            <p>"Blepharitis is not a one-time fix. It is maintenance, like brushing your teeth. Patients who stay consistent see real, lasting improvement."</p>
+          </div></BlurReveal>
         </div>
       </section>
 

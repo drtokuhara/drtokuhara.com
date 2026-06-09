@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
 import AudioNarration from '../../components/AudioNarration';
@@ -153,6 +154,16 @@ export default function NotEveryPatientWantsSameVisionPage() {
             </div>
           </BlurReveal>
 
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/dvc-phoropter-exam.png"
+              alt="Patient receiving a detailed phoropter examination at Desert Vision Center"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+
           <ScrollReveal direction="up" once={true}>
             <p className="prose">
               From a clinical standpoint, this case was interesting because several factors had to be balanced carefully.
@@ -209,6 +220,16 @@ export default function NotEveryPatientWantsSameVisionPage() {
             </p>
           </ScrollReveal>
 
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-69yo-man-pool-palm-desert.jpg"
+              alt="Active man enjoying life in Palm Desert with restored vision after cataract surgery"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+
           <ScrollReveal direction="up" once={true}>
             <p className="prose">
               What I appreciate about this case is that it demonstrates an important truth about modern cataract surgery: success is not one-size-fits-all.
@@ -247,6 +268,10 @@ export default function NotEveryPatientWantsSameVisionPage() {
               </p>
             </div>
           </BlurReveal>
+
+          <BlurReveal><div className="pull-quote">
+            <p>"The goal is not perfection in every category simultaneously. The goal is alignment between the technology and the patient's real life."</p>
+          </div></BlurReveal>
 
           <ScrollReveal direction="up" once={true}>
             <p className="prose">

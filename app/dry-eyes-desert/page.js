@@ -1,7 +1,9 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { articleSchema, breadcrumbSchema, physicianSchema } from '../schema';
 import {
   ScrollReveal,
+  BlurReveal,
   VideoBackground,
   KineticText,
   LineDraw,
@@ -98,6 +100,15 @@ export default function DryEyesDesertPage() {
       {/* THE DESERT DIFFERENCE */}
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/lifestyle-desert-home-woman.jpg"
+              alt="Woman at her desert home, experiencing the dry Coachella Valley climate"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <ScrollReveal direction="up" once={true}>
             <h2 className="section-title">The Desert <strong>Difference</strong></h2>
           </ScrollReveal>
@@ -110,6 +121,10 @@ export default function DryEyesDesertPage() {
           <p className="prose">
             This is not a minor inconvenience. For many residents, especially seasonal visitors who split time between the desert and more humid climates, dry eye symptoms can be genuinely life-altering. And for patients considering eye surgery, untreated dry eye can affect both preoperative measurements and postoperative outcomes.
           </p>
+
+          <BlurReveal><div className="pull-quote">
+            <p>The Coachella Valley sits below sea level in some areas. Humidity often drops below 10 percent. Wind carries dust and allergens across open desert. You have one of the most hostile environments for tear film stability anywhere in the United States.</p>
+          </div></BlurReveal>
         </div>
       </section>
 
@@ -161,6 +176,15 @@ export default function DryEyesDesertPage() {
       {/* DRY EYE AND SURGERY */}
       <section className="section section-warm">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/eye-closeup-single.png"
+              alt="Close-up view of the eye surface showing tear film detail"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <h2 className="section-title">Dry Eye and <strong>Surgical Candidacy</strong></h2>
           <p className="prose">
             This is an area where I am particularly careful, and where I think some practices miss the mark. Dry eye directly affects cataract surgery outcomes. The measurements we use to select your lens implant depend on a smooth, stable tear film. If your corneal surface is irregular because of dry eye, those measurements will be off, and your lens selection could be suboptimal.
@@ -214,6 +238,15 @@ export default function DryEyesDesertPage() {
       {/* WHEN TO SEE A DOCTOR */}
       <section className="section section-warm">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/senior-woman-coffee-morning-balcony.jpg"
+              alt="Senior woman enjoying morning coffee on her desert balcony"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <h2 className="section-title">When to <strong>See a Doctor</strong></h2>
           <p className="prose">
             Over-the-counter drops are fine for occasional dryness. But if any of the following apply to you, it is time for a proper evaluation:

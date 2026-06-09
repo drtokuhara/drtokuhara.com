@@ -144,6 +144,15 @@ export default function InsightFirstWeek() {
           <p>
             You will come in for your first post-operative visit, usually the morning after surgery. I check the eye, measure the pressure, and look at the incision and the new lens. This visit is quick but important.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-elderly-woman-smiling.jpg"
+              alt="Elderly woman smiling warmly after her first post-operative follow-up"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             Most patients walk in and say something like, "I can already tell it's better." And they are right. Even through some residual blur, the difference between the cataract eye and the operated eye is often obvious. Colors look more vivid. Things look brighter. The foggy film is gone.
           </p>
@@ -202,6 +211,20 @@ export default function InsightFirstWeek() {
           <p>
             You are still healing. The full stabilization of your vision takes several weeks, and your drop schedule will continue for about a month. But functionally, most patients are back to their routines by the end of Week 1.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/lifestyle-morning-walk.jpg"
+              alt="Person enjoying a peaceful morning walk outdoors with renewed clarity of vision"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+
+          <BlurReveal><div className="pull-quote">
+            <p>"Modern cataract surgery is designed to get you back to your life quickly, with minimal disruption. A quiet first week is a small investment in a lifetime of clear vision."</p>
+          </div></BlurReveal>
           <p>
             <strong>Still off-limits:</strong> Swimming, hot tubs, dusty environments, eye makeup, and any activity with a risk of impact to the eye. These restrictions typically lift at the two-week or one-month mark, depending on healing.
           </p>

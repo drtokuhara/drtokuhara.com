@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
 import AudioNarration from '../../components/AudioNarration';
@@ -148,6 +149,16 @@ export default function InsightLifeAfterCataractSurgery() {
           <p>
             This shift in color perception is not a side effect. It is a restoration. You are seeing what was always there.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-joyful-clear-vision.jpg"
+              alt="Patient experiencing the joy of restored clear vision after cataract surgery"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -171,6 +182,16 @@ export default function InsightLifeAfterCataractSurgery() {
           <p>
             Night vision improvement is one of the most life-changing and most underappreciated outcomes of cataract surgery. Patients often do not mention it in advance because they do not realize their cataracts are the cause.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/night-driving-city-lights-mountains.jpeg"
+              alt="Clear nighttime view of city lights and mountains through a car windshield"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -194,6 +215,20 @@ export default function InsightLifeAfterCataractSurgery() {
           <p>
             I see this in patients from every background. A mechanic who can read part numbers again without pulling out his phone flashlight. A grandmother who can thread a needle for the first time in years. A woman who returned to crossword puzzles she had given up because the clue text was too small. These are not dramatic medical stories. They are the small, real moments that define daily life.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/senior-couple-painting-wall.jpeg"
+              alt="Senior couple painting together, rediscovering creative hobbies with restored vision"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+
+          <BlurReveal><div className="pull-quote">
+            <p>"You were not just tolerating reduced vision. You were mourning experiences you did not even know you were missing."</p>
+          </div></BlurReveal>
         </div>
       </section>
 

@@ -62,6 +62,15 @@ export default function TwentyYearsForwardContent() {
       <section className="section section-warm">
         <div className="container content-narrow">
           <h2 className="section-title">The Slow <strong>Fade</strong></h2>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-elderly-woman-smiling.jpg"
+              alt="Elderly woman smiling warmly, reflecting a quiet strength despite gradual vision changes"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             Cataracts do not announce themselves. There is no single morning when you wake up and think, "Something is wrong with my lens." Instead, the change is incremental. So gradual that your brain adapts to it before your conscious mind even registers the shift.
           </p>
@@ -129,7 +138,19 @@ export default function TwentyYearsForwardContent() {
             The relief is visible. Sometimes there are tears. Sometimes there is laughter. Sometimes it is just a long exhale and a quiet, "Really?"
           </p>
           <p>
-            This patient had been reorganizing her life around a problem she did not know she had. She had stopped going to evening book club because she could not read comfortably in the low lighting. She had given up her weekly dinner with friends at a dimly lit restaurant she loved. She had started declining invitations that involved driving after dark.
+            This patient had been reorganizing her life around a problem she did not know she had.
+          </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/lifestyle-sunset-dining.jpg"
+              alt="Friends gathering for dinner at sunset, the kind of evening invitation that vision loss quietly takes away"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+          <p>
+            She had stopped going to evening book club because she could not read comfortably in the low lighting. She had given up her weekly dinner with friends at a dimly lit restaurant she loved. She had started declining invitations that involved driving after dark.
           </p>
           <p>
             Each of these retreats was small. None of them felt like a crisis. But together, they represented a slow contraction of her world.
@@ -179,6 +200,18 @@ export default function TwentyYearsForwardContent() {
           <p>
             Twenty years of reading without straining. Twenty years of driving confidently. Twenty years of walking into a dim restaurant and being able to read the menu without pulling out her phone flashlight. Twenty years of saying yes to invitations instead of quietly declining.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/stock-seniors-outdoor-toast.jpg"
+              alt="Seniors raising a toast outdoors, celebrating the kind of social life clear vision restores"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+          <BlurReveal><div className="pull-quote">
+            <p>&ldquo;Every month spent adjusting to unnecessary decline is a month that did not have to be that way.&rdquo;</p>
+          </div></BlurReveal>
 
           <BlurReveal><div className="insight-highlight">
             <p><strong>That is what cataract surgery actually does when it is done at the right time, for the right reasons, with the right conversation beforehand. It does not just change how you see. It changes how you live. And it changes how long you get to live that way.</strong></p>

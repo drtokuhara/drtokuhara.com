@@ -347,6 +347,7 @@ export default function ComplexCasesPage() {
             <MagneticElement strength={0.2}><Link href="/contact" className="btn-primary">Schedule a Consultation</Link></MagneticElement>
             <MagneticElement strength={0.2}><a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a></MagneticElement>
             <MagneticElement strength={0.2}><Link href="/cataract-surgery" className="btn-secondary">Back to Cataract Surgery</Link></MagneticElement>
+            <MagneticElement strength={0.2}><Link href="/insights/when-your-case-isnt-routine" className="btn-secondary">Read: When Your Case Isn't Routine</Link></MagneticElement>
           </div>
         </div>
       </section>

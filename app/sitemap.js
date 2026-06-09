@@ -146,6 +146,7 @@ export default function sitemap() {
     '/insights/subconjunctival-hemorrhage',
     '/insights/panoptix-vs-vivity',
     '/insights/driving-after-cataract-surgery',
+    '/insights/when-your-case-isnt-routine',
   ].map((path) => ({ path, priority: 0.6, changeFrequency: 'monthly' }));
 
   // City landing pages - local SEO

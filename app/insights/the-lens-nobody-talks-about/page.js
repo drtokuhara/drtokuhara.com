@@ -67,6 +67,16 @@ export default function InsightTheLensNobodyTalksAbout() {
           <p>
             He was 68, retired, sharp, and motivated. The kind of patient who takes an active role in his own care, which I respect deeply. But the research he had done was missing something that no website could have told him. It was missing the exam.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-78yo-woman-desert-portrait.jpg"
+              alt="Thoughtful patient considering their vision options at a desert eye clinic"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -149,6 +159,20 @@ export default function InsightTheLensNobodyTalksAbout() {
             It is not the sexy choice. Nobody writes forum posts about it. But when a patient tells me six weeks after surgery that their vision is crisp and comfortable and they barely think about their glasses anymore, that is the outcome I was aiming for.
           </p>
 
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/stock-couple-garden-blooming.jpg"
+              alt="Couple enjoying a blooming garden together, appreciating the clear details of daily life"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+
+          <BlurReveal><div className="pull-quote">
+            <p>"I would rather have the uncomfortable conversation."</p>
+          </div></BlurReveal>
+
           <BlurReveal><div className="insight-highlight">
             <p><strong>The lens nobody talks about is the one that works quietly and well. It does not promise everything. It delivers what matters: clarity, comfort, and confidence in a result that was chosen carefully rather than marketed aggressively.</strong></p>
           </div></BlurReveal>
@@ -164,6 +188,16 @@ export default function InsightTheLensNobodyTalksAbout() {
           <p>
             At his one-month follow-up, he was seeing 20/20 at distance in one eye and reading comfortably with the other. His contrast was excellent. No halos. No complaints. He told me he had been nervous about "settling" for the standard lens. Now he felt like it was the smartest decision he had made in years.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/clear-vision-restored.png"
+              alt="Illustration representing the clarity and comfort of restored vision with the right lens choice"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
 
           <BlurReveal><div className="clinic-thought">
             <h3>A thought from the clinic</h3>

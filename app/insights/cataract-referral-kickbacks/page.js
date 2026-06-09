@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
 import AudioNarration from '../../components/AudioNarration';
@@ -125,6 +126,16 @@ export default function InsightCataractReferralKickbacks() {
           <p>
             Most patients assume the referral is purely clinical. That their provider evaluated the options and selected the surgeon best suited for their particular eyes. And in many cases, that is exactly what happens. But in some cases, the referral is influenced by something the patient never hears about: a financial arrangement between the referring provider and the surgeon.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-distress-concern.png"
+              alt="Patient looking concerned while considering their options"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -198,6 +209,16 @@ export default function InsightCataractReferralKickbacks() {
           <p>
             That decision cost me. Financially, it was painful. But it clarified something: the practice I wanted to build could not be built on a foundation where patient trust was transactional. Either the relationship between patient and surgeon is built on clinical merit, or it is built on something else. I chose clinical merit.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/honest-consultation-trust.png"
+              alt="A genuine, unhurried consultation between doctor and patient built on trust"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -251,6 +272,20 @@ export default function InsightCataractReferralKickbacks() {
           <p>
             Trust in medicine is not automatic. It is built through honesty, transparency, and a willingness to let patients make informed decisions. The financial structures behind cataract surgery referrals are not something most patients think about. But once you know they exist, you can ask better questions, make more informed choices, and ensure that the person operating on your eyes is someone you chose, not someone who was chosen for you.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-couple-consultation.jpg"
+              alt="Couple discussing cataract surgery options together during a consultation"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+
+          <BlurReveal><div className="pull-quote">
+            <p>"The best referral is one that can withstand scrutiny. The best surgeon-patient relationship starts with trust that was earned, not purchased."</p>
+          </div></BlurReveal>
         </div>
       </section>
 

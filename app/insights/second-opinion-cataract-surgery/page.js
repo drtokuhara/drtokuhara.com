@@ -115,6 +115,16 @@ export default function InsightSecondOpinionCataractSurgery() {
           <p>
             She did not doubt the surgeon's skill. But something felt rushed. The conversation had been transactional, not collaborative. So she sought another perspective. That decision, to pause and ask more questions, was one of the smartest things she could have done.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/x-patient-contemplation-waiting-room.jpg"
+              alt="Patient sitting thoughtfully in a waiting room, considering her surgical options"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             Second opinions are not about distrust. They are about informed decision-making. Your vision matters too much to proceed with uncertainty. If you feel unsure, if the recommendation does not align with what you hoped for, or if the surgeon did not take the time to explain things clearly, seeking a second opinion is not just reasonable. It is responsible.
           </p>
@@ -168,6 +178,16 @@ export default function InsightSecondOpinionCataractSurgery() {
           <BlurReveal><div className="pull-quote">
             <p>"A second opinion that simply confirms the first without independent evaluation is not really a second opinion. It is validation theater."</p>
           </div></BlurReveal>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/medical-patient-consultation.png"
+              alt="Doctor conducting a thorough independent evaluation during a second opinion consultation"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -187,6 +207,20 @@ export default function InsightSecondOpinionCataractSurgery() {
           <BlurReveal><div className="insight-highlight">
             <p><strong>If your surgeon reacts defensively when you mention seeking a second opinion, pay attention to that. A surgeon who feels threatened by the question may not be the right person to trust with your eyes.</strong></p>
           </div></BlurReveal>
+
+          <BlurReveal><div className="pull-quote">
+            <p>"Your vision matters too much to proceed with uncertainty."</p>
+          </div></BlurReveal>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/consultation-line-art.png"
+              alt="Line art illustration representing the careful, thoughtful nature of a second opinion consultation"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -318,6 +352,10 @@ export default function InsightSecondOpinionCataractSurgery() {
             <Link href="/insights/second-opinion-that-changed-everything" className="related-card">
               <h3>The Second Opinion That Changed Everything</h3>
               <p>A patient story about trusting her instincts and seeking another perspective.</p>
+            </Link>
+            <Link href="/insights/when-your-case-isnt-routine" className="related-card">
+              <h3>When Your Case Isn't Routine</h3>
+              <p>Not every cataract surgery is straightforward. How an experienced surgeon approaches complex cases.    </p>
             </Link>
             <Link href="/insights/when-cataract-surgery-goes-wrong" className="related-card">
               <h3>When Cataract Surgery Goes Wrong</h3>

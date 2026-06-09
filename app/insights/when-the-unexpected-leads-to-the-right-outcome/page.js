@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { articleSchema, breadcrumbSchema } from '../../schema';
 import AuthorByline from '../../components/AuthorByline';
 import {
@@ -62,6 +63,15 @@ export default function InsightWhenTheUnexpectedLeadsToTheRightOutcome() {
           <p className="body-lead body-lead-dropcap">
             One of the most important lessons I have learned in ophthalmology is that medicine is not always straightforward. Sometimes situations that initially appear disastrous evolve into something far more nuanced once the full clinical picture becomes clear.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-69yo-man-pool-palm-desert.jpg"
+              alt="Older man outdoors in Palm Desert, representing a patient seeking answers after a difficult surgical experience"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             A 70-year-old patient recently came to my office for a second opinion after experiencing complications during cataract surgery performed elsewhere. Before his surgery, he had hoped to reduce his dependence on glasses. He specifically wanted a toric lens implant, a type of lens designed to correct astigmatism at the time of cataract removal.
           </p>
@@ -116,6 +126,15 @@ export default function InsightWhenTheUnexpectedLeadsToTheRightOutcome() {
           <p>
             The patient had previously undiagnosed keratoconus.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/keratoconus-topography.jpg"
+              alt="Corneal topography map showing the irregular surface pattern characteristic of keratoconus"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             Keratoconus is a condition in which the cornea develops an irregular, cone-like shape. It creates a type of astigmatism that is unpredictable and difficult to correct with standard approaches. In many cases, toric lens implants, the very lens this patient had originally wanted, do not perform reliably in eyes with significant keratoconus because the irregular astigmatism does not follow the predictable patterns that toric lenses are designed to correct.
           </p>
@@ -132,6 +151,18 @@ export default function InsightWhenTheUnexpectedLeadsToTheRightOutcome() {
           <p>
             When it came time to perform cataract surgery on the patient's other eye, we had the full picture. Knowing about the keratoconus, we chose a standard monofocal lens implant rather than a toric. The surgery was uncomplicated. The patient achieved excellent functional vision in both eyes with the assistance of glasses for astigmatism correction.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/clear-vision-restored.png"
+              alt="Bright, clear view through healthy eyes, representing the restored vision this patient achieved"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+          <BlurReveal><div className="pull-quote">
+            <p>&ldquo;For a patient who went into elective surgery expecting clearer vision, this was devastating. He could barely see out of the eye.&rdquo;</p>
+          </div></BlurReveal>
           <p>
             He could see. He could function. He had confidence in his vision again. The journey to get there looked nothing like what anyone had planned, but the destination was a good one.
           </p>

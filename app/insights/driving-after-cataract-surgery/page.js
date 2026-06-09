@@ -124,6 +124,16 @@ export default function InsightDrivingAfterCataractSurgery() {
           <p>
             The short answer is that most patients can drive within 24 hours after cataract surgery, once cleared by their surgeon. But there are conditions. And the real answer depends on your vision, your comfort, and the specifics of your case.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/senior-man-driving-closeup-desert.jpeg"
+              alt="Senior man behind the wheel, driving confidently on a desert road"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -177,6 +187,16 @@ export default function InsightDrivingAfterCataractSurgery() {
             If I tell you to wait, it is not arbitrary. It is because your vision is not stable enough yet or because the risk outweighs the benefit. Give it a few more days. Vision almost always improves.
           </p>
 
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/senior-woman-driving-desert-highway.jpeg"
+              alt="Senior woman driving on a desert highway with clear visibility"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+
           <BlurReveal><div className="pull-quote">
             <p>"Waiting one extra day to drive is frustrating. Causing an accident because you drove too soon is worse."</p>
           </div></BlurReveal>
@@ -189,6 +209,15 @@ export default function InsightDrivingAfterCataractSurgery() {
           <p>
             Daytime driving and nighttime driving are different challenges. Even if you are cleared to drive during the day, night driving may take longer to feel comfortable.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/cataract-night-driving-palm-springs.jpg"
+              alt="Night driving scene showing light halos that some patients experience after cataract surgery"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             Multifocal lenses can cause halos and glare around lights, especially at night. Streetlights, headlights, and traffic signals may appear with rings or starbursts. Most patients adapt to this over time, but in the first week or two, nighttime driving can feel disorienting.
           </p>

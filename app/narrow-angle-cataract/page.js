@@ -66,6 +66,15 @@ export default function NarrowAngleCataract() {
       {/* WHAT ARE NARROW ANGLES */}
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/eye-closeup-both.png"
+              alt="Close-up of the eye anatomy showing the narrow drainage angle between the iris and cornea"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <ScrollReveal direction="up" once={true}>
             <h2 className="section-title">What Are <strong>Narrow Angles?</strong></h2>
           </ScrollReveal>
@@ -81,6 +90,10 @@ export default function NarrowAngleCataract() {
           <p>
             This is the mechanism behind narrow angle glaucoma, also called angle closure glaucoma.
           </p>
+
+          <BlurReveal><div className="pull-quote">
+            <p>In some eyes, the angle is anatomically narrow. If the angle becomes too narrow, or closes entirely, fluid backs up and eye pressure rises, sometimes dangerously.</p>
+          </div></BlurReveal>
 
           <BlurReveal><div className="insight-highlight">
             <p><strong>Many patients with narrow angles have no symptoms until a crisis occurs. This is why the condition is often discovered during a routine eye exam, not because the patient felt something was wrong.</strong></p>
@@ -115,6 +128,15 @@ export default function NarrowAngleCataract() {
       {/* TWO TREATMENT PATHS */}
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/medical-patient-consultation.png"
+              alt="Doctor discussing treatment options with a patient during an eye consultation"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <ScrollReveal direction="up" once={true}>
             <h2 className="section-title">Two Treatment Paths: <strong>And Why the Sequence Matters</strong></h2>
           </ScrollReveal>
@@ -225,6 +247,15 @@ export default function NarrowAngleCataract() {
       {/* THE CONVERSATION */}
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/clear-vision-restored.png"
+              alt="Clear vision restored after successful treatment of narrow angles and cataracts"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <ScrollReveal direction="up" once={true}>
             <h2 className="section-title">The Conversation to <strong>Have</strong></h2>
           </ScrollReveal>

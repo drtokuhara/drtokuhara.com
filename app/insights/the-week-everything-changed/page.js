@@ -82,6 +82,15 @@ export default function InsightWeekEverythingChanged() {
           <p>
             It has to do with life.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-78yo-woman-desert-portrait.jpg"
+              alt="Elderly woman in the desert, reflecting on her vision and the road ahead"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             Several years ago, I met a 78-year-old woman who came to see me because her vision was gradually becoming more difficult despite wearing contact lenses.
           </p>
@@ -133,6 +142,15 @@ export default function InsightWeekEverythingChanged() {
           <p>
             The news had been sudden. And with that diagnosis came a realization.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/senior-woman-night-driving-starry.jpeg"
+              alt="Senior woman driving at night, headlights reflecting on the road ahead"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             For years, her husband had done nearly all of the driving. Now she would be responsible for it. Not occasionally. Constantly. Doctor appointments. Treatments. The daily weight of being the one behind the wheel.
           </p>
@@ -165,9 +183,9 @@ export default function InsightWeekEverythingChanged() {
           <p>
             The second surgery went well. She gained the confidence she wanted behind the wheel.
           </p>
-          <p>
-            She told me later that knowing we could adjust gave her more relief than the surgery itself.
-          </p>
+          <BlurReveal><div className="pull-quote">
+            <p>&ldquo;She told me later that knowing we could adjust gave her more relief than the surgery itself.&rdquo;</p>
+          </div></BlurReveal>
           <p>
             The tradeoff was exactly what we expected. She now needed reading glasses for near work. And she was completely happy with that.
           </p>
@@ -177,6 +195,15 @@ export default function InsightWeekEverythingChanged() {
       <section className="section section-white">
         <div className="container content-narrow">
           <h2 className="section-title">Three Years <strong>Later</strong></h2>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/lifestyle-couple-walking-dog-morning.jpg"
+              alt="Couple walking their dog on a sunny morning, enjoying clear vision and daily life"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             A few years later, she returned for a follow-up visit.
           </p>

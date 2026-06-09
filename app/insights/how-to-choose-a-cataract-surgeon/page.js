@@ -120,6 +120,15 @@ export default function InsightChooseASurgeon() {
           <p className="body-lead body-lead-dropcap">
             If someone in my family needed cataract surgery, I would not tell them to search for "best cataract surgeon near me" and pick the top result. I would sit them down and explain what actually matters. Not marketing. Not office decor. Not even online reviews, though those can be a useful signal. I would talk about five things.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/complex-cases-patient-hope.jpg"
+              alt="Patient finding hope and confidence through a thorough surgical consultation"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             These are the same five things I would want any patient to consider. Not because I am trying to promote myself, but because I have seen what happens when patients choose based on convenience alone. Sometimes it works out fine. Sometimes they end up in my office afterward, asking me to fix something that did not need to go wrong.
           </p>
@@ -215,6 +224,20 @@ export default function InsightChooseASurgeon() {
           <p>
             Ask your surgeon: Are you part of a larger management group? Who makes the business decisions in your practice? The answer will tell you a lot about the kind of care you can expect.
           </p>
+
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/surgical-precision-line-art.png"
+              alt="Line art illustration representing surgical precision and careful technique"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+
+          <BlurReveal><div className="pull-quote">
+            <p>"An independent surgeon answers to patients, not investors. That distinction shapes every recommendation, every conversation, and every surgical decision."</p>
+          </div></BlurReveal>
         </div>
       </section>
 

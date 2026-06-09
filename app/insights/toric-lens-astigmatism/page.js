@@ -67,6 +67,15 @@ export default function InsightToricLensAstigmatism() {
           <p>
             It is one of the most common conditions in ophthalmology, and one of the least well explained. So before we talk about toric lenses or surgical options, let me start where I start with my patients: with what astigmatism actually is.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/dvc-phoropter-exam.png"
+              alt="Patient looking through a phoropter during a comprehensive eye examination"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -89,6 +98,15 @@ export default function InsightToricLensAstigmatism() {
       <section className="section section-white">
         <div className="container content-narrow">
           <h2 className="section-title">How Toric Lenses <strong>Work</strong></h2>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/eye-closeup-single.png"
+              alt="Detailed close-up of a human eye showing the iris and corneal surface"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             A toric intraocular lens is engineered with built-in astigmatism reduction. Unlike a standard lens, which has uniform power across its surface, a toric lens has different powers along different axes. When placed inside the eye and precisely aligned to the corneal astigmatism, it compensates for the corneal shape, bringing light closer to a single focal point.
           </p>
@@ -123,6 +141,18 @@ export default function InsightToricLensAstigmatism() {
           <p>
             This is where surgical experience becomes critical. Marking the eye, using intraoperative aberrometry like the ORA system to verify alignment in real time, understanding how different incision locations affect the final astigmatic outcome, these are the details that separate a good toric result from a disappointing one. Over 20,000 surgeries, I have developed a deep respect for how much these fine details matter. The technology is excellent, but the surgeon's hands and judgment are what make it work.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/dvc-testing-equipment.jpg"
+              alt="Advanced diagnostic testing equipment at Desert Vision Center used for precise surgical planning"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
+          <BlurReveal><div className="pull-quote">
+            <p>&ldquo;Over 20,000 surgeries, I have developed a deep respect for how much these fine details matter. The technology is excellent, but the surgeon's hands and judgment are what make it work.&rdquo;</p>
+          </div></BlurReveal>
         </div>
       </section>
 

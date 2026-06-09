@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { breadcrumbSchema } from '../schema';
 import {
   ScrollReveal,
@@ -97,6 +98,11 @@ export default function DroppedLensAfterCataractSurgery() {
           <p>
             This is one of the most unsettling things a patient can hear. You went in for a routine procedure, and now you are being told something unexpected happened. You may be scared. You may be confused. You almost certainly have questions that no one has fully answered yet.
           </p>
+
+          <BlurReveal><div className="pull-quote">
+            <p>You went in for a routine procedure, and now you are being told something unexpected happened. You may be scared. You almost certainly have questions that no one has fully answered yet.</p>
+          </div></BlurReveal>
+
           <p>
             Let me explain exactly what happened, what comes next, and why, with the right team, this is a very manageable situation.
           </p>
@@ -106,6 +112,15 @@ export default function DroppedLensAfterCataractSurgery() {
       {/* WHAT HAPPENED */}
       <section className="section section-warm">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/patient-distress-concern.png"
+              alt="Patient expressing concern about an unexpected surgical complication"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <ScrollReveal direction="up" once={true}>
             <h2 className="section-title">What <strong>Happened</strong></h2>
           </ScrollReveal>
@@ -224,6 +239,16 @@ export default function DroppedLensAfterCataractSurgery() {
           <BlurReveal><div className="insight-highlight" style={{marginTop: '24px'}}>
             <p><strong>Dr. Tokuhara is the anterior segment specialist who handles the lens implant portion of this team approach. He is not the retina surgeon. He works alongside retina colleagues, each contributing the expertise their portion of the care requires.</strong></p>
           </div></BlurReveal>
+
+          <div className="content-image" style={{marginTop: '32px'}}>
+            <Image
+              src="/media/dr-t-slit-lamp-patient-view.jpg"
+              alt="Dr. Tokuhara performing a detailed slit lamp examination"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
         </div>
       </section>
 
@@ -309,6 +334,15 @@ export default function DroppedLensAfterCataractSurgery() {
       {/* CLINIC THOUGHT */}
       <section className="section section-white">
         <div className="container content-narrow">
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/complex-cases-patient-hope.jpg"
+              alt="Patient with renewed hope after successful complex eye surgery"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <BlurReveal><div className="clinic-thought">
             <h3>A thought from the clinic</h3>
             <p>

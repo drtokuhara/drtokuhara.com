@@ -259,6 +259,7 @@ export default function SecondOpinionChangedEverythingPage() {
                 <li><Link href="/when-cataract-surgery-doesnt-go-as-planned" className="lux-text-link">When Cataract Surgery Doesn&rsquo;t Go as Planned</Link></li>
                 <li><Link href="/cataract-surgery-complications" className="lux-text-link">Cataract Surgery Complications</Link></li>
                 <li><Link href="/insights/how-to-choose-a-cataract-surgeon" className="lux-text-link">How to Choose a Cataract Surgeon</Link></li>
+                <li><Link href="/insights/when-your-case-isnt-routine" className="lux-text-link">Complex Cataract Surgery: When Your Case Isn't Routine</Link></li>
               </ul>
             </div>
           </ScrollReveal>

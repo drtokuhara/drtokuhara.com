@@ -112,6 +112,15 @@ export default function InsightWhatIsOraMachine() {
           <p className="body-lead body-lead-dropcap">
             Patients often ask about technology. They want to know what machines we use, what measurements we take, and whether newer tools produce better outcomes. These are reasonable questions. Technology has transformed cataract surgery over the past three decades. But the relationship between technology and results is more nuanced than marketing materials suggest.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/medical-surgical-precision.png"
+              alt="Surgical instruments arranged with precision, representing the technology used in modern cataract surgery"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             One device that comes up frequently in conversations is the ORA system, sometimes called the ORA machine. It provides real-time measurements of your eye during surgery, offering feedback on lens power and placement. Some practices promote it heavily. Others rarely use it. Patients are left wondering whether they need it, whether their surgeon has it, and whether its absence means they are receiving inferior care.
           </p>
@@ -143,6 +152,15 @@ export default function InsightWhatIsOraMachine() {
           <p>
             The ORA system is most useful in eyes where preoperative measurements are less reliable. The clearest example is eyes that have undergone previous refractive surgery, such as LASIK or PRK. These procedures reshape the cornea in ways that can confuse the formulas we use to calculate lens power. We have strategies to account for this, including historical data and specialized formulas, but there is always more uncertainty in these cases.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/dvc-exam-room.jpg"
+              alt="Desert Vision Center exam room with advanced diagnostic equipment"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             In a post-LASIK or post-PRK eye, the ORA system can provide a helpful checkpoint. It measures the eye as it exists now, not as it was before the laser reshaped it. That real-time feedback can confirm or adjust the lens choice in ways that improve accuracy.
           </p>
@@ -181,9 +199,21 @@ export default function InsightWhatIsOraMachine() {
           <p>
             The broader point here is about the relationship between technology and surgical decision-making. Devices like the ORA system are assistive. They provide data. But data is not the same as wisdom. A measurement does not tell you whether to trust it. Context does. Experience does. Pattern recognition built over thousands of cases does.
           </p>
+          <div className="content-image" style={{marginBottom: '32px'}}>
+            <Image
+              src="/media/dr-t-slit-lamp-patient-view.jpg"
+              alt="Dr. Tokuhara examining a patient at the slit lamp, combining technology with clinical judgment"
+              width={680}
+              height={453}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </div>
           <p>
             Some surgeons use the ORA system routinely. Others reserve it for specific cases. Neither approach is inherently superior. What matters is whether the surgeon understands when the tool adds value and when it does not, and whether they have the confidence to override it when clinical judgment suggests the reading is unreliable.
           </p>
+          <BlurReveal><div className="pull-quote">
+            <p>&ldquo;Data is not the same as wisdom. A measurement does not tell you whether to trust it. Context does. Experience does.&rdquo;</p>
+          </div></BlurReveal>
 
           <BlurReveal><div className="insight-highlight">
             <p><strong>A surgeon who depends entirely on technology without applying independent judgment is not practicing at the highest level. Neither is a surgeon who dismisses useful technology out of habit. The best approach is flexible: use the tool when it helps, recognize when it does not, and never let a machine make a decision that should be yours.</strong></p>
