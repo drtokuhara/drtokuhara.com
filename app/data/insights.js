@@ -380,7 +380,7 @@ export const insights = [
     slug: 'the-standard-lens-was-the-right-call',
     title: 'The Standard Lens Was the Right Call',
     date: 'May 2026',
-    description: 'He researched the adjustable lens, the multifocal, the extended depth of focus option. Then he chose the standard lens. Six months later, he has no regrets.',
+    description: 'He researched every premium option, the multifocal, the extended depth of focus lens. Then he chose the standard lens. Six months later, he has no regrets.',
     cluster: 'Lens Options',
     image: '/media/elderly-man-courtyard-desert.jpg',
   },

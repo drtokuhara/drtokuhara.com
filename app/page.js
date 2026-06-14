@@ -838,7 +838,7 @@ export default function Home() {
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
                     </div>
                     <h3>Concierge-Level, Unhurried Care</h3>
-                    <p>Your consultation is not a 10-minute conveyor belt. Dr. Tokuhara takes the time to listen, explain your options in plain language, and answer every question until you feel genuinely confident in your decision. No rush. No pressure. Just a plan built around your life.</p>
+                    <p>Your consultation is not a 10-minute conveyor belt. Bring your questions, your research, your list of concerns. Dr. Tokuhara takes the time to listen, explain your options in plain language, and answer every question until you feel genuinely confident in your decision. No rush. No pressure. Just a plan built around your life.</p>
                   </TiltCard>
                 </StaggerItem>
                 <StaggerItem>
@@ -950,7 +950,7 @@ export default function Home() {
                     id: 'surgeon_intro',
                     icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>,
                     title: "I\u2019m choosing a surgeon",
-                    desc: "The right fit matters more than the biggest name. Let\u2019s talk about what to look for.",
+                    desc: "How much time does the surgeon spend with you? Do they explain your options in language you actually understand? Will they still be there if you have questions a year from now? Those are the things that matter.",
                   },
                   {
                     id: 'lens_intro',

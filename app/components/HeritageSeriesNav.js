@@ -5,15 +5,15 @@ import Link from 'next/link';
 const SERIES = [
   {
     number: 'I',
-    title: 'What I Learned From the Surgeon Who Trained Me',
-    shortTitle: 'The Foundational Moment',
-    href: '/insights/what-i-learned-from-the-surgeon-who-trained-me',
-  },
-  {
-    number: 'II',
     title: 'The Capsule Is Sacred',
     shortTitle: 'A Paradigm Shift',
     href: '/insights/the-capsule-is-sacred',
+  },
+  {
+    number: 'II',
+    title: 'What I Learned From the Surgeon Who Trained Me',
+    shortTitle: 'The Foundational Moment',
+    href: '/insights/what-i-learned-from-the-surgeon-who-trained-me',
   },
   {
     number: 'III',

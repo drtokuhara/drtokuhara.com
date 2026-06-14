@@ -6,21 +6,21 @@ import { useEffect, useState } from 'react';
 const SERIES_ARTICLES = [
   {
     number: 'I',
-    title: 'What I Learned From the Surgeon Who Trained Me',
-    subtitle: 'The Foundational Moment',
-    href: '/insights/what-i-learned-from-the-surgeon-who-trained-me',
-    excerpt: 'A dense cataract. A capsular tear. Two seconds of silence before adjustment. The moment during residency at Loma Linda that revealed the difference between competence and mastery.',
-    readingTime: '8 min read',
-    theme: 'Philosophy',
-  },
-  {
-    number: 'II',
     title: 'The Capsule Is Sacred',
     subtitle: 'A Paradigm Shift in Surgery',
     href: '/insights/the-capsule-is-sacred',
     excerpt: 'Before 1984, surgeons opened the capsule with a can-opener technique. Dr. Gimbel showed the world a different way. The continuous curvilinear capsulorhexis did not just change a technique. It changed how we think about the eye.',
     readingTime: '12 min read',
     theme: 'Surgical Innovation',
+  },
+  {
+    number: 'II',
+    title: 'What I Learned From the Surgeon Who Trained Me',
+    subtitle: 'The Foundational Moment',
+    href: '/insights/what-i-learned-from-the-surgeon-who-trained-me',
+    excerpt: 'A dense cataract. A capsular tear. Two seconds of silence before adjustment. The moment during residency at Loma Linda that revealed the difference between competence and mastery.',
+    readingTime: '8 min read',
+    theme: 'Philosophy',
   },
   {
     number: 'III',

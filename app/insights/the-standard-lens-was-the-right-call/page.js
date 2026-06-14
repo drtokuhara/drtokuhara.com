@@ -22,7 +22,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'The Standard Lens Was the Right Call',
-    description: 'He researched the adjustable lens, the multifocal, the extended depth of focus option. Then he chose the standard lens. Six months later, he has no regrets.',
+    description: 'He researched every premium option, the multifocal, the extended depth of focus lens. Then he chose the standard lens. Six months later, he has no regrets.',
   },
 };
 
@@ -88,7 +88,7 @@ export default function InsightStandardLensRightCall() {
           <ScrollReveal direction="up" once={true}>
           <span className="insight-hero-cluster">Decisions &amp; Timing</span>
           <h1>The Standard Lens Was the <strong>Right Call</strong></h1>
-          <p className="page-hero-sub">He researched the adjustable lens, the multifocal, the extended depth of focus option. Then he chose the standard lens. Six months later, he has no regrets.</p>
+          <p className="page-hero-sub">He researched every premium option, the multifocal, the extended depth of focus lens. Then he chose the standard lens. Six months later, he has no regrets.</p>
           </ScrollReveal>
         </div>
       </VideoBackground>
@@ -98,7 +98,7 @@ export default function InsightStandardLensRightCall() {
           <AuthorByline />
           <div className="section-divider" style={{margin: '32px auto'}} />
           <p className="body-lead body-lead-dropcap">
-            A patient came in uncertain. He had been reading about premium lenses online, asking on Nextdoor, scrolling through Reddit threads at midnight. Everyone had an opinion. The adjustable lens sounded incredible. The multifocal promised everything at once.
+            A patient came in uncertain. He had been reading about premium lenses online, asking on Nextdoor, scrolling through Reddit threads at midnight. Everyone had an opinion. The premium options sounded incredible. The multifocal promised everything at once.
           </p>
           <p>
             He came to the consultation with a list of questions. Good questions. He wanted to know about every premium option available, the extended depth of focus lenses, the toric for his mild astigmatism. He had done his homework.

@@ -15,14 +15,14 @@ const jsonLd = [
         {
           '@type': 'ListItem',
           position: 1,
-          url: 'https://drtokuhara.com/insights/what-i-learned-from-the-surgeon-who-trained-me',
-          name: 'What I Learned From the Surgeon Who Trained Me',
+          url: 'https://drtokuhara.com/insights/the-capsule-is-sacred',
+          name: 'The Capsule Is Sacred',
         },
         {
           '@type': 'ListItem',
           position: 2,
-          url: 'https://drtokuhara.com/insights/the-capsule-is-sacred',
-          name: 'The Capsule Is Sacred',
+          url: 'https://drtokuhara.com/insights/what-i-learned-from-the-surgeon-who-trained-me',
+          name: 'What I Learned From the Surgeon Who Trained Me',
         },
         {
           '@type': 'ListItem',
