@@ -457,7 +457,6 @@ export default function InsightWhatYouSeeDuringCataractSurgery() {
             }}>
               {[
                 '/media/patient-art/8-redacted.jpeg',
-                '/media/patient-art/9.a.jpeg',
               ].map((src, i) => (
                 <StaggerItem key={i}>
                   <div className="gallery-card">
