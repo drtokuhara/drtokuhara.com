@@ -14,6 +14,7 @@ const cards = [
     ),
     title: "I'm considering cataract surgery",
     desc: "You have questions about the procedure, the lenses, and what recovery looks like. Start here.",
+    href: "/cataract-surgery",
   },
   {
     icon: (
@@ -25,6 +26,7 @@ const cards = [
     ),
     title: "I'm choosing a surgeon",
     desc: "What to look for. What to ask. Why continuity and accountability matter more than advertising.",
+    href: "/insights/how-to-choose-a-cataract-surgeon",
   },
   {
     icon: (
@@ -36,6 +38,7 @@ const cards = [
     ),
     title: "Something went wrong with my surgery",
     desc: "There is a path forward. Patients come from across the country for revision and reconstruction.",
+    href: "/complex-cases",
   },
   {
     icon: (
@@ -49,6 +52,7 @@ const cards = [
     ),
     title: "I'm nervous about surgery",
     desc: "That's completely normal. Here's what actually happens, from someone who has done this thousands of times.",
+    href: "/insights/what-you-see-during-cataract-surgery",
   },
   {
     icon: (
@@ -60,6 +64,7 @@ const cards = [
     ),
     title: "My doctor referred me",
     desc: "Welcome. Here's what to expect at your first visit and how we coordinate with your referring physician.",
+    href: "/patient-journey",
   },
   {
     icon: (
@@ -69,8 +74,9 @@ const cards = [
         <path d="M15 26h10" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
-    title: "I already had surgery here",
+    title: "I already had cataract surgery",
     desc: "Recovery questions, YAG laser, what's normal, when to call, and when you're ready: share your experience or refer a friend.",
+    href: "/cataract-recovery",
   },
 ];
 
@@ -103,7 +109,7 @@ export default function JourneyCards() {
 
       <div className="journey-grid">
         {cards.map((card, i) => (
-          <a key={i} className={`journey-card reveal reveal-delay-${i % 3}`} href="#">
+          <a key={i} className={`journey-card reveal reveal-delay-${i % 3}`} href={card.href}>
             <div className="journey-icon">{card.icon}</div>
             <h3>{card.title}</h3>
             <p>{card.desc}</p>
