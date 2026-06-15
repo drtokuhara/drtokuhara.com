@@ -13,7 +13,7 @@ import {
 const jsonLd = [
   articleSchema({
     title: 'Built in the Desert. Not Imported In.',
-    description: 'Dr. Tokuhara has been in the Coachella Valley for 10+ years. Desert Vision Center has been here for 30+ years. Some practices are run by surgeons who come in once or twice a week. Dr. T lives here. He is here every day.',
+    description: 'Dr. Tokuhara has been in the Coachella Valley for 10+ years. Desert Vision Center has been here for nearly 40 years. Some practices are run by surgeons who come in once or twice a week. Dr. T lives here. He is here every day.',
     slug: '/our-story/built-in-the-desert',
   }),
   breadcrumbSchema([
@@ -25,13 +25,13 @@ const jsonLd = [
 
 export const metadata = {
   title: 'Built in the Desert. Not Imported In. - Our Story',
-  description: 'Dr. Tokuhara has been in the Coachella Valley for 10+ years. Desert Vision Center has been here for 30+ years. Some practices are run by surgeons who come in once or twice a week. Dr. T lives here. He is here every day.',
+  description: 'Dr. Tokuhara has been in the Coachella Valley for 10+ years. Desert Vision Center has been here for nearly 40 years. Some practices are run by surgeons who come in once or twice a week. Dr. T lives here. He is here every day.',
   alternates: {
     canonical: '/our-story/built-in-the-desert',
   },
   openGraph: {
     title: 'Built in the Desert. Not Imported In. | Dr. Keith Tokuhara',
-    description: 'Dr. Tokuhara has been in the Coachella Valley for 10+ years. Desert Vision Center has been here for 30+ years. Some practices are run by surgeons who come in once or twice a week. Dr. T lives here. He is here every day.',
+    description: 'Dr. Tokuhara has been in the Coachella Valley for 10+ years. Desert Vision Center has been here for nearly 40 years. Some practices are run by surgeons who come in once or twice a week. Dr. T lives here. He is here every day.',
     url: 'https://drtokuhara.com/our-story/built-in-the-desert',
   },
 };
@@ -70,7 +70,7 @@ export default function BuiltInTheDesertPage() {
             Some practices are run by surgeons who fly in once or twice a week. They operate, then leave. Their patients see associates for everything else. Pre-op, post-op, complications, questions, follow-up care. Someone else handles it.
           </p>
           <p>
-            That is not how I work. I have been in the Coachella Valley for over a decade. Desert Vision Center has been here for over 30 years. I am not a visiting surgeon. I am here every day. I see every patient before surgery. I do the surgery myself. And I see you afterward. If something goes wrong, you see me. Not an associate. Not a rotating resident. Me.
+            That is not how I work. I have been in the Coachella Valley for over a decade. Desert Vision Center has been here for nearly four decades. I am not a visiting surgeon. I am here every day. I see every patient before surgery. I do the surgery myself. And I see you afterward. If something goes wrong, you see me. Not an associate. Not a rotating resident. Me.
           </p>
         </div>
       </section>
@@ -138,7 +138,7 @@ export default function BuiltInTheDesertPage() {
         <div className="container content-narrow">
           <h2 className="section-title">Built to <strong>Stay</strong></h2>
           <p>
-            Desert Vision Center has been in Rancho Mirage for over three decades. This is not a satellite office or a franchise location. It is a practice with roots. We are not going anywhere.
+            Desert Vision Center has been in Rancho Mirage for nearly four decades. This is not a satellite office or a franchise location. It is a practice with roots. We are not going anywhere.
           </p>
           <p>
             I chose to stay here because I believe in building something lasting. Not just professionally, but personally. My family is here. My kids go to school here. This is home.

@@ -86,7 +86,7 @@ export default function PatientReferredPage() {
             padding: '48px 0',
           }}>
             <NumberReveal number="98%" label="Patient Referred" delay={0} />
-            <NumberReveal number="30+" label="Years in Practice" delay={0.2} />
+            <NumberReveal number="~40" label="Years in Practice" delay={0.2} />
             <NumberReveal number="0" label="Billboards" delay={0.4} />
           </div>
         </div>

@@ -50,7 +50,7 @@ export default function HomePage() {
             <div className="label-caps section-label reveal">The Surgeon</div>
             <h2 className="reveal">Keith Tokuhara, MD</h2>
             <div className="about-title reveal">Cataract and Anterior Segment Surgeon</div>
-            <p className="reveal">Dr. Tokuhara has called the Coachella Valley home for over a decade. Desert Vision Center, the practice he leads, has been a part of this community for more than 30 years, earning the trust of generations of desert families.</p>
+            <p className="reveal">Dr. Tokuhara has called the Coachella Valley home for over a decade. Desert Vision Center, the practice he leads, has been a part of this community for nearly four decades, earning the trust of generations of desert families.</p>
             <p className="reveal">Patients travel from across the country for his expertise in complex cataract reconstruction, lens exchange, and revision surgery. But his daily work is simpler than that: careful, unhurried care for the people who live here.</p>
             <div className="about-highlight reveal">"Some of our patients in their 80s and 90s still remember Don, our longest-serving team member, from 35 years ago. He has been with DVC for nearly 40 years. That kind of continuity is something a corporate practice can never replicate."</div>
             <a className="about-link reveal" href="https://www.desertvisioncenter.com" target="_blank" rel="noopener noreferrer">Full biography at Desert Vision Center</a>
