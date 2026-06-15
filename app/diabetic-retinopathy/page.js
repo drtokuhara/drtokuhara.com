@@ -284,6 +284,10 @@ export default function DiabeticRetinopathyPage() {
               <h3>Is Cataract Surgery Safe?</h3>
               <p>An honest look at cataract surgery risks, how complications are managed, and what makes a surgeon qualified to handle complexity.</p>
             </Link>
+            <Link href="/insights/macular-degeneration-wet-vs-dry" className="related-card">
+              <h3>Macular Degeneration: Wet vs Dry</h3>
+              <p>They share a name, but dry and wet AMD are not the same disease. Understanding the difference changes how you think about your vision.</p>
+            </Link>
           </div>
         </div>
       </section>

@@ -322,6 +322,10 @@ export default function InsightChoosingTheStandardLens() {
               <h3>Best Lens for Night Driving</h3>
               <p>What really matters for clear, glare-free night vision after cataract surgery.</p>
             </Link>
+            <Link href="/insights/macular-degeneration-wet-vs-dry" className="related-card">
+              <h3>Macular Degeneration: Wet vs Dry</h3>
+              <p>Why patients with macular degeneration need careful lens selection, and why the standard lens is often the right choice.</p>
+            </Link>
           </div>
         </div>
       </section>

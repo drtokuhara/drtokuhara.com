@@ -179,6 +179,10 @@ export default function InsightDoINeedSurgery() {
               <h3>When the Surgeon Says Wait</h3>
               <p>Sometimes the best surgical decision is to defer surgery.</p>
             </Link>
+            <Link href="/insights/macular-degeneration-wet-vs-dry" className="related-card">
+              <h3>Macular Degeneration: Wet vs Dry</h3>
+              <p>When cataracts and macular degeneration coexist, the surgical decision changes. Understanding AMD helps you plan.</p>
+            </Link>
           </div>
         </div>
       </section>

@@ -180,6 +180,7 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/cataract-surgery-and-diabetes">Cataract Surgery and Diabetes</Link>
                     <Link href="/insights/swimming-after-cataract-surgery">Swimming After Surgery</Link>
                     <Link href="/insights/what-causes-cataracts">What Causes Cataracts</Link>
+                    <Link href="/insights/macular-degeneration-wet-vs-dry">Macular Degeneration: Wet vs Dry</Link>
                     <span className="nav-mega-label" style={{marginTop: '16px'}}>Honest Answers</span>
                     <Link href="/insights/when-cataract-surgery-goes-wrong">When Surgery Goes Wrong</Link>
                     <Link href="/insights/cataract-referral-kickbacks">Referral Kickbacks</Link>

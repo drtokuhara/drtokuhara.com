@@ -14,7 +14,7 @@ import AudioNarration from '../../components/AudioNarration';
 
 const jsonLd = [
   articleSchema({
-    title: 'Macular Degeneration and Cataract Surgery - The Only Dual-Trained Surgeon in the Valley',
+    title: 'Macular Degeneration and Cataract Surgery - Retina Fellowship-Trained Cataract Surgeon',
     description: 'Dr. Tokuhara is the only cataract surgeon in the Coachella Valley who is both board certified and fellowship trained in retina. He manages macular degeneration and cataracts together.',
     slug: '/complex-cases/macular-degeneration',
     datePublished: '2026-05-01',
@@ -27,12 +27,12 @@ const jsonLd = [
 ];
 
 export const metadata = {
-  title: 'Macular Degeneration and Cataract Surgery - Dual-Trained Cataract and Retina Specialist',
+  title: 'Macular Degeneration and Cataract Surgery - Retina Fellowship-Trained Cataract Surgeon',
   description: 'Dr. Tokuhara is the only cataract surgeon in the Coachella Valley who is board certified AND fellowship trained in retina. He manages both macular degeneration and cataracts, giving patients complete care under one roof.',
   alternates: { canonical: '/complex-cases/macular-degeneration' },
   openGraph: {
     title: 'Macular Degeneration & Cataract Surgery | Dr. Keith Tokuhara',
-    description: 'The only dual-trained cataract and retina specialist in the Coachella Valley. Complete macular degeneration and cataract care.',
+    description: 'The only retina fellowship-trained cataract surgeon in the Coachella Valley. Complete macular degeneration and cataract care.',
     url: 'https://drtokuhara.com/complex-cases/macular-degeneration',
   },
 };
@@ -149,6 +149,14 @@ export default function MacularDegenerationPage() {
             title="Cataract Surgery with Macular Degeneration"
             description="One-page visual guide about cataract surgery with macular degeneration"
           />
+        </div>
+      </section>
+
+      <section className="section section-warm">
+        <div className="container content-narrow">
+          <h3 className="section-title-sm">Learn <strong>More</strong></h3>
+          <p>For a deeper look at the difference between wet and dry macular degeneration, including symptoms, treatment options, and what to watch for between visits:</p>
+          <p><Link href="/insights/macular-degeneration-wet-vs-dry" style={{color: 'var(--oasis)', fontWeight: 600}}>Read: Macular Degeneration: Wet vs Dry &rarr;</Link></p>
         </div>
       </section>
 

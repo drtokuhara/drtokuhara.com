@@ -322,6 +322,10 @@ export default function GlaucomaPage() {
               <h3>Diabetic Retinopathy</h3>
               <p>How diabetes affects your eyes and why early detection matters.</p>
             </Link>
+            <Link href="/insights/macular-degeneration-wet-vs-dry" className="related-card">
+              <h3>Macular Degeneration: Wet vs Dry</h3>
+              <p>Another age-related eye condition that affects the retina. Understanding the two forms helps patients make better decisions.</p>
+            </Link>
           </div>
         </div>
       </section>

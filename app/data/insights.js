@@ -432,5 +432,13 @@ export const insights = [
     cluster: 'Complex Cases',
     image: '/media/insights/complex-cataract-surgical-planning.jpg',
   },
+  {
+    slug: 'macular-degeneration-wet-vs-dry',
+    title: 'Macular Degeneration: Wet vs Dry',
+    date: 'June 2026',
+    description: 'They share a name, but dry and wet macular degeneration are not the same disease. A retina fellowship-trained cataract surgeon explains the real differences, what each means for your vision, and why the distinction matters for treatment decisions.',
+    cluster: 'Education',
+    image: '/media/insights/macular-degeneration-eye-anatomy.png',
+  },
 ];
 export default insights;

@@ -101,6 +101,7 @@ export default function MobileNav() {
             <Link href="/insights/cataract-surgery-and-diabetes" onClick={close}>Cataract Surgery and Diabetes</Link>
             <Link href="/insights/swimming-after-cataract-surgery" onClick={close}>Swimming After Surgery</Link>
             <Link href="/insights/what-causes-cataracts" onClick={close}>What Causes Cataracts</Link>
+            <Link href="/insights/macular-degeneration-wet-vs-dry" onClick={close}>Macular Degeneration: Wet vs Dry</Link>
             <Link href="/insights/cataract-surgery-at-50" onClick={close}>Cataract Surgery at 50</Link>
             <Link href="/insights/second-opinion-cataract-surgery" onClick={close}>Getting a Second Opinion</Link>
             <Link href="/insights/second-opinion-that-changed-everything" onClick={close}>A Second Opinion That Changed Everything</Link>
