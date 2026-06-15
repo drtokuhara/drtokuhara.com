@@ -69,7 +69,7 @@ export default function PatientReferredPage() {
             Most ophthalmology practices spend a lot of money on advertising. Billboards. Radio ads. Direct mail. Google ads. They pay for new patients because that is how they have to grow. When you are part of a larger corporate group, that advertising spend is part of the model. It is expected.
           </p>
           <p>
-            We do not do that. We never have. Nearly every patient who walks through our door was sent here by another patient. Someone who had surgery with me, recovered well, and told their friend or family member to come see me when it was their turn.
+            Nearly every patient who walks through our door was sent here by another patient. Someone who had surgery with me, recovered well, and told their friend or family member to come see me when it was their turn.
           </p>
         </div>
       </section>
