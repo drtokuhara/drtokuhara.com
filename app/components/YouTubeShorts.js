@@ -1,6 +1,7 @@
 'use client';
 
 const defaultVideos = [
+  { id: 'b5EsF57Xs28', title: 'Philip Ferranti: Coachella Valley Hiking Author' },
   { id: 'cTbu9WP2CUQ', title: 'Dramatic Vision Improvement After Cataract Surgery' },
   { id: 'jLPyZV_bUig', title: 'Ron Sloy: From Cataracts to 20/20 Vision' },
   { id: '2WgJ1EJFBr0', title: 'Patient Testimonial' },
