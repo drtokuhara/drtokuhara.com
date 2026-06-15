@@ -26,7 +26,7 @@ const cards = [
     ),
     title: "I'm choosing a surgeon",
     desc: "What to look for. What to ask. Why continuity and accountability matter more than advertising.",
-    href: "/insights/how-to-choose-a-cataract-surgeon",
+    href: "/choosing-your-surgeon",
   },
   {
     icon: (
@@ -52,7 +52,7 @@ const cards = [
     ),
     title: "I'm nervous about surgery",
     desc: "That's completely normal. Here's what actually happens, from someone who has done this thousands of times.",
-    href: "/insights/what-you-see-during-cataract-surgery",
+    href: "/nervous-about-surgery",
   },
   {
     icon: (

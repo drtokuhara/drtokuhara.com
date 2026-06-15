@@ -14,6 +14,7 @@ import {
   KineticText,
 } from '../components/ScrollAnimations';
 import TiltCard from '../components/TiltCard';
+import JourneyArticleCard from '../components/JourneyArticleCard';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -252,6 +253,45 @@ export default function ComplexCasesPage() {
               <div className="insight-card-body"><span className="insight-cluster">Special Populations</span><h2 className="insight-card-title">Alzheimer&rsquo;s &amp; Dementia</h2><p className="insight-card-desc">Informed consent, caregiver coordination, and honest benefit assessment for patients with cognitive decline.</p></div>
             </Link></TiltCard>
           </StaggerChildren>
+        </div>
+      </section>
+
+      {/* CURATED: WHEN THINGS GO WRONG */}
+      <section className="section section-warm">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">When Things <strong>Don't Go as Planned</strong></h2>
+            <p className="section-subtitle">Patient stories and case studies about complications, corrective procedures, and the path forward.</p>
+          </ScrollReveal>
+
+          <div className="journey-articles-section">
+            <div className="journey-articles-grid">
+              <JourneyArticleCard
+                title="When Cataract Surgery Goes Wrong"
+                description="Complications happen. What matters is what happens next, and whether your surgeon knows how to fix it."
+                href="/insights/when-cataract-surgery-goes-wrong"
+                delay={0.1}
+              />
+              <JourneyArticleCard
+                title="Yamane Technique for Dislocated Lenses"
+                description="The sutureless technique for fixing a dislocated lens implant. I was the first in the valley to perform this procedure."
+                href="/insights/yamane-technique"
+                delay={0.15}
+              />
+              <JourneyArticleCard
+                title="Dropped Lens After Cataract Surgery"
+                description="When a lens fragment falls into the back of the eye during surgery. What it means and how it's managed."
+                href="/insights/dropped-lens-after-cataract-surgery"
+                delay={0.2}
+              />
+              <JourneyArticleCard
+                title="The Capsule Is Sacred"
+                description="Why the capsular bag matters more than most patients realize, and what happens when it tears."
+                href="/insights/the-capsule-is-sacred"
+                delay={0.25}
+              />
+            </div>
+          </div>
         </div>
       </section>
 

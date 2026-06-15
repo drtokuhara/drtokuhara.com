@@ -14,6 +14,7 @@ import {
 } from '../components/ScrollAnimations';
 import PageFAQ from '../components/PageFAQ';
 import AudioNarration from '../components/AudioNarration';
+import JourneyArticleCard from '../components/JourneyArticleCard';
 
 const jsonLd = [
   articleSchema({
@@ -91,6 +92,45 @@ export default function ChoosingYourSurgeon() {
           <p>
             This isn't a checklist. It's a way of thinking about trust, experience, and what you actually need from the person operating on your eyes.
           </p>
+        </div>
+      </section>
+
+      {/* CURATED: ARTICLES TO READ */}
+      <section className="section section-warm">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">What to Look <strong>For</strong></h2>
+            <p className="section-subtitle">These articles walk through the questions most patients never think to ask.</p>
+          </ScrollReveal>
+
+          <div className="journey-articles-section">
+            <div className="journey-articles-grid">
+              <JourneyArticleCard
+                title="How to Choose a Cataract Surgeon"
+                description="A complete framework for evaluating surgeons. What matters, what doesn't, and the questions that reveal the most."
+                href="/insights/how-to-choose-a-cataract-surgeon"
+                delay={0.1}
+              />
+              <JourneyArticleCard
+                title="Ethical Cataract Care"
+                description="What it means when a surgeon is independent. Why ownership structure matters more than you think."
+                href="/insights/ethical-cataract-care"
+                delay={0.15}
+              />
+              <JourneyArticleCard
+                title="The Consultation That Changed Everything"
+                description="A patient story about what happens when a surgeon takes the time to listen before picking up a scalpel."
+                href="/insights/the-consultation-that-changed-everything"
+                delay={0.2}
+              />
+              <JourneyArticleCard
+                title="Second Opinion Cataract Surgery"
+                description="Getting a second opinion isn't a betrayal. It's due diligence. Here's how to approach it."
+                href="/insights/second-opinion-cataract-surgery"
+                delay={0.25}
+              />
+            </div>
+          </div>
         </div>
       </section>
 

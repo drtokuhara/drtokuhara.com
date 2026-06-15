@@ -10,6 +10,7 @@ import {
 } from '../components/ScrollAnimations';
 import AudioNarration from '../components/AudioNarration';
 import PageFAQ from '../components/PageFAQ';
+import JourneyArticleCard from '../components/JourneyArticleCard';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -252,6 +253,81 @@ export default function CataractRecoveryPage() {
           <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
             <Link href="/contact" className="btn-primary">Schedule a Consultation</Link>
             <a href="tel:7603404700" className="btn-secondary">Call 760.340.4700</a>
+          </div>
+        </div>
+      </section>
+
+      {/* CURATED: RECOVERY & AFTER SURGERY */}
+      <section className="section section-warm">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">Life After <strong>Surgery</strong></h2>
+            <p className="section-subtitle">What to expect in the days, weeks, and months after cataract surgery.</p>
+          </ScrollReveal>
+
+          <div className="journey-articles-section">
+            <div className="journey-articles-grid">
+              <JourneyArticleCard
+                title="First Week After Cataract Surgery"
+                description="A day-by-day guide to what is normal and what to watch for during recovery."
+                href="/insights/first-week-after-cataract-surgery"
+                delay={0.1}
+              />
+              <JourneyArticleCard
+                title="YAG Laser Capsulotomy"
+                description="If vision gets hazy months or years after surgery, a quick laser treatment can restore clarity."
+                href="/yag-laser-capsulotomy"
+                delay={0.15}
+              />
+              <JourneyArticleCard
+                title="Driving After Cataract Surgery"
+                description="When you can safely get back behind the wheel and what the vision requirements are."
+                href="/insights/driving-after-cataract-surgery"
+                delay={0.2}
+              />
+              <JourneyArticleCard
+                title="Swimming After Cataract Surgery"
+                description="Why you need to wait three weeks before swimming, and what happens if you don't."
+                href="/insights/swimming-after-cataract-surgery"
+                delay={0.25}
+              />
+              <JourneyArticleCard
+                title="Life After Cataract Surgery"
+                description="Patient stories about what changes after surgery and what stays the same."
+                href="/insights/life-after-cataract-surgery"
+                delay={0.3}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SHARE YOUR EXPERIENCE */}
+      <section className="section section-white">
+        <div className="container content-narrow" style={{textAlign: 'center'}}>
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">Share Your <strong>Experience</strong></h2>
+            <p className="section-subtitle">If your surgery went well, consider leaving a review. It helps other nervous patients take the first step.</p>
+          </ScrollReveal>
+          <div style={{marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <a href="https://g.page/r/CU5MBZZk5HEBEBM/review" className="button button-primary" target="_blank" rel="noopener noreferrer">
+              Leave a Google Review
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* REFER A FRIEND */}
+      <section className="section section-warm">
+        <div className="container content-narrow" style={{textAlign: 'center'}}>
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">Refer a <strong>Friend</strong></h2>
+            <p className="section-subtitle">Know someone considering cataract surgery? Send them our way.</p>
+          </ScrollReveal>
+          <div style={{marginTop: '32px'}}>
+            <a href="https://www.desertvisioncenter.com/contact" className="button button-primary">
+              Contact Desert Vision Center
+            </a>
           </div>
         </div>
       </section>

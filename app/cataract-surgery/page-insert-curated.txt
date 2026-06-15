@@ -1,0 +1,98 @@
+      {/* CURATED: AM I READY? */}
+      <section className="section section-warm">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">Am I <strong>Ready?</strong></h2>
+            <p className="section-subtitle">If you're here, you're probably wondering whether it's time. These articles walk through the decision.</p>
+          </ScrollReveal>
+
+          <div className="journey-articles-section">
+            <div className="journey-articles-grid">
+              <JourneyArticleCard
+                title="Do I Really Need Surgery?"
+                description="A patient came in convinced he needed cataract surgery. His eyes told a different story."
+                href="/insights/do-i-really-need-surgery"
+                delay={0.1}
+              />
+              <JourneyArticleCard
+                title="When Is the Right Time?"
+                description="There's no magic number or test result. The timing depends on you and your life."
+                href="/insights/when-is-the-right-time"
+                delay={0.15}
+              />
+              <JourneyArticleCard
+                title="When Do I Need Cataract Surgery?"
+                description="The real question isn't 'Do I have cataracts?' It's 'Are they getting in the way of what I want to do?'"
+                href="/insights/when-do-i-need-cataract-surgery"
+                delay={0.2}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CURATED: UNDERSTANDING LENS OPTIONS */}
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">Understanding Your <strong>Lens Options</strong></h2>
+            <p className="section-subtitle">There's no single "best" lens. The right one depends on your eyes, your lifestyle, and your goals.</p>
+          </ScrollReveal>
+
+          <div className="journey-articles-section">
+            <div className="journey-articles-grid">
+              <JourneyArticleCard
+                title="Lens Implants Explained"
+                description="Monofocal, toric, extended depth of focus, and multifocal. What each one actually does."
+                href="/lens-implants-explained"
+                delay={0.1}
+              />
+              <JourneyArticleCard
+                title="Are Premium Lenses Worth It?"
+                description="An honest look at the tradeoffs, the benefits, and who they work best for."
+                href="/insights/are-premium-lenses-worth-it"
+                delay={0.15}
+              />
+              <JourneyArticleCard
+                title="Choosing the Standard Lens"
+                description="Sometimes the standard lens is the right call. Why that choice can be the smart one."
+                href="/insights/choosing-the-standard-lens"
+                delay={0.2}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CURATED: WHAT TO EXPECT */}
+      <section className="section section-warm">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">What to <strong>Expect</strong></h2>
+            <p className="section-subtitle">Walk through the entire process step by step so there are no surprises on surgery day.</p>
+          </ScrollReveal>
+
+          <div className="journey-articles-section">
+            <div className="journey-articles-grid">
+              <JourneyArticleCard
+                title="Cataract Surgery Step by Step"
+                description="What happens during each stage of the procedure, explained in plain language."
+                href="/insights/cataract-surgery-step-by-step"
+                delay={0.1}
+              />
+              <JourneyArticleCard
+                title="Is Cataract Surgery Painful?"
+                description="The honest answer about pain, discomfort, and what you actually feel."
+                href="/insights/is-cataract-surgery-painful"
+                delay={0.15}
+              />
+              <JourneyArticleCard
+                title="Five Questions Before Surgery"
+                description="The questions you should ask before anyone operates on your eyes."
+                href="/insights/five-questions-before-surgery"
+                delay={0.2}
+              />
+            </div>
+          </div>
+        </div>
+      </section>

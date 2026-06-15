@@ -12,6 +12,7 @@ import {
   LineDraw,
 } from '../components/ScrollAnimations';
 import AudioNarration from '../components/AudioNarration';
+import JourneyArticleCard from '../components/JourneyArticleCard';
 
 export default function PatientJourneyContent() {
   const { t, lang } = useLanguage();
@@ -79,6 +80,39 @@ export default function PatientJourneyContent() {
       </section>
 
       <LineDraw style={{margin: '0 auto', maxWidth: '200px'}} color="var(--oasis)" />
+
+      {/* WELCOME: YOUR DOCTOR REFERRED YOU */}
+      <section className="section section-warm">
+        <div className="container content-narrow">
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title">Your Doctor Trusts Us <strong>With Your Care</strong></h2>
+            <p className="section-subtitle">Welcome. Here's what happens next.</p>
+          </ScrollReveal>
+          <p className="prose">
+            If your doctor referred you here, it's because they trust that you'll receive careful, competent care. Referral relationships matter in medicine. They're built on years of seeing results, hearing patient feedback, and knowing that when something goes wrong, the surgeon takes ownership and fixes it.
+          </p>
+          <p className="prose">
+            You're here because your doctor believes your eyes will be in good hands. I take that seriously. Every patient who walks through our door carries the trust of the physician who sent them, and I never want to break that.
+          </p>
+
+          <div className="journey-articles-section">
+            <div className="journey-articles-grid">
+              <JourneyArticleCard
+                title="Cataract Pre-Op: What to Expect"
+                description="The measurements, the questions, and what we learn before surgery day."
+                href="/cataract-pre-op"
+                delay={0.1}
+              />
+              <JourneyArticleCard
+                title="Cataract Pre-Op Appointment"
+                description="A detailed walkthrough of your pre-operative visit and what happens at each step."
+                href="/insights/cataract-pre-op-appointment"
+                delay={0.15}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* STEP 1: THE EVALUATION */}
       <section className="section section-warm">
