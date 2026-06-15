@@ -11,6 +11,7 @@ const stories = [
       </svg>
     ),
     title: "Built in the Desert. Not Imported In.",
+    href: "/our-story/built-in-the-desert",
   },
   {
     icon: (
@@ -20,6 +21,7 @@ const stories = [
       </svg>
     ),
     title: "98% Patient Referred",
+    href: "/our-story/patient-referred",
   },
   {
     icon: (
@@ -29,6 +31,7 @@ const stories = [
       </svg>
     ),
     title: "One Surgeon. One Accountability.",
+    href: "/our-story/one-surgeon",
   },
   {
     icon: (
@@ -38,6 +41,7 @@ const stories = [
       </svg>
     ),
     title: "Independent. Physician-Owned.",
+    href: "/our-story/independent",
   },
   {
     icon: (
@@ -46,6 +50,7 @@ const stories = [
       </svg>
     ),
     title: "Trusted Nationally for Complex Cases",
+    href: "/complex-cases",
   },
 ];
 
@@ -77,7 +82,7 @@ export default function BrandStories() {
 
       <div className="stories-grid">
         {stories.map((story, i) => (
-          <a key={i} className={`story-card reveal reveal-delay-${i}`} href="#">
+          <a key={i} className={`story-card reveal reveal-delay-${i}`} href={story.href}>
             <div className="story-icon-wrap">{story.icon}</div>
             <h4>{story.title}</h4>
             <span className="story-link">Read the story &rarr;</span>
