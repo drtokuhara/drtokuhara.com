@@ -181,15 +181,7 @@ export default function EthicalCataractCare() {
         <div className="container content-narrow">
           <h2 className="section-title">Taking a <strong>Stand</strong></h2>
 
-          <div className="content-image" style={{marginBottom: '32px'}}>
-            <Image
-              src="/media/ethics-seminar-speaker.png"
-              alt="Physician speaking at an ethics in eyecare seminar"
-              width={680}
-              height={453}
-              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
-            />
-          </div>
+
           <p>
             In 2025, I hosted the <strong>Stand for Ethical Eye Care</strong> seminar at Hotel Paseo in the Coachella Valley. The event brought together physicians and community members to discuss the reality of hidden kickback practices in eye care.
           </p>
