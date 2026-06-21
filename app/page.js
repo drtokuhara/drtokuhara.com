@@ -50,8 +50,9 @@ export default function HomePage() {
             <div className="label-caps section-label reveal">The Surgeon</div>
             <h2 className="reveal">Keith Tokuhara, MD</h2>
             <div className="about-title reveal">Cataract and Anterior Segment Surgeon</div>
-            <p className="reveal">Dr. Tokuhara has called the Coachella Valley home for over a decade. Desert Vision Center, the practice he leads, has been a part of this community for nearly four decades, earning the trust of generations of desert families.</p>
+            <p className="reveal">Dr. Tokuhara has served the Coachella Valley home for over a decade. Desert Vision Center, the practice he leads, has been a part of this community for nearly 4 decades. Some of the surgery patients today first came to DVC when their parents needed cataract surgery. That kind of continuity doesn&apos;t happen by accident.</p>
             <p className="reveal">Patients travel from across the country for his expertise in complex cataract reconstruction, lens exchange, and revision surgery. But his daily work is simpler than that: careful, unhurried care for the people who live here.</p>
+            <p className="reveal"><strong>Had surgery somewhere else?</strong> Whether it's cloudiness that developed months later, a result that doesn't feel right, or a question nobody answered, Dr. Tokuhara sees patients from other practices regularly. Bring your records, your questions, and your concerns. The first step is always the same: let's look at what we're working with.</p>
             <div className="about-highlight reveal">"Some of our patients in their 80s and 90s still remember Don, our longest-serving team member, from 35 years ago. He has been with DVC for nearly 40 years. That kind of continuity is something a corporate practice can never replicate."</div>
             <a className="about-link reveal" href="https://www.desertvisioncenter.com" target="_blank" rel="noopener noreferrer">Full biography at Desert Vision Center</a>
           </div>
