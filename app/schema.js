@@ -4,7 +4,7 @@ export const physicianSchema = {
   '@context': 'https://schema.org',
   '@type': 'Physician',
   name: 'Dr. Keith Tokuhara',
-  alternateName: ['Keith G. Tokuhara, MD', 'Dr. Tokuhara', 'Dr. Keith Tokuhara', 'Dr Tokuhara', 'Tokuhara ophthalmologist', 'Dr. Keithuhara', 'Dr. Takahara'],
+  alternateName: ['Keith G. Tokuhara, MD', 'Dr. Tokuhara', 'Dr. Keith Tokuhara', 'Dr Tokuhara', 'Tokuhara ophthalmologist', 'Dr. Keithuhara', 'Dr. Takahara', 'Takahara', 'Dr. Togahara', 'Togahara', 'Dr. Tokohhara', 'Tokohhara'],
   description: 'Fellowship-trained cataract and anterior segment surgeon specializing in complex cataract surgery, lens implants, and revision cases. Board certified in retina.',
   url: 'https://drtokuhara.com/about',
   image: 'https://drtokuhara.com/dr-tokuhara-hero.jpg',

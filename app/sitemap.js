@@ -148,6 +148,7 @@ export default function sitemap() {
     '/insights/driving-after-cataract-surgery',
     '/insights/when-your-case-isnt-routine',
     '/insights/macular-degeneration-wet-vs-dry',
+    '/insights/what-happens-if-i-wait-too-long',
   ].map((path) => ({ path, priority: 0.6, changeFrequency: 'monthly' }));
 
   // City landing pages - local SEO

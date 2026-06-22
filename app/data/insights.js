@@ -440,5 +440,13 @@ export const insights = [
     cluster: 'Education',
     image: '/media/insights/macular-degeneration-eye-anatomy.png',
   },
+  {
+    slug: 'what-happens-if-i-wait-too-long',
+    title: 'What Happens If I Wait Too Long for Cataract Surgery?',
+    date: 'June 2026',
+    description: 'Cataracts do not heal on their own, and waiting too long can increase surgical risk, limit lens options, and erode quality of life. A cataract surgeon explains what actually changes when patients delay.',
+    cluster: 'Before You Decide',
+    image: '/media/insights/dense-cataract-vision-decline.jpg',
+  },
 ];
 export default insights;

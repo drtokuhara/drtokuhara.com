@@ -160,6 +160,7 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/when-the-surgeon-says-wait">When the Surgeon Says Wait</Link>
                     <Link href="/insights/the-needle-that-wasnt-there">The Needle That Wasn't There</Link>
                     <Link href="/insights/when-patients-wait">When Patients Wait</Link>
+                    <Link href="/insights/what-happens-if-i-wait-too-long">What If I Wait Too Long?</Link>
                     <Link href="/insights/medicare-cataract-surgery">Medicare Coverage</Link>
                     <Link href="/insights/permission-to-see-again">Permission to See Again</Link>
                   </div>

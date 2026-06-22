@@ -244,6 +244,10 @@ export default function InsightWhenPatientsWait() {
               <h3>When Do I Need Cataract Surgery?</h3>
               <p>The question everyone asks, and why there is no single number that answers it.</p>
             </Link>
+            <Link href="/insights/what-happens-if-i-wait-too-long" className="related-card">
+              <h3>What If I Wait Too Long?</h3>
+              <p>Waiting changes the surgery itself. Denser cataracts, harder removal, fewer lens options.</p>
+            </Link>
             <Link href="/insights/the-needle-that-wasnt-there" className="related-card">
               <h3>The Needle That Wasn't There</h3>
               <p>She avoided surgery for years because of a procedure that is no longer used.</p>

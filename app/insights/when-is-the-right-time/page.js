@@ -207,6 +207,10 @@ export default function InsightWhenIsTheRightTime() {
               <h3>When Do I Need Cataract Surgery?</h3>
               <p>The question everyone asks, and why there is no single number that answers it.</p>
             </Link>
+            <Link href="/insights/what-happens-if-i-wait-too-long" className="related-card">
+              <h3>What If I Wait Too Long?</h3>
+              <p>The consequences of delay are real. Harder surgery, fewer lens options, and time you do not get back.</p>
+            </Link>
             <Link href="/insights/when-the-surgeon-says-wait" className="related-card">
               <h3>When the Surgeon Says Wait</h3>
               <p>Sometimes the best surgical decision is to defer surgery.</p>

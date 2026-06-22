@@ -167,6 +167,10 @@ export default function InsightDoINeedSurgery() {
               <h3>Are Premium Lenses Worth It?</h3>
               <p>An honest reflection on premium vs standard lenses.</p>
             </Link>
+            <Link href="/insights/what-happens-if-i-wait-too-long" className="related-card">
+              <h3>What If I Wait Too Long?</h3>
+              <p>Waiting does not keep things the same. It changes the surgery, the recovery, and the options available.</p>
+            </Link>
             <Link href="/ethical-cataract-care" className="related-card">
               <h3>Ethical Cataract Care</h3>
               <p>Why financial incentives should never influence your surgical recommendation.</p>

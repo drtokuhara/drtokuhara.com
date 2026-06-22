@@ -229,6 +229,10 @@ export default function WhenTheSurgeonSaysWait() {
               <h3>Do I Really Need Surgery Yet?</h3>
               <p>Sometimes the answer is not yet. Timing and honest evaluation matter.</p>
             </Link>
+            <Link href="/insights/what-happens-if-i-wait-too-long" className="related-card">
+              <h3>What If I Wait Too Long?</h3>
+              <p>Sometimes waiting is right. But waiting too long changes the surgery itself.</p>
+            </Link>
             <Link href="/insights/when-is-the-right-time" className="related-card">
               <h3>When Is the Right Time?</h3>
               <p>The myth of bad enough and why the right time depends on your life, not a number on a chart.</p>
