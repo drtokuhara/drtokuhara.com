@@ -274,7 +274,7 @@ export default function InsightWaitTooLong() {
             The sweet spot for cataract surgery is when the cataract is significant enough to justify the procedure but not so advanced that it complicates it. At that point, the surgery is faster, the recovery is smoother, the measurements are most accurate, and the full range of lens options is available to you.
           </p>
           <p>
-            The patient I described at the beginning? We operated successfully. His outcome was good. But the surgery was harder than it needed to be. The ultrasonic energy was higher, the surgical time was longer, and his recovery took an extra week compared to what it would have been two years earlier. He got his vision back. But he did not get those two years back.
+            The patient I described at the beginning? We operated successfully. His outcome was good. But the surgery was harder than it needed to be. The ultrasonic energy was higher, the surgical time was longer, and his recovery took about three extra days compared to what it would have been two years earlier. He got his vision back. But he did not get those two years back.
           </p>
 
           <BlurReveal><div className="insight-highlight">
