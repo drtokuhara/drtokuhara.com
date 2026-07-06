@@ -347,7 +347,6 @@ export default function InsightFloatersFlashes() {
             <li><Link href="/insights/when-cataracts-are-not-the-real-problem">When Cataracts Are Not the Real Problem</Link></li>
             <li><Link href="/insights/posterior-capsule-opacification">Posterior Capsule Opacification</Link></li>
             <li><Link href="/insights/subconjunctival-hemorrhage">Subconjunctival Hemorrhage</Link></li>
-            <li><Link href="/contact">Schedule a Consultation</Link></li>
           </ul>
         </div>
       </section>
@@ -355,12 +354,8 @@ export default function InsightFloatersFlashes() {
       <section className="section section-cta">
         <div className="container content-narrow text-center">
           <h2>New Floaters or Flashes? Do Not Wait.</h2>
-          <p>Sudden changes in your vision warrant prompt evaluation. Desert Vision Center can typically accommodate same-day or next-day urgent visits for new floaters and flashes.</p>
-          <p><strong>Desert Vision Center</strong><br />
-          35900 Bob Hope Dr, Suite 175<br />
-          Rancho Mirage, CA 92270</p>
-          <p>Serving Rancho Mirage, Palm Desert, Indian Wells, La Quinta, Palm Springs, and the Coachella Valley.</p>
-          <Link href="/contact" className="btn btn-primary btn-lg">Schedule Your Evaluation</Link>
+          <p>If you experience a sudden shower of new floaters, flashing lights, or a shadow in your vision, contact your eye doctor that day. Early evaluation can catch retinal tears before they become retinal detachments, and prompt treatment makes all the difference.</p>
+          <p>Not sure if your symptoms are urgent? Call your eye doctor's office and describe what you are experiencing. They can help you determine whether you need a same-day visit or can wait for a routine appointment.</p>
         </div>
       </section>
     </>
