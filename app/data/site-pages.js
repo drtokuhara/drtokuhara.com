@@ -726,6 +726,12 @@ const sitePages = [
     "title": "What Happens in Cataract Pre-Op: A Step-by-Step Guide",
     "description": "A detailed walkthrough of what happens in the pre-operative area before cataract surgery. From check-in to the operating room, Dr. Tokuhara and his nursing team explain every step.",
     "category": "Surgery"
+  },
+  {
+    "path": "/insights/floaters-flashes-when-to-worry",
+    "title": "Floaters, Flashes, and When to Worry",
+    "description": "Eye floaters and flashing lights are common, but sometimes they signal something serious. Dr. Tokuhara explains what causes floaters, when flashes mean danger, and the signs that need same-day evaluation.",
+    "category": "Insight"
   }
 ];
 

@@ -339,6 +339,10 @@ export default function InsightWhenSurgeryGoesWrong() {
               <h3>When Experience Speaks</h3>
               <p>The principles a surgeon carries into every operating room are invisible. But they determine everything.</p>
             </Link>
+            <Link href="/insights/why-i-do-my-own-post-op" className="related-card">
+              <h3>Why I Do My Own Post-Op Care</h3>
+              <p>Complications are caught sooner when the operating surgeon does every follow-up exam.</p>
+            </Link>
           </div>
         </div>
       </section>

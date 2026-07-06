@@ -336,6 +336,7 @@ export default function WhenCataractsAreNotTheRealProblemPage() {
                 <li><Link href="/insights/cataract-surgery-and-diabetes" className="lux-text-link">Cataract Surgery and Diabetes: What You Need to Know</Link></li>
                 <li><Link href="/insights/when-your-case-isnt-routine" className="lux-text-link">Complex Cataract Surgery: When Your Case Isn't Routine</Link></li>
                 <li><Link href="/insights/macular-degeneration-wet-vs-dry" className="lux-text-link">Macular Degeneration: Wet vs Dry</Link></li>
+                <li><Link href="/insights/floaters-flashes-when-to-worry" className="lux-text-link">Floaters, Flashes, and When to Worry</Link></li>
               </ul>
             </div>
           </ScrollReveal>

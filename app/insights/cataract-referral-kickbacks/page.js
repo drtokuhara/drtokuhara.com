@@ -338,6 +338,10 @@ export default function InsightCataractReferralKickbacks() {
               <h3>The Consultation That Changed Everything</h3>
               <p>What a thorough, independent consultation actually looks like.</p>
             </Link>
+            <Link href="/insights/why-i-do-my-own-post-op" className="related-card">
+              <h3>Why I Do My Own Post-Op Care</h3>
+              <p>When the surgeon does every follow-up visit, there is no handoff and no gap in continuity.</p>
+            </Link>
           </div>
         </div>
       </section>

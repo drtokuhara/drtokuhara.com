@@ -182,11 +182,13 @@ export default function RootLayout({ children }) {
                     <Link href="/insights/swimming-after-cataract-surgery">Swimming After Surgery</Link>
                     <Link href="/insights/what-causes-cataracts">What Causes Cataracts</Link>
                     <Link href="/insights/macular-degeneration-wet-vs-dry">Macular Degeneration: Wet vs Dry</Link>
+                    <Link href="/insights/floaters-flashes-when-to-worry">Floaters, Flashes & When to Worry</Link>
                     <span className="nav-mega-label" style={{marginTop: '16px'}}>Honest Answers</span>
                     <Link href="/insights/when-cataract-surgery-goes-wrong">When Surgery Goes Wrong</Link>
                     <Link href="/insights/cataract-referral-kickbacks">Referral Kickbacks</Link>
                     <Link href="/insights/the-lens-we-didnt-implant">The Lens We Didn't Implant</Link>
                     <Link href="/insights/when-your-case-isnt-routine">When Your Case Isn't Routine</Link>
+                    <Link href="/insights/why-i-do-my-own-post-op">Why I Do My Own Post-Op</Link>
                   </div>
                   <div className="nav-mega-col">
                     <span className="nav-mega-label">Lens Options</span>

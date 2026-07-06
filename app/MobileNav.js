@@ -90,6 +90,7 @@ export default function MobileNav() {
             <Link href="/insights/what-happens-if-i-wait-too-long" onClick={close}>What If I Wait Too Long?</Link>
             <Link href="/insights/when-cataract-surgery-goes-wrong" onClick={close}>When Surgery Goes Wrong</Link>
             <Link href="/insights/when-your-case-isnt-routine" onClick={close}>When Your Case Isn't Routine</Link>
+            <Link href="/insights/why-i-do-my-own-post-op" onClick={close}>Why I Do My Own Post-Op</Link>
             <Link href="/insights/are-premium-lenses-worth-it" onClick={close}>Are Premium Lenses Worth It?</Link>
             <Link href="/insights/not-every-patient-wants-the-same-vision" onClick={close}>Not Every Patient Wants the Same Vision</Link>
             <Link href="/insights/medicare-cataract-surgery" onClick={close}>Medicare Coverage</Link>
@@ -103,6 +104,7 @@ export default function MobileNav() {
             <Link href="/insights/swimming-after-cataract-surgery" onClick={close}>Swimming After Surgery</Link>
             <Link href="/insights/what-causes-cataracts" onClick={close}>What Causes Cataracts</Link>
             <Link href="/insights/macular-degeneration-wet-vs-dry" onClick={close}>Macular Degeneration: Wet vs Dry</Link>
+            <Link href="/insights/floaters-flashes-when-to-worry" onClick={close}>Floaters, Flashes & When to Worry</Link>
             <Link href="/insights/cataract-surgery-at-50" onClick={close}>Cataract Surgery at 50</Link>
             <Link href="/insights/second-opinion-cataract-surgery" onClick={close}>Getting a Second Opinion</Link>
             <Link href="/insights/second-opinion-that-changed-everything" onClick={close}>A Second Opinion That Changed Everything</Link>

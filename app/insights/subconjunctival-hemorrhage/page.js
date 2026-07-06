@@ -288,6 +288,10 @@ export default function InsightSubconjunctivalHemorrhage() {
               <h3>Blurry Vision After Cataract Surgery</h3>
               <p>Common causes of persistent blur after surgery and when to be concerned.</p>
             </Link>
+            <Link href="/insights/floaters-flashes-when-to-worry" className="related-card">
+              <h3>Floaters, Flashes, and When to Worry</h3>
+              <p>When new floaters and flashing lights need same-day evaluation.</p>
+            </Link>
           </div>
         </div>
       </section>

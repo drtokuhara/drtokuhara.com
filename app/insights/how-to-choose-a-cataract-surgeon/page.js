@@ -338,6 +338,10 @@ export default function InsightChooseASurgeon() {
               <h3>The Technology Behind Modern Cataract Surgery</h3>
               <p>Understanding the tools matters less than choosing the surgeon who knows when and how to use them.</p>
             </Link>
+            <Link href="/insights/why-i-do-my-own-post-op" className="related-card">
+              <h3>Why I Do My Own Post-Op Care</h3>
+              <p>Ask who will see you after surgery. The answer reveals the practice model.</p>
+            </Link>
             <Link href="/insights/cataract-surgery-and-diabetes" className="related-card">
               <h3>Cataract Surgery and Diabetes</h3>
               <p>Diabetic patients need a surgeon who understands the additional considerations and complications.</p>

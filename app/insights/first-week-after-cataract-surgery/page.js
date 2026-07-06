@@ -321,6 +321,10 @@ export default function InsightFirstWeek() {
               <h3>Life After Cataract Surgery</h3>
               <p>Five things patients say they did not expect after the procedure.</p>
             </Link>
+            <Link href="/insights/why-i-do-my-own-post-op" className="related-card">
+              <h3>Why I Do My Own Post-Op Care</h3>
+              <p>Why the surgeon who operated should be the one evaluating your healing.</p>
+            </Link>
             <Link href="/yag-laser-capsulotomy" className="related-card">
               <h3>YAG Laser Capsulotomy</h3>
               <p>If vision gets hazy months later, a quick in-office laser treatment restores clarity. Here is what to expect.</p>

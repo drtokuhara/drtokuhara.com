@@ -297,6 +297,10 @@ export default function InsightStepByStep() {
               <h3>The Technology Behind Modern Cataract Surgery</h3>
               <p>Plain-language explanation of the tools and techniques used in modern cataract procedures.</p>
             </Link>
+            <Link href="/insights/floaters-flashes-when-to-worry" className="related-card">
+              <h3>Floaters, Flashes, and When to Worry</h3>
+              <p>New floaters or flashes after cataract surgery can be normal, but some changes need prompt evaluation.</p>
+            </Link>
           </div>
         </div>
       </section>

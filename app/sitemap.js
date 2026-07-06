@@ -149,6 +149,8 @@ export default function sitemap() {
     '/insights/when-your-case-isnt-routine',
     '/insights/macular-degeneration-wet-vs-dry',
     '/insights/what-happens-if-i-wait-too-long',
+    '/insights/why-i-do-my-own-post-op',
+    '/insights/floaters-flashes-when-to-worry',
   ].map((path) => ({ path, priority: 0.6, changeFrequency: 'monthly' }));
 
   // City landing pages - local SEO

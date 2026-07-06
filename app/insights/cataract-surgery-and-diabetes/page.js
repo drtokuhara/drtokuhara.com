@@ -348,6 +348,10 @@ export default function InsightDiabetesCataracts() {
               <h3>Macular Degeneration and Cataracts</h3>
               <p>How macular degeneration affects cataract surgery planning and lens choice.</p>
             </Link>
+            <Link href="/insights/floaters-flashes-when-to-worry" className="related-card">
+              <h3>Floaters, Flashes, and When to Worry</h3>
+              <p>Most floaters are harmless, but certain sudden changes need same-day evaluation.</p>
+            </Link>
           </div>
         </div>
       </section>

@@ -314,6 +314,7 @@ export default function InsightMacularDegenerationWetVsDry() {
             <li><Link href="/insights/when-cataracts-are-not-the-real-problem">When Cataracts Are Not the Real Problem</Link></li>
             <li><Link href="/insights/choosing-the-standard-lens">The Standard Lens Is Not a Consolation Prize</Link></li>
             <li><Link href="/insights/do-i-really-need-surgery">Do I Really Need Surgery?</Link></li>
+            <li><Link href="/insights/floaters-flashes-when-to-worry">Floaters, Flashes, and When to Worry</Link></li>
             <li><Link href="/contact">Schedule a Consultation</Link></li>
           </ul>
         </div>

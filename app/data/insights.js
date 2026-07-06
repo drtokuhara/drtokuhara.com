@@ -1,5 +1,13 @@
 export const insights = [
   {
+    slug: 'why-i-do-my-own-post-op',
+    title: 'Why I Perform My Own Post-Op Care',
+    date: 'June 2026',
+    description: 'Many cataract surgeons delegate post-operative care to other providers. Dr. Tokuhara explains why he performs his own post-op exams at every visit and what that continuity means for patient safety and outcomes.',
+    cluster: 'Trust & Authority',
+    image: '/media/insights/surgeon-post-op-slit-lamp.jpg',
+  },
+  {
     slug: 'panoptix-vs-panoptix-pro',
     title: 'PanOptix vs PanOptix Pro: What Changed and Why It Matters',
     date: 'June 2026',

@@ -333,6 +333,14 @@ export default function InsightPosteriorCapsuleOpacification() {
               <h3>When Cataract Surgery Goes Wrong</h3>
               <p>Understanding complications, how they are managed, and what true surgical expertise looks like.</p>
             </Link>
+            <Link href="/insights/why-i-do-my-own-post-op" className="related-card">
+              <h3>Why I Do My Own Post-Op Care</h3>
+              <p>Post-surgical follow-up by the operating surgeon catches issues like PCO development in context.</p>
+            </Link>
+            <Link href="/insights/floaters-flashes-when-to-worry" className="related-card">
+              <h3>Floaters, Flashes, and When to Worry</h3>
+              <p>New floaters after cataract surgery can signal a vitreous detachment. Here is when to worry.</p>
+            </Link>
           </div>
         </div>
       </section>
