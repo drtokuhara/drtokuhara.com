@@ -51,7 +51,7 @@ export default function HomePage() {
             <h2 className="reveal">Keith Tokuhara, MD</h2>
             <div className="about-title reveal">Cataract and Anterior Segment Surgeon</div>
             <p className="reveal">Dr. Tokuhara has served the Coachella Valley home for over a decade. Desert Vision Center, the practice he leads, has been a part of this community for nearly 4 decades. Some of the surgery patients today first came to DVC when their parents needed cataract surgery. That kind of continuity doesn&apos;t happen by accident.</p>
-            <p className="reveal">Patients travel from across the country for his expertise in complex cataract reconstruction, lens exchange, and revision surgery. But his daily work is simpler than that: careful, unhurried care for the people who live here.</p>
+            <p className="reveal">Patients travel from across the country for his expertise in complex cataract reconstruction, lens exchange, and revision surgery. But his daily work is simpler than that: careful, unhurried care for the people who live here. If you're researching surgeons for a parent, you're welcome in the consultation room. Bring your questions.</p>
             <p className="reveal"><strong>Had surgery somewhere else?</strong> Whether it&apos;s cloudiness that developed months later, a result that doesn&apos;t feel right, or a question nobody answered, Dr. Tokuhara sees patients from other practices regularly. Bring your records, your questions, and your concerns. The first step is always the same: let&apos;s look at what we&apos;re working with.</p>
             <p className="reveal">Not sure what your insurance covers? Call us at (760) 340-4700. Our team checks your benefits before you schedule. They'll tell you what's covered, what your estimated cost will be, and whether a referral is needed. No surprises.</p>
             <div className="about-highlight reveal">"Some of our patients in their 80s and 90s still remember Don, our longest-serving team member, from 35 years ago. He has been with DVC for nearly 40 years. That kind of continuity is something a corporate practice can never replicate."</div>
@@ -70,9 +70,14 @@ export default function HomePage() {
                 <p style={{marginBottom: '0.25rem'}}>If your vision is clear and comfortable, your lens is doing what it was chosen to do. <a href="/insights/did-i-choose-the-right-lens" style={{color: '#007d95', textDecoration: 'none'}}>Learn more</a></p>
               </div>
               
-              <div>
+              <div style={{marginBottom: '1.5rem'}}>
                 <p style={{fontWeight: 600, marginBottom: '0.5rem'}}>My surgery was somewhere else. Can you help?</p>
-                <p>Dr. Tokuhara sees patients from other practices every week. Bring your questions.</p>
+                <p style={{marginBottom: '0.25rem'}}>Dr. Tokuhara sees patients from other practices every week. Bring your questions.</p>
+              </div>
+              
+              <div>
+                <p style={{fontWeight: 600, marginBottom: '0.5rem'}}>I'm helping my parent research surgeons. Where do I start?</p>
+                <p>Start by coming to the consultation. You can ask anything. We'll explain the diagnosis, the options, and what to expect, for both of you.</p>
               </div>
             </div>
             

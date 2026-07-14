@@ -151,6 +151,7 @@ export default function sitemap() {
     '/insights/what-happens-if-i-wait-too-long',
     '/insights/why-i-do-my-own-post-op',
     '/insights/floaters-flashes-when-to-worry',
+    '/insights/glaucoma-and-cataracts',
   ].map((path) => ({ path, priority: 0.6, changeFrequency: 'monthly' }));
 
   // City landing pages - local SEO
@@ -198,7 +199,7 @@ export default function sitemap() {
 
   return allPages.map(({ path, priority, changeFrequency }) => ({
     url: `${baseUrl}${path}`,
-    lastModified: new Date('2026-05-24'),
+    lastModified: new Date('2026-07-13'),
     changeFrequency,
     priority,
   }));

@@ -326,6 +326,10 @@ export default function GlaucomaPage() {
               <h3>Macular Degeneration: Wet vs Dry</h3>
               <p>Another age-related eye condition that affects the retina. Understanding the two forms helps patients make better decisions.</p>
             </Link>
+            <Link href="/insights/glaucoma-and-cataracts" className="related-card">
+              <h3>Glaucoma and Cataracts</h3>
+              <p>How glaucoma changes the cataract surgery conversation, from lens selection to MIGS and combined treatment.</p>
+            </Link>
           </div>
         </div>
       </section>

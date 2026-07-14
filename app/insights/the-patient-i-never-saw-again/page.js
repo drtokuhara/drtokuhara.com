@@ -290,7 +290,7 @@ export default function InsightPatientNeverSawAgain() {
             </Link>
             <Link href="/insights/the-bicycle-rider-and-the-binoculars" className="related-card">
               <h3>The Bicycle Rider and the Binoculars</h3>
-              <p>A cyclist described anisometropia better than any textbook.</p>
+              <p>An avid cyclist described anisometropia better than any textbook.</p>
             </Link>
             <Link href="/complex-cases" className="related-card">
               <h3>Complex Cases</h3>

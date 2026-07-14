@@ -235,6 +235,10 @@ export default function ArePremiumLensesWorthIt() {
               <h3>Cataract Surgery and Diabetes</h3>
               <p>Diabetic retinopathy affects lens choice. Premium lenses may not perform well if the retina is compromised.</p>
             </Link>
+            <Link href="/insights/glaucoma-and-cataracts" className="related-card">
+              <h3>Glaucoma and Cataracts</h3>
+              <p>Glaucoma affects which lens implant will give you the best functional result. Why multifocals are not always the right choice.</p>
+            </Link>
           </div>
         </div>
       </section>

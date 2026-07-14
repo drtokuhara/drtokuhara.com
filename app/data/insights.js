@@ -1,5 +1,21 @@
 export const insights = [
   {
+    slug: 'glaucoma-and-cataracts',
+    title: 'Glaucoma and Cataracts: Managing Two Conditions at Once',
+    date: 'July 2026',
+    description: 'Many patients have both glaucoma and cataracts. Dr. Tokuhara explains how both conditions interact, how glaucoma changes surgical planning, MIGS options during cataract surgery, and what patients should know.',
+    cluster: 'Clinical Authority',
+    image: '/media/insights/glaucoma-cataracts-dual-condition.jpg',
+  },
+  {
+    slug: 'how-to-navigate-cataract-surgery-with-hmo',
+    title: 'How to Navigate Cataract Surgery with an HMO',
+    date: 'July 2026',
+    description: 'HMOs cover cataract surgery, but the system can feel rigid. You may have more choice than you think. How to request a different surgeon, what your plan covers, and how to navigate the referral process.',
+    cluster: 'Insurance & Coverage',
+    image: '/media/hero-insurance-cataract-surgery.png',
+  },
+  {
     slug: 'why-i-do-my-own-post-op',
     title: 'Why I Perform My Own Post-Op Care',
     date: 'June 2026',
@@ -404,9 +420,9 @@ export const insights = [
     slug: 'the-bicycle-rider-and-the-binoculars',
     title: 'The Bicycle Rider Who Taught Me About Anisometropia',
     date: 'May 2026',
-    description: 'A 75-year-old cyclist described the vision imbalance between his eyes as turning a binocular focusing wheel that never quite gets there. It was the most accurate description of anisometropia I have ever heard.',
+    description: 'An avid cyclist described the vision imbalance between his eyes as turning a binocular focusing wheel that never quite gets there. It was the most accurate description of anisometropia I have ever heard.',
     cluster: 'Real Patient Stories',
-    image: '/media/lifestyle-couple-cycling-palm-desert.jpg',
+    image: '/media/insights/anisometropia-binocular-vision-illustration.png',
   },
   {
     slug: 'the-lens-we-didnt-implant',

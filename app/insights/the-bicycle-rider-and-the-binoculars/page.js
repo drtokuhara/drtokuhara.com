@@ -11,18 +11,18 @@ import {
 
 export const metadata = {
   title: 'The Bicycle Rider Who Taught Me About Anisometropia - Dr. Keith Tokuhara',
-  description: 'A 75-year-old cyclist preparing for his annual ride to Idaho described anisometropia better than any textbook. His binocular analogy changed how Dr. Tokuhara explains the condition to patients.',
+  description: 'An avid cyclist described the vision imbalance between his eyes after cataract surgery as turning a binocular focusing wheel that never quite gets there. His analogy changed how Dr. Tokuhara explains anisometropia to patients.',
   keywords: ['anisometropia after cataract surgery', 'vision imbalance after cataract surgery', 'different prescription between eyes', 'cataract surgery one eye', 'binocular vision after cataract surgery'],
   alternates: { canonical: '/insights/the-bicycle-rider-and-the-binoculars' },
   openGraph: {
     title: 'The Bicycle Rider Who Taught Me About Anisometropia | Dr. Keith Tokuhara',
-    description: 'A cyclist described the vision imbalance between his eyes after cataract surgery as turning a binocular focusing wheel that never quite gets there. It was the most accurate description of anisometropia I have ever heard.',
+    description: 'An avid cyclist described the vision imbalance between his eyes after cataract surgery as turning a binocular focusing wheel that never quite gets there. It was the most accurate description of anisometropia I have ever heard.',
     url: 'https://drtokuhara.com/insights/the-bicycle-rider-and-the-binoculars',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'The Bicycle Rider Who Taught Me About Anisometropia',
-    description: 'Sometimes a patient describes a condition better than any textbook. A 75-year-old cyclist and his binoculars.',
+    description: 'Sometimes a patient describes a condition better than any textbook. An avid cyclist and his binoculars.',
   },
 };
 
@@ -39,7 +39,7 @@ const faqSchema = {
 const jsonLd = [
   articleSchema({
     title: 'The Bicycle Rider Who Taught Me About Anisometropia',
-    description: 'A 75-year-old cyclist preparing for his annual ride to Idaho described anisometropia better than any textbook. His binocular analogy changed how Dr. Tokuhara explains the condition to patients.',
+    description: 'An avid cyclist described the vision imbalance between his eyes after cataract surgery as turning a binocular focusing wheel that never quite gets there. His analogy changed how Dr. Tokuhara explains anisometropia to patients.',
     slug: '/insights/the-bicycle-rider-and-the-binoculars',
   }),
   breadcrumbSchema([
@@ -77,7 +77,7 @@ export default function InsightBicycleRider() {
           <AuthorByline />
           <div className="section-divider" style={{margin: '32px auto'}} />
           <p className="body-lead body-lead-dropcap">
-            One of the most memorable lessons about vision did not come from a textbook. It came from a 75-year-old cyclist preparing for his annual summer ride to Idaho.
+            One of the most memorable lessons about vision did not come from a textbook. It came from an avid cyclist in his seventies who was preparing for a long summer ride through the mountains.
           </p>
           <p>
             He came to our office for a cataract evaluation because his vision had gradually become more difficult while riding and driving. Like many active patients, he wanted the sharpest possible distance vision for the activities he loved most.
@@ -133,11 +133,11 @@ export default function InsightBicycleRider() {
 
           <div className="content-image" style={{marginTop: '32px', marginBottom: '32px'}}>
             <Image
-              src="/media/lifestyle-couple-cycling-palm-desert.jpg"
-              alt="Couple cycling together on a scenic desert path in Palm Desert"
+              src="/media/insights/anisometropia-binocular-vision-illustration.png"
+              alt="Illustration showing the view through binoculars with one side clear and one side blurry, representing how anisometropia creates a vision imbalance between the two eyes after cataract surgery"
               width={680}
-              height={453}
-              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+              height={680}
+              style={{ width: '100%', maxWidth: '520px', height: 'auto', borderRadius: '12px', margin: '0 auto', display: 'block' }}
             />
           </div>
         </div>
@@ -164,7 +164,7 @@ export default function InsightBicycleRider() {
             Both eyes were working together again. The imbalance disappeared. His distance vision was sharp, comfortable, and natural. Most importantly, he was able to get back to the activities that mattered most to him.
           </p>
           <p>
-            Not long afterward, he headed off on his annual trip to Idaho, ready for another season of cycling and adventure.
+            Not long afterward, he was back on the road, ready for another season of cycling and adventure.
           </p>
         </div>
       </section>

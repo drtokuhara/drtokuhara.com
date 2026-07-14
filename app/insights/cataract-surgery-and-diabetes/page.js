@@ -352,6 +352,10 @@ export default function InsightDiabetesCataracts() {
               <h3>Floaters, Flashes, and When to Worry</h3>
               <p>Most floaters are harmless, but certain sudden changes need same-day evaluation.</p>
             </Link>
+            <Link href="/insights/glaucoma-and-cataracts" className="related-card">
+              <h3>Glaucoma and Cataracts</h3>
+              <p>How glaucoma changes surgical planning, lens selection, and why MIGS during cataract surgery is worth discussing.</p>
+            </Link>
           </div>
         </div>
       </section>

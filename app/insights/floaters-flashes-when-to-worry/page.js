@@ -347,6 +347,7 @@ export default function InsightFloatersFlashes() {
             <li><Link href="/insights/when-cataracts-are-not-the-real-problem">When Cataracts Are Not the Real Problem</Link></li>
             <li><Link href="/insights/posterior-capsule-opacification">Posterior Capsule Opacification</Link></li>
             <li><Link href="/insights/subconjunctival-hemorrhage">Subconjunctival Hemorrhage</Link></li>
+            <li><Link href="/insights/glaucoma-and-cataracts">Glaucoma and Cataracts: Managing Two Conditions at Once</Link></li>
           </ul>
         </div>
       </section>

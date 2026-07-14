@@ -296,6 +296,7 @@ export default function InsightComplexCataractSurgery() {
             <li><Link href="/insights/second-opinion-that-changed-everything">A Second Opinion That Changed Everything</Link></li>
             <li><Link href="/yamane-technique">Dislocated Lens and the Yamane Technique</Link></li>
             <li><Link href="/insights/what-happens-if-i-wait-too-long">What Happens If I Wait Too Long?</Link></li>
+            <li><Link href="/insights/glaucoma-and-cataracts">Glaucoma and Cataracts: Managing Two Conditions at Once</Link></li>
             <li><Link href="/contact">Schedule a Consultation</Link></li>
           </ul>
         </div>

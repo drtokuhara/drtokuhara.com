@@ -149,6 +149,14 @@ export default function GlaucomaAndCataractPage() {
       </section>
 
       <RelatedComplexCases current="glaucoma-and-cataract" />
+
+      <section className="section section-white">
+        <div className="container content-narrow">
+          <h3 className="section-title-sm">Further <strong>Reading</strong></h3>
+          <p>For a patient-focused overview of managing both conditions, including how glaucoma affects lens selection and what to ask your surgeon, read <Link href="/insights/glaucoma-and-cataracts">Glaucoma and Cataracts: Managing Two Conditions at Once</Link>.</p>
+        </div>
+      </section>
+
       <LineDraw style={{margin: "0 auto", maxWidth: "200px"}} color="var(--oasis)" />
       <section className="cta">
         <div className="container">
