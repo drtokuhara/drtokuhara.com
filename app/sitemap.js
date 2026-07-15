@@ -152,6 +152,7 @@ export default function sitemap() {
     '/insights/why-i-do-my-own-post-op',
     '/insights/floaters-flashes-when-to-worry',
     '/insights/glaucoma-and-cataracts',
+    '/insights/eye-drops-after-cataract-surgery',
   ].map((path) => ({ path, priority: 0.6, changeFrequency: 'monthly' }));
 
   // City landing pages - local SEO

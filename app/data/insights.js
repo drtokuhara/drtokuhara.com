@@ -1,5 +1,13 @@
 export const insights = [
   {
+    slug: 'eye-drops-after-cataract-surgery',
+    title: 'Eye Drops After Cataract Surgery: What They Do and How to Use Them',
+    date: 'July 2026',
+    description: 'Three bottles, different schedules, a taper that changes every week. A cataract surgeon explains the purpose of each post-operative eye drop, common mistakes, and how long you will use them.',
+    cluster: 'Post-Surgical Care',
+    image: '/media/insights/eye-drops-after-cataract-surgery.png',
+  },
+  {
     slug: 'glaucoma-and-cataracts',
     title: 'Glaucoma and Cataracts: Managing Two Conditions at Once',
     date: 'July 2026',
