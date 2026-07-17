@@ -401,6 +401,10 @@ export default function LensImplantsExplained() {
               <h3>The Lens Nobody Talks About</h3>
               <p>Why the most commonly implanted lens rarely gets a conversation.</p>
             </Link>
+            <Link href="/insights/driving-after-cataract-surgery" className="related-card">
+              <h3>Driving After Cataract Surgery</h3>
+              <p>How your lens choice affects driving readiness and what to expect behind the wheel.</p>
+            </Link>
           </div>
         </div>
       </section>

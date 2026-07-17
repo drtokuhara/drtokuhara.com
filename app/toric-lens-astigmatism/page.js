@@ -260,6 +260,10 @@ export default function ToricLensAstigmatismPage() {
               <h3>Are Premium Lenses Worth It?</h3>
               <p>An honest reflection on premium vs standard lenses, and when each makes sense.</p>
             </Link>
+            <Link href="/insights/driving-after-cataract-surgery" className="related-card">
+              <h3>Driving After Cataract Surgery</h3>
+              <p>How toric, multifocal, and monofocal lenses each affect your driving experience after surgery.</p>
+            </Link>
           </div>
         </div>
       </section>
