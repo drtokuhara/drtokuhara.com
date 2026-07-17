@@ -159,9 +159,7 @@ export default function InsightDrivingAfterCataractSurgery() {
             You must arrange for someone to drive you to and from the surgery center. No exceptions. Most surgery centers will not release you unless you have a driver waiting.
           </p>
 
-          <BlurReveal><div className="insight-highlight">
-            <p><strong>I have had patients try to convince me they can take an Uber home and then drive themselves the next day. I tell them the same thing every time: if you do not have a reliable driver, we reschedule the surgery. Safety is not negotiable.</strong></p>
-          </div></BlurReveal>
+
         </div>
       </section>
 
@@ -172,7 +170,7 @@ export default function InsightDrivingAfterCataractSurgery() {
             The next morning, you return for a post-operative check. I examine the eye, measure your vision, and assess how you are healing. This is when I clear you to drive or tell you to wait.
           </p>
           <p>
-            Most patients have significant improvement in vision by the one-day mark. The pupil is returning to normal size. The eye has settled enough that depth perception and clarity are functional. If your vision meets the legal standard and you feel comfortable, you can drive.
+            Most patients have significant improvement in vision by the one-day mark. In fact, the majority of patients are actually safer drivers at this point than they were before surgery, because their visual acuity is now significantly better than it was looking through a cloudy cataract. The pupil is returning to normal size. The eye has settled enough that depth perception and clarity are functional. If your vision meets the legal standard and you feel comfortable, you can drive.
           </p>
           <p>
             But here is something many websites leave out: some patients are still groggy the morning after surgery. The IV sedative from the day before is technically out of your system, but the combination of a stressful day, a disrupted sleep schedule, and sometimes residual fatigue from the anesthesia means you may not feel sharp the next morning. If you feel foggy, drowsy, or just "off," that is a reason to wait, even if your vision looks good on the chart.
@@ -333,18 +331,6 @@ export default function InsightDrivingAfterCataractSurgery() {
         </div>
       </section>
 
-      <section className="section section-warm">
-        <div className="container content-narrow">
-          <h2 className="section-title">Insurance and <strong>Liability</strong></h2>
-          <p>
-            If you drive before being cleared by your surgeon and you are involved in an accident, your insurance company may deny coverage. They can argue that you were driving against medical advice. Even if the accident was not your fault, the fact that you were not medically cleared to drive can create liability issues.
-          </p>
-          <p>
-            Wait for clearance. Get it in writing if you need documentation for work or insurance purposes. It is not worth the risk.
-          </p>
-        </div>
-      </section>
-
       <section className="section section-white">
         <div className="container content-narrow">
           <BlurReveal><div className="clinic-thought">
@@ -385,6 +371,16 @@ export default function InsightDrivingAfterCataractSurgery() {
               <p>What actually happens during the procedure and immediately after.</p>
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="section section-teal">
+        <div className="container content-narrow" style={{textAlign: 'center', padding: '48px 0'}}>
+          <ScrollReveal direction="up" once={true}>
+            <h2 className="section-title" style={{color: '#fff'}}>Considering <strong>Cataract Surgery?</strong></h2>
+            <p style={{color: 'rgba(255,255,255,0.9)', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto 24px'}}>If you have questions about cataract surgery, lens options, or what recovery looks like for your specific situation, we are happy to help.</p>
+            <a href="https://desertvisioncenter.com/contact-us" className="btn btn-white" style={{display: 'inline-block', padding: '14px 36px', borderRadius: '8px', fontWeight: 600, fontSize: '1.05rem', textDecoration: 'none', backgroundColor: '#fff', color: '#0a7e8c'}}>Schedule a Consultation</a>
+          </ScrollReveal>
         </div>
       </section>
     </>

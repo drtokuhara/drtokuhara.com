@@ -153,6 +153,7 @@ export default function sitemap() {
     '/insights/floaters-flashes-when-to-worry',
     '/insights/glaucoma-and-cataracts',
     '/insights/eye-drops-after-cataract-surgery',
+    '/insights/same-day-bilateral-cataract-surgery',
   ].map((path) => ({ path, priority: 0.6, changeFrequency: 'monthly' }));
 
   // City landing pages - local SEO

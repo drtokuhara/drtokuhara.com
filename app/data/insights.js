@@ -1,5 +1,13 @@
 export const insights = [
   {
+    slug: 'same-day-bilateral-cataract-surgery',
+    title: 'Same-Day Bilateral Cataract Surgery: Is CLEAR in a Day Right for You?',
+    date: 'July 2026',
+    description: 'Most surgeons do one eye at a time with weeks between. Dr. Tokuhara performs both eyes the same day when appropriate. The safety data, who qualifies, and what the recovery looks like.',
+    cluster: 'Treatment & Differentiator',
+    image: '/media/insights/same-day-bilateral-cataract-surgery.png',
+  },
+  {
     slug: 'eye-drops-after-cataract-surgery',
     title: 'Eye Drops After Cataract Surgery: What They Do and How to Use Them',
     date: 'July 2026',
