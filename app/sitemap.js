@@ -1,5 +1,8 @@
 export const dynamic = 'force-static';
 
+import fs from 'fs';
+import path from 'path';
+
 export default function sitemap() {
   const baseUrl = 'https://drtokuhara.com';
 
@@ -83,77 +86,29 @@ export default function sitemap() {
     '/complex-cases/uveitis',
   ].map((path) => ({ path, priority: 0.7, changeFrequency: 'monthly' }));
 
-  // Insight articles
-  const insightPages = [
-    '/insights/panoptix-vs-panoptix-pro',
-    '/insights/swimming-after-cataract-surgery',
-    '/insights/what-causes-cataracts',
-    '/insights/when-experience-speaks',
-    '/insights/cataract-surgery-step-by-step',
-    '/insights/first-week-after-cataract-surgery',
-    '/insights/is-cataract-surgery-painful',
-    '/insights/the-lens-nobody-talks-about',
-    '/insights/what-i-learned-from-the-surgeon-who-trained-me',
-    '/insights/the-eye-you-least-suspect',
-    '/insights/when-the-eye-surface-changes-everything',
-    '/insights/when-the-unexpected-leads-to-the-right-outcome',
-    '/insights/the-consultation-that-changed-everything',
-    '/insights/do-i-really-need-surgery',
-    '/insights/when-is-the-right-time',
-    '/insights/when-the-surgeon-says-wait',
-    '/insights/when-patients-wait',
-    '/insights/permission-to-see-again',
-    '/insights/the-needle-that-wasnt-there',
-    '/insights/the-reader-who-almost-gave-up-her-books',
-    '/insights/the-man-who-wanted-his-younger-eyes-back',
-    '/insights/the-number-that-wasnt-the-problem',
-    '/insights/when-ai-recommends-your-lens',
+  // Insight articles - auto-generated from disk so the sitemap never drifts
+  // from the actual app/insights/ directory as articles are added.
+  let insightSlugs = [];
+  try {
+    const insightsDir = path.join(process.cwd(), 'app', 'insights');
+    insightSlugs = fs.readdirSync(insightsDir, { withFileTypes: true })
+      .filter((d) => d.isDirectory())
+      .filter((d) => fs.existsSync(path.join(insightsDir, d.name, 'page.js')))
+      .map((d) => d.name);
+  } catch (e) {
+    insightSlugs = [];
+  }
+  const insightPages = insightSlugs.map((slug) => ({
+    path: `/insights/${slug}`, priority: 0.6, changeFrequency: 'monthly',
+  }));
 
-    '/insights/when-more-isnt-better',
-    '/insights/are-premium-lenses-worth-it',
-    '/insights/choosing-the-standard-lens',
-    '/insights/five-questions-before-surgery',
-    '/insights/three-things-patients-say',
-    '/insights/twenty-years-forward',
-    '/insights/cataract-pre-op-appointment',
-    '/insights/cataract-referral-kickbacks',
-    '/insights/how-to-choose-a-cataract-surgeon',
-    '/insights/laser-vs-traditional-cataract-surgery',
-    '/insights/life-after-cataract-surgery',
-    '/insights/medicare-cataract-surgery',
-    '/insights/second-opinion-cataract-surgery',
-    '/insights/the-capsule-is-sacred',
-    '/insights/toric-lens-astigmatism',
-    '/insights/what-is-ora-machine',
-    '/insights/when-cataract-surgery-goes-wrong',
-    '/insights/when-do-i-need-cataract-surgery',
-    '/insights/what-you-see-during-cataract-surgery',
-    '/insights/best-lens-for-night-driving',
-    '/insights/second-opinion-that-changed-everything',
-    '/insights/when-cataracts-are-not-the-real-problem',
-    '/insights/not-every-patient-wants-the-same-vision',
-    '/insights/posterior-capsule-opacification',
-    '/insights/blepharitis-demodex-red-itchy-eyes',
-    '/insights/cataract-surgery-at-50',
-    '/insights/the-standard-lens-was-the-right-call',
-    '/insights/two-in-the-morning',
-    '/insights/the-bicycle-rider-and-the-binoculars',
-    '/insights/the-lens-we-didnt-implant',
-    '/insights/the-patient-i-never-saw-again',
-    '/insights/the-week-everything-changed',
-    '/insights/technology-behind-modern-cataract-surgery',
-    '/insights/cataract-surgery-and-diabetes',
-    '/insights/subconjunctival-hemorrhage',
-    '/insights/panoptix-vs-vivity',
-    '/insights/driving-after-cataract-surgery',
-    '/insights/when-your-case-isnt-routine',
-    '/insights/macular-degeneration-wet-vs-dry',
-    '/insights/what-happens-if-i-wait-too-long',
-    '/insights/why-i-do-my-own-post-op',
-    '/insights/floaters-flashes-when-to-worry',
-    '/insights/glaucoma-and-cataracts',
-    '/insights/eye-drops-after-cataract-surgery',
-    '/insights/same-day-bilateral-cataract-surgery',
+  // Our-story subpages
+  const ourStoryPages = [
+    '/our-story/built-in-the-desert',
+    '/our-story/independent',
+    '/our-story/one-surgeon',
+    '/our-story/patient-referred',
+    '/nervous-about-surgery',
   ].map((path) => ({ path, priority: 0.6, changeFrequency: 'monthly' }));
 
   // City landing pages - local SEO
@@ -194,6 +149,7 @@ export default function sitemap() {
     ...conditionPages,
     ...complexCasePages,
     ...insightPages,
+    ...ourStoryPages,
     ...cityPages,
     ...geographicPages,
     ...utilityPages,

@@ -306,6 +306,14 @@ export default function InsightMedicareCataractSurgery() {
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
+            <Link href="/insights/does-insurance-cover-cataract-surgery" className="related-card">
+              <h3>Does My Insurance Cover Cataract Surgery? - Dr. Keith Tokuhara</h3>
+              <p>What insurance does and does not cover.</p>
+            </Link>
+            <Link href="/insights/how-to-navigate-cataract-surgery-with-hmo" className="related-card">
+              <h3>How to Navigate Cataract Surgery with an HMO - Dr. Keith Tokuhara</h3>
+              <p>Medicare Advantage is an HMO. Here is how to navigate it.</p>
+            </Link>
             <Link href="/lens-implants-explained" className="related-card">
               <h3>Lens Options</h3>
               <p>Monofocal, toric, extended depth of focus, and multifocal lenses explained.</p>

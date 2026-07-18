@@ -293,6 +293,10 @@ export default function InsightFirstWeek() {
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
+            <Link href="/insights/eye-drops-after-cataract-surgery" className="related-card">
+              <h3>Eye Drops After Cataract Surgery: What They Do and How to Use Them</h3>
+              <p>Your post-op drop schedule, explained simply.</p>
+            </Link>
             <Link href="/insights/cataract-surgery-step-by-step" className="related-card">
               <h3>Cataract Surgery Step by Step</h3>
               <p>What actually happens during the procedure, from pre-op to recovery.</p>

@@ -184,6 +184,7 @@ export default function InsightHMONavigation() {
           <h2 className="section-title">Related <strong>Topics</strong></h2>
           <ul className="related-links">
             <li><Link href="/insights/does-insurance-cover-cataract-surgery">Does My Insurance Cover Cataract Surgery?</Link></li>
+            <li><Link href="/insights/cataract-referral-kickbacks">The Truth About Referral Kickbacks</Link></li>
             <li><Link href="/insights/how-to-choose-a-cataract-surgeon">How to Choose a Cataract Surgeon</Link></li>
             <li><Link href="/insights/second-opinion-cataract-surgery">Getting a Second Opinion</Link></li>
             <li><Link href="/choosing-your-surgeon">Choosing Your Surgeon</Link></li>

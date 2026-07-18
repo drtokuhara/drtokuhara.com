@@ -346,6 +346,14 @@ export default function InsightDrivingAfterCataractSurgery() {
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
+            <Link href="/insights/swimming-after-cataract-surgery" className="related-card">
+              <h3>Can You Swim After Cataract Surgery? Recovery Timeline for Pools, Hot Tubs, and Ocean - Dr. Keith Tokuhara</h3>
+              <p>When it is safe to get back in the water.</p>
+            </Link>
+            <Link href="/insights/eye-drops-after-cataract-surgery" className="related-card">
+              <h3>Eye Drops After Cataract Surgery: What They Do and How to Use Them</h3>
+              <p>The drops that protect your result while you heal.</p>
+            </Link>
             <Link href="/insights/first-week-after-cataract-surgery" className="related-card">
               <h3>Your First Week After Cataract Surgery</h3>
               <p>What to expect day by day in the first week of recovery.</p>

@@ -211,6 +211,8 @@ export default function InsightDoesInsuranceCoverCataractSurgery() {
         <div className="container content-narrow">
           <h2 className="section-title">Related <strong>Topics</strong></h2>
           <ul className="related-links">
+            <li><Link href="/insights/how-to-navigate-cataract-surgery-with-hmo">Navigating Cataract Surgery With an HMO</Link></li>
+            <li><Link href="/insights/medicare-cataract-surgery">Medicare and Cataract Surgery</Link></li>
             <li><Link href="/insights/did-i-choose-the-right-lens">Did I Choose the Right Lens?</Link></li>
             <li><Link href="/lens-implants-explained">Lens Implants Explained</Link></li>
             <li><Link href="/understand-your-options">Understand Your Options</Link></li>

@@ -304,6 +304,7 @@ export default function InsightCataractAt50() {
         <div className="container content-narrow">
           <h3 className="section-title-sm">Related <strong>Reading</strong></h3>
           <ul className="insight-related-list">
+            <li><Link href="/insights/same-day-bilateral-cataract-surgery">Same-Day Bilateral Cataract Surgery: Is CLEAR in a Day Right for You?</Link></li>
             <li><Link href="/insights/best-lens-for-night-driving">Best Lens Implant for Night Driving After Cataract Surgery</Link></li>
             <li><Link href="/insights/is-cataract-surgery-painful">Is Cataract Surgery Painful? Here's the Honest Answer</Link></li>
             <li><Link href="/insights/laser-vs-traditional-cataract-surgery">Laser vs Traditional Cataract Surgery: What Actually Matters</Link></li>

@@ -306,6 +306,10 @@ export default function InsightChooseASurgeon() {
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
+            <Link href="/insights/the-folder" className="related-card">
+              <h3>The Folder - Dr. Keith Tokuhara</h3>
+              <p>One patient's story of coming prepared.</p>
+            </Link>
             <Link href="/choosing-your-surgeon" className="related-card">
               <h3>Choosing Your Surgeon</h3>
               <p>What sets an experienced cataract surgeon apart from the rest.</p>
