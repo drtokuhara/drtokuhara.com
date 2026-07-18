@@ -332,6 +332,10 @@ export default function InsightBestLensForNightDriving() {
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
+            <Link href="/insights/panoptix-vs-panoptix-pro" className="related-card">
+              <h3>PanOptix vs PanOptix Pro: What Changed and Why It Matters - Dr. Keith Tokuhara</h3>
+              <p>How these lens options compare for night vision.</p>
+            </Link>
             <Link href="/multifocal-vs-monofocal" className="related-card">
               <h3>Multifocal vs Monofocal: An Honest Comparison</h3>
               <p>Sharp distance vision with readers, or glasses freedom with halos at night? The real tradeoffs explained.</p>

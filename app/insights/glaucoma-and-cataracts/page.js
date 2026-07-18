@@ -256,7 +256,7 @@ export default function InsightGlaucomaAndCataracts() {
             There is a specific scenario I see frequently that deserves its own mention. Some patients have what is called narrow angles, a condition where the drainage pathway inside the eye is anatomically crowded. In these eyes, the natural lens, especially as it thickens with age, pushes against the iris and narrows the space where fluid drains out of the eye. This creates a risk of acute angle-closure glaucoma, a sudden and painful spike in eye pressure that can cause permanent damage in hours.
           </p>
           <p>
-            For these patients, <Link href="/insights/narrow-angle-cataract">cataract surgery is not just about improving vision</Link>. Removing the thickened natural lens and replacing it with a thin artificial implant physically opens up the drainage angle. In many cases, this eliminates the risk of angle closure entirely. It is one of those situations where cataract surgery treats two problems at once: cloudy vision and a structural glaucoma risk.
+            For these patients, cataract surgery is not just about improving vision. Removing the thickened natural lens and replacing it with a thin artificial implant physically opens up the drainage angle. In many cases, this eliminates the risk of angle closure entirely. It is one of those situations where cataract surgery treats two problems at once: cloudy vision and a structural glaucoma risk.
           </p>
           <p>
             I have seen patients referred to me specifically for this reason, people whose glaucoma specialist recognized that the best way to manage their angle closure risk was to remove the cataract, even if the cataract was not yet causing significant vision problems. In the right clinical context, earlier cataract surgery can be the most effective glaucoma prevention strategy available.
@@ -312,7 +312,6 @@ export default function InsightGlaucomaAndCataracts() {
           <ul className="insight-related-list">
             <li><Link href="/glaucoma">Understanding Glaucoma</Link></li>
             <li><Link href="/complex-cases/glaucoma-and-cataract">Complex Cases: Glaucoma and Cataract Surgery</Link></li>
-            <li><Link href="/insights/narrow-angle-cataract">Narrow Angles and Cataracts</Link></li>
             <li><Link href="/insights/when-your-case-isnt-routine">Complex Cataract Surgery: When Your Case Is Not Routine</Link></li>
             <li><Link href="/insights/cataract-surgery-and-diabetes">Cataract Surgery and Diabetes</Link></li>
             <li><Link href="/insights/are-premium-lenses-worth-it">Are Premium Lenses Worth It?</Link></li>

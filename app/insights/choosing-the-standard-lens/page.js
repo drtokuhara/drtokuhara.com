@@ -290,6 +290,14 @@ export default function InsightChoosingTheStandardLens() {
         <div className="container content-narrow">
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
+            <Link href="/insights/not-every-patient-wants-the-same-vision" className="related-card">
+              <h3>Not Every Cataract Surgery Patient Wants the Same Vision - Dr. Keith Tokuhara</h3>
+              <p>Matching the lens to how you actually live.</p>
+            </Link>
+            <Link href="/insights/did-i-choose-the-right-lens" className="related-card">
+              <h3>Did I Choose the Right Lens? - Dr. Keith Tokuhara</h3>
+              <p>Second-guessing a lens choice after surgery.</p>
+            </Link>
             <Link href="/multifocal-vs-monofocal" className="related-card">
               <h3>Multifocal vs Monofocal: An Honest Comparison</h3>
               <p>Sharp distance vision with readers, or glasses freedom with halos at night? The real tradeoffs explained.</p>

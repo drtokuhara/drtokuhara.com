@@ -191,6 +191,10 @@ export default function InsightWhenIsTheRightTime() {
           </div>
           <ScrollReveal direction="up" once={true}><h2 className="section-title">Related <strong>Reading</strong></h2></ScrollReveal>
           <div className="related-grid">
+            <Link href="/insights/same-day-bilateral-cataract-surgery" className="related-card">
+              <h3>Same-Day Bilateral Cataract Surgery: Is CLEAR in a Day Right for You? - Dr. Keith Tokuhara</h3>
+              <p>Both eyes in one day: is it right for you?</p>
+            </Link>
             <Link href="/insights/when-patients-wait" className="related-card">
               <h3>When Patients Wait</h3>
               <p>The psychology of timing in cataract surgery, and why guilt often follows a great outcome.</p>
