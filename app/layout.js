@@ -1,44 +1,28 @@
-import Link from 'next/link';
-import MobileNav from './MobileNav';
-import { LanguageProvider } from './LanguageContext';
-import LanguageToggle from './LanguageToggle';
-import CursorSpotlight from './components/CursorSpotlight';
-import GoogleAnalytics from './components/GoogleAnalytics';
-import SiteSearch from './components/SiteSearch';
 import './styles.css';
 
 export const metadata = {
-  title: {
-    default: 'Dr. Keith Tokuhara, MD | Cataract Expert & Patient Educator',
-    template: '%s | Dr. Keith Tokuhara, MD',
-  },
-  description: 'Dr. Keith Tokuhara, MD - fellowship-trained cataract surgeon at Desert Vision Center in Rancho Mirage, CA. Specializing in complex cataract surgery, advanced lens implants, and personalized patient care in the Coachella Valley.',
+  title: 'Dr. Keith Tokuhara | Site Refresh in Progress',
+  description:
+    'Dr. Keith Tokuhara’s website is being rebuilt. Please visit Desert Vision Center for appointments, cataract surgery information, and current practice details.',
   metadataBase: new URL('https://drtokuhara.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Dr. Keith Tokuhara, MD | Cataract Expert & Educator',
-    description: 'Fellowship trained cataract surgeon and patient educator. Honest answers about cataracts, lens implants, and your surgical options. Desert Vision Center, Coachella Valley.',
+    title: 'Dr. Keith Tokuhara | Site Refresh in Progress',
+    description:
+      'Please visit Desert Vision Center for appointments, cataract surgery information, and current practice details.',
     url: 'https://drtokuhara.com',
     siteName: 'Dr. Keith Tokuhara',
-    images: [
-      {
-        url: '/dr-tokuhara-hero.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Dr. Keith Tokuhara, Cataract Surgeon at Desert Vision Center',
-      },
-    ],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dr. Keith Tokuhara, MD | Cataract Surgeon',
-    description: 'Fellowship trained cataract surgeon in the Coachella Valley. Patient first care at Desert Vision Center.',
+    title: 'Dr. Keith Tokuhara | Site Refresh in Progress',
+    description:
+      'Please visit Desert Vision Center for appointments, cataract surgery information, and current practice details.',
     site: '@DoctorTokuhara',
-    images: ['/dr-tokuhara-hero.jpg'],
   },
   robots: {
     index: true,
@@ -56,286 +40,13 @@ export default function RootLayout({ children }) {
         <meta name="google-site-verification" content="dnkmWlKto3uOsrwNz5LYZ9J7DoQHAiaTqoE-Rxya32A" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
       </head>
-      <body>
-        <LanguageProvider>
-        <GoogleAnalytics />
-        <CursorSpotlight />
-        {/* NAV */}
-        <nav className="nav">
-          <div className="container nav-inner">
-            <Link href="/" className="nav-brand">Dr. Keith Tokuhara</Link>
-            <div className="nav-links">
-              <Link href="/about">About</Link>
-              <div className="nav-dropdown">
-                <span className="nav-dropdown-trigger">Surgery</span>
-                <div className="nav-dropdown-menu">
-                  <Link href="/cataract-surgery">Cataract Surgery</Link>
-                  <Link href="/laser-cataract-surgery">Laser Surgery</Link>
-                  <Link href="/clear-in-a-day">CLEAR in a Day</Link>
-                  <Link href="/cataract-pre-op">Pre-Op Guide</Link>
-                  <Link href="/cataract-recovery">Recovery</Link>
-                  <Link href="/is-cataract-surgery-safe">Is It Safe?</Link>
-                  <Link href="/cataract-surgery-complications">Complications</Link>
-                  <Link href="/insights/what-you-see-during-cataract-surgery">What You See During Surgery</Link>
-                </div>
-              </div>
-              <div className="nav-dropdown">
-                <span className="nav-dropdown-trigger">Lenses</span>
-                <div className="nav-dropdown-menu">
-                  <Link href="/lens-implants-explained">Lens Guide</Link>
-                  <Link href="/multifocal-vs-monofocal">Multifocal vs Monofocal</Link>
-                  <Link href="/vivity-vs-panoptix">Vivity vs PanOptix</Link>
-                  <Link href="/panoptix-vs-panoptix-pro">PanOptix vs Pro</Link>
-                  <Link href="/toric-lens-astigmatism">Toric / Astigmatism</Link>
-                  <Link href="/clareon-lens">Clareon Lens</Link>
-                  <Link href="/halos-after-cataract-surgery">Halos After Surgery</Link>
-                </div>
-              </div>
-              <div className="nav-dropdown nav-dropdown-wide">
-                <span className="nav-dropdown-trigger">Conditions</span>
-                <div className="nav-dropdown-menu nav-dropdown-mega">
-                  <div className="nav-mega-col">
-                    <span className="nav-mega-label">Eye Conditions</span>
-                    <Link href="/understanding-cataracts">Understanding Cataracts</Link>
-                    <Link href="/posterior-subcapsular-cataract">PSC Cataracts</Link>
-                    <Link href="/yag-laser-capsulotomy">YAG Laser / PCO</Link>
-                    <Link href="/blurry-vision-after-cataract-surgery">Blurry Vision After Surgery</Link>
-                    <Link href="/halos-after-cataract-surgery">Halos After Surgery</Link>
-                    <Link href="/dysphotopsia-after-cataract-surgery">Dysphotopsia</Link>
-                    <Link href="/dropped-lens-after-cataract-surgery">Dropped Lens</Link>
-                    <Link href="/glaucoma">Glaucoma</Link>
-                    <Link href="/narrow-angle-cataract">Narrow Angles + Cataracts</Link>
-                    <Link href="/diabetic-retinopathy">Diabetic Retinopathy</Link>
-                    <Link href="/dry-eyes-desert">Dry Eyes / Desert</Link>
-                    <Link href="/monocular-cataract-surgery">Monocular Eye Surgery</Link>
-                    <Link href="/yamane-technique">Dislocated Lens / Yamane</Link>
-                  </div>
-                  <div className="nav-mega-col">
-                    <span className="nav-mega-label">Cataract + Condition</span>
-                    <Link href="/complex-cases/diabetes">Diabetes</Link>
-                    <Link href="/complex-cases/glaucoma-and-cataract">Glaucoma</Link>
-                    <Link href="/complex-cases/macular-degeneration">Macular Degeneration</Link>
-                    <Link href="/complex-cases/previous-retina-surgery">Previous Retina Surgery</Link>
-                    <Link href="/complex-cases/previous-lasik">Previous LASIK</Link>
-                    <Link href="/complex-cases/previous-rk">Previous RK</Link>
-                    <Link href="/complex-cases/fuchs-dystrophy">Fuchs Dystrophy</Link>
-                    <Link href="/complex-cases/uveitis">Uveitis</Link>
-                  </div>
-                  <div className="nav-mega-col">
-                    <span className="nav-mega-label">Special Populations</span>
-                    <Link href="/complex-cases/parkinsons-disease">Parkinson's</Link>
-                    <Link href="/complex-cases/alzheimers-dementia">Alzheimer's / Dementia</Link>
-                    <Link href="/complex-cases/down-syndrome">Down Syndrome</Link>
-                    <Link href="/complex-cases/floppy-iris">Floppy Iris (Flomax)</Link>
-                    <Link href="/complex-cases/pseudoexfoliation">Pseudoexfoliation</Link>
-                    <Link href="/complex-cases/retained-silicone-oil">Retained Silicone Oil</Link>
-                    <Link href="/complex-cases/aphakia-after-retina">Aphakia After Retina</Link>
-                  </div>
-                </div>
-              </div>
-              <div className="nav-dropdown">
-                <span className="nav-dropdown-trigger">Patients</span>
-                <div className="nav-dropdown-menu">
-                  <Link href="/patient-journey">Your Journey</Link>
-                  <Link href="/understand-your-options">Your Options</Link>
-                  <Link href="/ready-for-surgery">Ready for Surgery</Link>
-                  <Link href="/choosing-your-surgeon">Choosing a Surgeon</Link>
-                  <Link href="/ethical-cataract-care">Ethical Care</Link>
-                  <Link href="/patient-stories">Patient Stories</Link>
-                  <Link href="/my-cataract-drops">My Cataract Drops App</Link>
-                </div>
-              </div>
-              <div className="nav-dropdown nav-dropdown-wide">
-                <Link href="/insights" className="nav-dropdown-trigger" style={{cursor: 'pointer'}}>Patient Stories</Link>
-                <div className="nav-dropdown-menu nav-dropdown-mega">
-                  <div className="nav-mega-col">
-                    <span className="nav-mega-label">Before You Decide</span>
-                    <Link href="/insights/do-i-really-need-surgery">Do I Need Surgery Yet?</Link>
-                    <Link href="/insights/when-is-the-right-time">When Is the Right Time?</Link>
-                    <Link href="/insights/five-questions-before-surgery">5 Questions to Ask</Link>
-                    <Link href="/insights/how-to-choose-a-cataract-surgeon">How to Choose a Surgeon</Link>
-                    <Link href="/insights/second-opinion-cataract-surgery">Getting a Second Opinion</Link>
-                    <Link href="/insights/when-the-surgeon-says-wait">When the Surgeon Says Wait</Link>
-                    <Link href="/insights/the-needle-that-wasnt-there">The Needle That Wasn't There</Link>
-                    <Link href="/insights/when-patients-wait">When Patients Wait</Link>
-                    <Link href="/insights/what-happens-if-i-wait-too-long">What If I Wait Too Long?</Link>
-                    <Link href="/insights/medicare-cataract-surgery">Medicare Coverage</Link>
-                    <Link href="/insights/permission-to-see-again">Permission to See Again</Link>
-                  </div>
-                  <div className="nav-mega-col">
-                    <span className="nav-mega-label">Surgery & Recovery</span>
-                    <Link href="/insights/cataract-surgery-step-by-step">Step by Step</Link>
-                    <Link href="/insights/is-cataract-surgery-painful">Is It Painful?</Link>
-                    <Link href="/insights/what-you-see-during-cataract-surgery">What You See During Surgery</Link>
-                    <Link href="/insights/cataract-pre-op-appointment">Pre-Op Appointment</Link>
-                    <Link href="/insights/first-week-after-cataract-surgery">Your First Week After</Link>
-                    <Link href="/insights/driving-after-cataract-surgery">Driving After Surgery</Link>
-                    <Link href="/insights/laser-vs-traditional-cataract-surgery">Laser vs Traditional</Link>
-                    <Link href="/insights/what-is-ora-machine">The ORA Machine</Link>
-                    <Link href="/insights/posterior-capsule-opacification">Cloudy Vision After Surgery (PCO)</Link>
-                    <Link href="/insights/blepharitis-demodex-red-itchy-eyes">Blepharitis & Demodex</Link>
-                    <Link href="/insights/subconjunctival-hemorrhage">Subconjunctival Hemorrhage</Link>
-                    <Link href="/insights/technology-behind-modern-cataract-surgery">The Technology Behind Modern Surgery</Link>
-                    <Link href="/insights/cataract-surgery-and-diabetes">Cataract Surgery and Diabetes</Link>
-                    <Link href="/insights/swimming-after-cataract-surgery">Swimming After Surgery</Link>
-                    <Link href="/insights/what-causes-cataracts">What Causes Cataracts</Link>
-                    <Link href="/insights/macular-degeneration-wet-vs-dry">Macular Degeneration: Wet vs Dry</Link>
-                    <Link href="/insights/floaters-flashes-when-to-worry">Floaters, Flashes & When to Worry</Link>
-                    <Link href="/insights/glaucoma-and-cataracts">Glaucoma and Cataracts</Link>
-                    <span className="nav-mega-label" style={{marginTop: '16px'}}>Honest Answers</span>
-                    <Link href="/insights/when-cataract-surgery-goes-wrong">When Surgery Goes Wrong</Link>
-                    <Link href="/insights/cataract-referral-kickbacks">Referral Kickbacks</Link>
-                    <Link href="/insights/the-lens-we-didnt-implant">The Lens We Didn't Implant</Link>
-                    <Link href="/insights/when-your-case-isnt-routine">When Your Case Isn't Routine</Link>
-                    <Link href="/insights/why-i-do-my-own-post-op">Why I Do My Own Post-Op</Link>
-                  </div>
-                  <div className="nav-mega-col">
-                    <span className="nav-mega-label">Lens Options</span>
-                    <Link href="/insights/are-premium-lenses-worth-it">Are Premium Lenses Worth It?</Link>
-                    <Link href="/insights/choosing-the-standard-lens">The Standard Lens</Link>
-                    <Link href="/insights/the-standard-lens-was-the-right-call">The Standard Lens Was Right</Link>
-                    <Link href="/insights/best-lens-for-night-driving">Best Lens for Night Driving</Link>
-                    <Link href="/insights/panoptix-vs-vivity">PanOptix vs Vivity</Link>
-                    <Link href="/insights/panoptix-vs-panoptix-pro">PanOptix vs PanOptix Pro</Link>
-                    <Link href="/insights/toric-lens-astigmatism">Toric Lens / Astigmatism</Link>
-                    <Link href="/insights/the-lens-nobody-talks-about">The Lens Nobody Talks About</Link>
-                    <Link href="/insights/three-things-patients-say">Three Things Patients Say</Link>
-                    <Link href="/insights/when-more-isnt-better">When More Isn't Better</Link>
-                    <Link href="/insights/not-every-patient-wants-the-same-vision">Not Every Patient Wants the Same Vision</Link>
-                  </div>
-                  <div className="nav-mega-col">
-                    <span className="nav-mega-label">Real Patient Stories</span>
-                    <Link href="/insights/cataract-surgery-at-50">Cataract Surgery at 50</Link>
-                    <Link href="/insights/two-in-the-morning">Two in the Morning</Link>
-                    <Link href="/insights/the-bicycle-rider-and-the-binoculars">The Bicycle Rider</Link>
-                    <Link href="/insights/the-consultation-that-changed-everything">The Consultation That Changed Everything</Link>
-                    <Link href="/insights/twenty-years-forward">Twenty Years Forward</Link>
-                    <Link href="/insights/life-after-cataract-surgery">Life After Surgery</Link>
-                    <Link href="/insights/the-reader-who-almost-gave-up-her-books">The Reader Who Almost Gave Up</Link>
-                    <Link href="/insights/the-eye-you-least-suspect">The Eye You Least Suspect</Link>
-                    <Link href="/insights/when-experience-speaks">When Experience Speaks</Link>
-                    <Link href="/insights/the-patient-i-never-saw-again">The Patient I Never Saw Again</Link>
-                    <Link href="/insights/the-week-everything-changed">The Week Everything Changed</Link>
-                    <Link href="/insights/what-i-learned-from-the-surgeon-who-trained-me">The Surgeon Who Trained Me</Link>
-                    <Link href="/insights/the-capsule-is-sacred">The Capsule Is Sacred</Link>
-                    <Link href="/gimbel-heritage" style={{color: 'var(--oasis)', fontWeight: 600, marginTop: '8px'}}>The Gimbel Heritage Series</Link>
-                    <Link href="/insights" style={{color: 'var(--oasis)', fontWeight: 600, marginTop: '4px'}}>View All Stories &amp; Guides</Link>
-                  </div>
-                </div>
-              </div>
-              <Link href="/education">Education</Link>
-              <Link href="/faq">FAQ</Link>
-              <Link href="/contact">Contact</Link>
-              <SiteSearch />
-              <LanguageToggle />
-            </div>
-            <MobileNav />
-          </div>
-        </nav>
-
+      <body style={{ margin: 0, fontFamily: 'Montserrat, system-ui, sans-serif', background: '#ffffff' }}>
         {children}
-
-        {/* FOOTER */}
-        <footer className="footer">
-          <div className="container">
-            <div className="footer-inner">
-              <div>
-                <div className="footer-brand">Dr. Keith Tokuhara, M.D.</div>
-                <p style={{fontSize: '13px'}}>Cataract Surgeon · Educator · Rancho Mirage, CA</p>
-              </div>
-              <div className="footer-links">
-                <div className="footer-col">
-                  <h4>Surgery</h4>
-                  <Link href="/cataract-surgery">Cataract Surgery</Link>
-                  <Link href="/laser-cataract-surgery">Laser Surgery</Link>
-                  <Link href="/clear-in-a-day">CLEAR in a Day</Link>
-                  <Link href="/lens-implants-explained">Lens Guide</Link>
-                  <Link href="/cataract-surgery-complications">Complications</Link>
-                  <Link href="/dysphotopsia-after-cataract-surgery">Dysphotopsia</Link>
-                  <Link href="/dropped-lens-after-cataract-surgery">Dropped Lens</Link>
-                  <Link href="/complex-cases">Complex Cases</Link>
-                  <Link href="/monocular-cataract-surgery">Monocular Eye Surgery</Link>
-                </div>
-                <div className="footer-col">
-                  <h4>For Patients</h4>
-                  <Link href="/patient-journey">Your Journey</Link>
-                  <Link href="/cataract-pre-op">Pre-Op Guide</Link>
-                  <Link href="/cataract-recovery">Recovery</Link>
-                  <Link href="/my-cataract-drops">My Cataract Drops App</Link>
-                  <Link href="/choosing-your-surgeon">Choosing a Surgeon</Link>
-                  <Link href="/faq">FAQ</Link>
-                  <Link href="/contact">Contact</Link>
-                </div>
-                <div className="footer-col">
-                  <h4>Learn</h4>
-                  <Link href="/insights">Insights</Link>
-                  <Link href="/gimbel-heritage">The Gimbel Heritage Series</Link>
-                  <Link href="/education">Education</Link>
-                  <Link href="/patient-stories">Patient Stories</Link>
-                  <Link href="/about">About Dr. Tokuhara</Link>
-                  <Link href="/ethical-cataract-care">Ethical Care</Link>
-                </div>
-                <div className="footer-col">
-                  <h4>Practice</h4>
-                  <a href="https://desertvisioncenter.com">Desert Vision Center</a>
-                  <a href="tel:7603404700">760.340.4700</a>
-                </div>
-                <div className="footer-col footer-col-locations">
-                  <h4>Serving the Coachella Valley</h4>
-                  <p className="footer-locations-flow">
-                    <Link href="/cataract-surgeon-rancho-mirage">Rancho Mirage</Link>
-                    <span className="footer-loc-sep">&middot;</span>
-                    <Link href="/cataract-surgeon-palm-desert">Palm Desert</Link>
-                    <span className="footer-loc-sep">&middot;</span>
-                    <Link href="/cataract-surgeon-palm-springs">Palm Springs</Link>
-                    <span className="footer-loc-sep">&middot;</span>
-                    <Link href="/cataract-surgeon-indian-wells">Indian Wells</Link>
-                    <span className="footer-loc-sep">&middot;</span>
-                    <Link href="/cataract-surgeon-la-quinta">La Quinta</Link>
-                    <span className="footer-loc-sep">&middot;</span>
-                    <Link href="/cataract-surgeon-cathedral-city">Cathedral City</Link>
-                    <span className="footer-loc-sep">&middot;</span>
-                    <Link href="/cataract-surgeon-indio">Indio</Link>
-                    <span className="footer-loc-sep">&middot;</span>
-                    <Link href="/cataract-surgeon-coachella">Coachella</Link>
-                    <span className="footer-loc-sep">&middot;</span>
-                    <Link href="/cataract-surgeon-desert-hot-springs">Desert Hot Springs</Link>
-                    <span className="footer-loc-sep">&middot;</span>
-                    <Link href="/cataract-surgeon-bermuda-dunes">Bermuda Dunes</Link>
-                    <span className="footer-loc-sep">&middot;</span>
-                    <Link href="/cataract-surgeon-thousand-palms">Thousand Palms</Link>
-                    <span className="footer-loc-sep">&middot;</span>
-                    <Link href="/cataract-surgeon-thermal-mecca">Thermal &amp; Mecca</Link>
-                  </p>
-                  <p className="footer-locations-also">Also serving patients from{' '}
-                    <Link href="/cataract-surgeon-redlands">Redlands</Link>,{' '}
-                    <Link href="/cataract-surgeon-yucaipa">Yucaipa</Link>, and{' '}
-                    <Link href="/cataract-surgeon-calimesa">Calimesa</Link>
-                  </p>
-                  <p className="footer-locations-also">Serving patients beyond the valley:{' '}
-                    <Link href="/cataract-surgeon-mammoth-lakes">Mammoth Lakes</Link>,{' '}
-                    <Link href="/cataract-surgeon-big-bear">Big Bear</Link>, and{' '}
-                    <Link href="/cataract-surgeon-blythe">Blythe</Link>
-                  </p>
-                </div>
-                <div className="footer-col">
-                  <h4>Social</h4>
-                  <a href="https://x.com/DoctorTokuhara">X / Twitter</a>
-                  <a href="https://youtube.com/@desertvisioncenter">YouTube</a>
-                  <a href="https://instagram.com/desertvisioncenter">Instagram</a>
-                  <a href="https://facebook.com/desertvisioncenter">Facebook</a>
-                </div>
-              </div>
-            </div>
-            <div className="footer-bottom">
-              <p style={{marginBottom: '8px', fontSize: '12px', lineHeight: '1.6', color: 'rgba(255,255,255,0.6)'}}>Medical Disclaimer: The content on this website is for educational and informational purposes only. It is not intended as, and should not be interpreted as, medical advice, diagnosis, or treatment. Always consult your physician or qualified healthcare provider with any questions regarding a medical condition. Individual results may vary. No doctor-patient relationship is established by viewing this website. If you are experiencing a medical emergency, call 911 immediately.</p>
-              <p style={{marginBottom: '8px'}}>© {new Date().getFullYear()} Dr. Keith Tokuhara, MD. Desert Vision Center. All rights reserved.</p>
-            </div>
-          </div>
-        </footer>
-        </LanguageProvider>
       </body>
     </html>
   );
